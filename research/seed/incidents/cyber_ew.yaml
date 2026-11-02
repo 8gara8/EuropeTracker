@@ -1,0 +1,113 @@
+# Seed incidents: cyber and electronic warfare (SPEC §9 Phase 4; counting rules in routine/STYLE.md §4).
+# GPS interference is logged only when it disrupts aviation or shipping or a government speaks; background
+# jamming belongs in the gnss_interference_index metric. Cyberattacks are logged only when they disrupt a
+# service or a government attributes them. Coverage is representative.
+# src: [category, outlet, title, url, published]. Ids are assigned by seed:build.
+
+- date: 2022-02-24
+  where: DE
+  affected: [DE, FR, IT, PL, HU, GR]
+  location: Europe-wide (KA-SAT satellite network)
+  type: cyberattack
+  rung: 2
+  serious: true
+  attribution: 4
+  note: The EU, UK and US attributed the attack to Russia in May 2022.
+  summary: An hour before the invasion, a cyberattack on Viasat's KA-SAT network knocked out tens of thousands of satellite modems across Europe, including remote monitoring of about 5,800 German wind turbines, for weeks.
+  src:
+    - [intl_press, "Al Jazeera", "Russia downed satellite internet in Ukraine: Western officials", "https://www.aljazeera.com/news/2022/5/10/russia-behind-cyberattack-against-internet-network-in-ukraine", "2022-05-10"]
+    - [intl_press, "TechTarget", "US, EU attribute Viasat hack to Russia", "https://www.techtarget.com/searchsecurity/news/252518023/US-EU-attribute-Viasat-hack-to-Russia", "2022-05-10"]
+
+- date: 2024-04-25
+  where: EE
+  affected: [EE, FI]
+  location: Tartu Airport
+  type: gnss_jamming
+  rung: 1
+  attribution: 3
+  note: Estonia's foreign minister called the interference a Russian hybrid attack.
+  summary: Two Finnair flights to Tartu turned back to Helsinki because GPS interference prevented their approach. Finnair suspended the route from 29 April to 31 May while Tartu installed a non-GPS approach.
+  src:
+    - [eu_regional_press, "ERR News", "Finnair suspends flights to Tartu for 1 month to seek GPS jamming solution", "https://news.err.ee/1609328058/finnair-suspends-flights-to-tartu-for-1-month-to-seek-gps-jamming-solution", "2024-04-29"]
+    - [eu_regional_press, "Estonian World", "Finnair suspends Helsinki-Tartu flights for a month; airport under Russia's hybrid attack", "https://estonianworld.com/security/finnair-suspends-helsinki-tartu-flights-for-a-month-airport-under-russias-hybrid-attack/", "2024-04-29"]
+
+- date: 2024-05-03
+  where: DE
+  affected: [DE, CZ]
+  location: Berlin and Prague
+  type: cyberattack
+  rung: 1
+  attribution: 4
+  note: Germany attributed the attack to GRU-controlled APT28; NATO and the EU condemned the campaign against Germany and Czechia.
+  summary: Germany said Russian military intelligence's APT28 group hacked email accounts of the governing SPD's leadership through an Outlook flaw; Czechia reported attacks on its state institutions by the same group.
+  src:
+    - [eu_gov_security, "German Federal Ministry of the Interior", "Cyber attacks traced to Russian military intelligence agency", "https://www.bmi.bund.de/SharedDocs/kurzmeldungen/EN/2024/05/schutzmassnahmen-cyberangriffe-en.html", "2024-05-03"]
+    - [ua_independent, "The Kyiv Independent", "Germany accuses Russia of cyberattack against governing party in 2023", "https://kyivindependent.com/germany-accuses-russia-of-cyberattack-against-governing-party-in-2023/", "2024-05-03"]
+
+- date: 2024-11-24
+  where: RO
+  location: Romania
+  type: election_cyber
+  rung: 2
+  attribution: 3
+  note: Declassified Romanian intelligence documents pointed to a state actor; Russia denied interference.
+  summary: Declassified documents released on 4 December said Romania's election infrastructure faced more than 85,000 cyberattacks around the presidential first round, including on election day. The court annulled the vote two days later.
+  src:
+    - [intl_press, "Security Affairs", "Romania's election systems hit by 85,000 attacks ahead of presidential vote", "https://securityaffairs.com/171758/cyber-warfare-2/romanias-election-systems-hit-by-85000-attacks.html", "2024-12-05"]
+
+- date: 2025-04-07
+  where: "NO"
+  location: Bremanger, Vestland
+  type: cyberattack
+  rung: 2
+  attribution: 3
+  note: Norway's security service PST blamed pro-Russian hackers in August 2025.
+  summary: Hackers took control of a dam's systems in Bremanger and opened an outflow valve, releasing about 500 litres of water per second for four hours before it was noticed.
+  src:
+    - [intl_press, "BleepingComputer", "Pro-Russian hackers blamed for water dam sabotage in Norway", "https://www.bleepingcomputer.com/news/security/pro-russian-hackers-blamed-for-water-dam-sabotage-in-norway/", "2025-08-14"]
+    - [ua_independent, "The Kyiv Independent", "Norway blames Russia for cyberattack on hydropower dam", "https://kyivindependent.com/norway-blames-russia-for-cyberattack-on-hydropower-dam/", "2025-08-14"]
+
+- date: 2025-08-31
+  where: BG
+  location: Plovdiv Airport
+  type: gnss_jamming
+  rung: 1
+  attribution: 2
+  note: The European Commission suspected Russian interference; Bulgarian authorities later disputed that jamming occurred.
+  summary: A plane carrying European Commission President Ursula von der Leyen was reported to have lost GPS navigation on approach to Plovdiv and landed using paper maps.
+  src:
+    - [intl_press, "BBC News", "EU chief von der Leyen's plane hit by suspected Russian GPS interference", "https://www.bbc.com/news/articles/c9d07z1439zo", "2025-09-01"]
+    - [intl_press, "Euronews", "No hay pruebas de las supuestas interferencias GPS al avión de Von der Leyen", "https://es.euronews.com/my-europe/2025/09/09/euroverify-no-hay-pruebas-de-las-supuestas-interferencias-gps-al-avion-de-von-der-leyen", "2025-09-09"]
+
+- date: 2026-03-09
+  where: LT
+  location: Lithuanian airspace
+  type: gnss_jamming
+  rung: 1
+  attribution: 3
+  summary: Lithuania's aviation regulator said pilots had reported more than 300 GPS interference cases in its airspace so far in 2026; authorities link the jamming to Russia.
+  src:
+    - [eu_regional_press, "LRT", "GPS jamming incidents reported by pilots continue in Lithuania, regulator says", "https://www.lrt.lt/en/news-in-english/19/2862230/gps-jamming-incidents-reported-by-pilots-continue-in-lithuania-regulator-says", "2026-03-09"]
+
+- date: 2026-08-10
+  where: DK
+  location: Around Bornholm
+  sea: baltic
+  type: gnss_jamming
+  rung: 1
+  attribution: 2
+  summary: Denmark recorded GPS disruptions at record levels around Bornholm; experts suspected Russian jamming.
+  src:
+    - [ua_independent, "European Pravda", "Denmark records GPS disruptions at record levels near island of Bornholm", "https://www.eurointegration.com.ua/eng/news/2026/08/10/7243248/", "2026-08-10"]
+
+- date: 2026-08-24
+  where: "NO"
+  location: Norway (national digital services)
+  type: ddos
+  rung: 1
+  attribution: 2
+  note: The pro-Russian group Server Killers claimed it; Norway did not confirm the perpetrators.
+  summary: A denial-of-service attack on Norway's Digitalisation Directorate disrupted about ten national services, including the ID-porten login and the Altinn portal, for several days, the biggest such attack it had seen.
+  src:
+    - [eu_regional_press, "The Barents Observer", "Pro-Russian hackers declare 'cyberwar' on Norway", "https://www.thebarentsobserver.com/news/prorussian-hackers-declare-cyberwar-on-norway/456591", "2026-08-26"]
+    - [intl_press, "ABC News (AP)", "Pro-Russian hackers claim responsibility for major cyberattack on Norway's public digital services", "https://abcnews.com/Technology/wireStory/pro-russian-hackers-claim-responsibility-major-cyberattack-norways-135965611", "2026-08-26"]

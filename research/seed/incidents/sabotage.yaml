@@ -1,0 +1,256 @@
+# Seed incidents: sabotage and covert action (SPEC §9 Phase 4; counting rules in routine/STYLE.md §4).
+# Logged only when officials link the act at least as "suspected" to Russia or its proxies. Coverage of
+# rung 2 is representative, not complete: dozens of smaller arsons and arrests are left out.
+# src: [category, outlet, title, url, published]. Ids are assigned by seed:build.
+
+# ---------------------------------------------------------------- 2022
+- date: 2022-04-25
+  where: MD
+  location: Tiraspol, Transnistria
+  type: explosive
+  rung: 2
+  attribution: 2
+  note: Kyiv called it a Russian provocation; the Institute for the Study of War judged it a likely Kremlin false-flag operation.
+  summary: Grenade-launcher fire hit the headquarters of the Transnistrian state security ministry in Tiraspol, the first of a series of blasts in the Russian-backed region. No one was hurt.
+  src:
+    - [intl_press, "Reuters", "Ukraine warns against attempts to drag Moldova's Transniestria region into war", "https://www.reuters.com/world/europe/ukraine-warns-against-attempts-drag-moldovas-transniestria-region-into-war-2022-04-26/", "2022-04-26"]
+
+- date: 2022-04-26
+  where: MD
+  location: Maiac, Grigoriopol, Transnistria
+  type: infrastructure_sabotage
+  rung: 2
+  attribution: 2
+  note: Kyiv blamed Russia; Moldova's president said factions in the region wanted to raise tension.
+  summary: Two explosions knocked out two radio masts broadcasting Russian stations at the Grigoriopol transmitter in Maiac, a day after the Tiraspol attack.
+  src:
+    - [intl_press, "Reuters", "Tensions surge after breakaway Moldovan region reports attacks; Kyiv blames Russia", "https://www.reuters.com/world/europe/blasts-hit-soviet-era-radio-antennae-breakaway-moldovan-region-authorities-say-2022-04-26/", "2022-04-26"]
+
+- date: 2022-10-08
+  where: DE
+  location: Northern Germany (cuts near Berlin and in Herne)
+  type: rail_sabotage
+  rung: 2
+  serious: true
+  attribution: 2
+  note: The interior minister called it deliberate; politicians raised suspicion of Russia, but no one was charged.
+  hours: 3
+  summary: Saboteurs cut Deutsche Bahn's GSM-R radio cables at two sites, stopping long-distance and freight trains across northern Germany and to Denmark and the Netherlands for about three hours.
+  src:
+    - [eu_regional_press, "The Local Germany", "Germany probes rail sabotage amid Russia tensions", "https://www.thelocal.de/20221009/germany-probes-rail-sabotage-amid-russia-tensions", "2022-10-09"]
+
+# ---------------------------------------------------------------- 2023
+- date: 2023-03-15
+  where: PL
+  location: Eastern Poland
+  type: sabotage_arrest
+  rung: 2
+  attribution: 4
+  note: Polish courts convicted 14 members in December 2023.
+  summary: Poland arrested members of a Russian spy network that planted cameras along rail lines carrying weapons to Ukraine and planned to derail supply trains. Fourteen were later convicted.
+  src:
+    - [intl_press, "BBC News", "Russian spy network accused of sabotage arrested in Poland", "https://www.bbc.com/news/world-europe-64971691", "2023-03-15"]
+    - [intl_press, "The Washington Post", "Russia recruited operatives online to target weapons crossing Poland", "https://www.washingtonpost.com/world/2023/08/18/ukraine-weapons-sabotage-gru-poland", "2023-08-18"]
+
+- date: 2023-12-01
+  month: true
+  where: EE
+  location: Tallinn
+  type: proxy_recruitment
+  rung: 2
+  attribution: 3
+  note: Estonia's Internal Security Service said Russian special services ordered the attacks.
+  summary: Locally recruited proxies smashed the windows of cars belonging to Estonia's interior minister and a journalist. Estonia's security service later detained suspects acting on Russian orders.
+  src:
+    - [eu_gov_security, "Estonian Internal Security Service", "Estonian Internal Security Service apprehended suspects for wrecking cars belonging to minister", "https://kapo.ee/en/media/estonian-internal-security-service-apprehended-suspects-wrecking-cars-belonging-minister/", null]
+
+# ---------------------------------------------------------------- 2024
+- date: 2024-02-13
+  where: ES
+  location: Villajoyosa, Alicante
+  type: assassination_plot
+  rung: 4
+  attribution: 2
+  killed: 1
+  note: Western officials and analysts considered a Russian state killing likely; no one has been charged.
+  summary: Maxim Kuzminov, a Russian helicopter pilot who defected to Ukraine in 2023, was found shot dead and run over in a car park in Villajoyosa, Spain.
+  src:
+    - [intl_press, "The Washington Post", "Bullet-riddled body found in Spain was Russian defector, Ukraine says", "https://www.washingtonpost.com/world/2024/02/20/spain-russia-ukraine-kuminov-assassination-defector/", "2024-02-20"]
+
+- date: 2024-03-20
+  where: GB
+  location: Leyton, east London
+  type: arson
+  rung: 2
+  attribution: 4
+  note: Men recruited by the Wagner Group were convicted in 2024 and 2025.
+  summary: Arsonists set fire to a warehouse of Ukrainian-owned businesses shipping aid to Ukraine. The organiser admitted acting for the Wagner Group, and three more men were convicted in July 2025.
+  src:
+    - [intl_press, "The Guardian", "Men acting for Wagner Group convicted of arson on Ukraine-linked London firms", "https://www.theguardian.com/uk-news/2025/jul/08/three-men-found-guilty-over-london-arson-attack-on-ukraine-linked-firms", "2025-07-08"]
+    - [intl_press, "BBC News", "Man admits arson over London warehouse fire linked to Russia", "https://www.bbc.com/news/articles/cvgexrw3x2xo", "2024-10-26"]
+
+- date: 2024-04-17
+  where: DE
+  location: Bayreuth, Bavaria
+  type: sabotage_arrest
+  rung: 2
+  attribution: 4
+  note: A Munich court convicted the main defendant in October 2025.
+  summary: German police arrested two German-Russian men accused of scouting US military sites and rail lines for bombing and arson attacks on behalf of Russia to undermine aid to Ukraine.
+  src:
+    - [eu_regional_press, "The Local Germany", "Two arrested in Bavaria for allegedly spying for Russia", "https://www.thelocal.de/20240418/two-arrested-in-bavaria-for-allegedly-spying-for-russia", "2024-04-18"]
+    - [intl_press, "Stars and Stripes", "Russian spy convicted in Bavaria", "https://www.stripes.com/theaters/europe/2025-11-03/russian-spy-bavaria-19637301.html", "2025-11-03"]
+
+- date: 2024-05-09
+  where: LT
+  location: IKEA store, Vilnius
+  type: arson
+  rung: 2
+  attribution: 4
+  note: Lithuanian prosecutors said Russian military intelligence ordered the attack and charged two Ukrainians.
+  summary: An incendiary device set fire to the IKEA store in Vilnius after hours. No one was hurt. Prosecutors called it terrorism organised by Russia's GRU.
+  src:
+    - [intl_press, "The Guardian", "Russia behind arson attack on Ikea store in Lithuanian capital, says prosecutor", "https://www.theguardian.com/world/2025/mar/17/russia-behind-arson-attack-on-ikea-store-in-lithuania-capital-says-prosecutor", "2025-03-17"]
+
+- date: 2024-05-12
+  where: PL
+  location: Marywilska 44 shopping centre, Warsaw
+  type: arson
+  rung: 2
+  attribution: 4
+  note: Poland said the arson was ordered by Russian intelligence, charged suspects and closed Russia's consulate in Kraków.
+  summary: A night fire destroyed Warsaw's Marywilska 44 shopping centre, with about 1,400 stalls. No one was hurt. Poland later said it was arson ordered by Russian military intelligence.
+  src:
+    - [intl_press, "CNN", "Poland blames Russian intelligence for arson attack on Warsaw shopping centre", "https://www.cnn.com/2025/05/11/europe/poland-blames-russian-intelligence-fire-shopping-center-latam-intl", "2025-05-11"]
+    - [eu_regional_press, "Notes from Poland", "Poland confirms Russia behind fire that destroyed Warsaw's biggest shopping centre", "https://notesfrompoland.com/2025/05/12/poland-confirms-russia-behind-fire-that-destroyed-warsaws-biggest-shopping-centre", "2025-05-12"]
+
+- date: 2024-06-07
+  where: CZ
+  location: Klíčov bus depot, Prague
+  type: arson
+  rung: 2
+  attribution: 4
+  note: The Czech prime minister said it was probably organised and financed from Russia; the arsonist was convicted in 2025.
+  summary: A Colombian man recruited over Telegram tried to set fire to public buses at a Prague depot; workers put out the fires. He was sentenced to eight years.
+  src:
+    - [intl_press, "Euronews", "Czech court sentences Colombian to eight years in prison for Russia-linked arson attack", "https://www.euronews.com/2025/06/09/czech-court-sentences-colombian-to-eight-years-in-prison-for-russia-linked-arson-attack", "2025-06-09"]
+
+- date: 2024-07-20
+  where: DE
+  affected: [DE, GB, PL, LT]
+  location: DHL hub, Leipzig/Halle Airport
+  type: explosive
+  rung: 2
+  attribution: 3
+  note: Polish prosecutors and German security services linked the parcels to Russian intelligence; Lithuania charged 15 people in 2025.
+  summary: An incendiary parcel posted in Vilnius ignited at the DHL hub in Leipzig before loading onto a cargo plane; another burned at a DHL warehouse near Birmingham two days later. Officials called them a test run for attacks on flights to North America.
+  src:
+    - [intl_press, "The Guardian", "Russia suspected of planting device on plane that caused UK warehouse fire", "https://www.theguardian.com/uk-news/2024/oct/16/russia-suspected-of-planting-device-on-plane-that-caused-uk-warehouse-fire", "2024-10-16"]
+    - [intl_press, "BBC News", "Lithuania charges 15 over alleged Russian-backed parcel bombs", "https://www.bbc.com/news/articles/ckg3l32q4yko", "2025-09-17"]
+
+- date: 2024-09-01
+  month: true
+  where: LT
+  location: Lithuania
+  type: arson
+  rung: 2
+  attribution: 4
+  note: In January 2026 prosecutors charged six foreign nationals with terrorism, saying handlers linked to Russia's GRU coordinated them.
+  summary: Saboteurs set fire to the premises of a private company supplying military aid to Ukraine. Prosecutors later charged six people with terrorism.
+  src:
+    - [eu_regional_press, "LRT", "Lithuania charges six suspects with terrorism for targeting Ukraine military aid", "https://www.lrt.lt/en/news-in-english/19/2808132/lithuania-charges-six-suspects-with-terrorism-for-setting-fire-to-ukraine-military-aid", "2026-01-16"]
+
+# ---------------------------------------------------------------- 2025
+- date: 2025-05-12
+  where: GB
+  location: Kentish Town and Islington, London
+  type: arson
+  rung: 2
+  attribution: 3
+  note: Prime Minister Starmer said in June 2026 the attacks were Russia-linked; a BBC investigation traced the handler to Russia.
+  summary: Arsonists set fire to Keir Starmer's family house, a car and a property linked to him in London over several days. Two men were convicted of conspiring to commit arson.
+  src:
+    - [intl_press, "The Guardian", "Russia-linked arson attacks show bad actors targeting UK, says Starmer", "https://www.theguardian.com/politics/2026/jun/18/keir-starmer-russian-linked-arson-attack-property-bad-actors", "2026-06-18"]
+
+- date: 2025-06-26
+  where: DE
+  location: Erfurt, Thuringia
+  type: arson
+  rung: 2
+  attribution: 2
+  summary: Several Rheinmetall military trucks were set on fire in Erfurt and three were destroyed. Investigators examined a possible Russian-directed sabotage motive.
+  src:
+    - [intl_press, "The Economic Times", "Russia destroys NATO vehicles deep inside Germany", "https://economictimes.indiatimes.com/news/international/us/kgb-style-strike-russia-destroys-nato-vehicles-deep-inside-germany-has-moscow-adopted-ukraines-playbook/articleshow/122096533.cms", "2025-06-27"]
+
+- date: 2025-11-16
+  where: PL
+  location: Mika and Puławy, Warsaw–Lublin railway
+  type: rail_sabotage
+  rung: 2
+  serious: true
+  attribution: 4
+  note: Prosecutors charged two Ukrainians working for Russian intelligence, who fled to Belarus.
+  summary: A military-grade explosive tore up the Warsaw–Lublin line used for aid to Ukraine near Mika as a freight train passed; near Puławy a bracket was jammed on the track and wires downed before a train with 473 passengers. Tusk called it unprecedented sabotage.
+  src:
+    - [intl_press, "AP", "Poland railway line explosion near Warsaw 'act of sabotage,' prime minister says", "https://apnews.com/article/poland-sabotage-explosion-rail-track-warsaw-97dae3045d4e1ff329780526c6279c0f", "2025-11-17"]
+    - [intl_press, "The Guardian", "Ukrainians working for Russia were behind rail blasts, alleges Polish PM", "https://www.theguardian.com/world/2025/nov/18/ukrainians-working-for-russia-rail-blasts-says-poland-prime-minister-donald-tusk", "2025-11-18"]
+
+# ---------------------------------------------------------------- 2026
+- date: 2026-08-04
+  where: DE
+  location: Leipzig/Halle Airport
+  type: explosive
+  rung: 3
+  serious: true
+  attribution: 3
+  note: Germany formally blamed Russia on 1 September 2026 and closed the Russian consulate in Bonn; investigators linked GRU Unit 29155.
+  hours: 2
+  summary: An explosive-laden drone flown over the cellular network hit the wing of a Ukrainian An-124 at Leipzig airport but did not detonate. The airport closed, and a cargo jet going around struck a second drone and declared a mayday.
+  src:
+    - [intl_press, "The Guardian", "Drone carrying explosives at German airport marks 'new level of danger', says interior minister", "https://www.theguardian.com/world/2026/aug/05/drone-german-airport-dhl-cargo-plane-collides-object-leipzig", "2026-08-05"]
+    - [intl_press, "France 24", "Germany blames Russia for airport drone incident, hits back with sanctions", "https://www.france24.com/en/live-news/20260901-germany-blames-russia-for-airport-drone-incident-hits-back-with-sanctions", "2026-09-01"]
+
+- date: 2026-08-13
+  where: PL
+  location: Warsaw
+  type: assassination_plot
+  rung: 2
+  attribution: 3
+  note: Prime Minister Tusk said the suspect acted for Russian intelligence.
+  summary: Poland detained a Russian citizen accused of planning, for Russian intelligence, to assassinate a dual US-Ukrainian citizen. Tusk called it the first Russian plot against an American on NATO territory.
+  src:
+    - [intl_press, "Kyiv Post", "Poland Stops Russian Assassin Targeting US Citizen in First-Ever NATO Attack Plot", "https://www.kyivpost.com/post/82309", "2026-08-13"]
+    - [eu_regional_press, "Polsat News", "Tusk: Zatrzymaliśmy obywatela Rosji, szykował zamach na obywatela USA", "https://www.polsatnews.pl/wiadomosc/2026-08-13/tusk-zatrzymalismy-obywatela-rosji-szykowal-zamach-na-obywatela-usa/", "2026-08-13"]
+
+- date: 2026-08-25
+  where: SK
+  location: Slovakia
+  type: sabotage_arrest
+  rung: 2
+  attribution: 2
+  summary: Slovak police arrested three foreign nationals over a foiled plan to set fire to a drone manufacturing plant, amid concern about Russian involvement in attacks on European defence firms.
+  src:
+    - [eu_regional_press, "TVP World", "Slovak police foil drone factory arson plot", "https://tvpworld.com/95028361/police-foil-planned-arson-attack-on-slovak-drone-factory", "2026-08-25"]
+
+- date: 2026-09-14
+  where: RO
+  location: Carfil industrial platform, Brașov
+  type: arson
+  rung: 2
+  attribution: 4
+  note: Romania's intelligence service and anti-terror prosecutors said on 26 October that a sabotage network coordinated from Russia set the fire and charged three people.
+  summary: A fire broke out on the Carfil industrial platform beside a Romarm ammunition factory in Brașov. Investigators identified two Belarusians and a Ukrainian living in the EU as the perpetrators.
+  src:
+    - [eu_gov_security, "Romanian Intelligence Service", "Comunicat de presă 26.10.2026", "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html", "2026-10-26"]
+    - [eu_regional_press, "Agerpres", "DIICOT și SRI: Incendiul de la Carfil Brașov, provocat de o rețea de sabotaj coordonată din Rusia", "https://agerpres.ro/justitie/2026/10/26/video-diicot-si-sri-incendiul-de-la-carfil-brasov-provocat-de-o-retea-de-sabotaj-coordonata-din-rusi--1607014", "2026-10-26"]
+
+- date: 2026-10-18
+  where: LT
+  location: Lithuania
+  type: arson
+  rung: 2
+  attribution: 3
+  note: Lithuanian authorities said they suspected Russian involvement.
+  summary: Lithuania said it foiled an attempt to set fire to Starlink satellite equipment in the country.
+  src:
+    - [ua_independent, "The Kyiv Independent", "Lithuania foils arson attack on Starlink equipment, suspects Russian involvement", "https://kyivindependent.com/lithuania-foils-arson-attack-on-starlink-equipment-suspects-russian-involvement/", "2026-10-18"]

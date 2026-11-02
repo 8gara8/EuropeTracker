@@ -1,0 +1,74 @@
+# Seed incidents: military pressure on NATO (SPEC §9 Phase 4; counting rules in routine/STYLE.md §4).
+# Exercises, build-ups and probes near NATO borders that officials announce or report, and border
+# violations. Locations in BY or RU stay at rung 1. Coverage is representative.
+# src: [category, outlet, title, url, published]. Ids are assigned by seed:build.
+
+- date: 2023-07-29
+  where: BY
+  affected: [PL, LT]
+  location: Grodno region, near the Suwałki Gap
+  type: force_buildup
+  rung: 1
+  attribution: 3
+  note: Poland's prime minister called it a step toward a hybrid attack; Poland moved more than 1,000 troops east.
+  summary: Poland said more than 100 Wagner fighters, relocated to Belarus after their mutiny, had moved near Grodno, close to the Suwałki Gap. Belarus then began drills near the Polish and Lithuanian borders.
+  src:
+    - [intl_press, "Al Jazeera", "Poland raises alarm as Wagner forces move closer to border", "https://www.aljazeera.com/news/2023/7/29/poland-raises-alarm-as-wagner-forces-move-closer-to-border", "2023-07-29"]
+
+- date: 2024-05-23
+  where: EE
+  location: Narva River
+  type: border_violation
+  rung: 2
+  attribution: 3
+  note: Estonia summoned Russia's chargé d'affaires; the EU called the removal unacceptable.
+  summary: Russian border guards removed about 24 of the 50 navigation buoys Estonia had placed to mark the border fairway in the Narva River, after Russia disputed their positions.
+  src:
+    - [eu_regional_press, "ERR News", "Russian border guards remove markers from Estonian waters in Narva River", "https://news.err.ee/1609350048/russian-border-guards-remove-markers-from-estonian-waters-in-narva-river", "2024-05-23"]
+    - [ua_independent, "European Pravda", "EU demands Russia to explain unacceptable actions on Estonian border", "https://www.eurointegration.com.ua/eng/news/2024/05/24/7186680", "2024-05-24"]
+
+- date: 2025-01-12
+  where: RU
+  affected: [FI]
+  location: Kamenka and Petrozavodsk, near the Finnish border
+  type: force_buildup
+  rung: 1
+  attribution: 3
+  note: Finnish experts and NATO officials judged it no immediate threat.
+  summary: Satellite imagery reported by Yle and later SVT showed Russia expanding military installations near the Finnish border, including tents for about 2,000 troops at Kamenka and vehicle storage at Petrozavodsk.
+  src:
+    - [ua_independent, "Euromaidan Press", "Russia expands military installations near Finnish border, YLE reveals", "https://euromaidanpress.com/2025/01/12/russia-expands-military-installations-near-finnish-border-yle-reveals/", "2025-01-12"]
+
+- date: 2025-09-12
+  where: BY
+  affected: [PL, LT, LV]
+  location: Belarus
+  type: exercise_near_border
+  rung: 1
+  attribution: 3
+  summary: Russia and Belarus held the Zapad-2025 strategic exercise in Belarus, with nuclear and Oreshnik scenarios and up to 13,000 troops. Poland closed its border with Belarus and Lithuania and Latvia restricted airspace near it.
+  src:
+    - [intl_press, "The Star (Reuters)", "Poland to close Belarus border due to Russia-led military exercises, PM says", "https://www.thestar.com.my/news/world/2025/09/09/poland-closing-belarus-border-due-to-zapad-excercises-pm-says", "2025-09-09"]
+    - [eu_regional_press, "Polskie Radio", "Poland closes Belarus border over Russia-led war games", "https://www.polskieradio.pl/395/7784/artykul/3578321,poland-closes-belarus-border-over-russialed-war-games", "2025-09-12"]
+
+- date: 2025-09-19
+  where: PL
+  location: Orlen Petrobaltic platform, Baltic Sea
+  sea: baltic
+  type: probe
+  rung: 1
+  attribution: 3
+  summary: Two Russian fighter jets flew low over the Orlen Petrobaltic drilling platform, breaching its safety zone in Poland's economic zone, the same day MiG-31s violated Estonian airspace.
+  src:
+    - [intl_press, "Reuters", "Russian jets violated safety zone of drilling platform in Baltic sea, Poland says", "https://www.reuters.com/business/aerospace-defense/russian-jets-violated-safety-zone-drilling-platform-baltic-sea-poland-says-2025-09-19/", "2025-09-19"]
+
+- date: 2026-06-08
+  where: RU
+  affected: [PL, LT]
+  location: Kaliningrad region and the Baltic Sea
+  type: exercise_near_border
+  rung: 1
+  attribution: 3
+  summary: Russia's Baltic Fleet staged air drills from Kaliningrad with Su-24M bombers and Su-30SM2 fighters, rehearsing strikes on convoys, command posts and warships during NATO's BALTOPS exercise.
+  src:
+    - [intl_press, "Army Recognition", "Russia rehearses Baltic strike operations from Kaliningrad with Su-24M bombers and Su-30SM2 fighters", "https://armyrecognition.com/news/aerospace-news/2026/russia-rehearses-baltic-strike-operations-from-kaliningrad-with-su-24m-bombers-and-su-30sm2-fighters", "2026-06-08"]

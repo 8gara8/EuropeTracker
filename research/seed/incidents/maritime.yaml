@@ -437,6 +437,38 @@
   src:
     - [intl_press, "Marine Insight", "Cargo Ship With 12 Crew Sinks In Black Sea Off Romania Following Suspected Drone Attack", "https://www.marineinsight.com/cargo-ship-with-12-crew-sinks-in-black-sea-off-romania-following-suspected-drone-attack/", "2026-08-29"]
 
+- date: 2026-10-05
+  where: RO
+  affected: [RO, BG, TR]
+  location: Black Sea off Romania
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  attribution: 3
+  killed: 1
+  injured: 1
+  note: Zelensky said Russian drones sank the ships.
+  summary: Russian drones sank the Turkish-owned freighter Royad Mammadov, carrying Ukrainian maize from Izmail to Ravenna, off Romania; its captain was killed and 11 crew rescued. A Bulgarian tanker carrying grain to Romania was also sunk; its 18 crew were saved.
+  src:
+    - [ua_independent, "Militarnyi", "Russian Drones Sink Royad Mammadov Dry Cargo Ship Carrying Ukrainian Grain", "https://militarnyi.com/en/news/russia-sink-royad-mammadov-ship-ukr-grain/", "2026-10-05"]
+    - [eu_regional_press, "tagesschau", "Handelsschiff sinkt im Schwarzen Meer - mehrere Tote", "https://www.tagesschau.de/ausland/europa/schwarzes-meer-schiff-verunglueckt-100.html", "2026-10-05"]
+
+- date: 2026-10-13
+  where: BG
+  affected: [BG, MT]
+  location: Bulgarian economic zone, Black Sea
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  serious: true
+  attribution: 3
+  injured: 5
+  note: Bulgaria's president summoned the Russian ambassador.
+  summary: Drones struck two ships in Bulgaria's waters overnight. The HS Dignity, bound for Brăila, sank with only one crew member rescued; the Malta-flagged Chelsea 3, bound for Giurgiulești, was badly damaged and its 15 crew evacuated, five injured.
+  src:
+    - [eu_regional_press, "DW", "Wohl Tote bei Drohnenattacke auf Schiffe vor Bulgarien", "https://www.dw.com/de/wohl-tote-bei-drohnenattacke-auf-schiffe-vor-bulgarien/a-79649500", "2026-10-13"]
+    - [ru_by_independent, "Novaya Gazeta Europe", "Новый виток черноморской эскалации", "https://novayagazeta.eu/articles/2026/10/13/novyi-vitok-chernomorskoi-eskalatsii", "2026-10-13"]
+
 - date: 2026-10-15
   where: RO
   location: 8–10 miles off Sulina
