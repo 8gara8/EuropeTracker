@@ -1,15 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
-import { git, isClean, type Git } from "./lib/git";
+import { git, isClean, onOrigin, syncMain, type Git } from "./lib/git";
 import { CLAUDE_TOKEN_SERVICE, readSecret } from "./lib/keychain";
 import { acquireLock } from "./lib/lock";
 
 // Preflight (SPEC §7.2 step 1). Every check either passes or ends the run with a code; "skip" ends it
-// quietly (another run holds the lock, or today's brief already exists).
+// quietly (another run holds the lock, or today's brief is already published); "unpushed" means an
+// earlier run committed today's brief but couldn't push it, so this run only pushes it.
 
 export type PreflightResult =
   | { status: "ok"; token: string; notes: string[] }
   | { status: "skip"; reason: string }
+  | { status: "unpushed"; reason: string }
   | { status: "fail"; code: "E_ARCH" | "E_LOCK" | "E_NET" | "E_GIT" | "E_AUTH"; message: string };
 
 export interface PreflightOptions {
@@ -51,13 +53,17 @@ export async function preflight(o: PreflightOptions): Promise<PreflightResult> {
     await g(["ls-remote", "--heads", "origin", "main"], 30_000);
     if (!o.dryRun) {
       await g(["checkout", "main"]);
-      await g(["pull", "--ff-only"], 60_000);
+      await syncMain(g); // also carries briefs whose push failed on top of GitHub's main
     }
   } catch (e) {
     return { status: "fail", code: "E_GIT", message: (e as Error).message };
   }
 
-  if (!o.force && fs.existsSync(path.join(o.repo, "content", "briefs", `${o.date}.json`))) {
+  const brief = `content/briefs/${o.date}.json`;
+  if (!o.force && fs.existsSync(path.join(o.repo, brief))) {
+    if (!o.dryRun && !(await onOrigin(g, brief))) {
+      return { status: "unpushed", reason: `The brief for ${o.date} is committed here but not on GitHub: an earlier push failed. Pushing it now.` };
+    }
     return { status: "skip", reason: `The brief for ${o.date} is already published.` };
   }
 

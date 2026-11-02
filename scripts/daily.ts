@@ -14,6 +14,7 @@ import { buildContext } from "../lib/context";
 import { isValidDate, taipeiTime, taipeiToday, windowFor } from "../lib/dates";
 import { Pack } from "../lib/schema/pack";
 import type { AgentContext } from "../lib/schema/context";
+import type { DraftBrief } from "../lib/schema/draft-brief";
 import { siteUrl } from "../lib/site";
 import { validateDraft, type ValidationIssue } from "../lib/validate";
 
@@ -40,6 +41,8 @@ export const CONFIG = {
   agentTimeoutMax: 45 * MIN,
   repairTimeout: 6 * MIN,
   maxRepairs: 2,
+  /** Kept free after the last repair for publishing and the live check, so the run ends by the hard stop. */
+  publishReserve: 4 * MIN,
   liveWaitMax: env.ET_LIVE_WAIT_MS ? Number(env.ET_LIVE_WAIT_MS) : 8 * MIN,
   archive: env.ET_ARCHIVE !== "0",
   collectTimeout: 4 * MIN,
@@ -74,6 +77,12 @@ const NEXT_STEP: Record<string, string> = {
 /** "06:55" on `date`, in Taipei, as epoch ms. */
 const at = (date: string, hhmm: string) => Date.parse(`${date}T${hhmm}:00+08:00`);
 
+/** How long the next repair may run: up to REPAIR_TIMEOUT, ending PUBLISH_RESERVE before the hard stop; 0 when there's no room. */
+export function repairBudget(hardStop: number, now: number): number {
+  const left = hardStop - now - CONFIG.publishReserve;
+  return left < 2 * MIN ? 0 : Math.min(CONFIG.repairTimeout, left);
+}
+
 function cleanup(repo: string, keepDays: number): void {
   const cutoff = Date.now() - keepDays * 86_400_000;
   for (const dir of ["logs", "drafts", "research/packs"]) {
@@ -87,16 +96,17 @@ function cleanup(repo: string, keepDays: number): void {
   }
 }
 
-async function waitLive(url: string, maxMs: number, log: RunLog): Promise<boolean> {
+/** Polls `url` until it answers 200, never past `maxMs` from now. */
+export async function waitLive(url: string, maxMs: number, log: Pick<RunLog, "line">): Promise<boolean> {
   const until = Date.now() + maxMs;
   while (Date.now() < until) {
     try {
-      const res = await fetch(url, { method: "HEAD", signal: AbortSignal.timeout(15_000) });
+      const res = await fetch(url, { method: "HEAD", signal: AbortSignal.timeout(Math.min(15_000, until - Date.now())) });
       if (res.status === 200) return true;
     } catch { /* not yet */ }
-    await new Promise((r) => setTimeout(r, 20_000));
+    await new Promise((r) => setTimeout(r, Math.max(0, Math.min(20_000, until - Date.now()))));
   }
-  log.line(`${url} was not live after ${Math.round(maxMs / MIN)} minutes.`);
+  log.line(`${url} was not live after ${Math.round(Math.max(0, maxMs) / 1000)} s.`);
   return false;
 }
 
@@ -153,6 +163,25 @@ export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promi
   const facts = (): RunFacts => ({ started, finished: new Date().toISOString(), attempts, repairs });
   const draftPath = path.join(repo, "drafts", `${date}.json`);
 
+  /** 7. Publish (or push a brief an earlier run committed), then wait for the page, all before the hard stop. */
+  const finish = async (draft: DraftBrief | null, evidence: string[] | null): Promise<SummaryInput> => {
+    let published;
+    try {
+      published = await publish({ repo, date, draft, context: context ?? undefined, evidence, review: !!f.review, deadline: hardStop - 30_000, log: (m) => log.line(m) });
+    } catch (e) {
+      throw new RunFailure("E_PUBLISH", (e as Error).message, (e as PublishError).errors ?? []);
+    }
+    words = totalWords(published.brief);
+    sources = published.brief.sources.length;
+    const url = f.review ? null : `${siteUrl()}/brief/${date}`;
+    const live = url ? await waitLive(url, Math.min(CONFIG.liveWaitMax, hardStop - Date.now() - 30_000), log) : false;
+    if (!f.review && CONFIG.archive) {
+      spawn(TSX, [path.join(ROOT, "scripts", "archive-urls.ts"), "--date", date], { cwd: repo, detached: true, stdio: "ignore" }).unref();
+    }
+    if (f.review) log.line(`Pushed ${published.branch}; Vercel builds its preview. Approve, then: npm run promote -- --date ${date}`);
+    return { kind: "published", date, brief: published.brief, state: published.previous, liveUrl: live ? url : null, reviewBranch: f.review ? published.branch : undefined, words, facts: facts() };
+  };
+
   log.line(`EuropeTracker daily run for ${date}${f["dry-run"] ? " (dry run)" : ""}${f.review ? " (review)" : ""}; hard stop ${taipeiTime(new Date(hardStop))}.`);
   try {
     // 1. Preflight.
@@ -164,6 +193,12 @@ export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promi
       return 0;
     }
     if (pre.status === "fail") throw new RunFailure(pre.code, pre.message);
+    if (pre.status === "unpushed") {
+      log.line(pre.reason);
+      summary = await finish(null, null);
+      outcome = "published";
+      return 0;
+    }
     for (const n of pre.notes) log.line(n);
     log.line("Preflight passed.");
 
@@ -244,13 +279,16 @@ export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promi
       log.line(`Attempt ${attempt}: ${lastResult.errors.length} errors, ${lastResult.warnings.length} warnings.`);
       let attemptRepairs = 0;
       while (!lastResult.ok && attemptRepairs < CONFIG.maxRepairs && a.transcript.sessionId) {
-        const left = hardStop - Date.now() - 2 * MIN;
-        if (left < 2 * MIN) break;
+        const budget = repairBudget(hardStop, Date.now());
+        if (!budget) {
+          log.line(`Attempt ${attempt}: no time for a repair before the hard stop.`);
+          break;
+        }
         attemptRepairs++;
         repairs++;
-        const prompt = renderTemplate(repairTemplate, { ...vars(Date.now() + Math.min(CONFIG.repairTimeout, left)), ERRORS_JSON: JSON.stringify(lastResult.errors, null, 2) });
+        const prompt = renderTemplate(repairTemplate, { ...vars(Date.now() + budget), ERRORS_JSON: JSON.stringify(lastResult.errors, null, 2) });
         log.line(`Attempt ${attempt}: repair ${attemptRepairs} for ${lastResult.errors.length} errors (${[...new Set(lastResult.errors.map((e) => e.code))].join(", ")}).`);
-        const r = await runAgent(prompt, agentCfg, { timeoutMs: Math.min(CONFIG.repairTimeout, left), transcriptFile: path.join(repo, "logs", `${date}.agent-${attempt}-repair-${attemptRepairs}.jsonl`), resume: a.transcript.sessionId });
+        const r = await runAgent(prompt, agentCfg, { timeoutMs: budget, transcriptFile: path.join(repo, "logs", `${date}.agent-${attempt}-repair-${attemptRepairs}.jsonl`), resume: a.transcript.sessionId });
         transcripts.push(r.transcript);
         lastResult = validate();
         log.line(`Attempt ${attempt}: after repair ${attemptRepairs}, ${lastResult.errors.length} errors.`);
@@ -278,20 +316,8 @@ export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promi
       log.line(`Dry run complete: drafts/${date}.json is valid.`);
       return 0;
     }
-    let published;
-    try {
-      published = await publish({ repo, date, draft, context: context!, evidence: JSON.parse(fs.readFileSync(evidenceFile, "utf8")).urls, review: !!f.review, log: (m) => log.line(m) });
-    } catch (e) {
-      throw new RunFailure("E_PUBLISH", (e as Error).message, (e as PublishError).errors ?? []);
-    }
-    const url = f.review ? null : `${siteUrl()}/brief/${date}`;
-    const live = url ? await waitLive(url, CONFIG.liveWaitMax, log) : false;
-    if (!f.review && CONFIG.archive) {
-      spawn(TSX, [path.join(ROOT, "scripts", "archive-urls.ts"), "--date", date], { cwd: repo, detached: true, stdio: "ignore" }).unref();
-    }
+    summary = await finish(draft, JSON.parse(fs.readFileSync(evidenceFile, "utf8")).urls);
     outcome = "published";
-    summary = { kind: "published", date, brief: draft, state: content.state, liveUrl: live ? url : null, reviewBranch: f.review ? published.branch : undefined, words, facts: facts() };
-    if (f.review) log.line(`Pushed ${published.branch}; Vercel builds its preview. Approve, then: npm run promote -- --date ${date}`);
     return 0;
   } catch (e) {
     const failure = e instanceof RunFailure ? e : new RunFailure("E_INTERNAL", (e as Error).stack ?? String(e));
