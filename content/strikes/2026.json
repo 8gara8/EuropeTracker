@@ -1433,7 +1433,7 @@
       "verification": 1,
       "damage": null,
       "effect": null,
-      "summary": "Ukrainian drones struck the Lukoil refinery in Kstovo, starting a fire near its processing units.",
+      "summary": "Ukrainian drones struck the Lukoil refinery in Kstovo, starting a fire near processing units. Governor Gleb Nikitin said over 100 drones were destroyed and an 'industrial enterprise' in Kstovo district suffered significant damage, with no casualties (reported by AFP).",
       "sources": [
         {
           "title": "Ukrainian Drones Strike LUKOIL Oil Refinery in Kstovo, Fire Breaks Out",
@@ -1441,9 +1441,53 @@
           "category": "ua_independent",
           "url": "https://militarnyi.com/en/news/ukrainian-drones-strike-lukoil-oil-refinery-in-kstovo-fire-breaks-out/",
           "published_at": "2026-11-01"
+        },
+        {
+          "title": "Ucraina a lovit rafinăria rusă de la Kstovo. Moscova admite că o „inteprindere industrială” a fost atacată cu drone",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/ucraina-a-lovit-rafinaria-rusa-de-la-kstovo-moscova-admite-ca-o-inteprindere-industriala-a-fost-atacata-cu-drone-4017017",
+          "published_at": "2026-11-01"
+        },
+        {
+          "title": "Russian strikes leave thousands without power in Ukraine, says Zelenskyy",
+          "outlet": "Politico Europe",
+          "category": "intl_press",
+          "url": "https://www.politico.eu/article/russia-strikes-leave-thousands-without-power-ukraine-volodymyr-zelenskyy/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "published_at": "2026-11-01T22:48:00+08:00"
         }
       ],
       "seed": true,
+      "added": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "STR-2026-0048",
+      "date": "2026-11-01",
+      "target_name": "Kamensky combine, Kamensk-Shakhtinsky",
+      "target_type": "defence_industry",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Zelensky said Ukrainian forces, including the SBU, hit the Kamensky plant, which he said is involved in missile production, plus a Pantsir-S2 and an S-400 command vehicle worth about $70m. Announced 1 November; timing not stated. No Russian confirmation found.",
+      "sources": [
+        {
+          "title": "Наші далекобійні санкції – у Ростовському регіоні (Our long-range sanctions are in the Rostov region, translated)",
+          "outlet": "President of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/V_Zelenskiy_official/21595",
+          "published_at": "2026-11-01T18:27:00+08:00"
+        }
+      ],
+      "seed": false,
       "added": "2026-11-02",
       "updated": null
     }

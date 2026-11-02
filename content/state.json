@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "seed",
+  "as_of": "2026-11-02",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -425,5 +425,23 @@
       "retired_reason": null
     }
   ],
-  "weekly": null
+  "weekly": {
+    "as_of": "2026-11-02",
+    "medium_term": {
+      "question": "Will a Russian drone, missile or debris kill anyone on the land territory of a NATO or EU member state between 2 November 2026 and 2 November 2027?",
+      "estimate": {
+        "probability": 40,
+        "term": "realistic_possibility",
+        "confidence": "low"
+      }
+    },
+    "long_term": {
+      "question": "Will Russia carry out a deliberate, attributable armed attack on the territory of a NATO member by 2 November 2030?",
+      "estimate": {
+        "probability": 20,
+        "term": "highly_unlikely",
+        "confidence": "low"
+      }
+    }
+  }
 }
