@@ -1,5 +1,5 @@
 # EuropeTracker — agent guide (read this first)
-> Internal AI working notes. Never publish this file on the site. If the repo is ever made public, review this file first.
+> Internal AI working notes in a public repo: keep secrets, personal data and machine security details out. Never publish this file on the site.
 > Last reviewed 2026-11-02 · Folder: /Users/kobol/Documents/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
 > About JL and other projects: /Users/8gara8/Documents/AGENTS.md, on JL's other Mac. It isn't reachable from Kobol; if you need it, ask JL rather than guess.
 
@@ -9,7 +9,7 @@ EuropeTracker is a daily morning brief. It answers one question: how likely is t
 to spill into Europe, through which routes, where, and what changed in the last 24 hours? The war is
 tracked only as the drivers of that risk.
 
-- **Owner and main reader:** JL (GitHub `8gara8`), who reads it on a phone before leaving for work at
+- **Owner and main reader:** JL (GitHub `8gara8`), who reads it on a phone before
   08:00 Taipei.
 - **Sibling project:** MEtracker, a Middle East war brief, at `/Users/kobol/Documents/MEwar`.
 - **Good output:**
@@ -41,9 +41,9 @@ tracked only as the drivers of that risk.
     Telegram, GitHub-issue or watchdog alerts.
   - **Content:** every brief has an "Impact on Taiwan" section on how developments might affect
     Taiwan (JL, 2026-11-02; see `routine/STYLE.md` §14).
-  - **Repo:** private until JL says otherwise.
-  - **Left to JL:** whether to move MEtracker's run to 07:00, and Kobol's automatic macOS update
-    setting.
+  - **Repo:** public (JL, 2026-11-02).
+  - **Left to JL:** whether to move MEtracker's run to 07:00, and how Kobol handles overnight OS
+    updates.
   - **Coding:** happens in a separate thread on Opus 5.5 (Ultracode), working from `SPEC.md`.
 - **Phases:**
 
@@ -79,7 +79,8 @@ tracked only as the drivers of that risk.
   `~/.local/bin/claude` (Intel).
 - **No credentials in chat, code, logs or commits.** JL creates the keychain items; code reads them at
   run time.
-- **The repo stays private,** and no public surface gets created without JL's explicit say-so.
+- **The repo is public.** Never commit secrets, tokens, personal data, or details of Kobol's security
+  settings. Create no other public surface without JL's say-so.
 - **The research agent is sandboxed** (`SPEC.md` §8.5). Don't widen its tools.
 - **Change control:** code changes go through pull requests; the pipeline pushes content only.
 - **The spec governs.** If you diverge from `SPEC.md`, update it in the same PR and add a row to §0.3.

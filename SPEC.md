@@ -7,7 +7,7 @@
 **Version:** 1.0
 **Date:** 2026-11-02
 **Design doc:** `docs/DESIGN.md` (design v0.2, approved by JL on 2026-11-02)
-**Repo:** https://github.com/8gara8/EuropeTracker (private, default branch `main`)
+**Repo:** https://github.com/8gara8/EuropeTracker (public, default branch `main`)
 **Pipeline host:** Kobol, `/Users/kobol/Documents/EuropeTracker`
 
 ---
@@ -34,8 +34,8 @@
 - **Native Apple-silicon tools only.** Use `/opt/homebrew/bin/node` and `/opt/homebrew/bin/npm`. Never
   use `/usr/local/bin/node`, which is an Intel build. `scripts/preflight.ts` enforces
   `process.arch === "arm64"`.
-- **The repo stays private.** Don't make it public or create any other public surface unless JL
-  explicitly says so in the thread.
+- **The repo is public** (JL's decision, 2026-11-02). Never commit secrets, tokens, personal data,
+  or details of Kobol's security settings. Don't create any other public surface without JL's say-so.
 - **No credential handling.** JL creates and stores tokens (§8.6). Code reads them from the macOS
   keychain at run time. Never print, log, commit or paste a token.
 - **The research agent is sandboxed** (§8.5). It gets no shell, no git, no MCP servers, and no write
@@ -88,7 +88,7 @@ about 06:15 Taipei, and never later than 06:55.
 
 - **Site:** https://europetracker.vercel.app. This is Vercel project `europetracker` in team
   "8gara8's projects". Record the actual domain when the project is created.
-- **Repo:** https://github.com/8gara8/EuropeTracker (private).
+- **Repo:** https://github.com/8gara8/EuropeTracker (public).
 - **Host:** Kobol (MacBook Pro, Apple silicon, user `kobol`). Facts about it are in Appendix C.
 - **Reader:** JL, on a phone, before 08:00 Taipei.
 
@@ -1917,10 +1917,9 @@ Assumptions. These are a starting set; JL can edit them in the Phase 4 review.
   install the native build (§8.4).
 - **Vercel:** team "8gara8's projects" (`team_xxXFmwmVsAfTU86OFG8fcX3S`), Hobby plan. The `metracker`
   project lives there too. Don't modify it.
-- **Power:** system sleep is disabled. FileVault is off. Automatic login is **not** set. Automatic
-  macOS update installs are **on**, so an overnight update reboot leaves Kobol at the login window and
-  the 05:30 run never happens; that morning JL would see no new run in the Claude app. Whether to change the setting is JL's call,
-  and it has been raised with JL.
+- **Power:** system sleep is disabled. An overnight OS update that restarts Kobol can leave it at the
+  login window, and then the 05:30 run doesn't happen; JL would see no new run in the Claude app that
+  morning. How Kobol handles updates is JL's call.
 - **Other scheduled work on Kobol:**
   - MEtracker morning brief, daily at 07:30 (Claude desktop scheduled task; don't touch)
   - a nightly job at 03:00

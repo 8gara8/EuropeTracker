@@ -11,7 +11,8 @@
 >   7, 5.6 "Watchdog" and 5.8 "Alerts" below are superseded; see `SPEC.md` §0.3, §7.7 and §8.3.
 > - The Taiwan section stays, as "Impact on Taiwan": how developments might affect Taiwan
 >   (`routine/STYLE.md` §14).
-> - The repo stays private until JL says otherwise.
+> - The repo is public (JL, 2026-11-02, after approval). Before it went public, details of Kobol's
+>   security settings were removed from sections 5.6 and 9.
 > - Moving the ME run to 07:00 and Kobol's macOS update setting are left to JL.
 > - The coding happens in a separate thread working from `SPEC.md`.
 >
@@ -332,7 +333,7 @@ Next.js on Vercel, generated as static pages and deployed on every push. Pages:
 
 - **Native builds.** Native Apple-silicon Node, pinned, and a native Claude Code command line. The current one is an Intel build running under Rosetta.
 - **Logs.** Each day's run is logged under `logs/`, and a one-line summary of every run goes to `logs/runs.jsonl`.
-- **Overnight macOS updates (needs you).** Automatic macOS installs are on and there's no automatic login. An update that reboots Kobol overnight leaves it at the login screen, and neither tracker runs. Either turn off automatic macOS installs (keep downloads and install by hand at a convenient time) or turn on automatic login. It's a security setting, so it's your call.
+- **Overnight macOS updates (needs you).** An update that restarts Kobol overnight can leave it at the login screen, and then neither tracker runs. How Kobol handles updates is your call.
 - **Other jobs.** The AYW product scan runs Mondays around 06:30. It uses a different folder, so nothing conflicts beyond shared Claude usage. The 03:00 nightly job finishes long before.
 - **Watchdog.** The outside watchdog is a GitHub Actions check. GitHub sometimes runs scheduled checks late, so it is a backstop for a dead Kobol, not the main alert.
 
@@ -388,7 +389,7 @@ I build it here on Kobol in `~/Documents/EuropeTracker`, with code changes as pu
 
 1. Approve the spillover-centred design, or tell me what to change.
 2. Move ME to 07:00 so it reliably lands before 8? (You change it in the Claude app.)
-3. Overnight macOS updates on Kobol: turn off automatic installs, or turn on automatic login?
+3. Overnight macOS updates on Kobol: how should they be handled?
 4. Alerts: Telegram, or GitHub email only?
 5. Taiwan read-through: keep or drop?
 6. Repo at launch: public like MEtracker, or stay private?
