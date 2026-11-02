@@ -1,0 +1,27 @@
+# Seed state (SPEC §4.8, §9 Phase 4). seed:build computes the ladder rung from the incidents and checks
+# the country scores against their floors; everything else here is a researched judgement, explained in
+# docs/SEED-REPORT.md.
+as_of: 2026-11-02     # the date the computed values refer to
+added: 2026-11-02     # `added` on every seed record and `opened` on every seed forecast
+
+next_rung_odds: { probability: 15, term: highly_unlikely, confidence: moderate }
+
+pathways:
+  airspace:           { serious_odds: { probability: 15, term: highly_unlikely, confidence: moderate }, impact: 3 }
+  sabotage:           { serious_odds: { probability: 15, term: highly_unlikely, confidence: moderate }, impact: 3 }
+  maritime:           { serious_odds: { probability: 15, term: highly_unlikely, confidence: moderate }, impact: 3 }
+  cyber_ew:           { serious_odds: { probability: 15, term: highly_unlikely, confidence: moderate }, impact: 2 }
+  military_pressure:  { serious_odds: { probability: 5, term: remote, confidence: moderate }, impact: 4 }
+  nuclear:            { serious_odds: { probability: 5, term: remote, confidence: moderate }, impact: 5 }
+  political_economic: { serious_odds: { probability: 10, term: highly_unlikely, confidence: low }, impact: 3 }
+
+countries:
+  PL: { score: 3, since: 2026-11-02 }
+  LT: { score: 3, since: 2026-11-02 }
+  LV: { score: 3, since: 2026-11-02 }
+  EE: { score: 3, since: 2026-11-02 }
+  FI: { score: 3, since: 2026-11-02 }
+  RO: { score: 3, since: 2026-11-02 }
+  MD: { score: 3, since: 2026-11-02 }
+
+indicators: {}
