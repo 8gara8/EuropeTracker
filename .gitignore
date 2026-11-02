@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+drafts/
+logs/
+needs-review/
+research/packs/
+.env*
+.vercel/
+*.tsbuildinfo
+.DS_Store
