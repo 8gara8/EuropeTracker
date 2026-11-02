@@ -23,7 +23,7 @@
 4. Don't start a phase until the previous phase's PR is merged, unless JL says to stack them.
 5. Where this spec says **verify**, check the real tool, flag or website before relying on it, and note
    what you found in the PR.
-6. If something here is wrong or impossible, fix this spec in the same PR and add a row to §0.3
+6. If something here is wrong or impossible, fix this spec in the same PR and add a row to §0.5
    explaining why. Never diverge silently.
 
 ### 0.2 Hard constraints
@@ -72,6 +72,24 @@
 | Validator crashed under arm64 Node | `node_modules` installed under Rosetta | arm64 enforced in preflight; `npm ci` with native npm |
 | URLs "wrapped" as `web.archive.org/web/2026/...` without being archived | A trick to get past link checks | Keep the real URL; request real snapshots in the background |
 | Failures only showed as a macOS notification on an empty Mac | The result never reached the reader | Every run ends with a summary in the Claude app's scheduled-task run, which JL already reads |
+
+### 0.5 Changes made during the build
+
+Where building showed this spec was wrong, incomplete or ambiguous, the fix went into the relevant
+section in the same PR and is listed here.
+
+| Phase | Spec said | Now | Why |
+|---|---|---|---|
+| 1 | Appendix B indicator names, some over 80 chars | Four names shortened to fit `name` (≤ 80 chars); the full wording moved into `description` | The spec's own limit; long names also break the indicators table on a phone |
+| 1 | `Source.published_at` is an ISO timestamp or null | A timestamp, or a bare `YYYY-MM-DD` date when only the day is known | Sources often show only a date; forcing a fake time invites invented precision or needless repair rounds |
+| 1 | Validation codes in §4.11 | Added `RECORD_FIELDS`, and named the `validateAll` codes (`XREF_ID_DUP`, `XREF_ID_YEAR`, `XREF_UNRESOLVED`, `FILE_ORDER`, `FILE_NAME`, `STATE_SHAPE`, `COMPUTED_MISMATCH`) | A seed flag or a future date on a new record would slip past every other rule; cross-file problems need codes like everything else |
+| 1 | Validation stops at a Zod failure (implied) | On a schema failure the cross-field rules still run where they can, skipping paths the schema already flagged | One repair round can then fix both kinds of error; repairs are capped at 2 |
+| 1 | The validator reads existing records from the context | `validateDraft()` takes the existing records (`World`) separately: `content/` in the pipeline and in the CLI without `--context`; only the context's records with `--context` | The context carries 30 days of incidents and 14 of strikes, but updates can target older records. The pipeline must also validate against its in-memory context, never `drafts/context.json`, which the agent can write |
+| 1 | Strike evidence per level (§4.11 `STRIKE_EVIDENCE`) | Read as non-cumulative: each level needs its own evidence, not the evidence of the levels below | A strike can be geolocated before Russia acknowledges it |
+| 1 | Fixtures written by hand | `fixtures/src/` builds them (`npm run fixtures:gen`): 3 valid drafts and one invalid draft per code (54), each checked to fail with exactly its own code | Keeps contexts, evidence and mutations in step when a rule or schema changes |
+| 1 | `ci.yml` arrives in Phase 2 | Added in Phase 1 without the build step; Phase 2 adds `npm run build` | So every phase's PR passes CI, as §9 requires |
+| 1 | `routine/schema/draft-brief.schema.json` (format unspecified) | Printed with short objects on one line: about 50 KB, every line under 1,000 chars | Pretty-printed it was 67 KB; minified, its single line would be truncated by the agent's file reader |
+| 1 | `COMPUTED_MISMATCH` covers "a brief's computed counts" | `validateAll` checks `computed.pathways` against the incident files, counting only records whose `added` date is on or before the brief's date; incident updates are checked as merged records (deaths below rung 4 are `INCIDENT_RUNG`, a strike's damage or effect is rechecked even when its level is unchanged); forecast-resolution citations are checked in published briefs too | PR #1 review: these gaps let wrong counts, deaths below rung 4, emptied damage descriptions and broken citations through. The snapshot rule keeps a later backfill from invalidating old briefs |
 
 ---
 
@@ -216,6 +234,9 @@ EuropeTracker/
 │   ├── validate.ts                # validateDraft(), validatePublished(), validateAll()
 │   ├── aggregate.ts               # Computed rung, counts, baselines, floors, monthly series, Brier
 │   ├── content.ts                 # Build-time loaders reading ET_CONTENT_DIR (default "content")
+│   ├── context.ts                 # buildContext(): the AgentContext from content/ (§4.14)
+│   ├── apply.ts                   # Merging incident and strike updates into records
+│   ├── json-schema.ts             # Renders the agent's JSON Schema from DraftBrief
 │   ├── text.ts                    # countWords()
 │   ├── probability.ts             # Bands, term checks
 │   ├── dates.ts                   # taipeiToday(), windowFor(), isMonday(), addDays(), Kyiv helpers
@@ -258,6 +279,7 @@ EuropeTracker/
 │   ├── briefs/invalid--<CODE>.json # One per validation rule, ≥ 15 files
 │   ├── context/*.json             # Contexts matching the brief fixtures
 │   ├── evidence/*.json            # Evidence sets for SOURCE_UNSEEN tests
+│   ├── src/                       # Builds the brief, context and evidence fixtures (npm run fixtures:gen)
 │   ├── collect/                   # Saved RSS/Telegram HTML samples for collector tests
 │   └── site-content/              # Coherent SAMPLE dataset for previews (§9 Phase 2)
 ├── tests/                         # Vitest: *.test.ts
@@ -974,13 +996,26 @@ plus the draft's `incidents_new` and `incident_updates`, with the window "last 3
 | NEXT72_DATE | A `next_72h` date outside (date, date + 3 days] | error |
 | METRIC_UNIT, METRIC_DUP, METRIC_SOURCE | Wrong unit, duplicate id, or a value without sources | error |
 | TAIWAN_EMPTY | `taiwan` is empty | error |
+| RECORD_FIELDS | A new incident or strike is dated after the brief date, or has `seed: true` (errors); `added` isn't the brief date or `updated` isn't null (warnings: `publish.ts` sets both) | error / warning |
 
-`validateAll()` (`npm run validate:all`) checks every content file against its schema, plus these
-cross-file rules:
-- ids are unique across all years
-- each incident or strike id's year matches its date
-- every id referenced in any brief resolves
-- forecast ids are unique, and the state has 7 pathways, 7 countries and unique indicator ids
+Some codes also cover close relatives: `COUNTRY_CEILING` flags `indicator_ids` that aren't active
+strategic indicators naming the country; `DEV_LADDER` flags an `attribution` or `verification` set
+without referenced records; `UPDATE_TARGET` flags updates that change nothing or repeat an id;
+`INDICATOR_CHANGE` and `INDICATOR_NEW` need at least one source; `FORECAST_REF` warns when a forecast
+resolves "no" before its `resolves_by` date.
+
+`validateAll()` (`npm run validate:all`) checks every content file against its schema (`SCHEMA`), every
+published brief with `validatePublished()` (the rules that don't need the previous day's state), plus
+these cross-file rules:
+- `XREF_ID_DUP`: ids are unique across all files
+- `XREF_ID_YEAR`: each incident or strike id's year matches its date and its file
+- `XREF_UNRESOLVED`: every id referenced in any brief, and every correction target, resolves
+- `FILE_ORDER`: incident and strike files are sorted by date then id; forecasts by id
+- `FILE_NAME`: brief files are named `YYYY-MM-DD.json`, and the name matches `date` (`DATE_MISMATCH`)
+- `STATE_SHAPE`: the state has the 7 pathways and 7 tier-1 countries in order, and unique indicator and
+  assumption ids
+- `COMPUTED_MISMATCH`: a brief's `computed` counts, and every forecast's stored Brier scores, match what
+  the code computes
 
 ### 4.12 Source registry: `research/sources.yaml`
 
@@ -1219,6 +1254,7 @@ interface IncidentExplorerProps { incidents: Incident[] }
     "validate:all": "tsx scripts/validate.ts --all",
     "schema:gen": "tsx scripts/gen-json-schema.ts",
     "schema:check": "tsx scripts/gen-json-schema.ts --check",
+    "fixtures:gen": "tsx fixtures/src/build.ts",
     "sources:check": "tsx scripts/collect.ts --check-feeds",
     "collect": "tsx scripts/collect.ts",
     "context": "tsx scripts/build-context.ts",
@@ -1357,7 +1393,9 @@ tsx scripts/validate.ts --all
 ```
 
 - The default mode validates a DraftBrief. `--published` validates a published Brief.
-- Without `--context`, it builds the context from `content/` for the draft's date.
+- Without `--context`, it builds the context from `content/` for the draft's date, and checks
+  references against every record in `content/`. With `--context`, the context is the whole world:
+  references resolve only against the records it carries.
 - `--json` prints `{ ok, errors: ValidationIssue[], warnings: ValidationIssue[] }`. Without it, the
   output is human-readable.
 - Exit code: 0 ok, 1 errors, 2 usage or IO error.
@@ -1483,7 +1521,7 @@ Scoring itself happens in `publish.ts` through `aggregate.brier()`.
 
 ### 8.2 GitHub Actions
 
-`.github/workflows/ci.yml`:
+`.github/workflows/ci.yml` (added in Phase 1 without the build step, which Phase 2 adds):
 
 ```yaml
 name: ci
@@ -1878,13 +1916,13 @@ Indicators. Phase 1 marks them all `dormant`; Phase 4 sets the real statuses.
 | ind-sabotage-tempo | incident | Sabotage incidents and arrests above baseline |
 | ind-undersea | incident | Undersea cable and pipeline incidents |
 | ind-airport-closures | incident | Airport or port closures caused by drones |
-| ind-redeployment | strategic | Russian units moving toward the Leningrad and Moscow military districts, Kaliningrad or Belarus; new formations near Finland and the Baltics |
+| ind-redeployment | strategic | Russian units redeploying toward Finland, the Baltics, Kaliningrad or Belarus (description: units moving toward the Leningrad and Moscow military districts, Kaliningrad or Belarus; new formations near Finland and the Baltics) |
 | ind-mobilisation | strategic | Mobilisation or large reserve call-ups |
 | ind-exercises | strategic | Exercises larger than declared, or snap readiness checks near NATO borders |
 | ind-stockpiling | strategic | Ammunition, fuel or medical stockpiling near NATO borders |
-| ind-nuclear-posture | strategic | Changes in nuclear readiness; nuclear or Oreshnik deployments in Belarus or Kaliningrad |
-| ind-pretext | strategic | Official Russian pretext narratives: "compatriots" in the Baltics, Narva, Kaliningrad transit, Suwałki |
-| ind-diplomatic | strategic | Diplomatic warning signs: Russian diplomats' families leaving, embassy drawdowns, airspace closures |
+| ind-nuclear-posture | strategic | Nuclear readiness changes, or nuclear deployments to Belarus or Kaliningrad (description adds Oreshnik) |
+| ind-pretext | strategic | Russian pretext narratives about the Baltics, Narva, Kaliningrad or Suwałki (description: "compatriots" in the Baltics, Narva, Kaliningrad transit, Suwałki) |
+| ind-diplomatic | strategic | Diplomatic warning signs: embassy drawdowns, families leaving, airspace closures |
 | ind-cyber-prepositioning | strategic | Public disclosures of cyber footholds in European grids, rail or telecoms |
 | ind-us-posture | strategic | Changes in US force posture or commitment in Europe (amplifier) |
 | ind-article4 | driver | A NATO Article 4 consultation requested |

@@ -1,0 +1,1024 @@
+{
+  "date": "2026-10-29",
+  "window": {
+    "start": "2026-10-28T05:30:00+08:00",
+    "end": "2026-10-29T05:30:00+08:00"
+  },
+  "weekly": false,
+  "deadline": "2026-10-29T06:45:00+08:00",
+  "state": {
+    "schema_version": 1,
+    "as_of": "2026-10-28",
+    "ladder": {
+      "current_rung": 3,
+      "next_rung_odds": {
+        "probability": 15,
+        "term": "highly_unlikely",
+        "confidence": "moderate"
+      }
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "up"
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat"
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat"
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 2,
+        "trend": "flat"
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat"
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "high"
+        },
+        "impact": 5,
+        "trend": "flat"
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat"
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "since": "2026-10-06"
+      },
+      {
+        "country": "LT",
+        "score": 2,
+        "since": "2026-10-12"
+      },
+      {
+        "country": "LV",
+        "score": 2,
+        "since": "2026-10-12"
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "since": "2026-10-17"
+      },
+      {
+        "country": "FI",
+        "score": 3,
+        "since": "2026-10-17"
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "since": "2026-10-20"
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "since": "2026-10-24"
+      }
+    ],
+    "indicators": [
+      {
+        "id": "ind-airspace-tempo",
+        "tier": "incident",
+        "name": "Airspace violations above the 90-day baseline",
+        "description": "Monthly count of Russian drones, missiles or aircraft violating NATO, EU or Moldovan airspace, compared with the 90-day baseline in the incident database.",
+        "countries": [],
+        "status": "active",
+        "since": "2026-10-28",
+        "last_evidence": "Five airspace incidents in 30 days against a 90-day baseline of 1.3 a month.",
+        "last_evidence_date": "2026-10-28"
+      },
+      {
+        "id": "ind-border-tracks",
+        "tier": "incident",
+        "name": "Russian drone and missile tracks near the Polish, Romanian and Moldovan borders",
+        "description": "Russian strike routes passing close to the Polish, Romanian and Moldovan borders, the usual source of stray drones and missiles.",
+        "countries": [
+          "PL",
+          "RO",
+          "MD"
+        ],
+        "status": "active",
+        "since": "2026-10-06",
+        "last_evidence": "Russian drone routes to Volyn and Lviv pass within a few kilometres of the Polish border.",
+        "last_evidence_date": "2026-10-06"
+      },
+      {
+        "id": "ind-gnss-baltic",
+        "tier": "incident",
+        "name": "GPS interference over the Baltic and Finland",
+        "description": "GPS jamming or spoofing over the Baltic Sea, the Baltic states and Finland that disrupts aviation or shipping or draws official statements.",
+        "countries": [
+          "EE",
+          "LV",
+          "LT",
+          "FI"
+        ],
+        "status": "active",
+        "since": "2026-10-12",
+        "last_evidence": "Jamming forced two Helsinki–Tallinn diversions on 11 October.",
+        "last_evidence_date": "2026-10-12"
+      },
+      {
+        "id": "ind-sabotage-tempo",
+        "tier": "incident",
+        "name": "Sabotage incidents and arrests above baseline",
+        "description": "Sabotage incidents and arrests for sabotage plots linked to Russia, compared with the 90-day baseline.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-undersea",
+        "tier": "incident",
+        "name": "Undersea cable and pipeline incidents",
+        "description": "Damage to undersea cables or pipelines in European waters, and related detentions of vessels.",
+        "countries": [],
+        "status": "watch",
+        "since": "2026-10-17",
+        "last_evidence": "Gulf of Finland data cable damaged on 16 October.",
+        "last_evidence_date": "2026-10-17"
+      },
+      {
+        "id": "ind-airport-closures",
+        "tier": "incident",
+        "name": "Airport or port closures caused by drones",
+        "description": "Closures of airports, ports or military bases caused by drone overflights that officials link to a state actor.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-redeployment",
+        "tier": "strategic",
+        "name": "Russian units redeploying toward Finland, the Baltics, Kaliningrad or Belarus",
+        "description": "Russian units moving toward the Leningrad and Moscow military districts, Kaliningrad or Belarus, or new formations standing up near Finland and the Baltic states.",
+        "countries": [
+          "PL",
+          "LT",
+          "LV",
+          "EE",
+          "FI"
+        ],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-mobilisation",
+        "tier": "strategic",
+        "name": "Mobilisation or large reserve call-ups",
+        "description": "A new Russian mobilisation wave or reserve call-ups well above routine conscription.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-exercises",
+        "tier": "strategic",
+        "name": "Exercises larger than declared, or snap readiness checks near NATO borders",
+        "description": "Russian or Belarusian exercises that exceed their declared size, or snap readiness checks close to NATO borders.",
+        "countries": [
+          "PL",
+          "LT",
+          "LV",
+          "EE",
+          "FI"
+        ],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-stockpiling",
+        "tier": "strategic",
+        "name": "Ammunition, fuel or medical stockpiling near NATO borders",
+        "description": "Build-up of ammunition, fuel or medical supplies near NATO borders beyond what the war in Ukraine explains.",
+        "countries": [
+          "PL",
+          "LT",
+          "LV",
+          "EE",
+          "FI"
+        ],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-nuclear-posture",
+        "tier": "strategic",
+        "name": "Nuclear readiness changes, or nuclear deployments to Belarus or Kaliningrad",
+        "description": "Changes in Russian nuclear readiness, or nuclear or Oreshnik deployments in Belarus or Kaliningrad.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-pretext",
+        "tier": "strategic",
+        "name": "Russian pretext narratives about the Baltics, Narva, Kaliningrad or Suwałki",
+        "description": "Official Russian narratives that could build a pretext for action against a NATO state: \"compatriots\" in the Baltics, Narva, Kaliningrad transit, the Suwałki corridor.",
+        "countries": [
+          "EE",
+          "LV",
+          "LT",
+          "PL"
+        ],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-diplomatic",
+        "tier": "strategic",
+        "name": "Diplomatic warning signs: embassy drawdowns, families leaving, airspace closures",
+        "description": "Russian diplomats' families leaving European capitals, embassy drawdowns, or unusual airspace closures.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-cyber-prepositioning",
+        "tier": "strategic",
+        "name": "Public disclosures of cyber footholds in European grids, rail or telecoms",
+        "description": "Official disclosures that Russian actors hold access inside European power grids, rail or telecoms networks.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-us-posture",
+        "tier": "strategic",
+        "name": "Changes in US force posture or commitment in Europe (amplifier)",
+        "description": "Announced or observed changes in US forces in Europe or in the US commitment to Article 5; an amplifier of other risks.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-article4",
+        "tier": "driver",
+        "name": "A NATO Article 4 consultation requested",
+        "description": "An ally requests consultations under Article 4 of the North Atlantic Treaty.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-article5",
+        "tier": "driver",
+        "name": "NATO Article 5 invoked",
+        "description": "An ally invokes collective defence under Article 5.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-longrange-weapons",
+        "tier": "driver",
+        "name": "A US decision on Tomahawk-class long-range weapons for Ukraine",
+        "description": "A US decision to supply, or to refuse, Tomahawk-class long-range strike weapons to Ukraine.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-ceasefire",
+        "tier": "driver",
+        "name": "A ceasefire framework signed, or direct Putin–Zelensky talks",
+        "description": "A signed ceasefire framework, or direct talks between Presidents Putin and Zelensky.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-refinery-offline",
+        "tier": "driver",
+        "name": "Russian refinery capacity offline above 20%",
+        "description": "Estimates from credible reporting that more than 20% of Russian refining capacity is offline.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      },
+      {
+        "id": "ind-fuel-export-ban",
+        "tier": "driver",
+        "name": "A Russian gasoline export ban or domestic fuel rationing",
+        "description": "A Russian ban on gasoline or diesel exports, or rationing of fuel inside Russia.",
+        "countries": [],
+        "status": "dormant",
+        "since": "2026-11-02",
+        "last_evidence": null,
+        "last_evidence_date": null
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine.",
+        "since": "2026-11-02",
+        "status": "active",
+        "retired_on": null,
+        "retired_reason": null
+      },
+      {
+        "id": "A2",
+        "text": "The United States remains committed to defending NATO allies under Article 5.",
+        "since": "2026-11-02",
+        "status": "active",
+        "retired_on": null,
+        "retired_reason": null
+      },
+      {
+        "id": "A3",
+        "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion.",
+        "since": "2026-11-02",
+        "status": "active",
+        "retired_on": null,
+        "retired_reason": null
+      },
+      {
+        "id": "A4",
+        "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments.",
+        "since": "2026-11-02",
+        "status": "active",
+        "retired_on": null,
+        "retired_reason": null
+      },
+      {
+        "id": "A5",
+        "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders.",
+        "since": "2026-11-02",
+        "status": "active",
+        "retired_on": null,
+        "retired_reason": null
+      }
+    ],
+    "weekly": {
+      "as_of": "2026-10-19",
+      "medium_term": {
+        "question": "Will Russia conduct a deliberate, attributable armed attack on NATO territory in the next 12 months?",
+        "estimate": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        }
+      },
+      "long_term": {
+        "question": "Will Russia and a NATO member be in direct armed conflict by the end of 2030?",
+        "estimate": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        }
+      }
+    }
+  },
+  "computed": {
+    "current_rung": 3,
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 5,
+        "baseline_monthly": 1.3,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.7,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      },
+      "cyber_ew": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.7,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      },
+      "military_pressure": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7,
+        "serious_12m": 0,
+        "monthly_avg_since_2022": 1.1
+      }
+    },
+    "countries": {
+      "PL": {
+        "max_rung_30d": 3,
+        "floor": 3
+      },
+      "LT": {
+        "max_rung_30d": 1,
+        "floor": 2
+      },
+      "LV": {
+        "max_rung_30d": 1,
+        "floor": 2
+      },
+      "EE": {
+        "max_rung_30d": 2,
+        "floor": 3
+      },
+      "FI": {
+        "max_rung_30d": 2,
+        "floor": 3
+      },
+      "RO": {
+        "max_rung_30d": 3,
+        "floor": 3
+      },
+      "MD": {
+        "max_rung_30d": 3,
+        "floor": 3
+      }
+    },
+    "incidents_last_30d": [
+      {
+        "id": "INC-2026-0118",
+        "date": "2026-10-05",
+        "affected": [
+          "PL"
+        ],
+        "pathway": "airspace",
+        "type": "drone_incursion",
+        "rung": 3,
+        "attribution": 3,
+        "summary": "Polish Operational Command said three Russian drones entered Lublin Voivodeship during an attack on Volyn; two were shot down."
+      },
+      {
+        "id": "INC-2026-0121",
+        "date": "2026-10-11",
+        "affected": [
+          "EE",
+          "LV",
+          "LT",
+          "FI"
+        ],
+        "pathway": "cyber_ew",
+        "type": "gnss_jamming",
+        "rung": 1,
+        "attribution": 3,
+        "summary": "Finnish and Estonian aviation authorities reported GPS interference that forced two Helsinki–Tallinn flights to divert."
+      },
+      {
+        "id": "INC-2026-0124",
+        "date": "2026-10-16",
+        "affected": [
+          "FI",
+          "EE"
+        ],
+        "pathway": "maritime",
+        "type": "cable_damage",
+        "rung": 2,
+        "attribution": 3,
+        "summary": "A data cable between Finland and Estonia was damaged; Finnish police detained a tanker suspected of dragging its anchor."
+      },
+      {
+        "id": "INC-2026-0126",
+        "date": "2026-10-19",
+        "affected": [
+          "RO"
+        ],
+        "pathway": "airspace",
+        "type": "debris_impact",
+        "rung": 3,
+        "attribution": 3,
+        "summary": "Drone debris fell near Galați after a Russian attack on Izmail; Romania's defence ministry confirmed the fragments."
+      },
+      {
+        "id": "INC-2026-0127",
+        "date": "2026-10-21",
+        "affected": [
+          "LT"
+        ],
+        "pathway": "airspace",
+        "type": "balloon_incursion",
+        "rung": 1,
+        "attribution": 2,
+        "summary": "Smuggling balloons from Belarus forced Vilnius airport to suspend flights for three hours."
+      },
+      {
+        "id": "INC-2026-0128",
+        "date": "2026-10-23",
+        "affected": [
+          "MD"
+        ],
+        "pathway": "airspace",
+        "type": "drone_incursion",
+        "rung": 3,
+        "attribution": 3,
+        "summary": "Moldova's defence ministry said a Russian drone crossed its airspace near Ocnița before re-entering Ukraine."
+      },
+      {
+        "id": "INC-2026-0129",
+        "date": "2026-10-24",
+        "affected": [
+          "PL"
+        ],
+        "pathway": "sabotage",
+        "type": "arson",
+        "rung": 2,
+        "attribution": 2,
+        "summary": "Prosecutors in Wrocław opened an investigation into a fire at a logistics warehouse, examining a foreign-service link."
+      },
+      {
+        "id": "INC-2026-0130",
+        "date": "2026-10-25",
+        "affected": [
+          "PL",
+          "LT"
+        ],
+        "pathway": "military_pressure",
+        "type": "snap_readiness",
+        "rung": 1,
+        "attribution": 4,
+        "summary": "Belarus held a snap readiness check of about 3,000 troops near Grodno, close to the Polish and Lithuanian borders."
+      },
+      {
+        "id": "INC-2026-0131",
+        "date": "2026-10-27",
+        "affected": [
+          "PL"
+        ],
+        "pathway": "airspace",
+        "type": "drone_incursion",
+        "rung": 3,
+        "attribution": 3,
+        "summary": "Poland's Operational Command said a Russian Geran-type drone crossed from Ukraine during an attack on Volyn and was shot down near Hrubieszów. Debris fell in a field; no injuries. Rzeszów airport closed for 90 minutes."
+      }
+    ]
+  },
+  "next_ids": {
+    "incident": {
+      "2025": "INC-2025-0164",
+      "2026": "INC-2026-0132"
+    },
+    "strike": {
+      "2025": "STR-2025-0412",
+      "2026": "STR-2026-0458"
+    },
+    "forecast": "F-2026-015"
+  },
+  "open_forecasts": [
+    {
+      "id": "F-2026-008",
+      "question": "Will Finland or Estonia charge anyone over the October 2026 Gulf of Finland cable damage by 31 January 2027?",
+      "resolution_criteria": "A Finnish or Estonian prosecutor announces charges connected to the 16 October 2026 cable damage.",
+      "resolves_by": "2027-01-31",
+      "horizon": "90d",
+      "pathway": "maritime",
+      "probability": 35,
+      "base_rate": 30,
+      "base_rate_note": "Two of seven Baltic cable cases since 2023 led to charges within four months.",
+      "opened": "2026-10-17",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-011",
+      "question": "Will Poland request NATO Article 4 consultations before 31 December 2026?",
+      "resolution_criteria": "Poland formally requests consultations under Article 4 of the North Atlantic Treaty.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "airspace",
+      "probability": 10,
+      "base_rate": 5,
+      "base_rate_note": "Poland has requested Article 4 consultations once since 2022.",
+      "opened": "2026-10-06",
+      "updates": [
+        {
+          "date": "2026-10-28",
+          "probability": 12,
+          "note": "Another incursion raises the chance that Poland requests Article 4 consultations."
+        }
+      ],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-012",
+      "question": "Will the IAEA report a complete loss of off-site power at Zaporizhzhia before 31 December 2026?",
+      "resolution_criteria": "An IAEA statement reports that the plant lost all off-site power, however briefly.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "nuclear",
+      "probability": 45,
+      "base_rate": 40,
+      "base_rate_note": "The plant lost all off-site power about once every three months since 2022.",
+      "opened": "2026-10-12",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-013",
+      "question": "Will the EU adopt its 20th sanctions package against Russia by 30 November 2026?",
+      "resolution_criteria": "The Council of the EU announces adoption of the 20th package on or before 30 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": "political_economic",
+      "probability": 65,
+      "base_rate": 70,
+      "base_rate_note": "Earlier packages blocked at a summit were usually adopted within five weeks.",
+      "opened": "2026-10-26",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-014",
+      "question": "Will a Russian drone or missile enter Polish airspace between 29 October and 27 November 2026?",
+      "resolution_criteria": "Polish Operational Command or the defence ministry confirms at least one Russian drone or missile in Polish airspace in the period.",
+      "resolves_by": "2026-11-27",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 75,
+      "base_rate": 60,
+      "base_rate_note": "Polish airspace saw at least one incursion in 7 of the last 12 months.",
+      "opened": "2026-10-28",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    }
+  ],
+  "recent_briefs": [
+    {
+      "date": "2026-10-26",
+      "title": "SAMPLE — Weekly outlook: spillover risk steady at rung 3",
+      "bottom_line": "Risk steady at rung 3; EU leaders missed their sanctions deadline.",
+      "judgement": "Medium-term risk unchanged at highly unlikely."
+    },
+    {
+      "date": "2026-10-27",
+      "title": "SAMPLE — Belarus exercise ends; Saratov damage confirmed",
+      "bottom_line": "Belarus ended its snap check on schedule; imagery confirmed damage at the Saratov refinery.",
+      "judgement": "No change to the board."
+    },
+    {
+      "date": "2026-10-28",
+      "title": "SAMPLE — Russian drone crosses into Poland; Novorossiysk oil terminal struck",
+      "bottom_line": "A Russian drone was shot down over Lublin Voivodeship; airspace odds rise to unlikely (35%).",
+      "judgement": "Incursions fit the strike-route pattern; ladder stays at rung 3."
+    }
+  ],
+  "recent_strikes": [
+    {
+      "id": "STR-2026-0450",
+      "date": "2026-10-17",
+      "target_name": "Ryazan oil refinery",
+      "target_type": "refinery",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 480,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 4,
+      "damage": "Satellite images show a burned crude distillation unit.",
+      "effect": null,
+      "summary": "Drones hit the Ryazan refinery; imagery confirmed damage to a primary processing unit.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Satellite images show damage at Saratov refinery (sample)",
+          "outlet": "Bloomberg",
+          "category": "intl_press",
+          "url": "https://example.org/sample/bloomberg/2026-10-27-saratov",
+          "published_at": "2026-10-27T15:30:00+01:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-18",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0452",
+      "date": "2026-10-21",
+      "target_name": "Saratov oil refinery",
+      "target_type": "refinery",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 520,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 4,
+      "damage": "Satellite images show two burned distillation columns at the refinery.",
+      "effect": null,
+      "summary": "The Saratov governor reported a drone attack and a fire at an industrial site in the city.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Defence ministry statement on strikes in Volyn (sample)",
+          "outlet": "Russian Ministry of Defence (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/mod_russia/2026-10-28",
+          "published_at": "2026-10-28T10:05:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-22",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "STR-2026-0455",
+      "date": "2026-10-23",
+      "target_name": "Ammunition depot near Kotluban",
+      "target_type": "ammunition_depot",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 300,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine claimed a strike on an ammunition depot; fire detections confirmed a blaze at the site.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "FIRMS thermal anomalies, Novorossiysk, 27 October (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-10-27-novorossiysk",
+          "published_at": "2026-10-27"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0456",
+      "date": "2026-10-25",
+      "target_name": "Ammunition depot near Klintsy",
+      "target_type": "ammunition_depot",
+      "region": "Bryansk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 60,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "The Bryansk governor reported a drone attack on the Klintsy district and a fire at a military site.",
+      "sources": [
+        {
+          "title": "General Staff: strike on ammunition depot near Klintsy (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-25-klintsy",
+          "published_at": "2026-10-25T12:00:00+02:00"
+        },
+        {
+          "title": "Governor: drone attack on Klintsy district (sample)",
+          "outlet": "Bryansk governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/bryansk_gov/2026-10-25",
+          "published_at": "2026-10-25T06:40:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-26",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0457",
+      "date": "2026-10-27",
+      "target_name": "Sheskharis oil terminal, Novorossiysk",
+      "target_type": "oil_terminal",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": 44.7,
+      "lon": 37.8,
+      "distance_km": 380,
+      "weapon": "drone",
+      "weapon_detail": "Liutyi long-range drones",
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claimed a strike on Russia's main Black Sea crude terminal. Krasnodar officials reported a fire after debris fell, and satellite fire detections confirm a blaze at the terminal.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Operational headquarters: fire at Novorossiysk port (sample)",
+          "outlet": "Krasnodar Krai operational headquarters (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/opershtab23/2026-10-27",
+          "published_at": "2026-10-27T04:30:00+03:00"
+        },
+        {
+          "title": "FIRMS thermal anomalies, Novorossiysk, 27 October (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-10-27-novorossiysk",
+          "published_at": "2026-10-27"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-28",
+      "updated": null
+    }
+  ],
+  "active_assumptions": [
+    {
+      "id": "A1",
+      "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A2",
+      "text": "The United States remains committed to defending NATO allies under Article 5.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A3",
+      "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A4",
+      "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A5",
+      "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    }
+  ],
+  "pack": {
+    "md": "research/packs/2026-10-29.md",
+    "json": "research/packs/2026-10-29.json",
+    "degraded": false,
+    "failed_feeds": []
+  }
+}
