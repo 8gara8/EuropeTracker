@@ -7,14 +7,13 @@ import { Incident, IncidentsFile } from "./schema/incident";
 import { ArchiveIndex, Correction, CorrectionsFile } from "./schema/misc";
 import { State } from "./schema/state";
 import { Strike, StrikesFile } from "./schema/strike";
+import { contentDir } from "./site";
+
+export { contentDir };
 
 // Reading content/ (or whatever ET_CONTENT_DIR points at). `readRawContent` never throws, so the
 // validator can report every problem; `loadContent` parses strictly and throws, for the site build
 // and the scripts.
-
-export function contentDir(): string {
-  return process.env.ET_CONTENT_DIR || "content";
-}
 
 export interface RawFile {
   /** Path relative to the content dir, e.g. "incidents/2026.json". */

@@ -212,7 +212,7 @@ export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promi
       fs.mkdirSync(path.join(repo, "research/packs"), { recursive: true });
       fs.writeFileSync(path.join(repo, pack.md), `# Source pack ${date}\n\nThe collector failed today (DEGRADED). There are no pack items: find everything with WebSearch and WebFetch.\n`);
       fs.writeFileSync(path.join(repo, pack.json), `${JSON.stringify(Pack.parse({ schema_version: 1, date, window: windowFor(date), generated_at: new Date().toISOString(), degraded: true, feeds: [], items: [] }), null, 2)}\n`);
-    } else log.line(collect.stdout.trim().split("\n")[0] ?? "Collected the source pack.");
+    } else log.line(fs.readFileSync(path.join(repo, "logs", `${date}.collect.log`), "utf8").split("\n")[0] || "Collected the source pack.");
     const packUrls = (Pack.parse(JSON.parse(fs.readFileSync(path.join(repo, pack.json), "utf8")))).items.map((i) => i.url);
 
     // 3. Context. Kept in memory: the agent can write in drafts/, so the validator never trusts the file.

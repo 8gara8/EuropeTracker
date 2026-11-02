@@ -60,6 +60,11 @@ describe("run", () => {
     const r = await run("/bin/sh", ["-c", "echo hi; exit 3"], { timeoutMs: 5000 });
     expect(r).toMatchObject({ code: 3, timedOut: false, stdout: "hi\n" });
   });
+  it("has flushed its output files when it returns", async () => {
+    const file = path.join(mkdtemp("et-run-"), "out.log");
+    await run(process.execPath, ["-e", "process.stdout.write('x'.repeat(4_000_000))"], { timeoutMs: 20_000, stdoutFile: file });
+    expect(fs.statSync(file).size).toBe(4_000_000);
+  });
 });
 
 describe("transcript", () => {
