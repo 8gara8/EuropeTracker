@@ -23,13 +23,13 @@ export function IncidentUpdates({ updates, incidentsById }: { updates: IncidentU
   if (!updates.length) return null;
   return (
     <div className="mt-3">
-      <h3 className="text-sm font-semibold">Updates to earlier incidents</h3>
-      <ul className="mt-1 space-y-2 text-sm">
+      <h3 className="kicker mt-5 mb-1 text-fg">Updates to earlier incidents</h3>
+      <ul className="text-[13.5px]">
         {updates.map((u) => {
           const rec = incidentsById[u.id];
           return (
-            <li key={u.id}>
-              <span className="font-semibold">{u.id}</span>
+            <li key={u.id} className="border-b border-line py-2 text-soft">
+              <span className="font-semibold text-fg">{u.id}</span>
               {rec ? <span className="text-muted"> ({shortDate(rec.date)}, {countryList(rec.affected)})</span> : null}: {incidentChanges(u).join("; ")}. {u.reason}{" "}
               <EvidenceLinks sources={u.add_sources} />
             </li>
@@ -56,13 +56,13 @@ export function StrikeUpdates({ updates, strikesById }: { updates: StrikeUpdate[
   if (!updates.length) return null;
   return (
     <div className="mt-3">
-      <h3 className="text-sm font-semibold">Updates to earlier strikes</h3>
-      <ul className="mt-1 space-y-2 text-sm">
+      <h3 className="kicker mt-5 mb-1 text-fg">Updates to earlier strikes</h3>
+      <ul className="text-[13.5px]">
         {updates.map((u) => {
           const rec = strikesById[u.id];
           return (
-            <li key={u.id}>
-              <span className="font-semibold">{rec ? rec.target_name : u.id}</span>
+            <li key={u.id} className="border-b border-line py-2 text-soft">
+              <span className="font-semibold text-fg">{rec ? rec.target_name : u.id}</span>
               {rec ? <span className="text-muted"> ({shortDate(rec.date)})</span> : null}: {strikeChanges(u).join("; ")}. {u.reason}{" "}
               <EvidenceLinks sources={u.add_sources} />
             </li>
@@ -84,12 +84,12 @@ export function IndicatorChanges({ changes, added, indicatorsById, index }: {
     ...added.map((n) => ({ key: n.id, name: n.name, status: n.status, evidence: n.evidence, ids: n.source_ids, isNew: true })),
   ];
   return (
-    <ul className="space-y-2 text-sm">
+    <ul className="text-[13.5px]">
       {rows.map((r) => (
-        <li key={r.key}>
+        <li key={r.key} className="border-b border-line py-2">
           <span className="font-semibold">{r.name}</span> <StatusBadge status={r.status} />
           {r.isNew ? <> <Tag>new indicator</Tag></> : null}
-          <span className="block text-muted">{r.evidence} <SourceRefs ids={r.ids} index={index} /></span>
+          <span className="mt-0.5 block text-soft">{r.evidence} <SourceRefs ids={r.ids} index={index} /></span>
         </li>
       ))}
     </ul>

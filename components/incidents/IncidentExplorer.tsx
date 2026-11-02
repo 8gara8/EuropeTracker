@@ -8,7 +8,7 @@ import { IncidentRow } from "./IncidentRow";
 
 export interface IncidentExplorerProps { incidents: Incident[] }
 
-const field = "rounded border border-line bg-bg px-2 py-1 text-sm text-fg";
+const field = "border border-line bg-panel px-2 py-1.5 font-mono text-[11px] uppercase tracking-[0.06em] text-fg";
 
 /** Filterable incident list, newest first (SPEC §6). */
 export function IncidentExplorer({ incidents }: IncidentExplorerProps) {
@@ -53,7 +53,7 @@ export function IncidentExplorer({ incidents }: IncidentExplorerProps) {
         <label className="sr-only" htmlFor="ie-q">Search</label>
         <input id="ie-q" className={`${field} min-w-0 flex-1`} type="search" placeholder="Search summaries" value={query} onChange={(e) => setQuery(e.target.value)} />
       </div>
-      <p className="mt-2 text-sm text-muted" aria-live="polite">{shown.length} of {incidents.length} incidents</p>
+      <p className="kicker mt-3" aria-live="polite">{shown.length} of {incidents.length} incidents</p>
       <ul className="divide-y divide-line">
         {shown.map((i) => <IncidentRow key={i.id} incident={i} />)}
       </ul>

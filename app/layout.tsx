@@ -1,8 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { IBM_Plex_Mono, IBM_Plex_Sans, Newsreader } from "next/font/google";
 import type { ReactNode } from "react";
-import { Footer, Nav, SampleBanner } from "@/components/layout/chrome";
+import { Footer, Masthead, SampleBanner } from "@/components/layout/chrome";
 import { SITE_DESCRIPTION, SITE_NAME, isSampleData, siteUrl } from "@/lib/site";
 import "./globals.css";
+
+const newsreader = Newsreader({ subsets: ["latin"], style: ["normal", "italic"], axes: ["opsz"], variable: "--font-newsreader", display: "swap" });
+const plexSans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"], variable: "--font-plex-sans", display: "swap" });
+const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-plex-mono", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
@@ -13,20 +18,19 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b0f17" },
-  ],
+  themeColor: "#f3eee3",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${newsreader.variable} ${plexSans.variable} ${plexMono.variable}`}>
       <body>
         {isSampleData() ? <SampleBanner /> : null}
-        <Nav />
-        <main className="mx-auto max-w-3xl px-4 py-6">{children}</main>
-        <Footer />
+        <div className="mx-auto max-w-[1200px] px-4 pt-5 pb-10 sm:px-8 lg:px-11">
+          <Masthead />
+          <main className="mt-6">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

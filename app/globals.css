@@ -1,80 +1,154 @@
 @import "tailwindcss";
 
+/* The "paper" design shared with ME Tracker (its design handoff, v3): cream paper, ink rules, square
+   corners, Newsreader for display, IBM Plex Sans for text and IBM Plex Mono for labels and numbers.
+   Fonts come from next/font in app/layout.tsx. */
+
 @theme {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-display: var(--font-newsreader), "Source Serif Pro", Georgia, serif;
+  --font-sans: var(--font-plex-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
-/* Semantic colors as Tailwind utilities (bg-panel, text-muted, border-line, …) that follow dark mode. */
+/* Semantic colors as Tailwind utilities (bg-panel, text-muted, border-line, …). */
 @theme inline {
   --color-bg: var(--bg);
-  --color-fg: var(--fg);
-  --color-muted: var(--muted);
-  --color-line: var(--border);
-  --color-panel: var(--panel);
+  --color-deep: var(--bg-deep);
+  --color-fg: var(--ink);
+  --color-soft: var(--ink-soft);
+  --color-muted: var(--ink-mute);
+  --color-rule: var(--rule);
+  --color-line: var(--rule-soft);
+  --color-panel: var(--card);
   --color-accent: var(--accent);
+  --color-amber: var(--amber);
+  --color-green: var(--green);
 }
 
 :root {
-  --bg: #ffffff; --fg: #111827; --muted: #6b7280; --border: #e5e7eb; --panel: #f9fafb; --accent: #1d4ed8;
-  /* rungs 0–6 */
-  --rung-0: #6b7280; --rung-1: #2563eb; --rung-2: #0d9488; --rung-3: #d97706;
-  --rung-4: #ea580c; --rung-5: #dc2626; --rung-6: #7f1d1d;
-  /* probability terms, low → high */
-  --p-remote: #f1f5f9; --p-highly_unlikely: #e0f2fe; --p-unlikely: #bae6fd;
-  --p-realistic_possibility: #fde68a; --p-likely: #fdba74; --p-highly_likely: #f87171; --p-almost_certain: #b91c1c;
+  --bg: #f3eee3; --bg-deep: #eae2d0; --card: #fbf8f0;
+  --ink: #14161a; --ink-soft: #3b3e45; --ink-mute: #6b6a62;
+  --rule: #14161a; --rule-soft: #c9bfa8;
+  --accent: #b33a2e; --amber: #c48416; --green: #3e6b3a;
+  /* tone washes behind pills: escalating, mixed, contained, neutral */
+  --badge-esc: #f1d9d5; --badge-mix: #f3e3c6; --badge-ok: #d9e3d3; --badge-neutral: #ece6d8;
+  /* rungs 0–6, contained → war */
+  --rung-0: #6b6a62; --rung-1: #3e6b3a; --rung-2: #6f7a2e; --rung-3: #c48416;
+  --rung-4: #b33a2e; --rung-5: #8e2418; --rung-6: #5a140d;
   /* country scores 1–5 */
-  --score-1: #16a34a; --score-2: #65a30d; --score-3: #d97706; --score-4: #ea580c; --score-5: #dc2626;
-  /* Additions to SPEC Appendix A: text on the light probability fills in both themes, the seven
-     pathways in charts, and the sample-data banner. */
-  --on-light: #111827;
-  /* Pathway colors: the first seven categorical slots of the validated reference palette, in
-     PATHWAYS order (adjacent-pair CVD ΔE ≥ 9.1 light, 8.4 dark). */
-  --pw-airspace: #2a78d6; --pw-sabotage: #eb6834; --pw-maritime: #1baf7a; --pw-cyber_ew: #eda100;
-  --pw-military_pressure: #e87ba4; --pw-nuclear: #008300; --pw-political_economic: #6250d6;
-  --sample-bg: #fef3c7; --sample-fg: #78350f;
-  --risk-up: #dc2626; --risk-down: #16a34a;
+  --score-1: #3e6b3a; --score-2: #6f7a2e; --score-3: #c48416; --score-4: #b33a2e; --score-5: #8e2418;
+  /* Pathways in charts: a muted categorical palette checked against the paper surface with the
+     dataviz validator (adjacent CVD ΔE ≥ 8.9; amber is below 3:1 contrast, so every chart keeps a
+     legend and a data table). */
+  --pw-airspace: #3d6fa8; --pw-sabotage: #c0503a; --pw-maritime: #22927a; --pw-cyber_ew: #c48416;
+  --pw-military_pressure: #b4688f; --pw-nuclear: #4f7a34; --pw-political_economic: #6b5aa8;
+  /* probability terms, remote → almost certain: one hue, light → dark (an ordinal ramp) */
+  --p-remote: #ece3d0; --p-highly_unlikely: #e8d3c5; --p-unlikely: #e2b9aa; --p-realistic_possibility: #d8988a;
+  --p-likely: #c8705f; --p-highly_likely: #b33a2e; --p-almost_certain: #7a1f16;
+  /* older names the charts use */
+  --border: var(--rule-soft); --muted: var(--ink-mute); --fg: var(--ink); --panel: var(--card);
+  --on-light: #14161a;
+  --sample-bg: #f3e3c6; --sample-fg: #7a4f08;
+  --risk-up: #b33a2e; --risk-down: #3e6b3a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b0f17; --fg: #e5e7eb; --muted: #9ca3af; --border: #1f2937; --panel: #111827; --accent: #60a5fa;
-    --sample-bg: #451a03; --sample-fg: #fde68a;
-    --pw-airspace: #3987e5; --pw-sabotage: #d95926; --pw-maritime: #199e70; --pw-cyber_ew: #c98500;
-    --pw-military_pressure: #d55181; --pw-nuclear: #008300; --pw-political_economic: #9085e9;
-    --risk-up: #f87171; --risk-down: #4ade80;
+/* Element defaults sit in the base layer and our classes in the components layer, so Tailwind's
+   utilities (text-fg, no-underline, …) can override them. */
+@layer base {
+  html {
+    color-scheme: light;
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule-soft);
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    text-decoration-color: var(--accent);
+    color: var(--accent);
   }
 }
 
-html {
-  color-scheme: light dark;
-  -webkit-text-size-adjust: 100%;
+@layer components {
+  .tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Kickers and small labels: mono, uppercase, tracked. */
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  /* Display headings in Newsreader. */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  .brief-h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(30px, 5.2vw, 48px);
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  /* Running prose in the brief: Newsreader for reading, at a comfortable measure. */
+  .prose-serif {
+    font-family: var(--font-display);
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 72ch;
+  }
+
+  .dropcap::first-letter {
+    float: left;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 0.85;
+    padding: 6px 8px 0 0;
+    color: var(--accent);
+  }
 }
 
-body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.6;
+/* Square corners everywhere: part of the document look. */
+* {
+  border-radius: 0 !important;
 }
 
-a {
-  color: var(--accent);
-  text-underline-offset: 2px;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.tabular {
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-}
-
-/* Anchor targets (source list, sections) clear the sticky header. */
+/* Anchor targets (source list, sections) clear the top of the window. */
 :target,
 [id] {
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 1.5rem;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }

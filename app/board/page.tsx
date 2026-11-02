@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LineChart, HeatGrid } from "@/components/charts";
 import { LadderGauge } from "@/components/brief/board";
+import { EasternFlank, PathwayBars, RiskMatrix, SpilloverGauge } from "@/components/brief/overview";
 import { Empty, PageHeader, Section } from "@/components/layout/chrome";
 import { ProbabilityBadge, ScoreBadge, TrendArrow } from "@/components/ui/badges";
 import { pathwayCounts } from "@/lib/aggregate";
@@ -11,12 +12,13 @@ import { IMPACT_LABELS, PATHWAYS, TIER1 } from "@/lib/vocab";
 
 export const metadata: Metadata = { title: "Spillover board" };
 
-const th = "border-b border-line py-1 pr-2 text-left text-xs font-semibold text-muted";
+const th = "border-b border-rule py-1.5 pr-2 text-left font-mono text-[10px] font-normal uppercase tracking-[0.14em] text-muted";
 const td = "border-b border-line py-1.5 pr-2 align-top";
 
 export default function BoardPage() {
   const content = loadContent();
   const { briefs, state, incidents } = content;
+  const latest = briefs.at(-1);
   const asOf = asOfDate(content);
   const recent = briefs.slice(-30);
   const counts = pathwayCounts(incidents, asOf);
@@ -27,22 +29,45 @@ export default function BoardPage() {
 
   return (
     <>
-      <PageHeader title="Spillover board">
-        {state.as_of === "seed" ? "Starting values, before the first brief." : `Current scores as of ${shortDate(state.as_of)}.`}
+      <PageHeader title="Spillover board" kicker={state.as_of === "seed" ? "Starting values" : `Current scores · ${shortDate(state.as_of)}`}>
+        {state.as_of === "seed" ? "Starting values, before the first brief." : `The ladder, pathway odds and country scores from the brief of ${shortDate(state.as_of)}.`}
       </PageHeader>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,330px)_1fr]">
         <LadderGauge current={state.ladder.current_rung} previous={state.ladder.current_rung} nextOdds={state.ladder.next_rung_odds} />
-        <ul className="divide-y divide-line rounded border border-line text-sm">
-          {state.pathways.map((p) => (
-            <li key={p.pathway} className="flex flex-wrap items-center gap-x-2 px-3 py-1.5">
-              <span className="min-w-0 flex-1 font-semibold">{PATHWAY_SHORT[p.pathway]}</span>
-              <TrendArrow trend={p.trend} />
-              <ProbabilityBadge estimate={p.serious_odds} />
-            </li>
-          ))}
-        </ul>
+        {latest ? (
+          <div className="flex flex-col gap-4">
+            <SpilloverGauge current={latest.board.ladder.current_rung} previous={latest.board.ladder.previous_rung} nextOdds={latest.board.ladder.next_rung_odds} rationale={null} pathways={latest.board.pathways} />
+            <div>
+              <p className="kicker text-fg">Why rung {latest.board.ladder.current_rung}</p>
+              <p className="prose-serif mt-2 text-[16px]">{latest.board.ladder.rationale}</p>
+            </div>
+          </div>
+        ) : (
+          <ul className="border border-line bg-panel">
+            {state.pathways.map((p) => (
+              <li key={p.pathway} className="flex flex-wrap items-center gap-x-2 border-b border-line px-3 py-2 last:border-b-0">
+                <span className="min-w-0 flex-1 font-semibold">{PATHWAY_SHORT[p.pathway]}</span>
+                <TrendArrow trend={p.trend} />
+                <ProbabilityBadge estimate={p.serious_odds} />
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
+
+      {latest ? (
+        <>
+          <Section title="Where the risk sits" right="30-day odds of a serious incident × how bad it would be">
+            <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] lg:gap-7">
+              <EasternFlank countries={latest.board.countries} index={{}} />
+              <RiskMatrix pathways={latest.board.pathways} />
+            </div>
+            <h3 className="kicker mt-6 mb-1 text-fg">The seven pathways</h3>
+            <PathwayBars pathways={latest.board.pathways} computed={latest.computed.pathways} />
+          </Section>
+        </>
+      ) : null}
 
       <Section title="Ladder history" note="The highest rung reached in the 30 days before each brief.">
         {briefs.length ? (

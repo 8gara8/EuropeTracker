@@ -14,9 +14,9 @@ export function SourceRefs({ ids, index }: { ids: string[]; index: SourceIndex }
   const nums = [...new Set(ids)].filter((id) => index[id]).map((id) => ({ id, n: index[id]! }));
   if (!nums.length) return null;
   return (
-    <span className="whitespace-nowrap text-xs">
+    <span className="whitespace-nowrap font-mono text-[10px]">
       {nums.map(({ id, n }) => (
-        <a key={id} href={`#src-${id}`} className="ml-0.5 align-super" aria-label={`Source ${n}`}>[{n}]</a>
+        <a key={id} href={`#src-${id}`} className="ml-0.5 align-super text-accent no-underline hover:underline" aria-label={`Source ${n}`}>[{n}]</a>
       ))}
     </span>
   );
@@ -28,17 +28,17 @@ function published(at: string | null): string | null {
 
 export function SourceList({ sources, archive }: { sources: Source[]; archive: Record<string, string> }) {
   return (
-    <ol className="space-y-2 text-sm">
+    <ol className="gap-10 md:columns-2">
       {sources.map((s, i) => {
         const snapshot = archive[normalizeUrl(s.url)];
         return (
-          <li key={s.id} id={`src-${s.id}`} className="flex gap-2">
-            <span className="tabular w-6 shrink-0 text-right text-muted">{i + 1}.</span>
+          <li key={s.id} id={`src-${s.id}`} className="flex break-inside-avoid gap-2.5 border-b border-dotted border-line py-2 text-[13px]">
+            <span className="tabular shrink-0 pt-px text-[11px] text-muted">[{String(i + 1).padStart(2, "0")}]</span>
             <span className="min-w-0">
-              <span className="font-semibold">{s.outlet}</span>{" "}
-              <a href={s.url} rel="noopener noreferrer" className="break-words">{s.title}</a>
-              <span className="block text-xs text-muted">
-                {sourceCategoryLabel(s.category)} · {s.language}
+              <span className="font-semibold text-fg">{s.outlet}</span>{" "}
+              <a href={s.url} rel="noopener noreferrer" className="break-words text-soft">{s.title}</a>
+              <span className="kicker mt-0.5 block normal-case tracking-[0.06em]">
+                ↳ {sourceCategoryLabel(s.category)} · {s.language}
                 {published(s.published_at) ? ` · ${published(s.published_at)}` : ""}
                 {snapshot ? <> · <a href={snapshot} rel="noopener noreferrer">archived</a></> : null}
               </span>
@@ -54,7 +54,7 @@ export function SourceList({ sources, archive }: { sources: Source[]; archive: R
 export function EvidenceLinks({ sources }: { sources: EvidenceSource[] }) {
   if (!sources.length) return null;
   return (
-    <span className="text-xs text-muted">
+    <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-muted">
       Sources:{" "}
       {sources.map((s, i) => (
         <span key={s.url}>
