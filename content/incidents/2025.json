@@ -2019,6 +2019,42 @@
     },
     {
       "id": "INC-2025-0054",
+      "date": "2025-11-29",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldovan airspace",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Gerbera-type drones entered Moldova overnight, evading its radars, and Moldova closed its airspace for about 70 minutes; two passenger flights diverted to Romania. No debris was found.",
+      "attribution": 3,
+      "attribution_note": "Moldova's defence ministry called the incursions hostile acts of intimidation and destabilisation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 1,
+      "sources": [
+        {
+          "title": "Moldova says briefly shut airspace after fresh drone breach",
+          "outlet": "EWN (Reuters)",
+          "category": "intl_press",
+          "url": "https://ewn.co.za/2025/11/29/moldova-says-briefly-shut-airspace-after-fresh-drone-breach",
+          "published_at": "2025-11-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0055",
       "date": "2025-12-02",
       "date_precision": "day",
       "location_country": "TR",
@@ -2054,7 +2090,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0055",
+      "id": "INC-2025-0056",
       "date": "2025-12-03",
       "date_precision": "day",
       "location_country": "LT",
@@ -2090,7 +2126,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0056",
+      "id": "INC-2025-0057",
       "date": "2025-12-15",
       "date_precision": "day",
       "location_country": "TR",
@@ -2126,7 +2162,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0057",
+      "id": "INC-2025-0058",
       "date": "2025-12-17",
       "date_precision": "day",
       "location_country": "BY",
@@ -2164,7 +2200,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0058",
+      "id": "INC-2025-0059",
       "date": "2025-12-18",
       "date_precision": "day",
       "location_country": "MT",
@@ -2201,7 +2237,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0059",
+      "id": "INC-2025-0060",
       "date": "2025-12-19",
       "date_precision": "day",
       "location_country": "TR",
@@ -2237,7 +2273,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0060",
+      "id": "INC-2025-0061",
       "date": "2025-12-25",
       "date_precision": "day",
       "location_country": "PL",
@@ -2273,7 +2309,7 @@
       "updated": null
     },
     {
-      "id": "INC-2025-0061",
+      "id": "INC-2025-0062",
       "date": "2025-12-31",
       "date_precision": "day",
       "location_country": "FI",

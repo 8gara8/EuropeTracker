@@ -758,6 +758,18 @@
   src:
     - [intl_press, "The Independent", "Balloons from Belarus force closure of Lithuania’s airport – again", "https://www.independent.co.uk/news/world/europe/belarus-balloon-airport-closure-lithuania-b2876583.html", "2025-12-02"]
 
+- date: 2025-11-29
+  where: MD
+  location: Moldovan airspace
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  note: Moldova's defence ministry called the incursions hostile acts of intimidation and destabilisation.
+  hours: 1
+  summary: Two Gerbera-type drones entered Moldova overnight, evading its radars, and Moldova closed its airspace for about 70 minutes; two passenger flights diverted to Romania. No debris was found.
+  src:
+    - [intl_press, "EWN (Reuters)", "Moldova says briefly shut airspace after fresh drone breach", "https://ewn.co.za/2025/11/29/moldova-says-briefly-shut-airspace-after-fresh-drone-breach", "2025-11-29"]
+
 - date: 2025-12-03
   where: LT
   location: Vilnius Airport
