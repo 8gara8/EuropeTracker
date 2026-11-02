@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it } from "vitest";
 import { addDays, daysBetween, isMonday, isValidDate, kyivDateOf, monthsBetween, taipeiDateOf, taipeiToday, windowFor } from "@/lib/dates";
 import { inBand, inGap, termFor } from "@/lib/probability";
+import { contentDir, isSampleData } from "@/lib/site";
 import { countWords } from "@/lib/text";
 import { isGoogleNewsUrl, isHttpsUrl, normalizeUrl, stripArchivePrefix } from "@/lib/urls";
 import { METRIC_IDS, METRICS, PROBABILITY_TERM_IDS, PROBABILITY_TERMS, SOURCE_CATEGORIES, SOURCE_CATEGORY_IDS, COUNTRIES, COUNTRY_NAMES } from "@/lib/vocab";
@@ -118,5 +119,22 @@ describe("vocab", () => {
     expect(COUNTRIES).toHaveLength(35);
     expect(new Set(COUNTRIES).size).toBe(35);
     expect(Object.keys(COUNTRY_NAMES)).toHaveLength(38);
+  });
+});
+
+describe("content folder", () => {
+  const keep = { dir: process.env.ET_CONTENT_DIR, ref: process.env.VERCEL_GIT_COMMIT_REF };
+  const set = (k: string, v: string | undefined) => { if (v === undefined) delete process.env[k]; else process.env[k] = v; };
+  afterEach(() => { set("ET_CONTENT_DIR", keep.dir); set("VERCEL_GIT_COMMIT_REF", keep.ref); });
+
+  it("uses the sample on previews but the real content on review/DATE previews", () => {
+    set("ET_CONTENT_DIR", "fixtures/site-content");
+    set("VERCEL_GIT_COMMIT_REF", "phase-5-review-previews");
+    expect([contentDir(), isSampleData()]).toEqual(["fixtures/site-content", true]);
+    set("VERCEL_GIT_COMMIT_REF", "review/2026-11-02");
+    expect([contentDir(), isSampleData()]).toEqual(["content", false]);
+    set("ET_CONTENT_DIR", undefined);
+    set("VERCEL_GIT_COMMIT_REF", undefined);
+    expect([contentDir(), isSampleData()]).toEqual(["content", false]);
   });
 });

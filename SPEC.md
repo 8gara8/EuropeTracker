@@ -113,6 +113,7 @@ section in the same PR and is listed here.
 | 4 | The end-to-end test copies `content/` | It copies `fixtures/empty-content` (the pre-seed placeholder); a new `tests/seed.test.ts` checks every pathway has an incident and that `research/seed` builds to the committed `content/` until go-live | Seeded content no longer matches the fixture drafts; the seed and `content/` must not drift apart before go-live |
 | 4 | Counting rules (STYLE.md §4) | Seed conventions, listed in `docs/SEED-REPORT.md`: stray Ukrainian drones logged as war munitions on European soil; airport closures by unidentified drones at rung 2; European boardings of shadow-fleet ships at rung 2, Russian escorts at rung 1; a death or a strike inside territorial waters at sea is rung 4 | The rules don't cover these cases explicitly; the daily agent should follow the same conventions |
 | 4 | The seed builder marks rung 4 or deaths as serious | It also applies the pathway threshold where a type meets it by definition: every maritime strike on or seizure of a vessel is serious, and `INCIDENT_SERIOUS` enforces that for seeds, drafts and updates | Seed review: seven ship strikes below rung 4 (Ukrainian strikes on shadow-fleet tankers off Turkey and Malta, and three ships off Romania) were left non-serious, so maritime showed 5 serious incidents in 12 months instead of 12 |
+| 5 | Supervised runs are reviewed on the `review/DATE` Vercel preview | Previews build from the sample data (`ET_CONTENT_DIR`), so `review/DATE` previews now build from `content/` instead | Found before the first supervised run: the preview would have shown the sample briefs, not the brief under review |
 
 ---
 
@@ -1569,7 +1570,9 @@ Scoring itself happens in `publish.ts` through `aggregate.brier()`.
 - **Ignored Build Step:** `[ ! -d app ]`, so commits without the site (such as Phase 1 on its own)
   are skipped instead of failing a production build.
 - **Environment variables:**
-  - Preview: `ET_CONTENT_DIR=fixtures/site-content`.
+  - Preview: `ET_CONTENT_DIR=fixtures/site-content`. Previews of `review/DATE` branches ignore it and
+    build from `content/` (`contentDir()` in `lib/site.ts` checks `VERCEL_GIT_COMMIT_REF`), so the
+    supervised review shows the real brief.
   - Production: `ET_SITE_URL=https://<production domain>`.
 - **Protection:** the team default (Vercel Authentication on previews) is fine. The production domain
   must be publicly reachable. Check it with `curl -I` after the first production deploy.
@@ -1719,7 +1722,7 @@ the same credentials.
 
 | Variable | Default | Used by |
 |---|---|---|
-| `ET_CONTENT_DIR` | `content` | Site loaders and scripts (Vercel Preview sets `fixtures/site-content`) |
+| `ET_CONTENT_DIR` | `content` | Site loaders and scripts (Vercel Preview sets `fixtures/site-content`; `review/DATE` previews use `content/`) |
 | `ET_SITE_URL` | `https://europetracker.vercel.app` | Live check, RSS links, metadata |
 | `ET_MODEL` | `opus` | Agent model alias |
 | `ET_CLAUDE_BIN` | `/Users/kobol/.europetracker/cli/node_modules/.bin/claude` | daily.ts |

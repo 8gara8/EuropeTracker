@@ -53,9 +53,12 @@ export function run(cmd: string, args: string[], opts: RunOptions): Promise<RunR
     }, opts.timeoutMs);
     const finish = (code: number | null, signal: NodeJS.Signals | null) => {
       clearTimeout(timer);
-      out?.end();
-      err?.end();
-      resolve({ code, signal, timedOut, durationMs: Date.now() - started, stdout, stderr });
+      // Resolve once the output files are flushed, so callers can read them straight away.
+      const streams = [out, err].filter((s) => s !== null);
+      let open = streams.length;
+      const done = () => resolve({ code, signal, timedOut, durationMs: Date.now() - started, stdout, stderr });
+      if (!open) done();
+      for (const s of streams) s.end(() => { if (--open === 0) done(); });
     };
     child.on("error", (e) => {
       stderr += String(e);
