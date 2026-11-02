@@ -8,7 +8,7 @@
 **Date:** 2026-11-02
 **Design doc:** `docs/DESIGN.md` (design v0.2, approved by JL on 2026-11-02)
 **Repo:** https://github.com/8gara8/EuropeTracker (public, default branch `main`)
-**Pipeline host:** Kobol, `/Users/kobol/Documents/EuropeTracker`
+**Pipeline host:** Kobol, `/Users/kobol/Projects/EuropeTracker`
 
 ---
 
@@ -100,9 +100,10 @@ section in the same PR and is listed here.
 | 3 | `npm install -g` the Claude CLI; flags including `--max-turns 150` | Installed in `/Users/kobol/.europetracker/cli`; flags updated for 2.1.316 (§8.4): `--restricted`, `--safe-mode`, `--tools`, `dontAsk`, a fallback model, no `--max-turns` | A global install would shadow JL's own `claude`; the new flags fence the agent in more tightly than allow and deny lists alone |
 | 3 | Run outcome from the agent's exit code | From the transcript's final `result` event (`is_error`) and the draft file | The CLI exits 0 even when sign-in fails |
 | 3 | Pack Markdown lists an item under every category it covers | Full line under its first category; a short "see <category>" line under the others. Google News items show "(lead: search for the original article)" instead of their redirect URL | The first real pack was 263 KB; it is now about 107 KB. The redirect URLs can't be cited or reliably opened |
-| 3 | Source registry candidates | 79 feeds, all live on 2026-11-02: 16 Telegram channels, 30 RSS feeds, 33 Google News searches. ISW, NATO and the US State Department block or lack RSS, so they are site searches | Verified with `npm run sources:check` |
+| 3 | Source registry candidates | 79 feeds, all live on 2026-11-02: 16 Telegram channels, 29 RSS feeds, 34 Google News searches. ISW, NATO and the US State Department block or lack RSS, so they are site searches | Verified with `npm run sources:check` |
 | 3 | Validate against the context | `daily.ts` validates against the context it built in memory (a copy goes to `logs/DATE.context.json`), never `drafts/context.json` | The agent can write in `drafts/` |
 | 3 | `--dry-run`: no git writes | Preflight also skips `git checkout main` and `git pull` on a dry run, and allows uncommitted changes | A dry run must work from a feature branch |
+| 3 | The repo lives in `/Users/kobol/Documents/EuropeTracker` | It lives in `/Users/kobol/Projects/EuropeTracker` (moved 2026-11-02) | `~/Documents` is synced by iCloud Drive, which made conflict copies ("state 2.json", ".git/index 2") of files the pipeline rewrites. The 05:30 run refuses a tree with stray files, and iCloud can roll a file back to an older copy. `~/Projects` isn't synced |
 | 3 | daily.ts runs its helpers by relative path | It runs `collect.ts` and `archive-urls.ts` with the repo's own `tsx` by absolute path, and takes an injectable token reader | So the end-to-end test can run the real pipeline against a temporary repo with a fake agent |
 
 ---
@@ -1292,7 +1293,7 @@ interface IncidentExplorerProps { incidents: Incident[] }
 #!/bin/zsh
 export PATH=/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export TZ=Asia/Taipei
-cd /Users/kobol/Documents/EuropeTracker || exit 1
+cd /Users/kobol/Projects/EuropeTracker || exit 1
 mkdir -p logs
 exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily.ts "$@"
 ```
@@ -1574,7 +1575,7 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
 - **What:** a scheduled task in the Claude desktop app on Kobol, the same mechanism MEtracker uses.
   - Name: "Europe tracker morning".
   - Schedule: daily at 05:30 Asia/Taipei (cron `30 5 * * *`), set to run on this computer.
-  - Working folder: `/Users/kobol/Documents/EuropeTracker`.
+  - Working folder: `/Users/kobol/Projects/EuropeTracker`.
   - Prompt: the contents of `routine/TASK.md`.
 - **What it does:** runs `zsh scripts/daily.sh` in the background, waits for it to finish, then
   replies with `logs/DATE.summary.md`. That reply is JL's morning update in the Claude app. The task
@@ -1583,7 +1584,7 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
 - **Creating it** (Phase 5, with JL present):
   1. Create the task with the scheduled-tasks tool, or in the app.
   2. A task created by the tool takes the creating session's folder and starts in Manual permission
-     mode, so set the folder to `/Users/kobol/Documents/EuropeTracker` on the task page.
+     mode, so set the folder to `/Users/kobol/Projects/EuropeTracker` on the task page.
   3. Click Run now once while JL watches, and approve `zsh scripts/daily.sh` and the summary read as
      "Always allowed". Later unattended runs then never stall on a permission prompt.
   4. Confirm the saved folder (`cwd`) in
@@ -1715,7 +1716,7 @@ There are no `.env` files with secrets. Tokens come only from the keychain.
 
 ### 8.9 One-time setup on Kobol (Phase 3, plus Phase 5 for the scheduled task)
 
-1. The repo is already cloned at `/Users/kobol/Documents/EuropeTracker`. Its git config has
+1. The repo is already cloned at `/Users/kobol/Projects/EuropeTracker`. Its git config has
    `user.name = 8gara8` and `user.email = 62337733+8gara8@users.noreply.github.com`.
 2. `/opt/homebrew/bin/npm ci`.
 3. Install the native Claude CLI (§8.4) and create the isolated config dir.
@@ -2006,5 +2007,5 @@ Assumptions. These are a starting set; JL can edit them in the Phase 4 review.
   - MEtracker morning brief, daily at 07:30 (Claude desktop scheduled task; don't touch)
   - a nightly job at 03:00
   - the AYW product scan, Mondays around 06:30 (a different folder; only shared Claude usage)
-- **Repo:** cloned at `/Users/kobol/Documents/EuropeTracker`, with repo-level git identity
+- **Repo:** cloned at `/Users/kobol/Projects/EuropeTracker`, with repo-level git identity
   `8gara8 <62337733+8gara8@users.noreply.github.com>`.

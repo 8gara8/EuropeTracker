@@ -358,7 +358,7 @@ Your two-document process from the old account (design doc, then a SPEC.md that 
 3. **A content quality gate.** You read three supervised runs before anything is scheduled.
 4. **Reconcile before revising.** Any later design change starts by checking the repo against the spec, the rule from your ship-product-workflow. That prevents the drift MEtracker's README shows.
 
-I build it here on Kobol in `~/Documents/EuropeTracker`, with code changes as pull requests you can review.
+I build it here on Kobol in `~/Projects/EuropeTracker`, with code changes as pull requests you can review.
 
 | Phase | What gets built | Done when |
 | --- | --- | --- |

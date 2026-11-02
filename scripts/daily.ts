@@ -61,7 +61,7 @@ class RunFailure extends Error {
 const NEXT_STEP: Record<string, string> = {
   E_ARCH: "run with the native Node: /opt/homebrew/bin/npx tsx scripts/daily.ts",
   E_NET: "Kobol had no network; rerun: npm run daily -- --no-deadline",
-  E_GIT: "check `git status` in ~/Documents/EuropeTracker, then rerun: npm run daily -- --no-deadline",
+  E_GIT: "check `git status` in ~/Projects/EuropeTracker, then rerun: npm run daily -- --no-deadline",
   E_AUTH: "the Claude login token needs renewing (SPEC §8.6), then rerun: npm run daily -- --no-deadline",
   E_AGENT: "rerun: npm run daily -- --no-deadline",
   E_TIMEOUT: "rerun: npm run daily -- --no-deadline",

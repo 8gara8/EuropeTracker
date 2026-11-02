@@ -53,7 +53,7 @@ by 07:00, Kobol did not run the task: check that it is awake, logged in and the 
 
 ## Manual runs
 
-All from `~/Documents/EuropeTracker`, with the native tools on the PATH (`export PATH=/opt/homebrew/bin:$PATH`).
+All from `~/Projects/EuropeTracker`, with the native tools on the PATH (`export PATH=/opt/homebrew/bin:$PATH`).
 
 | Job | Command |
 |---|---|
@@ -97,3 +97,5 @@ errors listed in `validator-report.json`, validate, then publish.
   `content/`.
 - Don't widen the agent's tools or settings (`scripts/lib/agent.ts`, `routine/agent-settings.json`).
 - Don't leave uncommitted changes in the repo overnight: the 05:30 run refuses a dirty tree (`E_GIT`).
+- Don't move the repo into `~/Documents` or `~/Desktop`: iCloud Drive syncs those folders and makes
+  conflict copies ("state 2.json") of files the pipeline rewrites, which stops the next run (`E_GIT`).

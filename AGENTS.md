@@ -1,6 +1,6 @@
 # EuropeTracker — agent guide (read this first)
 > Internal AI working notes in a public repo: keep secrets, personal data and machine security details out. Never publish this file on the site.
-> Last reviewed 2026-11-02 · Folder: /Users/kobol/Documents/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
+> Last reviewed 2026-11-02 · Folder: /Users/kobol/Projects/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
 > About JL and other projects: /Users/8gara8/Documents/AGENTS.md, on JL's other Mac. It isn't reachable from Kobol; if you need it, ask JL rather than guess.
 
 ## 1. Who and what
