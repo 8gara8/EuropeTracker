@@ -1,5 +1,5 @@
 import type { z } from "zod";
-import { brier, computedRung, countryFloors } from "./aggregate";
+import { brier, computedRung, countryFloors, pathwayCounts } from "./aggregate";
 import { applyIncidentChanges, applyStrikeChanges } from "./apply";
 import { readRawContent, type RawFile } from "./content";
 import { yearOf } from "./dates";
@@ -7,7 +7,7 @@ import { Brief } from "./schema/brief";
 import type { AgentContext } from "./schema/context";
 import { DraftBrief } from "./schema/draft-brief";
 import { ForecastsFile } from "./schema/forecast";
-import { IncidentsFile } from "./schema/incident";
+import { IncidentsFile, type Incident } from "./schema/incident";
 import { ArchiveIndex, CorrectionsFile } from "./schema/misc";
 import { State } from "./schema/state";
 import { StrikesFile } from "./schema/strike";
@@ -233,10 +233,12 @@ export function validateAll(dir: string): ValidationResult {
       }
     });
   };
+  const incidents: Incident[] = [];
   for (const f of raw.incidents) {
     const parsed = parseFile(IncidentsFile, f, issues);
     if (!parsed) continue;
     checkRecords(f, parsed.year, parsed.incidents, "incidents");
+    incidents.push(...parsed.incidents);
     parsed.incidents.forEach((r, i) => issues.push(...incidentRecordIssues(r, `${f.file}: incidents[${i}]`)));
   }
   for (const f of raw.strikes) {
@@ -295,6 +297,17 @@ export function validateAll(dir: string): ValidationResult {
     const parsed = Brief.safeParse(f.data);
     if (!parsed.success) continue;
     const b = parsed.data;
+    // computed.pathways is a snapshot: count the records that had been added when the brief was published.
+    const counts = pathwayCounts(incidents.filter((x) => x.added <= b.date), b.date);
+    for (const p of PATHWAYS) {
+      for (const field of ["incidents_30d", "baseline_monthly"] as const) {
+        const stored = b.computed.pathways[p][field];
+        if (stored !== counts[p][field]) {
+          issues.push(error("COMPUTED_MISMATCH", `${f.file}: computed.pathways.${p}.${field}`,
+            `${f.file}: computed.pathways.${p}.${field} is ${stored} but the incidents added by ${b.date} give ${counts[p][field]}.`));
+        }
+      }
+    }
     const unresolved = (where: string, ids: string[], set: Set<string>, what: string) => {
       const missing = ids.filter((id) => !set.has(id));
       if (missing.length) issues.push(error("XREF_UNRESOLVED", `${f.file}: ${where}`, `Unknown ${what}: ${missing.join(", ")}.`));

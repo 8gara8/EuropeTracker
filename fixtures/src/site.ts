@@ -199,7 +199,7 @@ const CHANGE_REASONS: Partial<Record<CountryCode, string>> = {
 function pathwaysFor(date: string, incidents: Incident[]): DraftBrief["board"]["pathways"] {
   const today = DAILY[date]!;
   const before = DAILY[addDays(date, -1)]!;
-  const counts = pathwayCounts(incidents, date);
+  const counts = pathwayCounts(incidents.filter((i) => i.added <= date), date);
   return weekday.board.pathways.map((x) => {
     const prob = x.pathway === "airspace" ? today.airspace : x.pathway === "sabotage" ? today.sabotage : x.serious_odds.probability;
     const prev = x.pathway === "airspace" ? before.airspace : x.pathway === "sabotage" ? before.sabotage : prob;
@@ -380,7 +380,8 @@ function quietDay(date: string, incidents: Incident[]): DraftBrief {
 }
 
 function publish(d: DraftBrief, incidents: Incident[], publishedAt: string): Brief {
-  const counts = pathwayCounts(incidents, d.date);
+  // A snapshot of what was known on the day: records added by the brief's date (validateAll checks this).
+  const counts = pathwayCounts(incidents.filter((i) => i.added <= d.date), d.date);
   return Brief.parse({
     ...d,
     published_at: publishedAt,

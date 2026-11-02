@@ -88,7 +88,7 @@
         },
         "impact": 5,
         "trend": "flat",
-        "rationale": "1 incident in 30 days against a baseline of 0 a month; no change.",
+        "rationale": "0 incidents in 30 days against a baseline of 0 a month; no change.",
         "source_ids": [
           "s10"
         ]
@@ -566,7 +566,7 @@
         "baseline_monthly": 0.3
       },
       "military_pressure": {
-        "incidents_30d": 1,
+        "incidents_30d": 0,
         "baseline_monthly": 0
       },
       "nuclear": {
