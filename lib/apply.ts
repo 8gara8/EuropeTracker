@@ -156,8 +156,8 @@ export function applyDraft(content: ContentState, draft: DraftBrief, opts: { pub
     weekly: w ? { as_of: D, medium_term: { question: w.medium_term.question, estimate: w.medium_term.estimate }, long_term: { question: w.long_term.question, estimate: w.long_term.estimate } } : content.state.weekly,
   };
 
-  // The brief, with the numbers code computes.
-  const counts = pathwayCounts(incidents, D);
+  // The brief, with the numbers code computes: a snapshot of the records added by today (validateAll checks it).
+  const counts = pathwayCounts(incidents.filter((i) => i.added <= D), D);
   const brief: Brief = {
     ...draft,
     incidents_new: newIncidents,
