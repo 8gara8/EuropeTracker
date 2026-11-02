@@ -95,7 +95,7 @@ about 06:15 Taipei, and never later than 06:55.
 **Key features**
 
 1. **Daily brief:** bottom line, spillover board, new incidents, drivers, warning-indicator changes,
-   judgement with scored forecasts, Taiwan read-through, next 72 hours, and sources. The spillover
+   judgement with scored forecasts, impact on Taiwan, next 72 hours, and sources. The spillover
    board has a seven-rung ladder, seven pathways and seven frontline countries. Monday briefs add a
    weekly outlook.
 2. **Incident database:** spillover incidents in Europe since February 2022, each graded on a four-level
@@ -584,7 +584,7 @@ interface DraftBrief {
   forecast_resolutions: ForecastResolution[];
   assumption_updates: AssumptionUpdate[];
 
-  taiwan: string;                  // 1–150 words; the no-news line is valid (STYLE.md §14)
+  taiwan: string;                  // "Impact on Taiwan", 1–150 words: how today's developments might affect Taiwan (STYLE.md §14); the no-news line is valid
   next_72h: NextEvent[];           // 0–8
   weekly_outlook: WeeklyOutlook | null; // non-null iff weekly
   metrics: Metric[];               // each MetricId at most once
@@ -1141,7 +1141,7 @@ Everything is a server component except `IncidentExplorer`.
 // Header (title, date, window, quiet/weekly badges) → BottomLine → SpilloverBoard (LadderGauge,
 // PathwayTable, CountryTable) → KeyDevelopments → NewIncidents (+ incident updates) → DeepStrikes
 // (new strikes + updates) → CategoryNotes (12 compact rows) → IndicatorChanges → Judgement (+ competing
-// explanations, change my mind) → Forecasts (new, updated, resolved) → Taiwan → WeeklyOutlook (Mondays)
+// explanations, change my mind) → Forecasts (new, updated, resolved) → Impact on Taiwan → WeeklyOutlook (Mondays)
 // → Next72h → Metrics → Sources
 interface BriefViewProps {
   brief: Brief;

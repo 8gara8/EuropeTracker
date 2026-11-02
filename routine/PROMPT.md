@@ -94,4 +94,5 @@ word DONE.
       unless `host_statement` is "none_yet".
 - [ ] Each strike's verification level has its required evidence.
 - [ ] On a Monday, `weekly_outlook` is filled and checks every active assumption.
-- [ ] The Taiwan section is present, or uses the exact no-news line.
+- [ ] "Impact on Taiwan" says how today's developments might affect Taiwan (STYLE.md §14), or uses
+      the exact no-news line.

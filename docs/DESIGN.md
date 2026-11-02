@@ -9,7 +9,8 @@
 > - No alerts (JL, after approval). JL gets updates from the Claude interface, so the daily run is a
 >   scheduled task in the Claude app, like ME, and its reply is the morning update. Sections 5.2 step
 >   7, 5.6 "Watchdog" and 5.8 "Alerts" below are superseded; see `SPEC.md` §0.3, §7.7 and §8.3.
-> - The Taiwan read-through stays.
+> - The Taiwan section stays, as "Impact on Taiwan": how developments might affect Taiwan
+>   (`routine/STYLE.md` §14).
 > - The repo stays private until JL says otherwise.
 > - Moving the ME run to 07:00 and Kobol's macOS update setting are left to JL.
 > - The coding happens in a separate thread working from `SPEC.md`.

@@ -253,14 +253,29 @@ A category with nothing material gets status `no_change` and the exact text "No 
 - **Assumptions check:** every active assumption marked holds, weakening or broken, with a note.
 - **Calibration note:** how resolved forecasts scored against their base rates.
 
-## 14. Taiwan read-through
+## 14. Impact on Taiwan
 
-At most 150 words, when relevant. Possible angles:
-- China–Russia alignment
-- North Korean involvement
-- lessons for Taiwan's defence (drones, deep strikes, air defence, energy security)
+Every brief has this section, at most 150 words. It says how today's developments might affect Taiwan.
+Lead with the most direct impact, and name the mechanism and its likely size, not just the topic.
+Angles, most direct first:
 
-If nothing is new, write exactly: "No fresh Taiwan-relevant development; prior assessment unchanged."
+1. **US attention and weapons supply.** Air-defence interceptors, munitions and production capacity
+   going to Europe that Taiwan also needs (Patriot, NASAMS, HIMARS, Stinger, artillery shells). Delivery
+   backlogs and priority decisions.
+2. **China's calculus.** What the West's response (resolve, sanctions, deterrence of Russia) signals to
+   Beijing. China's support for Russia's war economy, such as components in drones and missiles.
+   China–Russia military cooperation near Taiwan or Japan.
+3. **Military lessons for Taiwan's defence.** Drones and counter-drone, deep strikes, sea drones against
+   naval forces, air defence against mass raids, grid and energy resilience, civil defence.
+4. **Energy and markets.** LNG and oil prices, shipping and insurance, as they bear on Taiwan's energy
+   security.
+5. **Chips and export controls.** Taiwanese components found in Russian weapons; enforcement on
+   Taiwanese firms; sanctions as a precedent for a Taiwan contingency.
+6. **Diplomacy.** European engagement with Taiwan; EU–China relations; North Korea's role in the war
+   and what it means for the region.
+
+If nothing new bears on Taiwan, write exactly: "No fresh Taiwan-relevant development; prior assessment
+unchanged."
 
 ## 15. Quiet days
 

@@ -39,7 +39,8 @@ tracked only as the drivers of that risk.
   - **No alerts.** JL gets updates from the Claude interface. The daily run is a scheduled task in the
     Claude app on Kobol (like MEtracker), and its reply, the run summary, is the update. No email,
     Telegram, GitHub-issue or watchdog alerts.
-  - **Content:** the Taiwan read-through stays.
+  - **Content:** every brief has an "Impact on Taiwan" section on how developments might affect
+    Taiwan (JL, 2026-11-02; see `routine/STYLE.md` §14).
   - **Repo:** private until JL says otherwise.
   - **Left to JL:** whether to move MEtracker's run to 07:00, and Kobol's automatic macOS update
     setting.
