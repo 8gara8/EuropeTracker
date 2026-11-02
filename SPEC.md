@@ -89,6 +89,7 @@ section in the same PR and is listed here.
 | 1 | Fixtures written by hand | `fixtures/src/` builds them (`npm run fixtures:gen`): 3 valid drafts and one invalid draft per code (54), each checked to fail with exactly its own code | Keeps contexts, evidence and mutations in step when a rule or schema changes |
 | 1 | `ci.yml` arrives in Phase 2 | Added in Phase 1 without the build step; Phase 2 adds `npm run build` | So every phase's PR passes CI, as §9 requires |
 | 1 | `routine/schema/draft-brief.schema.json` (format unspecified) | Printed with short objects on one line: about 50 KB, every line under 1,000 chars | Pretty-printed it was 67 KB; minified, its single line would be truncated by the agent's file reader |
+| 1 | `COMPUTED_MISMATCH` covers "a brief's computed counts" | `validateAll` checks `computed.pathways` against the incident files, counting only records whose `added` date is on or before the brief's date; incident updates are checked as merged records (deaths below rung 4 are `INCIDENT_RUNG`, a strike's damage or effect is rechecked even when its level is unchanged); forecast-resolution citations are checked in published briefs too | PR #1 review: these gaps let wrong counts, deaths below rung 4, emptied damage descriptions and broken citations through. The snapshot rule keeps a later backfill from invalidating old briefs |
 
 ---
 
