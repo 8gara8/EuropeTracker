@@ -38,6 +38,9 @@ tracked only as the drivers of that risk.
 - **2026-11-02:** Phase 3 code built: 79 verified feeds, the collector, `daily.ts` with retries,
   repairs and the failure path, publish and promote, the run summary, and `docs/RUNBOOK.md`. The native
   Claude CLI is installed in `~/.europetracker/cli`. The real dry run waits for JL's agent token.
+- **2026-11-02:** Phase 4 seed built for JL's review: 248 incidents (February 2022 to 2 November 2026),
+  47 strikes from the last 60 days, the starting state (rung 4) and 11 forecasts, written as YAML in
+  `research/seed/` and built with `npm run seed:build`. Gaps and judgement calls: `docs/SEED-REPORT.md`.
 - **Decisions, 2026-11-02:**
   - **Goal:** gauge spillover risk to Europe. Ukraine's deep strikes into Russia are emphasised as a
     driver.

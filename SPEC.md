@@ -106,6 +106,9 @@ section in the same PR and is listed here.
 | 3 | `--dry-run`: no git writes | Preflight also skips `git checkout main` and `git pull` on a dry run, and allows uncommitted changes | A dry run must work from a feature branch |
 | 3 | The repo lives in `/Users/kobol/Documents/EuropeTracker` | It lives in `/Users/kobol/Projects/EuropeTracker` (moved 2026-11-02) | `~/Documents` is synced by iCloud Drive, which made conflict copies ("state 2.json", ".git/index 2") of files the pipeline rewrites. The 05:30 run refuses a tree with stray files, and iCloud can roll a file back to an older copy. `~/Projects` isn't synced |
 | 3 | daily.ts runs its helpers by relative path | It runs `collect.ts` and `archive-urls.ts` with the repo's own `tsx` by absolute path, and takes an injectable token reader | So the end-to-end test can run the real pipeline against a temporary repo with a fake agent |
+| 4 | Seed records written straight into `content/` | Written as YAML in `research/seed/` (one file per pathway, plus strikes, state and forecasts); `npm run seed:build` assigns ids in date order, checks every record and the country floors, validates the result as a whole, writes `content/` and the tables in `docs/SEED-REPORT.md`. It refuses to run once a daily brief or a non-seed record exists | Hundreds of records are easier to review and correct as YAML, and ids stay in date order after edits |
+| 4 | The end-to-end test copies `content/` | It copies `fixtures/empty-content` (the pre-seed placeholder); a new `tests/seed.test.ts` checks every pathway has an incident and that `research/seed` builds to the committed `content/` until go-live | Seeded content no longer matches the fixture drafts; the seed and `content/` must not drift apart before go-live |
+| 4 | Counting rules (STYLE.md §4) | Seed conventions, listed in `docs/SEED-REPORT.md`: stray Ukrainian drones logged as war munitions on European soil; airport closures by unidentified drones at rung 2; European boardings of shadow-fleet ships at rung 2, Russian escorts at rung 1; a death or a strike inside territorial waters at sea is rung 4 | The rules don't cover these cases explicitly; the daily agent should follow the same conventions |
 
 ---
 
@@ -267,6 +270,7 @@ EuropeTracker/
 │   └── archive-index.json         # URL → Wayback snapshot
 ├── research/
 │   ├── sources.yaml               # Source registry: feeds, channels, queries, domain map
+│   ├── seed/                      # Phase 4 seed records as YAML (npm run seed:build → content/)
 │   └── packs/                     # (gitignored) daily source packs: YYYY-MM-DD.json/.md
 ├── routine/
 │   ├── TASK.md                    # Prompt of the Claude app's scheduled task (written in Phase 0)
@@ -299,6 +303,7 @@ EuropeTracker/
 │   ├── src/                       # Builds the brief, context and evidence fixtures (npm run fixtures:gen)
 │   ├── collect/                   # Saved RSS/Telegram HTML samples for collector tests
 │   ├── agent/                     # A real CLI transcript and fake-claude.mjs for the pipeline tests
+│   ├── empty-content/             # The pre-seed placeholder content, for the end-to-end tests
 │   └── site-content/              # Coherent SAMPLE dataset for previews (§9 Phase 2)
 ├── tests/                         # Vitest: *.test.ts
 ├── drafts/                        # (gitignored) agent output and context

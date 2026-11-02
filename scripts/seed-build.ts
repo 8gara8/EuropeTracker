@@ -240,6 +240,13 @@ export function buildState(dir: string, current: State, incidents: Incident[]): 
     if (!s) fail("state.yaml", [`countries.${c} is missing`]);
     return { country: c, score: s.score, since: s.since };
   });
+  const floors = countryFloors(incidents, seed.as_of);
+  const activeStrategic = (c: string) => current.indicators.some((ind) =>
+    ind.tier === "strategic" && seed.indicators[ind.id]?.status === "active" && (ind.countries as string[]).includes(c));
+  const outOfRange = countries.filter((c) => c.score < floors[c.country].floor || (c.score > floors[c.country].floor + 1 && !activeStrategic(c.country)));
+  if (outOfRange.length) {
+    fail("state.yaml", outOfRange.map((c) => `countries.${c.country}: score ${c.score} is outside its floor ${floors[c.country].floor} (+1, or more with an active strategic indicator naming it)`));
+  }
   const known = new Set(current.indicators.map((i) => i.id));
   const unknown = Object.keys(seed.indicators).filter((id) => !known.has(id));
   if (unknown.length) fail("state.yaml", unknown.map((id) => `indicators.${id} isn't in content/state.json`));

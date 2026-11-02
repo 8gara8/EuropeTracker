@@ -139,9 +139,12 @@ describe("validateAll", () => {
 
 describe("context and schema files", () => {
   it("builds a valid agent context from the committed content", () => {
-    const ctx = buildContext(loadContent("content", { fresh: true }), "2026-11-03");
+    const content = loadContent("content", { fresh: true });
+    const ctx = buildContext(content, "2026-11-03");
     expect(AgentContext.safeParse(ctx).success).toBe(true);
-    expect(ctx.next_ids).toEqual({ incident: { "2025": "INC-2025-0001", "2026": "INC-2026-0001" }, strike: { "2025": "STR-2025-0001", "2026": "STR-2026-0001" }, forecast: "F-2026-001" });
+    const taken = new Set([...content.incidents, ...content.strikes, ...content.forecasts].map((x) => x.id));
+    const next = [ctx.next_ids.incident["2026"], ctx.next_ids.strike["2026"], ctx.next_ids.forecast];
+    expect(next.every((id) => id !== undefined && !taken.has(id))).toBe(true);
     expect(ctx.window).toEqual({ start: "2026-11-02T05:30:00+08:00", end: "2026-11-03T05:30:00+08:00" });
   });
 

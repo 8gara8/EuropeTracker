@@ -1,0 +1,101 @@
+# Seed forecasts (SPEC §4.9, §9 Phase 4), opened on the seed date. Base rates come from the seed database
+# unless the note says otherwise; probabilities follow STYLE.md §7 and §12.
+
+- question: Will a Russian drone, missile or its debris kill anyone on the land territory of a NATO member state by 31 January 2027?
+  resolution_criteria: Yes if the government of a NATO member reports at least one death on its land territory caused by a Russian drone, missile or debris between 2 November 2026 and 31 January 2027.
+  resolves_by: 2027-01-31
+  horizon: 90d
+  pathway: airspace
+  probability: 15
+  base_rate: 5
+  base_rate_note: One deadly case on NATO land since February 2022 (Przewodów, a Ukrainian interceptor), about 5% over 90 days; raised for record incursion tempo and recent blasts near homes in Galați.
+
+- question: Will NATO aircraft shoot down a drone over Romanian territory or territorial waters by 2 December 2026?
+  resolution_criteria: Yes if Romania's defence ministry reports a NATO or Romanian aircraft shooting down a drone over Romanian land or territorial waters between 2 November and 2 December 2026.
+  resolves_by: 2026-12-02
+  horizon: 30d
+  pathway: airspace
+  probability: 60
+  base_rate: 70
+  base_rate_note: Five shoot-down days over Romania between 24 July and 17 October 2026, about 1.2 a month; lowered slightly because two of them came in a single July surge.
+
+- question: Will a drone or missile strike a merchant ship inside Romanian or Bulgarian territorial waters by 31 December 2026?
+  resolution_criteria: Yes if Romanian or Bulgarian authorities report a ship hit by a drone or missile inside their 12-mile territorial waters between 2 November and 31 December 2026.
+  resolves_by: 2026-12-31
+  horizon: 90d
+  pathway: maritime
+  probability: 45
+  base_rate: 35
+  base_rate_note: One ship hit inside territorial waters (Yara J, 15 October) and several just outside them since July 2026; raised because the campaign against Danube shipping intensified in October.
+
+- question: Will a European government publicly attribute a new act of sabotage on its territory to Russia by 31 December 2026?
+  resolution_criteria: Yes if a European government, prosecutor or security service publicly states that Russia or its intelligence services were behind a specific act of sabotage or attempted sabotage on its territory between 2 November and 31 December 2026.
+  resolves_by: 2026-12-31
+  horizon: 90d
+  pathway: sabotage
+  probability: 85
+  base_rate: 80
+  base_rate_note: Governments attributed or charged Russian-linked sabotage in most months of 2025–2026, including Germany on 1 September and Romania on 26 October 2026.
+
+- question: Will Russian military aircraft violate Estonian or Finnish airspace by 31 January 2027?
+  resolution_criteria: Yes if the Estonian Defence Forces or the Finnish defence ministry reports a Russian military or state aircraft entering their national airspace without permission between 2 November 2026 and 31 January 2027.
+  resolves_by: 2027-01-31
+  horizon: 90d
+  pathway: airspace
+  probability: 60
+  base_rate: 60
+  base_rate_note: Seven Russian aircraft violations of Estonian or Finnish airspace from May 2025 to August 2026, about 0.3 a month, or 60% over 90 days.
+
+- question: Will an undersea cable or gas pipeline in the Baltic Sea be damaged by 31 March 2027?
+  resolution_criteria: Yes if a Baltic Sea state or the operator reports physical damage to an undersea telecom cable, power cable or gas pipeline in the Baltic Sea between 2 November 2026 and 31 March 2027.
+  resolves_by: 2027-03-31
+  horizon: 6-12m
+  pathway: maritime
+  probability: 55
+  base_rate: 55
+  base_rate_note: Six Baltic cable or pipeline damage events from October 2023 to December 2025, clustered in winter; about 55% over five months.
+
+- question: Will the Zaporizhzhia nuclear power plant lose all off-site power again by 31 January 2027?
+  resolution_criteria: Yes if the IAEA reports that the Zaporizhzhia plant lost all off-site power, even briefly, between 2 November 2026 and 31 January 2027.
+  resolves_by: 2027-01-31
+  horizon: 90d
+  pathway: nuclear
+  probability: 75
+  base_rate: 80
+  base_rate_note: The plant lost all off-site power 26 times from August 2022 to August 2026, about once every two months; slightly lower while IAEA-brokered repairs hold.
+
+- question: Will a Russian drone or missile injure or kill anyone in Moldova by 31 January 2027?
+  resolution_criteria: Yes if Moldovan authorities report at least one person injured or killed by a Russian drone, missile or debris on Moldovan territory between 2 November 2026 and 31 January 2027.
+  resolves_by: 2027-01-31
+  horizon: 90d
+  pathway: airspace
+  probability: 55
+  base_rate: 45
+  base_rate_note: Two incidents with injuries in Moldova in October 2026 and none recorded before; raised for the October tempo of crashes near homes.
+
+- question: Will NATO hold Article 4 consultations at an ally's request by 30 April 2027?
+  resolution_criteria: Yes if NATO confirms consultations under Article 4 of the North Atlantic Treaty requested by any ally between 2 November 2026 and 30 April 2027.
+  resolves_by: 2027-04-30
+  horizon: 6-12m
+  pathway: null
+  probability: 30
+  base_rate: 25
+  base_rate_note: Article 4 was invoked three times since February 2022 (February 2022, and by Poland and Estonia in September 2025), about 25% over six months.
+
+- question: Will Russian armed forces cross a NATO member's land border by 30 April 2027?
+  resolution_criteria: Yes if a NATO member's government reports Russian or Belarusian military personnel deliberately crossing its land border on duty, excluding defectors and border-marker disputes.
+  resolves_by: 2027-04-30
+  horizon: 6-12m
+  pathway: military_pressure
+  probability: 5
+  base_rate: 2
+  base_rate_note: No such crossing since 2022; the closest cases were Russian border guards removing Estonian buoys on the Narva river in 2024.
+
+- question: Will Russia and Ukraine agree a general ceasefire covering the whole front line by 30 June 2027?
+  resolution_criteria: Yes if both governments announce a ceasefire covering all front lines that takes effect between 2 November 2026 and 30 June 2027; partial energy or local truces do not count.
+  resolves_by: 2027-06-30
+  horizon: 6-12m
+  pathway: null
+  probability: 15
+  base_rate: 10
+  base_rate_note: No general ceasefire in 56 months of war despite repeated talks; partial truces (energy, local, IAEA-brokered) have not held.

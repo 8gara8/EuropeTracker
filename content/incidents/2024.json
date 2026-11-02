@@ -1,0 +1,1305 @@
+{
+  "schema_version": 1,
+  "year": 2024,
+  "incidents": [
+    {
+      "id": "INC-2024-0001",
+      "date": "2024-02-11",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Etulia, Vulcănești",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Fragments of a Russian Shahed-type drone, probably downed by Ukrainian air defences during an attack on Odesa Oblast, were found near Etulia. Its intact warhead held about 50 kg of explosives and was destroyed at a range.",
+      "attribution": 3,
+      "attribution_note": "Foreign Minister Mihai Popșoi blamed Moscow.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldova Says Crashed Drone Contained Explosives; Minister Blasts Russia For 'Barbaric Attacks' On Ukraine",
+          "outlet": "RFE/RL",
+          "category": "intl_press",
+          "url": "https://www.rferl.org/a/moldova-drone-explosives-russia-barbaric-attacks-ukraine-popsoi/32815727.html",
+          "published_at": "2024-02-12"
+        },
+        {
+          "title": "Fragmente de dronă, găsite la Vulcănești: Accesul în zonă, restricționat",
+          "outlet": "Știri.md",
+          "category": "eu_regional_press",
+          "url": "https://stiri.md/article/social/fragmente-de-drona-depistate-la-vulcanesti-accesul-in-regiune-restrictionat",
+          "published_at": "2024-02-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0002",
+      "date": "2024-02-13",
+      "date_precision": "day",
+      "location_country": "ES",
+      "affected": [
+        "ES"
+      ],
+      "location": "Villajoyosa, Alicante",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "assassination_plot",
+      "rung": 4,
+      "serious": true,
+      "summary": "Maxim Kuzminov, a Russian helicopter pilot who defected to Ukraine in 2023, was found shot dead and run over in a car park in Villajoyosa, Spain.",
+      "attribution": 2,
+      "attribution_note": "Western officials and analysts considered a Russian state killing likely; no one has been charged.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 1,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Bullet-riddled body found in Spain was Russian defector, Ukraine says",
+          "outlet": "The Washington Post",
+          "category": "intl_press",
+          "url": "https://www.washingtonpost.com/world/2024/02/20/spain-russia-ukraine-kuminov-assassination-defector/",
+          "published_at": "2024-02-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0003",
+      "date": "2024-02-17",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Etulia Nouă",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "More fragments of a drone were found near Etulia Nouă, close to the Ukrainian border.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Noi fragmente de dronă au fost găsite în Republica Moldova, în apropiere de graniţa cu Ucraina",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/moldova/noi-fragmente-de-drona-au-fost-gasite-in-republica-moldova-in-apropiere-de-granita-cu-ucraina-2691483",
+          "published_at": "2024-02-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0004",
+      "date": "2024-03-20",
+      "date_precision": "day",
+      "location_country": "GB",
+      "affected": [
+        "GB"
+      ],
+      "location": "Leyton, east London",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Arsonists set fire to a warehouse of Ukrainian-owned businesses shipping aid to Ukraine. The organiser admitted acting for the Wagner Group, and three more men were convicted in July 2025.",
+      "attribution": 4,
+      "attribution_note": "Men recruited by the Wagner Group were convicted in 2024 and 2025.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Men acting for Wagner Group convicted of arson on Ukraine-linked London warehouse",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/uk-news/2025/jul/08/three-men-found-guilty-over-london-arson-attack-on-ukraine-linked-firms",
+          "published_at": "2025-07-08"
+        },
+        {
+          "title": "Man admits arson over London warehouse fire linked to Russia",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cvgexrw3x2xo",
+          "published_at": "2024-10-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0005",
+      "date": "2024-03-24",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Oserdów, Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian cruise missile aimed at western Ukraine entered Polish airspace near Oserdów for 39 seconds. Polish and allied aircraft were scrambled.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland activates aircraft after Russian cruise missile aimed at Ukraine enters its airspace",
+          "outlet": "CNN",
+          "category": "intl_press",
+          "url": "https://www.cnn.com/2024/03/24/europe/poland-activates-aircraft-russia-attacks-lviv-intl/index.html",
+          "published_at": "2024-03-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0006",
+      "date": "2024-03-27",
+      "date_precision": "day",
+      "location_country": "CZ",
+      "affected": [
+        "CZ",
+        "BE",
+        "DE",
+        "FR",
+        "PL",
+        "NL",
+        "HU"
+      ],
+      "location": "Prague",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "influence_operation",
+      "rung": 1,
+      "serious": false,
+      "summary": "Czechia exposed and sanctioned Voice of Europe, a Prague-based outlet run by Viktor Medvedchuk that covertly paid European politicians to spread Russian narratives before the European Parliament election.",
+      "attribution": 4,
+      "attribution_note": "The Czech government sanctioned the network on intelligence evidence; the EU added sanctions in May 2024.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Czechs bust Russian network paying off European politicians",
+          "outlet": "Radio Prague International",
+          "category": "eu_regional_press",
+          "url": "https://english.radio.cz/node/8812632",
+          "published_at": "2024-03-27"
+        },
+        {
+          "title": "Czechs Bust Major Russian Propaganda Network - The Moscow Times",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2024/03/27/czechs-bust-major-russian-propaganda-network-a84656",
+          "published_at": "2024-03-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0007",
+      "date": "2024-04-04",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Etulia",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Wreckage of a Russian drone was found near Etulia after an overnight attack on Ukraine. Moldova strongly condemned it.",
+      "attribution": 3,
+      "attribution_note": "Moldova's foreign ministry condemned Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldova strongly condemns second Russian drone wreckage discovery near Ukraine - Euromaidan Press",
+          "outlet": "Euromaidan Press",
+          "category": "ua_independent",
+          "url": "https://euromaidanpress.com/2024/04/05/moldova-strongly-condemns-second-russian-drone-wreckage-discovery-near-ukraine/",
+          "published_at": "2024-04-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0008",
+      "date": "2024-04-07",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "Drones struck the Zaporizhzhia plant, including the dome of reactor 6, in the first direct attacks on it since 2022. The IAEA chief condemned them; no radiation release was reported.",
+      "attribution": 1,
+      "attribution_note": "Russia and Ukraine blamed each other.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "UN nuclear watchdog head condemns drone strike on Zaporizhzhia nuclear power plant",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2024/apr/08/un-nuclear-watchdog-head-condemns-drone-strike-on-zaporizhzhia-power-plant",
+          "published_at": "2024-04-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0009",
+      "date": "2024-04-17",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Bayreuth, Bavaria",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "sabotage_arrest",
+      "rung": 2,
+      "serious": false,
+      "summary": "German police arrested two German-Russian men accused of scouting US military sites and rail lines for bombing and arson attacks on behalf of Russia to undermine aid to Ukraine.",
+      "attribution": 4,
+      "attribution_note": "A Munich court convicted the main defendant in October 2025.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Two arrested in Bavaria for allegedly spying for Russia",
+          "outlet": "The Local Germany",
+          "category": "eu_regional_press",
+          "url": "https://www.thelocal.de/20240418/two-arrested-in-bavaria-for-allegedly-spying-for-russia",
+          "published_at": "2024-04-18"
+        },
+        {
+          "title": "Men convicted of plotting to attack US forces in Bavaria and surveilling bases for Russia",
+          "outlet": "Stars and Stripes",
+          "category": "intl_press",
+          "url": "https://www.stripes.com/theaters/europe/2025-11-03/russian-spy-bavaria-19637301.html",
+          "published_at": "2025-11-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0010",
+      "date": "2024-04-25",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE",
+        "FI"
+      ],
+      "location": "Tartu Airport",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "Two Finnair flights to Tartu turned back to Helsinki because GPS interference prevented their approach. Finnair suspended the route from 29 April to 31 May while Tartu installed a non-GPS approach.",
+      "attribution": 3,
+      "attribution_note": "Estonia's foreign minister called the interference a Russian hybrid attack.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finnair suspends flights to Tartu for 1 month to seek GPS jamming solution",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1609328058/finnair-suspends-flights-to-tartu-for-1-month-to-seek-gps-jamming-solution",
+          "published_at": "2024-04-29"
+        },
+        {
+          "title": "Finnair suspends Helsinki-Tartu flights for a month; airport under Russia’s hybrid attack",
+          "outlet": "Estonian World",
+          "category": "eu_regional_press",
+          "url": "https://estonianworld.com/security/finnair-suspends-helsinki-tartu-flights-for-a-month-airport-under-russias-hybrid-attack/",
+          "published_at": "2024-04-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0011",
+      "date": "2024-05-03",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE",
+        "CZ"
+      ],
+      "location": "Berlin and Prague",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "cyberattack",
+      "rung": 1,
+      "serious": false,
+      "summary": "Germany said Russian military intelligence's APT28 group hacked email accounts of the governing SPD's leadership through an Outlook flaw; Czechia reported attacks on its state institutions by the same group.",
+      "attribution": 4,
+      "attribution_note": "Germany attributed the attack to GRU-controlled APT28; NATO and the EU condemned the campaign against Germany and Czechia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Cyber attacks traced to Russian military intelligence agency",
+          "outlet": "German Federal Ministry of the Interior",
+          "category": "eu_gov_security",
+          "url": "https://www.bmi.bund.de/SharedDocs/kurzmeldungen/EN/2024/05/schutzmassnahmen-cyberangriffe-en.html",
+          "published_at": "2024-05-03"
+        },
+        {
+          "title": "Germany accuses Russia of cyberattack against governing party in 2023",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/germany-accuses-russia-of-cyberattack-against-governing-party-in-2023/",
+          "published_at": "2024-05-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0012",
+      "date": "2024-05-09",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "IKEA store, Vilnius",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "An incendiary device set fire to the IKEA store in Vilnius after hours. No one was hurt. Prosecutors called it terrorism organised by Russia's GRU.",
+      "attribution": 4,
+      "attribution_note": "Lithuanian prosecutors said Russian military intelligence ordered the attack and charged two Ukrainians.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia behind arson attack on Ikea store in Lithuanian capital, says prosecutor",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2025/mar/17/russia-behind-arson-attack-on-ikea-store-in-lithuania-capital-says-prosecutor",
+          "published_at": "2025-03-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0013",
+      "date": "2024-05-12",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Marywilska 44 shopping centre, Warsaw",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "A night fire destroyed Warsaw's Marywilska 44 shopping centre, with about 1,400 stalls. No one was hurt. Poland later said it was arson ordered by Russian military intelligence.",
+      "attribution": 4,
+      "attribution_note": "Poland said the arson was ordered by Russian intelligence, charged suspects and closed Russia's consulate in Kraków.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland blames Russian intelligence for arson attack on Warsaw shopping center last year",
+          "outlet": "CNN",
+          "category": "intl_press",
+          "url": "https://www.cnn.com/2025/05/11/europe/poland-blames-russian-intelligence-fire-shopping-center-latam-intl",
+          "published_at": "2025-05-11"
+        },
+        {
+          "title": "Poland confirms Russia behind fire that destroyed Warsaw’s biggest shopping centre",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2025/05/12/poland-confirms-russia-behind-fire-that-destroyed-warsaws-biggest-shopping-centre",
+          "published_at": "2025-05-12"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0014",
+      "date": "2024-05-21",
+      "date_precision": "day",
+      "location_country": "RU",
+      "affected": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "location": "Southern Military District",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "nuclear_exercise",
+      "rung": 1,
+      "serious": false,
+      "summary": "Russia began drills of its non-strategic nuclear forces, practising the preparation and use of Iskander and Kinzhal missiles, after Western talk of sending troops to Ukraine. Belarus joined a second stage in June.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia starts ‘tactical nuclear drills’ near Ukraine border",
+          "outlet": "Al Jazeera",
+          "category": "intl_press",
+          "url": "https://www.aljazeera.com/news/2024/5/22/russia-starts-tactical-nuclear-drills-near-ukraine-border",
+          "published_at": "2024-05-22"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0015",
+      "date": "2024-05-23",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Narva River",
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "border_violation",
+      "rung": 2,
+      "serious": false,
+      "summary": "Russian border guards removed about 24 of the 50 navigation buoys Estonia had placed to mark the border fairway in the Narva River, after Russia disputed their positions.",
+      "attribution": 3,
+      "attribution_note": "Estonia summoned Russia's chargé d'affaires; the EU called the removal unacceptable.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian border guards remove markers from Estonian waters in Narva River",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1609350048/russian-border-guards-remove-markers-from-estonian-waters-in-narva-river",
+          "published_at": "2024-05-23"
+        },
+        {
+          "title": "EU demands Russia to explain unacceptable actions on Estonian border",
+          "outlet": "European Pravda",
+          "category": "ua_independent",
+          "url": "https://www.eurointegration.com.ua/eng/news/2024/05/24/7186680",
+          "published_at": "2024-05-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0016",
+      "date": "2024-06-07",
+      "date_precision": "day",
+      "location_country": "CZ",
+      "affected": [
+        "CZ"
+      ],
+      "location": "Klíčov bus depot, Prague",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "A Colombian man recruited over Telegram tried to set fire to public buses at a Prague depot; workers put out the fires. He was sentenced to eight years.",
+      "attribution": 4,
+      "attribution_note": "The Czech prime minister said it was probably organised and financed from Russia; the arsonist was convicted in 2025.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Czech court sentences Colombian to eight years in prison for Russia-linked arson attack",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/2025/06/09/czech-court-sentences-colombian-to-eight-years-in-prison-for-russia-linked-arson-attack",
+          "published_at": "2025-06-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0017",
+      "date": "2024-06-10",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Off Loviisa, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A formation of four Russian military aircraft, two bombers and two fighters, flew up to 2.5 km into Finnish airspace off Loviisa for about two minutes, the first violation since Finland joined NATO.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finland suspects four Russian military planes violated its airspace",
+          "outlet": "Malay Mail (Reuters)",
+          "category": "intl_press",
+          "url": "https://www.malaymail.com/news/world/2024/06/14/finland-suspects-four-russian-military-planes-violated-its-airspace/139780",
+          "published_at": "2024-06-14"
+        },
+        {
+          "title": "Russian Combat Aircraft Have Recently Violated The Finnish Airspace Too - The Aviationist",
+          "outlet": "The Aviationist",
+          "category": "intl_press",
+          "url": "https://theaviationist.com/2024/06/16/finnish-airspace-violation/",
+          "published_at": "2024-06-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0018",
+      "date": "2024-06-14",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE"
+      ],
+      "location": "East of southern Gotland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Su-24 violated Swedish airspace east of southern Gotland, ignored radio calls and was escorted out by two Gripens.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ryssland har kränkt svenskt luftrum",
+          "outlet": "SVT Nyheter",
+          "category": "eu_regional_press",
+          "url": "https://www.svt.se/nyheter/inrikes/ryssland-har-krankt-svenskt-luftrum",
+          "published_at": "2024-06-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0019",
+      "date": "2024-07-20",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE",
+        "GB",
+        "PL",
+        "LT"
+      ],
+      "location": "DHL hub, Leipzig/Halle Airport",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "explosive",
+      "rung": 2,
+      "serious": false,
+      "summary": "An incendiary parcel posted in Vilnius ignited at the DHL hub in Leipzig before loading onto a cargo plane; another burned at a DHL warehouse near Birmingham two days later. Officials called them a test run for attacks on flights to North America.",
+      "attribution": 3,
+      "attribution_note": "Polish prosecutors and German security services linked the parcels to Russian intelligence; Lithuania charged 15 people in 2025.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia suspected of planting device on plane that caused UK warehouse fire",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/uk-news/2024/oct/16/russia-suspected-of-planting-device-on-plane-that-caused-uk-warehouse-fire",
+          "published_at": "2024-10-16"
+        },
+        {
+          "title": "Lithuania charges 15 over alleged Russian-backed parcel bombs",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/ckg3l32q4yko",
+          "published_at": "2025-09-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0020",
+      "date": "2024-07-25",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a second consecutive night of attacks near the border, Ukraine's air force said three Russian Geran-2 drones crossed into Romania and crashed. Romanian F-16s had been scrambled and RO-Alert issued in Tulcea.",
+      "attribution": 2,
+      "attribution_note": "Ukraine's air force said three Geran-2s crossed into Romania; Romania investigated the wreckage.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Șeful Forțelor Aeriene ucrainene afirmă că trei drone rusești au ajuns în România. Ministerul român al Apărării confirmă incidentul",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/seful-fortelor-aeriene-ucrainene-afirma-ca-trei-drone-rusesti-au-trecut-frontiera-de-stat-in-romania-2872043",
+          "published_at": "2024-07-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0021",
+      "date": "2024-08-20",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Periprava, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Fragments of a Russian Shahed-type drone were found near Periprava, across the Danube from Ukraine, after a night attack on Ukrainian ports.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "У Румунії біля кордону з Україною знову знайшли уламки безпілотника",
+          "outlet": "Ukrinform",
+          "category": "ua_independent",
+          "url": "https://www.ukrinform.ua/rubric-world/3897130-u-rumunii-bila-kordonu-z-ukrainou-znovu-znajsli-ulamki-bezpilotnika.html",
+          "published_at": "2024-08-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0022",
+      "date": "2024-08-26",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Tyszowce area, Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a massive Russian attack on Ukraine, an object, probably a Shahed-type drone, entered Polish airspace and was believed to have come down near Tyszowce, about 25 km from the border. A search found nothing.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Повітряний простір Польщі порушив невідомий об'єкт, вірогідно, \"Шахед\"",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/uk/news/povitryanyj-prostir-polshhi-porushyv-nevidomyj-ob-yekt-virogidno-shahed",
+          "published_at": "2024-08-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0023",
+      "date": "2024-09-01",
+      "date_precision": "month",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Lithuania",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Saboteurs set fire to the premises of a private company supplying military aid to Ukraine. Prosecutors later charged six people with terrorism.",
+      "attribution": 4,
+      "attribution_note": "In January 2026 prosecutors charged six foreign nationals with terrorism, saying handlers linked to Russia's GRU coordinated them.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Lithuania charges six suspects with ‘terrorism’ for targeting Ukraine military aid - LRT",
+          "outlet": "LRT",
+          "category": "eu_regional_press",
+          "url": "https://www.lrt.lt/en/news-in-english/19/2808132/lithuania-charges-six-suspects-with-terrorism-for-setting-fire-to-ukraine-military-aid",
+          "published_at": "2026-01-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0024",
+      "date": "2024-09-07",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Gaigalava, Rēzekne Municipality",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Shahed-type drone flew in from Belarus and crashed in Rēzekne Municipality, the first such crash in Latvia.",
+      "attribution": 3,
+      "attribution_note": "Latvia said the Russian Shahed-type drone came through Belarus.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Latvia says Russian drone that violated airspace came through Belarus – POLITICO",
+          "outlet": "Politico Europe",
+          "category": "intl_press",
+          "url": "https://www.politico.eu/article/latvia-russia-drone-belarus-war-airspace-f16-jets/",
+          "published_at": "2024-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0025",
+      "date": "2024-09-08",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Periprava, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone violated Romanian airspace during an attack on Ukraine; Romania scrambled two F-16s and searched for wreckage near Periprava.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "​While Ukraine Repelled Another Blow, Romania Raised 2 F-16s Just to Monitor russian Drone That Invaded Country's Airspace",
+          "outlet": "Defense Express",
+          "category": "ua_independent",
+          "url": "https://en.defence-ua.com/analysis/while_ukraine_repelled_another_blow_romania_raised_2_f_16s_just_to_monitor_russian_drone_that_invaded_countrys_airspace-11785.html",
+          "published_at": "2024-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0026",
+      "date": "2024-09-27",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone briefly entered Romanian airspace during a Russian attack on Ukraine; four aircraft were sent to monitor it.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Încă o dronă în spațiul aerian al României - ținta a zburat 19 km în județul Constanța",
+          "outlet": "RFE/RL Romania",
+          "category": "intl_press",
+          "url": "https://romania.europalibera.org/a/inca-o-drona-a-intrat-in-spatiul-aerian-al-romaniei-noaptea-trecuta-tinta-a-zburat-in-judetul-constanta-19-km/33164556.html",
+          "published_at": "2024-10-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0027",
+      "date": "2024-10-17",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Eforie Nord to Amzacea, Constanța County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A small aerial target from the Black Sea flew about 14 km over Constanța County. Spanish and Romanian jets found nothing and no impact site was identified.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "RO-Alert în Constanța cu risc de cădere a unor obiecte. Avioane F-18 ale Forțelor Spaniole și F-16 ale Armatei Române, ridicate în aer",
+          "outlet": "RFE/RL Romania",
+          "category": "intl_press",
+          "url": "https://romania.europalibera.org/a/ro-alert-in-constanta-exista-posibilitatea-caderii-unor-obiecte-din-spatiul-aerian-/33162677.html",
+          "published_at": "2024-10-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0028",
+      "date": "2024-10-20",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldova",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "election_interference",
+      "rung": 2,
+      "serious": false,
+      "summary": "Police said a network run by fugitive oligarch Ilan Shor paid about 130,000 voters, moving $39 million through a Russian bank, before the EU membership referendum, which passed by under one point.",
+      "attribution": 3,
+      "attribution_note": "Moscow and Ilan Shor denied the allegations.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldovan officials accuse Kremlin of bribing voters ahead of EU membership referendum",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/2024/10/04/moldovan-officials-accuse-kremlin-of-bribing-voters-ahead-of-eu-membership-referendum",
+          "published_at": "2024-10-04"
+        },
+        {
+          "title": "Russia-based oligarch funneled $39 million into vote-buying scheme in Moldova - Euromaidan Press",
+          "outlet": "Euromaidan Press",
+          "category": "ua_independent",
+          "url": "https://euromaidanpress.com/2024/10/27/russia-based-oligarch-funneled-39-million-into-vote-buying-scheme-in-moldova/",
+          "published_at": "2024-10-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0029",
+      "date": "2024-10-23",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Constanța and Tulcea counties",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Shahed-type drones violated Romanian airspace over Constanța and Tulcea counties during a Russian attack on Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Румунія дрони – два безпілотники, ймовірно, порушили повітряний простір країни",
+          "outlet": "Slovo i Dilo",
+          "category": "ua_independent",
+          "url": "https://www.slovoidilo.ua/2024/10/24/novyna/suspilstvo/rosijski-drony-znovu-porushyly-povitryanyj-prostir-rumuniyi",
+          "published_at": "2024-10-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0030",
+      "date": "2024-11-17",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE",
+        "LT",
+        "FI",
+        "DE"
+      ],
+      "location": "Off Öland and Gotland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": true,
+      "summary": "Two undersea data cables, BCS East-West Interlink (Lithuania–Sweden) and C-Lion1 (Finland–Germany), were cut within hours of each other. The BCS cable carried about a third of Lithuania's internet capacity.",
+      "attribution": 2,
+      "attribution_note": "Germany's defence minister assumed sabotage; the Chinese bulk carrier Yi Peng 3 was investigated. No party has been formally blamed.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "We assume damage to Baltic Sea cables was sabotage, German minister says",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2024/nov/19/baltic-sea-cables-damage-sabotage-german-minister",
+          "published_at": "2024-11-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0031",
+      "date": "2024-11-24",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Romania",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "election_cyber",
+      "rung": 2,
+      "serious": false,
+      "summary": "Declassified documents released on 4 December said Romania's election infrastructure faced more than 85,000 cyberattacks around the presidential first round, including on election day. The court annulled the vote two days later.",
+      "attribution": 3,
+      "attribution_note": "Declassified Romanian intelligence documents pointed to a state actor; Russia denied interference.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania ’s election systems hit by 85,000 attacks ahead of presidential vote",
+          "outlet": "Security Affairs",
+          "category": "intl_press",
+          "url": "https://securityaffairs.com/171758/cyber-warfare-2/romanias-election-systems-hit-by-85000-attacks.html",
+          "published_at": "2024-12-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0032",
+      "date": "2024-12-06",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Romania",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "election_interference",
+      "rung": 2,
+      "serious": false,
+      "summary": "Romania's Constitutional Court annulled the presidential election after declassified intelligence described a coordinated TikTok campaign and undeclared funding behind the first-round winner Călin Georgescu.",
+      "attribution": 3,
+      "attribution_note": "Declassified intelligence pointed to a Russian-backed campaign; Russia denied interference.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Why Romania’s election was annulled – and what happens next?",
+          "outlet": "The Conversation",
+          "category": "intl_press",
+          "url": "https://theconversation.com/why-romanias-election-was-annulled-and-what-happens-next-245779",
+          "published_at": "2024-12-09"
+        },
+        {
+          "title": "Romanian parliament sees evidence of election meddling, committee says",
+          "outlet": "The Star (Reuters)",
+          "category": "intl_press",
+          "url": "https://www.thestar.com.my/news/world/2024/12/18/romanian-parliament-sees-evidence-of-election-meddling-committee-says",
+          "published_at": "2024-12-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0033",
+      "date": "2024-12-25",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI",
+        "EE"
+      ],
+      "location": "Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": true,
+      "summary": "The Estlink 2 power cable between Finland and Estonia failed, cutting cross-border capacity from 1,016 to 358 MW for months, and four telecom cables were damaged. Finnish special forces boarded and detained the tanker Eagle S, which had left Ust-Luga.",
+      "attribution": 2,
+      "attribution_note": "Finland suspected the shadow-fleet tanker Eagle S of dragging its anchor; a Helsinki court ruled in October 2025 it lacked jurisdiction.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finland boards oil tanker suspected of causing internet, power cable outages",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/finland-police-investigate-role-foreign-ship-after-power-cable-outage-2024-12-26/",
+          "published_at": "2024-12-26"
+        },
+        {
+          "title": "Finnish court: We have no jurisdiction in Eagle S case",
+          "outlet": "Yle News",
+          "category": "eu_regional_press",
+          "url": "https://yle.fi/a/74-20186464",
+          "published_at": "2025-10-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    }
+  ]
+}

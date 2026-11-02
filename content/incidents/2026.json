@@ -1,5 +1,4195 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "incidents": []
+  "incidents": [
+    {
+      "id": "INC-2026-0001",
+      "date": "2026-01-08",
+      "date_precision": "day",
+      "location_country": "TR",
+      "affected": [
+        "TR"
+      ],
+      "location": "Off Turkey",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone struck the shadow-fleet tanker Elbus off Turkey on its way to Novorossiysk. It was damaged; no crew were hurt.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian-bound tanker hit by drone in Black Sea, maritime sources say",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/russian-bound-tanker-hit-by-drone-black-sea-maritime-sources-say-2026-01-08/",
+          "published_at": "2026-01-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0002",
+      "date": "2026-01-17",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Nucareni, Telenești District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A hunter found a crashed, unarmed Russian Gerbera drone near Nucareni, about 54 km from the Ukrainian border. When it fell was not known.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Crashed Russian drone discovered in Moldova, authorities report",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/crashed-russian-drone-discovered-in-moldova-authorities-report/",
+          "published_at": "2026-01-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0003",
+      "date": "2026-01-22",
+      "date_precision": "day",
+      "location_country": "FR",
+      "affected": [
+        "FR"
+      ],
+      "location": "Alboran Sea",
+      "sea": "mediterranean",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "French naval commandos boarded and seized the UK-sanctioned, Comoros-flagged tanker Grinch, which had left Murmansk, despite Russian warnings against boardings.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "France seizes suspected Russian 'shadow fleet' tanker in the Mediterranean",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cdexxr2y907o",
+          "published_at": "2026-01-22"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0004",
+      "date": "2026-02-06",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Sofia, Drochia District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Police found a Russian Gerbera-type drone in the village of Sofia near the Ukrainian border, sealed off the area and called in bomb disposal experts.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Gerbera-type drone used by Russia in war against Ukraine found in Moldova",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/drone-discovered-on-moldovan-territory-near-ukraine-border/",
+          "published_at": "2026-02-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0005",
+      "date": "2026-02-10",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Mamaia beach, Constanța County",
+      "sea": "black_sea",
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Fragments of a drone believed to be Russian washed ashore on the beach at Mamaia.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Descoperire misterioasă pe plaja din Mamaia. Resturi de dronă aduse de apă • Newsweek România",
+          "outlet": "Newsweek România",
+          "category": "eu_regional_press",
+          "url": "https://newsweek.ro/actualitate/descoperire-misterioasa-pe-plaja-din-mamaia-resturi-de-drona-aduse-de-apa",
+          "published_at": "2026-02-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0006",
+      "date": "2026-02-25",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Sfântu Gheorghe to Sulina, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone flew about 20 minutes over the Danube Delta from Sfântu Gheorghe to Sulina, then out over Romania's exclusive economic zone. F-16s were scrambled and RO-Alert warned residents.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă rusească a intrat în spaţiul aerian al României. Două avioane F-16 au fost ridicate de la Baza Feteşti • Newsweek România",
+          "outlet": "Newsweek România",
+          "category": "eu_regional_press",
+          "url": "https://newsweek.ro/actualitate/o-drona-ruseasca-intrat-spatiul-aerian-romaniei-doua-avioane-f-16-fost-ridicate-baza-fetesti",
+          "published_at": "2026-02-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0007",
+      "date": "2026-02-26",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE",
+        "FR",
+        "DK"
+      ],
+      "location": "Öresund, off Malmö",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Swedish Navy patrol boat jammed a drone launched from the Russian intelligence ship Zhigulevsk over the Öresund, about 11 km from the French carrier Charles de Gaulle in Malmö. Sweden called it a serious security alert.",
+      "attribution": 3,
+      "attribution_note": "Swedish authorities said the drone was probably Russian, launched from the intelligence ship Zhigulevsk.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Swedish military jams drone near French aircraft carrier",
+          "outlet": "Le Monde (AFP)",
+          "category": "intl_press",
+          "url": "https://www.lemonde.fr/en/international/article/2026/02/26/swedish-military-jams-unknown-drone-near-france-s-top-aircraft-carrier_6750902_4.html",
+          "published_at": "2026-02-26"
+        },
+        {
+          "title": "Försvaret störde ut drönare: Sannolikt Ryssland – Skånska Dagbladet",
+          "outlet": "Skånska Dagbladet",
+          "category": "eu_regional_press",
+          "url": "https://www.skd.se/2026-02-26/forsvaret-storde-ut-misstankt-dronare/",
+          "published_at": "2026-02-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0008",
+      "date": "2026-02-26",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone briefly crossed Romanian airspace during strikes on Ukraine's Danube ports before re-entering Ukraine. F-16s were scrambled from Fetești.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania scrambles F-16s as Russian drone enters airspace during Ukrainian Danube Port attacks",
+          "outlet": "Romania Insider",
+          "category": "eu_regional_press",
+          "url": "https://www.romania-insider.com/russian-drone-romania-feb-2026",
+          "published_at": "2026-02-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0009",
+      "date": "2026-02-28",
+      "date_precision": "day",
+      "location_country": "BE",
+      "affected": [
+        "BE"
+      ],
+      "location": "Belgian economic zone, North Sea",
+      "sea": "north_sea",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "Belgian special forces, helped by French helicopters, seized the tanker Ethera, sailing under a false Guinean flag back to Russia, and escorted it to Zeebrugge.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Suspected Russian ‘shadow fleet’ tanker seized in North Sea",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/mar/01/suspected-russian-shadow-fleet-tanker-seized-north-sea",
+          "published_at": "2026-03-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0010",
+      "date": "2026-03-03",
+      "date_precision": "day",
+      "location_country": "MT",
+      "affected": [
+        "MT"
+      ],
+      "location": "Central Mediterranean south-east of Malta",
+      "sea": "mediterranean",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": false,
+      "summary": "The sanctioned Russian-flagged LNG carrier Arctic Metagaz, laden with about 62,000 tonnes of LNG, caught fire after a suspected drone strike and drifted badly damaged. Russia said all 30 crew were rescued.",
+      "attribution": 1,
+      "attribution_note": "A security source told Reuters Ukraine was suspected; Russia blamed Ukraine.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian-flagged sanctioned LNG tanker on fire in the Mediterranean, sources say, crew located in lifeboat off Libya",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/energy/russian-flagged-sanctioned-lng-tanker-fire-mediterranean-crew-fate-unknown-2026-03-03/",
+          "published_at": "2026-03-03"
+        },
+        {
+          "title": "Russian gas tanker explodes between Malta and Libya",
+          "outlet": "Times of Malta",
+          "category": "eu_regional_press",
+          "url": "https://timesofmalta.com/article/russialinked-gas-tanker-ablaze-150-miles-off-malta.1124914",
+          "published_at": "2026-03-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0011",
+      "date": "2026-03-07",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE"
+      ],
+      "location": "Swedish waters",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "Sweden seized the false-flagged cargo ship Caffa 17, on Ukraine's sanctions list and suspected of carrying stolen Ukrainian grain, and detained a crew member.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Sweden Detains Crew Member of Russian ‘Shadow Fleet’ Ship - The Moscow Times",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/03/08/sweden-detains-crew-member-of-russian-shadow-fleet-ship-a92156",
+          "published_at": "2026-03-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0012",
+      "date": "2026-03-09",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Lithuanian airspace",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "Lithuania's aviation regulator said pilots had reported more than 300 GPS interference cases in its airspace so far in 2026; authorities link the jamming to Russia.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "GPS jamming incidents reported by pilots continue in Lithuania, regulator says - LRT",
+          "outlet": "LRT",
+          "category": "eu_regional_press",
+          "url": "https://www.lrt.lt/en/news-in-english/19/2862230/gps-jamming-incidents-reported-by-pilots-continue-in-lithuania-regulator-says",
+          "published_at": "2026-03-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0013",
+      "date": "2026-03-12",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE"
+      ],
+      "location": "Swedish waters",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "The Swedish coast guard seized the EU-sanctioned tanker Sea Owl II, sailing under a false Comoros flag, and its Russian captain was arrested for forged documents.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Sweden detains captain of Russian shadow fleet ship",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cpqwg0yej04o",
+          "published_at": "2026-03-15"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0014",
+      "date": "2026-03-13",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Pardina, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone was filmed flying low over the village of Pardina. Romanian F-16s and German Eurofighters were scrambled and RO-Alert was sent twice in Tulcea County.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Două mesaje Ro-Alert în județul Tulcea din cauza unei drone. MApN a ridicat aeronave: „Rămâneţi în interiorul casei”",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/mesaj-ro-alert-in-judetul-tulcea-din-cauza-unei-drone-ramaneti-in-interiorul-casei-departe-de-geamuri-si-pereti-exteriori-3675021",
+          "published_at": "2026-03-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0015",
+      "date": "2026-03-17",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Tudora, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Geran-2 carrying explosives fell near the village of Tudora, close to the border with Ukraine.",
+      "attribution": 3,
+      "attribution_note": "Moldova summoned the Russian ambassador and handed over a protest note.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian drone falls in Moldova – What Sandu and country’s MFA say",
+          "outlet": "RBC-Ukraine",
+          "category": "ua_independent",
+          "url": "https://newsukraine.rbc.ua/news/russian-shahed-drone-carrying-explosives-1773765871.html",
+          "published_at": "2026-03-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0016",
+      "date": "2026-03-18",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Vaindloo island, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Su-30 without a flight plan or radio contact violated Estonian airspace near Vaindloo, the Estonian Defence Forces said.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian Offensive Campaign Assessment, March 19, 2026",
+          "outlet": "Institute for the Study of War",
+          "category": "think_tank",
+          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-march-19-2026/",
+          "published_at": "2026-03-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0017",
+      "date": "2026-03-20",
+      "date_precision": "day",
+      "location_country": "FR",
+      "affected": [
+        "FR"
+      ],
+      "location": "Western Mediterranean",
+      "sea": "mediterranean",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "The French navy, with British support, seized the tanker Deyna from Russia, accused of flying a false Mozambican flag. It was freed in April after its owner paid a fine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "French navy seizes oil tanker sailing from Russia accused of flying false flag in Mediterranean",
+          "outlet": "France 24",
+          "category": "intl_press",
+          "url": "https://www.france24.com/en/france/20260320-french-navy-seizes-oil-tanker-sailing-from-russia-accused-of-flying-false-flag-in-mediterranean",
+          "published_at": "2026-03-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0018",
+      "date": "2026-03-21",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Podlaskie Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Police found five balloons carrying packages along the Belarusian border in Podlaskie, part of a run of smuggling balloons from Belarus.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Kolejne balony i paczki znalezione na Podlasiu. Policja ostrzega",
+          "outlet": "RMF24",
+          "category": "eu_regional_press",
+          "url": "https://www.rmf24.pl/regiony/bialystok/news-kolejne-balony-i-paczki-znalezione-na-podlasiu-policja-ostrz,nId,8073502",
+          "published_at": "2026-03-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0019",
+      "date": "2026-03-23",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Lake Lavysas, Vilnius District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone entered Lithuanian airspace and crashed and exploded on the frozen Lake Lavysas, about 20 km from the Belarusian border.",
+      "attribution": 1,
+      "attribution_note": "Lithuania's prime minister said it was a Ukrainian drone aimed at Russia that strayed.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone that crashed in Lithuania came from Ukraine, Lithuanian PM says",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/drone-that-crashed-lithuania-came-ukraine-lithuanian-pm-says-2026-03-24/",
+          "published_at": "2026-03-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0020",
+      "date": "2026-03-25",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE",
+        "LV"
+      ],
+      "location": "Auvere power plant near Narva; eastern Latvia",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a massive Ukrainian drone attack on Ust-Luga, a drone from Russian airspace hit a chimney of the Auvere power plant in Estonia and another crashed in Latvia.",
+      "attribution": 2,
+      "attribution_note": "Analysts and officials suggested Russian jamming redirected Ukrainian drones aimed at Ust-Luga.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Estonia and Latvia say they were hit by drones as Ukraine unleashes massive attack on Russia",
+          "outlet": "France 24",
+          "category": "intl_press",
+          "url": "https://www.france24.com/en/europe/20260325-estonia-and-latvia-say-they-were-hit-by-drones-as-ukraine-unleashes-massive-attack-on-russia",
+          "published_at": "2026-03-25"
+        },
+        {
+          "title": "Ukrainian drones hit all three Baltic States − did Russia redirect them? - Defense News",
+          "outlet": "Defense News",
+          "category": "intl_press",
+          "url": "https://www.defensenews.com/global/europe/2026/03/27/ukrainian-drones-hit-all-three-baltic-states-did-russia-redirect-them/",
+          "published_at": "2026-03-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0021",
+      "date": "2026-03-26",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Parcheș, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone entered Romanian airspace at 00:44 and crashed and exploded four kilometres inside Romania near Parcheș. No casualties or damage.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Dronă rusească prăbușită pe teritoriul României, în județul Tulcea, după atacuri asupra Ucrainei",
+          "outlet": "RFE/RL Romania",
+          "category": "intl_press",
+          "url": "https://romania.europalibera.org/a/drona-ruseasca-prabusita-pe-teritoriul-romaniei-in-judetul-tulcea-dupa-atacuri-asupra-ucrainei/33716874.html",
+          "published_at": "2026-03-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0022",
+      "date": "2026-03-29",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Kouvola, Kymenlaakso",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Several drones crossed Finland's south-eastern border and at least two crashed near Kouvola. Finland scrambled Hornets and opened an investigation.",
+      "attribution": 2,
+      "attribution_note": "Ukraine confirmed the drones were its own and apologised; Finland's prime minister pointed to Russian electronic warfare.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finland reports territorial violation by drones, at least one from Ukraine",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/finland-reports-suspected-territorial-violation-by-drones-2026-03-29/",
+          "published_at": "2026-03-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0023",
+      "date": "2026-04-08",
+      "date_precision": "day",
+      "location_country": "GB",
+      "affected": [
+        "GB",
+        "FR"
+      ],
+      "location": "English Channel",
+      "sea": "other",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 1,
+      "serious": false,
+      "summary": "A Russian frigate escorted two sanctioned shadow-fleet tankers, Enigma and Universal, through the English Channel, shadowed by a British naval vessel.",
+      "attribution": 3,
+      "attribution_note": "The Kremlin said Russia would protect its interests and called the boardings piracy.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Exclusive: Putin mocks Starmer with warship in Channel",
+          "outlet": "The Telegraph",
+          "category": "intl_press",
+          "url": "https://www.telegraph.co.uk/news/2026/04/08/russia-warship-mocks-starmer-in-channel/",
+          "published_at": "2026-04-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0024",
+      "date": "2026-04-17",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Chilia Veche, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian military radar caught a Russian drone violating Romanian airspace over Chilia Veche during a wave of attacks on Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romanian defence ministry says radars caught Russian drone breaching air space",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/romanian-defence-ministry-says-radars-caught-russian-drone-breaching-air-space-2026-04-17/",
+          "published_at": "2026-04-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0025",
+      "date": "2026-04-25",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Galați; Văcăreni, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During an attack on Ukrainian ports, a Russian drone flew low over Lake Brateș and hit a house and a power pole in Galați, the first property damage from a drone in Romania. Another explosive-laden drone came down near Văcăreni and was destroyed.",
+      "attribution": 3,
+      "attribution_note": "Romania summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania says drone fragments damage property during overnight Russian attack on Ukraine",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/romania-says-drone-fragments-damage-property-during-overnight-russian-attack-2026-04-25/",
+          "published_at": "2026-04-25"
+        },
+        {
+          "title": "MAE summons Russian ambassador after drone crash in Galati area",
+          "outlet": "Agerpres",
+          "category": "eu_regional_press",
+          "url": "https://agerpres.ro/english/2026/04/25/mae-summons-russian-ambassador-after-drone-crash-in-galati-area--1550051",
+          "published_at": "2026-04-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0026",
+      "date": "2026-05-03",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Virolahti and Hamina",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two unidentified drones crossed briefly into Finland from Russia over Virolahti and Hamina. Fighters took off and the airspace was closed for three hours.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 3,
+      "sources": [
+        {
+          "title": "Finland imposes no-fly zone after drone sighting near southeastern border",
+          "outlet": "Yle",
+          "category": "eu_regional_press",
+          "url": "https://yle.fi/a/74-20223823",
+          "published_at": "2026-05-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0027",
+      "date": "2026-05-03",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Șerbăuți, Suceava County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone without explosives fell in a field near Șerbăuți, close to the northern border with Ukraine, and was reported by a local resident.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă a căzut în județul Suceava, aproape de granița cu Ucraina. Autoritățile fac verificări",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/o-drona-a-cazut-in-judetul-suceava-aproape-de-granita-cu-ucraina-autoritatile-fac-verificari-3754125",
+          "published_at": "2026-05-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0028",
+      "date": "2026-05-03",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE"
+      ],
+      "location": "Swedish waters",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "The Swedish coast guard boarded the sanctioned tanker Jin Hui south of Trelleborg on suspicion of a false Syrian flag and arrested its Chinese captain for presenting a false document.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Sweden detains sanctioned oil tanker believed to be linked to Russia's shadow fleet",
+          "outlet": "WTOP (AP)",
+          "category": "intl_press",
+          "url": "https://wtop.com/europe/2026/05/sweden-detains-sanctioned-oil-tanker-believed-to-be-linked-to-russias-shadow-fleet/",
+          "published_at": "2026-05-06"
+        },
+        {
+          "title": "Sweden arrests Chinese master of detained shadow fleet tanker",
+          "outlet": "The Maritime Executive",
+          "category": "intl_press",
+          "url": "https://maritime-executive.com/article/sweden-arrests-chinese-master-of-detained-shadow-fleet-tanker",
+          "published_at": "2026-05-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0029",
+      "date": "2026-05-07",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Rēzekne",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Several drones entered Latvia from Russia; one hit an oil storage site in Rēzekne, setting it on fire and damaging four empty tanks, and another crashed. French jets were scrambled.",
+      "attribution": 2,
+      "attribution_note": "Ukraine's foreign minister said Russian jamming diverted Ukrainian drones into Latvia; Russia accused Ukraine of using Latvian airspace.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Baltic nations seek more NATO defence as drone hits Latvian oil tanks",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/two-drones-russia-crash-latvia-army-says-2026-05-07/",
+          "published_at": "2026-05-07"
+        },
+        {
+          "title": "Two drones from Russia crash in Latvia with one causing oil depot fire, army says",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/my-europe/2026/05/07/two-drones-from-russia-crash-in-latvia-with-one-causing-oil-depot-fire-army-says",
+          "published_at": "2026-05-07"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0030",
+      "date": "2026-05-08",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Osieka area, Warmian-Masurian Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian reconnaissance drone with cameras and Russian markings fell in Poland shortly after crossing undetected from Kaliningrad. It carried no explosives.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian Drone Found in Poland Identified as Reconnaissance UAV",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/russian-drone-found-in-poland-identified-as-reconnaissance-uav/",
+          "published_at": "2026-05-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0031",
+      "date": "2026-05-16",
+      "date_precision": "day",
+      "location_country": "TR",
+      "affected": [
+        "TR"
+      ],
+      "location": "Samsun",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone crashed into the Black Sea port city of Samsun at dawn, damaging two buildings. No one was hurt.",
+      "attribution": 1,
+      "attribution_note": "Reports identified a Ukrainian Maya decoy drone that probably malfunctioned.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Mystery drone hits Türkiye's Black Sea coastal city of Samsun at dawn - Türkiye Today",
+          "outlet": "Türkiye Today",
+          "category": "eu_regional_press",
+          "url": "https://www.turkiyetoday.com/nation/mystery-drone-hits-turkiyes-black-sea-coastal-city-of-samsun-at-dawn-3220055",
+          "published_at": "2026-05-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0032",
+      "date": "2026-05-17",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Samanė, Utena District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A crashed drone carrying explosives was found in Utena District; the explosives were neutralised on site.",
+      "attribution": 2,
+      "attribution_note": "Lithuania's defence minister said it was Ukrainian, probably diverted by Russian electronic warfare.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Explosives found near suspected crashed Ukrainian drone in Lithuania, authorities say",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/suspected-ukrainian-military-drone-was-found-crashed-lithuania-2026-05-17/",
+          "published_at": "2026-05-17"
+        },
+        {
+          "title": "Drone that crashed on Sunday confirmed as Ukrainian - Delfi EN",
+          "outlet": "Delfi EN",
+          "category": "eu_regional_press",
+          "url": "https://www.delfi.lt/en/politics/drone-that-crashed-on-sunday-confirmed-as-ukrainian-120253386",
+          "published_at": "2026-05-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0033",
+      "date": "2026-05-19",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "South-eastern Estonia",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Romanian F-16 on Baltic air policing shot down a Ukrainian drone that had entered south-eastern Estonia from Russia, the first NATO shoot-down over Estonia.",
+      "attribution": 2,
+      "attribution_note": "Ukraine apologised; Estonia said heavy Russian jamming had diverted the drone.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Estonia says NATO shoots down suspected Ukrainian drone",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/nato-jet-shoots-down-drone-estonia-news-website-delfi-reports-2026-05-19/",
+          "published_at": "2026-05-19"
+        },
+        {
+          "title": "Intruding drone shot down by Romanian fighter jet in Estonia",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610027866/intruding-drone-shot-down-by-romanian-fighter-jet-in-estonia-alert-over",
+          "published_at": "2026-05-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0034",
+      "date": "2026-05-19",
+      "date_precision": "day",
+      "location_country": "RU",
+      "affected": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "location": "Russia",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "nuclear_exercise",
+      "rung": 1,
+      "serious": false,
+      "summary": "From 19 to 21 May, Russia held an exercise on preparing and using its nuclear forces against a threat of aggression, reportedly involving 64,000 personnel, one of the largest of its kind.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Mark B. Schneider, Russia’s May 2026 Nuclear Exercise, No. 666, August 3, 2026 – Nipp",
+          "outlet": "National Institute for Public Policy",
+          "category": "think_tank",
+          "url": "https://nipp.org/?p=4997",
+          "published_at": "2026-08-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0035",
+      "date": "2026-05-20",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Vilnius region",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Lithuania issued its first red air alert after a drone violated its airspace. Leaders went to shelters, Vilnius airport and trains around the capital stopped, and NATO jets failed to bring the drone down.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Lithuanian leaders rushed to bunkers as drone violates country’s airspace",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/may/20/lithuania-vilnius-drone-alert-leaders-bunkers",
+          "published_at": "2026-05-20"
+        },
+        {
+          "title": "Lithuania's leaders take shelter during drone air alert",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/c9d3vpqqqpeo",
+          "published_at": "2026-05-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0036",
+      "date": "2026-05-23",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Lake Drydzis, Krāslava Municipality",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone plunged into Lake Drydzis and exploded on impact. Police, rescuers and soldiers recovered debris.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Another drone crashes in EU Member State",
+          "outlet": "Brussels Times",
+          "category": "eu_regional_press",
+          "url": "https://www.brusselstimes.com/2149069/another-drone-crashes-in-eu-country",
+          "published_at": "2026-05-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0037",
+      "date": "2026-05-27",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Off Porkkala, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Finland said a Russian military aircraft probably violated its airspace off Porkkala while detouring around a thunderstorm.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finland suspects Russian military aircraft violated its airspace to evade thunderstorm",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/finland-suspects-russian-military-aircraft-violated-its-airspace-evade-2026-05-27/",
+          "published_at": "2026-05-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0038",
+      "date": "2026-05-28",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Băsești, Maramureș County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A large drone without explosives was found near Băsești in northern Romania; prosecutors in Cluj took over the case.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Dronă fără încărcătură explozivă, găsită în Maramureș. Ancheta, preluată de Parchetul Curții de Apel Cluj",
+          "outlet": "Mediafax",
+          "category": "eu_regional_press",
+          "url": "https://www.mediafax.ro/social/drona-fara-incarcatura-exploziva-gasita-in-maramures-ancheta-preluata-de-parchetul-curtii-de-apel-cluj-23745342",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0039",
+      "date": "2026-05-29",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Galați",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Geran-2 hit the roof of an apartment block in Galați and exploded, destroying a flat, damaging others and five cars. A woman and her son were injured. Romania called it a grave escalation.",
+      "attribution": 3,
+      "attribution_note": "Romanian experts confirmed a Geran-2 from Cyrillic markings; Romania closed Russia's consulate in Constanța.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 2
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informatie de presa",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19271_informa%C8%9Bie-de-presa",
+          "published_at": "2026-05-29"
+        },
+        {
+          "title": "Alertă majoră. O dronă rusească a lovit un bloc din Galați: sunt 2 răniți. A fost încheiată cercetarea la fața locului",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/o-drona-s-a-prabusit-pe-un-bloc-din-galati-doua-persoane-au-fost-ranite-usor-precizarile-mapn-3790645",
+          "published_at": "2026-05-30"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0040",
+      "date": "2026-06-01",
+      "date_precision": "day",
+      "location_country": "FR",
+      "affected": [
+        "FR"
+      ],
+      "location": "Atlantic, 740 km west of Brittany",
+      "sea": "other",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "French naval troops boarded the tanker Tagor after it left Murmansk, confirmed it was sailing under a false flag, and diverted it.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "France intercepts sanctioned Russian oil tanker with UK help, Macron says",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cn8pwgej1gxo",
+          "published_at": "2026-06-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0041",
+      "date": "2026-06-03",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Võru County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone with a 5 kg warhead was found in a field in Võru County, south-eastern Estonia.",
+      "attribution": 1,
+      "attribution_note": "Officials linked it to a Ukrainian attack on north-west Russia; the defence minister urged Ukraine to control its drones better.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone carrying explosives found in Estonia after Ukrainian strike on Russia",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/drone-found-in-estonia-after-ukrainian-strike-on-russia/",
+          "published_at": "2026-06-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0042",
+      "date": "2026-06-05",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Port of Constanța",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Ukrainian Sargan-3000 naval drone, jammed off course, entered Constanța port and lodged in anti-pollution booms. The area was evacuated before it self-detonated without further damage; a second blew up outside the port and two more far offshore.",
+      "attribution": 2,
+      "attribution_note": "Romania's president said Ukraine lost control of the drones to Russian electronic warfare.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Sea drone used in Ukraine war detonates in Romania's Constanta port",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/drone-romania-black-sea-explosion-ukraine-defc53b2383a67475230c8349a47d7c6",
+          "published_at": "2026-06-05"
+        },
+        {
+          "title": "Alertă în Portul Constanța. O dronă navală cu timer atașat a explodat. MApN: Este de tipul celor folosite în războiul din Ucraina",
+          "outlet": "Antena 3",
+          "category": "eu_regional_press",
+          "url": "https://www.antena3.ro/actualitate/alerta-in-portul-constanta-o-drona-marina-care-a-fost-adusa-la-mal-a-explodat-zona-a-fost-evacuata-790939.html",
+          "published_at": "2026-06-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0043",
+      "date": "2026-06-08",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Lopatna, Orhei District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone crashed and exploded near Lopatna by the Dniester, 55 km north-east of Chișinău.",
+      "attribution": 1,
+      "attribution_note": "The drone bore Ukrainian markings; Ukraine said it was a Russian decoy.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă a explodat în raionul Orhei, din Republica Moldova. Primele informații indică faptul că ar putea fi de proveniență ucraineană",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/o-drona-a-explodat-in-raionul-orhei-din-republica-moldova-3805293",
+          "published_at": "2026-06-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0044",
+      "date": "2026-06-08",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Berzgale, Rēzekne Municipality",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A French Rafale on Baltic air policing shot down a drone over the village of Berzgale in eastern Latvia.",
+      "attribution": 2,
+      "attribution_note": "Latvia said it entered from Russia under Russian electronic warfare; it was later identified as a Ukrainian Maya decoy.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "French jet on NATO mission shoots down drone in Latvian airspace, army says",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/latvias-military-issues-alert-over-drone-incursion-2026-06-08/",
+          "published_at": "2026-06-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0045",
+      "date": "2026-06-08",
+      "date_precision": "day",
+      "location_country": "RU",
+      "affected": [
+        "PL",
+        "LT"
+      ],
+      "location": "Kaliningrad region and the Baltic Sea",
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "exercise_near_border",
+      "rung": 1,
+      "serious": false,
+      "summary": "Russia's Baltic Fleet staged air drills from Kaliningrad with Su-24M bombers and Su-30SM2 fighters, rehearsing strikes on convoys, command posts and warships during NATO's BALTOPS exercise.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia Rehearses Baltic Strike Operations from Kaliningrad with Su-24M Bombers and Su-30SM2 Fighters",
+          "outlet": "Army Recognition",
+          "category": "intl_press",
+          "url": "https://armyrecognition.com/news/aerospace-news/2026/russia-rehearses-baltic-strike-operations-from-kaliningrad-with-su-24m-bombers-and-su-30sm2-fighters",
+          "published_at": "2026-06-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0046",
+      "date": "2026-06-14",
+      "date_precision": "day",
+      "location_country": "GB",
+      "affected": [
+        "GB"
+      ],
+      "location": "English Channel",
+      "sea": "other",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "Royal Marines seized the shadow-fleet tanker Smyrtos in British waters in the Channel, the first UK-led capture. Its captain was charged under Russia sanctions law.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Royal Marines board Russian shadow fleet oil tanker in English Channel",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/clyek039l2vo",
+          "published_at": "2026-06-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0047",
+      "date": "2026-06-16",
+      "date_precision": "day",
+      "location_country": "GB",
+      "affected": [
+        "GB"
+      ],
+      "location": "English Channel off the Isle of Wight",
+      "sea": "other",
+      "pathway": "maritime",
+      "type": "naval_confrontation",
+      "rung": 3,
+      "serious": false,
+      "summary": "The Russian frigate Admiral Grigorovich fired flares and warning shots into the air as a British yacht approached it off the Isle of Wight, two days after the Smyrtos seizure. A Royal Navy patrol vessel assisted the yacht.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian frigate fires warning shots at British yacht in Channel",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/uk-news/2026/jun/16/russian-frigate-fires-warning-shots-at-british-yacht-in-channel-reports",
+          "published_at": "2026-06-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0048",
+      "date": "2026-07-12",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Copanca, Căușeni District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Moldova's defence ministry said a Russian Geran-2 entered Moldovan airspace and crashed and exploded in Copanca, about 25 km from the Ukrainian border.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian Offensive Campaign Assessment, July 13, 2026",
+          "outlet": "Institute for the Study of War",
+          "category": "think_tank",
+          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-13-2026/",
+          "published_at": "2026-07-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0049",
+      "date": "2026-07-21",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Off Sfântu Gheorghe, outside territorial waters",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 4,
+      "serious": true,
+      "summary": "An LPG tanker caught fire after crew said three drones attacked it at night off Sfântu Gheorghe, outside Romania's territorial waters. Romania evacuated the crew; three injured sailors were taken to Tulcea and one later died.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 1,
+        "injured": 2
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O navă cu GPL a luat foc în Marea Neagră. Nicușor Dan: A fost lovită în afara apelor teritoriale românești",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/o-nava-cu-gpl-a-luat-foc-pe-marea-neagra-la-40-de-kilometri-distanta-de-sulina-trei-marinari-au-fost-raniti-3871345",
+          "published_at": "2026-07-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0050",
+      "date": "2026-07-24",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Padina, Buzău County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Shahed-type drone flew inland from off Sulina toward Buzău. After an Italian Eurofighter's missile missed, a Romanian F-16 shot it down near Padina, the first drone downed over Romania.",
+      "attribution": 3,
+      "attribution_note": "The Prosecutor General's Office confirmed a Russian Shahed (Geran-2).",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "F-16 downs drone in Romania's airspace for first time",
+          "outlet": "Romania Insider",
+          "category": "eu_regional_press",
+          "url": "https://www.romania-insider.com/f16-down-drone-romania-july-2026",
+          "published_at": "2026-07-24"
+        },
+        {
+          "title": "Parchetul general confirmă că drona era rusească, de tip Shahed. Și șeful Armatei, generalul Gheorghiță Vlad, declarase că pilotul care a doborât-o a raportat că drona este de tip Shahed",
+          "outlet": "Monitorul Apărării",
+          "category": "eu_regional_press",
+          "url": "https://monitorulapararii.ro/parchetul-general-confirma-ca-drona-era-ruseasca-de-tip-shahed-si-seful-armatei-generalul-gheorghita-vlad-declarase-ca-pilotul-care-a-doborat-o-a-1-62629",
+          "published_at": "2026-07-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0051",
+      "date": "2026-07-24",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Romanian economic zone, 22 miles off Sfântu Gheorghe",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": false,
+      "summary": "The Liberian-flagged bulk carrier Christina B, carrying US coal to Ukraine, was hit by a mine or naval drone in Romania's economic zone. No casualties; it sought repairs in Constanța or Varna.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Încă o navă aflată în Zona Economică Exclusivă a României a transmis un apel de urgență. Instrucțiunile transmise de armatorul vasului",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/inca-o-nava-aflata-in-zona-economica-exclusiva-a-romaniei-a-transmis-un-apel-de-urgenta-dsu-posibil-impact-cu-o-drona-sau-mina-marina-3876501",
+          "published_at": "2026-07-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0052",
+      "date": "2026-07-25",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Sfântu Gheorghe, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Romanian F-16 shot down a second Russian drone over Sfântu Gheorghe, near the Ukrainian border, eleven minutes after it entered Romanian airspace.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "MApN: Drona de la Sfântu Gheorghe a fost distrusă de același pilot român de F-16 care a doborât drona la Buzău",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/evenimente/mapn-drona-de-la-sfantu-gheorghe-a-fost-distrusa-de-acelasi-pilot-roman-de-f-16-care-a-doborat-drona-la-buzau-3877957",
+          "published_at": "2026-07-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0053",
+      "date": "2026-07-26",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Territorial waters 12 km north-east of Sulina",
+      "sea": "black_sea",
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Romanian F-16 shot down a third drone in three days over territorial waters off Sulina, five minutes after it entered Romanian airspace.",
+      "attribution": 3,
+      "attribution_note": "Romania summoned the Russian ambassador, recalled its ambassador from Moscow and expelled a Russian diplomat.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania summons Russia’s ambassador after downing third drone since Friday",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/jul/26/romania-summons-russia-ambassador-third-drone-shot-down",
+          "published_at": "2026-07-26"
+        },
+        {
+          "title": "Drona doborata de o aeronava F-16 Fighting Falcon a Fortelor Aeriene Romane",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19324_drona-doborata-de-o-aeronava-f-16-fighting-falcon-a-fortelor-aeriene-romane",
+          "published_at": "2026-07-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0054",
+      "date": "2026-07-27",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Another Russian drone briefly entered Romanian airspace and returned to Ukraine before it could be intercepted.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania recalls ambassador from Moscow for consultations, expels Russian diplomat",
+          "outlet": "Ukrinform",
+          "category": "ua_independent",
+          "url": "https://www.ukrinform.net/rubric-polytics/4148433-romania-recalls-ambassador-from-moscow-for-consultations-expels-russian-diplomat.html",
+          "published_at": "2026-07-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0055",
+      "date": "2026-07-30",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Tarnawa-Kolonia, Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian cruise missile crossed into Poland and exploded in a field near Tarnawa-Kolonia, about 100 km from the Ukrainian border, leaving a 10-metre crater. An F-16 failed to intercept it; sirens sounded across Lublin Voivodeship.",
+      "attribution": 3,
+      "attribution_note": "Polish authorities identified a Russian Kh-101 with a significant explosive charge.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM Tusk",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cwymkgenv2ro",
+          "published_at": "2026-07-30"
+        },
+        {
+          "title": "Missile that crashed in Poland had 'significant' amount of explosive",
+          "outlet": "TVP World",
+          "category": "eu_regional_press",
+          "url": "https://tvpworld.com/94610181/significant-explosives-on-russian-missile-that-hit-poland",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0056",
+      "date": "2026-08-02",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Sulina branch of the Danube; Periprava",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone flew over Romania's territorial waters and along the Sulina branch of the Danube for about 20 minutes before Ukrainian forces shot it down; debris fell in a field near Periprava.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Alertă aeriană la graniță, au fost ridicate două F-16 / Drona a fost doborâtă de ucraineni, resturi au picat și pe un câmp din țară - HotNews.ro",
+          "outlet": "HotNews",
+          "category": "eu_regional_press",
+          "url": "https://hotnews.ro/o-noua-alerta-de-drone-in-judetul-tulcea-doua-aeronave-f-16-au-fost-trimise-in-misiune-2315367",
+          "published_at": "2026-08-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0057",
+      "date": "2026-08-04",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Leipzig/Halle Airport",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "explosive",
+      "rung": 3,
+      "serious": true,
+      "summary": "An explosive-laden drone flown over the cellular network hit the wing of a Ukrainian An-124 at Leipzig airport but did not detonate. The airport closed, and a cargo jet going around struck a second drone and declared a mayday.",
+      "attribution": 3,
+      "attribution_note": "Germany formally blamed Russia on 1 September 2026 and closed the Russian consulate in Bonn; investigators linked GRU Unit 29155.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 2,
+      "sources": [
+        {
+          "title": "Drone carrying explosives at German airport marks ‘new level of danger’, says interior minister",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/aug/05/drone-german-airport-dhl-cargo-plane-collides-object-leipzig",
+          "published_at": "2026-08-05"
+        },
+        {
+          "title": "Germany blames Russia for airport drone incident, hits back with sanctions",
+          "outlet": "France 24",
+          "category": "intl_press",
+          "url": "https://www.france24.com/en/live-news/20260901-germany-blames-russia-for-airport-drone-incident-hits-back-with-sanctions",
+          "published_at": "2026-09-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0058",
+      "date": "2026-08-08",
+      "date_precision": "day",
+      "location_country": "BG",
+      "affected": [
+        "BG",
+        "RO"
+      ],
+      "location": "Kardam border crossing, Dobrich Province",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone crossed from Romania and exploded in a sunflower field 100 metres inside Bulgaria, near compressor stations of the Trans-Balkan gas pipeline in both countries. Neither country's radar saw it. No damage.",
+      "attribution": 1,
+      "attribution_note": "Preliminary analysis pointed to a Ukrainian Maya decoy; Ukraine denied targeting Bulgaria.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone explodes in Bulgaria near a gas pipeline close to Romanian border",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/bulgaria-romania-drone-explosion-gas-pipeline-427dcc0875f5e416dadfee0c022f1cb4",
+          "published_at": "2026-08-08"
+        },
+        {
+          "title": "Bulgaria's Defence Ministry on explosion near gas pipeline: likely caused by Ukrainian drone",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/08/08/8047910/",
+          "published_at": "2026-08-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0059",
+      "date": "2026-08-09",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Crocmaz, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian missile-drone crashed and exploded near Crocmaz, breaking windows in nearby houses and starting a vegetation fire.",
+      "attribution": 3,
+      "attribution_note": "Moldova recalled its ambassador from Moscow; preliminary reports pointed to an S8000 Banderol cruise missile.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Explozie provocată de o dronă căzută la Crocmaz, în raionul Ștefan Vodă din Republica Moldova",
+          "outlet": "DefenseRomania",
+          "category": "eu_regional_press",
+          "url": "https://www.defenseromania.ro/explozie-provocata-de-o-drona-cazuta-la-crocmaz-in-raionul-stefan-voda-din-republica-moldova_648210.html",
+          "published_at": "2026-08-09"
+        },
+        {
+          "title": "Drona-rachetă S8000 „Banderol” ar fi căzut la Ștefan Vodă: „Mult mai periculoasă decât un Shahed”",
+          "outlet": "TV8",
+          "category": "eu_regional_press",
+          "url": "https://tv8.md/2026/08/10/infografic-drona-racheta-s-8000-banderol-ar-fi-cazut-la-stefan-voda-mult-mai-periculoasa-decat-un-shahed/307170",
+          "published_at": "2026-08-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0060",
+      "date": "2026-08-10",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Near Priozerna",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Geran-3 jet drone crossed into Moldova during an attack on Odesa Oblast and returned to Ukraine a minute later.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Un aparat de zbor a survolat neautorizat spațiul aerian al Republicii Moldova",
+          "outlet": "Moldpres",
+          "category": "eu_regional_press",
+          "url": "https://www.moldpres.md/rom/societate/un-aparat-de-zbor-a-survolat-neautorizat-spatiul-aerian-al-republicii-moldova",
+          "published_at": "2026-08-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0061",
+      "date": "2026-08-10",
+      "date_precision": "day",
+      "location_country": "DK",
+      "affected": [
+        "DK"
+      ],
+      "location": "Around Bornholm",
+      "sea": "baltic",
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "Denmark recorded GPS disruptions at record levels around Bornholm; experts suspected Russian jamming.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Denmark records GPS disruptions at record levels near island of Bornholm",
+          "outlet": "European Pravda",
+          "category": "ua_independent",
+          "url": "https://www.eurointegration.com.ua/eng/news/2026/08/10/7243248/",
+          "published_at": "2026-08-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0062",
+      "date": "2026-08-11",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Hanover Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "An unidentified drone that could be neither tracked nor jammed appeared at Hanover Airport, which was closed for a time, delaying flights.",
+      "attribution": 2,
+      "attribution_note": "Authorities suspected a link to Russian drones sighted in Germany the week before.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drohnensichtung: Flughafen Hannover zeitweise gesperrt",
+          "outlet": "NDR",
+          "category": "eu_regional_press",
+          "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/drohnensichtung-flughafen-hannover-gesperrt,drohnensichtung-104.html",
+          "published_at": "2026-08-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0063",
+      "date": "2026-08-11",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Near the Neptun Deep platform, Black Sea",
+      "sea": "black_sea",
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian navy divers destroyed two Russian Gerbera drones, possibly carrying explosives, found floating in Romania's economic zone near the Neptun Deep offshore gas project.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania destroys drones drifting near major offshore gas project in the Black Sea",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/romania-destroys-drones-drifting-near-major-offshore-gas-project-black-sea-2026-08-11/",
+          "published_at": "2026-08-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0064",
+      "date": "2026-08-13",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Three Russian drones violated Romanian airspace within twelve hours, for ten, two and twelve minutes. Romanian F-16s and Spanish F-18s were scrambled; none crashed.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O nouă alertă la granița României: O dronă a intrat 10 minute în țară, apoi s-au auzit explozii în Ucraina. Avioane F-16 ridicate - HotNews.ro",
+          "outlet": "HotNews",
+          "category": "eu_regional_press",
+          "url": "https://hotnews.ro/cinci-tinte-monitorizate-de-radarele-armatei-o-drona-a-patruns-10-minute-in-romania-avioane-f-16-ridicate-de-urgenta-ro-alert-in-tulcea-2323529",
+          "published_at": "2026-08-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0065",
+      "date": "2026-08-13",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Warsaw",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "assassination_plot",
+      "rung": 2,
+      "serious": false,
+      "summary": "Poland detained a Russian citizen accused of planning, for Russian intelligence, to assassinate a dual US-Ukrainian citizen. Tusk called it the first Russian plot against an American on NATO territory.",
+      "attribution": 3,
+      "attribution_note": "Prime Minister Tusk said the suspect acted for Russian intelligence.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland Uncovers Russian Plot to Kill US-Ukrainian Citizen in Warsaw",
+          "outlet": "Kyiv Post",
+          "category": "intl_press",
+          "url": "https://www.kyivpost.com/post/82309",
+          "published_at": "2026-08-13"
+        },
+        {
+          "title": "Nieudana egzekucja Amerykanina w Warszawie. Tusk: Zatrzymano Rosjanina - PolsatNews.pl",
+          "outlet": "Polsat News",
+          "category": "eu_regional_press",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-08-13/tusk-zatrzymalismy-obywatela-rosji-szykowal-zamach-na-obywatela-usa/",
+          "published_at": "2026-08-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0066",
+      "date": "2026-08-14",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Rugāji, Balvi region",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "An Italian Eurofighter on Baltic air policing shot down a drone at high altitude near Rugāji in eastern Latvia. Finland restricted airspace over the eastern Gulf of Finland.",
+      "attribution": 2,
+      "attribution_note": "Latvia said Russian electronic warfare diverted the drone during an attack on Russian ports.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Latvijas gaisa telpā sabiedroto iznīcinātāji notrieca ārvalstu bezpilota lidaparātu",
+          "outlet": "Latvian National Armed Forces",
+          "category": "eu_gov_security",
+          "url": "https://www.mil.lv/lv/zinas/latvijas-gaisa-telpa-sabiedroto-iznicinataji-notrieca-arvalstu-bezpilota-lidaparatu-0",
+          "published_at": "2026-08-14"
+        },
+        {
+          "title": "Italian NATO fighter jet shoots down drone in Latvian airspace",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/latvia-shoots-down-drone-its-airspace-finland-restricts-parts-baltic-sea-2026-08-14/",
+          "published_at": "2026-08-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0067",
+      "date": "2026-08-14",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Luncavița, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone flying too low for radar crashed and exploded in a field near Luncavița, starting a vegetation fire. Debris of another drone was found the same day at Plauru.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Dronă prăbuşită în localitatea Luncaviţa, județul Tulcea. Explozie urmată de incendiu. De ce n-au detectat-o radarele MApN / Reacția lui Bolojan - HotNews.ro",
+          "outlet": "HotNews",
+          "category": "eu_regional_press",
+          "url": "https://hotnews.ro/drona-prabusita-in-localitatea-luncavita-judetul-tulcea-explozie-urmata-de-un-incendiu-de-ce-n-au-detectat-o-radarele-mapn-2324527",
+          "published_at": "2026-08-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0068",
+      "date": "2026-08-16",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": "Between Băleni and Cudalbi, Galați County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Geran-2 crossed Moldova from Etulia to Slobozia Mare and entered Romania north of Galați, where a Spanish F-18 shot it down.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "NATO publică imagini cu drona de la Galați văzută prin sistemul de ochire al avionului F-18. Purtător de cuvânt: „Pare să fie rusească”",
+          "outlet": "Antena 3",
+          "category": "eu_regional_press",
+          "url": "https://www.antena3.ro/actualitate/o-drona-care-a-intrat-in-spatiul-aerian-al-romaniei-a-fost-doborata-de-un-avion-nato-in-apropiere-de-galati-799614.html",
+          "published_at": "2026-08-16"
+        },
+        {
+          "title": "Drona rusească, care a survolat în această dimineață spațiul aerian al R. Moldova, a fost doborâtă în România",
+          "outlet": "Veridica",
+          "category": "eu_regional_press",
+          "url": "https://www.veridica.md/stiri/drona-ruseasca-care-a-survolat-in-aceasta-dimineata-spatiul-aerian-al-r-moldova-a-fost-doborata-in-romania",
+          "published_at": "2026-08-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0069",
+      "date": "2026-08-17",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Talmaza, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A cruise missile crashed and exploded near Talmaza in the afternoon, starting a fire. Moldova closed part of its airspace for 15 minutes.",
+      "attribution": 2,
+      "attribution_note": "Ukraine's air force tracked a Banderol into Moldova; Moldova confirmed a missile on radar without naming its origin.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informează!",
+          "outlet": "Moldovan Ministry of Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.army.md/ro/comunicate-de-presa/informeaza-4",
+          "published_at": "2026-08-17"
+        },
+        {
+          "title": "Russian Banderol missile enters Moldovan airspace, Ukraine claims, explosion reported near village",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russian-banderol-missile-enters-moldovan-airspace-ukraine-claims-explosion-reported-near-village/",
+          "published_at": "2026-08-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0070",
+      "date": "2026-08-20",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Grindu, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone entered Romanian airspace during a night attack and crashed in a field near Grindu. Its remains posed no explosive risk and were taken by border police.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informatie de presa",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19358_informa%C8%9Bie-de-presa",
+          "published_at": "2026-08-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0071",
+      "date": "2026-08-20",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Etulia; Giurgiulești",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Geran-2 crossed southern Moldova to Etulia. A fire from a drone explosion near the Reni crossing spread onto Moldovan land, and Geran-2 debris was found in Giurgiulești.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "MAI: În apropiere de Giurgiulești au fost depistate resturile unei drone de tip Geran",
+          "outlet": "Moldpres",
+          "category": "eu_regional_press",
+          "url": "https://www.moldpres.md/rom/societate/mai-in-apropiere-de-giurgiulesti-au-fost-depistate-resturile-unei-drone-de-tip-geran",
+          "published_at": "2026-08-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0072",
+      "date": "2026-08-20",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Near the Neptun Deep gas platform, 80 nautical miles off Constanța",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "naval_confrontation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Romanian F-16 strafed an explosive Russian naval drone near the Neptun Deep offshore gas project, and navy divers finished it off as it sank.",
+      "attribution": 3,
+      "attribution_note": "President Dan attributed it to Russia; Ukraine confirmed it was not theirs.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania destroys marine drone near Neptun Deep gas project, minister says",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/romania-destroys-marine-drone-near-neptun-deep-gas-project-minister-says-2026-08-20/",
+          "published_at": "2026-08-20"
+        },
+        {
+          "title": "Informatie de presa - update",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19361_informa%C8%9Bie-de-presa---update",
+          "published_at": "2026-08-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0073",
+      "date": "2026-08-20",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "Military activity cut Zaporizhzhia's only remaining off-site line, its 26th loss of off-site power in the war. Power was restored in early September after an IAEA-brokered local ceasefire allowed repairs.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Zaporizhzhia restores off-site power following IAEA-brokered local ceasefire -- ANS / Nuclear Newswire",
+          "outlet": "American Nuclear Society",
+          "category": "intl_press",
+          "url": "https://www.ans.org/news/2026-09-09/article-8377/zaporizhzhia-restores-offsite-power-following-iaeabrokered-local-ceasefire/",
+          "published_at": "2026-09-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0074",
+      "date": "2026-08-21",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "South of Utö, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Il-20M reconnaissance aircraft flew about three minutes in Finnish airspace south of Utö, coming within about 4.7 nautical miles of the coast.",
+      "attribution": 3,
+      "attribution_note": "Finland summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Rosyjski samolot Ił-20M naruszył przestrzeń powietrzną Finlandii – MILMAG",
+          "outlet": "Milmag",
+          "category": "eu_regional_press",
+          "url": "https://milmag.pl/rosyjski-samolot-il-20m-naruszyl-przestrzen-powietrzna-finlandii/",
+          "published_at": "2026-08-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0075",
+      "date": "2026-08-22",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Căplani, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone identified as a Geran-3 entered Moldova from Odesa Oblast at 04:07, flew toward Căplani and left 17 minutes later.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Dronă de tip Shahed, detectată în această dimineaţă în spațiul aerian al Republicii Moldova",
+          "outlet": "Moldpres",
+          "category": "eu_regional_press",
+          "url": "https://www.moldpres.md/rom/societate/drona-de-tip-shahed-depistata-in-spatiul-aerian-al-republicii-moldova",
+          "published_at": "2026-08-22"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0076",
+      "date": "2026-08-23",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Off Gura Portiței, Tulcea County",
+      "sea": "black_sea",
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian navy divers neutralised a floating fragment of a Gerbera drone containing explosives off Gura Portiței.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informatie de presa",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19369_informa%C8%9Bie-de-presa",
+          "published_at": "2026-08-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0077",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": "Ciușlea, Vrancea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone with no explosives, probably the one seen over Moldova, crashed into a walnut tree a few metres from a house in Ciușlea. Villagers found it by the smell of fuel.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Dronă rusească, prăbușită în Vrancea, la doar cinci metri de o locuință. MApN: Nu avea explozibil - Forbes.ro",
+          "outlet": "Forbes România",
+          "category": "eu_regional_press",
+          "url": "https://www.forbes.ro/drona-ruseasca-prabusita-in-vrancea-la-doar-cinci-metri-de-o-locuinta-mapn-nu-avea-explozibil-517872",
+          "published_at": "2026-08-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0078",
+      "date": "2026-08-24",
+      "date_precision": "day",
+      "location_country": "NO",
+      "affected": [
+        "NO"
+      ],
+      "location": "Norway (national digital services)",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "ddos",
+      "rung": 1,
+      "serious": false,
+      "summary": "A denial-of-service attack on Norway's Digitalisation Directorate disrupted about ten national services, including the ID-porten login and the Altinn portal, for several days, the biggest such attack it had seen.",
+      "attribution": 2,
+      "attribution_note": "The pro-Russian group Server Killers claimed it; Norway did not confirm the perpetrators.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Pro-Russian hackers declare ‘cyberwar’ on Norway",
+          "outlet": "The Barents Observer",
+          "category": "eu_regional_press",
+          "url": "https://www.thebarentsobserver.com/news/prorussian-hackers-declare-cyberwar-on-norway/456591",
+          "published_at": "2026-08-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0079",
+      "date": "2026-08-25",
+      "date_precision": "day",
+      "location_country": "SK",
+      "affected": [
+        "SK"
+      ],
+      "location": "Slovakia",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "sabotage_arrest",
+      "rung": 2,
+      "serious": false,
+      "summary": "Slovak police arrested three foreign nationals over a foiled plan to set fire to a drone manufacturing plant, amid concern about Russian involvement in attacks on European defence firms.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Slovak police foil drone factory arson plot",
+          "outlet": "TVP World",
+          "category": "eu_regional_press",
+          "url": "https://tvpworld.com/95028361/police-foil-planned-arson-attack-on-slovak-drone-factory",
+          "published_at": "2026-08-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0080",
+      "date": "2026-08-27",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Near Chișinău",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Up to five Russian drones entered Moldova on its independence day, hours before Romania's and Ukraine's presidents attended the parade in Chișinău. One crashed near the capital.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă a căzut lângă Chișinău, în ziua în care Rep. Moldova marchează 35 de ani de independență. Mesajul Maiei Sandu",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/moldova/o-drona-a-cazut-langa-chisinau-in-ziua-in-care-rep-moldova-marcheaza-35-de-ani-de-independenta-o-incalcare-grava-a-suveranitatii-3923701",
+          "published_at": "2026-08-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0081",
+      "date": "2026-08-28",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Off Sfântu Gheorghe",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": false,
+      "summary": "The Dominican-flagged freighter Progress IV, carrying sugar from Sulina to Turkey, caught fire and sank. The Romanian coast guard and a civilian ship rescued all 12 crew; one was seriously injured.",
+      "attribution": 2,
+      "attribution_note": "Romania's president said a drone attack was suspected.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 1
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Cargo Ship With 12 Crew Sinks In Black Sea Off Romania Following Suspected Drone Attack",
+          "outlet": "Marine Insight",
+          "category": "intl_press",
+          "url": "https://www.marineinsight.com/cargo-ship-with-12-crew-sinks-in-black-sea-off-romania-following-suspected-drone-attack/",
+          "published_at": "2026-08-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0082",
+      "date": "2026-08-30",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Toward Dnestrovsc, Transnistria",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone entered Moldovan airspace from Odesa Oblast at 15:50, headed toward Dnestrovsc and turned back nine minutes later.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informează!",
+          "outlet": "Moldovan Ministry of Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.army.md/ro/comunicate-de-presa/informeaza-10",
+          "published_at": "2026-08-30"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0083",
+      "date": "2026-09-01",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Viișoara, Vaslui County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A damaged drone carrying explosives was found in a field in Viișoara, near the Moldovan border, and destroyed by Romanian intelligence service specialists.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Alertă în Vaslui: o dronă cu explozibil, găsită pe un câmp, a fost detonată de specialiștii antitero ai SRI",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/o-drona-prabusita-a-fost-gasita-pe-un-camp-din-vaslui-autoritatile-fac-cercetari-3930135",
+          "published_at": "2026-09-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0084",
+      "date": "2026-09-08",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Chișinău; Iași and Neamț counties; Mihăileni, Rîșcani District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian jet-powered Geran-4 crossed Moldova toward Chișinău as Zelensky's plane took off, then flew about 120 km into Romania. Iași airport closed and five counties were alerted before it crashed back in Moldova.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 3,
+      "sources": [
+        {
+          "title": "Russian drone violates Moldovan and Romanian airspace, crashes in Moldova",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russian-drone-violates-moldovan-and-romanian-airspace-crashes-in-moldova/",
+          "published_at": "2026-09-08"
+        },
+        {
+          "title": "Flights at Iasi International Airport suspended after RO-ALERT incoming drone warning - AGERPRES",
+          "outlet": "Agerpres",
+          "category": "eu_regional_press",
+          "url": "https://agerpres.ro/english/2026/09/08/flights-at-iasi-international-airport-suspended-after-ro-alert-incoming-drone-warning--1591767",
+          "published_at": "2026-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0085",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": "Botoșanița Mare, Suceava County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone that had crossed northern Moldova entered north-east Romania and crashed in a cornfield near Botoșanița Mare. No casualties.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania’s Ministry of National Defence confirms a drone crashed in Suceava after an alert was sent to residents of Botoșani",
+          "outlet": "Informat.ro",
+          "category": "eu_regional_press",
+          "url": "https://informat.ro/en/current-affairs/drone-crashes-in-a-cornfield-in-suceava-after-ro-alert-warning-138506",
+          "published_at": "2026-09-12"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0086",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Pratkūnai, Kaišiadorys District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone that entered Lithuania from Belarus was shot down by an Italian Typhoon from Šiauliai over Pratkūnai, between Vilnius and Kaunas.",
+      "attribution": 3,
+      "attribution_note": "President Nausėda said it was a Russian Gerbera-type drone, probably aimed at Ukraine.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "NATO fighter shoots down drone in Lithuania",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/nato-fighter-shoots-down-drone-lithuania-2026-09-14/",
+          "published_at": "2026-09-14"
+        },
+        {
+          "title": "Drone Downed in Lithuania Was Russian and Likely Aimed at Ukraine, President Nausėda Says - The Moscow Times",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/09/16/drone-downed-in-lithuania-was-russian-and-likely-aimed-at-ukraine-president-nausda-says-a93725",
+          "published_at": "2026-09-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0087",
+      "date": "2026-09-14",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Carfil industrial platform, Brașov",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "A fire broke out on the Carfil industrial platform beside a Romarm ammunition factory in Brașov. Investigators identified two Belarusians and a Ukrainian living in the EU as the perpetrators.",
+      "attribution": 4,
+      "attribution_note": "Romania's intelligence service and anti-terror prosecutors said on 26 October that a sabotage network coordinated from Russia set the fire and charged three people.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "SRI a identificat o rețea de sabotaj coordonată din Federația Rusă, implicată în provocarea incendiului de pe platforma industrială Carfil",
+          "outlet": "Romanian Intelligence Service",
+          "category": "eu_gov_security",
+          "url": "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html",
+          "published_at": "2026-10-26"
+        },
+        {
+          "title": "VIDEO DIICOT și SRI: Incendiul de la Carfil Brașov, provocat de o rețea de sabotaj coordonată din Rusia",
+          "outlet": "Agerpres",
+          "category": "eu_regional_press",
+          "url": "https://agerpres.ro/justitie/2026/10/26/video-diicot-si-sri-incendiul-de-la-carfil-brasov-provocat-de-o-retea-de-sabotaj-coordonata-din-rusi--1607014",
+          "published_at": "2026-10-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0088",
+      "date": "2026-09-17",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Tudora to Palanca, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "An unidentified drone briefly crossed into Moldova near Tudora during a Russian attack on Ukraine and left near Palanca two minutes later.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informează!",
+          "outlet": "Moldovan Ministry of Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.army.md/index.php/ro/comunicate-de-presa/informeaza-14",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0089",
+      "date": "2026-09-19",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Căplani, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Three Russian drones crossed into Moldova near Căplani around 04:00; two flew toward Olănești before leaving, the third turned back to Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informează!",
+          "outlet": "Moldovan Ministry of Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.army.md/index.php/ro/comunicate-de-presa/informeaza-15",
+          "published_at": "2026-09-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0090",
+      "date": "2026-09-23",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "North of Braniewo, Warmian-Masurian Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Mi-8 helicopter from Kaliningrad crossed into Polish airspace for 42 seconds north of Braniewo. Polish fighters were scrambled.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland accuses Russian military helicopter of violating its airspace",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/c699d2dn9z0mo",
+          "published_at": "2026-09-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0091",
+      "date": "2026-09-24",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Florești and Șoldănești districts",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "At least four Russian drones entered Moldova from Ukraine in the morning; explosions were reported in Florești and Șoldănești districts and northern airspace was closed.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drones in Moldova – The Ministry of Defense reported four unmanned aerial vehicles over the country",
+          "outlet": "LIGA.net",
+          "category": "ua_independent",
+          "url": "https://news.liga.net/en/war/news/explosions-were-heard-in-moldova-the-ministry-of-defense-reported-four-drones-over-the-country",
+          "published_at": "2026-09-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0092",
+      "date": "2026-09-24",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Solca, Suceava County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone detected over Ukraine near Botoșani entered Romania and crashed near Solca after four minutes. F-16s could not reach it in time.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone entering Romania from Ukrainian territory crashes",
+          "outlet": "APA",
+          "category": "intl_press",
+          "url": "https://en.apa.az/europe/drone-entering-romania-from-ukrainian-territory-crashes-525948",
+          "published_at": "2026-09-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0093",
+      "date": "2026-09-26",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Novocotovsc, Transnistria",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "An aerial object entered Moldova from Odesa Oblast near Novocotovsc and left two minutes later near Pervomaisc.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informează!",
+          "outlet": "Moldovan Ministry of Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.army.md/index.php/ro/comunicate-de-presa/informeaza-20",
+          "published_at": "2026-09-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0094",
+      "date": "2026-09-30",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Hîrbovăț, Anenii Noi District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone entered Moldova at 05:34 during a massive Russian attack on Ukraine and crashed and exploded near Hîrbovăț.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă a intrat în spațiul aerian al Republicii Moldova și s-a prăbușit. Momentul exploziei, surprins de o cameră de supraveghere",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/o-drona-a-intrat-in-spatiul-aerian-al-republicii-moldova-si-s-a-prabusit-momentul-exploziei-surprins-de-o-camera-de-supraveghere-3970617",
+          "published_at": "2026-09-30"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0095",
+      "date": "2026-10-02",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Plauru, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone that radar did not detect fell and exploded near Plauru during heavy Russian attacks on Ukraine, leaving a crater and a small fire. No RO-Alert was issued; no injuries.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Imagini exclusive cu drona prăbușită în Plauru. Localnicii spun că nu au primit RO-Alert, iar radarele MApN nu au detectat-o",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/imagini-exclusive-cu-drona-prabusita-in-plauru-localnicii-spun-ca-nu-au-primit-ro-alert-iar-radarele-mapn-nu-au-detectat-o-3974951",
+          "published_at": "2026-10-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0096",
+      "date": "2026-10-03",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Several districts; Crocmaz, Ștefan Vodă",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Six unauthorised overflights were recorded and at least five explosions within 22 minutes. No one was hurt, but a wildfire started near Crocmaz and a farm was heavily damaged.",
+      "attribution": 3,
+      "attribution_note": "Moldova handed Russia's ambassador a protest note; the interior ministry said at least three objects were Banderol missiles.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Șase zboruri neautorizate în Moldova, inclusiv rachete și drone. Maia Sandu: „Condamn atacurile masive ale Rusiei asupra Ucrainei”",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/moldova/cinci-drone-au-intrat-sambata-dimineata-in-spatiul-aerian-al-r-moldova-incendiu-provocat-de-explozia-uneia-dintre-ele-fara-victime-3976107",
+          "published_at": "2026-10-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0097",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Palanca border crossing, Ștefan Vodă District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "A projectile from a Russian attack struck the Palanca crossing on the Moldova–Ukraine border, injuring a Moldovan border guard and damaging a bus and a control booth.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 1
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Projectile injures border guard at Moldova-Ukraine border, hits bus",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/shell-injures-border-guard-at-moldova-ukraine-border-hits-bus/",
+          "published_at": "2026-10-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0098",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "BG",
+        "TR"
+      ],
+      "location": "Black Sea off Romania",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 4,
+      "serious": true,
+      "summary": "Russian drones sank the Turkish-owned freighter Royad Mammadov, carrying Ukrainian maize from Izmail to Ravenna, off Romania; its captain was killed and 11 crew rescued. A Bulgarian tanker carrying grain to Romania was also sunk; its 18 crew were saved.",
+      "attribution": 3,
+      "attribution_note": "Zelensky said Russian drones sank the ships.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 1,
+        "injured": 1
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian Drones Sink Royad Mammadov Dry Cargo Ship Carrying Ukrainian Grain",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/russia-sink-royad-mammadov-ship-ukr-grain/",
+          "published_at": "2026-10-05"
+        },
+        {
+          "title": "Tote nach Schiffsunglück im Schwarzen Meer - Drohnenangriff?",
+          "outlet": "tagesschau",
+          "category": "eu_regional_press",
+          "url": "https://www.tagesschau.de/ausland/europa/schwarzes-meer-schiff-verunglueckt-100.html",
+          "published_at": "2026-10-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0099",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Finland",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "influence_operation",
+      "rung": 1,
+      "serious": false,
+      "summary": "About 20 Finnish members of parliament reported break-ins at their homes, in one case with excrement left in the bathroom, which an MP linked to Russian intimidation tactics.",
+      "attribution": 2,
+      "attribution_note": "Senior MP Ben Zyskowicz called it a Russian intimidation plot.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Putin's dirty tricks reach Finnish lavatories",
+          "outlet": "The Telegraph",
+          "category": "intl_press",
+          "url": "https://www.telegraph.co.uk/news/2026/10/05/kremlins-dirty-tricks-reach-finnish-mps-lavatories/",
+          "published_at": "2026-10-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0100",
+      "date": "2026-10-13",
+      "date_precision": "day",
+      "location_country": "BG",
+      "affected": [
+        "BG",
+        "MT"
+      ],
+      "location": "Bulgarian economic zone, Black Sea",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 4,
+      "serious": true,
+      "summary": "Drones struck two ships in Bulgaria's waters overnight. The HS Dignity, bound for Brăila, sank with only one crew member rescued; the Malta-flagged Chelsea 3, bound for Giurgiulești, was badly damaged and its 15 crew evacuated, five injured.",
+      "attribution": 3,
+      "attribution_note": "Bulgaria's president summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 5
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Schiffe vor Bulgarien mit Drohnen angegriffen - wohl Tote",
+          "outlet": "DW",
+          "category": "eu_regional_press",
+          "url": "https://www.dw.com/de/wohl-tote-bei-drohnenattacke-auf-schiffe-vor-bulgarien/a-79649500",
+          "published_at": "2026-10-13"
+        },
+        {
+          "title": "Новый виток черноморской эскалации. У берегов стран НАТО за девять дней атакованы пять торговых судов. Эксперты считают, что Россия пытается нарушить украинский экспорт и одновременно проверить реакци",
+          "outlet": "Novaya Gazeta Europe",
+          "category": "ru_by_independent",
+          "url": "https://novayagazeta.eu/articles/2026/10/13/novyi-vitok-chernomorskoi-eskalatsii",
+          "published_at": "2026-10-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0101",
+      "date": "2026-10-14",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Near Sulina",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone briefly entered Romanian airspace near Sulina before returning to Ukraine, where it was shot down. Two F-16s were scrambled.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "MApN: Drone enters national airspace near Sulina, two F-16 aicraft scrambled - AGERPRES",
+          "outlet": "Agerpres",
+          "category": "eu_regional_press",
+          "url": "https://agerpres.ro/english/2026/10/14/mapn-drone-enters-national-airspace-near-sulina-two-f-16-aicraft-scrambled--1602830",
+          "published_at": "2026-10-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0102",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Northern Moldova",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Overnight, three Russian drones entered Moldovan airspace and returned to Ukraine; a fourth crossed twice in the early morning.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "4 Russian drones violate Moldovan airspace during overnight attack against Ukraine",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/4-russian-drones-violate-moldovan-airspace-during-overnight-attack-against-ukraine/",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0103",
+      "date": "2026-10-15",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "8–10 miles off Sulina",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 4,
+      "serious": true,
+      "summary": "Russian drones struck two chemical tankers near Sulina. The Yara J caught fire at anchor inside Romanian territorial waters with no casualties; the Wine Trader was hit just outside them, and seven of its crew were missing after a search.",
+      "attribution": 3,
+      "attribution_note": "Romanian officials said Russian drones hit the ships.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Seven sailors missing after drones hit two ships near Romania",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/two-ships-ablaze-romanian-black-sea-waters-8-sailors-missing-2026-10-15/",
+          "published_at": "2026-10-15"
+        },
+        {
+          "title": "Romania resumes search for seven missing sailors from drone-hit ship",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/romania-resumes-search-seven-missing-sailors-drone-hit-ship-2026-10-16/",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0104",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Northern and eastern districts",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Five Russian drones crashed in Moldova within 24 hours, injuring one person and causing minor damage.",
+      "attribution": 3,
+      "attribution_note": "Moldova's foreign ministry condemned Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 1
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldova condemns Russia after five drones crash on its territory",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/moldova-condemns-russia-after-five-drones-crash-its-territory-2026-10-16/",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0105",
+      "date": "2026-10-17",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Territorial waters near Snake Island",
+      "sea": "black_sea",
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian F-16s shot down two jet-powered Geran drones over Romania's territorial waters minutes after they entered its airspace from the area of Snake Island.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Informatie de presa – UPDATE",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19446_informa%C8%9Bie-de-presa-%E2%80%93-update",
+          "published_at": "2026-10-17"
+        },
+        {
+          "title": "România a doborât două drone care au intrat în spațiul aerian național. Avioanele F-16 au intervenit deasupra Mării Negre",
+          "outlet": "Capital",
+          "category": "eu_regional_press",
+          "url": "https://www.capital.ro/romania-a-doborat-doua-drone-care-au-intrat-in-spatiul-aerian-national-avioanele-f-16-au-intervenit-deasupra-marii-negre.html",
+          "published_at": "2026-10-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0106",
+      "date": "2026-10-18",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Juodzionys, northern Lithuania",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone entered Lithuania from Poland and exploded over the northern village of Juodzionys, where debris was found. Residents in northern and central areas were told to shelter for an hour; cloud kept NATO jets from intercepting it.",
+      "attribution": 2,
+      "attribution_note": "Ukraine regretted the incident and blamed Russian electronic warfare.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Lithuanians forced to take shelter after suspected drone enters airspace",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/lithuania-told-residents-go-shelters-after-detecting-flying-object-2026-10-18/",
+          "published_at": "2026-10-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0107",
+      "date": "2026-10-18",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Lithuania",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Lithuania said it foiled an attempt to set fire to Starlink satellite equipment in the country.",
+      "attribution": 3,
+      "attribution_note": "Lithuanian authorities said they suspected Russian involvement.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Lithuania foils arson attack on Starlink equipment, suspects Russian involvement",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/lithuania-foils-arson-attack-on-starlink-equipment-suspects-russian-involvement/",
+          "published_at": "2026-10-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0108",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Chistelnița, Telenești District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Geran drone crashed about 100 metres from a house and near an energy facility in Chistelnița during a mass attack on Ukraine.",
+      "attribution": 3,
+      "attribution_note": "Moldova declared a Russian embassy staff member persona non grata.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldova expels Russian diplomat after Russian Geran drone falls near family homes",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/moldova-expels-russian-diplomat-after-russian-geran-drone-falls-near-family-homes/",
+          "published_at": "2026-10-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0109",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Just outside territorial waters off Constanța",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 4,
+      "serious": true,
+      "summary": "A Russian drone hit the Comoros-flagged bulk carrier Khoryv, which sank off Constanța. One sailor died, three were missing and nine were rescued.",
+      "attribution": 3,
+      "attribution_note": "Romania blamed Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 1,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania blames Russia for drone that sinks cargo ship; 1 killed, 3 missing",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/romania-blames-russia-drone-that-sinks-cargo-ship-1-killed-3-missing-2026-10-23/",
+          "published_at": "2026-10-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0110",
+      "date": "2026-10-31",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": "North-eastern Romania; Iași Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two drones crossed northern Moldova into north-east Romania during a Russian attack. Four F-16s and a helicopter were scrambled, Iași airport closed and flights were diverted; one drone vanished from radar between Vaslui and Bacău.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Comunicat de presa",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/19461_comunicat-de-presa",
+          "published_at": "2026-10-31"
+        },
+        {
+          "title": "Alertă de drone în 6 județe. Aeroportul din Iași a fost închis. Două avioane au fost deviate. Armata a ridicat F-16",
+          "outlet": "Antena 3",
+          "category": "eu_regional_press",
+          "url": "https://www.antena3.ro/actualitate/a-fost-emis-ro-alert-la-iasi-pentru-alarma-aeriana-o-drona-a-patruns-in-r-moldova-iar-spatiul-aerian-a-fost-inchis-in-nord-si-centru-809445.html",
+          "published_at": "2026-10-31"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    }
+  ]
 }

@@ -20,7 +20,7 @@ let daily: typeof import("@/scripts/daily");
 
 const sh = (cwd: string, ...args: string[]) => execFileSync("git", args, { cwd, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
 
-/** The quiet-day fixture, reworked to be valid against the empty placeholder content. */
+/** The quiet-day fixture, reworked to be valid against the empty content in fixtures/empty-content. */
 function emptyWorldDraft(date: string): DraftBrief {
   const d = JSON.parse(fs.readFileSync(path.join(ROOT, "fixtures/briefs/valid-quiet.json"), "utf8")) as DraftBrief;
   const remote5 = { probability: 5, term: "remote" as const, confidence: "low" as const };
@@ -59,7 +59,7 @@ beforeAll(async () => {
   sh(work, "init", "-q", "-b", "main");
   sh(work, "config", "user.name", "test");
   sh(work, "config", "user.email", "test@example.org");
-  fs.cpSync(path.join(ROOT, "content"), path.join(work, "content"), { recursive: true });
+  fs.cpSync(path.join(ROOT, "fixtures", "empty-content"), path.join(work, "content"), { recursive: true });
   fs.cpSync(path.join(ROOT, "routine"), path.join(work, "routine"), { recursive: true });
   fs.copyFileSync(path.join(ROOT, ".gitignore"), path.join(work, ".gitignore"));
   fs.mkdirSync(path.join(work, "research"));

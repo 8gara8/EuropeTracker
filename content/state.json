@@ -2,120 +2,120 @@
   "schema_version": 1,
   "as_of": "seed",
   "ladder": {
-    "current_rung": 0,
+    "current_rung": 4,
     "next_rung_odds": {
       "probability": 5,
       "term": "remote",
-      "confidence": "low"
+      "confidence": "moderate"
     }
   },
   "pathways": [
     {
       "pathway": "airspace",
       "serious_odds": {
-        "probability": 5,
-        "term": "remote",
-        "confidence": "low"
+        "probability": 15,
+        "term": "highly_unlikely",
+        "confidence": "moderate"
       },
-      "impact": 1,
+      "impact": 3,
       "trend": "flat"
     },
     {
       "pathway": "sabotage",
       "serious_odds": {
-        "probability": 5,
-        "term": "remote",
-        "confidence": "low"
+        "probability": 25,
+        "term": "unlikely",
+        "confidence": "moderate"
       },
-      "impact": 1,
+      "impact": 3,
       "trend": "flat"
     },
     {
       "pathway": "maritime",
       "serious_odds": {
-        "probability": 5,
-        "term": "remote",
-        "confidence": "low"
+        "probability": 70,
+        "term": "likely",
+        "confidence": "moderate"
       },
-      "impact": 1,
+      "impact": 3,
       "trend": "flat"
     },
     {
       "pathway": "cyber_ew",
       "serious_odds": {
-        "probability": 5,
-        "term": "remote",
+        "probability": 10,
+        "term": "highly_unlikely",
         "confidence": "low"
       },
-      "impact": 1,
+      "impact": 2,
       "trend": "flat"
     },
     {
       "pathway": "military_pressure",
       "serious_odds": {
-        "probability": 5,
+        "probability": 3,
         "term": "remote",
-        "confidence": "low"
+        "confidence": "moderate"
       },
-      "impact": 1,
+      "impact": 4,
       "trend": "flat"
     },
     {
       "pathway": "nuclear",
       "serious_odds": {
-        "probability": 5,
+        "probability": 3,
         "term": "remote",
-        "confidence": "low"
+        "confidence": "moderate"
       },
-      "impact": 1,
+      "impact": 5,
       "trend": "flat"
     },
     {
       "pathway": "political_economic",
       "serious_odds": {
-        "probability": 5,
-        "term": "remote",
+        "probability": 10,
+        "term": "highly_unlikely",
         "confidence": "low"
       },
-      "impact": 1,
+      "impact": 3,
       "trend": "flat"
     }
   ],
   "countries": [
     {
       "country": "PL",
-      "score": 1,
+      "score": 2,
       "since": "2026-11-02"
     },
     {
       "country": "LT",
-      "score": 1,
-      "since": "2026-11-02"
+      "score": 3,
+      "since": "2026-10-18"
     },
     {
       "country": "LV",
-      "score": 1,
+      "score": 2,
       "since": "2026-11-02"
     },
     {
       "country": "EE",
-      "score": 1,
+      "score": 2,
       "since": "2026-11-02"
     },
     {
       "country": "FI",
-      "score": 1,
-      "since": "2026-11-02"
+      "score": 2,
+      "since": "2026-10-05"
     },
     {
       "country": "RO",
-      "score": 1,
-      "since": "2026-11-02"
+      "score": 4,
+      "since": "2026-10-05"
     },
     {
       "country": "MD",
-      "score": 1,
-      "since": "2026-11-02"
+      "score": 3,
+      "since": "2026-10-05"
     }
   ],
   "indicators": [
@@ -125,10 +125,10 @@
       "name": "Airspace violations above the 90-day baseline",
       "description": "Monthly count of Russian drones, missiles or aircraft violating NATO, EU or Moldovan airspace, compared with the 90-day baseline in the incident database.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-10-01",
+      "last_evidence": "8 airspace incidents in the 30 days to 2 November, below the 90-day baseline of 12.7 a month set by a record August; tempo is still far above 2025.",
+      "last_evidence_date": "2026-10-31"
     },
     {
       "id": "ind-border-tracks",
@@ -140,10 +140,10 @@
         "RO",
         "MD"
       ],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2026-07-24",
+      "last_evidence": "Russian drones crossed into Romania or Moldova on at least six days in October; Romanian F-16s shot down two jet-powered Gerans on 17 October.",
+      "last_evidence_date": "2026-10-31"
     },
     {
       "id": "ind-gnss-baltic",
@@ -156,10 +156,10 @@
         "LT",
         "FI"
       ],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2024-04-25",
+      "last_evidence": "Denmark recorded record GPS disruption around Bornholm in August 2026; Lithuanian pilots reported over 300 interference cases by March.",
+      "last_evidence_date": "2026-08-10"
     },
     {
       "id": "ind-sabotage-tempo",
@@ -167,10 +167,10 @@
       "name": "Sabotage incidents and arrests above baseline",
       "description": "Sabotage incidents and arrests for sabotage plots linked to Russia, compared with the 90-day baseline.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2026-08-04",
+      "last_evidence": "Romania attributed the Carfil arson to a Russian-run network on 26 October; Lithuania foiled an arson on Starlink equipment; the FT reported GRU orders to intensify sabotage.",
+      "last_evidence_date": "2026-10-26"
     },
     {
       "id": "ind-undersea",
@@ -178,10 +178,10 @@
       "name": "Undersea cable and pipeline incidents",
       "description": "Damage to undersea cables or pipelines in European waters, and related detentions of vessels.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2025-12-31",
+      "last_evidence": "No new Baltic cable or pipeline damage since the Fitburg case on 31 December 2025; attacks on shipping in the Black Sea continue.",
+      "last_evidence_date": "2025-12-31"
     },
     {
       "id": "ind-airport-closures",
@@ -189,10 +189,10 @@
       "name": "Airport or port closures caused by drones",
       "description": "Closures of airports, ports or military bases caused by drone overflights that officials link to a state actor.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2026-08-11",
+      "last_evidence": "Iași airport closed on 8 September and 31 October as Russian drones crossed Romania; Hanover closed on 11 August.",
+      "last_evidence_date": "2026-10-31"
     },
     {
       "id": "ind-redeployment",
@@ -206,10 +206,10 @@
         "EE",
         "FI"
       ],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-10-05",
+      "last_evidence": "Estonia was reported to be moving troops toward the border over fears of a Russian operation; earlier imagery showed new facilities near Finland.",
+      "last_evidence_date": "2026-10-05"
     },
     {
       "id": "ind-mobilisation",
@@ -234,10 +234,10 @@
         "EE",
         "FI"
       ],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-05-19",
+      "last_evidence": "Russia held a nuclear forces exercise with about 64,000 personnel in May and Baltic Fleet strike drills from Kaliningrad in June.",
+      "last_evidence_date": "2026-06-08"
     },
     {
       "id": "ind-stockpiling",
@@ -262,10 +262,10 @@
       "name": "Nuclear readiness changes, or nuclear deployments to Belarus or Kaliningrad",
       "description": "Changes in Russian nuclear readiness, or nuclear or Oreshnik deployments in Belarus or Kaliningrad.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2025-12-17",
+      "last_evidence": "Russia's nuclear-capable Oreshnik system has been on combat duty in Belarus since December 2025.",
+      "last_evidence_date": "2025-12-17"
     },
     {
       "id": "ind-pretext",
@@ -278,10 +278,10 @@
         "LT",
         "PL"
       ],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-07-26",
+      "last_evidence": "The Narva river border dispute continues, and Russian officials cast NATO Baltic drills as preparation to seize Kaliningrad.",
+      "last_evidence_date": "2026-07-26"
     },
     {
       "id": "ind-diplomatic",
@@ -289,10 +289,10 @@
       "name": "Diplomatic warning signs: embassy drawdowns, families leaving, airspace closures",
       "description": "Russian diplomats' families leaving European capitals, embassy drawdowns, or unusual airspace closures.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-05-29",
+      "last_evidence": "Romania closed Russia's consulate in Constanța in May, Germany closed the consulate in Bonn in September, and Moldova expelled a Russian diplomat on 23 October.",
+      "last_evidence_date": "2026-10-23"
     },
     {
       "id": "ind-cyber-prepositioning",
@@ -300,10 +300,10 @@
       "name": "Public disclosures of cyber footholds in European grids, rail or telecoms",
       "description": "Official disclosures that Russian actors hold access inside European power grids, rail or telecoms networks.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-04-15",
+      "last_evidence": "Sweden warned in April 2026 that Russia-linked groups were moving to destructive attacks on critical infrastructure, after a hacked Norwegian dam in 2025.",
+      "last_evidence_date": "2026-04-15"
     },
     {
       "id": "ind-us-posture",
@@ -311,10 +311,10 @@
       "name": "Changes in US force posture or commitment in Europe (amplifier)",
       "description": "Announced or observed changes in US forces in Europe or in the US commitment to Article 5; an amplifier of other risks.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2025-10-29",
+      "last_evidence": "The US withdrew its rotational brigade from Romania, cancelled a planned rotation to Poland and Romania, and opened a European force posture review in June 2026.",
+      "last_evidence_date": "2026-06-18"
     },
     {
       "id": "ind-article4",
@@ -322,10 +322,10 @@
       "name": "A NATO Article 4 consultation requested",
       "description": "An ally requests consultations under Article 4 of the North Atlantic Treaty.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-10-17",
+      "last_evidence": "Romania asked for a North Atlantic Council meeting after downing two drones on 17 October; the last formal Article 4 requests were Poland's and Estonia's in September 2025.",
+      "last_evidence_date": "2026-10-17"
     },
     {
       "id": "ind-article5",
@@ -355,10 +355,10 @@
       "name": "A ceasefire framework signed, or direct Putin–Zelensky talks",
       "description": "A signed ceasefire framework, or direct talks between Presidents Putin and Zelensky.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-10-11",
+      "last_evidence": "Trump announced an energy ceasefire after a call with Putin; Kyiv said it learned of it from his post, and refinery strikes resumed on 15 October.",
+      "last_evidence_date": "2026-10-15"
     },
     {
       "id": "ind-refinery-offline",
@@ -366,10 +366,10 @@
       "name": "Russian refinery capacity offline above 20%",
       "description": "Estimates from credible reporting that more than 20% of Russian refining capacity is offline.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "watch",
+      "since": "2026-09-01",
+      "last_evidence": "Ukraine struck more than 15 Russian refineries in September and October, but no current estimate puts capacity offline above 20%.",
+      "last_evidence_date": "2026-10-31"
     },
     {
       "id": "ind-fuel-export-ban",
@@ -377,10 +377,10 @@
       "name": "A Russian gasoline export ban or domestic fuel rationing",
       "description": "A Russian ban on gasoline or diesel exports, or rationing of fuel inside Russia.",
       "countries": [],
-      "status": "dormant",
-      "since": "2026-11-02",
-      "last_evidence": null,
-      "last_evidence_date": null
+      "status": "active",
+      "since": "2026-08-06",
+      "last_evidence": "Russia's gasoline export ban stays in force and several regions rationed fuel sales in August 2026; diesel export limits were extended to the end of October.",
+      "last_evidence_date": "2026-09-30"
     }
   ],
   "assumptions": [
