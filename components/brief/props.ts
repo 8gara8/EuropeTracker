@@ -13,7 +13,6 @@ export function briefPropsFor(content: Content, date: string): BriefViewProps | 
     strikesById: indexBy(content.strikes),
     forecastsById: indexBy(content.forecasts),
     indicatorsById: indexBy(content.state.indicators),
-    assumptionsById: indexBy(content.state.assumptions),
     archive: archiveMap(content),
     prevDate: prev,
     nextDate: next,

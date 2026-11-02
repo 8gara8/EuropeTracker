@@ -105,6 +105,8 @@ Raise a level only with new evidence, and cite it.
 - When the affected government or agency has spoken (`host_statement: "yes"`), one source must be that
   statement (`eu_gov_security`) or NATO or the EU (`nato_eu`).
 - If they haven't spoken yet (`"none_yet"`), the attribution can be at most 2.
+- When they speak later, update the incident: set `host_statement` to "yes" in `changes` and cite the
+  statement in `add_sources`. Do the same whenever an update raises an incident above attribution 2.
 
 ## 6. Verification ladder (Ukraine's deep strikes into Russia)
 

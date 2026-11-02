@@ -382,8 +382,14 @@ function quietDay(date: string, incidents: Incident[]): DraftBrief {
 function publish(d: DraftBrief, incidents: Incident[], publishedAt: string): Brief {
   // A snapshot of what was known on the day: records added by the brief's date (validateAll checks this).
   const counts = pathwayCounts(incidents.filter((i) => i.added <= d.date), d.date);
+  // Weekly checks keep the text they assessed; the sample never revises an assumption.
+  const assumptions = new Map(stateAsOf(d.date).assumptions.map((a) => [a.id, a.text]));
   return Brief.parse({
     ...d,
+    weekly_outlook: d.weekly_outlook && {
+      ...d.weekly_outlook,
+      assumptions_check: d.weekly_outlook.assumptions_check.map((a) => ({ ...a, text: assumptions.get(a.id) })),
+    },
     published_at: publishedAt,
     computed: {
       pathways: Object.fromEntries(PATHWAYS.map((x) => [x, { incidents_30d: counts[x].incidents_30d, baseline_monthly: counts[x].baseline_monthly }])),

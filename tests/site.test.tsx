@@ -35,6 +35,24 @@ describe("sample site content", () => {
   });
 });
 
+describe("weekly outlook", () => {
+  const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+
+  it("shows the assumption text each check assessed, even after a later revision", () => {
+    const content = sample();
+    const monday = content.briefs.find((b) => b.weekly)!;
+    const check = monday.weekly_outlook!.assumptions_check[0]!;
+    const assumption = content.state.assumptions.find((a) => a.id === check.id)!;
+    expect(check.text).toBe(assumption.text);
+    assumption.text = "SAMPLE: a later brief revised this assumption.";
+    const html = renderToStaticMarkup(<BriefView {...briefPropsFor(content, monday.date)!} />);
+    expect(html).toContain(esc(check.text));
+    expect(html).toContain(esc(check.note));
+    expect(html).toContain(`>${check.status}<`);
+    expect(html).not.toContain("a later brief revised");
+  });
+});
+
 describe("charts", () => {
   it("render SVG with a data table", () => {
     const line = renderToStaticMarkup(<LineChart series={[{ name: "Rung", points: [{ x: "2026-10-20", y: 3 }, { x: "2026-10-21", y: 3 }] }]} step ariaLabel="Rung" />);

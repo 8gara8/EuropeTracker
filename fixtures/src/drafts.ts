@@ -112,7 +112,7 @@ export const weekday: DraftBrief = {
   }],
   incident_updates: [{
     id: "INC-2026-0124",
-    changes: { attribution: 3, attribution_note: "Finnish police tied the damage to the anchor of a shadow-fleet tanker bound for Ust-Luga.", rung: null, serious: null, casualties: null, disruption_hours: null, summary: null },
+    changes: { attribution: 3, attribution_note: "Finnish police tied the damage to the anchor of a shadow-fleet tanker bound for Ust-Luga.", rung: null, serious: null, casualties: null, disruption_hours: null, summary: null, host_statement: null },
     add_sources: [evidenceSource("krp")],
     reason: "Finnish police published findings linking the damage to a Russia-bound shadow-fleet tanker.",
   }],

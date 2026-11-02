@@ -65,8 +65,9 @@ export const IncidentUpdate = z.strictObject({
     casualties: z.strictObject({ killed: z.int().min(0), injured: z.int().min(0) }).nullable(),
     disruption_hours: z.number().min(0).nullable(),
     summary: words("≤ 60 words").nullable(),
+    host_statement: Incident.shape.host_statement.nullable().describe('"yes" once the affected government or agency has spoken; cite the statement in add_sources'),
   }).describe("null = unchanged; at least one non-null"),
-  add_sources: z.array(EvidenceSource).describe("At least 1 when attribution or rung changes"),
+  add_sources: z.array(EvidenceSource).describe("At least 1 when attribution, rung or host_statement changes"),
   reason: words("≤ 40 words"),
 });
 
