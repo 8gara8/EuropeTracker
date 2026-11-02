@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "window": {
+    "start": "2026-10-20T05:30:00+08:00",
+    "end": "2026-10-21T05:30:00+08:00"
+  },
+  "generated_at": "2026-10-21T06:01:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "SAMPLE — EU ambassadors open talks on a 20th sanctions package",
+  "bottom_line": "No new incident in Europe overnight, and the ladder holds at rung 3 from incursions earlier this month. EU ambassadors opened talks on a 20th sanctions package aimed at shadow-fleet tankers and Russian LNG, and Hungary signalled objections. Russia's overnight raid hit Kharkiv and Sumy, far from NATO borders. Spillover odds are unchanged.",
+  "bottom_line_source_ids": [
+    "s18",
+    "s3"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 10,
+        "term": "highly_unlikely",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 3 since 5 October, from drone incursions and debris on NATO and Moldovan territory. No deaths and no deliberate strike on European territory in the window."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "3 incidents in 30 days against a baseline of 0.3 a month; no change.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "0 incidents in 30 days against a baseline of 0.3 a month; no change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "1 incident in 30 days against a baseline of 0 a month; no change.",
+        "source_ids": [
+          "s9"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "2 incidents in 30 days against a baseline of 0 a month; no change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "0 incidents in 30 days against a baseline of 0 a month; no change.",
+        "source_ids": [
+          "s10"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "high"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "0 incidents in 30 days against a baseline of 0 a month; no change.",
+        "source_ids": [
+          "s12"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "0 incidents in 30 days against a baseline of 0 a month; no change.",
+        "source_ids": [
+          "s7"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "EU ambassadors open talks on a 20th sanctions package",
+      "summary": "EU ambassadors began discussing a 20th package that would list more shadow-fleet tankers and phase out Russian LNG. Hungary said it could not support an LNG ban without an exemption for its oil imports.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The Kremlin said new sanctions would only harden Russia's position (claim).",
+      "source_ids": [
+        "s18",
+        "s7",
+        "s13"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia's overnight raid targets energy sites in eastern Ukraine",
+      "summary": "Ukraine's Air Force said most of the drones were aimed at energy sites in the Kharkiv and Sumy regions, far from NATO borders. Repair crews restored power to most consumers by morning.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS said the strikes hit military and energy facilities used by Ukraine's armed forces (claim).",
+      "source_ids": [
+        "s3",
+        "s11"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Russian forces make small gains near Pokrovsk",
+      "summary": "DeepState and ISW recorded small Russian advances south of Pokrovsk. Neither reported signs of an operational breakthrough, and Ukrainian forces held the main supply roads.",
+      "category": "battlefield",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s10"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Russian forces make small gains near Pokrovsk.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia's overnight raid targets energy sites in eastern Ukraine.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s3",
+        "s11"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "EU ambassadors open talks on a 20th sanctions package.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s18",
+        "s7",
+        "s13"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that spillover risk is steady, with the ladder at rung 3 because of stray drones and debris from Russian strikes near NATO's eastern borders. No new incident was reported in Europe overnight. The pattern this month is consistent with spillover from strikes on western Ukraine and the Danube ports rather than deliberate probing: the drones flew on strike headings and none loitered over allied territory.\n\nRussia's covert campaign continues at about its usual pace. Sabotage and undersea incidents remain near their baselines, and officials have not reported new arrests in the window. The sanctions talks are a cohesion problem for the EU rather than a spillover driver, although delays keep shadow-fleet tankers trading in the Baltic for longer.\n\nWe keep the 30-day odds of a deadly or deliberate incident at highly unlikely (10%). Strategic indicators remain dormant: there is no sign of Russian units moving toward Finland or the Baltic states, and no change in nuclear posture.",
+    "change_my_mind": "Drones crossing on headings toward Polish military sites, or a Russian statement naming Poland's air defences as a target, would make us treat the incursions as deliberate.",
+    "competing_explanations": []
+  },
+  "forecasts_new": [],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "Each Russian raid near the Polish border adds to European demand for Patriot and NASAMS interceptors, the same systems Taiwan is waiting for. Germany's latest Patriot pledge draws on production slots that compete with Taiwan's 2027 deliveries. The Novorossiysk strike is another data point for Taiwan's planners on long-range drones against coastal energy infrastructure, relevant both to defending Taiwan's LNG terminals and to holding Chinese ports at risk.",
+  "next_72h": [
+    {
+      "date": "2026-10-22",
+      "event": "EU ambassadors meet on the 20th sanctions package.",
+      "why": "A Hungarian veto would delay new shadow-fleet listings."
+    },
+    {
+      "date": "2026-10-23",
+      "event": "IAEA update on Zaporizhzhia off-site power.",
+      "why": "Losing the last line would raise radiological-safety risk."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 120,
+      "unit": "count",
+      "period": "night before 21 Oct",
+      "source_ids": [
+        "s3"
+      ],
+      "note": null
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 100,
+      "unit": "count",
+      "period": "night before 21 Oct",
+      "source_ids": [
+        "s3"
+      ],
+      "note": null
+    },
+    {
+      "id": "eu_gas_storage_pct",
+      "value": 94.5,
+      "unit": "%",
+      "period": "previous day",
+      "source_ids": [
+        "s14"
+      ],
+      "note": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Komunikat Dowództwa Operacyjnego RSZ (sample)",
+      "outlet": "Polish Operational Command",
+      "category": "eu_gov_security",
+      "url": "https://example.org/sample/dorsz/2026-10-27-komunikat",
+      "language": "pl",
+      "published_at": "2026-10-27T23:55:00+01:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Overnight attack: 142 drones and 3 missiles (sample)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://example.org/sample/t.me/kpszsu/2026-10-28",
+      "language": "uk",
+      "published_at": "2026-10-28T09:10:00+02:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "EU fails again to agree 20th sanctions package (sample)",
+      "outlet": "Reuters",
+      "category": "intl_press",
+      "url": "https://example.org/sample/reuters/2026-10-27-eu-sanctions",
+      "language": "en",
+      "published_at": "2026-10-27T18:02:00+01:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Keskusrikospoliisi: tiedote kaapelivauriosta (sample)",
+      "outlet": "Finnish National Bureau of Investigation",
+      "category": "eu_gov_security",
+      "url": "https://example.org/sample/poliisi/2026-10-27-tiedote",
+      "language": "fi",
+      "published_at": "2026-10-27T12:00:00+02:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Russian Offensive Campaign Assessment, 27 October (sample)",
+      "outlet": "Institute for the Study of War",
+      "category": "osint_data",
+      "url": "https://example.org/sample/isw/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-28T03:30:00+01:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Moscow calls Polish drone claims a provocation (sample)",
+      "outlet": "TASS",
+      "category": "ru_state_media",
+      "url": "https://example.org/sample/tass/2026-10-28-poland",
+      "language": "en",
+      "published_at": "2026-10-28T11:12:00+03:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Update on the situation in Ukraine (sample)",
+      "outlet": "IAEA",
+      "category": "intl_bodies",
+      "url": "https://example.org/sample/iaea/2026-10-27-update",
+      "language": "en",
+      "published_at": "2026-10-27T16:00:00+01:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Hungary seeks Druzhba exemption as sanctions talks stall (sample)",
+      "outlet": "Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://example.org/sample/kyivindependent/2026-10-27-hungary",
+      "language": "en",
+      "published_at": "2026-10-27T20:45:00+02:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Brent settlement and EU gas storage, 27 October (sample)",
+      "outlet": "ICE and GIE AGSI market data",
+      "category": "markets_energy",
+      "url": "https://example.org/sample/markets/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-27",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Peskov: new sanctions will not change Russia's course (sample)",
+      "outlet": "Kremlin press service",
+      "category": "ru_gov",
+      "url": "https://example.org/sample/kremlin/2026-10-20-sanctions",
+      "language": "ru",
+      "published_at": "2026-10-20T13:00:00+03:00",
+      "accessed_at": "2026-10-21T05:40:00+08:00"
+    }
+  ],
+  "published_at": "2026-10-21T06:10:00+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 3,
+        "baseline_monthly": 0.3
+      },
+      "sabotage": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      },
+      "cyber_ew": {
+        "incidents_30d": 2,
+        "baseline_monthly": 0
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      }
+    },
+    "word_count": 631,
+    "source_count": 10,
+    "source_category_count": 9
+  }
+}

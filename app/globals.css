@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* Semantic colors as Tailwind utilities (bg-panel, text-muted, border-line, …) that follow dark mode. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--border);
+  --color-panel: var(--panel);
+  --color-accent: var(--accent);
+}
+
+:root {
+  --bg: #ffffff; --fg: #111827; --muted: #6b7280; --border: #e5e7eb; --panel: #f9fafb; --accent: #1d4ed8;
+  /* rungs 0–6 */
+  --rung-0: #6b7280; --rung-1: #2563eb; --rung-2: #0d9488; --rung-3: #d97706;
+  --rung-4: #ea580c; --rung-5: #dc2626; --rung-6: #7f1d1d;
+  /* probability terms, low → high */
+  --p-remote: #f1f5f9; --p-highly_unlikely: #e0f2fe; --p-unlikely: #bae6fd;
+  --p-realistic_possibility: #fde68a; --p-likely: #fdba74; --p-highly_likely: #f87171; --p-almost_certain: #b91c1c;
+  /* country scores 1–5 */
+  --score-1: #16a34a; --score-2: #65a30d; --score-3: #d97706; --score-4: #ea580c; --score-5: #dc2626;
+  /* Additions to SPEC Appendix A: text on the light probability fills in both themes, the seven
+     pathways in charts, and the sample-data banner. */
+  --on-light: #111827;
+  /* Pathway colors: the first seven categorical slots of the validated reference palette, in
+     PATHWAYS order (adjacent-pair CVD ΔE ≥ 9.1 light, 8.4 dark). */
+  --pw-airspace: #2a78d6; --pw-sabotage: #eb6834; --pw-maritime: #1baf7a; --pw-cyber_ew: #eda100;
+  --pw-military_pressure: #e87ba4; --pw-nuclear: #008300; --pw-political_economic: #6250d6;
+  --sample-bg: #fef3c7; --sample-fg: #78350f;
+  --risk-up: #dc2626; --risk-down: #16a34a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0f17; --fg: #e5e7eb; --muted: #9ca3af; --border: #1f2937; --panel: #111827; --accent: #60a5fa;
+    --sample-bg: #451a03; --sample-fg: #fde68a;
+    --pw-airspace: #3987e5; --pw-sabotage: #d95926; --pw-maritime: #199e70; --pw-cyber_ew: #c98500;
+    --pw-military_pressure: #d55181; --pw-nuclear: #008300; --pw-political_economic: #9085e9;
+    --risk-up: #f87171; --risk-down: #4ade80;
+  }
+}
+
+html {
+  color-scheme: light dark;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Anchor targets (source list, sections) clear the sticky header. */
+:target,
+[id] {
+  scroll-margin-top: 4.5rem;
+}

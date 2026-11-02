@@ -89,6 +89,14 @@ section in the same PR and is listed here.
 | 1 | Fixtures written by hand | `fixtures/src/` builds them (`npm run fixtures:gen`): 3 valid drafts and one invalid draft per code (54), each checked to fail with exactly its own code | Keeps contexts, evidence and mutations in step when a rule or schema changes |
 | 1 | `ci.yml` arrives in Phase 2 | Added in Phase 1 without the build step; Phase 2 adds `npm run build` | So every phase's PR passes CI, as §9 requires |
 | 1 | `routine/schema/draft-brief.schema.json` (format unspecified) | Printed with short objects on one line: about 50 KB, every line under 1,000 chars | Pretty-printed it was 67 KB; minified, its single line would be truncated by the agent's file reader |
+| 2 | `BriefViewProps` (§6) | Also takes `indicatorsById` and `assumptionsById` | Indicator changes show the indicator's name, and the Monday assumptions check shows each assumption's text |
+| 2 | Appendix A tokens | Adds `--on-light` (dark text on the pale probability fills in both themes), `--pw-*` pathway colors (the first seven slots of a categorical palette validated for color-vision deficiency in light and dark), sample-banner and trend colors | In dark mode `--fg` is light, which would vanish on the pale fills; stacked bars need seven separable colors |
+| 2 | Charts (§6) | SVG viewBox 400 units wide, figures capped at 560 px, a `<title>` tooltip on every mark and a data table in `<details>`; `MonthlyBars` also takes a `series` list, so the strike log reuses it | Text stays legible from a 375 px phone to a desktop; hover detail without client JavaScript |
+| 2 | Methodology prose "from STYLE.md §4" | The page renders STYLE.md §1, §4, §10 (rules), §12 and §14 at build time through `lib/markdown.ts` | One source for the prose, so the site can't drift from the agent's rules |
+| 2 | `validateAll` checks schemas, briefs and cross-file rules | It also runs the incident and strike record rules (`INCIDENT_*`, `STRIKE_EVIDENCE`) on every record in the database | Phase 4's seed data gets the same type, rung, location, source and evidence checks as daily records |
+| 2 | Sample dataset written for previews | `fixtures/src/site.ts` generates `fixtures/site-content` (10 briefs, 41 incidents, 15 strikes, 8 forecasts) and checks it with `validateAll`; CI checks the committed fixtures are current and builds with both content folders | Keeps the sample coherent as schemas and rules change |
+| 2 | Vercel Node 24.x | Node 26.x, Vercel's default at creation, plus an Ignored Build Step (§8.1) | Matches Kobol's Node; CI still builds on 24 |
+| 2 | Screenshots with Playwright "if available" | Taken with `playwright-core` driving the installed Chrome, outside the repo | Playwright isn't installed on Kobol; nothing is added to the project's dependencies |
 
 ---
 
@@ -141,7 +149,7 @@ about 06:15 Taipei, and never later than 06:55.
 | Feed parsing | `rss-parser`, `cheerio`, `yaml` | RSS feeds, Telegram web previews, the source registry |
 | Package manager | npm, with `package-lock.json` committed; installs use `npm ci` | Nothing extra to install on Kobol |
 | Local runtime | `/opt/homebrew/bin/node` (arm64, currently v26) | Native; never the Intel Node |
-| Vercel runtime | Node 24.x | Vercel default |
+| Vercel runtime | Node 26.x | Vercel's default when the project was created (2026-11-02), the same major as Kobol; CI also builds on Node 24 |
 | Research agent | Claude Code CLI, headless (`claude -p`), native arm64 build, isolated config dir | Uses JL's Claude subscription; no API key |
 | Scheduler | Scheduled task in the Claude app on Kobol, daily at 05:30, running `scripts/daily.sh` (§8.3) | Same model as MEtracker; each run and its summary show up in the Claude app, where JL gets updates |
 | Hosting | Vercel Hobby with the Git integration | Every push to `main` deploys in about a minute |
@@ -1510,8 +1518,11 @@ Scoring itself happens in `publish.ts` through `aggregate.brier()`.
   and `deploy: false`. Use the dashboard if the connector isn't available.
   - If linking fails because the repository can't be reached, JL adds EuropeTracker to the Vercel
     GitHub App's repository access at github.com/settings/installations.
-- **Framework and build:** Next.js preset, build command `next build`, Node 24.x, production branch
-  `main`. No `vercel.json`.
+  - **Done 2026-11-02:** project `prj_TK8CGmlI0RAbrinn7XZgARy4jl77`.
+- **Framework and build:** Next.js preset, build command `next build`, Node 26.x (Vercel's default),
+  production branch `main`. No `vercel.json`.
+- **Ignored Build Step:** `[ ! -d app ]`, so commits without the site (such as Phase 1 on its own)
+  are skipped instead of failing a production build.
 - **Environment variables:**
   - Preview: `ET_CONTENT_DIR=fixtures/site-content`.
   - Production: `ET_SITE_URL=https://<production domain>`.

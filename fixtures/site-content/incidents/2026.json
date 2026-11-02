@@ -1,0 +1,710 @@
+{
+  "schema_version": 1,
+  "year": 2026,
+  "incidents": [
+    {
+      "id": "INC-2026-0003",
+      "date": "2026-01-20",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "cyberattack",
+      "rung": 2,
+      "serious": false,
+      "summary": "A cyberattack disrupted a regional water utility in northern Poland; officials attributed it to a Russian group.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0003 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0003",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0010",
+      "date": "2026-03-02",
+      "date_precision": "day",
+      "location_country": "BY",
+      "affected": [
+        "PL",
+        "LT"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "exercise_near_border",
+      "rung": 1,
+      "serious": false,
+      "summary": "Belarus and Russia began a joint exercise near Grodno and Brest, close to the Suwałki corridor.",
+      "attribution": 4,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0010 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0010",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0017",
+      "date": "2026-04-28",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian radar tracked a Russian drone over Tulcea county for about 20 minutes before it left toward Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0017 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0017",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0024",
+      "date": "2026-06-11",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE",
+        "DK"
+      ],
+      "location": null,
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "German authorities detained an unseaworthy shadow-fleet tanker that drifted without power off Rügen.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0024 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0024",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0031",
+      "date": "2026-07-30",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Arson destroyed a warehouse in Vilnius; Lithuanian prosecutors charged suspects they said were recruited by Russian services.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0031 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0031",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0038",
+      "date": "2026-09-12",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Russian drones entered Polish airspace from Belarus and were tracked for 15 minutes before leaving.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0038 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0038",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0045",
+      "date": "2026-09-24",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI",
+        "EE"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "Finnish authorities reported GPS jamming that disrupted flights into Helsinki for three days.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2026-0045 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2026-0045",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0118",
+      "date": "2026-10-05",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Polish Operational Command said three Russian drones entered Lublin Voivodeship during an attack on Volyn; two were shot down.",
+      "attribution": 3,
+      "attribution_note": "Polish Operational Command identified the drones as Russian.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Komunikat DORSZ, 5 October (sample)",
+          "outlet": "Polish Operational Command",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/dorsz/2026-10-05",
+          "published_at": "2026-10-05"
+        },
+        {
+          "title": "Drones shot down over eastern Poland (sample)",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/notesfrompoland/2026-10-05",
+          "published_at": "2026-10-05"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-06",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0121",
+      "date": "2026-10-11",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE",
+        "LV",
+        "LT",
+        "FI"
+      ],
+      "location": "Gulf of Finland",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "Finnish and Estonian aviation authorities reported GPS interference that forced two Helsinki–Tallinn flights to divert.",
+      "attribution": 3,
+      "attribution_note": "Finnish and Estonian authorities attributed the interference to Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Traficom notice on GPS interference (sample)",
+          "outlet": "Finnish Transport and Communications Agency",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/traficom/2026-10-11",
+          "published_at": "2026-10-11"
+        },
+        {
+          "title": "Flights divert over GPS jamming (sample)",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/err/2026-10-11",
+          "published_at": "2026-10-11"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-12",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0124",
+      "date": "2026-10-16",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI",
+        "EE"
+      ],
+      "location": "Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": false,
+      "summary": "A data cable between Finland and Estonia was damaged; Finnish police detained a tanker suspected of dragging its anchor.",
+      "attribution": 3,
+      "attribution_note": "Finnish police tied the damage to the anchor of a shadow-fleet tanker bound for Ust-Luga.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Police statement on cable damage (sample)",
+          "outlet": "Finnish National Bureau of Investigation",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/poliisi/2026-10-16",
+          "published_at": "2026-10-16"
+        },
+        {
+          "title": "Data cable to Estonia damaged (sample)",
+          "outlet": "Yle News",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/yle/2026-10-16",
+          "published_at": "2026-10-16"
+        },
+        {
+          "title": "Keskusrikospoliisi: tiedote kaapelivauriosta (sample)",
+          "outlet": "Finnish National Bureau of Investigation",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/poliisi/2026-10-27-tiedote",
+          "published_at": "2026-10-27T12:00:00+02:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-17",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "INC-2026-0126",
+      "date": "2026-10-19",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Galați county",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Drone debris fell near Galați after a Russian attack on Izmail; Romania's defence ministry confirmed the fragments.",
+      "attribution": 3,
+      "attribution_note": "Romania's defence ministry confirmed the fragments came from a Russian drone.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Comunicat MApN: fragmente de dronă la Galați (sample)",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/mapn/2026-10-19-galati",
+          "published_at": "2026-10-19T10:00:00+03:00"
+        },
+        {
+          "title": "Drone fragments found near Galați (sample)",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/digi24/2026-10-19-galati",
+          "published_at": "2026-10-19T12:30:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-20",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0127",
+      "date": "2026-10-21",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Vilnius",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Smuggling balloons from Belarus forced Vilnius airport to suspend flights for three hours.",
+      "attribution": 2,
+      "attribution_note": "Lithuanian officials said the balloons were launched by smugglers from Belarus.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 3,
+      "sources": [
+        {
+          "title": "Vilnius airport suspends flights after balloon sightings (sample)",
+          "outlet": "Lithuanian National Crisis Management Centre",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/nksc/2026-10-21-balloons",
+          "published_at": "2026-10-21T22:10:00+03:00"
+        },
+        {
+          "title": "Balloons from Belarus close Vilnius airport again (sample)",
+          "outlet": "LRT English",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/lrt/2026-10-21-balloons",
+          "published_at": "2026-10-21T23:00:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-22",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0128",
+      "date": "2026-10-23",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Ocnița district",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Moldova's defence ministry said a Russian drone crossed its airspace near Ocnița before re-entering Ukraine.",
+      "attribution": 3,
+      "attribution_note": "Moldova's defence ministry identified the drone as Russian.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ministerul Apărării: dronă rusă în spațiul aerian lângă Ocnița (sample)",
+          "outlet": "Moldovan Ministry of Defence",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/army-md/2026-10-23-ocnita",
+          "published_at": "2026-10-23T08:20:00+03:00"
+        },
+        {
+          "title": "Russian drone briefly crossed into Moldova (sample)",
+          "outlet": "NewsMaker",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/newsmaker/2026-10-23-drone",
+          "published_at": "2026-10-23T09:00:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-24",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0129",
+      "date": "2026-10-24",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Wrocław",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Prosecutors in Wrocław opened an investigation into a fire at a logistics warehouse, examining a foreign-service link.",
+      "attribution": 2,
+      "attribution_note": "Prosecutors said they are examining a link to foreign services.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Prokuratura Krajowa: śledztwo w sprawie pożaru magazynu (sample)",
+          "outlet": "Polish National Prosecutor's Office",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/pk/2026-10-24-wroclaw",
+          "published_at": "2026-10-24T15:00:00+02:00"
+        },
+        {
+          "title": "Wrocław warehouse fire: prosecutors examine foreign link (sample)",
+          "outlet": "TVN24",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/tvn24/2026-10-24-wroclaw",
+          "published_at": "2026-10-24T16:30:00+02:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-25",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0130",
+      "date": "2026-10-25",
+      "date_precision": "day",
+      "location_country": "BY",
+      "affected": [
+        "PL",
+        "LT"
+      ],
+      "location": "Grodno region",
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "snap_readiness",
+      "rung": 1,
+      "serious": false,
+      "summary": "Belarus held a snap readiness check of about 3,000 troops near Grodno, close to the Polish and Lithuanian borders.",
+      "attribution": 4,
+      "attribution_note": "Belarus's defence ministry announced the check.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Statement on the Belarusian exercise near Grodno (sample)",
+          "outlet": "Lithuanian Armed Forces",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/kariuomene/2026-10-25",
+          "published_at": "2026-10-25"
+        },
+        {
+          "title": "Snap readiness check of the Western Operational Command ends (sample)",
+          "outlet": "Belarusian Ministry of Defence",
+          "category": "third_party",
+          "url": "https://example.org/sample/belarus-mod/2026-10-25",
+          "published_at": "2026-10-25T17:00:00+03:00"
+        },
+        {
+          "title": "Lithuania tracks end of Belarusian exercise near Grodno (sample)",
+          "outlet": "LRT English",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/lrt/2026-10-25-grodno",
+          "published_at": "2026-10-25T19:00:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-26",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0131",
+      "date": "2026-10-27",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Poland's Operational Command said a Russian Geran-type drone crossed from Ukraine during an attack on Volyn and was shot down near Hrubieszów. Debris fell in a field; no injuries. Rzeszów airport closed for 90 minutes.",
+      "attribution": 3,
+      "attribution_note": "Polish Operational Command identified the drone as a Russian Geran-2.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 1.5,
+      "sources": [
+        {
+          "title": "Komunikat Dowództwa Operacyjnego RSZ (sample)",
+          "outlet": "Polish Operational Command",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/dorsz/2026-10-27-komunikat",
+          "published_at": "2026-10-27T23:55:00+01:00"
+        },
+        {
+          "title": "Russian drone shot down over eastern Poland (sample)",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/notesfrompoland/2026-10-28-drone",
+          "published_at": "2026-10-28T00:40:00+01:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-28",
+      "updated": null
+    },
+    {
+      "id": "INC-2026-0132",
+      "date": "2026-10-28",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea county",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian media reported drone fragments in a field near Tulcea after a Russian attack on Izmail. The defence ministry has not yet confirmed them. No injuries.",
+      "attribution": 2,
+      "attribution_note": "Local officials suspect a Russian drone; the ministry is examining the fragments.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone fragments found near Tulcea (sample)",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/digi24/2026-10-28-tulcea",
+          "published_at": "2026-10-28T19:00:00+02:00"
+        },
+        {
+          "title": "Romania examines drone debris near Tulcea (sample)",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://example.org/sample/reuters/2026-10-28-tulcea",
+          "published_at": "2026-10-28T21:15:00+02:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-29",
+      "updated": null
+    }
+  ]
+}

@@ -46,6 +46,19 @@ export const SOURCES = {
   nato: { title: "NATO statement on Eastern Sentry (sample)", outlet: "NATO", category: "nato_eu", slug: "nato/2026-10-25-eastern-sentry", language: "en", published_at: "2026-10-25T13:00:00+01:00" },
   bnd: { title: "Annual threat assessment briefing (sample)", outlet: "Estonian Foreign Intelligence Service", category: "eu_gov_security", slug: "valisluureamet/2026-10-25", language: "en", published_at: "2026-10-25" },
   carnegie: { title: "How Russia is rebuilding its northern army (sample)", outlet: "Carnegie Russia Eurasia Center", category: "think_tank", slug: "carnegie/2026-10-24-north", language: "en", published_at: "2026-10-24" },
+  // Evidence for the October incidents and strikes in the site sample (fixtures/src/site.ts).
+  roMod: { title: "Comunicat MApN: fragmente de dronă la Galați (sample)", outlet: "Romanian Ministry of National Defence", category: "eu_gov_security", slug: "mapn/2026-10-19-galati", language: "ro", published_at: "2026-10-19T10:00:00+03:00" },
+  digi24Galati: { title: "Drone fragments found near Galați (sample)", outlet: "Digi24", category: "eu_regional_press", slug: "digi24/2026-10-19-galati", language: "ro", published_at: "2026-10-19T12:30:00+03:00" },
+  ltCrisis: { title: "Vilnius airport suspends flights after balloon sightings (sample)", outlet: "Lithuanian National Crisis Management Centre", category: "eu_gov_security", slug: "nksc/2026-10-21-balloons", language: "lt", published_at: "2026-10-21T22:10:00+03:00" },
+  lrtBalloons: { title: "Balloons from Belarus close Vilnius airport again (sample)", outlet: "LRT English", category: "eu_regional_press", slug: "lrt/2026-10-21-balloons", language: "en", published_at: "2026-10-21T23:00:00+03:00" },
+  mdMod: { title: "Ministerul Apărării: dronă rusă în spațiul aerian lângă Ocnița (sample)", outlet: "Moldovan Ministry of Defence", category: "eu_gov_security", slug: "army-md/2026-10-23-ocnita", language: "ro", published_at: "2026-10-23T08:20:00+03:00" },
+  newsmaker: { title: "Russian drone briefly crossed into Moldova (sample)", outlet: "NewsMaker", category: "eu_regional_press", slug: "newsmaker/2026-10-23-drone", language: "ro", published_at: "2026-10-23T09:00:00+03:00" },
+  plProsecutor: { title: "Prokuratura Krajowa: śledztwo w sprawie pożaru magazynu (sample)", outlet: "Polish National Prosecutor's Office", category: "eu_gov_security", slug: "pk/2026-10-24-wroclaw", language: "pl", published_at: "2026-10-24T15:00:00+02:00" },
+  tvn24: { title: "Wrocław warehouse fire: prosecutors examine foreign link (sample)", outlet: "TVN24", category: "eu_regional_press", slug: "tvn24/2026-10-24-wroclaw", language: "pl", published_at: "2026-10-24T16:30:00+02:00" },
+  saratovGov: { title: "Governor: drone attack on an industrial site in Saratov (sample)", outlet: "Saratov governor (Telegram)", category: "ru_gov", slug: "t.me/saratov_gov/2026-10-21", language: "ru", published_at: "2026-10-21T05:40:00+03:00" },
+  digi24Tulcea: { title: "Drone fragments found near Tulcea (sample)", outlet: "Digi24", category: "eu_regional_press", slug: "digi24/2026-10-28-tulcea", language: "ro", published_at: "2026-10-28T19:00:00+02:00" },
+  kremlinSanctions: { title: "Peskov: new sanctions will not change Russia's course (sample)", outlet: "Kremlin press service", category: "ru_gov", slug: "kremlin/2026-10-20-sanctions", language: "ru", published_at: "2026-10-20T13:00:00+03:00" },
+  reutersTulcea: { title: "Romania examines drone debris near Tulcea (sample)", outlet: "Reuters", category: "intl_press", slug: "reuters/2026-10-28-tulcea", language: "en", published_at: "2026-10-28T21:15:00+02:00" },
 } satisfies Record<string, SourceSeed>;
 
 export type SourceKey = keyof typeof SOURCES;

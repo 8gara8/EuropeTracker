@@ -16,7 +16,7 @@ import { developmentRules } from "./rules/developments";
 import { forecastRules } from "./rules/forecasts";
 import { indicatorRules } from "./rules/indicators";
 import { metaRules } from "./rules/meta";
-import { recordRules } from "./rules/records";
+import { incidentRecordIssues, recordRules, strikeRecordIssues } from "./rules/records";
 import { sourceRules } from "./rules/sources";
 import { error, type Derived, type IncidentRecord, type IndicatorView, type Rule, type RuleInput, type ValidationIssue, type World } from "./rules/types";
 import { totalWords, wordRules } from "./rules/words";
@@ -235,11 +235,15 @@ export function validateAll(dir: string): ValidationResult {
   };
   for (const f of raw.incidents) {
     const parsed = parseFile(IncidentsFile, f, issues);
-    if (parsed) checkRecords(f, parsed.year, parsed.incidents, "incidents");
+    if (!parsed) continue;
+    checkRecords(f, parsed.year, parsed.incidents, "incidents");
+    parsed.incidents.forEach((r, i) => issues.push(...incidentRecordIssues(r, `${f.file}: incidents[${i}]`)));
   }
   for (const f of raw.strikes) {
     const parsed = parseFile(StrikesFile, f, issues);
-    if (parsed) checkRecords(f, parsed.year, parsed.strikes, "strikes");
+    if (!parsed) continue;
+    checkRecords(f, parsed.year, parsed.strikes, "strikes");
+    parsed.strikes.forEach((r, i) => issues.push(...strikeRecordIssues(r, `${f.file}: strikes[${i}]`)));
   }
 
   if (raw.forecasts) {

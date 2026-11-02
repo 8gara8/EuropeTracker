@@ -7,11 +7,20 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: { node-version: 24, cache: npm }
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
       - run: npm run validate:all
       - run: npm run schema:check
+      - name: Fixtures are current
+        run: npm run fixtures:gen && git diff --exit-code -- fixtures
+      - name: Sample site content is valid
+        run: npm run validate:all
+        env: { ET_CONTENT_DIR: fixtures/site-content }
+      - run: npm run build
+      - name: Build with the sample content
+        run: npm run build
+        env: { ET_CONTENT_DIR: fixtures/site-content }

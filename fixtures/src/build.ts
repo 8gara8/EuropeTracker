@@ -12,6 +12,7 @@ import type { IncidentBrief } from "../../lib/schema/incident";
 import { validateDraft } from "../../lib/validate";
 import { monday, quiet, weekday } from "./drafts";
 import { MUTATIONS } from "./invalid";
+import { buildSiteContent } from "./site";
 import { FORECASTS, INCIDENTS, STRIKES, contextFor, packNoise, stateAsOf } from "./world";
 
 const write = (file: string, value: unknown) => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`);
@@ -100,3 +101,5 @@ for (const m of MUTATIONS) {
 }
 if (failed) process.exit(1);
 console.log(`Wrote 3 valid and ${MUTATIONS.length} invalid fixtures.`);
+
+buildSiteContent();

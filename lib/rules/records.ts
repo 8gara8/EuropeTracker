@@ -1,6 +1,8 @@
 import { parseForecastId, parseRecordId } from "../aggregate";
 import { yearOf } from "../dates";
 import type { EvidenceSource } from "../schema/common";
+import type { Incident } from "../schema/incident";
+import type { Strike } from "../schema/strike";
 import { INCIDENT_TYPES, PATHWAYS_WITH_THREAT_LOCATIONS, THREAT_LOCATIONS, incidentTypeInfo, isEuropean } from "../vocab";
 import { error, warning, type Rule, type ValidationIssue } from "./types";
 
@@ -120,73 +122,74 @@ const recordFields: Rule = ({ draft, date }) => {
   return out;
 };
 
-const incidents: Rule = ({ draft }) => {
-  const out: ValidationIssue[] = [];
-  draft.incidents_new.forEach((x, i) => {
-    const at = `incidents_new[${i}]`;
-    const info = incidentTypeInfo(x.pathway, x.type);
-    if (!info) {
-      out.push(error("INCIDENT_TYPE", `${at}.type`,
-        `"${x.type}" isn't a ${x.pathway} incident type; use one of ${Object.keys(INCIDENT_TYPES[x.pathway]).join(", ")}, or "other".`));
-    } else if (x.type === "other") {
-      out.push(warning("INCIDENT_TYPE", `${at}.type`, `${x.id} uses type "other"; prefer a defined ${x.pathway} type.`));
-    }
-    if (info && (x.rung < info.min || x.rung > info.max)) {
-      out.push(error("INCIDENT_RUNG", `${at}.rung`, `${x.id}: a ${x.type} incident must be rung ${info.min === info.max ? info.min : `${info.min}–${info.max}`} (got ${x.rung}).`));
-    }
-    if (x.casualties.killed > 0 && x.rung < 4) {
-      out.push(error("INCIDENT_RUNG", `${at}.rung`, `${x.id}: deaths on European soil mean rung 4 or higher (got ${x.rung}).`));
-    }
-    const threat = THREAT.includes(x.location_country);
-    if (threat && x.rung > 1) {
-      out.push(error("INCIDENT_RUNG", `${at}.rung`, `${x.id}: an incident located in ${x.location_country} stays at rung 1 unless its effects physically reach Europe; then locate it there.`));
-    }
-    if (threat && !PATHWAYS_WITH_THREAT_LOCATIONS.includes(x.pathway)) {
-      out.push(error("INCIDENT_LOCATION", `${at}.location_country`, `${x.id}: location ${x.location_country} is allowed only for military_pressure and nuclear; use the European country where it happened.`));
-    }
-    if (x.affected.length === 0) {
-      out.push(error("INCIDENT_LOCATION", `${at}.affected`, `${x.id}: list at least one affected European country.`));
-    }
-    if (isEuropean(x.location_country) && !(x.affected as string[]).includes(x.location_country)) {
-      out.push(error("INCIDENT_LOCATION", `${at}.affected`, `${x.id}: affected must include the location country ${x.location_country}.`));
-    }
-    if ((x.rung >= 4 || x.casualties.killed > 0) && !x.serious) {
-      out.push(error("INCIDENT_SERIOUS", `${at}.serious`, `${x.id}: rung 4 or higher, or any death, makes it serious; set serious to true.`));
-    }
-    const cats = new Set(x.sources.map((s) => s.category));
-    if (x.seed) {
-      if (x.sources.length < 1) out.push(error("INCIDENT_SOURCES", `${at}.sources`, `${x.id}: a seed incident needs at least one source.`));
-    } else {
-      if (x.sources.length < 2 || cats.size < 2) {
-        out.push(error("INCIDENT_SOURCES", `${at}.sources`, `${x.id} needs at least 2 sources from at least 2 categories (has ${x.sources.length} from ${cats.size}).`));
-      }
-      if (x.host_statement === "yes" && !cats.has("eu_gov_security") && !cats.has("nato_eu")) {
-        out.push(error("INCIDENT_SOURCES", `${at}.sources`, `${x.id}: host_statement is "yes", so cite that statement (eu_gov_security) or NATO/EU (nato_eu).`));
-      }
-      if (x.host_statement === "none_yet" && x.attribution > 2) {
-        out.push(error("INCIDENT_SOURCES", `${at}.attribution`, `${x.id}: without a host statement, attribution can be at most 2 (Suspected).`));
-      }
-    }
-    if (x.date_precision === "month" && !x.seed) {
-      out.push(error("INCIDENT_PRECISION", `${at}.date_precision`, `${x.id}: date_precision "month" is only for seed records; give the day.`));
-    }
-    if (x.date_precision === "month" && !x.date.endsWith("-01")) {
-      out.push(error("INCIDENT_PRECISION", `${at}.date`, `${x.id}: with date_precision "month", date must be the 1st of the month.`));
-    }
-  });
-  return out;
-};
+type IncidentLike = Pick<Incident, "id" | "date" | "date_precision" | "location_country" | "affected" | "pathway" | "type" | "rung" | "serious" | "attribution" | "host_statement" | "casualties" | "sources" | "seed">;
 
-const strikes: Rule = ({ draft }) => {
+/** INCIDENT_TYPE, INCIDENT_RUNG, INCIDENT_LOCATION, INCIDENT_SERIOUS, INCIDENT_SOURCES and INCIDENT_PRECISION for one record. */
+export function incidentRecordIssues(x: IncidentLike, at: string): ValidationIssue[] {
   const out: ValidationIssue[] = [];
-  draft.strikes_new.forEach((x, i) => {
-    const gaps = strikeEvidenceGaps(x.verification, x.sources, x.damage, x.effect);
-    if (gaps.length) {
-      out.push(error("STRIKE_EVIDENCE", `strikes_new[${i}]`, `${x.id} at verification ${x.verification} lacks ${gaps.join("; ")}. Add the evidence or lower the level.`));
+  const info = incidentTypeInfo(x.pathway, x.type);
+  if (!info) {
+    out.push(error("INCIDENT_TYPE", `${at}.type`,
+      `"${x.type}" isn't a ${x.pathway} incident type; use one of ${Object.keys(INCIDENT_TYPES[x.pathway]).join(", ")}, or "other".`));
+  } else if (x.type === "other") {
+    out.push(warning("INCIDENT_TYPE", `${at}.type`, `${x.id} uses type "other"; prefer a defined ${x.pathway} type.`));
+  }
+  if (info && (x.rung < info.min || x.rung > info.max)) {
+    out.push(error("INCIDENT_RUNG", `${at}.rung`, `${x.id}: a ${x.type} incident must be rung ${info.min === info.max ? info.min : `${info.min}–${info.max}`} (got ${x.rung}).`));
+  }
+  if (x.casualties.killed > 0 && x.rung < 4) {
+    out.push(error("INCIDENT_RUNG", `${at}.rung`, `${x.id}: deaths on European soil mean rung 4 or higher (got ${x.rung}).`));
+  }
+  const threat = THREAT.includes(x.location_country);
+  if (threat && x.rung > 1) {
+    out.push(error("INCIDENT_RUNG", `${at}.rung`, `${x.id}: an incident located in ${x.location_country} stays at rung 1 unless its effects physically reach Europe; then locate it there.`));
+  }
+  if (threat && !PATHWAYS_WITH_THREAT_LOCATIONS.includes(x.pathway)) {
+    out.push(error("INCIDENT_LOCATION", `${at}.location_country`, `${x.id}: location ${x.location_country} is allowed only for military_pressure and nuclear; use the European country where it happened.`));
+  }
+  if (x.affected.length === 0) {
+    out.push(error("INCIDENT_LOCATION", `${at}.affected`, `${x.id}: list at least one affected European country.`));
+  }
+  if (isEuropean(x.location_country) && !(x.affected as string[]).includes(x.location_country)) {
+    out.push(error("INCIDENT_LOCATION", `${at}.affected`, `${x.id}: affected must include the location country ${x.location_country}.`));
+  }
+  if ((x.rung >= 4 || x.casualties.killed > 0) && !x.serious) {
+    out.push(error("INCIDENT_SERIOUS", `${at}.serious`, `${x.id}: rung 4 or higher, or any death, makes it serious; set serious to true.`));
+  }
+  const cats = new Set(x.sources.map((s) => s.category));
+  if (x.seed) {
+    if (x.sources.length < 1) out.push(error("INCIDENT_SOURCES", `${at}.sources`, `${x.id}: a seed incident needs at least one source.`));
+  } else {
+    if (x.sources.length < 2 || cats.size < 2) {
+      out.push(error("INCIDENT_SOURCES", `${at}.sources`, `${x.id} needs at least 2 sources from at least 2 categories (has ${x.sources.length} from ${cats.size}).`));
     }
-  });
+    if (x.host_statement === "yes" && !cats.has("eu_gov_security") && !cats.has("nato_eu")) {
+      out.push(error("INCIDENT_SOURCES", `${at}.sources`, `${x.id}: host_statement is "yes", so cite that statement (eu_gov_security) or NATO/EU (nato_eu).`));
+    }
+    if (x.host_statement === "none_yet" && x.attribution > 2) {
+      out.push(error("INCIDENT_SOURCES", `${at}.attribution`, `${x.id}: without a host statement, attribution can be at most 2 (Suspected).`));
+    }
+  }
+  if (x.date_precision === "month" && !x.seed) {
+    out.push(error("INCIDENT_PRECISION", `${at}.date_precision`, `${x.id}: date_precision "month" is only for seed records; give the day.`));
+  }
+  if (x.date_precision === "month" && !x.date.endsWith("-01")) {
+    out.push(error("INCIDENT_PRECISION", `${at}.date`, `${x.id}: with date_precision "month", date must be the 1st of the month.`));
+  }
   return out;
-};
+}
+
+/** STRIKE_EVIDENCE for one record. */
+export function strikeRecordIssues(x: Pick<Strike, "id" | "verification" | "sources" | "damage" | "effect">, at: string): ValidationIssue[] {
+  const gaps = strikeEvidenceGaps(x.verification, x.sources, x.damage, x.effect);
+  return gaps.length
+    ? [error("STRIKE_EVIDENCE", at, `${x.id} at verification ${x.verification} lacks ${gaps.join("; ")}. Add the evidence or lower the level.`)]
+    : [];
+}
+
+const incidents: Rule = ({ draft }) => draft.incidents_new.flatMap((x, i) => incidentRecordIssues(x, `incidents_new[${i}]`));
+
+const strikes: Rule = ({ draft }) => draft.strikes_new.flatMap((x, i) => strikeRecordIssues(x, `strikes_new[${i}]`));
 
 const updates: Rule = ({ draft, context, world }) => {
   if (!context || !world) return [];
