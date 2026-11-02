@@ -97,6 +97,13 @@ section in the same PR and is listed here.
 | 2 | Sample dataset written for previews | `fixtures/src/site.ts` generates `fixtures/site-content` (10 briefs, 41 incidents, 15 strikes, 8 forecasts) and checks it with `validateAll`; CI checks the committed fixtures are current and builds with both content folders | Keeps the sample coherent as schemas and rules change |
 | 2 | Vercel Node 24.x | Node 26.x, Vercel's default at creation, plus an Ignored Build Step (§8.1) | Matches Kobol's Node; CI still builds on 24 |
 | 2 | Screenshots with Playwright "if available" | Taken with `playwright-core` driving the installed Chrome, outside the repo | Playwright isn't installed on Kobol; nothing is added to the project's dependencies |
+| 3 | `npm install -g` the Claude CLI; flags including `--max-turns 150` | Installed in `/Users/kobol/.europetracker/cli`; flags updated for 2.1.316 (§8.4): `--restricted`, `--safe-mode`, `--tools`, `dontAsk`, a fallback model, no `--max-turns` | A global install would shadow JL's own `claude`; the new flags fence the agent in more tightly than allow and deny lists alone |
+| 3 | Run outcome from the agent's exit code | From the transcript's final `result` event (`is_error`) and the draft file | The CLI exits 0 even when sign-in fails |
+| 3 | Pack Markdown lists an item under every category it covers | Full line under its first category; a short "see <category>" line under the others. Google News items show "(lead: search for the original article)" instead of their redirect URL | The first real pack was 263 KB; it is now about 107 KB. The redirect URLs can't be cited or reliably opened |
+| 3 | Source registry candidates | 79 feeds, all live on 2026-11-02: 16 Telegram channels, 30 RSS feeds, 33 Google News searches. ISW, NATO and the US State Department block or lack RSS, so they are site searches | Verified with `npm run sources:check` |
+| 3 | Validate against the context | `daily.ts` validates against the context it built in memory (a copy goes to `logs/DATE.context.json`), never `drafts/context.json` | The agent can write in `drafts/` |
+| 3 | `--dry-run`: no git writes | Preflight also skips `git checkout main` and `git pull` on a dry run, and allows uncommitted changes | A dry run must work from a feature branch |
+| 3 | daily.ts runs its helpers by relative path | It runs `collect.ts` and `archive-urls.ts` with the repo's own `tsx` by absolute path, and takes an injectable token reader | So the end-to-end test can run the real pipeline against a temporary repo with a fake agent |
 
 ---
 
@@ -280,7 +287,8 @@ EuropeTracker/
 │   ├── gen-json-schema.ts         # Zod → routine/schema/draft-brief.schema.json
 │   ├── agent-check.ts             # One-turn smoke test of the headless agent
 │   └── lib/                       # log.ts, run.ts (child processes with timeouts), git.ts,
-│                                  # keychain.ts, transcript.ts (§7.10), lock.ts, summary.ts (§7.7)
+│                                  # keychain.ts, transcript.ts (§7.10), lock.ts, summary.ts (§7.7),
+│                                  # agent.ts (the agent's flags and environment, §8.4)
 ├── fixtures/
 │   ├── briefs/valid-weekday.json, valid-monday.json, valid-quiet.json
 │   ├── briefs/invalid--<CODE>.json # One per validation rule, ≥ 15 files
@@ -288,6 +296,7 @@ EuropeTracker/
 │   ├── evidence/*.json            # Evidence sets for SOURCE_UNSEEN tests
 │   ├── src/                       # Builds the brief, context and evidence fixtures (npm run fixtures:gen)
 │   ├── collect/                   # Saved RSS/Telegram HTML samples for collector tests
+│   ├── agent/                     # A real CLI transcript and fake-claude.mjs for the pipeline tests
 │   └── site-content/              # Coherent SAMPLE dataset for previews (§9 Phase 2)
 ├── tests/                         # Vitest: *.test.ts
 ├── drafts/                        # (gitignored) agent output and context
@@ -1362,6 +1371,8 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
   - permalink from `a.tgme_widget_message_date[href]`
   - title = the first 120 chars of the text, snippet = the first 300.
   - **Verify** these selectors in Phase 3 against a saved page, stored in `fixtures/collect/`.
+    Done 2026-11-02: the live pages match. `fixtures/collect/telegram.html` keeps the real markup with
+    invented text. A reply's quoted text sits inside `.tgme_widget_message_reply` and is skipped.
 - `gnews` queries: build the URL in §4.12 and parse as RSS.
   - The outlet comes from `<source url=…>`; the category comes from the `domains` map, else
     "unclassified".
@@ -1505,7 +1516,9 @@ Scoring itself happens in `publish.ts` through `aggregate.brier()`.
   - strip a `web.archive.org/web/<ts>/` prefix
 - Writes `logs/DATE.evidence.json`: `{ "urls": string[] }`.
 - **Verify** the event shapes against the installed CLI's real output in Phase 3, and keep a trimmed
-  real transcript in `fixtures/` for tests.
+  real transcript in `fixtures/` for tests. Done 2026-11-02 for a sign-in failure
+  (`fixtures/agent/transcript-auth-failed.jsonl`); `fixtures/agent/fake-claude.mjs` emits the same
+  event shapes for the end-to-end test.
 
 ---
 
@@ -1587,9 +1600,12 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
 
 ### 8.4 Claude Code CLI (headless research agent)
 
-- **Install the native build:** `/opt/homebrew/bin/npm install -g @anthropic-ai/claude-code@2.1.316`.
-  The package installs the `darwin-arm64` binary as an optional dependency.
-  - Check: `file -L /opt/homebrew/bin/claude` (or the binary it links to) must report arm64.
+- **Install the native build in its own folder:**
+  `/opt/homebrew/bin/npm install --prefix /Users/kobol/.europetracker/cli @anthropic-ai/claude-code@2.1.316`.
+  The binary is `/Users/kobol/.europetracker/cli/node_modules/.bin/claude` (`ET_CLAUDE_BIN`).
+  - Not `npm install -g`: npm's global prefix on Kobol is `~/.npm-global`, which comes first on the
+    PATH, so a global install would replace JL's own `claude`.
+  - Check: `file -L` on the binary must report arm64 (it did on 2026-11-02).
   - Never use `~/.local/bin/claude`, which is an Intel build from March 2026.
 - **Isolated config dir:** `CLAUDE_CONFIG_DIR=/Users/kobol/.europetracker/claude`, created with mode
   700. This keeps JL's plugins, MCP servers, hooks and memory out of the pipeline.
@@ -1599,15 +1615,30 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
   `HOME`, `PATH`, `TZ`, `CLAUDE_CONFIG_DIR`, `CLAUDE_CODE_OAUTH_TOKEN`, `DISABLE_AUTOUPDATER=1`.
 
 ```
-/opt/homebrew/bin/claude -p "<rendered PROMPT.md>" \
-  --model "${ET_MODEL:-opus}" \
+$ET_CLAUDE_BIN -p "<rendered PROMPT.md>" \
+  --model "${ET_MODEL:-opus}" --fallback-model "${ET_FALLBACK_MODEL:-sonnet}" \
   --output-format stream-json --verbose \
-  --max-turns 150 \
+  --restricted --safe-mode \
+  --tools WebSearch,WebFetch,Read,Glob,Grep,Write,Edit \
   --settings routine/agent-settings.json \
   --strict-mcp-config --mcp-config '{"mcpServers":{}}' \
+  --permission-mode dontAsk --permission-prompts none \
   --allowedTools "WebSearch" "WebFetch" "Read" "Glob" "Grep" "Write(drafts/**)" "Edit(drafts/**)" \
   --disallowedTools "Bash" "Task" "NotebookEdit"
 ```
+
+Verified against `claude --help` for 2.1.316 (2026-11-02):
+- `--max-turns` no longer exists; the agent timeout bounds the run instead.
+- `--restricted` removes every tool that runs commands or code, confines the file tools to the working
+  directory, and ignores user, project and local settings files. `--safe-mode` turns off CLAUDE.md,
+  skills, plugins, hooks, custom agents and MCP servers. `--tools` is the complete list of built-in
+  tools that exist in the session. With `--permission-mode dontAsk` and `--permission-prompts none`,
+  anything not allowed is denied without a prompt.
+- `--bare` is not used: it accepts only API keys, not the OAuth token.
+- The CLI exits 0 even when sign-in fails. A run's outcome is the final `{"type":"result"}` event's
+  `is_error` (its `subtype` says "success" either way), plus whether the draft exists.
+- `scripts/lib/agent.ts` builds these arguments; the prompt comes first because the allow and deny
+  lists are variadic.
 
 - **Repair:** the same flags plus `--resume <session_id>`, with the rendered REPAIR.md as the prompt.
 - **Verify** every flag and its exact syntax with `claude --help` for the installed version, and adapt.
@@ -1647,7 +1678,7 @@ Everything lives in JL's login keychain on Kobol. `scripts/lib/keychain.ts` read
 
 | Service name | What | How JL creates it |
 |---|---|---|
-| `europetracker-claude-oauth` | Claude Code OAuth token for the agent | In Terminal on Kobol: `CLAUDE_CONFIG_DIR=/Users/kobol/.europetracker/claude /opt/homebrew/bin/claude setup-token`, then `security add-generic-password -U -a kobol -s europetracker-claude-oauth -w` and paste the token at the prompt |
+| `europetracker-claude-oauth` | Claude Code OAuth token for the agent | In Terminal on Kobol: `CLAUDE_CONFIG_DIR=$HOME/.europetracker/claude $HOME/.europetracker/cli/node_modules/.bin/claude setup-token`, then `security add-generic-password -U -a kobol -s europetracker-claude-oauth -w` and paste the token at the prompt (twice) |
 
 `gh` already has a keyring login as 8gara8 with `repo` and `workflow` scopes. Git pushes over HTTPS use
 the same credentials.
@@ -1659,7 +1690,10 @@ the same credentials.
 | `ET_CONTENT_DIR` | `content` | Site loaders and scripts (Vercel Preview sets `fixtures/site-content`) |
 | `ET_SITE_URL` | `https://europetracker.vercel.app` | Live check, RSS links, metadata |
 | `ET_MODEL` | `opus` | Agent model alias |
-| `ET_CLAUDE_BIN` | `/opt/homebrew/bin/claude` | daily.ts |
+| `ET_CLAUDE_BIN` | `/Users/kobol/.europetracker/cli/node_modules/.bin/claude` | daily.ts |
+| `ET_FALLBACK_MODEL` | `sonnet` | Agent fallback when the main model is overloaded |
+| `ET_LIVE_WAIT_MS` | 8 minutes | How long publish waits for the brief to go live (tests set 0) |
+| `ET_ARCHIVE` | on | `0` skips the background Wayback requests (tests) |
 | `ET_CLAUDE_CONFIG_DIR` | `/Users/kobol/.europetracker/claude` | daily.ts |
 | `ET_HARD_STOP` | `06:55` | daily.ts |
 | `ET_RETRY_CUTOFF` | `06:25` | daily.ts |

@@ -1,0 +1,991 @@
+# EuropeTracker source registry (SPEC §4.12). `npm run sources:check` fetches every feed; drop or
+# replace any that fail. Coverage ids are the 12 categories in lib/vocab.ts; priority 1 is highest.
+schema_version: 1
+
+# Outlet domain → source category, used to classify Google News results (subdomains match).
+domains:
+  # Ukrainian government and military
+  president.gov.ua: ua_gov
+  mil.gov.ua: ua_gov
+  zsu.gov.ua: ua_gov
+  ssu.gov.ua: ua_gov
+  gur.gov.ua: ua_gov
+  mfa.gov.ua: ua_gov
+  kmu.gov.ua: ua_gov
+  united24media.com: ua_gov
+  # Russian government and military
+  kremlin.ru: ru_gov
+  mid.ru: ru_gov
+  mil.ru: ru_gov
+  government.ru: ru_gov
+  # Russian state and state-aligned media (signal only)
+  tass.com: ru_state_media
+  tass.ru: ru_state_media
+  ria.ru: ru_state_media
+  rt.com: ru_state_media
+  sputnikglobe.com: ru_state_media
+  rg.ru: ru_state_media
+  interfax.ru: ru_state_media
+  iz.ru: ru_state_media
+  kommersant.ru: ru_state_media
+  rbc.ru: ru_state_media
+  lenta.ru: ru_state_media
+  vedomosti.ru: ru_state_media
+  # Ukrainian independent media
+  kyivindependent.com: ua_independent
+  pravda.com.ua: ua_independent
+  suspilne.media: ua_independent
+  ukrinform.net: ua_independent
+  ukrinform.ua: ua_independent
+  unian.info: ua_independent
+  unian.ua: ua_independent
+  nv.ua: ua_independent
+  euromaidanpress.com: ua_independent
+  mil.in.ua: ua_independent
+  kyivpost.com: ua_independent
+  hromadske.ua: ua_independent
+  lb.ua: ua_independent
+  zn.ua: ua_independent
+  rbc.ua: ua_independent
+  liga.net: ua_independent
+  112.ua: ua_independent
+  uatv.ua: ua_independent
+  # Russian and Belarusian independent media
+  meduza.io: ru_by_independent
+  themoscowtimes.com: ru_by_independent
+  novayagazeta.eu: ru_by_independent
+  theins.ru: ru_by_independent
+  zona.media: ru_by_independent
+  istories.media: ru_by_independent
+  verstka.media: ru_by_independent
+  zerkalo.io: ru_by_independent
+  belsat.eu: ru_by_independent
+  nashaniva.com: ru_by_independent
+  currenttime.tv: ru_by_independent
+  # Wires and major international press
+  reuters.com: intl_press
+  apnews.com: intl_press
+  afp.com: intl_press
+  bloomberg.com: intl_press
+  ft.com: intl_press
+  bbc.com: intl_press
+  bbc.co.uk: intl_press
+  nytimes.com: intl_press
+  wsj.com: intl_press
+  washingtonpost.com: intl_press
+  theguardian.com: intl_press
+  economist.com: intl_press
+  politico.eu: intl_press
+  politico.com: intl_press
+  cnn.com: intl_press
+  aljazeera.com: intl_press
+  dw.com: intl_press
+  france24.com: intl_press
+  euronews.com: intl_press
+  rferl.org: intl_press
+  axios.com: intl_press
+  npr.org: intl_press
+  news.sky.com: intl_press
+  telegraph.co.uk: intl_press
+  independent.co.uk: intl_press
+  lemonde.fr: intl_press
+  defensenews.com: intl_press
+  breakingdefense.com: intl_press
+  ukdefencejournal.org.uk: intl_press
+  therecord.media: intl_press
+  janes.com: intl_press
+  cbsnews.com: intl_press
+  nbcnews.com: intl_press
+  abcnews.go.com: intl_press
+  intellinews.com: intl_press
+  # Frontline and regional European press
+  notesfrompoland.com: eu_regional_press
+  tvn24.pl: eu_regional_press
+  polsatnews.pl: eu_regional_press
+  rp.pl: eu_regional_press
+  wyborcza.pl: eu_regional_press
+  tvpworld.com: eu_regional_press
+  pap.pl: eu_regional_press
+  onet.pl: eu_regional_press
+  wp.pl: eu_regional_press
+  interia.pl: eu_regional_press
+  rmf24.pl: eu_regional_press
+  err.ee: eu_regional_press
+  postimees.ee: eu_regional_press
+  delfi.lt: eu_regional_press
+  delfi.ee: eu_regional_press
+  delfi.lv: eu_regional_press
+  lrt.lt: eu_regional_press
+  15min.lt: eu_regional_press
+  lsm.lv: eu_regional_press
+  tvnet.lv: eu_regional_press
+  yle.fi: eu_regional_press
+  hs.fi: eu_regional_press
+  iltalehti.fi: eu_regional_press
+  is.fi: eu_regional_press
+  digi24.ro: eu_regional_press
+  hotnews.ro: eu_regional_press
+  g4media.ro: eu_regional_press
+  agerpres.ro: eu_regional_press
+  stirileprotv.ro: eu_regional_press
+  adevarul.ro: eu_regional_press
+  newsmaker.md: eu_regional_press
+  ipn.md: eu_regional_press
+  moldpres.md: eu_regional_press
+  zdg.md: eu_regional_press
+  unimedia.info: eu_regional_press
+  stiri.md: eu_regional_press
+  deschide.md: eu_regional_press
+  moldova1.md: eu_regional_press
+  stiripesurse.ro: eu_regional_press
+  tvrinfo.ro: eu_regional_press
+  informat.ro: eu_regional_press
+  dr.dk: eu_regional_press
+  nrk.no: eu_regional_press
+  svt.se: eu_regional_press
+  dn.se: eu_regional_press
+  spiegel.de: eu_regional_press
+  tagesschau.de: eu_regional_press
+  zeit.de: eu_regional_press
+  faz.net: eu_regional_press
+  welt.de: eu_regional_press
+  n-tv.de: eu_regional_press
+  aktuality.sk: eu_regional_press
+  dennikn.sk: eu_regional_press
+  telex.hu: eu_regional_press
+  hvg.hu: eu_regional_press
+  seznamzpravy.cz: eu_regional_press
+  idnes.cz: eu_regional_press
+  bta.bg: eu_regional_press
+  # European governments, militaries and security services
+  gov.pl: eu_gov_security
+  wojsko-polskie.pl: eu_gov_security
+  bbn.gov.pl: eu_gov_security
+  kam.lt: eu_gov_security
+  kariuomene.lt: eu_gov_security
+  vsd.lt: eu_gov_security
+  mod.gov.lv: eu_gov_security
+  mil.lv: eu_gov_security
+  kaitseministeerium.ee: eu_gov_security
+  mil.ee: eu_gov_security
+  valisluureamet.ee: eu_gov_security
+  kapo.ee: eu_gov_security
+  defmin.fi: eu_gov_security
+  puolustusvoimat.fi: eu_gov_security
+  raja.fi: eu_gov_security
+  supo.fi: eu_gov_security
+  poliisi.fi: eu_gov_security
+  mapn.ro: eu_gov_security
+  sri.ro: eu_gov_security
+  army.md: eu_gov_security
+  gov.md: eu_gov_security
+  bundeswehr.de: eu_gov_security
+  bmvg.de: eu_gov_security
+  verfassungsschutz.de: eu_gov_security
+  generalbundesanwalt.de: eu_gov_security
+  fmn.dk: eu_gov_security
+  forsvaret.no: eu_gov_security
+  pst.no: eu_gov_security
+  sakerhetspolisen.se: eu_gov_security
+  forsvarsmakten.se: eu_gov_security
+  gov.uk: eu_gov_security
+  aivd.nl: eu_gov_security
+  defensie.nl: eu_gov_security
+  # NATO and EU institutions
+  nato.int: nato_eu
+  shape.nato.int: nato_eu
+  consilium.europa.eu: nato_eu
+  ec.europa.eu: nato_eu
+  eeas.europa.eu: nato_eu
+  europarl.europa.eu: nato_eu
+  # US government
+  whitehouse.gov: us_gov
+  state.gov: us_gov
+  defense.gov: us_gov
+  war.gov: us_gov
+  treasury.gov: us_gov
+  congress.gov: us_gov
+  # Open-source intelligence and monitoring data
+  understandingwar.org: osint_data
+  deepstatemap.live: osint_data
+  geoconfirmed.org: osint_data
+  bellingcat.com: osint_data
+  oryxspioenkop.com: osint_data
+  gpsjam.org: osint_data
+  flightradar24.com: osint_data
+  acleddata.com: osint_data
+  criticalthreats.org: osint_data
+  # Think tanks and analysts
+  rusi.org: think_tank
+  iiss.org: think_tank
+  csis.org: think_tank
+  carnegieendowment.org: think_tank
+  ecfr.eu: think_tank
+  icds.ee: think_tank
+  cna.org: think_tank
+  rand.org: think_tank
+  atlanticcouncil.org: think_tank
+  chathamhouse.org: think_tank
+  warontherocks.com: think_tank
+  cepa.org: think_tank
+  pism.pl: think_tank
+  osw.waw.pl: think_tank
+  fiia.fi: think_tank
+  swp-berlin.org: think_tank
+  foreignaffairs.com: think_tank
+  aei.org: think_tank
+  # Markets and energy data
+  oilprice.com: markets_energy
+  argusmedia.com: markets_energy
+  spglobal.com: markets_energy
+  kpler.com: markets_energy
+  energyandcleanair.org: markets_energy
+  gie.eu: markets_energy
+  iea.org: markets_energy
+  # Humanitarian, nuclear safety and international bodies
+  iaea.org: intl_bodies
+  un.org: intl_bodies
+  ohchr.org: intl_bodies
+  unhcr.org: intl_bodies
+  icrc.org: intl_bodies
+  osce.org: intl_bodies
+  # Third-party states
+  fmprc.gov.cn: third_party
+  xinhuanet.com: third_party
+  news.cn: third_party
+  globaltimes.cn: third_party
+  chinadaily.com.cn: third_party
+  aa.com.tr: third_party
+  trtworld.com: third_party
+  belta.by: third_party
+  mil.by: third_party
+  president.gov.by: third_party
+  mea.gov.in: third_party
+  kormany.hu: third_party
+  vlada.gov.sk: third_party
+  vatican.va: third_party
+
+# Ranking boosts, matched case-insensitively in titles and snippets.
+keywords:
+  # English
+  - drone
+  - missile
+  - airspace
+  - incursion
+  - shot down
+  - debris
+  - sabotage
+  - arson
+  - explosion
+  - undersea cable
+  - pipeline
+  - shadow fleet
+  - tanker
+  - jamming
+  - spoofing
+  - cyberattack
+  - Kaliningrad
+  - Belarus
+  - Suwałki
+  - exercise
+  - nuclear
+  - Zaporizhzhia
+  - IAEA
+  - Article 4
+  - Article 5
+  - NATO
+  - ceasefire
+  - sanctions
+  - refinery
+  - oil depot
+  - Tomahawk
+  - mobilisation
+  - mobilization
+  - Narva
+  - Baltic
+  - Black Sea
+  - Danube
+  - Moldova
+  - Transnistria
+  - interference
+  - espionage
+  - arrested
+  # Ukrainian
+  - дрон
+  - безпілотник
+  - ракет
+  - НПЗ
+  - ППО
+  # Russian
+  - беспилотник
+  - БПЛА
+  - ПВО
+  - учения
+  - ядерн
+  - Калининград
+  # Polish
+  - dron
+  - przestrzeń powietrzna
+  - sabotaż
+  - rakieta
+  # Lithuanian
+  - dronas
+  - oro erdv
+  - balion
+  # Latvian
+  - drons
+  - gaisa telp
+  # Estonian
+  - droon
+  - õhuruum
+  # Finnish
+  - drooni
+  - ilmatila
+  - häirintä
+  # Romanian
+  - dronă
+  - spațiul aerian
+  - sabotaj
+  # German
+  - Drohne
+  - Luftraum
+  - Spionage
+
+feeds:
+  # --- Telegram: official channels and monitors (Russian official sources only work this way) ---
+  - id: ua-air-force
+    name: Ukrainian Air Force (Telegram)
+    kind: telegram
+    channel: kpszsu
+    category: ua_gov
+    language: uk
+    coverage: [russian_strikes, airspace]
+    priority: 1
+  - id: ua-general-staff
+    name: General Staff of Ukraine (Telegram)
+    kind: telegram
+    channel: GeneralStaffZSU
+    category: ua_gov
+    language: uk
+    coverage: [battlefield, deep_strikes]
+    priority: 1
+  - id: ru-mod
+    name: Russian Ministry of Defence (Telegram)
+    kind: telegram
+    channel: mod_russia
+    category: ru_gov
+    language: ru
+    coverage: [battlefield, deep_strikes, russian_strikes]
+    priority: 1
+  - id: ru-mfa
+    name: Russian Foreign Ministry (Telegram)
+    kind: telegram
+    channel: MID_Russia
+    category: ru_gov
+    language: ru
+    coverage: [diplomacy, nuclear, resolve, political_economic]
+    priority: 2
+  - id: deepstate
+    name: DeepState (Telegram)
+    kind: telegram
+    channel: DeepStateUA
+    category: osint_data
+    language: uk
+    coverage: [battlefield]
+    priority: 2
+  - id: ru-gov-belgorod
+    name: Belgorod governor (Telegram)
+    kind: telegram
+    channel: vvgladkov
+    category: ru_gov
+    language: ru
+    coverage: [deep_strikes]
+    priority: 2
+  - id: ru-gov-bryansk
+    name: Bryansk governor (Telegram)
+    kind: telegram
+    channel: avbogomaz
+    category: ru_gov
+    language: ru
+    coverage: [deep_strikes]
+    priority: 2
+  - id: astra
+    name: ASTRA (Telegram)
+    kind: telegram
+    channel: astrapress
+    category: ru_by_independent
+    language: ru
+    coverage: [deep_strikes, military_pressure]
+    priority: 2
+  - id: tass-telegram
+    name: TASS (Telegram)
+    kind: telegram
+    channel: tass_agency
+    category: ru_state_media
+    language: ru
+    coverage: [diplomacy, nuclear, military_pressure]
+    priority: 2
+  - id: rybar
+    name: Rybar (Telegram)
+    kind: telegram
+    channel: rybar
+    category: ru_state_media
+    language: ru
+    coverage: [battlefield, military_pressure, airspace]
+    priority: 3
+  - id: ua-president
+    name: President of Ukraine (Telegram)
+    kind: telegram
+    channel: V_Zelenskiy_official
+    category: ua_gov
+    language: uk
+    coverage: [diplomacy, resolve]
+    priority: 2
+  - id: ua-hur
+    name: Ukrainian military intelligence HUR (Telegram)
+    kind: telegram
+    channel: DIUkraine
+    category: ua_gov
+    language: uk
+    coverage: [deep_strikes, military_pressure]
+    priority: 2
+  - id: ua-sbu
+    name: Security Service of Ukraine (Telegram)
+    kind: telegram
+    channel: SBUkr
+    category: ua_gov
+    language: uk
+    coverage: [sabotage, deep_strikes]
+    priority: 3
+  - id: by-mod
+    name: Belarusian Ministry of Defence (Telegram)
+    kind: telegram
+    channel: modmilby
+    category: third_party
+    language: ru
+    coverage: [military_pressure, nuclear]
+    priority: 2
+  - id: suspilne
+    name: Suspilne News (Telegram)
+    kind: telegram
+    channel: suspilnenews
+    category: ua_independent
+    language: uk
+    coverage: [russian_strikes, battlefield]
+    priority: 2
+  - id: nexta
+    name: NEXTA (Telegram)
+    kind: telegram
+    channel: nexta_live
+    category: ru_by_independent
+    language: ru
+    coverage: [military_pressure, political_economic]
+    priority: 3
+
+  # --- RSS: news, regional press, institutions, monitors ---
+  - id: kyiv-independent
+    name: Kyiv Independent
+    kind: rss
+    url: https://kyivindependent.com/news-archive/rss/
+    category: ua_independent
+    language: en
+    coverage: [battlefield, russian_strikes, diplomacy, deep_strikes]
+    priority: 2
+  - id: ukrainska-pravda-en
+    name: Ukrainska Pravda (English)
+    kind: rss
+    url: https://www.pravda.com.ua/eng/rss/view_news/
+    category: ua_independent
+    language: en
+    coverage: [battlefield, russian_strikes, deep_strikes, diplomacy]
+    priority: 2
+  - id: ukrinform-en
+    name: Ukrinform (English)
+    kind: rss
+    url: https://www.ukrinform.net/rss/block-lastnews
+    category: ua_independent
+    language: en
+    coverage: [russian_strikes, diplomacy, battlefield]
+    priority: 3
+  - id: euromaidan-press
+    name: Euromaidan Press
+    kind: rss
+    url: https://euromaidanpress.com/feed/
+    category: ua_independent
+    language: en
+    coverage: [battlefield, deep_strikes]
+    priority: 3
+  - id: meduza-en
+    name: Meduza (English)
+    kind: rss
+    url: https://meduza.io/rss/en/all
+    category: ru_by_independent
+    language: en
+    coverage: [political_economic, diplomacy, deep_strikes]
+    priority: 2
+  - id: moscow-times
+    name: The Moscow Times
+    kind: rss
+    url: https://www.themoscowtimes.com/rss/news
+    category: ru_by_independent
+    language: en
+    coverage: [deep_strikes, political_economic, diplomacy, nuclear]
+    priority: 2
+  - id: tass-en
+    name: TASS (English)
+    kind: rss
+    url: https://tass.com/rss/v2.xml
+    category: ru_state_media
+    language: en
+    coverage: [diplomacy, military_pressure, nuclear]
+    priority: 3
+  - id: notes-from-poland
+    name: Notes from Poland
+    kind: rss
+    url: https://notesfrompoland.com/feed/
+    category: eu_regional_press
+    language: en
+    coverage: [airspace, sabotage, resolve, political_economic]
+    priority: 1
+  - id: err-news
+    name: ERR News
+    kind: rss
+    url: https://news.err.ee/rss
+    category: eu_regional_press
+    language: en
+    coverage: [airspace, maritime, cyber_ew, military_pressure]
+    priority: 1
+  - id: lsm-en
+    name: LSM (English)
+    kind: rss
+    url: https://eng.lsm.lv/rss/
+    category: eu_regional_press
+    language: en
+    coverage: [airspace, military_pressure, political_economic]
+    priority: 2
+  - id: lrt-en
+    name: LRT English
+    kind: rss
+    url: https://www.lrt.lt/en/news-in-english?rss
+    category: eu_regional_press
+    language: en
+    coverage: [airspace, military_pressure, sabotage]
+    priority: 2
+  - id: yle-news
+    name: Yle News
+    kind: rss
+    url: https://yle.fi/rss/uutiset/tuoreimmat
+    category: eu_regional_press
+    language: fi
+    coverage: [maritime, cyber_ew, military_pressure]
+    priority: 2
+  - id: digi24
+    name: Digi24
+    kind: rss
+    url: https://www.digi24.ro/rss
+    category: eu_regional_press
+    language: ro
+    coverage: [airspace, russian_strikes, political_economic]
+    priority: 2
+  - id: newsmaker-md
+    name: NewsMaker (Moldova)
+    kind: rss
+    url: https://newsmaker.md/feed/
+    category: eu_regional_press
+    language: ro
+    coverage: [airspace, political_economic, military_pressure]
+    priority: 2
+  - id: bbc-europe
+    name: BBC News Europe
+    kind: rss
+    url: https://feeds.bbci.co.uk/news/world/europe/rss.xml
+    category: intl_press
+    language: en
+    coverage: [diplomacy, resolve, airspace]
+    priority: 2
+  - id: guardian-ukraine
+    name: The Guardian (Ukraine)
+    kind: rss
+    url: https://www.theguardian.com/world/ukraine/rss
+    category: intl_press
+    language: en
+    coverage: [battlefield, diplomacy, deep_strikes]
+    priority: 2
+  - id: politico-eu
+    name: Politico Europe
+    kind: rss
+    url: https://www.politico.eu/feed/
+    category: intl_press
+    language: en
+    coverage: [resolve, political_economic, diplomacy]
+    priority: 2
+  - id: euronews
+    name: Euronews
+    kind: rss
+    url: https://www.euronews.com/rss?level=theme&name=news
+    category: intl_press
+    language: en
+    coverage: [resolve, diplomacy]
+    priority: 3
+  - id: dw-europe
+    name: DW (Europe)
+    kind: rss
+    url: https://rss.dw.com/rdf/rss-en-eu
+    category: intl_press
+    language: en
+    coverage: [resolve, sabotage, political_economic]
+    priority: 3
+  - id: the-record
+    name: The Record (cyber)
+    kind: rss
+    url: https://therecord.media/feed
+    category: intl_press
+    language: en
+    coverage: [cyber_ew]
+    priority: 2
+  - id: uk-defence-journal
+    name: UK Defence Journal
+    kind: rss
+    url: https://ukdefencejournal.org.uk/feed/
+    category: intl_press
+    language: en
+    coverage: [resolve, maritime, military_pressure]
+    priority: 3
+  - id: defense-news
+    name: Defense News
+    kind: rss
+    url: https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml
+    category: intl_press
+    language: en
+    coverage: [resolve, deep_strikes]
+    priority: 3
+  - id: bellingcat
+    name: Bellingcat
+    kind: rss
+    url: https://www.bellingcat.com/feed/
+    category: osint_data
+    language: en
+    coverage: [sabotage, deep_strikes]
+    priority: 3
+  - id: eu-council
+    name: Council of the EU press releases
+    kind: rss
+    url: https://www.consilium.europa.eu/en/rss/pressreleases.ashx
+    category: nato_eu
+    language: en
+    coverage: [diplomacy, resolve, political_economic]
+    priority: 2
+  - id: iaea
+    name: IAEA news
+    kind: rss
+    url: https://www.iaea.org/feeds/topnews
+    category: intl_bodies
+    language: en
+    coverage: [nuclear]
+    priority: 1
+  - id: war-on-the-rocks
+    name: War on the Rocks
+    kind: rss
+    url: https://warontherocks.com/feed/
+    category: think_tank
+    language: en
+    coverage: [resolve, military_pressure]
+    priority: 3
+  - id: icds
+    name: ICDS (Tallinn)
+    kind: rss
+    url: https://icds.ee/en/feed/
+    category: think_tank
+    language: en
+    coverage: [military_pressure, resolve]
+    priority: 3
+  - id: osw
+    name: Centre for Eastern Studies (OSW)
+    kind: rss
+    url: https://www.osw.waw.pl/en/rss.xml
+    category: think_tank
+    language: en
+    coverage: [diplomacy, military_pressure, political_economic]
+    priority: 3
+  - id: oilprice
+    name: OilPrice.com
+    kind: rss
+    url: https://oilprice.com/rss/main
+    category: markets_energy
+    language: en
+    coverage: [deep_strikes, political_economic]
+    priority: 3
+
+  # --- Google News searches: each frontline country in its own language, then each pathway ---
+  - id: q-airspace-pl
+    name: "Google News: drones in Polish airspace (pl)"
+    kind: gnews
+    query: "dron przestrzeń powietrzna"
+    hl: pl
+    gl: PL
+    coverage: [airspace]
+    priority: 2
+  - id: q-airspace-lt
+    name: "Google News: drones and balloons in Lithuania (lt)"
+    kind: gnews
+    query: "dronas OR balionai oro erdvė"
+    hl: lt
+    gl: LT
+    coverage: [airspace]
+    priority: 2
+  - id: q-airspace-lv
+    name: "Google News: drones in Latvian airspace (lv)"
+    kind: gnews
+    query: "drons gaisa telpa"
+    hl: lv
+    gl: LV
+    coverage: [airspace]
+    priority: 2
+  - id: q-airspace-ee
+    name: "Google News: drones in Estonian airspace (et)"
+    kind: gnews
+    query: "droon OR õhuruum"
+    hl: et
+    gl: EE
+    coverage: [airspace]
+    priority: 2
+  - id: q-airspace-fi
+    name: "Google News: drones in Finnish airspace (fi)"
+    kind: gnews
+    query: "drooni ilmatila"
+    hl: fi
+    gl: FI
+    coverage: [airspace]
+    priority: 2
+  - id: q-gnss-fi
+    name: "Google News: GPS interference in Finland (fi)"
+    kind: gnews
+    query: "GPS häirintä"
+    hl: fi
+    gl: FI
+    coverage: [cyber_ew]
+    priority: 3
+  - id: q-airspace-ro
+    name: "Google News: drones in Romanian airspace (ro)"
+    kind: gnews
+    query: "dronă spațiul aerian"
+    hl: ro
+    gl: RO
+    coverage: [airspace, russian_strikes]
+    priority: 2
+  - id: q-airspace-md
+    name: "Google News: drones over Moldova (ro)"
+    kind: gnews
+    query: "dronă Moldova"
+    hl: ro
+    gl: MD
+    coverage: [airspace, russian_strikes]
+    priority: 2
+  - id: q-moldova-politics
+    name: "Google News: Moldova and Transnistria (ro)"
+    kind: gnews
+    query: "Transnistria OR Găgăuzia Rusia"
+    hl: ro
+    gl: MD
+    coverage: [political_economic, military_pressure]
+    priority: 3
+  - id: q-airspace-en
+    name: "Google News: Russian drones in NATO airspace (en)"
+    kind: gnews
+    query: "Russian drone NATO airspace"
+    hl: en-US
+    gl: US
+    coverage: [airspace]
+    priority: 2
+  - id: q-sabotage-en
+    name: "Google News: Russian sabotage in Europe (en)"
+    kind: gnews
+    query: "sabotage Russia Europe arrested"
+    hl: en-GB
+    gl: GB
+    coverage: [sabotage]
+    priority: 2
+  - id: q-sabotage-de
+    name: "Google News: sabotage and Russia (de)"
+    kind: gnews
+    query: "Sabotage Russland"
+    hl: de
+    gl: DE
+    coverage: [sabotage]
+    priority: 2
+  - id: q-sabotage-pl
+    name: "Google News: sabotage and Russia (pl)"
+    kind: gnews
+    query: "sabotaż Rosja"
+    hl: pl
+    gl: PL
+    coverage: [sabotage]
+    priority: 2
+  - id: q-cable-en
+    name: "Google News: Baltic cables and pipelines (en)"
+    kind: gnews
+    query: "undersea cable Baltic"
+    hl: en-GB
+    gl: GB
+    coverage: [maritime]
+    priority: 2
+  - id: q-shadow-fleet-en
+    name: "Google News: shadow fleet tankers (en)"
+    kind: gnews
+    query: "shadow fleet tanker"
+    hl: en-GB
+    gl: GB
+    coverage: [maritime]
+    priority: 2
+  - id: q-gnss-en
+    name: "Google News: GPS jamming in the Baltic (en)"
+    kind: gnews
+    query: "GPS jamming Baltic"
+    hl: en-GB
+    gl: GB
+    coverage: [cyber_ew]
+    priority: 2
+  - id: q-cyber-en
+    name: "Google News: Russian cyberattacks in Europe (en)"
+    kind: gnews
+    query: "cyberattack Russian hackers Europe"
+    hl: en-GB
+    gl: GB
+    coverage: [cyber_ew]
+    priority: 2
+  - id: q-posture-en
+    name: "Google News: Russian forces near NATO borders (en)"
+    kind: gnews
+    query: "Russia troops Finland OR Baltic OR Kaliningrad OR Belarus border"
+    hl: en-GB
+    gl: GB
+    coverage: [military_pressure]
+    priority: 2
+  - id: q-nuclear-plant-en
+    name: "Google News: Zaporizhzhia nuclear plant (en)"
+    kind: gnews
+    query: "Zaporizhzhia nuclear"
+    hl: en-GB
+    gl: GB
+    coverage: [nuclear]
+    priority: 2
+  - id: q-nuclear-posture-en
+    name: "Google News: Russian nuclear signalling (en)"
+    kind: gnews
+    query: "Russia nuclear exercise OR doctrine OR Oreshnik"
+    hl: en-GB
+    gl: GB
+    coverage: [nuclear]
+    priority: 2
+  - id: q-interference-en
+    name: "Google News: Russian interference in European politics (en)"
+    kind: gnews
+    query: "Russian interference election Europe"
+    hl: en-GB
+    gl: GB
+    coverage: [political_economic]
+    priority: 3
+  - id: q-deep-strikes-en
+    name: "Google News: Ukrainian strikes inside Russia (en)"
+    kind: gnews
+    query: "Ukraine drone strike refinery OR airbase Russia"
+    hl: en-US
+    gl: US
+    coverage: [deep_strikes]
+    priority: 2
+  - id: q-deep-strikes-ru
+    name: "Google News: drone attacks inside Russia (ru)"
+    kind: gnews
+    query: "беспилотники атака НПЗ"
+    hl: ru
+    gl: LV
+    coverage: [deep_strikes]
+    priority: 2
+  - id: q-ru-strikes-uk
+    name: "Google News: Russian strikes on Ukraine overnight (uk)"
+    kind: gnews
+    query: "нічна атака дронів ракет"
+    hl: uk
+    gl: UA
+    coverage: [russian_strikes]
+    priority: 3
+  - id: q-danube-ro
+    name: "Google News: strikes near the Danube (ro)"
+    kind: gnews
+    query: "dronă Galați OR Tulcea OR Izmail"
+    hl: ro
+    gl: RO
+    coverage: [russian_strikes, airspace]
+    priority: 2
+  - id: q-ceasefire-en
+    name: "Google News: ceasefire talks (en)"
+    kind: gnews
+    query: "Ukraine Russia ceasefire talks"
+    hl: en-US
+    gl: US
+    coverage: [diplomacy]
+    priority: 2
+  - id: q-sanctions-en
+    name: "Google News: EU sanctions on Russia (en)"
+    kind: gnews
+    query: "EU sanctions package Russia"
+    hl: en-GB
+    gl: GB
+    coverage: [diplomacy, political_economic]
+    priority: 2
+  - id: q-resolve-en
+    name: "Google News: NATO eastern flank and air defence (en)"
+    kind: gnews
+    query: "NATO eastern flank air defence"
+    hl: en-GB
+    gl: GB
+    coverage: [resolve]
+    priority: 2
+  - id: q-cohesion-en
+    name: "Google News: Hungary and Slovakia on Ukraine (en)"
+    kind: gnews
+    query: "Orbán OR Fico Ukraine veto"
+    hl: en-GB
+    gl: GB
+    coverage: [resolve, political_economic]
+    priority: 3
+  - id: q-wires-en
+    name: "Google News: Reuters and AP on Russia and Ukraine (en)"
+    kind: gnews
+    query: "Russia Ukraine (site:reuters.com OR site:apnews.com)"
+    hl: en-US
+    gl: US
+    coverage: [battlefield, diplomacy, deep_strikes, russian_strikes]
+    priority: 2
+  - id: q-energy-en
+    name: "Google News: Russian oil exports and refining (en)"
+    kind: gnews
+    query: "Russia refinery outage OR oil exports Urals"
+    hl: en-GB
+    gl: GB
+    coverage: [deep_strikes, political_economic]
+    priority: 3
+  - id: q-isw
+    name: "Google News: ISW assessments (en)"
+    kind: gnews
+    query: "Institute for the Study of War Russian offensive campaign assessment"
+    hl: en-US
+    gl: US
+    coverage: [battlefield, military_pressure, deep_strikes]
+    priority: 1
+  - id: q-nato
+    name: "Google News: NATO statements (en)"
+    kind: gnews
+    query: "site:nato.int"
+    hl: en-GB
+    gl: GB
+    coverage: [resolve, airspace]
+    priority: 1
+  - id: q-us-gov
+    name: "Google News: US government on Russia and Ukraine (en)"
+    kind: gnews
+    query: "Russia Ukraine (site:state.gov OR site:whitehouse.gov OR site:war.gov)"
+    hl: en-US
+    gl: US
+    coverage: [diplomacy, resolve]
+    priority: 3

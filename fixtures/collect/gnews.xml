@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- SAMPLE Google News search RSS for collector tests; invented items. -->
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>"dron" - Google News</title><link>https://news.google.com/search?q=dron</link><description>Google News</description>
+<item><title>SAMPLE: Dron nad Lubelszczyzną - Notes from Poland</title><link>https://news.google.com/rss/articles/CBMiSAMPLE1?oc=5</link><guid isPermaLink="false">CBMiSAMPLE1</guid><pubDate>Mon, 02 Nov 2026 21:00:00 GMT</pubDate><description>&lt;a href="https://news.google.com/rss/articles/CBMiSAMPLE1"&gt;SAMPLE: Dron nad Lubelszczyzną&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#6f6f6f"&gt;Notes from Poland&lt;/font&gt;</description><source url="https://notesfrompoland.com">Notes from Poland</source></item>
+<item><title>SAMPLE: Drone over the border - Unknown Blog</title><link>https://news.google.com/rss/articles/CBMiSAMPLE2?oc=5</link><guid isPermaLink="false">CBMiSAMPLE2</guid><pubDate>Mon, 02 Nov 2026 20:00:00 GMT</pubDate><description>SAMPLE</description><source url="https://unknown-blog.example">Unknown Blog</source></item>
+</channel></rss>
