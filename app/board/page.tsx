@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LineChart, HeatGrid } from "@/components/charts";
-import { CountryTiles, LadderGauge, PathwayDials } from "@/components/brief/board";
+import { LadderGauge } from "@/components/brief/board";
+import { EasternFlank, PathwayBars, RiskMatrix, SpilloverGauge } from "@/components/brief/overview";
 import { Empty, PageHeader, Section } from "@/components/layout/chrome";
 import { ProbabilityBadge, ScoreBadge, TrendArrow } from "@/components/ui/badges";
 import { pathwayCounts } from "@/lib/aggregate";
@@ -35,9 +36,12 @@ export default function BoardPage() {
       <div className="grid gap-5 lg:grid-cols-[minmax(0,330px)_1fr]">
         <LadderGauge current={state.ladder.current_rung} previous={state.ladder.current_rung} nextOdds={state.ladder.next_rung_odds} />
         {latest ? (
-          <div>
-            <p className="kicker text-fg">Why rung {latest.board.ladder.current_rung}</p>
-            <p className="prose-serif mt-2 text-[16px]">{latest.board.ladder.rationale}</p>
+          <div className="flex flex-col gap-4">
+            <SpilloverGauge current={latest.board.ladder.current_rung} previous={latest.board.ladder.previous_rung} nextOdds={latest.board.ladder.next_rung_odds} rationale={null} pathways={latest.board.pathways} />
+            <div>
+              <p className="kicker text-fg">Why rung {latest.board.ladder.current_rung}</p>
+              <p className="prose-serif mt-2 text-[16px]">{latest.board.ladder.rationale}</p>
+            </div>
           </div>
         ) : (
           <ul className="border border-line bg-panel">
@@ -54,11 +58,13 @@ export default function BoardPage() {
 
       {latest ? (
         <>
-          <Section title="Pathways" right="30-day odds of a serious incident">
-            <PathwayDials pathways={latest.board.pathways} computed={latest.computed.pathways} />
-          </Section>
-          <Section title="Country scores today">
-            <CountryTiles countries={latest.board.countries} index={{}} />
+          <Section title="Where the risk sits" right="30-day odds of a serious incident × how bad it would be">
+            <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] lg:gap-7">
+              <EasternFlank countries={latest.board.countries} index={{}} />
+              <RiskMatrix pathways={latest.board.pathways} />
+            </div>
+            <h3 className="kicker mt-6 mb-1 text-fg">The seven pathways</h3>
+            <PathwayBars pathways={latest.board.pathways} computed={latest.computed.pathways} />
           </Section>
         </>
       ) : null}

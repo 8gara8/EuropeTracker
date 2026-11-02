@@ -20,9 +20,9 @@ function Aside({ label, color, children }: { label: string; color: string; child
 }
 
 /** One numbered development: index and chip, then category and importance, then the write-up. */
-export function DevelopmentRow({ development: d, n, index }: { development: Development; n: number; index: SourceIndex }) {
+export function DevelopmentRow({ development: d, n, index, europe = true }: { development: Development; n: number; index: SourceIndex; europe?: boolean }) {
   const tone = IMPORTANCE_TONE[d.importance];
-  const color = TONE_COLOR[tone];
+  const color = d.importance === "notable" ? (europe ? "var(--accent)" : "var(--ink-mute)") : TONE_COLOR[tone];
   const pivotal = d.importance === "pivotal";
   return (
     <article
@@ -42,8 +42,8 @@ export function DevelopmentRow({ development: d, n, index }: { development: Deve
         {d.verification !== null ? <VerificationBadge level={d.verification} /> : null}
       </div>
       <div className="col-span-2 flex flex-col gap-1.5 md:col-span-1">
-        <h3 className="display text-[18px] leading-[1.3] tracking-[-0.01em] text-fg" style={{ textWrap: "pretty" }}>{d.headline}</h3>
-        <p className="text-[13.5px] leading-[1.55] text-soft" style={{ textWrap: "pretty" }}>{d.summary} <SourceRefs ids={d.source_ids} index={index} /></p>
+        <h3 className="display text-[19px] leading-[1.28] tracking-[-0.01em] text-fg md:text-[20px]" style={{ textWrap: "pretty" }}>{d.headline}</h3>
+        <p className="text-[14px] leading-[1.55] text-soft" style={{ textWrap: "pretty" }}>{d.summary} <SourceRefs ids={d.source_ids} index={index} /></p>
         {d.incident_ids.length || d.strike_ids.length ? (
           <span className="kicker normal-case tracking-[0.06em]">{[...d.incident_ids, ...d.strike_ids].join(" · ")}</span>
         ) : null}
@@ -51,10 +51,6 @@ export function DevelopmentRow({ development: d, n, index }: { development: Deve
       </div>
     </article>
   );
-}
-
-export function DevelopmentCard({ development, index }: { development: Development; index: SourceIndex }) {
-  return <DevelopmentRow development={development} n={1} index={index} />;
 }
 
 export function CategoryNotes({ notes, index }: { notes: CategoryNote[]; index: SourceIndex }) {
@@ -204,7 +200,7 @@ export function Next72h({ events }: { events: NextEvent[] }) {
 export function MetricsTable({ metrics, index }: { metrics: Metric[]; index: SourceIndex }) {
   if (!metrics.length) return <p className="kicker">No metrics today.</p>;
   return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-3 sm:grid-cols-2">
       {metrics.map((m) => (
         <div key={m.id} className="border border-line bg-panel px-3 py-2.5">
           <span className="kicker">{METRICS[m.id].label}</span>

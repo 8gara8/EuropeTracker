@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { loadContent } from "@/lib/content";
+import { shortDate } from "@/lib/format";
 import { SITE_NAME } from "@/lib/site";
 import { RUNGS } from "@/lib/vocab";
 import { MastheadNav } from "./MastheadNav";
@@ -21,15 +22,16 @@ export function Stamp({ text, angle = -3 }: { text: string; angle?: number }) {
 }
 
 export function Masthead() {
-  const latest = loadContent().briefs.at(-1);
-  const meta = latest ? `${latest.date} · Rung ${latest.board.ladder.current_rung} of ${RUNGS.length - 1}` : null;
+  const { briefs } = loadContent();
+  const latest = briefs.at(-1);
+  const meta = latest ? `${shortDate(latest.date)} · Brief ${String(briefs.length).padStart(3, "0")} · Rung ${latest.board.ladder.current_rung} of ${RUNGS.length - 1}` : null;
   return (
     <header className="mb-2">
       <div className="mb-[10px] flex flex-wrap items-center gap-x-5 gap-y-2 border-b-[3px] border-double border-rule pb-[10px] md:items-baseline">
-        <Link href="/" className="flex-1 whitespace-nowrap font-display text-[22px] font-semibold leading-none tracking-[-0.02em] text-fg no-underline hover:text-fg md:flex-none md:text-[26px]">
-          <span className="italic">EUROPE</span> TRACKER
-          <span className="font-normal text-muted"> · Spillover Brief</span>
+        <Link href="/" className="flex-1 whitespace-nowrap font-display text-[23px] font-semibold leading-none tracking-[-0.02em] text-fg no-underline hover:text-fg md:flex-none md:text-[28px]">
+          <span className="italic">Europe</span> Tracker
         </Link>
+        <span className="hidden font-display text-[18px] text-muted md:inline">The morning spillover brief</span>
         <div className="flex items-center gap-3 md:ml-auto">
           <span className="kicker hidden whitespace-nowrap md:inline">Daily 06:15 Taipei · @8gara8</span>
           <Stamp text="Unclassified · OSINT" />
