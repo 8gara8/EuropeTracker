@@ -26,37 +26,39 @@ export default function ForecastsPage() {
         and compared with a forecaster who uses only base rates.
       </PageHeader>
 
-      <div className="grid grid-cols-3 gap-2 text-center">
+      <div className="grid grid-cols-3 border border-rule bg-panel" style={{ borderLeft: "3px solid var(--accent)" }}>
         {[
           { label: "resolved", value: String(summary.n) },
           { label: "mean Brier", value: summary.mean_brier?.toFixed(3) ?? "–" },
           { label: "base-rate Brier", value: summary.mean_brier_base?.toFixed(3) ?? "–" },
         ].map((s) => (
-          <div key={s.label} className="rounded border border-line bg-panel p-2">
-            <div className="tabular text-xl font-bold">{s.value}</div>
-            <div className="text-xs text-muted">{s.label}</div>
+          <div key={s.label} className="border-r border-line px-[18px] py-[14px] last:border-r-0">
+            <div className="kicker">{s.label}</div>
+            <div className="display mt-1 text-[28px] leading-none">{s.value}</div>
           </div>
         ))}
       </div>
       {skill !== null ? (
         <p className="mt-2 text-sm text-muted">
-          Skill against base rates: <span className="tabular font-semibold text-fg">{(skill * 100).toFixed(0)}%</span>
+          Skill against base rates: <span className="tabular text-fg">{(skill * 100).toFixed(0)}%</span>
           {summary.n < 20 ? " (too few resolved forecasts to judge calibration)" : ""}
         </p>
       ) : null}
 
       <Section title={`Open (${open.length})`}>
         {open.length === 0 ? <Empty>No open forecasts.</Empty> : (
-          <ul className="divide-y divide-line">
+          <ul className="border-t border-line">
             {open.map((f) => (
-              <li key={f.id} className="py-2.5 text-sm">
-                <p className="font-semibold">{f.question}</p>
-                <p className="mt-0.5 text-xs text-muted">
-                  <span className="tabular text-base font-bold text-fg">{current(f)}%</span>
+              <li key={f.id} className="grid gap-x-5 gap-y-1 border-b border-line py-3 md:grid-cols-[90px_1fr]">
+                <span className="display text-[30px] leading-none" style={{ color: current(f) >= 55 ? "var(--accent)" : current(f) >= 40 ? "var(--amber)" : "var(--ink)" }}>{current(f)}%</span>
+                <div>
+                <p className="display text-[17px] leading-snug">{f.question}</p>
+                <p className="kicker mt-1 normal-case tracking-[0.06em]">
                   {f.updates.length ? ` (opened at ${f.probability}%)` : ""} · base rate {f.base_rate}% · resolves by {shortDate(f.resolves_by)} · {f.horizon}
                   {f.pathway ? ` · ${pathwayLabel(f.pathway)}` : ""} · {f.id}
                 </p>
-                <p className="mt-0.5 text-xs text-muted">Resolves yes if: {f.resolution_criteria}</p>
+                <p className="mt-1 text-[12.5px] text-soft">Resolves yes if: {f.resolution_criteria}</p>
+                </div>
               </li>
             ))}
           </ul>
@@ -65,11 +67,11 @@ export default function ForecastsPage() {
 
       <Section title={`Resolved (${closed.length})`}>
         {closed.length === 0 ? <Empty>No forecasts have resolved yet.</Empty> : (
-          <ul className="divide-y divide-line">
+          <ul className="border-t border-line">
             {closed.map((f) => (
-              <li key={f.id} className="py-2.5 text-sm">
-                <p><Tag>{OUTCOME[f.status]}</Tag> <span className="font-semibold">{f.question}</span></p>
-                <p className="mt-0.5 text-xs text-muted">
+              <li key={f.id} className="border-b border-line py-3 text-sm">
+                <p className="flex flex-wrap items-center gap-2"><Tag>{OUTCOME[f.status]}</Tag> <span className="display text-[17px]">{f.question}</span></p>
+                <p className="kicker mt-1 normal-case tracking-[0.06em]">
                   Final forecast {current(f)}% · base rate {f.base_rate}%
                   {f.brier !== null ? <> · Brier <span className="tabular font-semibold text-fg">{f.brier.toFixed(3)}</span> (base rate {f.brier_base?.toFixed(3)})</> : ""}
                   {f.resolved_on ? ` · ${shortDate(f.resolved_on)}` : ""}

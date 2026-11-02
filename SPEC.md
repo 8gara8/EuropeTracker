@@ -114,6 +114,7 @@ section in the same PR and is listed here.
 | 4 | Counting rules (STYLE.md §4) | Seed conventions, listed in `docs/SEED-REPORT.md`: stray Ukrainian drones logged as war munitions on European soil; airport closures by unidentified drones at rung 2; European boardings of shadow-fleet ships at rung 2, Russian escorts at rung 1; a death or a strike inside territorial waters at sea is rung 4 | The rules don't cover these cases explicitly; the daily agent should follow the same conventions |
 | 4 | The seed builder marks rung 4 or deaths as serious | It also applies the pathway threshold where a type meets it by definition: every maritime strike on or seizure of a vessel is serious, and `INCIDENT_SERIOUS` enforces that for seeds, drafts and updates | Seed review: seven ship strikes below rung 4 (Ukrainian strikes on shadow-fleet tankers off Turkey and Malta, and three ships off Romania) were left non-serious, so maritime showed 5 serious incidents in 12 months instead of 12 |
 | 5 | Supervised runs are reviewed on the `review/DATE` Vercel preview | Previews build from the sample data (`ET_CONTENT_DIR`), so `review/DATE` previews now build from `content/` instead | Found before the first supervised run: the preview would have shown the sample briefs, not the brief under review |
+| 5 | Plain site design (system fonts, white and blue, light and dark) | ME Tracker's paper design: cream paper, Newsreader, IBM Plex Sans and Mono, a masthead with stamp and tab bar, headline tiles, pathway dials, numbered developments, square pills; light only. Appendix A summarises the tokens | JL, on the first supervised preview: the site should look like ME Tracker |
 
 ---
 
@@ -1954,34 +1955,24 @@ them through PRs.
 
 ## Appendix A — Design tokens
 
-```css
-@import "tailwindcss";
+The site uses ME Tracker's "paper" design (its design handoff, v3), so the two trackers read as
+siblings. `app/globals.css` holds the tokens; this is a summary.
 
-@theme {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-}
-
-:root {
-  --bg: #ffffff; --fg: #111827; --muted: #6b7280; --border: #e5e7eb; --panel: #f9fafb; --accent: #1d4ed8;
-  /* rungs 0–6 */
-  --rung-0: #6b7280; --rung-1: #2563eb; --rung-2: #0d9488; --rung-3: #d97706;
-  --rung-4: #ea580c; --rung-5: #dc2626; --rung-6: #7f1d1d;
-  /* probability terms, low → high */
-  --p-remote: #f1f5f9; --p-highly_unlikely: #e0f2fe; --p-unlikely: #bae6fd;
-  --p-realistic_possibility: #fde68a; --p-likely: #fdba74; --p-highly_likely: #f87171; --p-almost_certain: #b91c1c;
-  /* country scores 1–5 */
-  --score-1: #16a34a; --score-2: #65a30d; --score-3: #d97706; --score-4: #ea580c; --score-5: #dc2626;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #0b0f17; --fg: #e5e7eb; --muted: #9ca3af; --border: #1f2937; --panel: #111827; --accent: #60a5fa; }
-}
-```
-
-- Text on `--p-highly_likely` and `--p-almost_certain` is white. All other badges use `--fg`.
-- Body text is 16 px with line-height 1.6.
-- Numbers in tables use `--font-mono`.
-- No web fonts.
+- **Colours:** paper `--bg #f3eee3`, deep `--bg-deep #eae2d0`, cards `--card #fbf8f0`; ink
+  `--ink #14161a`, soft `#3b3e45`, mute `#6b6a62`; rules `--rule #14161a` and `--rule-soft #c9bfa8`;
+  accent red `#b33a2e`, amber `#c48416`, green `#3e6b3a`; pill washes `--badge-esc #f1d9d5`,
+  `--badge-mix #f3e3c6`, `--badge-ok #d9e3d3`, `--badge-neutral #ece6d8`. Light only; no dark mode.
+- **Scales:** rungs 0–6 run grey, green, olive, amber, red, dark red, deep red (`--rung-N`); country
+  scores 1–5 the same way (`--score-N`); probability terms are one red ramp, light to dark (`--p-*`).
+- **Pathway colours in charts** (`--pw-*`): `#3d6fa8 #c0503a #22927a #c48416 #b4688f #4f7a34 #6b5aa8`,
+  checked with the dataviz validator against the paper surface (adjacent CVD ΔE ≥ 8.9). Amber is below
+  3:1 contrast, so every chart keeps a legend and a data table.
+- **Type:** Newsreader for display and reading prose, IBM Plex Sans for text, IBM Plex Mono for labels
+  and numbers, all through `next/font`. Kickers are 10 px mono, uppercase, tracked 0.14em; section labels
+  11 px sans, 0.22em; the brief title is Newsreader 600 at up to 48 px.
+- **Shapes:** no rounded corners anywhere. Sections open with a 1 px ink rule, a `§NN` number and an
+  uppercase label. Pills are square, mono and uppercase, with a colour chip, and always carry their
+  meaning as text.
 
 ## Appendix B — Starting indicators and assumptions
 

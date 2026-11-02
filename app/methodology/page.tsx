@@ -28,7 +28,7 @@ function StyleSection({ n, id, skipTables = false }: { n: number; id?: string; s
   return <Section id={id} title={s.title}><Markdown blocks={s.blocks} skipTables={skipTables} /></Section>;
 }
 
-const th = "border-b border-line py-1 pr-3 text-left text-xs font-semibold uppercase tracking-wide text-muted";
+const th = "border-b border-rule py-1.5 pr-3 text-left font-mono text-[10px] font-normal uppercase tracking-[0.14em] text-muted";
 const td = "border-b border-line py-1.5 pr-3 align-top";
 
 export default function MethodologyPage() {
@@ -71,13 +71,13 @@ export default function MethodologyPage() {
       <Section id="ladders" title="Attribution and verification">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
-            <h3 className="text-sm font-semibold">Attribution of incidents in Europe</h3>
+            <h3 className="kicker mb-1 text-fg">Attribution of incidents in Europe</h3>
             <ol className="mt-1 space-y-1 text-sm">
               {([1, 2, 3, 4] as const).map((l) => <li key={l}><span className="font-semibold">{l}. {ATTRIBUTION[l].label}:</span> {ATTRIBUTION[l].means}</li>)}
             </ol>
           </div>
           <div>
-            <h3 className="text-sm font-semibold">Verification of Ukraine&apos;s deep strikes</h3>
+            <h3 className="kicker mb-1 text-fg">Verification of Ukraine&apos;s deep strikes</h3>
             <ol className="mt-1 space-y-1 text-sm">
               {([1, 2, 3, 4, 5] as const).map((l) => <li key={l}><span className="font-semibold">{l}. {VERIFICATION[l].label}:</span> {VERIFICATION[l].means}</li>)}
             </ol>
@@ -105,7 +105,7 @@ export default function MethodologyPage() {
       <Section id="categories" title="Coverage categories">
         {groups.map((g) => (
           <div key={g} className="mt-3 first:mt-0">
-            <h3 className="text-sm font-semibold">{g}</h3>
+            <h3 className="kicker mb-1 text-fg">{g}</h3>
             <ul className="mt-1 space-y-1 text-sm">
               {CATEGORIES.filter((c) => CATEGORY_INFO[c].group === g).map((c) => (
                 <li key={c}><span className="font-semibold">{CATEGORY_INFO[c].label}:</span> {CATEGORY_INFO[c].covers}</li>

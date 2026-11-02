@@ -7,14 +7,14 @@ import { PATHWAYS, PROBABILITY_TERMS, type ProbabilityTerm } from "@/lib/vocab";
 // (400 units) and the figure is capped at 560px, so text stays readable from 375px phones to desktops.
 
 const W = 400;
-const FONT = 11;
+const FONT = 9.5;
 
 function Figure({ ariaLabel, children, legend, table }: { ariaLabel: string; children: ReactNode; legend?: ReactNode; table: ReactNode }) {
   return (
-    <figure className="max-w-[560px]">
+    <figure className="max-w-[640px] border border-line bg-panel px-[14px] py-[12px]">
       {children}
       {legend}
-      <details className="mt-1 text-xs text-muted">
+      <details className="kicker mt-2">
         <summary className="cursor-pointer">Data table: {ariaLabel}</summary>
         <div className="mt-1 max-h-72 overflow-auto">{table}</div>
       </details>
@@ -36,7 +36,7 @@ function Legend({ items }: { items: { label: string; color: string }[] }) {
     <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-muted">
       {items.map((i) => (
         <li key={i.label} className="flex items-center gap-1">
-          <span className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: i.color }} aria-hidden="true" />
+          <span className="inline-block h-2.5 w-2.5" style={{ background: i.color }} aria-hidden="true" />
           {i.label}
         </li>
       ))}
@@ -86,8 +86,8 @@ export function LineChart({ series, yMin = 0, yMax, yTicks, yLabel = String, ste
       <svg viewBox={`0 0 ${W} ${height}`} className="w-full" role="img" aria-label={ariaLabel}>
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={m.l} x2={W - m.r} y1={sy(t)} y2={sy(t)} stroke="var(--border)" strokeWidth={1} />
-            <text x={m.l - 4} y={sy(t) + 3.5} textAnchor="end" fontSize={FONT} fill="var(--muted)">{yLabel(t)}</text>
+            <line x1={m.l} x2={W - m.r} y1={sy(t)} y2={sy(t)} stroke="var(--border)" strokeWidth={1} strokeDasharray="1 3" />
+            <text x={m.l - 4} y={sy(t) + 3.5} textAnchor="end" fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)">{yLabel(t)}</text>
           </g>
         ))}
         {series.map((s, i) => {
@@ -103,8 +103,8 @@ export function LineChart({ series, yMin = 0, yMax, yTicks, yLabel = String, ste
             </g>
           );
         })}
-        <text x={m.l} y={height - 5} fontSize={FONT} fill="var(--muted)">{dayMonth(first)}</text>
-        <text x={W - m.r} y={height - 5} fontSize={FONT} fill="var(--muted)" textAnchor="end">{dayMonth(last)}</text>
+        <text x={m.l} y={height - 5} fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)">{dayMonth(first)}</text>
+        <text x={W - m.r} y={height - 5} fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)" textAnchor="end">{dayMonth(last)}</text>
       </svg>
     </Figure>
   );
@@ -149,8 +149,8 @@ export function MonthlyBars({ months, series = PATHWAY_SERIES, height = 170, ari
       <svg viewBox={`0 0 ${W} ${height}`} className="w-full" role="img" aria-label={ariaLabel}>
         {[0, niceMax / 2, niceMax].map((t) => (
           <g key={t}>
-            <line x1={m.l} x2={W - m.r} y1={base - sy(t)} y2={base - sy(t)} stroke="var(--border)" strokeWidth={1} />
-            <text x={m.l - 4} y={base - sy(t) + 3.5} textAnchor="end" fontSize={FONT} fill="var(--muted)">{Number.isInteger(t) ? t : t.toFixed(1)}</text>
+            <line x1={m.l} x2={W - m.r} y1={base - sy(t)} y2={base - sy(t)} stroke="var(--border)" strokeWidth={1} strokeDasharray="1 3" />
+            <text x={m.l - 4} y={base - sy(t) + 3.5} textAnchor="end" fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)">{Number.isInteger(t) ? t : t.toFixed(1)}</text>
           </g>
         ))}
         {months.map((mo, i) => {
@@ -175,7 +175,7 @@ export function MonthlyBars({ months, series = PATHWAY_SERIES, height = 170, ari
           );
         })}
         {months.map((mo, i) => (mo.month.endsWith("-01") || i === 0 ? (
-          <text key={mo.month} x={m.l + i * slot} y={height - 5} fontSize={FONT} fill="var(--muted)">{mo.month.slice(0, 4)}</text>
+          <text key={mo.month} x={m.l + i * slot} y={height - 5} fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)">{mo.month.slice(0, 4)}</text>
         ) : null))}
       </svg>
     </Figure>
@@ -209,7 +209,7 @@ export function HeatGrid({ rows, columns, cells, ariaLabel }: HeatGridProps) {
       <svg viewBox={`0 0 ${labelW + cw * columns.length} ${height}`} className="w-full" role="img" aria-label={ariaLabel}>
         {rows.map((r, i) => (
           <g key={r.key}>
-            <text x={labelW - 6} y={i * rowH + rowH / 2 + 4} textAnchor="end" fontSize={FONT} fill="var(--fg)">{r.label}</text>
+            <text x={labelW - 6} y={i * rowH + rowH / 2 + 4} textAnchor="end" fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--fg)">{r.label}</text>
             {columns.map((c, j) => {
               const cell = cells[r.key]?.[c];
               return (
@@ -221,8 +221,8 @@ export function HeatGrid({ rows, columns, cells, ariaLabel }: HeatGridProps) {
             })}
           </g>
         ))}
-        <text x={labelW} y={height - 4} fontSize={FONT} fill="var(--muted)">{dayMonth(columns[0]!)}</text>
-        <text x={labelW + cw * columns.length - GAP} y={height - 4} fontSize={FONT} fill="var(--muted)" textAnchor="end">{dayMonth(columns.at(-1)!)}</text>
+        <text x={labelW} y={height - 4} fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)">{dayMonth(columns[0]!)}</text>
+        <text x={labelW + cw * columns.length - GAP} y={height - 4} fontSize={FONT} fontFamily="var(--font-mono)" fill="var(--muted)" textAnchor="end">{dayMonth(columns.at(-1)!)}</text>
       </svg>
     </Figure>
   );

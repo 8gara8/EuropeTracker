@@ -25,7 +25,7 @@ export default function ArchivePage() {
                 {b.quiet_day ? <Tag>quiet day</Tag> : null}
                 {b.weekly ? <Tag>weekly</Tag> : null}
               </div>
-              <Link href={`/brief/${b.date}`} className="mt-0.5 block font-semibold">{b.title}</Link>
+              <Link href={`/brief/${b.date}`} className="display mt-1 block text-[19px] leading-snug no-underline hover:underline">{b.title}</Link>
             </li>
           ))}
         </ul>
