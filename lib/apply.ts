@@ -159,11 +159,14 @@ export function applyDraft(content: ContentState, draft: DraftBrief, opts: { pub
 
   // The brief, with the numbers code computes: a snapshot of the records added by today (validateAll checks it).
   const counts = pathwayCounts(incidents.filter((i) => i.added <= D), D);
+  // Each weekly check keeps the text it assessed: the assumption as it stood before today's updates.
+  const assessed = new Map(content.state.assumptions.map((a) => [a.id, a.text]));
   const brief: Brief = {
     ...draft,
     incidents_new: newIncidents,
     strikes_new: newStrikes,
     forecasts_new: draft.forecasts_new,
+    weekly_outlook: w && { ...w, assumptions_check: w.assumptions_check.map((a) => ({ ...a, text: assessed.get(a.id)! })) },
     published_at: opts.publishedAt,
     computed: {
       pathways: Object.fromEntries(PATHWAYS.map((p) => [p, { incidents_30d: counts[p].incidents_30d, baseline_monthly: counts[p].baseline_monthly }])) as Brief["computed"]["pathways"],

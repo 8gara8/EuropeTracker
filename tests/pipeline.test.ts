@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { applyDraft } from "@/lib/apply";
+import type { Brief } from "@/lib/schema/brief";
 import { AgentContext } from "@/lib/schema/context";
 import type { DraftBrief } from "@/lib/schema/draft-brief";
 import type { Incident } from "@/lib/schema/incident";
@@ -140,6 +141,31 @@ describe("applyDraft", () => {
     expect(a.forecasts.find((f) => f.id === "F-2026-005")).toMatchObject({ status: "resolved_no", resolved_on: "2026-10-26", brier: 0.16, brier_base: 0.3025 });
     expect(a.forecasts.find((f) => f.id === "F-2026-005")!.resolution_source!.outlet).toBe("Reuters");
     expect(a.state.weekly!.as_of).toBe("2026-10-26");
+  });
+
+  it("keeps the assumption text each weekly check assessed, even when it is revised", () => {
+    const monday = read("fixtures/briefs/valid-monday.json") as DraftBrief;
+    const mctx = AgentContext.parse(read("fixtures/context/monday.json"));
+    const check = monday.weekly_outlook!.assumptions_check[0]!;
+    const original = mctx.state.assumptions.find((x) => x.id === check.id)!.text;
+    // The same brief revises the assumption it checked; the check keeps the text it assessed.
+    monday.assumption_updates.push({ op: "revise", id: check.id, text: "SAMPLE: the revised assumption.", reason: "SAMPLE: new evidence." });
+    const a = applyDraft({ incidents: [], strikes: mctx.recent_strikes, state: mctx.state, forecasts: mctx.open_forecasts, archive: {} }, monday, { publishedAt: "2026-10-26T06:10:00+08:00" });
+    expect(a.state.assumptions.find((x) => x.id === check.id)!.text).toBe("SAMPLE: the revised assumption.");
+    const saved = JSON.parse(serialize(a).get("briefs/2026-10-26.json")!) as Brief;
+    expect(saved.weekly_outlook!.assumptions_check[0]).toEqual({ ...check, text: original });
+    // A later publish writes only its own brief, so the archived check is never rewritten.
+    const later: DraftBrief = { ...draft, assumption_updates: [{ op: "revise", id: check.id, text: "SAMPLE: revised again.", reason: "SAMPLE: more evidence." }] };
+    const b = applyDraft({ incidents: a.incidents, strikes: a.strikes, state: a.state, forecasts: a.forecasts, archive: a.archive }, later, { publishedAt: "2026-10-28T06:10:00+08:00" });
+    expect([...serialize(b).keys()].filter((f) => f.startsWith("briefs/"))).toEqual(["briefs/2026-10-28.json"]);
+  });
+
+  it("applies a host statement from an incident update", () => {
+    const u = draft.incident_updates[0]!;
+    const before = incidents.map((i) => (i.id === u.id ? { ...i, host_statement: "none_yet" as const } : i));
+    const withHost: DraftBrief = { ...draft, incident_updates: [{ ...u, changes: { ...u.changes, host_statement: "yes" } }] };
+    const a = applyDraft({ incidents: before, strikes: ctx.recent_strikes, state: ctx.state, forecasts: ctx.open_forecasts, archive: {} }, withHost, { publishedAt: "2026-10-28T06:10:00+08:00" });
+    expect(a.incidents.find((i) => i.id === u.id)).toMatchObject({ attribution: 3, host_statement: "yes", updated: "2026-10-28" });
   });
 });
 
