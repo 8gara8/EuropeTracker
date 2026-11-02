@@ -90,6 +90,15 @@ section in the same PR and is listed here.
 | 1 | `ci.yml` arrives in Phase 2 | Added in Phase 1 without the build step; Phase 2 adds `npm run build` | So every phase's PR passes CI, as §9 requires |
 | 1 | `routine/schema/draft-brief.schema.json` (format unspecified) | Printed with short objects on one line: about 50 KB, every line under 1,000 chars | Pretty-printed it was 67 KB; minified, its single line would be truncated by the agent's file reader |
 | 1 | `COMPUTED_MISMATCH` covers "a brief's computed counts" | `validateAll` checks `computed.pathways` against the incident files, counting only records whose `added` date is on or before the brief's date; incident updates are checked as merged records (deaths below rung 4 are `INCIDENT_RUNG`, a strike's damage or effect is rechecked even when its level is unchanged); forecast-resolution citations are checked in published briefs too | PR #1 review: these gaps let wrong counts, deaths below rung 4, emptied damage descriptions and broken citations through. The snapshot rule keeps a later backfill from invalidating old briefs |
+| 2 | `BriefViewProps` (§6) | Also takes `indicatorsById` and `assumptionsById` | Indicator changes show the indicator's name, and the Monday assumptions check shows each assumption's text |
+| 2 | Appendix A tokens | Adds `--on-light` (dark text on the pale probability fills in both themes), `--pw-*` pathway colors (the first seven slots of a categorical palette validated for color-vision deficiency in light and dark), sample-banner and trend colors | In dark mode `--fg` is light, which would vanish on the pale fills; stacked bars need seven separable colors |
+| 2 | Charts (§6) | SVG viewBox 400 units wide, figures capped at 560 px, a `<title>` tooltip on every mark and a data table in `<details>`; `MonthlyBars` also takes a `series` list, so the strike log reuses it | Text stays legible from a 375 px phone to a desktop; hover detail without client JavaScript |
+| 2 | Methodology prose "from STYLE.md §4" | The page renders STYLE.md §1, §4, §10 (rules), §12 and §14 at build time through `lib/markdown.ts` | One source for the prose, so the site can't drift from the agent's rules |
+| 2 | `validateAll` checks schemas, briefs and cross-file rules | It also runs the incident and strike record rules (`INCIDENT_*`, `STRIKE_EVIDENCE`) on every record in the database | Phase 4's seed data gets the same type, rung, location, source and evidence checks as daily records |
+| 2 | Sample dataset written for previews | `fixtures/src/site.ts` generates `fixtures/site-content` (10 briefs, 41 incidents, 15 strikes, 8 forecasts) and checks it with `validateAll`; CI checks the committed fixtures are current and builds with both content folders | Keeps the sample coherent as schemas and rules change |
+| 2 | `IncidentUpdate.changes` has no `host_statement`; the site shows each weekly check beside the assumption's current text | Updates can set `host_statement` (with the statement in `add_sources`), and the update rules check it on the merged record; a published brief's `assumptions_check` entries carry the assumption's text as assessed, and the page shows that text | PR #2 review: an incident created before its government spoke could never be raised above attribution 2 without failing `validateAll` at publish, and revising an assumption changed what archived outlooks said |
+| 2 | Vercel Node 24.x | Node 26.x, Vercel's default at creation, plus an Ignored Build Step (§8.1) | Matches Kobol's Node; CI still builds on 24 |
+| 2 | Screenshots with Playwright "if available" | Taken with `playwright-core` driving the installed Chrome, outside the repo | Playwright isn't installed on Kobol; nothing is added to the project's dependencies |
 
 ---
 
@@ -142,7 +151,7 @@ about 06:15 Taipei, and never later than 06:55.
 | Feed parsing | `rss-parser`, `cheerio`, `yaml` | RSS feeds, Telegram web previews, the source registry |
 | Package manager | npm, with `package-lock.json` committed; installs use `npm ci` | Nothing extra to install on Kobol |
 | Local runtime | `/opt/homebrew/bin/node` (arm64, currently v26) | Native; never the Intel Node |
-| Vercel runtime | Node 24.x | Vercel default |
+| Vercel runtime | Node 26.x | Vercel's default when the project was created (2026-11-02), the same major as Kobol; CI also builds on Node 24 |
 | Research agent | Claude Code CLI, headless (`claude -p`), native arm64 build, isolated config dir | Uses JL's Claude subscription; no API key |
 | Scheduler | Scheduled task in the Claude app on Kobol, daily at 05:30, running `scripts/daily.sh` (§8.3) | Same model as MEtracker; each run and its summary show up in the Claude app, where JL gets updates |
 | Hosting | Vercel Hobby with the Git integration | Every push to `main` deploys in about a minute |
@@ -664,8 +673,9 @@ interface IncidentUpdate {
     casualties: { killed: number; injured: number } | null;
     disruption_hours: number | null;
     summary: string | null;
+    host_statement: "yes" | "none_yet" | null; // "yes" once the affected government or agency has spoken
   };                                 // null = unchanged; at least one non-null
-  add_sources: EvidenceSource[];     // ≥ 1 when attribution or rung changes
+  add_sources: EvidenceSource[];     // ≥ 1 when attribution, rung or host_statement changes
   reason: string;                    // ≤ 40 words
 }
 
@@ -751,6 +761,9 @@ Limits: 600–2,000 words, or 250–2,000 on a quiet day. Not counted: `weekly_o
 
 ```ts
 interface Brief extends DraftBrief {
+  weekly_outlook: (WeeklyOutlook & {
+    assumptions_check: { id: string; status: "holds" | "weakening" | "broken"; note: string; text: string }[];
+  }) | null;                         // publish.ts adds each assumption's text as the brief assessed it
   published_at: string;              // ISO timestamp set by publish.ts
   computed: {
     pathways: Record<PathwayId, { incidents_30d: number; baseline_monthly: number }>;
@@ -981,10 +994,10 @@ plus the draft's `incidents_new` and `incident_updates`, with the window "last 3
 | INCIDENT_RUNG | Rung outside the type's range; `killed > 0` with rung < 4; a BY/RU/UA location with rung > 1 | error |
 | INCIDENT_LOCATION | A BY/RU/UA location in a pathway other than military_pressure or nuclear; `affected` empty; a European `location_country` missing from `affected` | error |
 | INCIDENT_SERIOUS | Rung ≥ 4 or `killed > 0` but `serious` is false | error |
-| INCIDENT_SOURCES | For non-seed incidents: ≥ 2 sources from ≥ 2 categories. If `host_statement` is "yes", one must be `eu_gov_security` or `nato_eu`; if "none_yet", attribution must be ≤ 2. Seeds need ≥ 1 source | error |
+| INCIDENT_SOURCES | For non-seed incidents: ≥ 2 sources from ≥ 2 categories. If `host_statement` is "yes", one must be `eu_gov_security` or `nato_eu`; if "none_yet", attribution must be ≤ 2. Seeds need ≥ 1 source. Updates to non-seed incidents are checked on the merged record: attribution above 2 needs `host_statement` "yes", and an update that sets it must cite the statement in `add_sources` | error |
 | INCIDENT_PRECISION | `date_precision` is "month" on a non-seed incident | error |
 | UPDATE_TARGET | An update references an unknown id, or one in today's `*_new` | error |
-| UPDATE_EVIDENCE | An attribution, rung or verification change has no `add_sources`, or a strike's new level lacks its evidence | error |
+| UPDATE_EVIDENCE | An attribution, rung, host-statement or verification change has no `add_sources`, or a strike's new level lacks its evidence | error |
 | STRIKE_EVIDENCE | A verification level lacks its evidence. Level 2 needs a `ru_gov` or `ru_state_media` source. Level 3 needs `osint_data`. Level 4 needs `damage` plus an `intl_press` or `osint_data` source. Level 5 needs `effect` plus a `markets_energy`, `intl_press` or `ru_gov` source | error |
 | INDICATOR_CHANGE | Unknown id, or `to` equals the current status | error |
 | INDICATOR_NEW | Id already exists, or the format is wrong | error |
@@ -1511,8 +1524,11 @@ Scoring itself happens in `publish.ts` through `aggregate.brier()`.
   and `deploy: false`. Use the dashboard if the connector isn't available.
   - If linking fails because the repository can't be reached, JL adds EuropeTracker to the Vercel
     GitHub App's repository access at github.com/settings/installations.
-- **Framework and build:** Next.js preset, build command `next build`, Node 24.x, production branch
-  `main`. No `vercel.json`.
+  - **Done 2026-11-02:** project `prj_TK8CGmlI0RAbrinn7XZgARy4jl77`.
+- **Framework and build:** Next.js preset, build command `next build`, Node 26.x (Vercel's default),
+  production branch `main`. No `vercel.json`.
+- **Ignored Build Step:** `[ ! -d app ]`, so commits without the site (such as Phase 1 on its own)
+  are skipped instead of failing a production build.
 - **Environment variables:**
   - Preview: `ET_CONTENT_DIR=fixtures/site-content`.
   - Production: `ET_SITE_URL=https://<production domain>`.

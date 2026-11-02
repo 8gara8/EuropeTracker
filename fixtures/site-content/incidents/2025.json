@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "year": 2025,
+  "incidents": [
+    {
+      "id": "INC-2025-0003",
+      "date": "2025-01-26",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE",
+        "LV"
+      ],
+      "location": null,
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": false,
+      "summary": "A data cable between Sweden and Latvia was damaged; Swedish authorities boarded a vessel and later released it.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0003 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0003",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0010",
+      "date": "2025-02-01",
+      "date_precision": "month",
+      "location_country": "RU",
+      "affected": [
+        "FI",
+        "EE"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "force_buildup",
+      "rung": 1,
+      "serious": false,
+      "summary": "Finnish officials reported Russia expanding garrisons and depots near the Finnish border.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0010 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0010",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0017",
+      "date": "2025-03-11",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 4,
+      "serious": true,
+      "summary": "One person was killed and two injured when drone debris struck a house near the Danube during a Russian attack on Ukrainian ports.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 1,
+        "injured": 2
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0017 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0017",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0024",
+      "date": "2025-04-14",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "rail_sabotage",
+      "rung": 2,
+      "serious": false,
+      "summary": "Explosives damaged a rail line used to supply Ukraine; Polish authorities blamed saboteurs working for Russian services.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0024 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0024",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0031",
+      "date": "2025-05-19",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "election_interference",
+      "rung": 2,
+      "serious": false,
+      "summary": "Romanian authorities said coordinated online campaigns and illegal funding targeted the presidential run-off.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0031 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0031",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0038",
+      "date": "2025-06-09",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT",
+        "LV",
+        "EE",
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_spoofing",
+      "rung": 1,
+      "serious": false,
+      "summary": "The Baltic states reported a sharp rise in GPS spoofing affecting aircraft, which they traced to Kaliningrad.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0038 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0038",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0045",
+      "date": "2025-07-15",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian fighter entered Estonian airspace over the Gulf of Finland for about two minutes before allied jets escorted it out.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0045 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0045",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0052",
+      "date": "2025-08-20",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": null,
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "naval_confrontation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian fighter flew close to an Estonian patrol vessel shadowing a sanctioned tanker in the Gulf of Finland.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0052 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0052",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0059",
+      "date": "2025-09-10",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "Allied jets shot down several Russian drones that crossed into Poland; NATO allies jointly condemned the incursion.",
+      "attribution": 4,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 6,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0059 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0059",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0066",
+      "date": "2025-09-22",
+      "date_precision": "day",
+      "location_country": "DK",
+      "affected": [
+        "DK",
+        "NO"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 3,
+      "serious": false,
+      "summary": "Copenhagen and Oslo airports closed for hours after large drones were seen nearby; officials did not rule out a state actor.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 4,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0066 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0066",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0073",
+      "date": "2025-10-01",
+      "date_precision": "month",
+      "location_country": "HU",
+      "affected": [
+        "HU",
+        "SK"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "energy_coercion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Russia cut gas flows to Hungary and Slovakia in a pricing dispute that both governments called coercion.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0073 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0073",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0080",
+      "date": "2025-11-16",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "rail_sabotage",
+      "rung": 2,
+      "serious": false,
+      "summary": "An explosion damaged the Warsaw–Lublin railway used for supplies to Ukraine; Poland blamed Russian services.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0080 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0080",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0087",
+      "date": "2025-12-04",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The IAEA reported that the Zaporizhzhia plant lost all off-site power, again relying on diesel generators.",
+      "attribution": 4,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2025-0087 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2025-0087",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    }
+  ]
+}

@@ -589,9 +589,29 @@
                 ]
               },
               "disruption_hours": {"anyOf":[{"type":"number","minimum":0},{"type":"null"}]},
-              "summary": {"anyOf":[{"type":"string","description":"≤ 60 words"},{"type":"null"}]}
+              "summary": {"anyOf":[{"type":"string","description":"≤ 60 words"},{"type":"null"}]},
+              "host_statement": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": ["yes","none_yet"],
+                    "description": "Has the affected government or agency spoken?"
+                  },
+                  {"type":"null"}
+                ],
+                "description": "\"yes\" once the affected government or agency has spoken; cite the statement in add_sources"
+              }
             },
-            "required": ["attribution","attribution_note","rung","serious","casualties","disruption_hours","summary"],
+            "required": [
+              "attribution",
+              "attribution_note",
+              "rung",
+              "serious",
+              "casualties",
+              "disruption_hours",
+              "summary",
+              "host_statement"
+            ],
             "additionalProperties": false,
             "description": "null = unchanged; at least one non-null"
           },
@@ -646,7 +666,7 @@
               "required": ["title","outlet","category","url","published_at"],
               "additionalProperties": false
             },
-            "description": "At least 1 when attribution or rung changes"
+            "description": "At least 1 when attribution, rung or host_statement changes"
           },
           "reason": {"type":"string","description":"≤ 40 words"}
         },

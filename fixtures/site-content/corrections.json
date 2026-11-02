@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "corrections": [
+    {
+      "id": "C-0001",
+      "date": "2026-10-25",
+      "target": {
+        "kind": "brief",
+        "id": "2026-10-24"
+      },
+      "description": "The 24 October brief first named the wrong district for the Moldovan incursion; it was Ocnița."
+    }
+  ]
+}

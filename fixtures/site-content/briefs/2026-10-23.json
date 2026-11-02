@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "window": {
+    "start": "2026-10-22T05:30:00+08:00",
+    "end": "2026-10-23T05:30:00+08:00"
+  },
+  "generated_at": "2026-10-23T05:58:00+08:00",
+  "quiet_day": true,
+  "weekly": false,
+  "title": "SAMPLE — Quiet night; no new incidents in Europe",
+  "bottom_line": "A quiet night for spillover. The ladder stays at rung 3 from incursions earlier this month, and no new incident was reported in Europe. Russia launched a smaller raid of 64 drones, none near NATO borders. EU ambassadors continue their talks on the sanctions package.",
+  "bottom_line_source_ids": [
+    "s1",
+    "s2"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 10,
+        "term": "highly_unlikely",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 3 from incursions earlier this month; nothing new in the window."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 30,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "high"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No change.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Russia launches a smaller overnight raid away from NATO borders",
+      "summary": "Ukraine's Air Force said Russia launched 64 drones overnight, mostly at Kharkiv and Dnipro, and that 51 were shot down or suppressed. None approached the Polish, Romanian or Moldovan borders.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "ISW reports no significant change on the main axes.",
+      "development_ids": [],
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "A smaller raid of 64 drones, far from NATO borders (d1).",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "EU ambassadors resume talks on the sanctions package today.",
+      "development_ids": [],
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess no change in spillover risk. The night's raid was smaller than recent ones and aimed at eastern Ukraine, so the Polish border saw no stray drones. The airspace pathway stays at unlikely (30%) because the 30-day count is still well above the baseline, and Polish Operational Command kept aircraft on alert overnight. Nothing in the window changes the standing assumptions or the 30-day odds of a deadly or deliberate incident, which remain highly unlikely (10%).",
+    "change_my_mind": "A renewed large raid on Volyn or Lviv would put the Polish border back at risk within days.",
+    "competing_explanations": []
+  },
+  "forecasts_new": [],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "No fresh Taiwan-relevant development; prior assessment unchanged.",
+  "next_72h": [
+    {
+      "date": "2026-10-24",
+      "event": "IAEA briefing on Zaporizhzhia off-site power.",
+      "why": "Losing the last line would raise radiological-safety risk."
+    },
+    {
+      "date": "2026-10-25",
+      "event": "Belarusian defence ministry briefing on autumn exercises.",
+      "why": "Shows whether forces stay near the Polish and Lithuanian borders."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 64,
+      "unit": "count",
+      "period": "night before 23 Oct",
+      "source_ids": [
+        "s1"
+      ],
+      "note": null
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 51,
+      "unit": "count",
+      "period": "night before 23 Oct",
+      "source_ids": [
+        "s1"
+      ],
+      "note": null
+    },
+    {
+      "id": "brent_usd",
+      "value": 65.9,
+      "unit": "USD/bbl",
+      "period": "previous close",
+      "source_ids": [
+        "s5"
+      ],
+      "note": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Overnight attack: 142 drones and 3 missiles (sample)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://example.org/sample/t.me/kpszsu/2026-10-28",
+      "language": "uk",
+      "published_at": "2026-10-28T09:10:00+02:00",
+      "accessed_at": "2026-10-23T05:36:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Komunikat Dowództwa Operacyjnego RSZ (sample)",
+      "outlet": "Polish Operational Command",
+      "category": "eu_gov_security",
+      "url": "https://example.org/sample/dorsz/2026-10-27-komunikat",
+      "language": "pl",
+      "published_at": "2026-10-27T23:55:00+01:00",
+      "accessed_at": "2026-10-23T05:36:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "EU fails again to agree 20th sanctions package (sample)",
+      "outlet": "Reuters",
+      "category": "intl_press",
+      "url": "https://example.org/sample/reuters/2026-10-27-eu-sanctions",
+      "language": "en",
+      "published_at": "2026-10-27T18:02:00+01:00",
+      "accessed_at": "2026-10-23T05:36:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Russian Offensive Campaign Assessment, 27 October (sample)",
+      "outlet": "Institute for the Study of War",
+      "category": "osint_data",
+      "url": "https://example.org/sample/isw/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-28T03:30:00+01:00",
+      "accessed_at": "2026-10-23T05:36:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Brent settlement and EU gas storage, 27 October (sample)",
+      "outlet": "ICE and GIE AGSI market data",
+      "category": "markets_energy",
+      "url": "https://example.org/sample/markets/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-27",
+      "accessed_at": "2026-10-23T05:36:00+08:00"
+    }
+  ],
+  "published_at": "2026-10-23T06:12:00+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 3,
+        "baseline_monthly": 0.3
+      },
+      "sabotage": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      },
+      "cyber_ew": {
+        "incidents_30d": 2,
+        "baseline_monthly": 0
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      }
+    },
+    "word_count": 290,
+    "source_count": 5,
+    "source_category_count": 5
+  }
+}

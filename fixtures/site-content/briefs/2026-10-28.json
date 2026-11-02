@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "window": {
+    "start": "2026-10-27T05:30:00+08:00",
+    "end": "2026-10-28T05:30:00+08:00"
+  },
+  "generated_at": "2026-10-28T06:02:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "SAMPLE — Russian drone crosses into Poland; Novorossiysk oil terminal struck",
+  "bottom_line": "The ladder stays at rung 3, overt military incidents without deaths. A Russian drone crossed into Lublin Voivodeship during an overnight attack on Volyn and was shot down, the fifth airspace incident in 30 days against a baseline of 1.3 a month. We raise the 30-day odds of a serious airspace incident to unlikely (35%). Ukraine struck the Sheskharis oil terminal at Novorossiysk; fires are geolocated but damage is unconfirmed. Watch Thursday's meeting of EU ambassadors on the stalled sanctions package.",
+  "bottom_line_source_ids": [
+    "s1",
+    "s17"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 15,
+        "term": "highly_unlikely",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 3 since 5 October: Russian drones in Polish and Moldovan airspace and debris in Romania. No deaths and no deliberate strike on European territory in the window."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "up",
+        "rationale": "Five incidents in 30 days against 1.3 a month at baseline; strikes on Volyn now route drones close to the Polish border.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against a baseline of 1.7 a month; no new arrests in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Finland raised the cable case to attributed; the base rate is unchanged at about one incident a month.",
+        "source_ids": [
+          "s9"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Jamming continues at background levels; no essential service was disrupted for over a day in 12 months.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "The Belarusian snap check ended on schedule; no redeployment toward NATO borders observed.",
+        "source_ids": [
+          "s10"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "high"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Zaporizhzhia is on one off-site line; no change in Russian nuclear posture.",
+        "source_ids": [
+          "s12"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Hungary's veto threat delays sanctions but blocks no NATO decision.",
+        "source_ids": [
+          "s7"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": "Rung-3 drone incursion in Lublin Voivodeship on 27 October.",
+        "source_ids": [
+          "s1"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "HU",
+        "score": 1,
+        "previous_score": null,
+        "reason": "Budapest repeated its veto threat on the 20th sanctions package.",
+        "source_ids": [
+          "s7"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": true
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Russian drone shot down over Lublin Voivodeship during attack on Volyn",
+      "summary": "Poland's Operational Command said a Russian Geran-type drone crossed from Ukraine at 23:40 Kyiv time and was shot down near Hrubieszów. Debris fell in a field and nobody was hurt. Poland scrambled aircraft and closed Rzeszów airport for 90 minutes.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0131"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 3,
+      "russian_framing": "Russia's defence ministry said it struck only military targets in Volyn and called the Polish account a provocation (claim).",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukrainian drones hit the Sheskharis oil terminal at Novorossiysk",
+      "summary": "Ukraine's General Staff said long-range drones struck the Sheskharis terminal, Russia's largest Black Sea crude export outlet. Krasnodar's operational headquarters reported a fire at the port after debris fell. Satellite fire detections confirm a blaze at the terminal; loading status is unconfirmed.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0457"
+      ],
+      "verification": 3,
+      "attribution": null,
+      "russian_framing": "Krasnodar officials said air defences destroyed most drones and that falling debris caused the fire (claim).",
+      "source_ids": [
+        "s17",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Finland links Gulf of Finland cable damage to a Russia-bound tanker",
+      "summary": "Finnish police said evidence ties the 16 October damage to a Finland–Estonia data cable to the anchor of a tanker bound for Ust-Luga, which they describe as part of Russia's shadow fleet. The case is now investigated as aggravated criminal mischief.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [
+        "INC-2026-0124"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 3,
+      "russian_framing": null,
+      "source_ids": [
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "EU sanctions package stalls again over Hungarian objections",
+      "summary": "EU ambassadors failed for a third time to agree the 20th sanctions package, which would list more shadow-fleet tankers and phase out Russian LNG imports. Hungary asked for an exemption for oil delivered through the Druzhba pipeline.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s7",
+        "s13"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "DeepState recorded Russian gains of about 18 km² near Pokrovsk and Huliaipole. No collapse or breakthrough is in sight.",
+      "development_ids": [],
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "The Sheskharis strike (d2) is the third Ukrainian strike on Black Sea oil export infrastructure this month.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s17",
+        "s6"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 142 drones and 3 missiles overnight, mostly at the Volyn and Lviv regions near the Polish border; 118 drones were downed.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s3",
+        "s11"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The sanctions package is stuck on Hungary's Druzhba demand (d4). No date is set for the next round of US-brokered talks.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s7",
+        "s13"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "One incursion into Poland (d1). Polish and Romanian aircraft were scrambled as Russian strikes approached their borders.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Finland upgraded the cable case (d3); no new incidents in the window.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s9"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "The IAEA said Zaporizhzhia remains on a single 750 kV line after repairs to the backup line were postponed.",
+      "development_ids": [],
+      "source_ids": [
+        "s12"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Germany pledged two more Patriot systems for Ukraine, and NATO's Eastern Sentry added Dutch F-35s in Poland.",
+      "development_ids": [],
+      "source_ids": [
+        "s15"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0131",
+      "date": "2026-10-27",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Poland's Operational Command said a Russian Geran-type drone crossed from Ukraine during an attack on Volyn and was shot down near Hrubieszów. Debris fell in a field; no injuries. Rzeszów airport closed for 90 minutes.",
+      "attribution": 3,
+      "attribution_note": "Polish Operational Command identified the drone as a Russian Geran-2.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 1.5,
+      "sources": [
+        {
+          "title": "Komunikat Dowództwa Operacyjnego RSZ (sample)",
+          "outlet": "Polish Operational Command",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/dorsz/2026-10-27-komunikat",
+          "published_at": "2026-10-27T23:55:00+01:00"
+        },
+        {
+          "title": "Russian drone shot down over eastern Poland (sample)",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://example.org/sample/notesfrompoland/2026-10-28-drone",
+          "published_at": "2026-10-28T00:40:00+01:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-28",
+      "updated": null
+    }
+  ],
+  "incident_updates": [
+    {
+      "id": "INC-2026-0124",
+      "changes": {
+        "attribution": 3,
+        "attribution_note": "Finnish police tied the damage to the anchor of a shadow-fleet tanker bound for Ust-Luga.",
+        "rung": null,
+        "serious": null,
+        "casualties": null,
+        "disruption_hours": null,
+        "summary": null,
+        "host_statement": null
+      },
+      "add_sources": [
+        {
+          "title": "Keskusrikospoliisi: tiedote kaapelivauriosta (sample)",
+          "outlet": "Finnish National Bureau of Investigation",
+          "category": "eu_gov_security",
+          "url": "https://example.org/sample/poliisi/2026-10-27-tiedote",
+          "published_at": "2026-10-27T12:00:00+02:00"
+        }
+      ],
+      "reason": "Finnish police published findings linking the damage to a Russia-bound shadow-fleet tanker."
+    }
+  ],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0457",
+      "date": "2026-10-27",
+      "target_name": "Sheskharis oil terminal, Novorossiysk",
+      "target_type": "oil_terminal",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": 44.7,
+      "lon": 37.8,
+      "distance_km": 380,
+      "weapon": "drone",
+      "weapon_detail": "Liutyi long-range drones",
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claimed a strike on Russia's main Black Sea crude terminal. Krasnodar officials reported a fire after debris fell, and satellite fire detections confirm a blaze at the terminal.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Operational headquarters: fire at Novorossiysk port (sample)",
+          "outlet": "Krasnodar Krai operational headquarters (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/opershtab23/2026-10-27",
+          "published_at": "2026-10-27T04:30:00+03:00"
+        },
+        {
+          "title": "FIRMS thermal anomalies, Novorossiysk, 27 October (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-10-27-novorossiysk",
+          "published_at": "2026-10-27"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-28",
+      "updated": null
+    }
+  ],
+  "strike_updates": [
+    {
+      "id": "STR-2026-0452",
+      "changes": {
+        "verification": 4,
+        "damage": "Satellite images show two burned distillation columns at the refinery.",
+        "effect": null,
+        "summary": null,
+        "weapon_detail": null,
+        "western_weapon": null
+      },
+      "add_sources": [
+        {
+          "title": "Satellite images show damage at Saratov refinery (sample)",
+          "outlet": "Bloomberg",
+          "category": "intl_press",
+          "url": "https://example.org/sample/bloomberg/2026-10-27-saratov",
+          "published_at": "2026-10-27T15:30:00+01:00"
+        }
+      ],
+      "reason": "Commercial satellite images published by Bloomberg confirm the damage."
+    }
+  ],
+  "indicator_changes": [
+    {
+      "id": "ind-airspace-tempo",
+      "to": "active",
+      "evidence": "Five airspace incidents in 30 days against a 90-day baseline of 1.3 a month.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that the Polish incursion fits the pattern of the past month. Russian drone routes to Volyn and Lviv now pass within a few kilometres of the Polish border, and the number of strays has grown with the size of the raids. Five airspace incidents in 30 days is almost four times the baseline of 1.3 a month, so we raise the 30-day odds of a serious airspace incident from 30% to unlikely (35%). We see no sign that the incursions are deliberate probes of Polish air defences: the drones flew on strike headings and none loitered over Polish territory.\n\nThe Sheskharis strike matters for spillover mainly through Russia's response. Moscow frames strikes on its export terminals as Western-enabled, and officials have threatened consequences for countries that supply long-range targeting. We see no change yet in Russian posture toward NATO, and the Belarusian snap check ended on schedule.\n\nThe Finnish cable finding raises attribution but not risk: undersea incidents remain at about one a month, and most cases have ended without charges. The sanctions deadlock is a cohesion problem rather than a spillover driver for now. Overall the ladder stays at rung 3, and a deadly or deliberate incident within 30 days remains highly unlikely (15%).",
+    "change_my_mind": "Drones crossing on headings toward Polish military sites, or a Russian statement naming Poland's air defences as a target, would make us treat the incursions as deliberate.",
+    "competing_explanations": [
+      {
+        "subject": "INC-2026-0131: drone over Lublin Voivodeship",
+        "hypotheses": [
+          {
+            "label": "Stray drone on a strike route to Volyn",
+            "assessment": "The track ran straight from the Volyn strike corridor, and October's earlier strays followed the same path.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "moderate"
+            }
+          },
+          {
+            "label": "Deliberate probe of Polish air defences",
+            "assessment": "Russia has an interest in testing response times, but the drone neither loitered nor changed heading.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "moderate"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-014",
+      "question": "Will a Russian drone or missile enter Polish airspace between 29 October and 27 November 2026?",
+      "resolution_criteria": "Polish Operational Command or the defence ministry confirms at least one Russian drone or missile in Polish airspace in the period.",
+      "resolves_by": "2026-11-27",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 75,
+      "base_rate": 60,
+      "base_rate_note": "Polish airspace saw at least one incursion in 7 of the last 12 months."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-011",
+      "probability": 12,
+      "note": "Another incursion raises the chance that Poland requests Article 4 consultations."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A3",
+      "text": null,
+      "reason": "The Polish incursion followed a strike route, consistent with spillover rather than preparation for an attack."
+    }
+  ],
+  "taiwan": "Each Russian raid near the Polish border adds to European demand for Patriot and NASAMS interceptors, the same systems Taiwan is waiting for. Germany's latest Patriot pledge draws on production slots that compete with Taiwan's 2027 deliveries. The Novorossiysk strike is another data point for Taiwan's planners on long-range drones against coastal energy infrastructure, relevant both to defending Taiwan's LNG terminals and to holding Chinese ports at risk.",
+  "next_72h": [
+    {
+      "date": "2026-10-29",
+      "event": "EU ambassadors meet again on the 20th sanctions package.",
+      "why": "A Hungarian veto would delay new shadow-fleet listings."
+    },
+    {
+      "date": "2026-10-30",
+      "event": "IAEA briefing on Zaporizhzhia off-site power.",
+      "why": "Losing the last line would raise radiological-safety risk."
+    },
+    {
+      "date": "2026-10-31",
+      "event": "Belarusian defence ministry briefing on autumn exercises.",
+      "why": "Shows whether forces stay near the Polish and Lithuanian borders."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 142,
+      "unit": "count",
+      "period": "night of 27–28 Oct",
+      "source_ids": [
+        "s3"
+      ],
+      "note": null
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 118,
+      "unit": "count",
+      "period": "night of 27–28 Oct",
+      "source_ids": [
+        "s3"
+      ],
+      "note": "Includes drones lost to electronic warfare."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 3,
+      "unit": "count",
+      "period": "night of 27–28 Oct",
+      "source_ids": [
+        "s3"
+      ],
+      "note": null
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "27 Oct",
+      "source_ids": [
+        "s17"
+      ],
+      "note": null
+    },
+    {
+      "id": "eu_gas_storage_pct",
+      "value": 94.1,
+      "unit": "%",
+      "period": "26 Oct",
+      "source_ids": [
+        "s14"
+      ],
+      "note": null
+    },
+    {
+      "id": "brent_usd",
+      "value": 66.4,
+      "unit": "USD/bbl",
+      "period": "27 Oct close",
+      "source_ids": [
+        "s14"
+      ],
+      "note": null
+    },
+    {
+      "id": "gnss_interference_index",
+      "value": null,
+      "unit": "%",
+      "period": "27 Oct",
+      "source_ids": [],
+      "note": "No daily figure published."
+    },
+    {
+      "id": "znpp_offsite_power_lines",
+      "value": 1,
+      "unit": "count",
+      "period": "27 Oct",
+      "source_ids": [
+        "s12"
+      ],
+      "note": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Komunikat Dowództwa Operacyjnego RSZ (sample)",
+      "outlet": "Polish Operational Command",
+      "category": "eu_gov_security",
+      "url": "https://example.org/sample/dorsz/2026-10-27-komunikat",
+      "language": "pl",
+      "published_at": "2026-10-27T23:55:00+01:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Russian drone shot down over eastern Poland (sample)",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://example.org/sample/notesfrompoland/2026-10-28-drone",
+      "language": "en",
+      "published_at": "2026-10-28T00:40:00+01:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Overnight attack: 142 drones and 3 missiles (sample)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://example.org/sample/t.me/kpszsu/2026-10-28",
+      "language": "uk",
+      "published_at": "2026-10-28T09:10:00+02:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Defence ministry statement on strikes in Volyn (sample)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://example.org/sample/t.me/mod_russia/2026-10-28",
+      "language": "ru",
+      "published_at": "2026-10-28T10:05:00+03:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Operational headquarters: fire at Novorossiysk port (sample)",
+      "outlet": "Krasnodar Krai operational headquarters (Telegram)",
+      "category": "ru_gov",
+      "url": "https://example.org/sample/t.me/opershtab23/2026-10-27",
+      "language": "ru",
+      "published_at": "2026-10-27T04:30:00+03:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "FIRMS thermal anomalies, Novorossiysk, 27 October (sample)",
+      "outlet": "NASA FIRMS",
+      "category": "osint_data",
+      "url": "https://example.org/sample/firms/2026-10-27-novorossiysk",
+      "language": "en",
+      "published_at": "2026-10-27",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "EU fails again to agree 20th sanctions package (sample)",
+      "outlet": "Reuters",
+      "category": "intl_press",
+      "url": "https://example.org/sample/reuters/2026-10-27-eu-sanctions",
+      "language": "en",
+      "published_at": "2026-10-27T18:02:00+01:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Police link Gulf of Finland cable damage to tanker anchor (sample)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://example.org/sample/yle/2026-10-27-cable",
+      "language": "en",
+      "published_at": "2026-10-27T14:15:00+02:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Keskusrikospoliisi: tiedote kaapelivauriosta (sample)",
+      "outlet": "Finnish National Bureau of Investigation",
+      "category": "eu_gov_security",
+      "url": "https://example.org/sample/poliisi/2026-10-27-tiedote",
+      "language": "fi",
+      "published_at": "2026-10-27T12:00:00+02:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Russian Offensive Campaign Assessment, 27 October (sample)",
+      "outlet": "Institute for the Study of War",
+      "category": "osint_data",
+      "url": "https://example.org/sample/isw/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-28T03:30:00+01:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Moscow calls Polish drone claims a provocation (sample)",
+      "outlet": "TASS",
+      "category": "ru_state_media",
+      "url": "https://example.org/sample/tass/2026-10-28-poland",
+      "language": "en",
+      "published_at": "2026-10-28T11:12:00+03:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Update on the situation in Ukraine (sample)",
+      "outlet": "IAEA",
+      "category": "intl_bodies",
+      "url": "https://example.org/sample/iaea/2026-10-27-update",
+      "language": "en",
+      "published_at": "2026-10-27T16:00:00+01:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Hungary seeks Druzhba exemption as sanctions talks stall (sample)",
+      "outlet": "Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://example.org/sample/kyivindependent/2026-10-27-hungary",
+      "language": "en",
+      "published_at": "2026-10-27T20:45:00+02:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Brent settlement and EU gas storage, 27 October (sample)",
+      "outlet": "ICE and GIE AGSI market data",
+      "category": "markets_energy",
+      "url": "https://example.org/sample/markets/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-27",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Eastern Sentry at two months (sample)",
+      "outlet": "RUSI",
+      "category": "think_tank",
+      "url": "https://example.org/sample/rusi/2026-10-27-eastern-sentry",
+      "language": "en",
+      "published_at": "2026-10-27",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Satellite images show damage at Saratov refinery (sample)",
+      "outlet": "Bloomberg",
+      "category": "intl_press",
+      "url": "https://example.org/sample/bloomberg/2026-10-27-saratov",
+      "language": "en",
+      "published_at": "2026-10-27T15:30:00+01:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+      "outlet": "General Staff of the Armed Forces of Ukraine",
+      "category": "ua_gov",
+      "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+      "language": "uk",
+      "published_at": "2026-10-27T11:20:00+02:00",
+      "accessed_at": "2026-10-28T05:41:00+08:00"
+    }
+  ],
+  "published_at": "2026-10-28T06:10:00+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 5,
+        "baseline_monthly": 0.3
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      },
+      "cyber_ew": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "military_pressure": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      }
+    },
+    "word_count": 1063,
+    "source_count": 17,
+    "source_category_count": 11
+  }
+}

@@ -445,7 +445,8 @@
         "serious": null,
         "casualties": null,
         "disruption_hours": null,
-        "summary": null
+        "summary": null,
+        "host_statement": null
       },
       "add_sources": [
         {

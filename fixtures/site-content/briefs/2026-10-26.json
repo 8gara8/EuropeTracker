@@ -1,0 +1,691 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "window": {
+    "start": "2026-10-25T05:30:00+08:00",
+    "end": "2026-10-26T05:30:00+08:00"
+  },
+  "generated_at": "2026-10-26T06:05:00+08:00",
+  "quiet_day": false,
+  "weekly": true,
+  "title": "SAMPLE — Weekly outlook: spillover risk steady at rung 3; EU misses sanctions deadline",
+  "bottom_line": "The ladder holds at rung 3 for a third week, driven by drone incursions in Poland and Moldova and debris in Romania. Belarus ended its snap readiness check near Grodno on schedule. Ukraine struck an ammunition depot near Klintsy, which the Bryansk governor acknowledged. EU leaders missed their 25 October target for the 20th sanctions package. The 6-to-12-month risk of a deliberate Russian attack on NATO stays highly unlikely (10%).",
+  "bottom_line_source_ids": [
+    "s4",
+    "s3"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 15,
+        "term": "highly_unlikely",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 3 since 5 October from incursions in Poland and Moldova and debris in Romania; no deaths or deliberate strikes on European territory."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 30,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Four incidents in 30 days against 1.3 a month; no incursion in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days, below the baseline of 1.7 a month.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One cable incident in 30 days, at the baseline.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Background jamming only; no service disruption.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "The Belarusian check ended on schedule and troops returned to garrison.",
+        "source_ids": [
+          "s4",
+          "s5"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 5,
+          "term": "remote",
+          "confidence": "high"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No change in posture or plant safety.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "The missed sanctions deadline delays, but does not block, an EU decision.",
+        "source_ids": [
+          "s3"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Belarus ends snap readiness check near Grodno",
+      "summary": "Belarus's defence ministry said the snap check of about 3,000 troops near Grodno ended on schedule and units returned to their garrisons. Lithuanian officials said they saw no movement toward the border during the exercise.",
+      "category": "military_pressure",
+      "importance": "notable",
+      "incident_ids": [
+        "INC-2026-0130"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 4,
+      "russian_framing": null,
+      "source_ids": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukraine strikes ammunition depot near Klintsy in Bryansk Oblast",
+      "summary": "Ukraine's General Staff said drones hit an ammunition depot near Klintsy, about 60 km from the border. The Bryansk governor reported a drone attack on the district and a fire at a military site.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0456"
+      ],
+      "verification": 2,
+      "attribution": null,
+      "russian_framing": "The governor said air defences shot down most of the drones (claim).",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "EU leaders miss their 25 October deadline for the 20th sanctions package",
+      "summary": "EU leaders ended their summit without adopting the 20th sanctions package after Hungary and Slovakia sought energy exemptions. Diplomats expect a new attempt in November.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS said the delay showed European unity was fraying (claim).",
+      "source_ids": [
+        "s3",
+        "s10",
+        "s11"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "ISW reports slow Russian gains near Pokrovsk with no sign of operational breakthrough.",
+      "development_ids": [],
+      "source_ids": [
+        "s9"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Klintsy depot strike (d2), acknowledged by the Bryansk governor.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 97 drones overnight, mostly at Kharkiv and Sumy, away from NATO borders.",
+      "development_ids": [],
+      "source_ids": [
+        "s13"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "EU leaders missed the sanctions deadline (d3).",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Belarus ended its snap check on schedule (d1). Estonia's intelligence service said rebuilding in the Leningrad Military District is early-stage.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s4",
+        "s5",
+        "s7"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Hungary and Slovakia tied sanctions support to energy exemptions.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "NATO said Eastern Sentry patrols will continue through the winter, as Carnegie analysts describe Russia rebuilding its northern forces.",
+      "development_ids": [],
+      "source_ids": [
+        "s6",
+        "s8"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0456",
+      "date": "2026-10-25",
+      "target_name": "Ammunition depot near Klintsy",
+      "target_type": "ammunition_depot",
+      "region": "Bryansk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 60,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claimed a strike on an ammunition depot near Klintsy. The Bryansk governor reported a drone attack on the district and a fire at a military site.",
+      "sources": [
+        {
+          "title": "General Staff: strike on ammunition depot near Klintsy (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-25-klintsy",
+          "published_at": "2026-10-25T12:00:00+02:00"
+        },
+        {
+          "title": "Governor: drone attack on Klintsy district (sample)",
+          "outlet": "Bryansk governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/bryansk_gov/2026-10-25",
+          "published_at": "2026-10-25T06:40:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-26",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that spillover risk is steady. The ladder has been at rung 3 for three weeks because of stray drones and debris from Russian strikes near the Polish, Moldovan and Romanian borders, not because of deliberate action. The Belarusian snap check near Grodno was the week's main posture signal; it ended on schedule and Lithuanian monitoring saw no movement toward the border, so the military-pressure pathway stays remote (5%).\n\nThe missed sanctions deadline matters more for cohesion than for incidents. Hungary and Slovakia used the package to seek energy exemptions, as they did with earlier packages, and both eventually signed. We expect adoption in November, but the delay keeps shadow-fleet tankers off the list for longer, which bears on the maritime pathway in the Baltic.\n\nUkraine's strikes inside Russia continue at about four a week, and Russia has not answered them with steps against European suppliers beyond rhetoric. We keep the 30-day odds of a deadly or deliberate incident at highly unlikely (15%).",
+    "change_my_mind": "A Russian unit moving from Ukraine toward Finland or the Baltics, or a sabotage attack causing deaths, would raise the medium-term outlook.",
+    "competing_explanations": []
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-013",
+      "question": "Will the EU adopt its 20th sanctions package against Russia by 30 November 2026?",
+      "resolution_criteria": "The Council of the EU announces adoption of the 20th package on or before 30 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": "political_economic",
+      "probability": 65,
+      "base_rate": 70,
+      "base_rate_note": "Earlier packages blocked at a summit were usually adopted within five weeks."
+    }
+  ],
+  "forecast_updates": [],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-005",
+      "outcome": "no",
+      "note": "EU leaders ended the summit without adopting the 20th package.",
+      "source_id": "s3"
+    }
+  ],
+  "assumption_updates": [],
+  "taiwan": "The sanctions delay shows how a single member state can slow the EU's response to Russia, a precedent Beijing watches when it weighs Europe's likely reaction to pressure on Taiwan. Ukraine's steady deep-strike campaign also keeps European interceptor stocks tight, which delays deliveries Taiwan is waiting for.",
+  "next_72h": [
+    {
+      "date": "2026-10-27",
+      "event": "Belarus's defence ministry publishes its autumn exercise plan.",
+      "why": "Shows whether more drills are planned near Poland and Lithuania."
+    },
+    {
+      "date": "2026-10-28",
+      "event": "EU ambassadors resume talks on the sanctions package.",
+      "why": "A deal would add shadow-fleet tankers to the list."
+    }
+  ],
+  "weekly_outlook": {
+    "medium_term": {
+      "question": "Will Russia conduct a deliberate, attributable armed attack on NATO territory in the next 12 months?",
+      "estimate": {
+        "probability": 10,
+        "term": "highly_unlikely",
+        "confidence": "low"
+      },
+      "text": "We assess a deliberate attack in the next year as highly unlikely (10%). Russia's main force remains committed in Ukraine, and the Estonian service's latest briefing describes rebuilding in the Leningrad Military District as early-stage. The risk would rise quickly after a ceasefire that freed forces, which is why we track redeployment and mobilisation as strategic indicators. Today none of them is active."
+    },
+    "long_term": {
+      "question": "Will Russia and a NATO member be in direct armed conflict by the end of 2030?",
+      "estimate": {
+        "probability": 20,
+        "term": "highly_unlikely",
+        "confidence": "low"
+      },
+      "text": "Several European services judge that Russia could be ready for a limited war with NATO within three to five years of a ceasefire. We weigh that capability estimate against intent, US commitment and European rearmament, and assess direct conflict by 2030 as highly unlikely (20%), with low confidence because the main drivers are political."
+    },
+    "assumptions_check": [
+      {
+        "id": "A1",
+        "status": "holds",
+        "note": "No deliberate attack on NATO territory; incursions remain strays.",
+        "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine."
+      },
+      {
+        "id": "A2",
+        "status": "holds",
+        "note": "US officials reaffirmed Article 5 at the NATO ministerial.",
+        "text": "The United States remains committed to defending NATO allies under Article 5."
+      },
+      {
+        "id": "A3",
+        "status": "holds",
+        "note": "This month's incursions followed strike routes.",
+        "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion."
+      },
+      {
+        "id": "A4",
+        "status": "holds",
+        "note": "Sabotage and cable incidents continued regardless of diplomacy.",
+        "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments."
+      },
+      {
+        "id": "A5",
+        "status": "holds",
+        "note": "No ceasefire yet; reconstitution in the north is early-stage.",
+        "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders."
+      }
+    ],
+    "calibration_note": "One forecast resolved this week (F-2026-005, no). Four forecasts have resolved since August, with a mean Brier score of 0.11 against 0.16 for the base-rate forecaster. That is too few to judge calibration."
+  },
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 97,
+      "unit": "count",
+      "period": "night of 25–26 Oct",
+      "source_ids": [
+        "s13"
+      ],
+      "note": null
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "25 Oct",
+      "source_ids": [
+        "s1"
+      ],
+      "note": null
+    },
+    {
+      "id": "eu_gas_storage_pct",
+      "value": 94.3,
+      "unit": "%",
+      "period": "24 Oct",
+      "source_ids": [
+        "s12"
+      ],
+      "note": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "General Staff: strike on ammunition depot near Klintsy (sample)",
+      "outlet": "General Staff of the Armed Forces of Ukraine",
+      "category": "ua_gov",
+      "url": "https://example.org/sample/generalstaff/2026-10-25-klintsy",
+      "language": "uk",
+      "published_at": "2026-10-25T12:00:00+02:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Governor: drone attack on Klintsy district (sample)",
+      "outlet": "Bryansk governor (Telegram)",
+      "category": "ru_gov",
+      "url": "https://example.org/sample/t.me/bryansk_gov/2026-10-25",
+      "language": "ru",
+      "published_at": "2026-10-25T06:40:00+03:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "EU leaders miss sanctions deadline (sample)",
+      "outlet": "Reuters",
+      "category": "intl_press",
+      "url": "https://example.org/sample/reuters/2026-10-25-summit",
+      "language": "en",
+      "published_at": "2026-10-25T21:30:00+02:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Snap readiness check of the Western Operational Command ends (sample)",
+      "outlet": "Belarusian Ministry of Defence",
+      "category": "third_party",
+      "url": "https://example.org/sample/belarus-mod/2026-10-25",
+      "language": "ru",
+      "published_at": "2026-10-25T17:00:00+03:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Lithuania tracks end of Belarusian exercise near Grodno (sample)",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://example.org/sample/lrt/2026-10-25-grodno",
+      "language": "en",
+      "published_at": "2026-10-25T19:00:00+03:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "NATO statement on Eastern Sentry (sample)",
+      "outlet": "NATO",
+      "category": "nato_eu",
+      "url": "https://example.org/sample/nato/2026-10-25-eastern-sentry",
+      "language": "en",
+      "published_at": "2026-10-25T13:00:00+01:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Annual threat assessment briefing (sample)",
+      "outlet": "Estonian Foreign Intelligence Service",
+      "category": "eu_gov_security",
+      "url": "https://example.org/sample/valisluureamet/2026-10-25",
+      "language": "en",
+      "published_at": "2026-10-25",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "How Russia is rebuilding its northern army (sample)",
+      "outlet": "Carnegie Russia Eurasia Center",
+      "category": "think_tank",
+      "url": "https://example.org/sample/carnegie/2026-10-24-north",
+      "language": "en",
+      "published_at": "2026-10-24",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Russian Offensive Campaign Assessment, 27 October (sample)",
+      "outlet": "Institute for the Study of War",
+      "category": "osint_data",
+      "url": "https://example.org/sample/isw/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-28T03:30:00+01:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Hungary seeks Druzhba exemption as sanctions talks stall (sample)",
+      "outlet": "Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://example.org/sample/kyivindependent/2026-10-27-hungary",
+      "language": "en",
+      "published_at": "2026-10-27T20:45:00+02:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Moscow calls Polish drone claims a provocation (sample)",
+      "outlet": "TASS",
+      "category": "ru_state_media",
+      "url": "https://example.org/sample/tass/2026-10-28-poland",
+      "language": "en",
+      "published_at": "2026-10-28T11:12:00+03:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Brent settlement and EU gas storage, 27 October (sample)",
+      "outlet": "ICE and GIE AGSI market data",
+      "category": "markets_energy",
+      "url": "https://example.org/sample/markets/2026-10-27",
+      "language": "en",
+      "published_at": "2026-10-27",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Overnight attack: 142 drones and 3 missiles (sample)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://example.org/sample/t.me/kpszsu/2026-10-28",
+      "language": "uk",
+      "published_at": "2026-10-28T09:10:00+02:00",
+      "accessed_at": "2026-10-26T05:44:00+08:00"
+    }
+  ],
+  "published_at": "2026-10-26T06:15:00+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 0.3
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      },
+      "cyber_ew": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "military_pressure": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      }
+    },
+    "word_count": 683,
+    "source_count": 13,
+    "source_category_count": 12
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "year": 2026,
+  "strikes": [
+    {
+      "id": "STR-2026-0440",
+      "date": "2026-09-20",
+      "target_name": "Volgograd oil refinery",
+      "target_type": "refinery",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 420,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 4,
+      "damage": "Imagery showed a damaged primary distillation unit.",
+      "effect": null,
+      "summary": "Drones struck the Volgograd refinery; imagery showed a damaged distillation unit.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-09-20",
+          "published_at": null
+        },
+        {
+          "title": "Imagery confirms Volgograd refinery damage (sample)",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://example.org/sample/reuters/2026-09-21-volgograd",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-09-21",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0442",
+      "date": "2026-09-24",
+      "target_name": "Oil depot near Feodosia",
+      "target_type": "oil_depot",
+      "region": "Crimea (occupied)",
+      "occupied_territory": true,
+      "lat": null,
+      "lon": null,
+      "distance_km": 250,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine claimed a strike on a fuel depot in occupied Crimea; fire detections confirmed a blaze.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-09-24",
+          "published_at": null
+        },
+        {
+          "title": "FIRMS thermal anomalies (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-09-24-feodosia",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-09-25",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0444",
+      "date": "2026-09-28",
+      "target_name": "Engels airbase",
+      "target_type": "airbase",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 600,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "The Saratov governor reported a drone attack near Engels; Ukraine said it targeted the airbase.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-09-28",
+          "published_at": null
+        },
+        {
+          "title": "Governor reports drone attack near Engels (sample)",
+          "outlet": "Saratov governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/saratov_gov/2026-09-28",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-09-29",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0446",
+      "date": "2026-10-02",
+      "target_name": "Explosives plant in Bryansk Oblast",
+      "target_type": "defence_industry",
+      "region": "Bryansk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 110,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Drones hit a plant producing explosives; fire detections confirmed a blaze at the site.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-02",
+          "published_at": null
+        },
+        {
+          "title": "FIRMS thermal anomalies (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-10-02-bryansk",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-03",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0447",
+      "date": "2026-10-05",
+      "target_name": "Primorsk oil terminal",
+      "target_type": "oil_terminal",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 4,
+      "damage": "A loading berth and a storage tank were damaged.",
+      "effect": null,
+      "summary": "Drones struck the Baltic export terminal at Primorsk; loading was halted for two days.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-05",
+          "published_at": null
+        },
+        {
+          "title": "Primorsk loadings halted after drone attack (sample)",
+          "outlet": "Bloomberg",
+          "category": "intl_press",
+          "url": "https://example.org/sample/bloomberg/2026-10-06-primorsk",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-06",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0448",
+      "date": "2026-10-09",
+      "target_name": "Power substation in Kursk Oblast",
+      "target_type": "power",
+      "region": "Kursk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 90,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "The Kursk governor reported power cuts after a drone attack on a substation.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-09",
+          "published_at": null
+        },
+        {
+          "title": "Governor: power cuts after drone attack (sample)",
+          "outlet": "Kursk governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/kursk_gov/2026-10-09",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-10",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0449",
+      "date": "2026-10-13",
+      "target_name": "Ammunition depot in Belgorod Oblast",
+      "target_type": "ammunition_depot",
+      "region": "Belgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 40,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claimed a strike on an ammunition depot; there is no independent confirmation yet.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-13",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-14",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0450",
+      "date": "2026-10-17",
+      "target_name": "Ryazan oil refinery",
+      "target_type": "refinery",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 480,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 4,
+      "damage": "Satellite images show a burned crude distillation unit.",
+      "effect": null,
+      "summary": "Drones hit the Ryazan refinery; imagery confirmed damage to a primary processing unit.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Satellite images show damage at Saratov refinery (sample)",
+          "outlet": "Bloomberg",
+          "category": "intl_press",
+          "url": "https://example.org/sample/bloomberg/2026-10-27-saratov",
+          "published_at": "2026-10-27T15:30:00+01:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-18",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0451",
+      "date": "2026-10-19",
+      "target_name": "Air-defence radar near Dzhankoi",
+      "target_type": "radar",
+      "region": "Crimea (occupied)",
+      "occupied_territory": true,
+      "lat": null,
+      "lon": null,
+      "distance_km": 180,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine claimed a strike on an air-defence radar in northern Crimea; geolocated footage confirmed the hit.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-19",
+          "published_at": null
+        },
+        {
+          "title": "Geolocated footage of radar strike (sample)",
+          "outlet": "GeoConfirmed",
+          "category": "osint_data",
+          "url": "https://example.org/sample/geoconfirmed/2026-10-19-dzhankoi",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-20",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0452",
+      "date": "2026-10-21",
+      "target_name": "Saratov oil refinery",
+      "target_type": "refinery",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 520,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 4,
+      "damage": "Satellite images show two burned distillation columns at the refinery.",
+      "effect": null,
+      "summary": "The Saratov governor reported a drone attack and a fire at an industrial site in the city.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Governor: drone attack on an industrial site in Saratov (sample)",
+          "outlet": "Saratov governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/saratov_gov/2026-10-21",
+          "published_at": "2026-10-21T05:40:00+03:00"
+        },
+        {
+          "title": "Satellite images show damage at Saratov refinery (sample)",
+          "outlet": "Bloomberg",
+          "category": "intl_press",
+          "url": "https://example.org/sample/bloomberg/2026-10-27-saratov",
+          "published_at": "2026-10-27T15:30:00+01:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-22",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "STR-2026-0453",
+      "date": "2026-10-22",
+      "target_name": "Rail junction near Kursk",
+      "target_type": "logistics_rail",
+      "region": "Kursk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 100,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine claimed a strike on a rail junction used to supply Russian forces.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-22-rail",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0454",
+      "date": "2026-10-22",
+      "target_name": "Morozovsk airbase",
+      "target_type": "airbase",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 220,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "The Rostov governor reported a drone attack on Morozovsk; Ukraine said it targeted the airbase.",
+      "sources": [
+        {
+          "title": "General Staff statement (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-22-morozovsk",
+          "published_at": null
+        },
+        {
+          "title": "Governor reports drone attack on Morozovsk (sample)",
+          "outlet": "Rostov governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/rostov_gov/2026-10-22",
+          "published_at": null
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0455",
+      "date": "2026-10-23",
+      "target_name": "Ammunition depot near Kotluban",
+      "target_type": "ammunition_depot",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 300,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine claimed a strike on an ammunition depot; fire detections confirmed a blaze at the site.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "FIRMS thermal anomalies, Novorossiysk, 27 October (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-10-27-novorossiysk",
+          "published_at": "2026-10-27"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0456",
+      "date": "2026-10-25",
+      "target_name": "Ammunition depot near Klintsy",
+      "target_type": "ammunition_depot",
+      "region": "Bryansk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 60,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "The Bryansk governor reported a drone attack on the Klintsy district and a fire at a military site.",
+      "sources": [
+        {
+          "title": "General Staff: strike on ammunition depot near Klintsy (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-25-klintsy",
+          "published_at": "2026-10-25T12:00:00+02:00"
+        },
+        {
+          "title": "Governor: drone attack on Klintsy district (sample)",
+          "outlet": "Bryansk governor (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/bryansk_gov/2026-10-25",
+          "published_at": "2026-10-25T06:40:00+03:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-26",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0457",
+      "date": "2026-10-27",
+      "target_name": "Sheskharis oil terminal, Novorossiysk",
+      "target_type": "oil_terminal",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": 44.7,
+      "lon": 37.8,
+      "distance_km": 380,
+      "weapon": "drone",
+      "weapon_detail": "Liutyi long-range drones",
+      "western_weapon": null,
+      "verification": 3,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claimed a strike on Russia's main Black Sea crude terminal. Krasnodar officials reported a fire after debris fell, and satellite fire detections confirm a blaze at the terminal.",
+      "sources": [
+        {
+          "title": "General Staff: strike on Sheskharis oil terminal (sample)",
+          "outlet": "General Staff of the Armed Forces of Ukraine",
+          "category": "ua_gov",
+          "url": "https://example.org/sample/generalstaff/2026-10-27-sheskharis",
+          "published_at": "2026-10-27T11:20:00+02:00"
+        },
+        {
+          "title": "Operational headquarters: fire at Novorossiysk port (sample)",
+          "outlet": "Krasnodar Krai operational headquarters (Telegram)",
+          "category": "ru_gov",
+          "url": "https://example.org/sample/t.me/opershtab23/2026-10-27",
+          "published_at": "2026-10-27T04:30:00+03:00"
+        },
+        {
+          "title": "FIRMS thermal anomalies, Novorossiysk, 27 October (sample)",
+          "outlet": "NASA FIRMS",
+          "category": "osint_data",
+          "url": "https://example.org/sample/firms/2026-10-27-novorossiysk",
+          "published_at": "2026-10-27"
+        }
+      ],
+      "seed": false,
+      "added": "2026-10-28",
+      "updated": null
+    }
+  ]
+}

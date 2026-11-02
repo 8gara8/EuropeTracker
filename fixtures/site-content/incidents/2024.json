@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "year": 2024,
+  "incidents": [
+    {
+      "id": "INC-2024-0003",
+      "date": "2024-01-14",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE",
+        "FI"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "Aviation authorities reported GPS interference that disrupted approaches to Tallinn and Helsinki for several days.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0003 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0003",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0010",
+      "date": "2024-02-01",
+      "date_precision": "month",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "migration_pressure",
+      "rung": 1,
+      "serious": false,
+      "summary": "Finland kept its eastern crossings closed after officials said Russia was steering asylum seekers to the border.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0010 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0010",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0017",
+      "date": "2024-03-23",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Polish Operational Command said a Russian cruise missile crossed Polish airspace for under a minute during strikes on western Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0017 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0017",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0024",
+      "date": "2024-04-18",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "sabotage_arrest",
+      "rung": 2,
+      "serious": false,
+      "summary": "Prosecutors charged two men with planning attacks on military and rail sites on behalf of Russian intelligence.",
+      "attribution": 4,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0024 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0024",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0031",
+      "date": "2024-05-07",
+      "date_precision": "day",
+      "location_country": "RU",
+      "affected": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "nuclear_exercise",
+      "rung": 1,
+      "serious": false,
+      "summary": "Russia announced exercises of its non-strategic nuclear forces near Ukraine, later joined by Belarus.",
+      "attribution": 4,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0031 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0031",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0038",
+      "date": "2024-06-13",
+      "date_precision": "day",
+      "location_country": "CZ",
+      "affected": [
+        "CZ",
+        "PL",
+        "BE"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "influence_operation",
+      "rung": 2,
+      "serious": false,
+      "summary": "Czech authorities sanctioned a Russian-funded news network accused of paying European politicians.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0038 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0038",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0045",
+      "date": "2024-07-22",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE",
+        "GB"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "explosive",
+      "rung": 2,
+      "serious": false,
+      "summary": "Parcels fitted with incendiary devices caught fire at courier hubs; investigators linked the plot to Russian military intelligence.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0045 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0045",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0052",
+      "date": "2024-09-07",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian attack drone crashed in eastern Latvia after straying from a strike on Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0052 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0052",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0059",
+      "date": "2024-10-01",
+      "date_precision": "month",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": null,
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "election_cyber",
+      "rung": 2,
+      "serious": false,
+      "summary": "Moldova reported cyberattacks on electoral systems during its presidential vote and EU referendum.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0059 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0059",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0066",
+      "date": "2024-11-18",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT",
+        "SE",
+        "FI",
+        "DE"
+      ],
+      "location": null,
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": false,
+      "summary": "Two Baltic data cables were cut within a day; a bulk carrier was suspected of dragging its anchor.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0066 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0066",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    },
+    {
+      "id": "INC-2024-0073",
+      "date": "2024-12-25",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI",
+        "EE"
+      ],
+      "location": null,
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Finland–Estonia power cable and several data cables were damaged; Finnish authorities detained a shadow-fleet tanker.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Incident compilation entry INC-2024-0073 (sample)",
+          "outlet": "Sample incident compilation",
+          "category": "think_tank",
+          "url": "https://example.org/sample/seed/INC-2024-0073",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-10-15",
+      "updated": null
+    }
+  ]
+}

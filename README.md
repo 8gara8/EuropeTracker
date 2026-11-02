@@ -15,5 +15,6 @@ spilling into Europe. It covers:
 - **Build spec:** [`SPEC.md`](SPEC.md)
 - **Agent guide:** [`AGENTS.md`](AGENTS.md)
 
-**Status (2026-11-02):** Phase 1 is done: the data contract and the validator. The site, the daily
-pipeline and the seed data come next. See the phase table in `AGENTS.md`.
+**Status (2026-11-02):** Phases 1 and 2 are built: the data contract, the validator and the site
+(previews run on sample data). The daily pipeline and the seed data come next. See the phase table in
+`AGENTS.md`.
