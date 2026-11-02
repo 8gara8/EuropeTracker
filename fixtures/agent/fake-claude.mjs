@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Test stand-in for the Claude CLI (used via ET_CLAUDE_BIN in tests/daily.test.ts). Prints stream-json
+// Test stand-in for the Claude CLI (tests/daily.test.ts runs it through ET_CLAUDE_BIN). Prints stream-json
 // events shaped like Claude Code 2.1.316's and writes the draft named in the prompt from a prepared file.
 // The agent's environment is minimal by design, so settings come from $CLAUDE_CONFIG_DIR/fake-agent.json:
 //   mode    "ok" (default) | "nodraft" | "auth"
