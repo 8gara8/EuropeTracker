@@ -36,7 +36,9 @@ tracked only as the drivers of that risk.
     driver.
   - **Schedule:** no day count; one morning brief that starts at 05:30 Taipei, ahead of MEtracker's
     07:30 run.
-  - **Alerts:** failed-run emails from GitHub Actions until JL creates a Telegram bot.
+  - **No alerts.** JL gets updates from the Claude interface. The daily run is a scheduled task in the
+    Claude app on Kobol (like MEtracker), and its reply, the run summary, is the update. No email,
+    Telegram, GitHub-issue or watchdog alerts.
   - **Content:** the Taiwan read-through stays.
   - **Repo:** private until JL says otherwise.
   - **Left to JL:** whether to move MEtracker's run to 07:00, and Kobol's automatic macOS update
@@ -59,7 +61,8 @@ tracked only as the drivers of that risk.
 
 - `SPEC.md`: the build spec, and the start-here file for any build work.
 - `docs/DESIGN.md`: the approved design, the "why". Frozen; change it only through a PR.
-- `routine/STYLE.md`, `routine/PROMPT.md`, `routine/REPAIR.md`: the agent's standards and prompts.
+- `routine/STYLE.md`, `routine/PROMPT.md`, `routine/REPAIR.md`: the research agent's standards and
+  prompts. `routine/TASK.md` is the prompt of the scheduled task in the Claude app.
 - `content/`: published data (briefs, incidents, strikes, state, forecasts). Only the pipeline pushes
   here directly.
 - `research/sources.yaml`: the source registry. Packs in `research/packs/` are gitignored.
@@ -88,12 +91,12 @@ tracked only as the drivers of that risk.
 
 | Job | How |
 |---|---|
-| Daily brief (after go-live) | launchd `com.europetracker.daily` at 05:30 runs `scripts/daily.sh`, which runs `scripts/daily.ts` |
+| Daily brief (after go-live) | The scheduled task "Europe tracker morning" in the Claude app (05:30, prompt `routine/TASK.md`) runs `scripts/daily.sh`, which runs `scripts/daily.ts`, then replies with `logs/DATE.summary.md` |
 | Manual or test run | `npm run daily -- --dry-run --no-deadline`; supervised: `npm run daily -- --review`, then `npm run promote -- --date D` |
 | Validate | `npm run validate -- drafts/D.json` or `npm run validate:all` |
 | Check feeds | `npm run sources:check` |
 | Change a schema | Update `lib/schema`, the fixtures and the tests, bump `schema_version` if the content shape changes, then `npm run schema:gen` |
-| Failure alerts | `scripts/notify.ts` dispatches `.github/workflows/alert.yml` (fails on purpose so GitHub emails JL); the watchdog checks at 07:07 |
+| Run results | No alerts by design. Every run ends with `logs/DATE.summary.md`, which the scheduled task posts in the Claude app; failed drafts go to `needs-review/DATE/` |
 
 ## 7. Memory
 

@@ -6,7 +6,9 @@
 > (https://claude.ai/artifact/JnMoMzhG4UQeDXtj4J3kKW). Change it only through a pull request.
 >
 > **Decisions taken at approval (2026-11-02):**
-> - Alerts go by GitHub email until JL sets up a Telegram bot.
+> - No alerts (JL, after approval). JL gets updates from the Claude interface, so the daily run is a
+>   scheduled task in the Claude app, like ME, and its reply is the morning update. Sections 5.2 step
+>   7, 5.6 "Watchdog" and 5.8 "Alerts" below are superseded; see `SPEC.md` §0.3, §7.7 and §8.3.
 > - The Taiwan read-through stays.
 > - The repo stays private until JL says otherwise.
 > - Moving the ME run to 07:00 and Kobol's macOS update setting are left to JL.

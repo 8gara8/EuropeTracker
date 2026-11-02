@@ -42,6 +42,9 @@
   access outside `drafts/`.
 - **Direct pushes to `main` come only from the daily pipeline**, and only for files under `content/`.
   Code changes go through pull requests.
+- **No alerts.** JL gets updates from the Claude interface. The daily run is a scheduled task in the
+  Claude app, and its run summary is the update (§7.7, §8.3). Don't add email, Telegram, GitHub-issue,
+  watchdog or notification alerts.
 - **Times are Asia/Taipei** (UTC+8, no daylight saving) unless labelled otherwise. Kyiv times are
   always labelled.
 
@@ -51,7 +54,8 @@
 |---|---|---|
 | `content/strikes.json` | `content/strikes/YYYY.json`, one file per year | Same pattern as incidents, which keeps files and diffs small |
 | Brief of at most 1,800 words | Prompt targets 1,800 words or fewer; the validator's hard cap is 2,000 | The buffer avoids MEtracker-style failures from small overshoots |
-| A failure opens a GitHub issue | A failure dispatches an `alert` workflow that fails on purpose, and also opens an issue for the record | GitHub doesn't notify you about issues you open yourself, but it does email whoever triggered a failed workflow run. The pipeline's `gh` token belongs to JL |
+| A failure opens a GitHub issue; optional Telegram; an outside watchdog | No alerts of any kind. Every run, success or failure, ends with a summary that shows up in the Claude app | JL's decision on 2026-11-02: updates come from the Claude interface, as with MEtracker |
+| launchd starts the run at 05:30 | A scheduled task in the Claude app on Kobol starts `scripts/daily.sh` at 05:30 and replies with the run summary | Puts each morning's result where JL already reads ME's. The research agent stays a sandboxed headless sub-process |
 | "Every source exists" | Every cited URL must appear in the source pack or in the agent's own fetch or search results | Catches invented URLs without network calls at validation time |
 | The agent writes the brief | The agent writes a draft. `publish.ts` adds computed fields such as incident counts and word counts | The model is never trusted with numbers the code can compute |
 | Agent restrictions in project settings | Restrictions live in `routine/agent-settings.json`, passed with `--settings` | A restrictive `.claude/settings.json` would also cripple coding sessions in this repo |
@@ -67,7 +71,7 @@
 | Each brief stored three times, plus a 248-line import registry | The format grew by accretion | One JSON file per brief; the site reads the folder |
 | Validator crashed under arm64 Node | `node_modules` installed under Rosetta | arm64 enforced in preflight; `npm ci` with native npm |
 | URLs "wrapped" as `web.archive.org/web/2026/...` without being archived | A trick to get past link checks | Keep the real URL; request real snapshots in the background |
-| Failures only showed as a macOS notification on an empty Mac | No alert channel off the machine | Failed-workflow emails from GitHub, plus optional Telegram, plus a watchdog |
+| Failures only showed as a macOS notification on an empty Mac | The result never reached the reader | Every run ends with a summary in the Claude app's scheduled-task run, which JL already reads |
 
 ---
 
@@ -77,8 +81,9 @@ EuropeTracker publishes one brief every morning. It answers a single question: h
 Russia-Ukraine war to spill into Europe, through which routes, where, and what changed in the last 24
 hours? The war itself is tracked only as the set of drivers behind that risk.
 
-A pipeline on Kobol does the work. It collects a source pack, runs headless Claude Code to research and
-draft, validates the draft, commits it to GitHub, and Vercel publishes it. The brief is normally live by
+A pipeline on Kobol does the work. A scheduled task in the Claude app starts it at 05:30 and reports the
+result there, the same way MEtracker's runs appear. The pipeline collects a source pack, runs headless
+Claude Code to research and draft, validates the draft, and commits it to GitHub. Vercel publishes it. The brief is normally live by
 about 06:15 Taipei, and never later than 06:55.
 
 - **Site:** https://europetracker.vercel.app. This is Vercel project `europetracker` in team
@@ -121,9 +126,9 @@ about 06:15 Taipei, and never later than 06:55.
 | Local runtime | `/opt/homebrew/bin/node` (arm64, currently v26) | Native; never the Intel Node |
 | Vercel runtime | Node 24.x | Vercel default |
 | Research agent | Claude Code CLI, headless (`claude -p`), native arm64 build, isolated config dir | Uses JL's Claude subscription; no API key |
-| Scheduler | launchd LaunchAgent in JL's login session on Kobol | Native, survives reboots once logged in, logs to files |
+| Scheduler | Scheduled task in the Claude app on Kobol, daily at 05:30, running `scripts/daily.sh` (§8.3) | Same model as MEtracker; each run and its summary show up in the Claude app, where JL gets updates |
 | Hosting | Vercel Hobby with the Git integration | Every push to `main` deploys in about a minute |
-| Alerts | Failed-run notifications from GitHub Actions, plus optional Telegram | Needs no new accounts (§7.7) |
+| Alerts | None | JL's decision; the run summary in the Claude app is the update (§7.7) |
 
 ### Key dependencies
 
@@ -227,13 +232,14 @@ EuropeTracker/
 │   ├── sources.yaml               # Source registry: feeds, channels, queries, domain map
 │   └── packs/                     # (gitignored) daily source packs: YYYY-MM-DD.json/.md
 ├── routine/
+│   ├── TASK.md                    # Prompt of the Claude app's scheduled task (written in Phase 0)
 │   ├── PROMPT.md                  # Research-and-draft prompt (template; written in Phase 0)
 │   ├── REPAIR.md                  # Repair prompt (template; written in Phase 0)
 │   ├── STYLE.md                   # Analytic standards; binding for the agent (Phase 0)
 │   ├── agent-settings.json        # Phase 3: permissions for the headless agent (§8.5)
 │   └── schema/draft-brief.schema.json  # Generated from Zod; CI checks it is current
 ├── scripts/
-│   ├── daily.sh                   # launchd entry: env, caffeinate, run daily.ts
+│   ├── daily.sh                   # Entry point the scheduled task runs: env, caffeinate, daily.ts
 │   ├── daily.ts                   # Orchestrator (§7.2)
 │   ├── preflight.ts               # Arch, lock, network, git checks
 │   ├── collect.ts                 # Source pack builder (§7.3)
@@ -241,14 +247,12 @@ EuropeTracker/
 │   ├── validate.ts                # CLI (§7.5)
 │   ├── publish.ts                 # Apply draft → content, commit, push (§7.6)
 │   ├── promote.ts                 # Supervised mode: move review/DATE onto main
-│   ├── notify.ts                  # Alerts (§7.7)
 │   ├── archive-urls.ts            # Wayback snapshots, background (§7.8)
 │   ├── score-forecasts.ts         # Brier report (§7.9)
 │   ├── gen-json-schema.ts         # Zod → routine/schema/draft-brief.schema.json
 │   ├── agent-check.ts             # One-turn smoke test of the headless agent
 │   └── lib/                       # log.ts, run.ts (child processes with timeouts), git.ts,
-│                                  # keychain.ts, transcript.ts (§7.10), lock.ts
-├── launchd/com.europetracker.daily.plist   # Template, installed in Phase 5
+│                                  # keychain.ts, transcript.ts (§7.10), lock.ts, summary.ts (§7.7)
 ├── fixtures/
 │   ├── briefs/valid-weekday.json, valid-monday.json, valid-quiet.json
 │   ├── briefs/invalid--<CODE>.json # One per validation rule, ≥ 15 files
@@ -261,9 +265,7 @@ EuropeTracker/
 ├── logs/                          # (gitignored) run logs, transcripts, evidence, runs.jsonl
 ├── needs-review/                  # (gitignored) failed drafts with reports
 ├── .github/workflows/
-│   ├── ci.yml                     # Typecheck, tests, validate:all, schema:check, build
-│   ├── alert.yml                  # Fails on purpose so GitHub emails JL (§7.7)
-│   └── watchdog.yml               # 07:07 check that today's brief exists and is live
+│   └── ci.yml                     # Typecheck, tests, validate:all, schema:check, build (no alert workflows)
 ├── package.json, package-lock.json, tsconfig.json, next.config.ts, postcss.config.mjs,
 ├── vitest.config.ts, .gitignore
 ```
@@ -1223,7 +1225,6 @@ interface IncidentExplorerProps { incidents: Incident[] }
     "daily": "tsx scripts/daily.ts",
     "publish": "tsx scripts/publish.ts",
     "promote": "tsx scripts/promote.ts",
-    "notify": "tsx scripts/notify.ts",
     "archive-urls": "tsx scripts/archive-urls.ts",
     "forecasts:report": "tsx scripts/score-forecasts.ts --report",
     "agent:check": "tsx scripts/agent-check.ts"
@@ -1233,7 +1234,7 @@ interface IncidentExplorerProps { incidents: Incident[] }
 
 ### 7.2 `scripts/daily.ts`: the orchestrator
 
-`scripts/daily.sh` is the launchd entry point:
+`scripts/daily.sh` is the entry point the scheduled task runs (§8.3):
 
 ```zsh
 #!/bin/zsh
@@ -1252,6 +1253,8 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
 - `--force`: runs even if today's brief exists.
 - `--no-deadline`: for manual runs; the deadline becomes start + 75 minutes.
 - `--simulate-failure`: forces a validation failure, to test the failure path.
+- `--detach`: re-launches itself in the background (`nohup`) and exits 0 at once. Only the two-task
+  fallback in §8.3 uses it.
 
 **Constants** (overridable by env, §8.7): `HARD_STOP = 06:55`, `RETRY_CUTOFF = 06:25`,
 `AGENT_TIMEOUT_MAX = 45 min`, `REPAIR_TIMEOUT = 6 min`, `MAX_REPAIRS = 2`, `LIVE_WAIT_MAX = 8 min`.
@@ -1287,15 +1290,15 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
    - Otherwise take the failure path.
 7. **Publish** (skipped with `--dry-run`).
    - Run `publish.ts` (§7.6).
-   - Poll `ET_SITE_URL/brief/DATE` every 20 s for up to `LIVE_WAIT_MAX` until it returns 200.
-   - Send `notify success`. Add "(not yet live)" if it timed out; that is a warning, not a failure.
+   - Poll `ET_SITE_URL/brief/DATE` every 20 s for up to `LIVE_WAIT_MAX` until it returns 200. If it
+     times out, the summary says "not yet live"; that is a warning, not a failure.
    - Spawn `archive-urls.ts` detached.
 8. **Failure path.**
    - Copy `drafts/DATE.json`, `drafts/context.json`, the validator report, the logs and the pack
      summary into `needs-review/DATE/`.
-   - Run `notify failure` with the error code and the first 20 errors.
    - Exit 1.
 9. **Always** (in `finally`):
+   - Write the run summary (§7.7) to `logs/DATE.summary.md` and print it as the final block on stdout.
    - Release the lock.
    - Append one line to `logs/runs.jsonl`:
      `{date, started, ended, outcome: "published"|"failed"|"skipped"|"dry_run", attempts, repairs, sources, words, error_code, duration_s}`.
@@ -1392,26 +1395,38 @@ tsx scripts/validate.ts --all
    later runs `git checkout main && git merge --ff-only review/D && git push origin main`, then deletes
    the branch locally and on the remote.
 
-### 7.7 `scripts/notify.ts`
+### 7.7 Run summary (`scripts/lib/summary.ts`)
 
-```
-notify success --date D --url <brief url> --title <title> [--not-live]
-notify failure --date D --code <E_…> --message <text> --dir needs-review/D
-notify warn    --date D --message <text>
+There are no alerts; that was JL's decision. Instead, every run, whatever its outcome, ends with a short
+Markdown summary.
+- `daily.ts` writes it to `logs/DATE.summary.md` and prints it as the final block on stdout.
+- The scheduled task (§8.3) replies with it, so it appears in the Claude app as that morning's update.
+- At most 15 lines, plain words.
+
+Published:
+
+```markdown
+**EuropeTracker DATE — published**
+Rung N (Name) · next-rung odds: Term (P%) · live at <url>   ← or "committed, not yet live"
+Bottom line: <the brief's bottom line, verbatim>
+Changes: <up to 3 short lines: score changes, new incidents, indicator changes>
+Run: started HH:MM, finished HH:MM · attempts A, repairs R · S sources from C categories · W words
 ```
 
-- **Failure:**
-  1. `gh workflow run alert.yml -R 8gara8/EuropeTracker -f title="Brief failed D (<code>)" -f body="<message>"`.
-     The workflow fails on purpose, and GitHub emails JL, who triggered it through the `gh` token. The
-     email reaches JL's phone if the GitHub mobile app has notifications on.
-  2. `gh issue create -R 8gara8/EuropeTracker --label pipeline-failure --title … --body …` for the
-     record. Create the label if it is missing.
-  3. Telegram, if configured (§8.6).
-  4. A macOS notification through `osascript`.
-- **Success:** Telegram, if configured, with "EuropeTracker D — <title> <url>"; plus a macOS
-  notification.
-- **Warn:** Telegram if configured, and the log.
-- Every channel is best-effort. One failing never stops the others, and `notify` never throws.
+Failed:
+
+```markdown
+**EuropeTracker DATE — failed** (E_CODE)
+What happened: <one sentence>
+First errors: <up to 5 validator codes with their messages>
+Draft and logs: needs-review/DATE/
+Next step: <one line, e.g. "rerun: npm run daily -- --no-deadline", or "the Claude login token needs renewing (SPEC §8.6)">
+```
+
+- **Skipped** (the brief already exists, or another run holds the lock): one line saying so.
+- **Dry run:** the published format, headed "dry run", plus the draft path.
+- The summary never contains tokens, environment values, or anything but the brief's own text and the
+  run facts.
 
 ### 7.8 `scripts/archive-urls.ts`
 
@@ -1491,86 +1506,36 @@ jobs:
       - run: npm run build
 ```
 
-`.github/workflows/alert.yml`:
+There are no alert or watchdog workflows, by design (§0.2, §7.7).
 
-```yaml
-name: alert
-on:
-  workflow_dispatch:
-    inputs:
-      title: { description: "Alert title", required: true, type: string }
-      body:  { description: "Details", required: false, type: string }
-jobs:
-  alert:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Raise alert
-        env:
-          TITLE: ${{ inputs.title }}
-          BODY: ${{ inputs.body }}
-        run: |
-          echo "::error title=EuropeTracker alert::$TITLE"
-          printf '%s\n' "$BODY"
-          exit 1
-```
+### 8.3 Scheduled task in the Claude app (the daily trigger)
 
-`.github/workflows/watchdog.yml`. Until Phase 5 it has only `workflow_dispatch`; the `schedule` block
-is added at go-live.
-
-```yaml
-name: watchdog
-on:
-  schedule:
-    - cron: "7 23 * * *"   # 07:07 Asia/Taipei
-  workflow_dispatch:
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Today's brief exists and is live
-        run: |
-          d=$(TZ=Asia/Taipei date +%F)
-          test -f "content/briefs/$d.json" || { echo "::error::No brief committed for $d"; exit 1; }
-          code=$(curl -s -o /dev/null -w '%{http_code}' "https://europetracker.vercel.app/brief/$d")
-          [ "$code" = "200" ] || { echo "::error::Brief for $d is not live (HTTP $code)"; exit 1; }
-```
-
-GitHub emails the person who added a scheduled workflow when its run fails. The commit adding the cron
-is pushed with JL's token, so the email goes to JL. Scheduled runs can start late, so the watchdog is a
-backstop for a dead Kobol, not the main alert.
-
-### 8.3 launchd
-
-`launchd/com.europetracker.daily.plist` (installed in Phase 5):
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>Label</key><string>com.europetracker.daily</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>/bin/zsh</string>
-    <string>/Users/kobol/Documents/EuropeTracker/scripts/daily.sh</string>
-  </array>
-  <key>WorkingDirectory</key><string>/Users/kobol/Documents/EuropeTracker</string>
-  <key>StartCalendarInterval</key>
-  <dict><key>Hour</key><integer>5</integer><key>Minute</key><integer>30</integer></dict>
-  <key>StandardOutPath</key><string>/Users/kobol/Documents/EuropeTracker/logs/launchd.out.log</string>
-  <key>StandardErrorPath</key><string>/Users/kobol/Documents/EuropeTracker/logs/launchd.err.log</string>
-  <key>RunAtLoad</key><false/>
-</dict>
-</plist>
-```
-
-- **Install:** copy to `~/Library/LaunchAgents/`, then run
-  `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.europetracker.daily.plist`.
-- **Check:** `launchctl print gui/$(id -u)/com.europetracker.daily`.
-- **Uninstall:** `launchctl bootout gui/$(id -u)/com.europetracker.daily`.
-- A LaunchAgent runs only while JL's user session is logged in. See Appendix C about overnight macOS
-  updates.
+- **What:** a scheduled task in the Claude desktop app on Kobol, the same mechanism MEtracker uses.
+  - Name: "Europe tracker morning".
+  - Schedule: daily at 05:30 Asia/Taipei (cron `30 5 * * *`), set to run on this computer.
+  - Working folder: `/Users/kobol/Documents/EuropeTracker`.
+  - Prompt: the contents of `routine/TASK.md`.
+- **What it does:** runs `zsh scripts/daily.sh` in the background, waits for it to finish, then
+  replies with `logs/DATE.summary.md`. That reply is JL's morning update in the Claude app. The task
+  session runs nothing else and never reads web content; research happens in the sandboxed headless
+  sub-process (§8.4).
+- **Creating it** (Phase 5, with JL present):
+  1. Create the task with the scheduled-tasks tool, or in the app.
+  2. A task created by the tool takes the creating session's folder and starts in Manual permission
+     mode, so set the folder to `/Users/kobol/Documents/EuropeTracker` on the task page.
+  3. Click Run now once while JL watches, and approve `zsh scripts/daily.sh` and the summary read as
+     "Always allowed". Later unattended runs then never stall on a permission prompt.
+  4. Confirm the saved folder (`cwd`) in
+     `~/Library/Application Support/Claude/claude-code-sessions/*/*/scheduled-tasks.json`.
+- **Verify in Phase 5:**
+  - **Start-time jitter.** Tasks here have shown up to about 13 minutes. `daily.ts` sizes its timeouts
+    from the actual start, so a 05:43 start still finishes by 06:55.
+  - **Long background commands.** Confirm the task session can run a 30–60 minute command in the
+    background and wait for it. If it can't, fall back to two tasks: one at 05:30 runs
+    `zsh scripts/daily.sh --detach` (returns at once), and one at 06:56 replies with the summary file.
+- **Requirements:** the Claude desktop app is running and Kobol is awake and logged in, the same as
+  MEtracker's task.
+- **Don't** create, change or reschedule any other task, MEtracker's included.
 
 ### 8.4 Claude Code CLI (headless research agent)
 
@@ -1635,8 +1600,6 @@ Everything lives in JL's login keychain on Kobol. `scripts/lib/keychain.ts` read
 | Service name | What | How JL creates it |
 |---|---|---|
 | `europetracker-claude-oauth` | Claude Code OAuth token for the agent | In Terminal on Kobol: `CLAUDE_CONFIG_DIR=/Users/kobol/.europetracker/claude /opt/homebrew/bin/claude setup-token`, then `security add-generic-password -U -a kobol -s europetracker-claude-oauth -w` and paste the token at the prompt |
-| `europetracker-telegram-bot` (optional) | Telegram bot token | Create a bot with @BotFather, then `security add-generic-password -U -a kobol -s europetracker-telegram-bot -w` |
-| `europetracker-telegram-chat` (optional) | Chat id to post to | Message the bot once, read the chat id from `https://api.telegram.org/bot<token>/getUpdates` in a browser, then store it the same way |
 
 `gh` already has a keyring login as 8gara8 with `repo` and `workflow` scopes. Git pushes over HTTPS use
 the same credentials.
@@ -1647,7 +1610,6 @@ the same credentials.
 |---|---|---|
 | `ET_CONTENT_DIR` | `content` | Site loaders and scripts (Vercel Preview sets `fixtures/site-content`) |
 | `ET_SITE_URL` | `https://europetracker.vercel.app` | Live check, RSS links, metadata |
-| `ET_REPO` | `8gara8/EuropeTracker` | notify.ts |
 | `ET_MODEL` | `opus` | Agent model alias |
 | `ET_CLAUDE_BIN` | `/opt/homebrew/bin/claude` | daily.ts |
 | `ET_CLAUDE_CONFIG_DIR` | `/Users/kobol/.europetracker/claude` | daily.ts |
@@ -1663,13 +1625,13 @@ There are no `.env` files with secrets. Tokens come only from the keychain.
 - `DATE.agent-N.jsonl`: agent transcripts
 - `DATE.evidence.json`
 - `runs.jsonl`
-- `launchd.*.log`
+- `DATE.summary.md`: the run summary the scheduled task replies with (§7.7)
 - `archive-index.pending.json`
 
 `logs/`, `drafts/` and `research/packs/` keep 60 days. `needs-review/` is kept until JL clears it.
 `docs/RUNBOOK.md` explains how to read each file.
 
-### 8.9 One-time setup on Kobol (Phase 3, plus Phase 5 for launchd)
+### 8.9 One-time setup on Kobol (Phase 3, plus Phase 5 for the scheduled task)
 
 1. The repo is already cloned at `/Users/kobol/Documents/EuropeTracker`. Its git config has
    `user.name = 8gara8` and `user.email = 62337733+8gara8@users.noreply.github.com`.
@@ -1677,7 +1639,7 @@ There are no `.env` files with secrets. Tokens come only from the keychain.
 3. Install the native Claude CLI (§8.4) and create the isolated config dir.
 4. JL creates the keychain items (§8.6).
 5. `npm run agent:check`, then the sandbox tests (§8.5).
-6. In Phase 5: install the launchd agent (§8.3) and add the watchdog schedule (§8.2).
+6. In Phase 5: create the scheduled task in the Claude app (§8.3).
 
 ---
 
@@ -1772,7 +1734,7 @@ without errors.
 5. `scripts/preflight.ts`, `scripts/daily.ts` and `scripts/daily.sh` (§7.2).
 6. `scripts/publish.ts` and `scripts/promote.ts` (§7.6), tested against a temporary git repo with a
    bare remote.
-7. `scripts/notify.ts`, `.github/workflows/alert.yml`, and `watchdog.yml` (dispatch only for now).
+7. `scripts/lib/summary.ts` (§7.7), with tests for the published, failed, skipped and dry-run formats.
 8. `scripts/archive-urls.ts`, `scripts/score-forecasts.ts` and `scripts/agent-check.ts`.
 9. `routine/agent-settings.json` (§8.5). Wire the template variables of `routine/PROMPT.md` and
    `REPAIR.md` (§10).
@@ -1783,8 +1745,8 @@ without errors.
 - `npm run daily -- --dry-run --no-deadline` on Kobol finishes within 60 minutes and produces
   `drafts/<today>.json` that passes `npm run validate -- drafts/<today>.json --evidence logs/<today>.evidence.json`.
   Report the duration, attempts, repairs, sources and word count from `runs.jsonl`.
-- `npm run daily -- --dry-run --simulate-failure` creates `needs-review/<today>/`, and the `alert`
-  workflow run is visible on GitHub. The real dispatch can be tested once with JL watching.
+- `npm run daily -- --dry-run --simulate-failure` creates `needs-review/<today>/` and ends with a
+  failure summary in the §7.7 format.
 
 ### Phase 4: Seed data
 
@@ -1833,26 +1795,26 @@ scores mean something on day one.
    - JL reviews the `review/DATE` preview
    - `npm run promote -- --date DATE` once approved
    - Fix prompt, style or validator issues between runs, through PRs.
-2. Add the watchdog `schedule` (§8.2).
-3. Install the launchd agent (§8.3). Verify it with `launchctl print`.
-4. Optional: Telegram (§8.6) once JL has created the bot.
-5. Watch the first unattended morning. Afterwards, write the go-live notes and set Status in
+2. Create the scheduled task in the Claude app (§8.3), including the watched Run now with JL.
+3. Watch the first unattended morning. Afterwards, write the go-live notes and set Status in
    `AGENTS.md`.
 
 **Milestone**
 - The first unattended brief is live before 06:55 Taipei.
-- `runs.jsonl` shows `published`, and the watchdog run is green.
+- The task's run in the Claude app shows the "published" summary.
+- `runs.jsonl` shows `published`.
 
 ---
 
 ## 10. Routine prompts
 
-These three files were written in Phase 0 and are part of this spec. Phase 3 wires them; only change
+These files were written in Phase 0 and are part of this spec. Phase 3 wires them; only change
 them through PRs.
 
 | File | Role |
 |---|---|
 | `routine/STYLE.md` | Analytic standards: definitions, counting rules, scales, voice. Binding for the agent and the source of the methodology page's prose |
+| `routine/TASK.md` | The scheduled task's prompt in the Claude app: run the pipeline, wait, reply with the summary. Not templated |
 | `routine/PROMPT.md` | The research-and-draft prompt. `daily.ts` renders it and passes it to `claude -p` |
 | `routine/REPAIR.md` | The repair prompt. Used with `--resume` and the validator's errors |
 
@@ -1957,7 +1919,7 @@ Assumptions. These are a starting set; JL can edit them in the Phase 4 review.
   project lives there too. Don't modify it.
 - **Power:** system sleep is disabled. FileVault is off. Automatic login is **not** set. Automatic
   macOS update installs are **on**, so an overnight update reboot leaves Kobol at the login window and
-  the 05:30 run never happens. The watchdog catches this. Whether to change the setting is JL's call,
+  the 05:30 run never happens; that morning JL would see no new run in the Claude app. Whether to change the setting is JL's call,
   and it has been raised with JL.
 - **Other scheduled work on Kobol:**
   - MEtracker morning brief, daily at 07:30 (Claude desktop scheduled task; don't touch)
