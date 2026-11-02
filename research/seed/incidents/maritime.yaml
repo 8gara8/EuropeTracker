@@ -159,7 +159,7 @@
   attribution: 2
   summary: Poland said a sanctioned shadow-fleet tanker made suspicious manoeuvres near the power cable linking Poland and Sweden; a Polish military aircraft scared it off.
   src:
-    - [intl_press, "Reuters", "Poland says Russian ship performed suspicious manoeuvres near cable to Sweden", "https://www.reuters.com/world/europe/poland-says-russian-ship-performed-suspicious-manoeuvres-near-cable-sweden-2025-05-21/", "2025-05-21"]
+    - [intl_press, "Reuters", "Poland intervenes as Russian 'shadow fleet' ship spotted near power cable", "https://www.reuters.com/world/europe/poland-says-russian-ship-performed-suspicious-manoeuvres-near-cable-sweden-2025-05-21/", "2025-05-21"]
 
 - date: 2025-06-16
   where: GB
@@ -195,7 +195,7 @@
   note: Ukraine's SBU claimed the attacks with Sea Baby naval drones.
   summary: Naval drones struck the empty shadow-fleet tankers Kairos and Virat in Turkey's economic zone on their way to Novorossiysk. Kairos caught fire and its 25 crew were evacuated; Virat was hit again the next morning.
   src:
-    - [intl_press, "CNN", "Ukraine says it hit Russian 'shadow fleet' tankers with underwater blasts", "https://www.cnn.com/2025/11/29/europe/russia-shadow-fleet-ukraine-explosions-intl", "2025-11-29"]
+    - [intl_press, "CNN", "Ukraine says it hit Russian 'shadow fleet' tankers with underwater blasts in Black Sea", "https://www.cnn.com/2025/11/29/europe/russia-shadow-fleet-ukraine-explosions-intl", "2025-11-29"]
 
 - date: 2025-12-02
   where: TR
@@ -221,7 +221,7 @@
   note: Ukraine's SBU claimed the strike, its first in the Mediterranean.
   summary: Drones struck the empty Omani-flagged shadow-fleet tanker Qendil in the central Mediterranean, leaving it inoperable.
   src:
-    - [intl_press, "The War Zone", "Ukraine Strikes Russia-Linked Tanker In The Mediterranean With 'Bomber' Drone", "https://www.twz.com/news-features/ukraine-strikes-russia-linked-tanker-in-the-mediterranean-with-bomber-drone", "2025-12-19"]
+    - [intl_press, "The War Zone", "Ukraine Strikes Russia-Linked Tanker In The Mediterranean With 'Bomber Drone'", "https://www.twz.com/news-features/ukraine-strikes-russia-linked-tanker-in-the-mediterranean-with-bomber-drone", "2025-12-19"]
 
 - date: 2025-12-31
   where: FI
@@ -281,7 +281,7 @@
   note: A security source told Reuters Ukraine was suspected; Russia blamed Ukraine.
   summary: The sanctioned Russian-flagged LNG carrier Arctic Metagaz, laden with about 62,000 tonnes of LNG, caught fire after a suspected drone strike and drifted badly damaged. Russia said all 30 crew were rescued.
   src:
-    - [intl_press, "Reuters", "Russian-flagged sanctioned LNG tanker on fire in the Mediterranean", "https://www.reuters.com/business/energy/russian-flagged-sanctioned-lng-tanker-fire-mediterranean-crew-fate-unknown-2026-03-03/", "2026-03-03"]
+    - [intl_press, "Reuters", "Russian-flagged sanctioned LNG tanker on fire in the Mediterranean, sources say, crew located in lifeboat off Libya", "https://www.reuters.com/business/energy/russian-flagged-sanctioned-lng-tanker-fire-mediterranean-crew-fate-unknown-2026-03-03/", "2026-03-03"]
     - [eu_regional_press, "Times of Malta", "Russian gas tanker explodes between Malta and Libya", "https://timesofmalta.com/article/russialinked-gas-tanker-ablaze-150-miles-off-malta.1124914", "2026-03-03"]
 
 - date: 2026-03-07
@@ -328,7 +328,7 @@
   note: The Kremlin said Russia would protect its interests and called the boardings piracy.
   summary: A Russian frigate escorted two sanctioned shadow-fleet tankers, Enigma and Universal, through the English Channel, shadowed by a British naval vessel.
   src:
-    - [intl_press, "The Telegraph", "Putin mocks Starmer with warship in Channel", "https://www.telegraph.co.uk/news/2026/04/08/russia-warship-mocks-starmer-in-channel/", "2026-04-08"]
+    - [intl_press, "The Telegraph", "Exclusive: Putin mocks Starmer with warship in Channel", "https://www.telegraph.co.uk/news/2026/04/08/russia-warship-mocks-starmer-in-channel/", "2026-04-08"]
 
 - date: 2026-05-03
   where: SE
@@ -363,7 +363,7 @@
   summary: A Ukrainian Sargan-3000 naval drone, jammed off course, entered Constanța port and lodged in anti-pollution booms. The area was evacuated before it self-detonated without further damage; a second blew up outside the port and two more far offshore.
   src:
     - [intl_press, "AP", "A Ukrainian maritime drone explodes at a Romanian Black Sea port. No injuries reported", "https://apnews.com/article/drone-romania-black-sea-explosion-ukraine-defc53b2383a67475230c8349a47d7c6", "2026-06-05"]
-    - [eu_regional_press, "Antena 3", "Alertă în Portul Constanța. O dronă navală cu timer atașat a explodat", "https://www.antena3.ro/actualitate/alerta-in-portul-constanta-o-drona-marina-care-a-fost-adusa-la-mal-a-explodat-zona-a-fost-evacuata-790939.html", "2026-06-05"]
+    - [eu_regional_press, "Antena 3", "Alertă în Portul Constanța. O dronă navală cu timer atașat a explodat. MApN: Este de tipul celor folosite în războiul din Ucraina", "https://www.antena3.ro/actualitate/alerta-in-portul-constanta-o-drona-marina-care-a-fost-adusa-la-mal-a-explodat-zona-a-fost-evacuata-790939.html", "2026-06-05"]
 
 - date: 2026-06-14
   where: GB
@@ -398,7 +398,7 @@
   injured: 2
   summary: An LPG tanker caught fire after crew said three drones attacked it at night off Sfântu Gheorghe, outside Romania's territorial waters. Romania evacuated the crew; three injured sailors were taken to Tulcea and one later died.
   src:
-    - [eu_regional_press, "Digi24", "O navă cu GPL a luat foc în Marea Neagră. Nicușor Dan: A fost lovită în afara apelor teritoriale", "https://www.digi24.ro/stiri/actualitate/o-nava-cu-gpl-a-luat-foc-pe-marea-neagra-la-40-de-kilometri-distanta-de-sulina-trei-marinari-au-fost-raniti-3871345", "2026-07-21"]
+    - [eu_regional_press, "Digi24", "O navă cu GPL a luat foc în Marea Neagră. Nicușor Dan: A fost lovită în afara apelor teritoriale românești", "https://www.digi24.ro/stiri/actualitate/o-nava-cu-gpl-a-luat-foc-pe-marea-neagra-la-40-de-kilometri-distanta-de-sulina-trei-marinari-au-fost-raniti-3871345", "2026-07-21"]
 
 - date: 2026-07-24
   where: RO
@@ -409,7 +409,7 @@
   attribution: 1
   summary: The Liberian-flagged bulk carrier Christina B, carrying US coal to Ukraine, was hit by a mine or naval drone in Romania's economic zone. No casualties; it sought repairs in Constanța or Varna.
   src:
-    - [eu_regional_press, "Digi24", "Încă o navă aflată în Zona Economică Exclusivă a României a transmis un apel de urgență", "https://www.digi24.ro/stiri/actualitate/inca-o-nava-aflata-in-zona-economica-exclusiva-a-romaniei-a-transmis-un-apel-de-urgenta-dsu-posibil-impact-cu-o-drona-sau-mina-marina-3876501", "2026-07-24"]
+    - [eu_regional_press, "Digi24", "Încă o navă aflată în Zona Economică Exclusivă a României a transmis un apel de urgență. Instrucțiunile transmise de armatorul vasului", "https://www.digi24.ro/stiri/actualitate/inca-o-nava-aflata-in-zona-economica-exclusiva-a-romaniei-a-transmis-un-apel-de-urgenta-dsu-posibil-impact-cu-o-drona-sau-mina-marina-3876501", "2026-07-24"]
 
 - date: 2026-08-20
   where: RO
