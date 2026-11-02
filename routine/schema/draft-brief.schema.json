@@ -1,0 +1,1360 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EuropeTracker DraftBrief",
+  "description": "The research agent's output, drafts/YYYY-MM-DD.json (SPEC.md §4.4). Generated from lib/schema by `npm run schema:gen`; do not edit by hand. Word budgets in descriptions are enforced by the validator.",
+  "type": "object",
+  "properties": {
+    "schema_version": {"type":"number","const":1},
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Taipei date of the run; equals the file name"
+    },
+    "window": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "end": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        }
+      },
+      "required": ["start","end"],
+      "additionalProperties": false,
+      "description": "Exactly the window strings from the prompt"
+    },
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "quiet_day": {"type":"boolean","description":"true when there are fewer than 3 material developments"},
+    "weekly": {"type":"boolean","description":"true when date is a Monday; then weekly_outlook is required"},
+    "title": {"type":"string","minLength":1,"maxLength":140},
+    "bottom_line": {"type":"string","description":"40–120 words"},
+    "bottom_line_source_ids": {
+      "type": "array",
+      "items": {"type":"string"},
+      "description": "At least 2 source ids spanning at least 2 source categories"
+    },
+    "board": {
+      "type": "object",
+      "properties": {
+        "ladder": {
+          "type": "object",
+          "properties": {
+            "current_rung": {
+              "type": "number",
+              "enum": [0,1,2,3,4,5,6],
+              "description": "Must equal the computed rung after adding today's incidents"
+            },
+            "previous_rung": {"type":"number","enum":[0,1,2,3,4,5,6],"description":"Must equal state.ladder.current_rung"},
+            "next_rung_odds": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "probability": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100,
+                      "description": "Integer 0–100 that lies inside the band of `term` (STYLE.md §7)"
+                    },
+                    "term": {
+                      "type": "string",
+                      "enum": [
+                        "remote",
+                        "highly_unlikely",
+                        "unlikely",
+                        "realistic_possibility",
+                        "likely",
+                        "highly_likely",
+                        "almost_certain"
+                      ]
+                    },
+                    "confidence": {"type":"string","enum":["low","moderate","high"]}
+                  },
+                  "required": ["probability","term","confidence"],
+                  "additionalProperties": false
+                },
+                {"type":"null"}
+              ],
+              "description": "30-day probability of any incident above the current rung; null only at rung 6"
+            },
+            "rationale": {"type":"string","description":"≤ 60 words"}
+          },
+          "required": ["current_rung","previous_rung","next_rung_odds","rationale"],
+          "additionalProperties": false
+        },
+        "pathways": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pathway": {
+                "type": "string",
+                "enum": [
+                  "airspace",
+                  "sabotage",
+                  "maritime",
+                  "cyber_ew",
+                  "military_pressure",
+                  "nuclear",
+                  "political_economic"
+                ]
+              },
+              "serious_odds": {
+                "type": "object",
+                "properties": {
+                  "probability": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "description": "Integer 0–100 that lies inside the band of `term` (STYLE.md §7)"
+                  },
+                  "term": {
+                    "type": "string",
+                    "enum": [
+                      "remote",
+                      "highly_unlikely",
+                      "unlikely",
+                      "realistic_possibility",
+                      "likely",
+                      "highly_likely",
+                      "almost_certain"
+                    ]
+                  },
+                  "confidence": {"type":"string","enum":["low","moderate","high"]}
+                },
+                "required": ["probability","term","confidence"],
+                "additionalProperties": false,
+                "description": "30-day probability of at least one serious incident in this pathway"
+              },
+              "impact": {
+                "type": "number",
+                "enum": [1,2,3,4,5],
+                "description": "Consequence if it happens: 1 local disruption, 2 national under a day, 3 major disruption or casualties, 4 multiple deaths or alliance crisis, 5 war-level"
+              },
+              "trend": {
+                "type": "string",
+                "enum": ["up","down","flat"],
+                "description": "Against state: up if the probability rose 5 points or more, down if it fell 5 or more, else flat"
+              },
+              "rationale": {"type":"string","description":"≤ 40 words: the base rate plus the reason for any change"},
+              "source_ids": {
+                "type": "array",
+                "items": {"type":"string"},
+                "description": "Source ids; at least 1 when the probability moved 15 points or more"
+              }
+            },
+            "required": ["pathway","serious_odds","impact","trend","rationale","source_ids"],
+            "additionalProperties": false
+          },
+          "description": "Exactly 7, in PATHWAYS order"
+        },
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "country": {
+                "type": "string",
+                "enum": [
+                  "PL",
+                  "LT",
+                  "LV",
+                  "EE",
+                  "FI",
+                  "RO",
+                  "MD",
+                  "DE",
+                  "DK",
+                  "SE",
+                  "NO",
+                  "NL",
+                  "BE",
+                  "GB",
+                  "CZ",
+                  "SK",
+                  "HU",
+                  "BG",
+                  "AL",
+                  "AT",
+                  "CY",
+                  "ES",
+                  "FR",
+                  "GR",
+                  "HR",
+                  "IE",
+                  "IS",
+                  "IT",
+                  "LU",
+                  "ME",
+                  "MK",
+                  "MT",
+                  "PT",
+                  "SI",
+                  "TR"
+                ]
+              },
+              "score": {"type":"number","enum":[1,2,3,4,5]},
+              "previous_score": {
+                "anyOf": [{"type":"number","enum":[1,2,3,4,5]},{"type":"null"}],
+                "description": "The state's score for tier-1 countries; null for tier 2"
+              },
+              "reason": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "description": "≤ 40 words; required when the score changed or is above the floor"
+                  },
+                  {"type":"null"}
+                ]
+              },
+              "source_ids": {"type":"array","items":{"type":"string"},"description":"At least 1 when the score changed"},
+              "indicator_ids": {
+                "type": "array",
+                "items": {"type":"string"},
+                "description": "Active strategic indicators naming this country"
+              },
+              "cohesion_flag": {"type":"boolean","description":"Only Hungary or Slovakia may be flagged"}
+            },
+            "required": ["country","score","previous_score","reason","source_ids","indicator_ids","cohesion_flag"],
+            "additionalProperties": false
+          },
+          "description": "The 7 tier-1 countries in order (PL, LT, LV, EE, FI, RO, MD), then any tier-2 countries touched today"
+        }
+      },
+      "required": ["ladder","pathways","countries"],
+      "additionalProperties": false
+    },
+    "developments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string","pattern":"^d[1-9][0-9]*$"},
+          "headline": {"type":"string","minLength":1,"maxLength":140},
+          "summary": {"type":"string","description":"20–80 words"},
+          "category": {
+            "type": "string",
+            "enum": [
+              "battlefield",
+              "deep_strikes",
+              "russian_strikes",
+              "diplomacy",
+              "airspace",
+              "sabotage",
+              "maritime",
+              "cyber_ew",
+              "military_pressure",
+              "nuclear",
+              "political_economic",
+              "resolve"
+            ]
+          },
+          "importance": {"type":"string","enum":["pivotal","major","notable"],"description":"At most one pivotal per brief"},
+          "incident_ids": {
+            "type": "array",
+            "items": {"type":"string"},
+            "description": "Incidents (new or existing) this development is about"
+          },
+          "strike_ids": {
+            "type": "array",
+            "items": {"type":"string"},
+            "description": "Strikes (new or existing) this development is about"
+          },
+          "verification": {
+            "anyOf": [{"type":"number","enum":[1,2,3,4,5]},{"type":"null"}],
+            "description": "Required when strike_ids is non-empty: the highest verification among them"
+          },
+          "attribution": {
+            "anyOf": [{"type":"number","enum":[1,2,3,4]},{"type":"null"}],
+            "description": "Required when incident_ids is non-empty: the highest attribution among them"
+          },
+          "russian_framing": {"anyOf":[{"type":"string","description":"≤ 40 words, reported as a claim"},{"type":"null"}]},
+          "source_ids": {
+            "type": "array",
+            "items": {"type":"string"},
+            "description": "At least 1; pivotal and major need at least 2 from at least 2 categories"
+          }
+        },
+        "required": [
+          "id",
+          "headline",
+          "summary",
+          "category",
+          "importance",
+          "incident_ids",
+          "strike_ids",
+          "verification",
+          "attribution",
+          "russian_framing",
+          "source_ids"
+        ],
+        "additionalProperties": false
+      },
+      "description": "3–8 (quiet day 0–3)"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "battlefield",
+              "deep_strikes",
+              "russian_strikes",
+              "diplomacy",
+              "airspace",
+              "sabotage",
+              "maritime",
+              "cyber_ew",
+              "military_pressure",
+              "nuclear",
+              "political_economic",
+              "resolve"
+            ]
+          },
+          "status": {"type":"string","enum":["material","no_change"]},
+          "text": {"type":"string","description":"material: ≤ 60 words; no_change: exactly \"No material change.\""},
+          "development_ids": {"type":"array","items":{"type":"string"},"description":"Development ids this note draws on"},
+          "source_ids": {"type":"array","items":{"type":"string"},"description":"At least 1 when material"}
+        },
+        "required": ["category","status","text","development_ids","source_ids"],
+        "additionalProperties": false
+      },
+      "description": "Exactly 12, in CATEGORIES order"
+    },
+    "incidents_new": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "INC-YYYY-NNNN continuing context.next_ids.incident[YYYY], where YYYY is the year of date"
+          },
+          "date": {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$","description":"Local date of occurrence"},
+          "date_precision": {
+            "type": "string",
+            "enum": ["day","month"],
+            "description": "\"month\" only for seed records, with date = the 1st"
+          },
+          "location_country": {
+            "type": "string",
+            "enum": [
+              "PL",
+              "LT",
+              "LV",
+              "EE",
+              "FI",
+              "RO",
+              "MD",
+              "DE",
+              "DK",
+              "SE",
+              "NO",
+              "NL",
+              "BE",
+              "GB",
+              "CZ",
+              "SK",
+              "HU",
+              "BG",
+              "AL",
+              "AT",
+              "CY",
+              "ES",
+              "FR",
+              "GR",
+              "HR",
+              "IE",
+              "IS",
+              "IT",
+              "LU",
+              "ME",
+              "MK",
+              "MT",
+              "PT",
+              "SI",
+              "TR",
+              "BY",
+              "RU",
+              "UA"
+            ],
+            "description": "BY, RU or UA only for military_pressure and nuclear"
+          },
+          "affected": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "PL",
+                "LT",
+                "LV",
+                "EE",
+                "FI",
+                "RO",
+                "MD",
+                "DE",
+                "DK",
+                "SE",
+                "NO",
+                "NL",
+                "BE",
+                "GB",
+                "CZ",
+                "SK",
+                "HU",
+                "BG",
+                "AL",
+                "AT",
+                "CY",
+                "ES",
+                "FR",
+                "GR",
+                "HR",
+                "IE",
+                "IS",
+                "IT",
+                "LU",
+                "ME",
+                "MK",
+                "MT",
+                "PT",
+                "SI",
+                "TR"
+              ]
+            },
+            "description": "European countries affected, at least 1; includes location_country if European"
+          },
+          "location": {
+            "anyOf": [{"type":"string","maxLength":80},{"type":"null"}],
+            "description": "City, region or sea area"
+          },
+          "sea": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": ["baltic","black_sea","north_sea","barents_norwegian","mediterranean","other"]
+              },
+              {"type":"null"}
+            ]
+          },
+          "pathway": {
+            "type": "string",
+            "enum": ["airspace","sabotage","maritime","cyber_ew","military_pressure","nuclear","political_economic"]
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "description": "A key of INCIDENT_TYPES[pathway], or \"other\". airspace: drone_incursion, missile_incursion, aircraft_violation, debris_impact, shootdown, airport_closure, balloon_incursion; sabotage: arson, explosive, rail_sabotage, infrastructure_sabotage, assassination_plot, proxy_recruitment, sabotage_arrest; maritime: cable_damage, pipeline_damage, shadow_fleet_incident, naval_confrontation, vessel_seizure, mine_drift, strike_at_sea; cyber_ew: gnss_jamming, gnss_spoofing, cyberattack, ddos, election_cyber; military_pressure: exercise_near_border, force_buildup, snap_readiness, probe, border_violation; nuclear: nuclear_exercise, nuclear_deployment, plant_safety_event; political_economic: election_interference, influence_operation, disinformation_campaign, energy_coercion, migration_pressure"
+          },
+          "rung": {"type":"number","enum":[1,2,3,4,5,6]},
+          "serious": {"type":"boolean","description":"Meets the pathway's serious-incident threshold (STYLE.md §3)"},
+          "summary": {"type":"string","description":"≤ 60 words, factual"},
+          "attribution": {"type":"number","enum":[1,2,3,4]},
+          "attribution_note": {"anyOf":[{"type":"string","description":"≤ 40 words: who suspects or attributes"},{"type":"null"}]},
+          "host_statement": {
+            "type": "string",
+            "enum": ["yes","none_yet"],
+            "description": "Has the affected government or agency spoken?"
+          },
+          "casualties": {
+            "type": "object",
+            "properties": {
+              "killed": {"type":"integer","minimum":0,"maximum":9007199254740991},
+              "injured": {"type":"integer","minimum":0,"maximum":9007199254740991}
+            },
+            "required": ["killed","injured"],
+            "additionalProperties": false
+          },
+          "disruption_hours": {
+            "anyOf": [{"type":"number","minimum":0},{"type":"null"}],
+            "description": "E.g. hours an airport was closed"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {"type":"string","minLength":1,"maxLength":200},
+                "outlet": {"type":"string","minLength":1,"maxLength":80},
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "ua_gov",
+                    "ru_gov",
+                    "ru_state_media",
+                    "ua_independent",
+                    "ru_by_independent",
+                    "intl_press",
+                    "eu_regional_press",
+                    "eu_gov_security",
+                    "nato_eu",
+                    "us_gov",
+                    "osint_data",
+                    "think_tank",
+                    "markets_energy",
+                    "intl_bodies",
+                    "third_party"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "https URL you opened, saw in search results, or found in the pack. Never news.google.com"
+                },
+                "published_at": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                        },
+                        {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                      ]
+                    },
+                    {"type":"null"}
+                  ],
+                  "description": "ISO timestamp with offset if known, a YYYY-MM-DD date if only the day is known, else null"
+                }
+              },
+              "required": ["title","outlet","category","url","published_at"],
+              "additionalProperties": false
+            },
+            "description": "Non-seed: ≥ 2 from ≥ 2 categories, including the host statement when host_statement is yes"
+          },
+          "seed": {"type":"boolean"},
+          "added": {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},
+          "updated": {"anyOf":[{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},{"type":"null"}]}
+        },
+        "required": [
+          "id",
+          "date",
+          "date_precision",
+          "location_country",
+          "affected",
+          "location",
+          "sea",
+          "pathway",
+          "type",
+          "rung",
+          "serious",
+          "summary",
+          "attribution",
+          "attribution_note",
+          "host_statement",
+          "casualties",
+          "disruption_hours",
+          "sources",
+          "seed",
+          "added",
+          "updated"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "incident_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string","description":"An existing incident, not one in incidents_new"},
+          "changes": {
+            "type": "object",
+            "properties": {
+              "attribution": {"anyOf":[{"type":"number","enum":[1,2,3,4]},{"type":"null"}]},
+              "attribution_note": {"anyOf":[{"type":"string","description":"≤ 40 words"},{"type":"null"}]},
+              "rung": {"anyOf":[{"type":"number","enum":[1,2,3,4,5,6]},{"type":"null"}]},
+              "serious": {"type":["boolean","null"]},
+              "casualties": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "killed": {"type":"integer","minimum":0,"maximum":9007199254740991},
+                      "injured": {"type":"integer","minimum":0,"maximum":9007199254740991}
+                    },
+                    "required": ["killed","injured"],
+                    "additionalProperties": false
+                  },
+                  {"type":"null"}
+                ]
+              },
+              "disruption_hours": {"anyOf":[{"type":"number","minimum":0},{"type":"null"}]},
+              "summary": {"anyOf":[{"type":"string","description":"≤ 60 words"},{"type":"null"}]}
+            },
+            "required": ["attribution","attribution_note","rung","serious","casualties","disruption_hours","summary"],
+            "additionalProperties": false,
+            "description": "null = unchanged; at least one non-null"
+          },
+          "add_sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {"type":"string","minLength":1,"maxLength":200},
+                "outlet": {"type":"string","minLength":1,"maxLength":80},
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "ua_gov",
+                    "ru_gov",
+                    "ru_state_media",
+                    "ua_independent",
+                    "ru_by_independent",
+                    "intl_press",
+                    "eu_regional_press",
+                    "eu_gov_security",
+                    "nato_eu",
+                    "us_gov",
+                    "osint_data",
+                    "think_tank",
+                    "markets_energy",
+                    "intl_bodies",
+                    "third_party"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "https URL you opened, saw in search results, or found in the pack. Never news.google.com"
+                },
+                "published_at": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                        },
+                        {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                      ]
+                    },
+                    {"type":"null"}
+                  ],
+                  "description": "ISO timestamp with offset if known, a YYYY-MM-DD date if only the day is known, else null"
+                }
+              },
+              "required": ["title","outlet","category","url","published_at"],
+              "additionalProperties": false
+            },
+            "description": "At least 1 when attribution or rung changes"
+          },
+          "reason": {"type":"string","description":"≤ 40 words"}
+        },
+        "required": ["id","changes","add_sources","reason"],
+        "additionalProperties": false
+      }
+    },
+    "strikes_new": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "STR-YYYY-NNNN continuing context.next_ids.strike[YYYY], where YYYY is the year of date"
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Kyiv date of the strike; for night strikes, the date the night began"
+          },
+          "target_name": {"type":"string","minLength":1,"maxLength":100},
+          "target_type": {
+            "type": "string",
+            "enum": [
+              "refinery",
+              "oil_depot",
+              "oil_terminal",
+              "pipeline",
+              "power",
+              "airbase",
+              "ammunition_depot",
+              "defence_industry",
+              "military_hq",
+              "air_defence",
+              "naval",
+              "logistics_rail",
+              "radar",
+              "other"
+            ]
+          },
+          "region": {"type":"string","minLength":1,"maxLength":60,"description":"Russian region or occupied area"},
+          "occupied_territory": {"type":"boolean"},
+          "lat": {"anyOf":[{"type":"number","minimum":-90,"maximum":90},{"type":"null"}]},
+          "lon": {"anyOf":[{"type":"number","minimum":-180,"maximum":180},{"type":"null"}]},
+          "distance_km": {
+            "anyOf": [{"type":"number","minimum":0},{"type":"null"}],
+            "description": "Approximate distance from the nearest Ukraine-controlled territory"
+          },
+          "weapon": {"type":"string","enum":["drone","missile","sea_drone","sabotage","unknown"]},
+          "weapon_detail": {"anyOf":[{"type":"string","maxLength":40},{"type":"null"}]},
+          "western_weapon": {"description":"Only if a source says so; otherwise null","type":["boolean","null"]},
+          "verification": {"type":"number","enum":[1,2,3,4,5]},
+          "damage": {
+            "anyOf": [{"type":"string","description":"≤ 30 words; required at verification ≥ 4"},{"type":"null"}]
+          },
+          "effect": {"anyOf":[{"type":"string","description":"≤ 30 words; required at verification 5"},{"type":"null"}]},
+          "summary": {"type":"string","description":"≤ 50 words"},
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {"type":"string","minLength":1,"maxLength":200},
+                "outlet": {"type":"string","minLength":1,"maxLength":80},
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "ua_gov",
+                    "ru_gov",
+                    "ru_state_media",
+                    "ua_independent",
+                    "ru_by_independent",
+                    "intl_press",
+                    "eu_regional_press",
+                    "eu_gov_security",
+                    "nato_eu",
+                    "us_gov",
+                    "osint_data",
+                    "think_tank",
+                    "markets_energy",
+                    "intl_bodies",
+                    "third_party"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "https URL you opened, saw in search results, or found in the pack. Never news.google.com"
+                },
+                "published_at": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                        },
+                        {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                      ]
+                    },
+                    {"type":"null"}
+                  ],
+                  "description": "ISO timestamp with offset if known, a YYYY-MM-DD date if only the day is known, else null"
+                }
+              },
+              "required": ["title","outlet","category","url","published_at"],
+              "additionalProperties": false
+            },
+            "description": "Must include the evidence each verification level needs (STYLE.md §6)"
+          },
+          "seed": {"type":"boolean"},
+          "added": {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},
+          "updated": {"anyOf":[{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},{"type":"null"}]}
+        },
+        "required": [
+          "id",
+          "date",
+          "target_name",
+          "target_type",
+          "region",
+          "occupied_territory",
+          "lat",
+          "lon",
+          "distance_km",
+          "weapon",
+          "weapon_detail",
+          "western_weapon",
+          "verification",
+          "damage",
+          "effect",
+          "summary",
+          "sources",
+          "seed",
+          "added",
+          "updated"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "strike_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string","description":"An existing strike, not one in strikes_new"},
+          "changes": {
+            "type": "object",
+            "properties": {
+              "verification": {"anyOf":[{"type":"number","enum":[1,2,3,4,5]},{"type":"null"}]},
+              "damage": {"anyOf":[{"type":"string","description":"≤ 30 words"},{"type":"null"}]},
+              "effect": {"anyOf":[{"type":"string","description":"≤ 30 words"},{"type":"null"}]},
+              "summary": {"anyOf":[{"type":"string","description":"≤ 50 words"},{"type":"null"}]},
+              "weapon_detail": {"anyOf":[{"type":"string","maxLength":40},{"type":"null"}]},
+              "western_weapon": {"type":["boolean","null"]}
+            },
+            "required": ["verification","damage","effect","summary","weapon_detail","western_weapon"],
+            "additionalProperties": false,
+            "description": "null = unchanged; at least one non-null"
+          },
+          "add_sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {"type":"string","minLength":1,"maxLength":200},
+                "outlet": {"type":"string","minLength":1,"maxLength":80},
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "ua_gov",
+                    "ru_gov",
+                    "ru_state_media",
+                    "ua_independent",
+                    "ru_by_independent",
+                    "intl_press",
+                    "eu_regional_press",
+                    "eu_gov_security",
+                    "nato_eu",
+                    "us_gov",
+                    "osint_data",
+                    "think_tank",
+                    "markets_energy",
+                    "intl_bodies",
+                    "third_party"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "https URL you opened, saw in search results, or found in the pack. Never news.google.com"
+                },
+                "published_at": {
+                  "anyOf": [
+                    {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                        },
+                        {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                      ]
+                    },
+                    {"type":"null"}
+                  ],
+                  "description": "ISO timestamp with offset if known, a YYYY-MM-DD date if only the day is known, else null"
+                }
+              },
+              "required": ["title","outlet","category","url","published_at"],
+              "additionalProperties": false
+            },
+            "description": "At least 1 when verification changes; must carry the new level's evidence"
+          },
+          "reason": {"type":"string","description":"≤ 40 words"}
+        },
+        "required": ["id","changes","add_sources","reason"],
+        "additionalProperties": false
+      }
+    },
+    "indicator_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string"},
+          "to": {"type":"string","enum":["dormant","watch","active"]},
+          "evidence": {"type":"string","description":"≤ 50 words"},
+          "source_ids": {"type":"array","items":{"type":"string"},"description":"At least 1"}
+        },
+        "required": ["id","to","evidence","source_ids"],
+        "additionalProperties": false
+      },
+      "description": "Status changes only"
+    },
+    "indicators_new": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ind-… (lower-case letters, digits and hyphens), not already in state"
+          },
+          "tier": {"type":"string","enum":["incident","strategic","driver"]},
+          "name": {"type":"string","minLength":1,"maxLength":80},
+          "description": {"type":"string","description":"≤ 50 words"},
+          "countries": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "PL",
+                "LT",
+                "LV",
+                "EE",
+                "FI",
+                "RO",
+                "MD",
+                "DE",
+                "DK",
+                "SE",
+                "NO",
+                "NL",
+                "BE",
+                "GB",
+                "CZ",
+                "SK",
+                "HU",
+                "BG",
+                "AL",
+                "AT",
+                "CY",
+                "ES",
+                "FR",
+                "GR",
+                "HR",
+                "IE",
+                "IS",
+                "IT",
+                "LU",
+                "ME",
+                "MK",
+                "MT",
+                "PT",
+                "SI",
+                "TR"
+              ]
+            }
+          },
+          "status": {"type":"string","enum":["dormant","watch","active"]},
+          "evidence": {"type":"string","description":"≤ 50 words"},
+          "source_ids": {"type":"array","items":{"type":"string"},"description":"At least 1"}
+        },
+        "required": ["id","tier","name","description","countries","status","evidence","source_ids"],
+        "additionalProperties": false
+      }
+    },
+    "judgement": {
+      "type": "object",
+      "properties": {
+        "text": {"type":"string","description":"150–400 words (quiet day 60–250)"},
+        "change_my_mind": {"type":"string","description":"≤ 50 words"},
+        "competing_explanations": {
+          "maxItems": 2,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "subject": {"type":"string","description":"≤ 20 words, e.g. \"INC-2026-0131: drones over Rzeszów\""},
+              "hypotheses": {
+                "minItems": 2,
+                "maxItems": 4,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {"type":"string","description":"≤ 12 words"},
+                    "assessment": {"type":"string","description":"≤ 40 words"},
+                    "estimate": {
+                      "type": "object",
+                      "properties": {
+                        "probability": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100,
+                          "description": "Integer 0–100 that lies inside the band of `term` (STYLE.md §7)"
+                        },
+                        "term": {
+                          "type": "string",
+                          "enum": [
+                            "remote",
+                            "highly_unlikely",
+                            "unlikely",
+                            "realistic_possibility",
+                            "likely",
+                            "highly_likely",
+                            "almost_certain"
+                          ]
+                        },
+                        "confidence": {"type":"string","enum":["low","moderate","high"]}
+                      },
+                      "required": ["probability","term","confidence"],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": ["label","assessment","estimate"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["subject","hypotheses"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["text","change_my_mind","competing_explanations"],
+      "additionalProperties": false
+    },
+    "forecasts_new": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string","description":"context.next_ids.forecast, then +1 for each further one"},
+          "question": {"type":"string","minLength":1,"maxLength":200,"description":"Binary; ends with ?"},
+          "resolution_criteria": {"type":"string","minLength":1,"maxLength":300,"description":"Observable"},
+          "resolves_by": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "After the brief date, at most 400 days later"
+          },
+          "horizon": {"type":"string","enum":["30d","90d","6-12m","2-5y"]},
+          "pathway": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "airspace",
+                  "sabotage",
+                  "maritime",
+                  "cyber_ew",
+                  "military_pressure",
+                  "nuclear",
+                  "political_economic"
+                ]
+              },
+              {"type":"null"}
+            ]
+          },
+          "probability": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991,
+            "description": "Integer 1–99"
+          },
+          "base_rate": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "What a forecaster using only history would say"
+          },
+          "base_rate_note": {"type":"string","description":"≤ 40 words"}
+        },
+        "required": [
+          "id",
+          "question",
+          "resolution_criteria",
+          "resolves_by",
+          "horizon",
+          "pathway",
+          "probability",
+          "base_rate",
+          "base_rate_note"
+        ],
+        "additionalProperties": false
+      },
+      "description": "0–3"
+    },
+    "forecast_updates": {
+      "maxItems": 10,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string"},
+          "probability": {"type":"integer","minimum":1,"maximum":99},
+          "note": {"type":"string","description":"≤ 30 words"}
+        },
+        "required": ["id","probability","note"],
+        "additionalProperties": false
+      }
+    },
+    "forecast_resolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string"},
+          "outcome": {"type":"string","enum":["yes","no","annulled"]},
+          "note": {"type":"string","description":"≤ 40 words"},
+          "source_id": {"type":"string","description":"A source id in this brief"}
+        },
+        "required": ["id","outcome","note","source_id"],
+        "additionalProperties": false
+      }
+    },
+    "assumption_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "op": {"type":"string","enum":["add","revise","retire","reaffirm"]},
+          "id": {"description":"null only for add (publish assigns the next A#)","type":["string","null"]},
+          "text": {
+            "anyOf": [{"type":"string","description":"≤ 40 words; required for add and revise"},{"type":"null"}]
+          },
+          "reason": {"type":"string","description":"≤ 40 words"}
+        },
+        "required": ["op","id","text","reason"],
+        "additionalProperties": false
+      }
+    },
+    "taiwan": {
+      "type": "string",
+      "description": "\"Impact on Taiwan\", 1–150 words: how today's developments might affect Taiwan (STYLE.md §14), or exactly the no-news line"
+    },
+    "next_72h": {
+      "maxItems": 8,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Within the 3 days after the brief date"
+          },
+          "event": {"type":"string","description":"≤ 25 words"},
+          "why": {"type":"string","description":"≤ 25 words"}
+        },
+        "required": ["date","event","why"],
+        "additionalProperties": false
+      }
+    },
+    "weekly_outlook": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "medium_term": {
+              "type": "object",
+              "properties": {
+                "question": {"type":"string","minLength":1},
+                "estimate": {
+                  "type": "object",
+                  "properties": {
+                    "probability": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100,
+                      "description": "Integer 0–100 that lies inside the band of `term` (STYLE.md §7)"
+                    },
+                    "term": {
+                      "type": "string",
+                      "enum": [
+                        "remote",
+                        "highly_unlikely",
+                        "unlikely",
+                        "realistic_possibility",
+                        "likely",
+                        "highly_likely",
+                        "almost_certain"
+                      ]
+                    },
+                    "confidence": {"type":"string","enum":["low","moderate","high"]}
+                  },
+                  "required": ["probability","term","confidence"],
+                  "additionalProperties": false
+                },
+                "text": {"type":"string","description":"≤ 200 words"}
+              },
+              "required": ["question","estimate","text"],
+              "additionalProperties": false,
+              "description": "6–12 months"
+            },
+            "long_term": {
+              "type": "object",
+              "properties": {
+                "question": {"type":"string","minLength":1},
+                "estimate": {
+                  "type": "object",
+                  "properties": {
+                    "probability": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100,
+                      "description": "Integer 0–100 that lies inside the band of `term` (STYLE.md §7)"
+                    },
+                    "term": {
+                      "type": "string",
+                      "enum": [
+                        "remote",
+                        "highly_unlikely",
+                        "unlikely",
+                        "realistic_possibility",
+                        "likely",
+                        "highly_likely",
+                        "almost_certain"
+                      ]
+                    },
+                    "confidence": {"type":"string","enum":["low","moderate","high"]}
+                  },
+                  "required": ["probability","term","confidence"],
+                  "additionalProperties": false
+                },
+                "text": {"type":"string","description":"≤ 200 words"}
+              },
+              "required": ["question","estimate","text"],
+              "additionalProperties": false,
+              "description": "2–5 years"
+            },
+            "assumptions_check": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type":"string"},
+                  "status": {"type":"string","enum":["holds","weakening","broken"]},
+                  "note": {"type":"string","description":"≤ 30 words"}
+                },
+                "required": ["id","status","note"],
+                "additionalProperties": false
+              },
+              "description": "Every active assumption, exactly once"
+            },
+            "calibration_note": {"type":"string","description":"≤ 80 words"}
+          },
+          "required": ["medium_term","long_term","assumptions_check","calibration_note"],
+          "additionalProperties": false
+        },
+        {"type":"null"}
+      ],
+      "description": "Non-null if and only if weekly is true"
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "ru_drones_launched",
+              "ru_drones_intercepted",
+              "ru_missiles_launched",
+              "ru_missiles_intercepted",
+              "ru_territory_gain_km2",
+              "ua_deep_strikes",
+              "ua_max_strike_depth_km",
+              "ru_refinery_offline_pct",
+              "eu_gas_storage_pct",
+              "ttf_eur_mwh",
+              "brent_usd",
+              "urals_usd",
+              "gnss_interference_index",
+              "znpp_offsite_power_lines"
+            ]
+          },
+          "value": {"description":"null = not available today","type":["number","null"]},
+          "unit": {"type":"string","description":"Must equal METRICS[id].unit"},
+          "period": {"type":"string","minLength":1,"maxLength":40,"description":"E.g. \"night of 1–2 Nov\", \"2 Nov\""},
+          "source_ids": {"type":"array","items":{"type":"string"},"description":"At least 1 when value is not null"},
+          "note": {"anyOf":[{"type":"string","description":"≤ 20 words"},{"type":"null"}]}
+        },
+        "required": ["id","value","unit","period","source_ids","note"],
+        "additionalProperties": false
+      },
+      "description": "Each metric id at most once"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type":"string","pattern":"^s[1-9][0-9]*$"},
+          "title": {"type":"string","minLength":1,"maxLength":200},
+          "outlet": {"type":"string","minLength":1,"maxLength":80},
+          "category": {
+            "type": "string",
+            "enum": [
+              "ua_gov",
+              "ru_gov",
+              "ru_state_media",
+              "ua_independent",
+              "ru_by_independent",
+              "intl_press",
+              "eu_regional_press",
+              "eu_gov_security",
+              "nato_eu",
+              "us_gov",
+              "osint_data",
+              "think_tank",
+              "markets_energy",
+              "intl_bodies",
+              "third_party"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "description": "https URL you opened, saw in search results, or found in the pack. Never news.google.com"
+          },
+          "language": {"type":"string","pattern":"^[a-z]{2}$"},
+          "published_at": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                  },
+                  {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"}
+                ]
+              },
+              {"type":"null"}
+            ],
+            "description": "ISO timestamp with offset if known, a YYYY-MM-DD date if only the day is known, else null"
+          },
+          "accessed_at": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d{1,9})?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+          }
+        },
+        "required": ["id","title","outlet","category","url","language","published_at","accessed_at"],
+        "additionalProperties": false
+      },
+      "description": "At least 10 from at least 7 categories (quiet day: 5 from 4)"
+    }
+  },
+  "required": [
+    "schema_version",
+    "date",
+    "window",
+    "generated_at",
+    "quiet_day",
+    "weekly",
+    "title",
+    "bottom_line",
+    "bottom_line_source_ids",
+    "board",
+    "developments",
+    "categories",
+    "incidents_new",
+    "incident_updates",
+    "strikes_new",
+    "strike_updates",
+    "indicator_changes",
+    "indicators_new",
+    "judgement",
+    "forecasts_new",
+    "forecast_updates",
+    "forecast_resolutions",
+    "assumption_updates",
+    "taiwan",
+    "next_72h",
+    "weekly_outlook",
+    "metrics",
+    "sources"
+  ],
+  "additionalProperties": false
+}

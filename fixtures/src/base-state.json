@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "as_of": "seed",
+  "ladder": {
+    "current_rung": 0,
+    "next_rung_odds": {
+      "probability": 5,
+      "term": "remote",
+      "confidence": "low"
+    }
+  },
+  "pathways": [
+    {
+      "pathway": "airspace",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    },
+    {
+      "pathway": "sabotage",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    },
+    {
+      "pathway": "maritime",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    },
+    {
+      "pathway": "cyber_ew",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    },
+    {
+      "pathway": "military_pressure",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    },
+    {
+      "pathway": "nuclear",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    },
+    {
+      "pathway": "political_economic",
+      "serious_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "low"
+      },
+      "impact": 1,
+      "trend": "flat"
+    }
+  ],
+  "countries": [
+    {
+      "country": "PL",
+      "score": 1,
+      "since": "2026-11-02"
+    },
+    {
+      "country": "LT",
+      "score": 1,
+      "since": "2026-11-02"
+    },
+    {
+      "country": "LV",
+      "score": 1,
+      "since": "2026-11-02"
+    },
+    {
+      "country": "EE",
+      "score": 1,
+      "since": "2026-11-02"
+    },
+    {
+      "country": "FI",
+      "score": 1,
+      "since": "2026-11-02"
+    },
+    {
+      "country": "RO",
+      "score": 1,
+      "since": "2026-11-02"
+    },
+    {
+      "country": "MD",
+      "score": 1,
+      "since": "2026-11-02"
+    }
+  ],
+  "indicators": [
+    {
+      "id": "ind-airspace-tempo",
+      "tier": "incident",
+      "name": "Airspace violations above the 90-day baseline",
+      "description": "Monthly count of Russian drones, missiles or aircraft violating NATO, EU or Moldovan airspace, compared with the 90-day baseline in the incident database.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-border-tracks",
+      "tier": "incident",
+      "name": "Russian drone and missile tracks near the Polish, Romanian and Moldovan borders",
+      "description": "Russian strike routes passing close to the Polish, Romanian and Moldovan borders, the usual source of stray drones and missiles.",
+      "countries": [
+        "PL",
+        "RO",
+        "MD"
+      ],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-gnss-baltic",
+      "tier": "incident",
+      "name": "GPS interference over the Baltic and Finland",
+      "description": "GPS jamming or spoofing over the Baltic Sea, the Baltic states and Finland that disrupts aviation or shipping or draws official statements.",
+      "countries": [
+        "EE",
+        "LV",
+        "LT",
+        "FI"
+      ],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-sabotage-tempo",
+      "tier": "incident",
+      "name": "Sabotage incidents and arrests above baseline",
+      "description": "Sabotage incidents and arrests for sabotage plots linked to Russia, compared with the 90-day baseline.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-undersea",
+      "tier": "incident",
+      "name": "Undersea cable and pipeline incidents",
+      "description": "Damage to undersea cables or pipelines in European waters, and related detentions of vessels.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-airport-closures",
+      "tier": "incident",
+      "name": "Airport or port closures caused by drones",
+      "description": "Closures of airports, ports or military bases caused by drone overflights that officials link to a state actor.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-redeployment",
+      "tier": "strategic",
+      "name": "Russian units redeploying toward Finland, the Baltics, Kaliningrad or Belarus",
+      "description": "Russian units moving toward the Leningrad and Moscow military districts, Kaliningrad or Belarus, or new formations standing up near Finland and the Baltic states.",
+      "countries": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-mobilisation",
+      "tier": "strategic",
+      "name": "Mobilisation or large reserve call-ups",
+      "description": "A new Russian mobilisation wave or reserve call-ups well above routine conscription.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-exercises",
+      "tier": "strategic",
+      "name": "Exercises larger than declared, or snap readiness checks near NATO borders",
+      "description": "Russian or Belarusian exercises that exceed their declared size, or snap readiness checks close to NATO borders.",
+      "countries": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-stockpiling",
+      "tier": "strategic",
+      "name": "Ammunition, fuel or medical stockpiling near NATO borders",
+      "description": "Build-up of ammunition, fuel or medical supplies near NATO borders beyond what the war in Ukraine explains.",
+      "countries": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-nuclear-posture",
+      "tier": "strategic",
+      "name": "Nuclear readiness changes, or nuclear deployments to Belarus or Kaliningrad",
+      "description": "Changes in Russian nuclear readiness, or nuclear or Oreshnik deployments in Belarus or Kaliningrad.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-pretext",
+      "tier": "strategic",
+      "name": "Russian pretext narratives about the Baltics, Narva, Kaliningrad or Suwałki",
+      "description": "Official Russian narratives that could build a pretext for action against a NATO state: \"compatriots\" in the Baltics, Narva, Kaliningrad transit, the Suwałki corridor.",
+      "countries": [
+        "EE",
+        "LV",
+        "LT",
+        "PL"
+      ],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-diplomatic",
+      "tier": "strategic",
+      "name": "Diplomatic warning signs: embassy drawdowns, families leaving, airspace closures",
+      "description": "Russian diplomats' families leaving European capitals, embassy drawdowns, or unusual airspace closures.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-cyber-prepositioning",
+      "tier": "strategic",
+      "name": "Public disclosures of cyber footholds in European grids, rail or telecoms",
+      "description": "Official disclosures that Russian actors hold access inside European power grids, rail or telecoms networks.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-us-posture",
+      "tier": "strategic",
+      "name": "Changes in US force posture or commitment in Europe (amplifier)",
+      "description": "Announced or observed changes in US forces in Europe or in the US commitment to Article 5; an amplifier of other risks.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-article4",
+      "tier": "driver",
+      "name": "A NATO Article 4 consultation requested",
+      "description": "An ally requests consultations under Article 4 of the North Atlantic Treaty.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-article5",
+      "tier": "driver",
+      "name": "NATO Article 5 invoked",
+      "description": "An ally invokes collective defence under Article 5.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-longrange-weapons",
+      "tier": "driver",
+      "name": "A US decision on Tomahawk-class long-range weapons for Ukraine",
+      "description": "A US decision to supply, or to refuse, Tomahawk-class long-range strike weapons to Ukraine.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-ceasefire",
+      "tier": "driver",
+      "name": "A ceasefire framework signed, or direct Putin–Zelensky talks",
+      "description": "A signed ceasefire framework, or direct talks between Presidents Putin and Zelensky.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-refinery-offline",
+      "tier": "driver",
+      "name": "Russian refinery capacity offline above 20%",
+      "description": "Estimates from credible reporting that more than 20% of Russian refining capacity is offline.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    },
+    {
+      "id": "ind-fuel-export-ban",
+      "tier": "driver",
+      "name": "A Russian gasoline export ban or domestic fuel rationing",
+      "description": "A Russian ban on gasoline or diesel exports, or rationing of fuel inside Russia.",
+      "countries": [],
+      "status": "dormant",
+      "since": "2026-11-02",
+      "last_evidence": null,
+      "last_evidence_date": null
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A2",
+      "text": "The United States remains committed to defending NATO allies under Article 5.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A3",
+      "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A4",
+      "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    },
+    {
+      "id": "A5",
+      "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders.",
+      "since": "2026-11-02",
+      "status": "active",
+      "retired_on": null,
+      "retired_reason": null
+    }
+  ],
+  "weekly": null
+}
