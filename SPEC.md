@@ -107,6 +107,7 @@ section in the same PR and is listed here.
 | 3 | Validate against the context | `daily.ts` validates against the context it built in memory (a copy goes to `logs/DATE.context.json`), never `drafts/context.json` | The agent can write in `drafts/` |
 | 3 | `--dry-run`: no git writes | Preflight also skips `git checkout main` and `git pull` on a dry run, and allows uncommitted changes | A dry run must work from a feature branch |
 | 3 | The repo lives in `/Users/kobol/Documents/EuropeTracker` | It lives in `/Users/kobol/Projects/EuropeTracker` (moved 2026-11-02) | `~/Documents` is synced by iCloud Drive, which made conflict copies ("state 2.json", ".git/index 2") of files the pipeline rewrites. The 05:30 run refuses a tree with stray files, and iCloud can roll a file back to an older copy. `~/Projects` isn't synced |
+| 3 | Preflight runs `git pull --ff-only` and exits 0 when today's brief exists; publish pushes once and reports success | Preflight and publish sync main with GitHub by rebasing local brief commits (content/ only) onto it. A brief committed here but missing on GitHub is pushed by the next run or `npm run publish -- --date D`, and success is reported only once GitHub's main has it. Publish refuses to run off `main` or with uncommitted `content/` changes. Repairs keep `PUBLISH_RESERVE` (4 min) free, and git and the live check stop at the hard stop | PR #3 review: after a failed push both recovery commands refused the brief as "already published"; a publish from another branch reported success without reaching main; publishing and the live check could run past 06:55 |
 | 3 | daily.ts runs its helpers by relative path | It runs `collect.ts` and `archive-urls.ts` with the repo's own `tsx` by absolute path, and takes an injectable token reader | So the end-to-end test can run the real pipeline against a temporary repo with a fake agent |
 
 ---
@@ -1317,7 +1318,8 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
   fallback in §8.3 uses it.
 
 **Constants** (overridable by env, §8.7): `HARD_STOP = 06:55`, `RETRY_CUTOFF = 06:25`,
-`AGENT_TIMEOUT_MAX = 45 min`, `REPAIR_TIMEOUT = 6 min`, `MAX_REPAIRS = 2`, `LIVE_WAIT_MAX = 8 min`.
+`AGENT_TIMEOUT_MAX = 45 min`, `REPAIR_TIMEOUT = 6 min`, `MAX_REPAIRS = 2`, `LIVE_WAIT_MAX = 8 min`,
+`PUBLISH_RESERVE = 4 min` (kept free after the last repair for publishing and the live check).
 
 **Sequence.** Every step logs to `logs/DATE.daily.log` with timestamps.
 
@@ -1328,8 +1330,12 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
      (another run is going). If it is stale (dead pid, or older than 2 hours), remove it and log that.
    - Network: HEAD `https://github.com` within 10 s.
    - Git: `git status --porcelain` is empty. `GIT_TERMINAL_PROMPT=0 git ls-remote --heads origin main`
-     succeeds. `git checkout main && git pull --ff-only`.
-   - If `content/briefs/DATE.json` already exists and `--force` isn't set, exit 0 (idempotent).
+     succeeds. `git checkout main`, then sync with GitHub: `git fetch origin main` and
+     `git rebase origin/main`. Local commits GitHub lacks may only touch `content/` (briefs whose push
+     failed); anything else, or a conflict, is `E_GIT`.
+   - If `content/briefs/DATE.json` already exists and `--force` isn't set: when GitHub's main has it,
+     exit 0 (idempotent); when only this clone has it (an earlier push failed), push it (§7.6), wait
+     for the page and end as published, without running the agent.
    - The Claude binary exists at `ET_CLAUDE_BIN`, and the keychain token is readable (§8.6).
 2. **Collect.** Run `collect.ts` with a 4-minute timeout. On failure, continue with `degraded = true`
    and an empty pack.
@@ -1342,16 +1348,20 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
 5. **Validate** the draft with the context, the evidence and the pack (`lib/validate.ts`).
    - On errors, run up to `MAX_REPAIRS` repairs. Each repair resumes the session
      (`claude -p --resume <session_id>`) with `routine/REPAIR.md` and the errors JSON, under
-     `REPAIR_TIMEOUT`. Re-validate after each one.
+     `REPAIR_TIMEOUT`, and ends `PUBLISH_RESERVE` before `HARD_STOP`; when there is less room than
+     2 minutes, skip it. Re-validate after each one.
 6. **Retry.** If the agent failed (non-zero exit, timeout, no draft) or the draft still fails
    validation:
    - If this was attempt 1 and it's before `RETRY_CUTOFF`, start attempt 2 with a fresh session and go
      back to step 4.
    - Otherwise take the failure path.
 7. **Publish** (skipped with `--dry-run`).
-   - Run `publish.ts` (§7.6).
-   - Poll `ET_SITE_URL/brief/DATE` every 20 s for up to `LIVE_WAIT_MAX` until it returns 200. If it
-     times out, the summary says "not yet live"; that is a warning, not a failure.
+   - Run `publish.ts` (§7.6) with a deadline of `HARD_STOP − 30 s`: no git command runs past it, and
+     push retries stop rather than wait past it. A push still failing then is `E_PUBLISH`, and the
+     committed brief goes out with the next publish or run.
+   - Poll `ET_SITE_URL/brief/DATE` every 20 s for up to `min(LIVE_WAIT_MAX, HARD_STOP − 30 s − now)`
+     until it returns 200. If it times out, the summary says "not yet live"; that is a warning, not a
+     failure.
    - Spawn `archive-urls.ts` detached.
 8. **Failure path.**
    - Copy `drafts/DATE.json`, `drafts/context.json`, the validator report, the logs and the pack
@@ -1432,6 +1442,9 @@ tsx scripts/validate.ts --all
 
 `publish.ts --date D [--review]` takes these steps:
 
+0. Refuse unless the repo is on `main` and `content/` has no uncommitted changes. Sync with GitHub as
+   preflight does (§7.2). If `content/briefs/D.json` exists: when GitHub's main has it, abort ("already
+   exists"); when only this clone has it, an earlier push failed, so push it (step 5) and stop.
 1. Load `drafts/D.json` and validate it in full, with context and evidence. Abort on errors.
 2. Build the `Brief`: the draft plus `published_at` plus `computed` (counts from `aggregate.ts` after
    adding today's incidents; word and source counts).
@@ -1456,7 +1469,9 @@ tsx scripts/validate.ts --all
 5. Write the files with stable key order. Then:
    - `git add content/`
    - `git commit -m "brief: D — <title>"` (author from the repo's git config, §8.9)
-   - `git push origin main`, retrying 3 times with 2 s, 4 s and 8 s backoff.
+   - `git push origin main`, retrying 3 times with 2 s, 4 s and 8 s backoff. Before each try, sync with
+     GitHub again; if that rebased the brief onto newer commits, run `validateAll()` again first.
+   - Report success only after `git fetch` shows GitHub's main includes the commit.
 6. With `--review`, commit to the new branch `review/D` and push that instead. `promote.ts --date D`
    later runs `git checkout main && git merge --ff-only review/D && git push origin main`, then deletes
    the branch locally and on the remote.

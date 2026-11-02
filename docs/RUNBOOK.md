@@ -42,12 +42,12 @@ by 07:00, Kobol did not run the task: check that it is awake, logged in and the 
 |---|---|---|
 | `E_ARCH` | Not running on the native arm64 Node | Run through `scripts/daily.sh`, which uses `/opt/homebrew/bin` |
 | `E_NET` | github.com didn't answer within 10 s | Check Kobol's network, then rerun |
-| `E_GIT` | Uncommitted changes, an unreachable remote, or a pull that isn't a fast-forward | `git status` in the repo; commit, stash or discard, then rerun |
+| `E_GIT` | Uncommitted changes, an unreachable remote, local commits on main that aren't briefs, or briefs that conflict with GitHub's main | `git status` and `git log origin/main..main` in the repo; commit, stash or discard, then rerun |
 | `E_AUTH` | The Claude CLI is missing, the keychain token is missing, or the agent couldn't sign in | Renew the token (below), then `npm run agent:check` |
 | `E_AGENT` | The agent finished without writing a draft, twice | Read the transcripts; rerun |
 | `E_TIMEOUT` | No time left for an attempt (the run started late) | Rerun with `--no-deadline` |
 | `E_VALIDATION` | The draft still had errors after repairs and the retry | See `needs-review/DATE/validator-report.json`; fix the draft and publish it by hand, or rerun |
-| `E_PUBLISH` | The draft was valid but committing or pushing failed | Fix git, then `npm run publish -- --date DATE` |
+| `E_PUBLISH` | The draft was valid but committing or pushing failed | Fix git, then `npm run publish -- --date DATE`, or rerun the daily run: either pushes a brief that's committed but not on GitHub |
 | `E_SIMULATED` | A test of the failure path (`--simulate-failure`) | Nothing |
 | `E_INTERNAL` | A bug | Read the stack trace at the end of `logs/DATE.daily.log` |
 
