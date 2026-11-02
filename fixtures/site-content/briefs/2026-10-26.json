@@ -458,27 +458,32 @@
       {
         "id": "A1",
         "status": "holds",
-        "note": "No deliberate attack on NATO territory; incursions remain strays."
+        "note": "No deliberate attack on NATO territory; incursions remain strays.",
+        "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine."
       },
       {
         "id": "A2",
         "status": "holds",
-        "note": "US officials reaffirmed Article 5 at the NATO ministerial."
+        "note": "US officials reaffirmed Article 5 at the NATO ministerial.",
+        "text": "The United States remains committed to defending NATO allies under Article 5."
       },
       {
         "id": "A3",
         "status": "holds",
-        "note": "This month's incursions followed strike routes."
+        "note": "This month's incursions followed strike routes.",
+        "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion."
       },
       {
         "id": "A4",
         "status": "holds",
-        "note": "Sabotage and cable incidents continued regardless of diplomacy."
+        "note": "Sabotage and cable incidents continued regardless of diplomacy.",
+        "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments."
       },
       {
         "id": "A5",
         "status": "holds",
-        "note": "No ceasefire yet; reconstitution in the north is early-stage."
+        "note": "No ceasefire yet; reconstitution in the north is early-stage.",
+        "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders."
       }
     ],
     "calibration_note": "One forecast resolved this week (F-2026-005, no). Four forecasts have resolved since August, with a mean Brier score of 0.11 against 0.16 for the base-rate forecaster. That is too few to judge calibration."

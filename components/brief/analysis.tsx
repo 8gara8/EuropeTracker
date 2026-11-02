@@ -1,7 +1,6 @@
-import type { CategoryNote, CompetingExplanation, Development, Metric, NextEvent, WeeklyOutlook } from "@/lib/schema/draft-brief";
-import type { Brief } from "@/lib/schema/brief";
+import type { CategoryNote, CompetingExplanation, Development, Metric, NextEvent } from "@/lib/schema/draft-brief";
+import type { Brief, PublishedWeeklyOutlook } from "@/lib/schema/brief";
 import type { Forecast } from "@/lib/schema/forecast";
-import type { Assumption } from "@/lib/schema/state";
 import { categoryLabel, dayMonth, metricValue, paragraphs, shortDate } from "@/lib/format";
 import { CATEGORY_INFO, METRICS, NO_CHANGE_TEXT } from "@/lib/vocab";
 import { AttributionBadge, ImportanceTag, ProbabilityBadge, Tag, VerificationBadge } from "@/components/ui/badges";
@@ -115,8 +114,8 @@ export function ForecastChanges({ brief, forecastsById, index }: { brief: Brief;
   );
 }
 
-export function WeeklyOutlookView({ outlook, assumptionsById }: { outlook: WeeklyOutlook; assumptionsById: Record<string, Assumption> }) {
-  const horizon = (label: string, o: WeeklyOutlook["medium_term"]) => (
+export function WeeklyOutlookView({ outlook }: { outlook: PublishedWeeklyOutlook }) {
+  const horizon = (label: string, o: PublishedWeeklyOutlook["medium_term"]) => (
     <div className="mt-3 first:mt-0">
       <p className="text-sm font-semibold">{label}: {o.question} <ProbabilityBadge estimate={o.estimate} showConfidence /></p>
       {paragraphs(o.text).map((p, i) => <p key={i} className="mt-1 text-sm">{p}</p>)}
@@ -131,7 +130,7 @@ export function WeeklyOutlookView({ outlook, assumptionsById }: { outlook: Weekl
         {outlook.assumptions_check.map((a) => (
           <li key={a.id}>
             <span className="font-semibold">{a.id}</span> <Tag>{a.status}</Tag>{" "}
-            {assumptionsById[a.id] ? <span>{assumptionsById[a.id]!.text}</span> : null}
+            <span>{a.text}</span>
             <span className="block text-xs text-muted">{a.note}</span>
           </li>
         ))}

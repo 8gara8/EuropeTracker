@@ -211,8 +211,8 @@ const updates: Rule = ({ draft, context, world }) => {
     if (Object.values(u.changes).every((v) => v === null)) {
       out.push(error("UPDATE_TARGET", `${at}.changes`, `The update to ${u.id} changes nothing; set a change or remove it.`));
     }
-    if ((u.changes.attribution !== null || u.changes.rung !== null) && u.add_sources.length === 0) {
-      out.push(error("UPDATE_EVIDENCE", `${at}.add_sources`, `${u.id}: a change of attribution or rung needs at least one new source in add_sources.`));
+    if ((u.changes.attribution !== null || u.changes.rung !== null || u.changes.host_statement !== null) && u.add_sources.length === 0) {
+      out.push(error("UPDATE_EVIDENCE", `${at}.add_sources`, `${u.id}: a change of attribution, rung or host_statement needs at least one new source in add_sources.`));
     }
     if (rec && u.changes.rung !== null && rec.pathway && rec.type) {
       const info = incidentTypeInfo(rec.pathway, rec.type);
@@ -231,6 +231,17 @@ const updates: Rule = ({ draft, context, world }) => {
       }
       if (after.serious !== undefined && (after.rung >= 4 || killed > 0) && !after.serious) {
         out.push(error("INCIDENT_SERIOUS", `${at}.changes.serious`, `${u.id} would be rung ${after.rung} with ${killed} killed; set changes.serious to true.`));
+      }
+      // INCIDENT_SOURCES's host-statement rules, which seed records are exempt from.
+      if (rec.seed !== true && after.host_statement === "none_yet" && after.attribution > 2) {
+        out.push(error("INCIDENT_SOURCES", `${at}.changes.host_statement`,
+          `${u.id} would be attribution ${after.attribution} with host_statement "none_yet"; above 2 (Suspected) needs a statement from the affected government or agency. Set changes.host_statement to "yes" and cite the statement in add_sources, or keep attribution at 2.`));
+      }
+      if (rec.seed !== true && u.changes.host_statement === "yes") {
+        const cats = new Set([...(rec.sources ?? []), ...u.add_sources].map((s) => s.category));
+        if (!cats.has("eu_gov_security") && !cats.has("nato_eu")) {
+          out.push(error("INCIDENT_SOURCES", `${at}.add_sources`, `${u.id}: host_statement "yes" needs the statement cited; add it to add_sources (eu_gov_security or nato_eu).`));
+        }
       }
     }
   });

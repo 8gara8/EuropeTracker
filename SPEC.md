@@ -96,6 +96,7 @@ section in the same PR and is listed here.
 | 2 | Methodology prose "from STYLE.md §4" | The page renders STYLE.md §1, §4, §10 (rules), §12 and §14 at build time through `lib/markdown.ts` | One source for the prose, so the site can't drift from the agent's rules |
 | 2 | `validateAll` checks schemas, briefs and cross-file rules | It also runs the incident and strike record rules (`INCIDENT_*`, `STRIKE_EVIDENCE`) on every record in the database | Phase 4's seed data gets the same type, rung, location, source and evidence checks as daily records |
 | 2 | Sample dataset written for previews | `fixtures/src/site.ts` generates `fixtures/site-content` (10 briefs, 41 incidents, 15 strikes, 8 forecasts) and checks it with `validateAll`; CI checks the committed fixtures are current and builds with both content folders | Keeps the sample coherent as schemas and rules change |
+| 2 | `IncidentUpdate.changes` has no `host_statement`; the site shows each weekly check beside the assumption's current text | Updates can set `host_statement` (with the statement in `add_sources`), and the update rules check it on the merged record; a published brief's `assumptions_check` entries carry the assumption's text as assessed, and the page shows that text | PR #2 review: an incident created before its government spoke could never be raised above attribution 2 without failing `validateAll` at publish, and revising an assumption changed what archived outlooks said |
 | 2 | Vercel Node 24.x | Node 26.x, Vercel's default at creation, plus an Ignored Build Step (§8.1) | Matches Kobol's Node; CI still builds on 24 |
 | 2 | Screenshots with Playwright "if available" | Taken with `playwright-core` driving the installed Chrome, outside the repo | Playwright isn't installed on Kobol; nothing is added to the project's dependencies |
 | 3 | `npm install -g` the Claude CLI; flags including `--max-turns 150` | Installed in `/Users/kobol/.europetracker/cli`; flags updated for 2.1.316 (§8.4): `--restricted`, `--safe-mode`, `--tools`, `dontAsk`, a fallback model, no `--max-turns` | A global install would shadow JL's own `claude`; the new flags fence the agent in more tightly than allow and deny lists alone |
@@ -688,8 +689,9 @@ interface IncidentUpdate {
     casualties: { killed: number; injured: number } | null;
     disruption_hours: number | null;
     summary: string | null;
+    host_statement: "yes" | "none_yet" | null; // "yes" once the affected government or agency has spoken
   };                                 // null = unchanged; at least one non-null
-  add_sources: EvidenceSource[];     // ≥ 1 when attribution or rung changes
+  add_sources: EvidenceSource[];     // ≥ 1 when attribution, rung or host_statement changes
   reason: string;                    // ≤ 40 words
 }
 
@@ -775,6 +777,9 @@ Limits: 600–2,000 words, or 250–2,000 on a quiet day. Not counted: `weekly_o
 
 ```ts
 interface Brief extends DraftBrief {
+  weekly_outlook: (WeeklyOutlook & {
+    assumptions_check: { id: string; status: "holds" | "weakening" | "broken"; note: string; text: string }[];
+  }) | null;                         // publish.ts adds each assumption's text as the brief assessed it
   published_at: string;              // ISO timestamp set by publish.ts
   computed: {
     pathways: Record<PathwayId, { incidents_30d: number; baseline_monthly: number }>;
@@ -1005,10 +1010,10 @@ plus the draft's `incidents_new` and `incident_updates`, with the window "last 3
 | INCIDENT_RUNG | Rung outside the type's range; `killed > 0` with rung < 4; a BY/RU/UA location with rung > 1 | error |
 | INCIDENT_LOCATION | A BY/RU/UA location in a pathway other than military_pressure or nuclear; `affected` empty; a European `location_country` missing from `affected` | error |
 | INCIDENT_SERIOUS | Rung ≥ 4 or `killed > 0` but `serious` is false | error |
-| INCIDENT_SOURCES | For non-seed incidents: ≥ 2 sources from ≥ 2 categories. If `host_statement` is "yes", one must be `eu_gov_security` or `nato_eu`; if "none_yet", attribution must be ≤ 2. Seeds need ≥ 1 source | error |
+| INCIDENT_SOURCES | For non-seed incidents: ≥ 2 sources from ≥ 2 categories. If `host_statement` is "yes", one must be `eu_gov_security` or `nato_eu`; if "none_yet", attribution must be ≤ 2. Seeds need ≥ 1 source. Updates to non-seed incidents are checked on the merged record: attribution above 2 needs `host_statement` "yes", and an update that sets it must cite the statement in `add_sources` | error |
 | INCIDENT_PRECISION | `date_precision` is "month" on a non-seed incident | error |
 | UPDATE_TARGET | An update references an unknown id, or one in today's `*_new` | error |
-| UPDATE_EVIDENCE | An attribution, rung or verification change has no `add_sources`, or a strike's new level lacks its evidence | error |
+| UPDATE_EVIDENCE | An attribution, rung, host-statement or verification change has no `add_sources`, or a strike's new level lacks its evidence | error |
 | STRIKE_EVIDENCE | A verification level lacks its evidence. Level 2 needs a `ru_gov` or `ru_state_media` source. Level 3 needs `osint_data`. Level 4 needs `damage` plus an `intl_press` or `osint_data` source. Level 5 needs `effect` plus a `markets_energy`, `intl_press` or `ru_gov` source | error |
 | INDICATOR_CHANGE | Unknown id, or `to` equals the current status | error |
 | INDICATOR_NEW | Id already exists, or the format is wrong | error |

@@ -92,6 +92,8 @@ word DONE.
       categories.
 - [ ] Every new incident has 2 sources from 2 categories, including the host government's statement
       unless `host_statement` is "none_yet".
+- [ ] Every incident update that raises attribution above 2 sets `host_statement` to "yes" and cites the
+      statement in `add_sources`.
 - [ ] Each strike's verification level has its required evidence.
 - [ ] On a Monday, `weekly_outlook` is filled and checks every active assumption.
 - [ ] "Impact on Taiwan" says how today's developments might affect Taiwan (STYLE.md §14), or uses
