@@ -40,15 +40,38 @@
 
 - date: 2022-04-29
   where: SE
-  location: South of Blekinge
+  affected: [SE, DK]
+  location: East of Bornholm and south of Blekinge
   sea: baltic
   type: aircraft_violation
   rung: 3
   attribution: 3
-  note: The Swedish Armed Forces said a Russian An-30 entered Swedish airspace.
-  summary: A Russian An-30 surveillance aircraft violated Swedish airspace south of Blekinge for under a minute.
+  note: Denmark and Sweden both summoned Russian diplomats.
+  summary: A Russian An-30 surveillance aircraft entered Danish airspace east of Bornholm for close to a minute, then Swedish airspace south of Blekinge. Danish F-16s and Swedish Gripens were scrambled.
   src:
     - [eu_regional_press, "SVT Nyheter", "Ryskt militärflygplan har kränkt svenskt luftrum", "https://www.svt.se/nyheter/inrikes/ryskt-militarflygplan-har-krankt-svenskt-luftrum", "2022-04-30"]
+    - [eu_regional_press, "The Local Denmark", "Denmark accuses Russian spy plane of violating airspace", "https://www.thelocal.dk/20220501/denmark-accuses-russian-spy-plane-of-violating-airspace/", "2022-05-01"]
+
+- date: 2022-05-04
+  where: FI
+  location: Eastern border near Kesälahti and Parikkala
+  type: aircraft_violation
+  rung: 3
+  attribution: 3
+  summary: Finland's defence ministry said a Russian Mi-17 transport helicopter was suspected of flying about 4 km into Finnish airspace over the eastern border.
+  src:
+    - [eu_regional_press, "Ilta-Sanomat", "Puolustusministeriö: venäläisen helikopterin epäillään loukanneen Suomen ilmatilaa", "https://www.is.fi/kotimaa/art-2000008793388.html", "2022-05-04"]
+
+- date: 2022-08-18
+  where: FI
+  location: Off Porvoo, Gulf of Finland
+  sea: baltic
+  type: aircraft_violation
+  rung: 3
+  attribution: 3
+  summary: Two Russian MiG-31 fighters were suspected of violating Finnish airspace near Porvoo for about two minutes. Finland sent a reconnaissance flight.
+  src:
+    - [intl_press, "The Star (Reuters)", "Russian jets suspected of violating Finnish airspace, defence ministry says", "https://www.thestar.com.my/news/world/2022/08/18/russian-jets-suspected-of-violating-finnish-airspace-defence-ministry-says", "2022-08-18"]
 
 - date: 2022-10-10
   where: MD
@@ -244,9 +267,11 @@
   location: Etulia, Vulcănești
   type: debris_impact
   rung: 3
-  attribution: 2
-  summary: Fragments of a drone, believed to be Russian and downed by Ukrainian air defences during an attack on Izmail, were found near Etulia. Access to the area was restricted.
+  attribution: 3
+  note: Foreign Minister Mihai Popșoi blamed Moscow.
+  summary: Fragments of a Russian Shahed-type drone, probably downed by Ukrainian air defences during an attack on Odesa Oblast, were found near Etulia. Its intact warhead held about 50 kg of explosives and was destroyed at a range.
   src:
+    - [intl_press, "RFE/RL", "Moldova finds explosives at drone crash site, condemns Russia's barbaric attacks", "https://www.rferl.org/a/moldova-drone-explosives-russia-barbaric-attacks-ukraine-popsoi/32815727.html", "2024-02-12"]
     - [eu_regional_press, "Știri.md", "Fragmente de dronă, depistate la Vulcănești", "https://stiri.md/article/social/fragmente-de-drona-depistate-la-vulcanesti-accesul-in-regiune-restrictionat", "2024-02-11"]
 
 - date: 2024-02-17
@@ -280,6 +305,18 @@
   src:
     - [ua_independent, "Euromaidan Press", "Moldova strongly condemns second Russian drone wreckage discovery near Ukraine", "https://euromaidanpress.com/2024/04/05/moldova-strongly-condemns-second-russian-drone-wreckage-discovery-near-ukraine/", "2024-04-05"]
 
+- date: 2024-06-10
+  where: FI
+  location: Off Loviisa, Gulf of Finland
+  sea: baltic
+  type: aircraft_violation
+  rung: 3
+  attribution: 3
+  summary: A formation of four Russian military aircraft, two bombers and two fighters, flew up to 2.5 km into Finnish airspace off Loviisa for about two minutes, the first violation since Finland joined NATO.
+  src:
+    - [intl_press, "Malay Mail (Reuters)", "Finland suspects four Russian military planes violated its airspace", "https://www.malaymail.com/news/world/2024/06/14/finland-suspects-four-russian-military-planes-violated-its-airspace/139780", "2024-06-14"]
+    - [intl_press, "The Aviationist", "Russian Combat Aircraft Have Recently Violated The Finnish Airspace Too", "https://theaviationist.com/2024/06/16/finnish-airspace-violation/", "2024-06-16"]
+
 - date: 2024-06-14
   where: SE
   location: East of southern Gotland
@@ -301,6 +338,26 @@
   summary: During a second consecutive night of attacks near the border, Ukraine's air force said three Russian Geran-2 drones crossed into Romania and crashed. Romanian F-16s had been scrambled and RO-Alert issued in Tulcea.
   src:
     - [eu_regional_press, "Digi24", "Șeful Forțelor Aeriene ucrainene afirmă că trei drone rusești au trecut frontiera de stat în România", "https://www.digi24.ro/stiri/actualitate/seful-fortelor-aeriene-ucrainene-afirma-ca-trei-drone-rusesti-au-trecut-frontiera-de-stat-in-romania-2872043", "2024-07-25"]
+
+- date: 2024-08-20
+  where: RO
+  location: Periprava, Tulcea County
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: Fragments of a Russian Shahed-type drone were found near Periprava, across the Danube from Ukraine, after a night attack on Ukrainian ports.
+  src:
+    - [ua_independent, "Ukrinform", "У Румунії біля кордону з Україною знову знайшли уламки безпілотника", "https://www.ukrinform.ua/rubric-world/3897130-u-rumunii-bila-kordonu-z-ukrainou-znovu-znajsli-ulamki-bezpilotnika.html", "2024-08-20"]
+
+- date: 2024-08-26
+  where: PL
+  location: Tyszowce area, Lublin Voivodeship
+  type: drone_incursion
+  rung: 3
+  attribution: 2
+  summary: During a massive Russian attack on Ukraine, an object, probably a Shahed-type drone, entered Polish airspace and was believed to have come down near Tyszowce, about 25 km from the border. A search found nothing.
+  src:
+    - [ua_independent, "Militarnyi", "Повітряний простір Польщі порушив невстановлений об'єкт", "https://militarnyi.com/uk/news/povitryanyj-prostir-polshhi-porushyv-nevidomyj-ob-yekt-virogidno-shahed", "2024-08-26"]
 
 - date: 2024-09-07
   where: LV
@@ -343,6 +400,16 @@
   src:
     - [intl_press, "RFE/RL Romania", "RO-Alert în Constanța cu risc de cădere a unor obiecte", "https://romania.europalibera.org/a/ro-alert-in-constanta-exista-posibilitatea-caderii-unor-obiecte-din-spatiul-aerian-/33162677.html", "2024-10-17"]
 
+- date: 2024-10-23
+  where: RO
+  location: Constanța and Tulcea counties
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: Two Shahed-type drones violated Romanian airspace over Constanța and Tulcea counties during a Russian attack on Ukraine.
+  src:
+    - [ua_independent, "Slovo i Dilo", "Російські дрони знову порушили повітряний простір Румунії", "https://www.slovoidilo.ua/2024/10/24/novyna/suspilstvo/rosijski-drony-znovu-porushyly-povitryanyj-prostir-rumuniyi", "2024-10-24"]
+
 # ---------------------------------------------------------------- 2025
 - date: 2025-02-11
   where: PL
@@ -356,6 +423,28 @@
   src:
     - [intl_press, "Reuters", "Russian military jet violates Polish airspace after navigation failure", "https://www.reuters.com/world/europe/russian-military-jet-violates-polish-airspace-after-navigation-failure-poland-2025-02-11/", "2025-02-11"]
 
+- date: 2025-02-13
+  where: MD
+  location: Ceadîr-Lunga and Ciumai, Taraclia District
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  note: Police said the Ceadîr-Lunga fragments were from a Russian drone; Moldova summoned the Russian ambassador.
+  summary: Several drones carrying explosives crossed Moldova overnight during an attack on Ukraine; two crashed and exploded in empty fields near Ceadîr-Lunga and Ciumai. No one was hurt.
+  src:
+    - [eu_regional_press, "Moldpres", "IGP: fragments found in Ceadîr-Lunga belong to Russian drone", "https://www.moldpres.md/eng/society/igp-fragments-found-in-ceadir-lunga-belong-to-russian-drone", "2025-02-13"]
+    - [ua_independent, "Ukrainska Pravda", "Moldova summons Russian ambassador over drone violation of airspace", "https://www.pravda.com.ua/eng/news/2025/02/13/7498069/", "2025-02-13"]
+
+- date: 2025-03-01
+  where: RO
+  location: Near the Moldovan border
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: A Russian Shahed-type drone crashed in Romania; its remains, with explosives, were found about 500 metres from the border with Moldova.
+  src:
+    - [intl_press, "Radio Svoboda", "У Румунії виявили російський дрон із вибухівкою", "https://www.radiosvoboda.org/a/news-rumunia-rosiyskyi-dron/33332718.html", "2025-03-01"]
+
 - date: 2025-04-25
   where: PL
   location: Polish territorial waters, Baltic Sea
@@ -366,6 +455,27 @@
   summary: A Russian Baltic Fleet military helicopter entered Polish airspace over territorial waters in the evening and was tracked by military radar until it left.
   src:
     - [ua_independent, "Ukrainska Pravda", "Russian military helicopter violates Polish airspace", "https://www.pravda.com.ua/eng/news/2025/04/26/7509286/", "2025-04-26"]
+
+- date: 2025-06-22
+  where: EE
+  location: Vaindloo island, Gulf of Finland
+  sea: baltic
+  type: aircraft_violation
+  rung: 3
+  attribution: 3
+  summary: A Russian emergencies ministry Il-76 transport aircraft entered Estonian airspace near Vaindloo without permission for about four minutes.
+  src:
+    - [eu_gov_security, "Estonian Defence Forces", "Venemaa Föderatsiooni lennuk rikkus Eesti õhupiiri", "https://mil.ee/uudised/venemaa-foderatsiooni-lennuk-rikkus-eesti-ohupiiri-22/", "2025-06-25"]
+
+- date: 2025-07-10
+  where: LT
+  location: Near the Belarusian border
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: A Russian Gerbera drone flew in from Belarus and crashed about a kilometre inside Lithuania. The Lithuanian government was sent to shelter while it was tracked.
+  src:
+    - [ua_independent, "Militarnyi", "Уряд відправили в укриття: до Литви залетів російський розвідувальний дрон Gerbera", "https://militarnyi.com/uk/news/uryad-vidpravyly-v-ukryttya-do-lytvy-zaletiv-rosijskyj-rozviduvalnyj-dron-gerbera", "2025-07-10"]
 
 - date: 2025-07-28
   where: LT
@@ -410,6 +520,17 @@
   summary: Two Russian drones entered Polish airspace during an attack on western Ukraine. Polish and allied aircraft were scrambled and tracked them until they left.
   src:
     - [eu_regional_press, "Notes from Poland", "Polish airspace violated twice by drones last night, announces military chief", "https://notesfrompoland.com/2025/09/04/polish-airspace-violated-twice-by-drones-last-night-announces-military-chief/", "2025-09-04"]
+
+- date: 2025-09-07
+  where: EE
+  location: Vaindloo island, Gulf of Finland
+  sea: baltic
+  type: aircraft_violation
+  rung: 3
+  attribution: 3
+  summary: A Russian Mi-8 helicopter entered Estonian airspace near Vaindloo without authorisation for about four minutes.
+  src:
+    - [eu_gov_security, "Estonian Defence Forces", "Venemaa Föderatsiooni õhusõiduk rikkus Eesti õhupiiri", "https://mil.ee/uudised/venemaa-foderatsiooni-ohusoiduk-rikkus-eesti-ohupiiri/", "2025-09-08"]
 
 - date: 2025-09-08
   where: PL
@@ -458,6 +579,74 @@
     - [eu_regional_press, "ERR", "Kolm Venemaa hävitajat rikkus Eesti õhuruumi", "https://www.err.ee/1609806321/kolm-venemaa-havitajat-rikkus-eesti-ohuruumi", "2025-09-19"]
     - [intl_press, "The Hill", "Russian jets fly into Estonian airspace; Prime Minister invokes NATO Article 4", "https://thehill.com/policy/international/5512290-russian-jets-estonian-airspace/", "2025-09-19"]
 
+- date: 2025-09-22
+  where: DK
+  location: Copenhagen Airport
+  type: airport_closure
+  rung: 2
+  attribution: 2
+  note: The government called it a hybrid attack by a capable actor; in June 2026 police said they could neither prove nor rule out drones.
+  hours: 4
+  summary: Copenhagen Airport halted flights for nearly four hours after several large drones were reported inside its airspace. The prime minister called it the most serious attack yet on Danish critical infrastructure.
+  src:
+    - [intl_press, "Reuters", "Drone sightings disrupt flights at Copenhagen, Oslo airports", "https://www.reuters.com/business/aerospace-defense/copenhagen-airport-halts-traffic-due-drone-sightings-police-says-2025-09-22/", "2025-09-22"]
+    - [eu_regional_press, "DR", "Politiet har ikke kunnet bevise droner over lufthavn", "https://www.dr.dk/nyheder/indland/politiet-har-ikke-kunnet-bevise-droner-over-lufthavn", "2026-06-25"]
+
+- date: 2025-09-22
+  where: "NO"
+  location: Oslo Gardermoen Airport
+  type: airport_closure
+  rung: 2
+  attribution: 1
+  hours: 3
+  summary: Oslo Gardermoen closed its airspace for about three hours overnight after a drone sighting, the same evening as Copenhagen.
+  src:
+    - [intl_press, "The New York Times", "Drone Sightings Force Copenhagen and Oslo Airports to Close Temporarily", "https://www.nytimes.com/2025/09/22/world/europe/copenhagen-oslo-airport-closed-drone.html", "2025-09-22"]
+
+- date: 2025-09-24
+  where: DK
+  location: Aalborg Airport and Air Base; Billund
+  type: airport_closure
+  rung: 2
+  attribution: 2
+  note: Denmark said a professional actor was behind the incursions.
+  hours: 4
+  summary: Aalborg's civil and military airport closed for hours after drone sightings, and Billund closed briefly. Drones were also reported near Esbjerg, Sønderborg and Skrydstrup air base, and Denmark raised national readiness.
+  src:
+    - [intl_press, "BBC News", "Denmark says 'professional actor' behind drone incursions over its airports", "https://www.bbc.com/news/articles/c7401vk4lgzo", "2025-09-25"]
+
+- date: 2025-10-02
+  where: DE
+  location: Munich Airport
+  type: airport_closure
+  rung: 2
+  attribution: 1
+  hours: 4
+  summary: Munich Airport suspended flights for several hours in the evening after drone sightings; 17 flights were grounded and about 3,000 passengers affected.
+  src:
+    - [intl_press, "BBC News", "Munich airport resumes flights after suspected drones force closure", "https://www.bbc.com/news/articles/cge2v4r4gr1o", "2025-10-04"]
+
+- date: 2025-10-03
+  where: DE
+  location: Munich Airport
+  type: airport_closure
+  rung: 2
+  attribution: 1
+  summary: Munich Airport stopped flights for the second time in 24 hours after several drone sightings, affecting about 6,500 passengers.
+  src:
+    - [intl_press, "BBC News", "Munich airport resumes flights after suspected drones force second closure in 24 hours", "https://www.bbc.com/news/articles/cge2v4r4gr1o", "2025-10-04"]
+
+- date: 2025-10-06
+  where: LT
+  location: Vilnius Airport
+  type: balloon_incursion
+  rung: 1
+  attribution: 2
+  hours: 4
+  summary: At least 14 balloons carrying contraband cigarettes from Belarus closed Vilnius Airport overnight, cancelling 30 flights. Closures recurred through October.
+  src:
+    - [intl_press, "BBC News", "Lithuania: Balloons used to smuggle cigarettes shut Vilnius airport", "https://www.bbc.com/news/articles/c0r0ezjzwpno", "2025-10-06"]
+
 - date: 2025-10-23
   where: LT
   location: Kybartai area, near Kaliningrad
@@ -467,6 +656,40 @@
   summary: A Russian Su-30 fighter and an Il-78 tanker from Kaliningrad entered Lithuanian airspace for about 18 seconds. Spanish Eurofighters on Baltic air policing were scrambled.
   src:
     - [intl_press, "Euronews", "Two Russian aircraft briefly enter Lithuania's airspace, military says", "https://www.euronews.com/2025/10/23/two-russian-military-aircraft-enter-nato-member-lithuanias-airspace-military-says", "2025-10-23"]
+
+- date: 2025-10-31
+  where: DE
+  location: Berlin Brandenburg Airport
+  type: airport_closure
+  rung: 2
+  attribution: 1
+  hours: 2
+  summary: Berlin Brandenburg Airport suspended flights for almost two hours after sightings of unidentified drones.
+  src:
+    - [intl_press, "France 24", "Flights resume at Berlin airport after suspension over drone scare", "https://www.france24.com/en/europe/20251101-flights-resume-at-berlin-airport-after-suspension-over-drone-scare", "2025-11-01"]
+
+- date: 2025-11-04
+  where: BE
+  location: Brussels and Liège airports
+  type: airport_closure
+  rung: 2
+  attribution: 2
+  note: Belgium's defence minister linked a week of drones over Kleine Brogel and other bases to a state-level spying operation.
+  hours: 5
+  summary: Brussels and Liège airports halted flights in the evening after drone sightings, diverting flights to Maastricht and Cologne, after nights of large drones over the Kleine Brogel air base. Belgium called a national security meeting.
+  src:
+    - [ua_independent, "Ukrainska Pravda", "Two airports in Belgium closed after reports of drones", "https://www.pravda.com.ua/eng/news/2025/11/04/8005872", "2025-11-04"]
+    - [intl_press, "Politico Europe", "Drones plague Belgium", "https://www.politico.eu/article/drones-plague-belgium-airports-crisis-skies-traffic/", "2025-11-07"]
+
+- date: 2025-11-06
+  where: SE
+  location: Gothenburg Landvetter Airport
+  type: airport_closure
+  rung: 2
+  attribution: 1
+  summary: Drone sightings over Gothenburg Landvetter forced flights to divert to Copenhagen. Brussels Airport closed again the same evening.
+  src:
+    - [intl_press, "The Jerusalem Post", "Drone sighting forces closure at Brussels Airport", "https://www.jpost.com/international/article-873050", "2025-11-06"]
 
 - date: 2025-11-11
   where: RO
@@ -488,6 +711,18 @@
   summary: A Russian drone flew 8 km into Romania, back into Ukraine, across Moldova's Gagauzia region and into Romania again near Oancea. Romanian and German jets were scrambled but lost it.
   src:
     - [eu_regional_press, "Digi24", "O dronă a intrat în spațiul aerian al României: patru avioane militare ridicate", "https://www.digi24.ro/stiri/actualitate/mapn-a-ridicat-doua-avioane-de-lupta-in-timpul-noptii-dupa-ce-o-drona-a-intrat-in-spatiul-aerian-national-a-fost-emis-mesaj-ro-alert-3509181", "2025-11-19"]
+
+- date: 2025-11-22
+  where: NL
+  location: Volkel Air Base; Eindhoven Airport
+  type: airport_closure
+  rung: 2
+  attribution: 1
+  hours: 3
+  summary: Dutch troops opened fire on drones over Volkel Air Base, which hosts US nuclear weapons, but recovered no wreckage. Nearby Eindhoven Airport halted traffic for several hours.
+  src:
+    - [intl_press, "AP", "Dutch military opens fire at drones over Volkel Air Base", "https://apnews.com/article/netherlands-air-base-drones-volkel-3ed1cca6b65f463fee34c60b15565fe0", "2025-11-22"]
+    - [intl_press, "BBC News", "Mystery drones halt air traffic near Dutch city of Eindhoven", "https://www.bbc.com/news/articles/cewjlr0v02ro", "2025-11-22"]
 
 - date: 2025-11-25
   where: MD
@@ -511,6 +746,28 @@
     - [eu_regional_press, "HotNews", "O dronă rusească a fost urmărită mai multe ore în spațiul aerian", "https://hotnews.ro/tinte-aeriene-detectate-in-spatiul-aerian-al-romaniei-aeronave-de-lupta-au-fost-ridicate-de-la-sol-mesaj-ro-alert-pentru-populatia-din-galati-2115690", "2025-11-25"]
     - [eu_regional_press, "HotNews", "Primele imagini cu drona căzută în curtea unui localnic din județul Vaslui", "https://hotnews.ro/video-primele-imagini-cu-drona-cazuta-in-curtea-unui-localnic-din-judetul-vaslui-mai-multe-echipaje-acum-la-fata-locului-2115955", "2025-11-25"]
 
+- date: 2025-11-29
+  where: LT
+  location: Vilnius Airport
+  type: balloon_incursion
+  rung: 1
+  attribution: 3
+  note: Lithuania called the balloon flights a hybrid attack by Belarus.
+  hours: 11
+  summary: Balloons from Belarus closed Vilnius Airport for 11 hours. Lithuania's deputy foreign minister called it a cynical hybrid attack on the economy and aviation security.
+  src:
+    - [intl_press, "The Independent", "Balloons from Belarus force closure of European airport – again", "https://www.independent.co.uk/news/world/europe/belarus-balloon-airport-closure-lithuania-b2876583.html", "2025-12-02"]
+
+- date: 2025-12-03
+  where: LT
+  location: Vilnius Airport
+  type: balloon_incursion
+  rung: 1
+  attribution: 3
+  summary: Vilnius Airport shut for the tenth time in two months after suspected smuggling balloons from Belarus entered its airspace.
+  src:
+    - [intl_press, "Reuters", "Lithuania's Vilnius airport reopens after suspected balloons force shutdown", "https://www.reuters.com/world/europe/lithuanias-vilnius-airport-shuts-again-over-balloon-incident-2025-12-03/", "2025-12-03"]
+
 - date: 2025-12-15
   where: TR
   location: Black Sea off northern Turkey
@@ -533,7 +790,39 @@
   src:
     - [intl_press, "Euronews", "Drone incidents escalate as Turkey finds three UAVs in five days", "https://www.euronews.com/2025/12/20/turkey-warns-russia-and-ukraine-over-downed-drones-in-black-sea", "2025-12-20"]
 
+- date: 2025-12-25
+  where: PL
+  location: Podlaskie Voivodeship
+  type: balloon_incursion
+  rung: 1
+  attribution: 3
+  note: Poland's National Security Bureau called it a provocation disguised as smuggling.
+  summary: Dozens of objects, four identified as smuggling balloons, entered Polish airspace from Belarus.
+  src:
+    - [intl_press, "Reuters", "Poland intercepts Russian plane over Baltic, reports airspace breaches", "https://www.reuters.com/business/aerospace-defense/poland-intercepts-russian-plane-over-baltic-sea-2025-12-25/", "2025-12-25"]
+
 # ---------------------------------------------------------------- 2026
+
+- date: 2026-01-17
+  where: MD
+  location: Nucareni, Telenești District
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: A hunter found a crashed, unarmed Russian Gerbera drone near Nucareni, about 54 km from the Ukrainian border. When it fell was not known.
+  src:
+    - [ua_independent, "The Kyiv Independent", "Crashed Russian drone discovered in Moldova, authorities report", "https://kyivindependent.com/crashed-russian-drone-discovered-in-moldova-authorities-report/", "2026-01-17"]
+
+- date: 2026-02-06
+  where: MD
+  location: Sofia, Drochia District
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: Police found a Russian Gerbera-type drone in the village of Sofia near the Ukrainian border, sealed off the area and called in bomb disposal experts.
+  src:
+    - [ua_independent, "The Kyiv Independent", "Gerbera-type drone used by Russia in war against Ukraine found in Moldova", "https://kyivindependent.com/drone-discovered-on-moldovan-territory-near-ukraine-border/", "2026-02-06"]
+
 - date: 2026-02-10
   where: RO
   location: Mamaia beach, Constanța County
@@ -821,6 +1110,17 @@
     - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă", "https://www.mapn.ro/cpresa/19271_informa%C8%9Bie-de-presa", "2026-05-29"]
     - [eu_regional_press, "Digi24", "O dronă rusească a lovit un bloc din Galați", "https://www.digi24.ro/stiri/o-drona-s-a-prabusit-pe-un-bloc-din-galati-doua-persoane-au-fost-ranite-usor-precizarile-mapn-3790645", "2026-05-30"]
 
+- date: 2026-06-03
+  where: EE
+  location: Võru County
+  type: drone_incursion
+  rung: 3
+  attribution: 1
+  note: Officials linked it to a Ukrainian attack on north-west Russia; the defence minister urged Ukraine to control its drones better.
+  summary: A drone with a 5 kg warhead was found in a field in Võru County, south-eastern Estonia.
+  src:
+    - [ua_independent, "The Kyiv Independent", "Drone carrying explosives found in Estonia after Ukrainian strike on Russia", "https://kyivindependent.com/drone-found-in-estonia-after-ukrainian-strike-on-russia/", "2026-06-03"]
+
 - date: 2026-06-08
   where: MD
   location: Lopatna, Orhei District
@@ -959,12 +1259,23 @@
   where: DE
   location: Hanover Airport
   type: airport_closure
-  rung: 3
+  rung: 2
   attribution: 2
   note: Authorities suspected a link to Russian drones sighted in Germany the week before.
   summary: An unidentified drone that could be neither tracked nor jammed appeared at Hanover Airport, which was closed for a time, delaying flights.
   src:
     - [eu_regional_press, "NDR", "Drohnensichtung: Flughafen Hannover zeitweise gesperrt", "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/drohnensichtung-flughafen-hannover-gesperrt,drohnensichtung-104.html", "2026-08-11"]
+
+- date: 2026-08-11
+  where: RO
+  location: Near the Neptun Deep platform, Black Sea
+  sea: black_sea
+  type: debris_impact
+  rung: 3
+  attribution: 3
+  summary: Romanian navy divers destroyed two Russian Gerbera drones, possibly carrying explosives, found floating in Romania's economic zone near the Neptun Deep offshore gas project.
+  src:
+    - [intl_press, "Reuters", "Romania destroys drones drifting near major offshore gas project in the Black Sea", "https://www.reuters.com/world/romania-destroys-drones-drifting-near-major-offshore-gas-project-black-sea-2026-08-11/", "2026-08-11"]
 
 - date: 2026-08-13
   where: RO
@@ -1042,6 +1353,39 @@
   src:
     - [eu_regional_press, "Moldpres", "MAI: În apropiere de Giurgiulești au fost depistate resturile unei drone de tip Geran", "https://www.moldpres.md/rom/societate/mai-in-apropiere-de-giurgiulesti-au-fost-depistate-resturile-unei-drone-de-tip-geran", "2026-08-20"]
 
+- date: 2026-08-21
+  where: FI
+  location: South of Utö, Gulf of Finland
+  sea: baltic
+  type: aircraft_violation
+  rung: 3
+  attribution: 3
+  note: Finland summoned the Russian ambassador.
+  summary: A Russian Il-20M reconnaissance aircraft flew about three minutes in Finnish airspace south of Utö, coming within about 4.7 nautical miles of the coast.
+  src:
+    - [eu_regional_press, "Milmag", "Rosyjski samolot Ił-20M naruszył przestrzeń powietrzną Finlandii", "https://milmag.pl/rosyjski-samolot-il-20m-naruszyl-przestrzen-powietrzna-finlandii/", "2026-08-21"]
+
+- date: 2026-08-22
+  where: MD
+  location: Căplani, Ștefan Vodă District
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: A drone identified as a Geran-3 entered Moldova from Odesa Oblast at 04:07, flew toward Căplani and left 17 minutes later.
+  src:
+    - [eu_regional_press, "Moldpres", "Dronă de tip Shahed, detectată în spațiul aerian al Republicii Moldova", "https://www.moldpres.md/rom/societate/drona-de-tip-shahed-depistata-in-spatiul-aerian-al-republicii-moldova", "2026-08-22"]
+
+- date: 2026-08-23
+  where: RO
+  location: Off Gura Portiței, Tulcea County
+  sea: black_sea
+  type: debris_impact
+  rung: 3
+  attribution: 3
+  summary: Romanian navy divers neutralised a floating fragment of a Gerbera drone containing explosives off Gura Portiței.
+  src:
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă", "https://www.mapn.ro/cpresa/19369_informa%C8%9Bie-de-presa", "2026-08-23"]
+
 - date: 2026-08-24
   where: RO
   affected: [RO, MD]
@@ -1062,6 +1406,16 @@
   summary: Up to five Russian drones entered Moldova on its independence day, hours before Romania's and Ukraine's presidents attended the parade in Chișinău. One crashed near the capital.
   src:
     - [eu_regional_press, "Digi24", "O dronă a căzut lângă Chișinău, în ziua în care Rep. Moldova marchează 35 de ani de independență", "https://www.digi24.ro/stiri/externe/moldova/o-drona-a-cazut-langa-chisinau-in-ziua-in-care-rep-moldova-marcheaza-35-de-ani-de-independenta-o-incalcare-grava-a-suveranitatii-3923701", "2026-08-27"]
+
+- date: 2026-08-30
+  where: MD
+  location: Toward Dnestrovsc, Transnistria
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: A Russian drone entered Moldovan airspace from Odesa Oblast at 15:50, headed toward Dnestrovsc and turned back nine minutes later.
+  src:
+    - [eu_gov_security, "Moldovan Ministry of Defence", "Informează!", "https://www.army.md/ro/comunicate-de-presa/informeaza-10", "2026-08-30"]
 
 - date: 2026-09-01
   where: RO
@@ -1109,6 +1463,26 @@
     - [intl_press, "Reuters", "NATO fighter shoots down drone in Lithuania", "https://www.reuters.com/business/aerospace-defense/nato-fighter-shoots-down-drone-lithuania-2026-09-14/", "2026-09-14"]
     - [ru_by_independent, "The Moscow Times", "Drone Downed in Lithuania Was Russian and Likely Aimed at Ukraine", "https://www.themoscowtimes.com/2026/09/16/drone-downed-in-lithuania-was-russian-and-likely-aimed-at-ukraine-president-nausda-says-a93725", "2026-09-16"]
 
+- date: 2026-09-17
+  where: MD
+  location: Tudora to Palanca, Ștefan Vodă District
+  type: drone_incursion
+  rung: 3
+  attribution: 1
+  summary: An unidentified drone briefly crossed into Moldova near Tudora during a Russian attack on Ukraine and left near Palanca two minutes later.
+  src:
+    - [eu_gov_security, "Moldovan Ministry of Defence", "Informează!", "https://www.army.md/index.php/ro/comunicate-de-presa/informeaza-14", "2026-09-17"]
+
+- date: 2026-09-19
+  where: MD
+  location: Căplani, Ștefan Vodă District
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: Three Russian drones crossed into Moldova near Căplani around 04:00; two flew toward Olănești before leaving, the third turned back to Ukraine.
+  src:
+    - [eu_gov_security, "Moldovan Ministry of Defence", "Informează!", "https://www.army.md/index.php/ro/comunicate-de-presa/informeaza-15", "2026-09-19"]
+
 - date: 2026-09-23
   where: PL
   location: North of Braniewo, Warmian-Masurian Voivodeship
@@ -1138,6 +1512,16 @@
   summary: A drone detected over Ukraine near Botoșani entered Romania and crashed near Solca after four minutes. F-16s could not reach it in time.
   src:
     - [intl_press, "APA", "Drone entering Romania from Ukrainian territory crashes", "https://en.apa.az/europe/drone-entering-romania-from-ukrainian-territory-crashes-525948", "2026-09-24"]
+
+- date: 2026-09-26
+  where: MD
+  location: Novocotovsc, Transnistria
+  type: drone_incursion
+  rung: 3
+  attribution: 1
+  summary: An aerial object entered Moldova from Odesa Oblast near Novocotovsc and left two minutes later near Pervomaisc.
+  src:
+    - [eu_gov_security, "Moldovan Ministry of Defence", "Informează!", "https://www.army.md/index.php/ro/comunicate-de-presa/informeaza-20", "2026-09-26"]
 
 - date: 2026-09-30
   where: MD
@@ -1191,6 +1575,16 @@
   src:
     - [eu_regional_press, "Agerpres", "MApN: Drone enters national airspace near Sulina, two F-16 aircraft scrambled", "https://agerpres.ro/english/2026/10/14/mapn-drone-enters-national-airspace-near-sulina-two-f-16-aicraft-scrambled--1602830", "2026-10-14"]
 
+- date: 2026-10-15
+  where: MD
+  location: Northern Moldova
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  summary: Overnight, three Russian drones entered Moldovan airspace and returned to Ukraine; a fourth crossed twice in the early morning.
+  src:
+    - [ua_independent, "The Kyiv Independent", "4 Russian drones violate Moldovan airspace during overnight attack against Ukraine", "https://kyivindependent.com/4-russian-drones-violate-moldovan-airspace-during-overnight-attack-against-ukraine/", "2026-10-16"]
+
 - date: 2026-10-16
   where: MD
   location: Northern and eastern districts
@@ -1225,6 +1619,17 @@
   summary: A drone entered Lithuania from Poland and exploded over the northern village of Juodzionys, where debris was found. Residents in northern and central areas were told to shelter for an hour; cloud kept NATO jets from intercepting it.
   src:
     - [intl_press, "Reuters", "Lithuanians forced to take shelter after suspected drone enters airspace", "https://www.reuters.com/world/lithuania-told-residents-go-shelters-after-detecting-flying-object-2026-10-18/", "2026-10-18"]
+
+- date: 2026-10-23
+  where: MD
+  location: Chistelnița, Telenești District
+  type: drone_incursion
+  rung: 3
+  attribution: 3
+  note: Moldova declared a Russian embassy staff member persona non grata.
+  summary: A Russian Geran drone crashed about 100 metres from a house and near an energy facility in Chistelnița during a mass attack on Ukraine.
+  src:
+    - [ua_independent, "The Kyiv Independent", "Moldova expels Russian diplomat after Russian Geran drone falls near family homes", "https://kyivindependent.com/moldova-expels-russian-diplomat-after-russian-geran-drone-falls-near-family-homes/", "2026-10-23"]
 
 - date: 2026-10-31
   where: RO
