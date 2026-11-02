@@ -25,7 +25,7 @@
   summary: A Soviet-era Tu-141 reconnaissance drone flew across Romanian and Hungarian airspace and crashed in Zagreb, exploding near a student dormitory. No one was hurt. NATO air defences did not intercept it.
   src:
     - [intl_press, "The Guardian", "Military drone from Ukraine war crashes into Croatian capital Zagreb", "https://www.theguardian.com/world/2022/mar/11/ukraine-military-drone-crashes-into-croatian-capital-zagreb", "2022-03-11"]
-    - [eu_regional_press, "Nacional", "'Jarunski' dron pripadao je ukrajinskim vojnim snagama", "https://www.nacional.hr/jarunski-dron-pripadao-je-ukrajinskim-vojnim-snagama/", "2022-03-15"]
+    - [eu_regional_press, "Nacional", "‘Jarunski’ dron pripadao je ukrajinskim vojnim snagama", "https://www.nacional.hr/jarunski-dron-pripadao-je-ukrajinskim-vojnim-snagama/", "2022-03-15"]
 
 - date: 2022-03-13
   where: RO
@@ -60,7 +60,7 @@
   attribution: 3
   summary: Finland's defence ministry said a Russian Mi-17 transport helicopter was suspected of flying about 4 km into Finnish airspace over the eastern border.
   src:
-    - [eu_regional_press, "Ilta-Sanomat", "Puolustusministeriö: venäläisen helikopterin epäillään loukanneen Suomen ilmatilaa", "https://www.is.fi/kotimaa/art-2000008793388.html", "2022-05-04"]
+    - [eu_regional_press, "Ilta-Sanomat", "Puolustusministeriö: venäläiskoneen epäillään loukanneen Suomen ilmatilaa", "https://www.is.fi/kotimaa/art-2000008793388.html", "2022-05-04"]
 
 - date: 2022-08-18
   where: FI
@@ -82,7 +82,7 @@
   note: Moldova's foreign minister summoned the Russian ambassador.
   summary: Moldova said three Russian cruise missiles fired from the Black Sea at Ukraine crossed its airspace during the mass strike of 10 October.
   src:
-    - [intl_press, "Politico Europe", "Russian missiles crossed Moldova's airspace, deputy PM says", "https://www.politico.eu/article/russian-missiles-crossed-moldova-airspace-deputy-prime-minister-claims/", "2022-10-10"]
+    - [intl_press, "Politico Europe", "Russian missiles crossed Moldova’s airspace, deputy PM says – POLITICO", "https://www.politico.eu/article/russian-missiles-crossed-moldova-airspace-deputy-prime-minister-claims/", "2022-10-10"]
 
 - date: 2022-10-31
   where: MD
@@ -127,7 +127,7 @@
   note: Polish experts identified a Russian Kh-55, probably fired from a Su-34, which reached Poland through Belarus.
   summary: A Russian Kh-55 cruise missile strayed through Belarus into Poland during a strike on Ukraine and crashed in a forest near Bydgoszcz. Its remains were found only in April 2023, prompting a row over why radars lost it.
   src:
-    - [eu_regional_press, "RMF24", "Biegli wstępnie potwierdzili, że pod Bydgoszczą spadła rosyjska rakieta Ch-55", "https://www.rmf24.pl/raporty/raport-wojna-z-rosja/news-news-rmf-fm-biegli-wstepnie-potwierdzili-ze-pod-bydgoszcza-s,nId,6767139", "2023-05-10"]
+    - [eu_regional_press, "RMF24", "NEWS RMF FM: Biegli wstępnie potwierdzili, że pod Bydgoszczą spadła rosyjska rakieta Ch-55", "https://www.rmf24.pl/raporty/raport-wojna-z-rosja/news-news-rmf-fm-biegli-wstepnie-potwierdzili-ze-pod-bydgoszcza-s,nId,6767139", "2023-05-10"]
     - [intl_press, "The Wall Street Journal", "Russian Cruise Missile That Struck Poland Exposes NATO's Air Defenses", "https://www.wsj.com/articles/russian-cruise-missile-that-struck-poland-exposes-natos-air-defenses-3312d456", "2023-05-30"]
 
 # ---------------------------------------------------------------- 2023
@@ -152,7 +152,7 @@
   note: Moldova summoned the Russian ambassador.
   summary: A Russian cruise missile fired at Ukraine crossed Moldovan airspace. The defence ministry confirmed the violation and Moldova summoned the Russian ambassador.
   src:
-    - [eu_regional_press, "Pro TV", "O rachetă rusească a trecut prin spațiul aerian al Republicii Moldova. Ministerul Apărării de la Chișinău confirmă", "https://stirileprotv.ro/stiri/actualitate/o-racheta-ruseasca-ar-fi-survolat-spatiul-aerien-al-republicii-moldova.html", "2023-02-10"]
+    - [eu_regional_press, "Pro TV", "O rachetă rusească a trecut prin spațiul aerian al Republicii Moldova. Ministerul Apărării de la Chișinău confirmă - Știrile ProTV", "https://stirileprotv.ro/stiri/actualitate/o-racheta-ruseasca-ar-fi-survolat-spatiul-aerien-al-republicii-moldova.html", "2023-02-10"]
 
 - date: 2023-02-14
   where: MD
@@ -195,7 +195,7 @@
   note: Romania first denied it, then confirmed fragments of a drone similar to those Russia uses.
   summary: During a night attack on the Ukrainian port of Izmail, a Russian drone crashed near Plauru, across the Danube. Romania confirmed the fragments on 6 September, the first such case on NATO soil since 2022.
   src:
-    - [intl_press, "The Guardian", "Nato pledges 'strong solidarity' with Romania over likely Russian drone debris", "https://www.theguardian.com/world/2023/sep/06/romania-says-possible-drone-debris-found-on-its-territory-near-ukraine", "2023-09-06"]
+    - [intl_press, "The Guardian", "Nato pledges ‘strong solidarity’ with Romania over likely Russian drone debris", "https://www.theguardian.com/world/2023/sep/06/romania-says-possible-drone-debris-found-on-its-territory-near-ukraine", "2023-09-06"]
     - [intl_press, "RFE/RL", "Bucharest Denies Ukrainian Claim That Russian Drone Detonated On Romanian Territory", "https://www.rferl.org/a/romania-denies-russian-drones-ukraine-/32577643.html", "2023-09-04"]
 
 - date: 2023-09-09
@@ -227,7 +227,7 @@
   note: Soviet-made S-300 missile; its launcher was not established.
   summary: An S-300 missile exploded over Chițcani in the Transnistria region and its warhead fell into a resident's yard, the first such case in territory Chișinău does not control.
   src:
-    - [eu_regional_press, "HotNews", "O rachetă S-300, de producție sovietică, a explodat deasupra Transnistriei. Focosul proiectilului a căzut în gospodăria unui localnic - detalii exclusive", "https://www.hotnews.ro/stiri-razboi_ucraina-26558577-racheta-300-productie-sovietica-explodat-deasupra-transnistriei-focosul-proiectilului-cazut-gospodarie-unui-localnic-detalii-exclusive.htm", "2023-09-25"]
+    - [eu_regional_press, "HotNews", "O rachetă S-300, de producție sovietică, a explodat deasupra Transnistriei. Focosul proiectilului a căzut &icirc;n gospodăria unui localnic - detalii exclusive​ - HotNews.ro", "https://www.hotnews.ro/stiri-razboi_ucraina-26558577-racheta-300-productie-sovietica-explodat-deasupra-transnistriei-focosul-proiectilului-cazut-gospodarie-unui-localnic-detalii-exclusive.htm", "2023-09-25"]
 
 - date: 2023-09-30
   where: RO
@@ -271,8 +271,8 @@
   note: Foreign Minister Mihai Popșoi blamed Moscow.
   summary: Fragments of a Russian Shahed-type drone, probably downed by Ukrainian air defences during an attack on Odesa Oblast, were found near Etulia. Its intact warhead held about 50 kg of explosives and was destroyed at a range.
   src:
-    - [intl_press, "RFE/RL", "Moldova finds explosives at drone crash site, condemns Russia's barbaric attacks", "https://www.rferl.org/a/moldova-drone-explosives-russia-barbaric-attacks-ukraine-popsoi/32815727.html", "2024-02-12"]
-    - [eu_regional_press, "Știri.md", "Fragmente de dronă, depistate la Vulcănești: Accesul în regiune, restricționat", "https://stiri.md/article/social/fragmente-de-drona-depistate-la-vulcanesti-accesul-in-regiune-restrictionat", "2024-02-11"]
+    - [intl_press, "RFE/RL", "Moldova Says Crashed Drone Contained Explosives; Minister Blasts Russia For 'Barbaric Attacks' On Ukraine", "https://www.rferl.org/a/moldova-drone-explosives-russia-barbaric-attacks-ukraine-popsoi/32815727.html", "2024-02-12"]
+    - [eu_regional_press, "Știri.md", "Fragmente de dronă, găsite la Vulcănești: Accesul în zonă, restricționat", "https://stiri.md/article/social/fragmente-de-drona-depistate-la-vulcanesti-accesul-in-regiune-restrictionat", "2024-02-11"]
 
 - date: 2024-02-17
   where: MD
@@ -282,7 +282,7 @@
   attribution: 2
   summary: More fragments of a drone were found near Etulia Nouă, close to the Ukrainian border.
   src:
-    - [eu_regional_press, "Digi24", "Noi fragmente de dronă au fost găsite în Republica Moldova, în apropiere de granița cu Ucraina", "https://www.digi24.ro/stiri/externe/moldova/noi-fragmente-de-drona-au-fost-gasite-in-republica-moldova-in-apropiere-de-granita-cu-ucraina-2691483", "2024-02-17"]
+    - [eu_regional_press, "Digi24", "Noi fragmente de dronă au fost găsite în Republica Moldova, în apropiere de graniţa cu Ucraina", "https://www.digi24.ro/stiri/externe/moldova/noi-fragmente-de-drona-au-fost-gasite-in-republica-moldova-in-apropiere-de-granita-cu-ucraina-2691483", "2024-02-17"]
 
 - date: 2024-03-24
   where: PL
@@ -303,7 +303,7 @@
   note: Moldova's foreign ministry condemned Russia.
   summary: Wreckage of a Russian drone was found near Etulia after an overnight attack on Ukraine. Moldova strongly condemned it.
   src:
-    - [ua_independent, "Euromaidan Press", "Moldova strongly condemns second Russian drone wreckage discovery near Ukraine", "https://euromaidanpress.com/2024/04/05/moldova-strongly-condemns-second-russian-drone-wreckage-discovery-near-ukraine/", "2024-04-05"]
+    - [ua_independent, "Euromaidan Press", "Moldova strongly condemns second Russian drone wreckage discovery near Ukraine - Euromaidan Press", "https://euromaidanpress.com/2024/04/05/moldova-strongly-condemns-second-russian-drone-wreckage-discovery-near-ukraine/", "2024-04-05"]
 
 - date: 2024-06-10
   where: FI
@@ -315,7 +315,7 @@
   summary: A formation of four Russian military aircraft, two bombers and two fighters, flew up to 2.5 km into Finnish airspace off Loviisa for about two minutes, the first violation since Finland joined NATO.
   src:
     - [intl_press, "Malay Mail (Reuters)", "Finland suspects four Russian military planes violated its airspace", "https://www.malaymail.com/news/world/2024/06/14/finland-suspects-four-russian-military-planes-violated-its-airspace/139780", "2024-06-14"]
-    - [intl_press, "The Aviationist", "Russian Combat Aircraft Have Recently Violated The Finnish Airspace Too", "https://theaviationist.com/2024/06/16/finnish-airspace-violation/", "2024-06-16"]
+    - [intl_press, "The Aviationist", "Russian Combat Aircraft Have Recently Violated The Finnish Airspace Too - The Aviationist", "https://theaviationist.com/2024/06/16/finnish-airspace-violation/", "2024-06-16"]
 
 - date: 2024-06-14
   where: SE
@@ -357,7 +357,7 @@
   attribution: 2
   summary: During a massive Russian attack on Ukraine, an object, probably a Shahed-type drone, entered Polish airspace and was believed to have come down near Tyszowce, about 25 km from the border. A search found nothing.
   src:
-    - [ua_independent, "Militarnyi", "Повітряний простір Польщі порушив невстановлений об'єкт", "https://militarnyi.com/uk/news/povitryanyj-prostir-polshhi-porushyv-nevidomyj-ob-yekt-virogidno-shahed", "2024-08-26"]
+    - [ua_independent, "Militarnyi", "Повітряний простір Польщі порушив невідомий об'єкт, вірогідно, \"Шахед\"", "https://militarnyi.com/uk/news/povitryanyj-prostir-polshhi-porushyv-nevidomyj-ob-yekt-virogidno-shahed", "2024-08-26"]
 
 - date: 2024-09-07
   where: LV
@@ -368,7 +368,7 @@
   note: Latvia said the Russian Shahed-type drone came through Belarus.
   summary: A Russian Shahed-type drone flew in from Belarus and crashed in Rēzekne Municipality, the first such crash in Latvia.
   src:
-    - [intl_press, "Politico Europe", "Latvia says Russian drone that violated airspace came through Belarus", "https://www.politico.eu/article/latvia-russia-drone-belarus-war-airspace-f16-jets/", "2024-09-08"]
+    - [intl_press, "Politico Europe", "Latvia says Russian drone that violated airspace came through Belarus – POLITICO", "https://www.politico.eu/article/latvia-russia-drone-belarus-war-airspace-f16-jets/", "2024-09-08"]
 
 - date: 2024-09-08
   where: RO
@@ -378,7 +378,7 @@
   attribution: 3
   summary: A Russian drone violated Romanian airspace during an attack on Ukraine; Romania scrambled two F-16s and searched for wreckage near Periprava.
   src:
-    - [ua_independent, "Defense Express", "While Ukraine Repelled Another Blow, Romania Raised 2 F-16s Just to Monitor russian Drone That Invaded Country's Airspace", "https://en.defence-ua.com/analysis/while_ukraine_repelled_another_blow_romania_raised_2_f_16s_just_to_monitor_russian_drone_that_invaded_countrys_airspace-11785.html", "2024-09-08"]
+    - [ua_independent, "Defense Express", "​While Ukraine Repelled Another Blow, Romania Raised 2 F-16s Just to Monitor russian Drone That Invaded Country's Airspace", "https://en.defence-ua.com/analysis/while_ukraine_repelled_another_blow_romania_raised_2_f_16s_just_to_monitor_russian_drone_that_invaded_countrys_airspace-11785.html", "2024-09-08"]
 
 - date: 2024-09-27
   where: RO
@@ -388,7 +388,7 @@
   attribution: 3
   summary: A drone briefly entered Romanian airspace during a Russian attack on Ukraine; four aircraft were sent to monitor it.
   src:
-    - [intl_press, "RFE/RL Romania", "Încă o dronă în spațiul aerian al României – ținta a zburat 19&nbsp;km în județul Constanța", "https://romania.europalibera.org/a/inca-o-drona-a-intrat-in-spatiul-aerian-al-romaniei-noaptea-trecuta-tinta-a-zburat-in-judetul-constanta-19-km/33164556.html", "2024-10-19"]
+    - [intl_press, "RFE/RL Romania", "Încă o dronă în spațiul aerian al României - ținta a zburat 19 km în județul Constanța", "https://romania.europalibera.org/a/inca-o-drona-a-intrat-in-spatiul-aerian-al-romaniei-noaptea-trecuta-tinta-a-zburat-in-judetul-constanta-19-km/33164556.html", "2024-10-19"]
 
 - date: 2024-10-17
   where: RO
@@ -408,7 +408,7 @@
   attribution: 3
   summary: Two Shahed-type drones violated Romanian airspace over Constanța and Tulcea counties during a Russian attack on Ukraine.
   src:
-    - [ua_independent, "Slovo i Dilo", "Російські дрони знову порушили повітряний простір Румунії", "https://www.slovoidilo.ua/2024/10/24/novyna/suspilstvo/rosijski-drony-znovu-porushyly-povitryanyj-prostir-rumuniyi", "2024-10-24"]
+    - [ua_independent, "Slovo i Dilo", "Румунія дрони – два безпілотники, ймовірно, порушили повітряний простір країни", "https://www.slovoidilo.ua/2024/10/24/novyna/suspilstvo/rosijski-drony-znovu-porushyly-povitryanyj-prostir-rumuniyi", "2024-10-24"]
 
 # ---------------------------------------------------------------- 2025
 - date: 2025-02-11
@@ -432,8 +432,8 @@
   note: Police said the Ceadîr-Lunga fragments were from a Russian drone; Moldova summoned the Russian ambassador.
   summary: Several drones carrying explosives crossed Moldova overnight during an attack on Ukraine; two crashed and exploded in empty fields near Ceadîr-Lunga and Ciumai. No one was hurt.
   src:
-    - [eu_regional_press, "Moldpres", "IGP: fragments found in Ceadîr-Lunga belong to Russian drone", "https://www.moldpres.md/eng/society/igp-fragments-found-in-ceadir-lunga-belong-to-russian-drone", "2025-02-13"]
-    - [ua_independent, "Ukrainska Pravda", "Moldova summons Russian ambassador over drone violation of airspace", "https://www.pravda.com.ua/eng/news/2025/02/13/7498069/", "2025-02-13"]
+    - [eu_regional_press, "Moldpres", "IGP: Fragments found in Ceadîr-Lunga belong to Russian drone", "https://www.moldpres.md/eng/society/igp-fragments-found-in-ceadir-lunga-belong-to-russian-drone", "2025-02-13"]
+    - [ua_independent, "Ukrainska Pravda", "Moldova summons Russian ambassador over drone violation of airspace – photos", "https://www.pravda.com.ua/eng/news/2025/02/13/7498069/", "2025-02-13"]
 
 - date: 2025-03-01
   where: RO
@@ -443,7 +443,7 @@
   attribution: 3
   summary: A Russian Shahed-type drone crashed in Romania; its remains, with explosives, were found about 500 metres from the border with Moldova.
   src:
-    - [intl_press, "Radio Svoboda", "У Румунії виявили російський дрон із вибухівкою", "https://www.radiosvoboda.org/a/news-rumunia-rosiyskyi-dron/33332718.html", "2025-03-01"]
+    - [intl_press, "Radio Svoboda", "У Румунії виявили російський дрон із вибуховим зарядом", "https://www.radiosvoboda.org/a/news-rumunia-rosiyskyi-dron/33332718.html", "2025-03-01"]
 
 - date: 2025-04-25
   where: PL
@@ -465,7 +465,7 @@
   attribution: 3
   summary: A Russian emergencies ministry Il-76 transport aircraft entered Estonian airspace near Vaindloo without permission for about four minutes.
   src:
-    - [eu_gov_security, "Estonian Defence Forces", "Venemaa Föderatsiooni lennuk rikkus Eesti õhupiiri", "https://mil.ee/uudised/venemaa-foderatsiooni-lennuk-rikkus-eesti-ohupiiri-22/", "2025-06-25"]
+    - [eu_gov_security, "Estonian Defence Forces", "Venemaa Föderatsiooni lennuk rikkus Eesti õhupiiri – Kaitsevägi", "https://mil.ee/uudised/venemaa-foderatsiooni-lennuk-rikkus-eesti-ohupiiri-22/", "2025-06-25"]
 
 - date: 2025-07-10
   where: LT
@@ -475,7 +475,7 @@
   attribution: 3
   summary: A Russian Gerbera drone flew in from Belarus and crashed about a kilometre inside Lithuania. The Lithuanian government was sent to shelter while it was tracked.
   src:
-    - [ua_independent, "Militarnyi", "Уряд відправили в укриття: до Литви залетів російський розвідувальний дрон Gerbera", "https://militarnyi.com/uk/news/uryad-vidpravyly-v-ukryttya-do-lytvy-zaletiv-rosijskyj-rozviduvalnyj-dron-gerbera", "2025-07-10"]
+    - [ua_independent, "Militarnyi", "Уряд відправили в укриття: до Литви залетів російський дрон “Гербера”", "https://militarnyi.com/uk/news/uryad-vidpravyly-v-ukryttya-do-lytvy-zaletiv-rosijskyj-rozviduvalnyj-dron-gerbera", "2025-07-10"]
 
 - date: 2025-07-28
   where: LT
@@ -530,7 +530,7 @@
   attribution: 3
   summary: A Russian Mi-8 helicopter entered Estonian airspace near Vaindloo without authorisation for about four minutes.
   src:
-    - [eu_gov_security, "Estonian Defence Forces", "Venemaa Föderatsiooni õhusõiduk rikkus Eesti õhupiiri", "https://mil.ee/uudised/venemaa-foderatsiooni-ohusoiduk-rikkus-eesti-ohupiiri/", "2025-09-08"]
+    - [eu_gov_security, "Estonian Defence Forces", "Venemaa Föderatsiooni õhusõiduk rikkus Eesti õhupiiri – Kaitsevägi", "https://mil.ee/uudised/venemaa-foderatsiooni-ohusoiduk-rikkus-eesti-ohupiiri/", "2025-09-08"]
 
 - date: 2025-09-08
   where: PL
@@ -552,7 +552,7 @@
   hours: 6
   summary: About 21 Russian drones, mostly Gerbera decoys, entered Poland overnight during an attack on Ukraine. Polish and Dutch jets shot down up to four, the first NATO shoot-downs of Russian drones. A house in Wyryki was damaged and four airports closed. No one was hurt.
   src:
-    - [intl_press, "AP", "NATO's first drone battle pits million-dollar jets against cheap drones", "https://apnews.com/article/poland-russia-drones-jamming-ukraine-incursion-nato-27b1aeed542604c91386df1fbe4463c7", "2025-09-11"]
+    - [intl_press, "AP", "NATO faces drone warfare threat as Russian attack drones breach Polish airspace", "https://apnews.com/article/poland-russia-drones-jamming-ukraine-incursion-nato-27b1aeed542604c91386df1fbe4463c7", "2025-09-11"]
     - [ua_independent, "European Pravda", "Poland finds wreckage of 10 Russian drones that flew into country last night", "https://www.eurointegration.com.ua/eng/news/2025/09/10/7219905/", "2025-09-10"]
 
 - date: 2025-09-13
@@ -564,7 +564,7 @@
   note: Romania's foreign minister summoned the Russian ambassador.
   summary: Romanian F-16s tracked a Russian drone over Tulcea County for about 50 minutes. The pilots had permission to fire but held off to avoid collateral damage before it crossed back into Ukraine.
   src:
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Evaluarea incidentului produs de pătrunderea unei drone rusești în spațiul aerian național", "https://www.mapn.ro/cpresa/18970_evaluarea-incidentului-produs-de-patrunderea-unei-drone-ruse%C8%99ti%C2%A0in-spa%C8%9Biul-aerian-na%C8%9Bional", "2025-09-14"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Evaluarea incidentului produs de patrunderea unei drone rusesti in spatiul aerian national", "https://www.mapn.ro/cpresa/18970_evaluarea-incidentului-produs-de-patrunderea-unei-drone-ruse%C8%99ti%C2%A0in-spa%C8%9Biul-aerian-na%C8%9Bional", "2025-09-14"]
 
 - date: 2025-09-19
   where: EE
@@ -655,7 +655,7 @@
   attribution: 3
   summary: A Russian Su-30 fighter and an Il-78 tanker from Kaliningrad entered Lithuanian airspace for about 18 seconds. Spanish Eurofighters on Baltic air policing were scrambled.
   src:
-    - [intl_press, "Euronews", "Two Russian aircraft briefly enter Lithuania's airspace, military says", "https://www.euronews.com/2025/10/23/two-russian-military-aircraft-enter-nato-member-lithuanias-airspace-military-says", "2025-10-23"]
+    - [intl_press, "Euronews", "Two Russian military aircraft enter NATO member Lithuania's airspace, military says", "https://www.euronews.com/2025/10/23/two-russian-military-aircraft-enter-nato-member-lithuanias-airspace-military-says", "2025-10-23"]
 
 - date: 2025-10-31
   where: DE
@@ -679,7 +679,7 @@
   summary: Brussels and Liège airports halted flights in the evening after drone sightings, diverting flights to Maastricht and Cologne, after nights of large drones over the Kleine Brogel air base. Belgium called a national security meeting.
   src:
     - [ua_independent, "Ukrainska Pravda", "Two airports in Belgium closed after reports of drones", "https://www.pravda.com.ua/eng/news/2025/11/04/8005872", "2025-11-04"]
-    - [intl_press, "Politico Europe", "Drones plague Belgium", "https://www.politico.eu/article/drones-plague-belgium-airports-crisis-skies-traffic/", "2025-11-07"]
+    - [intl_press, "Politico Europe", "Drones plague Belgium – POLITICO", "https://www.politico.eu/article/drones-plague-belgium-airports-crisis-skies-traffic/", "2025-11-07"]
 
 - date: 2025-11-06
   where: SE
@@ -710,7 +710,7 @@
   attribution: 3
   summary: A Russian drone flew 8 km into Romania, back into Ukraine, across Moldova's Gagauzia region and into Romania again near Oancea. Romanian and German jets were scrambled but lost it.
   src:
-    - [eu_regional_press, "Digi24", "O dronă a intrat în spațiul aerian al României: patru avioane militare au fost ridicate. Piloții au avut aprobarea de a doborî ținta(in Romanian)", "https://www.digi24.ro/stiri/actualitate/mapn-a-ridicat-doua-avioane-de-lupta-in-timpul-noptii-dupa-ce-o-drona-a-intrat-in-spatiul-aerian-national-a-fost-emis-mesaj-ro-alert-3509181", "2025-11-19"]
+    - [eu_regional_press, "Digi24", "O dronă a intrat în spațiul aerian al României: patru avioane militare au fost ridicate. Piloții au avut aprobarea de a doborî ținta", "https://www.digi24.ro/stiri/actualitate/mapn-a-ridicat-doua-avioane-de-lupta-in-timpul-noptii-dupa-ce-o-drona-a-intrat-in-spatiul-aerian-national-a-fost-emis-mesaj-ro-alert-3509181", "2025-11-19"]
 
 - date: 2025-11-22
   where: NL
@@ -721,7 +721,7 @@
   hours: 3
   summary: Dutch troops opened fire on drones over Volkel Air Base, which hosts US nuclear weapons, but recovered no wreckage. Nearby Eindhoven Airport halted traffic for several hours.
   src:
-    - [intl_press, "AP", "Dutch military opens fire at drones over Volkel Air Base", "https://apnews.com/article/netherlands-air-base-drones-volkel-3ed1cca6b65f463fee34c60b15565fe0", "2025-11-22"]
+    - [intl_press, "AP", "Dutch military fires at drones over Volkel Air Base, no wreckage found", "https://apnews.com/article/netherlands-air-base-drones-volkel-3ed1cca6b65f463fee34c60b15565fe0", "2025-11-22"]
     - [intl_press, "BBC News", "Mystery drones halt air traffic near Dutch city of Eindhoven", "https://www.bbc.com/news/articles/cewjlr0v02ro", "2025-11-22"]
 
 - date: 2025-11-25
@@ -743,8 +743,8 @@
   attribution: 3
   summary: A Russian drone flew about four hours across Galați and Vrancea, filmed over Tecuci, the deepest incursion into Romania so far, then crashed in a yard in Puiești, Vaslui County.
   src:
-    - [eu_regional_press, "HotNews", "O dronă rusească a fost urmărită mai multe ore în spațiul aerian al României după ce a traversat prin trei județe. Ultimul contact radar a fost în Vrancea", "https://hotnews.ro/tinte-aeriene-detectate-in-spatiul-aerian-al-romaniei-aeronave-de-lupta-au-fost-ridicate-de-la-sol-mesaj-ro-alert-pentru-populatia-din-galati-2115690", "2025-11-25"]
-    - [eu_regional_press, "HotNews", "Primele imagini cu drona căzută în curtea unui localnic din județul Vaslui", "https://hotnews.ro/video-primele-imagini-cu-drona-cazuta-in-curtea-unui-localnic-din-judetul-vaslui-mai-multe-echipaje-acum-la-fata-locului-2115955", "2025-11-25"]
+    - [eu_regional_press, "HotNews", "O dronă rusească s-a prăbușit în județul Vaslui, după ce a fost urmărită mai multe ore prin spațiul aerian al României, prin mai multe județe / De ce nu a fost doborâtă de avioanele de vânătoare. Expl", "https://hotnews.ro/tinte-aeriene-detectate-in-spatiul-aerian-al-romaniei-aeronave-de-lupta-au-fost-ridicate-de-la-sol-mesaj-ro-alert-pentru-populatia-din-galati-2115690", "2025-11-25"]
+    - [eu_regional_press, "HotNews", "VIDEO Primele imagini cu drona căzută în curtea unui localnic din județul Vaslui. „A auzit un vuiet și apoi o lovitură puternică în spatele casei” - HotNews.ro", "https://hotnews.ro/video-primele-imagini-cu-drona-cazuta-in-curtea-unui-localnic-din-judetul-vaslui-mai-multe-echipaje-acum-la-fata-locului-2115955", "2025-11-25"]
 
 - date: 2025-11-29
   where: LT
@@ -756,7 +756,7 @@
   hours: 11
   summary: Balloons from Belarus closed Vilnius Airport for 11 hours. Lithuania's deputy foreign minister called it a cynical hybrid attack on the economy and aviation security.
   src:
-    - [intl_press, "The Independent", "Balloons from Belarus force closure of European airport – again", "https://www.independent.co.uk/news/world/europe/belarus-balloon-airport-closure-lithuania-b2876583.html", "2025-12-02"]
+    - [intl_press, "The Independent", "Balloons from Belarus force closure of Lithuania’s airport – again", "https://www.independent.co.uk/news/world/europe/belarus-balloon-airport-closure-lithuania-b2876583.html", "2025-12-02"]
 
 - date: 2025-12-03
   where: LT
@@ -832,7 +832,7 @@
   attribution: 2
   summary: Fragments of a drone believed to be Russian washed ashore on the beach at Mamaia.
   src:
-    - [eu_regional_press, "Newsweek România", "Descoperire misterioasă pe plaja din Mamaia. Resturi de dronă aduse de apă", "https://newsweek.ro/actualitate/descoperire-misterioasa-pe-plaja-din-mamaia-resturi-de-drona-aduse-de-apa", "2026-02-10"]
+    - [eu_regional_press, "Newsweek România", "Descoperire misterioasă pe plaja din Mamaia. Resturi de dronă aduse de apă • Newsweek România", "https://newsweek.ro/actualitate/descoperire-misterioasa-pe-plaja-din-mamaia-resturi-de-drona-aduse-de-apa", "2026-02-10"]
 
 - date: 2026-02-25
   where: RO
@@ -842,7 +842,7 @@
   attribution: 3
   summary: A Russian drone flew about 20 minutes over the Danube Delta from Sfântu Gheorghe to Sulina, then out over Romania's exclusive economic zone. F-16s were scrambled and RO-Alert warned residents.
   src:
-    - [eu_regional_press, "Newsweek România", "O dronă rusească a intrat în spaţiul aerian al României", "https://newsweek.ro/actualitate/o-drona-ruseasca-intrat-spatiul-aerian-romaniei-doua-avioane-f-16-fost-ridicate-baza-fetesti", "2026-02-25"]
+    - [eu_regional_press, "Newsweek România", "O dronă rusească a intrat în spaţiul aerian al României. Două avioane F-16 au fost ridicate de la Baza Feteşti • Newsweek România", "https://newsweek.ro/actualitate/o-drona-ruseasca-intrat-spatiul-aerian-romaniei-doua-avioane-f-16-fost-ridicate-baza-fetesti", "2026-02-25"]
 
 - date: 2026-02-26
   where: SE
@@ -856,7 +856,7 @@
   summary: A Swedish Navy patrol boat jammed a drone launched from the Russian intelligence ship Zhigulevsk over the Öresund, about 11 km from the French carrier Charles de Gaulle in Malmö. Sweden called it a serious security alert.
   src:
     - [intl_press, "Le Monde (AFP)", "Swedish military jams drone near French aircraft carrier", "https://www.lemonde.fr/en/international/article/2026/02/26/swedish-military-jams-unknown-drone-near-france-s-top-aircraft-carrier_6750902_4.html", "2026-02-26"]
-    - [eu_regional_press, "Skånska Dagbladet", "Försvaret störde ut drönare: Sannolikt Ryssland", "https://www.skd.se/2026-02-26/forsvaret-storde-ut-misstankt-dronare/", "2026-02-26"]
+    - [eu_regional_press, "Skånska Dagbladet", "Försvaret störde ut drönare: Sannolikt Ryssland – Skånska Dagbladet", "https://www.skd.se/2026-02-26/forsvaret-storde-ut-misstankt-dronare/", "2026-02-26"]
 
 - date: 2026-02-26
   where: RO
@@ -876,7 +876,7 @@
   attribution: 3
   summary: A Russian drone was filmed flying low over the village of Pardina. Romanian F-16s and German Eurofighters were scrambled and RO-Alert was sent twice in Tulcea County.
   src:
-    - [eu_regional_press, "Digi24", "Două mesaje Ro-Alert în județul Tulcea din cauza unei drone. MApN a ridicat două avioane F-16 în aer: „Rămâneţi în interiorul casei”", "https://www.digi24.ro/stiri/actualitate/mesaj-ro-alert-in-judetul-tulcea-din-cauza-unei-drone-ramaneti-in-interiorul-casei-departe-de-geamuri-si-pereti-exteriori-3675021", "2026-03-13"]
+    - [eu_regional_press, "Digi24", "Două mesaje Ro-Alert în județul Tulcea din cauza unei drone. MApN a ridicat aeronave: „Rămâneţi în interiorul casei”", "https://www.digi24.ro/stiri/actualitate/mesaj-ro-alert-in-judetul-tulcea-din-cauza-unei-drone-ramaneti-in-interiorul-casei-departe-de-geamuri-si-pereti-exteriori-3675021", "2026-03-13"]
 
 - date: 2026-03-17
   where: MD
@@ -887,7 +887,7 @@
   note: Moldova summoned the Russian ambassador and handed over a protest note.
   summary: A Russian Geran-2 carrying explosives fell near the village of Tudora, close to the border with Ukraine.
   src:
-    - [ua_independent, "RBC-Ukraine", "Russian Shahed drone carrying explosives falls in Moldova: Footage", "https://newsukraine.rbc.ua/news/russian-shahed-drone-carrying-explosives-1773765871.html", "2026-03-17"]
+    - [ua_independent, "RBC-Ukraine", "Russian drone falls in Moldova – What Sandu and country’s MFA say", "https://newsukraine.rbc.ua/news/russian-shahed-drone-carrying-explosives-1773765871.html", "2026-03-17"]
 
 - date: 2026-03-18
   where: EE
@@ -932,7 +932,7 @@
   summary: During a massive Ukrainian drone attack on Ust-Luga, a drone from Russian airspace hit a chimney of the Auvere power plant in Estonia and another crashed in Latvia.
   src:
     - [intl_press, "France 24", "Estonia and Latvia say they were hit by drones as Ukraine unleashes massive attack on Russia", "https://www.france24.com/en/europe/20260325-estonia-and-latvia-say-they-were-hit-by-drones-as-ukraine-unleashes-massive-attack-on-russia", "2026-03-25"]
-    - [intl_press, "Defense News", "Ukrainian drones hit all three Baltic States − did Russia redirect them?", "https://www.defensenews.com/global/europe/2026/03/27/ukrainian-drones-hit-all-three-baltic-states-did-russia-redirect-them/", "2026-03-27"]
+    - [intl_press, "Defense News", "Ukrainian drones hit all three Baltic States − did Russia redirect them? - Defense News", "https://www.defensenews.com/global/europe/2026/03/27/ukrainian-drones-hit-all-three-baltic-states-did-russia-redirect-them/", "2026-03-27"]
 
 - date: 2026-03-26
   where: RO
@@ -1008,7 +1008,7 @@
   summary: Several drones entered Latvia from Russia; one hit an oil storage site in Rēzekne, setting it on fire and damaging four empty tanks, and another crashed. French jets were scrambled.
   src:
     - [intl_press, "Reuters", "Baltic nations seek more NATO defence as drone hits Latvian oil tanks", "https://www.reuters.com/world/two-drones-russia-crash-latvia-army-says-2026-05-07/", "2026-05-07"]
-    - [intl_press, "Euronews", "Two drones from Russia crash in Latvia, army says", "https://www.euronews.com/my-europe/2026/05/07/two-drones-from-russia-crash-in-latvia-with-one-causing-oil-depot-fire-army-says", "2026-05-07"]
+    - [intl_press, "Euronews", "Two drones from Russia crash in Latvia with one causing oil depot fire, army says", "https://www.euronews.com/my-europe/2026/05/07/two-drones-from-russia-crash-in-latvia-with-one-causing-oil-depot-fire-army-says", "2026-05-07"]
 
 - date: 2026-05-08
   where: PL
@@ -1029,7 +1029,7 @@
   note: Reports identified a Ukrainian Maya decoy drone that probably malfunctioned.
   summary: A drone crashed into the Black Sea port city of Samsun at dawn, damaging two buildings. No one was hurt.
   src:
-    - [eu_regional_press, "Türkiye Today", "Mystery drone hits Türkiye's Black Sea coastal city of Samsun at dawn", "https://www.turkiyetoday.com/nation/mystery-drone-hits-turkiyes-black-sea-coastal-city-of-samsun-at-dawn-3220055", "2026-05-16"]
+    - [eu_regional_press, "Türkiye Today", "Mystery drone hits Türkiye's Black Sea coastal city of Samsun at dawn - Türkiye Today", "https://www.turkiyetoday.com/nation/mystery-drone-hits-turkiyes-black-sea-coastal-city-of-samsun-at-dawn-3220055", "2026-05-16"]
 
 - date: 2026-05-17
   where: LT
@@ -1041,7 +1041,7 @@
   summary: A crashed drone carrying explosives was found in Utena District; the explosives were neutralised on site.
   src:
     - [intl_press, "Reuters", "Explosives found near suspected crashed Ukrainian drone in Lithuania, authorities say", "https://www.reuters.com/world/suspected-ukrainian-military-drone-was-found-crashed-lithuania-2026-05-17/", "2026-05-17"]
-    - [eu_regional_press, "Delfi EN", "Drone that crashed on Sunday confirmed as Ukrainian", "https://www.delfi.lt/en/politics/drone-that-crashed-on-sunday-confirmed-as-ukrainian-120253386", "2026-05-21"]
+    - [eu_regional_press, "Delfi EN", "Drone that crashed on Sunday confirmed as Ukrainian - Delfi EN", "https://www.delfi.lt/en/politics/drone-that-crashed-on-sunday-confirmed-as-ukrainian-120253386", "2026-05-21"]
 
 - date: 2026-05-19
   where: EE
@@ -1053,7 +1053,7 @@
   summary: A Romanian F-16 on Baltic air policing shot down a Ukrainian drone that had entered south-eastern Estonia from Russia, the first NATO shoot-down over Estonia.
   src:
     - [intl_press, "Reuters", "Estonia says NATO shoots down suspected Ukrainian drone", "https://www.reuters.com/business/aerospace-defense/nato-jet-shoots-down-drone-estonia-news-website-delfi-reports-2026-05-19/", "2026-05-19"]
-    - [eu_regional_press, "ERR News", "Intruding drone shot down by Romanian fighter jet in Estonia; alert over", "https://news.err.ee/1610027866/intruding-drone-shot-down-by-romanian-fighter-jet-in-estonia-alert-over", "2026-05-19"]
+    - [eu_regional_press, "ERR News", "Intruding drone shot down by Romanian fighter jet in Estonia", "https://news.err.ee/1610027866/intruding-drone-shot-down-by-romanian-fighter-jet-in-estonia-alert-over", "2026-05-19"]
 
 - date: 2026-05-20
   where: LT
@@ -1107,7 +1107,7 @@
   note: Romanian experts confirmed a Geran-2 from Cyrillic markings; Romania closed Russia's consulate in Constanța.
   summary: A Russian Geran-2 hit the roof of an apartment block in Galați and exploded, destroying a flat, damaging others and five cars. A woman and her son were injured. Romania called it a grave escalation.
   src:
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă", "https://www.mapn.ro/cpresa/19271_informa%C8%9Bie-de-presa", "2026-05-29"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informatie de presa", "https://www.mapn.ro/cpresa/19271_informa%C8%9Bie-de-presa", "2026-05-29"]
     - [eu_regional_press, "Digi24", "Alertă majoră. O dronă rusească a lovit un bloc din Galați: sunt 2 răniți. A fost încheiată cercetarea la fața locului", "https://www.digi24.ro/stiri/o-drona-s-a-prabusit-pe-un-bloc-din-galati-doua-persoane-au-fost-ranite-usor-precizarile-mapn-3790645", "2026-05-30"]
 
 - date: 2026-06-03
@@ -1151,7 +1151,7 @@
   attribution: 3
   summary: Moldova's defence ministry said a Russian Geran-2 entered Moldovan airspace and crashed and exploded in Copanca, about 25 km from the Ukrainian border.
   src:
-    - [think_tank, "Institute for the Study of War", "Russian drone struck Copanca, Moldova", "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-13-2026/", "2026-07-13"]
+    - [think_tank, "Institute for the Study of War", "Russian Offensive Campaign Assessment, July 13, 2026", "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-july-13-2026/", "2026-07-13"]
 
 - date: 2026-07-24
   where: RO
@@ -1186,7 +1186,7 @@
   summary: A Romanian F-16 shot down a third drone in three days over territorial waters off Sulina, five minutes after it entered Romanian airspace.
   src:
     - [intl_press, "The Guardian", "Romania summons Russia’s ambassador after downing third drone since Friday", "https://www.theguardian.com/world/2026/jul/26/romania-summons-russia-ambassador-third-drone-shot-down", "2026-07-26"]
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Dronă doborâtă de o aeronavă F-16 Fighting Falcon a Forțelor Aeriene Române", "https://www.mapn.ro/cpresa/19324_drona-doborata-de-o-aeronava-f-16-fighting-falcon-a-fortelor-aeriene-romane", "2026-07-26"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Drona doborata de o aeronava F-16 Fighting Falcon a Fortelor Aeriene Romane", "https://www.mapn.ro/cpresa/19324_drona-doborata-de-o-aeronava-f-16-fighting-falcon-a-fortelor-aeriene-romane", "2026-07-26"]
 
 - date: 2026-07-27
   where: RO
@@ -1207,7 +1207,7 @@
   note: Polish authorities identified a Russian Kh-101 with a significant explosive charge.
   summary: A Russian cruise missile crossed into Poland and exploded in a field near Tarnawa-Kolonia, about 100 km from the Ukrainian border, leaving a 10-metre crater. An F-16 failed to intercept it; sirens sounded across Lublin Voivodeship.
   src:
-    - [intl_press, "BBC News", "Missile that left crater deep inside Poland was probably Russian - Polish PM", "https://www.bbc.com/news/articles/cwymkgenv2ro", "2026-07-30"]
+    - [intl_press, "BBC News", "Missile that left crater deep inside Poland was probably Russian - Polish PM Tusk", "https://www.bbc.com/news/articles/cwymkgenv2ro", "2026-07-30"]
     - [eu_regional_press, "TVP World", "Missile that crashed in Poland had 'significant' amount of explosive", "https://tvpworld.com/94610181/significant-explosives-on-russian-missile-that-hit-poland", null]
 
 - date: 2026-08-02
@@ -1218,7 +1218,7 @@
   attribution: 3
   summary: A drone flew over Romania's territorial waters and along the Sulina branch of the Danube for about 20 minutes before Ukrainian forces shot it down; debris fell in a field near Periprava.
   src:
-    - [eu_regional_press, "HotNews", "Alertă aeriană la graniță, au fost ridicate două F-16 / Drona a fost doborâtă de ucraineni, resturi au picat și pe un câmp din țară", "https://hotnews.ro/o-noua-alerta-de-drone-in-judetul-tulcea-doua-aeronave-f-16-au-fost-trimise-in-misiune-2315367", "2026-08-02"]
+    - [eu_regional_press, "HotNews", "Alertă aeriană la graniță, au fost ridicate două F-16 / Drona a fost doborâtă de ucraineni, resturi au picat și pe un câmp din țară - HotNews.ro", "https://hotnews.ro/o-noua-alerta-de-drone-in-judetul-tulcea-doua-aeronave-f-16-au-fost-trimise-in-misiune-2315367", "2026-08-02"]
 
 - date: 2026-08-08
   where: BG
@@ -1230,7 +1230,7 @@
   note: Preliminary analysis pointed to a Ukrainian Maya decoy; Ukraine denied targeting Bulgaria.
   summary: A drone crossed from Romania and exploded in a sunflower field 100 metres inside Bulgaria, near compressor stations of the Trans-Balkan gas pipeline in both countries. Neither country's radar saw it. No damage.
   src:
-    - [intl_press, "AP", "Bulgaria's PM says drone explodes near gas pipeline close to Romanian border", "https://apnews.com/article/bulgaria-romania-drone-explosion-gas-pipeline-427dcc0875f5e416dadfee0c022f1cb4", "2026-08-08"]
+    - [intl_press, "AP", "Drone explodes in Bulgaria near a gas pipeline close to Romanian border", "https://apnews.com/article/bulgaria-romania-drone-explosion-gas-pipeline-427dcc0875f5e416dadfee0c022f1cb4", "2026-08-08"]
     - [ua_independent, "Ukrainska Pravda", "Bulgaria's Defence Ministry on explosion near gas pipeline: likely caused by Ukrainian drone", "https://www.pravda.com.ua/eng/news/2026/08/08/8047910/", "2026-08-08"]
 
 - date: 2026-08-09
@@ -1243,7 +1243,7 @@
   summary: A Russian missile-drone crashed and exploded near Crocmaz, breaking windows in nearby houses and starting a vegetation fire.
   src:
     - [eu_regional_press, "DefenseRomania", "Explozie provocată de o dronă căzută la Crocmaz, în raionul Ștefan Vodă din Republica Moldova", "https://www.defenseromania.ro/explozie-provocata-de-o-drona-cazuta-la-crocmaz-in-raionul-stefan-voda-din-republica-moldova_648210.html", "2026-08-09"]
-    - [eu_regional_press, "TV8", "Drona-rachetă S8000 \"Banderol\" ar fi căzut la Ștefan Vodă: \"Mult mai periculoasă decât un Shahed\"", "https://tv8.md/2026/08/10/infografic-drona-racheta-s-8000-banderol-ar-fi-cazut-la-stefan-voda-mult-mai-periculoasa-decat-un-shahed/307170", "2026-08-10"]
+    - [eu_regional_press, "TV8", "Drona-rachetă S8000 „Banderol” ar fi căzut la Ștefan Vodă: „Mult mai periculoasă decât un Shahed”", "https://tv8.md/2026/08/10/infografic-drona-racheta-s-8000-banderol-ar-fi-cazut-la-stefan-voda-mult-mai-periculoasa-decat-un-shahed/307170", "2026-08-10"]
 
 - date: 2026-08-10
   where: MD
@@ -1264,7 +1264,7 @@
   note: Authorities suspected a link to Russian drones sighted in Germany the week before.
   summary: An unidentified drone that could be neither tracked nor jammed appeared at Hanover Airport, which was closed for a time, delaying flights.
   src:
-    - [eu_regional_press, "NDR", "Drohnnsichtung: Flughafen Hannover zeitweise gesperrt", "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/drohnensichtung-flughafen-hannover-gesperrt,drohnensichtung-104.html", "2026-08-11"]
+    - [eu_regional_press, "NDR", "Drohnensichtung: Flughafen Hannover zeitweise gesperrt", "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/drohnensichtung-flughafen-hannover-gesperrt,drohnensichtung-104.html", "2026-08-11"]
 
 - date: 2026-08-11
   where: RO
@@ -1285,7 +1285,7 @@
   attribution: 3
   summary: Three Russian drones violated Romanian airspace within twelve hours, for ten, two and twelve minutes. Romanian F-16s and Spanish F-18s were scrambled; none crashed.
   src:
-    - [eu_regional_press, "HotNews", "O nouă alertă la granița României: O dronă a intrat 10 minute în țară, apoi s-au auzit explozii în Ucraina. Avioane F-16 ridicate", "https://hotnews.ro/cinci-tinte-monitorizate-de-radarele-armatei-o-drona-a-patruns-10-minute-in-romania-avioane-f-16-ridicate-de-urgenta-ro-alert-in-tulcea-2323529", "2026-08-13"]
+    - [eu_regional_press, "HotNews", "O nouă alertă la granița României: O dronă a intrat 10 minute în țară, apoi s-au auzit explozii în Ucraina. Avioane F-16 ridicate - HotNews.ro", "https://hotnews.ro/cinci-tinte-monitorizate-de-radarele-armatei-o-drona-a-patruns-10-minute-in-romania-avioane-f-16-ridicate-de-urgenta-ro-alert-in-tulcea-2323529", "2026-08-13"]
 
 - date: 2026-08-14
   where: LV
@@ -1307,7 +1307,7 @@
   attribution: 3
   summary: A Russian drone flying too low for radar crashed and exploded in a field near Luncavița, starting a vegetation fire. Debris of another drone was found the same day at Plauru.
   src:
-    - [eu_regional_press, "HotNews", "Dronă prăbuşită în localitatea Luncaviţa, județul Tulcea. Explozie urmată de incendiu. De ce n-au detectat-o radarele MApN / Reacția lui Bolojan", "https://hotnews.ro/drona-prabusita-in-localitatea-luncavita-judetul-tulcea-explozie-urmata-de-un-incendiu-de-ce-n-au-detectat-o-radarele-mapn-2324527", "2026-08-14"]
+    - [eu_regional_press, "HotNews", "Dronă prăbuşită în localitatea Luncaviţa, județul Tulcea. Explozie urmată de incendiu. De ce n-au detectat-o radarele MApN / Reacția lui Bolojan - HotNews.ro", "https://hotnews.ro/drona-prabusita-in-localitatea-luncavita-judetul-tulcea-explozie-urmata-de-un-incendiu-de-ce-n-au-detectat-o-radarele-mapn-2324527", "2026-08-14"]
 
 - date: 2026-08-16
   where: RO
@@ -1318,7 +1318,7 @@
   attribution: 3
   summary: A Russian Geran-2 crossed Moldova from Etulia to Slobozia Mare and entered Romania north of Galați, where a Spanish F-18 shot it down.
   src:
-    - [eu_regional_press, "Antena 3", "O dronă a fost doborâtă în spațiul aerian al României de un F-18 spaniol, lângă Galați. Primele imagini cu resturile dronei", "https://www.antena3.ro/actualitate/o-drona-care-a-intrat-in-spatiul-aerian-al-romaniei-a-fost-doborata-de-un-avion-nato-in-apropiere-de-galati-799614.html", "2026-08-16"]
+    - [eu_regional_press, "Antena 3", "NATO publică imagini cu drona de la Galați văzută prin sistemul de ochire al avionului F-18. Purtător de cuvânt: „Pare să fie rusească”", "https://www.antena3.ro/actualitate/o-drona-care-a-intrat-in-spatiul-aerian-al-romaniei-a-fost-doborata-de-un-avion-nato-in-apropiere-de-galati-799614.html", "2026-08-16"]
     - [eu_regional_press, "Veridica", "Drona rusească, care a survolat în această dimineață spațiul aerian al R. Moldova, a fost doborâtă în România", "https://www.veridica.md/stiri/drona-ruseasca-care-a-survolat-in-aceasta-dimineata-spatiul-aerian-al-r-moldova-a-fost-doborata-in-romania", "2026-08-16"]
 
 - date: 2026-08-17
@@ -1341,7 +1341,7 @@
   attribution: 3
   summary: A drone entered Romanian airspace during a night attack and crashed in a field near Grindu. Its remains posed no explosive risk and were taken by border police.
   src:
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă", "https://www.mapn.ro/cpresa/19358_informa%C8%9Bie-de-presa", "2026-08-20"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informatie de presa", "https://www.mapn.ro/cpresa/19358_informa%C8%9Bie-de-presa", "2026-08-20"]
 
 - date: 2026-08-20
   where: MD
@@ -1363,7 +1363,7 @@
   note: Finland summoned the Russian ambassador.
   summary: A Russian Il-20M reconnaissance aircraft flew about three minutes in Finnish airspace south of Utö, coming within about 4.7 nautical miles of the coast.
   src:
-    - [eu_regional_press, "Milmag", "Rosyjski samolot Ił-20M naruszył przestrzeń powietrzną Finlandii", "https://milmag.pl/rosyjski-samolot-il-20m-naruszyl-przestrzen-powietrzna-finlandii/", "2026-08-21"]
+    - [eu_regional_press, "Milmag", "Rosyjski samolot Ił-20M naruszył przestrzeń powietrzną Finlandii – MILMAG", "https://milmag.pl/rosyjski-samolot-il-20m-naruszyl-przestrzen-powietrzna-finlandii/", "2026-08-21"]
 
 - date: 2026-08-22
   where: MD
@@ -1373,7 +1373,7 @@
   attribution: 3
   summary: A drone identified as a Geran-3 entered Moldova from Odesa Oblast at 04:07, flew toward Căplani and left 17 minutes later.
   src:
-    - [eu_regional_press, "Moldpres", "Dronă de tip Shahed, detectată în spațiul aerian al Republicii Moldova", "https://www.moldpres.md/rom/societate/drona-de-tip-shahed-depistata-in-spatiul-aerian-al-republicii-moldova", "2026-08-22"]
+    - [eu_regional_press, "Moldpres", "Dronă de tip Shahed, detectată în această dimineaţă în spațiul aerian al Republicii Moldova", "https://www.moldpres.md/rom/societate/drona-de-tip-shahed-depistata-in-spatiul-aerian-al-republicii-moldova", "2026-08-22"]
 
 - date: 2026-08-23
   where: RO
@@ -1384,7 +1384,7 @@
   attribution: 3
   summary: Romanian navy divers neutralised a floating fragment of a Gerbera drone containing explosives off Gura Portiței.
   src:
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă", "https://www.mapn.ro/cpresa/19369_informa%C8%9Bie-de-presa", "2026-08-23"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informatie de presa", "https://www.mapn.ro/cpresa/19369_informa%C8%9Bie-de-presa", "2026-08-23"]
 
 - date: 2026-08-24
   where: RO
@@ -1395,7 +1395,7 @@
   attribution: 3
   summary: A drone with no explosives, probably the one seen over Moldova, crashed into a walnut tree a few metres from a house in Ciușlea. Villagers found it by the smell of fuel.
   src:
-    - [eu_regional_press, "Forbes România", "Dronă rusească, prăbușită în Vrancea, la doar cinci metri de o locuință. MApN: Nu avea explozibil", "https://www.forbes.ro/drona-ruseasca-prabusita-in-vrancea-la-doar-cinci-metri-de-o-locuinta-mapn-nu-avea-explozibil-517872", "2026-08-24"]
+    - [eu_regional_press, "Forbes România", "Dronă rusească, prăbușită în Vrancea, la doar cinci metri de o locuință. MApN: Nu avea explozibil - Forbes.ro", "https://www.forbes.ro/drona-ruseasca-prabusita-in-vrancea-la-doar-cinci-metri-de-o-locuinta-mapn-nu-avea-explozibil-517872", "2026-08-24"]
 
 - date: 2026-08-27
   where: MD
@@ -1405,7 +1405,7 @@
   attribution: 3
   summary: Up to five Russian drones entered Moldova on its independence day, hours before Romania's and Ukraine's presidents attended the parade in Chișinău. One crashed near the capital.
   src:
-    - [eu_regional_press, "Digi24", "O dronă a căzut lângă Chișinău, în ziua în care Rep. Moldova marchează 35 de ani de independență: „O încălcare gravă a suveranității”", "https://www.digi24.ro/stiri/externe/moldova/o-drona-a-cazut-langa-chisinau-in-ziua-in-care-rep-moldova-marcheaza-35-de-ani-de-independenta-o-incalcare-grava-a-suveranitatii-3923701", "2026-08-27"]
+    - [eu_regional_press, "Digi24", "O dronă a căzut lângă Chișinău, în ziua în care Rep. Moldova marchează 35 de ani de independență. Mesajul Maiei Sandu", "https://www.digi24.ro/stiri/externe/moldova/o-drona-a-cazut-langa-chisinau-in-ziua-in-care-rep-moldova-marcheaza-35-de-ani-de-independenta-o-incalcare-grava-a-suveranitatii-3923701", "2026-08-27"]
 
 - date: 2026-08-30
   where: MD
@@ -1449,7 +1449,7 @@
   attribution: 3
   summary: A drone that had crossed northern Moldova entered north-east Romania and crashed in a cornfield near Botoșanița Mare. No casualties.
   src:
-    - [eu_regional_press, "Informat.ro", "Romania's Ministry of National Defence confirms a drone crashed in Suceava after an alert was sent to residents of Botoșani", "https://informat.ro/en/current-affairs/drone-crashes-in-a-cornfield-in-suceava-after-ro-alert-warning-138506", "2026-09-12"]
+    - [eu_regional_press, "Informat.ro", "Romania’s Ministry of National Defence confirms a drone crashed in Suceava after an alert was sent to residents of Botoșani", "https://informat.ro/en/current-affairs/drone-crashes-in-a-cornfield-in-suceava-after-ro-alert-warning-138506", "2026-09-12"]
 
 - date: 2026-09-14
   where: LT
@@ -1461,7 +1461,7 @@
   summary: A drone that entered Lithuania from Belarus was shot down by an Italian Typhoon from Šiauliai over Pratkūnai, between Vilnius and Kaunas.
   src:
     - [intl_press, "Reuters", "NATO fighter shoots down drone in Lithuania", "https://www.reuters.com/business/aerospace-defense/nato-fighter-shoots-down-drone-lithuania-2026-09-14/", "2026-09-14"]
-    - [ru_by_independent, "The Moscow Times", "Drone Downed in Lithuania Was Russian and Likely Aimed at Ukraine, President Nausėda Says", "https://www.themoscowtimes.com/2026/09/16/drone-downed-in-lithuania-was-russian-and-likely-aimed-at-ukraine-president-nausda-says-a93725", "2026-09-16"]
+    - [ru_by_independent, "The Moscow Times", "Drone Downed in Lithuania Was Russian and Likely Aimed at Ukraine, President Nausėda Says - The Moscow Times", "https://www.themoscowtimes.com/2026/09/16/drone-downed-in-lithuania-was-russian-and-likely-aimed-at-ukraine-president-nausda-says-a93725", "2026-09-16"]
 
 - date: 2026-09-17
   where: MD
@@ -1501,7 +1501,7 @@
   attribution: 3
   summary: At least four Russian drones entered Moldova from Ukraine in the morning; explosions were reported in Florești and Șoldănești districts and northern airspace was closed.
   src:
-    - [ua_independent, "LIGA.net", "Explosions were heard in Moldova. The Ministry of Defense reported four drones over the country", "https://news.liga.net/en/war/news/explosions-were-heard-in-moldova-the-ministry-of-defense-reported-four-drones-over-the-country", "2026-09-24"]
+    - [ua_independent, "LIGA.net", "Drones in Moldova – The Ministry of Defense reported four unmanned aerial vehicles over the country", "https://news.liga.net/en/war/news/explosions-were-heard-in-moldova-the-ministry-of-defense-reported-four-drones-over-the-country", "2026-09-24"]
 
 - date: 2026-09-24
   where: RO
@@ -1606,7 +1606,7 @@
   attribution: 3
   summary: Romanian F-16s shot down two jet-powered Geran drones over Romania's territorial waters minutes after they entered its airspace from the area of Snake Island.
   src:
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă – UPDATE", "https://www.mapn.ro/cpresa/19446_informa%C8%9Bie-de-presa-%E2%80%93-update", "2026-10-17"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informatie de presa – UPDATE", "https://www.mapn.ro/cpresa/19446_informa%C8%9Bie-de-presa-%E2%80%93-update", "2026-10-17"]
     - [eu_regional_press, "Capital", "România a doborât două drone care au intrat în spațiul aerian național. Avioanele F-16 au intervenit deasupra Mării Negre", "https://www.capital.ro/romania-a-doborat-doua-drone-care-au-intrat-in-spatiul-aerian-national-avioanele-f-16-au-intervenit-deasupra-marii-negre.html", "2026-10-17"]
 
 - date: 2026-10-18
@@ -1640,5 +1640,5 @@
   attribution: 3
   summary: Two drones crossed northern Moldova into north-east Romania during a Russian attack. Four F-16s and a helicopter were scrambled, Iași airport closed and flights were diverted; one drone vanished from radar between Vaslui and Bacău.
   src:
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Comunicat de presă", "https://www.mapn.ro/cpresa/19461_comunicat-de-presa", "2026-10-31"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Comunicat de presa", "https://www.mapn.ro/cpresa/19461_comunicat-de-presa", "2026-10-31"]
     - [eu_regional_press, "Antena 3", "Alertă de drone în 6 județe. Aeroportul din Iași a fost închis. Două avioane au fost deviate. Armata a ridicat F-16", "https://www.antena3.ro/actualitate/a-fost-emis-ro-alert-la-iasi-pentru-alarma-aeriana-o-drona-a-patruns-in-r-moldova-iar-spatiul-aerian-a-fost-inchis-in-nord-si-centru-809445.html", "2026-10-31"]

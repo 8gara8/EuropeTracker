@@ -24,7 +24,7 @@
   verification: 1
   summary: Ukraine's defence forces said they destroyed a Ka-52 and an Mi-28 and damaged an Mi-8 at Sochi airport.
   src:
-    - [ua_independent, "Militarnyi", "Ukraine's Defense Forces Destroy Ka-52 and Mi-28 and Hit Mi-8 in Sochi", "https://militarnyi.com/en/news/ukraine-s-defense-forces-destroy-ka-52-and-mi-28-and-hit-mi-8-in-sochi/", "2026-09-06"]
+    - [ua_independent, "Militarnyi", "Ukraine’s Defense Forces Destroy Ka-52 and Mi-28 and Hit Mi-8 in Sochi", "https://militarnyi.com/en/news/ukraine-s-defense-forces-destroy-ka-52-and-mi-28-and-hit-mi-8-in-sochi/", "2026-09-06"]
 
 - date: 2026-09-06
   target: Ryazan oil refinery
@@ -34,7 +34,7 @@
   verification: 1
   summary: Ukrainian drones set the Ryazan refinery ablaze; explosions and air defence fire were also reported in Bataysk.
   src:
-    - [ua_independent, "The Kyiv Independent", "Ukrainian drones reportedly target Ryazan oil refinery, cities across Russia", "https://kyivindependent.com/ukrainian-drones-reportedly-target-ryazan-oil-refinery-cities-across-russia/", "2026-09-06"]
+    - [ua_independent, "The Kyiv Independent", "Ukrainian drones strike Russia's Ryazan oil refinery, Rostov air defenses", "https://kyivindependent.com/ukrainian-drones-reportedly-target-ryazan-oil-refinery-cities-across-russia/", "2026-09-06"]
 
 - date: 2026-09-07
   target: Oil refinery in Perm Krai
@@ -85,7 +85,7 @@
   summary: Ukrainian drones hit the Novorossiysk naval base and set fire to the port's fuel oil terminal; Russian officials said four people were killed.
   src:
     - [ua_independent, "The Kyiv Independent", "Ukrainian drones strike naval base, oil terminal in Russia's Novorossiysk, General Staff says", "https://kyivindependent.com/ukrainian-drones-reportedly-strike-oil-terminal-in-russias-novorossiysk/", "2026-09-09"]
-    - [ru_by_independent, "The Moscow Times", "4 Killed in Ukrainian Attack on Novorossiysk", "https://www.themoscowtimes.com/2026/09/09/4-killed-in-ukrainian-attack-on-novorossiysk-a93664", "2026-09-09"]
+    - [ru_by_independent, "The Moscow Times", "4 Killed in Ukrainian Attack on Novorossiysk - The Moscow Times", "https://www.themoscowtimes.com/2026/09/09/4-killed-in-ukrainian-attack-on-novorossiysk-a93664", "2026-09-09"]
 
 - date: 2026-09-09
   target: Frigate Admiral Essen, Novorossiysk
@@ -96,7 +96,7 @@
   verification: 1
   summary: Ukraine's military intelligence said a Neptune missile hit the Kalibr-carrying frigate Admiral Essen in Novorossiysk, starting a fire in its superstructure.
   src:
-    - [ua_independent, "The New Voice of Ukraine", "Ukraine's military intelligence strikes Admiral Essen missile carrier at Novorossiysk naval base", "https://english.nv.ua/amp/ukraine-strikes-russian-missile-carrier-admiral-essen-in-novorossiysk-50640118.html", "2026-09-10"]
+    - [ua_independent, "The New Voice of Ukraine", "Ukraine strikes Russian missile carrier Admiral Essen in Novorossiysk", "https://english.nv.ua/amp/ukraine-strikes-russian-missile-carrier-admiral-essen-in-novorossiysk-50640118.html", "2026-09-10"]
 
 - date: 2026-09-09
   target: Anapa airfield
@@ -151,7 +151,7 @@
   verification: 1
   summary: Ukrainian drones attacked a strategic chemical plant in Tolyatti, as well as an airfield and an automobile plant in Taganrog.
   src:
-    - [ua_independent, "RBC-Ukraine", "Drones strike chemical plant in Tolyatti and airfield in Taganrog", "https://newsukraine.rbc.ua/news/drones-strike-chemical-plant-in-tolyatti-1789190407.html", "2026-09-12"]
+    - [ua_independent, "RBC-Ukraine", "Drones strike Tolyatti and Taganrog - Chemical plant and airfield hit", "https://newsukraine.rbc.ua/news/drones-strike-chemical-plant-in-tolyatti-1789190407.html", "2026-09-12"]
 
 - date: 2026-09-13
   target: TANECO refinery, Nizhnekamsk
@@ -202,7 +202,7 @@
   verification: 1
   summary: Ukraine's defence forces said they struck two S-400 air defence launchers in Bryansk Oblast.
   src:
-    - [ua_independent, "UNN", "Ukraine's Defense Forces struck two launchers of the S-400 air defense system on the territory of the Russian Federation", "https://unn.ua/en/news/ukraines-defense-forces-struck-two-launchers-of-the-s-400-air-defense-system-on-the-territory-of-the-russian-federation", "2026-09-17"]
+    - [ua_independent, "UNN", "Ukraine’s Defense Forces struck two launchers of the S-400 air defense system on the territory of the Russian Federation", "https://unn.ua/en/news/ukraines-defense-forces-struck-two-launchers-of-the-s-400-air-defense-system-on-the-territory-of-the-russian-federation", "2026-09-17"]
 
 - date: 2026-09-17
   target: Saky air base
@@ -223,7 +223,7 @@
   verification: 1
   summary: Drones hit six Russian aircraft at a Rostov airfield, Zelensky said; satellite images published by Ukrainian media showed two Mi-8s, an An-12 and an An-26 destroyed.
   src:
-    - [eu_regional_press, "TVP World", "Ukraine hits six Russian military aircraft in 'precise' drone strike, Zelenskyy says", "https://tvpworld.com/95437504/ukraine-hit-six-russian-aircraft-in-precise-strike-on-rostov-airfield-zelenskyy", "2026-09-17"]
+    - [eu_regional_press, "TVP World", "Ukraine hits six Russian military aircraft in ‘precise’ airfield strike", "https://tvpworld.com/95437504/ukraine-hit-six-russian-aircraft-in-precise-strike-on-rostov-airfield-zelenskyy", "2026-09-17"]
     - [ua_independent, "Militarnyi", "Satellite Images Confirm Destruction of Mi-8 Helicopters and An-12 and An-26 Aircraft in Rostov", "https://militarnyi.com/en/news/satellite-mi-8-an-12-an-26-destroyed-rostov/", "2026-09-17"]
 
 - date: 2026-09-20
@@ -234,7 +234,7 @@
   verification: 1
   summary: In an attack of about 1,000 drones and FP-5 and FP-7 missiles, the Moscow refinery caught fire. Russia claimed 249 drones downed over Moscow; debris killed two people in the region.
   src:
-    - [ua_independent, "The Kyiv Independent", "Russia reports deadly mass drone attack on Moscow region, oil refinery amid parliamentary election", "https://kyivindependent.com/russia-says-dozens-of-ukrainian-drones-targeted-moscow-as-broader-attack-hit-multiple-regions/", "2026-09-20"]
+    - [ua_independent, "The Kyiv Independent", "Moscow Oil Refinery ablaze after 'largest-ever' Ukraine missile, drone blitz on Russian capital", "https://kyivindependent.com/russia-says-dozens-of-ukrainian-drones-targeted-moscow-as-broader-attack-hit-multiple-regions/", "2026-09-20"]
 
 - date: 2026-09-25
   target: Lukoil refinery, Perm
@@ -244,7 +244,7 @@
   verification: 1
   summary: Ukrainian drones struck the Lukoil refinery in Perm, one of Russia's largest.
   src:
-    - [ua_independent, "Militarnyi", "Ukrainian Drones Attack One of Russia's Largest Oil Refineries in Perm", "https://militarnyi.com/en/news/ukrainian-drones-attack-one-of-russia-s-largest-oil-refineries-in-perm/", "2026-09-25"]
+    - [ua_independent, "Militarnyi", "Ukrainian Drones Attack One of Russia’s Largest Oil Refineries in Perm", "https://militarnyi.com/en/news/ukrainian-drones-attack-one-of-russia-s-largest-oil-refineries-in-perm/", "2026-09-25"]
 
 - date: 2026-09-25
   target: Novoshakhtinsk oil refinery
@@ -254,7 +254,7 @@
   verification: 1
   summary: A drone attack halted operations at the Novoshakhtinsk refinery, Ukrainian media reported; Russia said 50 drones were shot down in the region.
   src:
-    - [ua_independent, "Militarnyi", "Drone Attack Halts Operations at Russia's Novoshakhtinsk Oil Refinery", "https://militarnyi.com/en/news/drone-attack-halts-operations-at-russia-s-novoshakhtinsk-oil-refinery/", "2026-09-25"]
+    - [ua_independent, "Militarnyi", "Drone Attack Halts Operations at Russia’s Novoshakhtinsk Oil Refinery", "https://militarnyi.com/en/news/drone-attack-halts-operations-at-russia-s-novoshakhtinsk-oil-refinery/", "2026-09-25"]
 
 - date: 2026-09-25
   target: Iskra electronics plant, Ulyanovsk
@@ -264,7 +264,7 @@
   verification: 1
   summary: Ukrainian forces struck the Iskra electronics plant in Ulyanovsk and damaged a synthetic rubber factory in Voronezh.
   src:
-    - [ua_independent, "The Kyiv Independent", "Ukrainian forces reportedly strike oil refinery 1,500 kilometers from border, Russian electronics factory", "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-refinery-1-500-kilometers-from-border-russian-electronics-factory/", "2026-09-25"]
+    - [ua_independent, "The Kyiv Independent", "Ukraine strikes Russian oil refineries, missile production facilities, General Staff confirms", "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-refinery-1-500-kilometers-from-border-russian-electronics-factory/", "2026-09-25"]
 
 - date: 2026-09-26
   target: Ilsky oil refinery
@@ -284,7 +284,7 @@
   verification: 1
   summary: Ukrainian drones struck oil facilities in Volgograd and Samara regions, starting fires at both.
   src:
-    - [ua_independent, "The Kyiv Independent", "Ukrainian forces reportedly strike oil facilities in Russia's Volgograd, Samara regions", "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-facilities-in-russias-volgograd-samara-regions/", "2026-10-02"]
+    - [ua_independent, "The Kyiv Independent", "Ukrainian forces strike oil facilities in Russia's Volgograd, Samara regions, General Staff says", "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-facilities-in-russias-volgograd-samara-regions/", "2026-10-02"]
 
 - date: 2026-10-02
   target: Oil refinery in Samara region
@@ -294,7 +294,7 @@
   verification: 1
   summary: A Samara-region refinery caught fire in the same night's Ukrainian drone strikes as Volgograd.
   src:
-    - [ua_independent, "The Kyiv Independent", "Ukrainian forces reportedly strike oil facilities in Russia's Volgograd, Samara regions", "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-facilities-in-russias-volgograd-samara-regions/", "2026-10-02"]
+    - [ua_independent, "The Kyiv Independent", "Ukrainian forces strike oil facilities in Russia's Volgograd, Samara regions, General Staff says", "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-facilities-in-russias-volgograd-samara-regions/", "2026-10-02"]
 
 - date: 2026-10-04
   target: Khanskaya air base
@@ -317,7 +317,7 @@
   verification: 1
   summary: FP-1 drones attacked the Omsk refinery, Russia's largest, about 2,500 km from occupied Ukraine; video showed explosions and fire.
   src:
-    - [ua_independent, "The Kyiv Independent", "Drones reportedly strike Russia's Omsk oil refinery in Siberia", "https://kyivindependent.com/drones-reportedly-strike-russias-omsk-oil-refinery-in-siberia/", "2026-10-08"]
+    - [ua_independent, "The Kyiv Independent", "Ukraine strikes Russia's Omsk oil refinery in Siberia, General Staff confirms", "https://kyivindependent.com/drones-reportedly-strike-russias-omsk-oil-refinery-in-siberia/", "2026-10-08"]
 
 - date: 2026-10-08
   target: Sasta plant and Yandex data centre, Sasovo
@@ -337,7 +337,7 @@
   verification: 1
   summary: Drones struck the Redkino chemical plant, which makes fuel components for Kh-101 and Kh-55 cruise missiles.
   src:
-    - [ua_gov, "United24 Media", "Drone Strike Hits Russian Plant Making Fuel Components for Kh-101 Cruise Missiles", "https://united24media.com/war-in-ukraine/drone-strike-hits-russian-plant-making-fuel-components-for-kh-101-cruise-missiles-23275", "2026-10-09"]
+    - [ua_gov, "United24 Media", "Drone Strike Hits Russian Plant Making Fuel Components for Kh-101 Cruise Missiles — UNITED24 Media", "https://united24media.com/war-in-ukraine/drone-strike-hits-russian-plant-making-fuel-components-for-kh-101-cruise-missiles-23275", "2026-10-09"]
 
 - date: 2026-10-09
   target: Ukhta oil refinery
@@ -347,7 +347,7 @@
   verification: 1
   summary: Black smoke rose over the Ukhta refinery in Komi after a Ukrainian drone attack; an oil depot near Belgorod also burned.
   src:
-    - [ua_independent, "Militarnyi", "Oil Refinery Ablaze in Russia's Ukhta Following Drone Attack", "https://militarnyi.com/en/news/oil-refinery-ablaze-in-russia-s-ukhta-following-drone-attack/", "2026-10-09"]
+    - [ua_independent, "Militarnyi", "Oil Refinery Ablaze in Russia’s Ukhta Following Drone Attack", "https://militarnyi.com/en/news/oil-refinery-ablaze-in-russia-s-ukhta-following-drone-attack/", "2026-10-09"]
 
 - date: 2026-10-10
   target: Oil terminal in Rostov-on-Don
@@ -398,8 +398,8 @@
   verification: 2
   summary: A fire broke out at the oil terminal of St Petersburg port after Ukrainian drone strikes, which also hit a VK data centre, an Ozon warehouse and a section of the Western High-Speed Diameter.
   src:
-    - [ru_state_media, "Kommersant", "На нефтяном терминале в Санкт-Петербурге произошел пожар после атаки БПЛА", "https://www.kommersant.ru/doc/9041206", "2026-10-18"]
-    - [eu_regional_press, "ERR", "Ukraina korraldas suure õhurünnaku Peterburi piirkonnas", "https://www.err.ee/1610169529/ukraina-korraldas-suure-ohurunnaku-peterburi-piirkonnas", "2026-10-18"]
+    - [ru_state_media, "Kommersant", "Беспилотники атаковали Петербург: пожары и ограничения в Пулково", "https://www.kommersant.ru/doc/9041206", "2026-10-18"]
+    - [eu_regional_press, "ERR", "Sõja 1698. päev: Ukraina korraldas suure õhurünnaku Peterburi piirkonnas", "https://www.err.ee/1610169529/ukraina-korraldas-suure-ohurunnaku-peterburi-piirkonnas", "2026-10-18"]
 
 - date: 2026-10-23
   target: Proton plant, Oryol
@@ -409,7 +409,7 @@
   verification: 1
   summary: Ukrainian missiles, possibly Storm Shadow or Flamingo, struck the Proton military plant in Oryol, reportedly destroying a production workshop.
   src:
-    - [ua_independent, "RBC-Ukraine", "Missile strike hits Proton military plant in Russia's Oryol, reports say", "https://newsukraine.rbc.ua/news/missile-strike-hits-proton-military-plant-1792774014.html", "2026-10-23"]
+    - [ua_independent, "RBC-Ukraine", "Proton plant in Russia's Oryol under missile attack on October 23", "https://newsukraine.rbc.ua/news/missile-strike-hits-proton-military-plant-1792774014.html", "2026-10-23"]
 
 - date: 2026-10-23
   target: Federal Tax Service data centre, Gorodets
@@ -429,7 +429,7 @@
   verification: 1
   summary: Ukraine struck the Togliattikauchuk synthetic rubber plant in Tolyatti; the mayor said it was damaged without casualties.
   src:
-    - [intl_press, "Al Jazeera", "Ukraine says Starlink restored as attacks continue in Russia and Ukraine", "https://www.aljazeera.com/news/2026/10/24/ukraine-says-starlink-restored-as-attacks-continue-in-russia-and-ukraine", "2026-10-24"]
+    - [intl_press, "Al Jazeera", "Kyiv says Starlink restored as attacks in Ukraine and Russia continue", "https://www.aljazeera.com/news/2026/10/24/ukraine-says-starlink-restored-as-attacks-continue-in-russia-and-ukraine", "2026-10-24"]
 
 - date: 2026-10-25
   target: AVISMA titanium plant, Berezniki
@@ -469,7 +469,7 @@
   verification: 1
   summary: Drones attacked the Novokuybyshevsk refinery amid wide fires, described as Ukraine resuming refinery strikes after US pressure to pause them.
   src:
-    - [ua_independent, "The Kyiv Independent", "Ukraine reportedly strikes Russian oil refinery in Samara", "https://kyivindependent.com/russian-oil-refinery-reportedly-attacked-amid-renewed-ukrainian-strikes-on-energy-infrastructure/", "2026-10-30"]
+    - [ua_independent, "The Kyiv Independent", "Russian deputy PM confirms strikes on 3 refineries, gas-chemical complex", "https://kyivindependent.com/russian-oil-refinery-reportedly-attacked-amid-renewed-ukrainian-strikes-on-energy-infrastructure/", "2026-10-30"]
 
 - date: 2026-10-31
   target: Bashneft-Novoil refinery, Ufa

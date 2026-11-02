@@ -14,7 +14,7 @@
   attribution: 1
   summary: A fishing boat spotted a drifting naval mine about 70 km off Capu Midia; a Romanian minesweeper was sent to destroy it, one of the first of dozens of mines found in the western Black Sea after the invasion.
   src:
-    - [intl_press, "gCaptain", "Romania defuses mine drifting near its Black Sea shore", "https://gcaptain.com/romania-defuses-mine-drifting-near-its-black-sea-shore", "2022-03-28"]
+    - [intl_press, "gCaptain", "Romania Defuses Mine Drifting Near Its Black Sea Shore", "https://gcaptain.com/romania-defuses-mine-drifting-near-its-black-sea-shore", "2022-03-28"]
 
 - date: 2022-09-08
   where: RO
@@ -25,7 +25,7 @@
   attribution: 1
   summary: The Romanian minesweeper Locotenent Dimitrie Nicolescu was damaged by a drifting mine it had been sent to neutralise in rough seas. No one was hurt. It was the 28th mine found in the western Black Sea since the invasion.
   src:
-    - [intl_press, "The Maritime Executive", "Romanian Navy minesweeper hit and damaged by drifting mine", "https://maritime-executive.com/article/romanian-navy-minesweeper-hit-and-damaged-by-drifting-mine", "2022-09-08"]
+    - [intl_press, "The Maritime Executive", "Romanian Navy Minesweeper Hit and Damaged by Drifting Mine", "https://maritime-executive.com/article/romanian-navy-minesweeper-hit-and-damaged-by-drifting-mine", "2022-09-08"]
     - [eu_regional_press, "Romania Insider", "Romanian military ship damaged by naval mine it was sent to defuse", "https://romania-insider.com/romanian-military-ship-damaged-naval-mine", "2022-09-08"]
 
 - date: 2022-09-26
@@ -134,7 +134,7 @@
   attribution: 3
   summary: The Estonian navy detained the flagless, EU- and UK-sanctioned tanker Kiwala on its way to load oil at Ust-Luga. It was released on 28 April.
   src:
-    - [intl_press, "Euronews", "Estonia detains Russian 'shadow fleet'-linked oil tanker near Tallinn", "https://www.euronews.com/my-europe/2025/04/11/estonian-authorities-detain-russian-shadow-fleet-linked-oil-tanker-near-tallinn", "2025-04-11"]
+    - [intl_press, "Euronews", "Estonian authorities detain Russian 'shadow fleet'-linked oil tanker near Tallinn", "https://www.euronews.com/my-europe/2025/04/11/estonian-authorities-detain-russian-shadow-fleet-linked-oil-tanker-near-tallinn", "2025-04-11"]
 
 - date: 2025-05-13
   where: EE
@@ -208,7 +208,7 @@
   note: Ukraine denied involvement and accused Russia of staging the attack.
   summary: The tanker Midvolga 2, carrying sunflower oil from Russia to Georgia, was hit by an apparently shrapnel-armed drone off Turkey, injuring the master and second engineer.
   src:
-    - [intl_press, "Lloyd's List", "Ukraine denies latest tanker attack", "https://www.lloydslist.com/LL1155743/Ukraine-denies-latest-tanker-attack", "2025-12-03"]
+    - [intl_press, "Lloyd's List", "Ukraine denies latest tanker attack :: Lloyd's List", "https://www.lloydslist.com/LL1155743/Ukraine-denies-latest-tanker-attack", "2025-12-03"]
 
 - date: 2025-12-18
   where: MT
@@ -221,7 +221,7 @@
   note: Ukraine's SBU claimed the strike, its first in the Mediterranean.
   summary: Drones struck the empty Omani-flagged shadow-fleet tanker Qendil in the central Mediterranean, leaving it inoperable.
   src:
-    - [intl_press, "The War Zone", "Ukraine Strikes Russia-Linked Tanker In The Mediterranean With 'Bomber Drone'", "https://www.twz.com/news-features/ukraine-strikes-russia-linked-tanker-in-the-mediterranean-with-bomber-drone", "2025-12-19"]
+    - [intl_press, "The War Zone", "Ukraine Strikes Russia-Linked Tanker In The Mediterranean With ‘Bomber Drone’", "https://www.twz.com/news-features/ukraine-strikes-russia-linked-tanker-in-the-mediterranean-with-bomber-drone", "2025-12-19"]
 
 - date: 2025-12-31
   where: FI
@@ -269,7 +269,7 @@
   attribution: 3
   summary: Belgian special forces, helped by French helicopters, seized the tanker Ethera, sailing under a false Guinean flag back to Russia, and escorted it to Zeebrugge.
   src:
-    - [intl_press, "The Guardian", "Suspected Russian 'shadow fleet' tanker seized in North Sea", "https://www.theguardian.com/world/2026/mar/01/suspected-russian-shadow-fleet-tanker-seized-north-sea", "2026-03-01"]
+    - [intl_press, "The Guardian", "Suspected Russian ‘shadow fleet’ tanker seized in North Sea", "https://www.theguardian.com/world/2026/mar/01/suspected-russian-shadow-fleet-tanker-seized-north-sea", "2026-03-01"]
 
 - date: 2026-03-03
   where: MT
@@ -293,7 +293,7 @@
   attribution: 3
   summary: Sweden seized the false-flagged cargo ship Caffa 17, on Ukraine's sanctions list and suspected of carrying stolen Ukrainian grain, and detained a crew member.
   src:
-    - [ru_by_independent, "The Moscow Times", "Sweden Detains Crew Member of Russian 'Shadow Fleet' Ship", "https://www.themoscowtimes.com/2026/03/08/sweden-detains-crew-member-of-russian-shadow-fleet-ship-a92156", "2026-03-08"]
+    - [ru_by_independent, "The Moscow Times", "Sweden Detains Crew Member of Russian ‘Shadow Fleet’ Ship - The Moscow Times", "https://www.themoscowtimes.com/2026/03/08/sweden-detains-crew-member-of-russian-shadow-fleet-ship-a92156", "2026-03-08"]
 
 - date: 2026-03-12
   where: SE
@@ -337,9 +337,10 @@
   type: shadow_fleet_incident
   rung: 2
   attribution: 3
-  summary: The Swedish coast guard boarded and detained the sanctioned, Syrian-flagged tanker Jin Hui and arrested its Chinese captain on suspicion of using a false document.
+  summary: The Swedish coast guard boarded the sanctioned tanker Jin Hui south of Trelleborg on suspicion of a false Syrian flag and arrested its Chinese captain for presenting a false document.
   src:
-    - [intl_press, "ABC News (AP)", "Sweden detains sanctioned oil tanker believed to be linked to Russia's shadow fleet", "https://abcnews.com/International/wireStory/sweden-detains-sanctioned-oil-tanker-believed-linked-russias-132709350", "2026-05-06"]
+    - [intl_press, "WTOP (AP)", "Sweden detains sanctioned oil tanker believed to be linked to Russia's shadow fleet", "https://wtop.com/europe/2026/05/sweden-detains-sanctioned-oil-tanker-believed-to-be-linked-to-russias-shadow-fleet/", "2026-05-06"]
+    - [intl_press, "The Maritime Executive", "Sweden arrests Chinese master of detained shadow fleet tanker", "https://maritime-executive.com/article/sweden-arrests-chinese-master-of-detained-shadow-fleet-tanker", "2026-05-04"]
 
 - date: 2026-06-01
   where: FR
@@ -350,7 +351,7 @@
   attribution: 3
   summary: French naval troops boarded the tanker Tagor after it left Murmansk, confirmed it was sailing under a false flag, and diverted it.
   src:
-    - [intl_press, "BBC News", "Macron says French navy has boarded Russia-linked oil tanker in Atlantic", "https://www.bbc.com/news/articles/cn8pwgej1gxo", "2026-06-01"]
+    - [intl_press, "BBC News", "France intercepts sanctioned Russian oil tanker with UK help, Macron says", "https://www.bbc.com/news/articles/cn8pwgej1gxo", "2026-06-01"]
 
 - date: 2026-06-05
   where: RO
@@ -362,7 +363,7 @@
   note: Romania's president said Ukraine lost control of the drones to Russian electronic warfare.
   summary: A Ukrainian Sargan-3000 naval drone, jammed off course, entered Constanța port and lodged in anti-pollution booms. The area was evacuated before it self-detonated without further damage; a second blew up outside the port and two more far offshore.
   src:
-    - [intl_press, "AP", "A Ukrainian maritime drone explodes at a Romanian Black Sea port. No injuries reported", "https://apnews.com/article/drone-romania-black-sea-explosion-ukraine-defc53b2383a67475230c8349a47d7c6", "2026-06-05"]
+    - [intl_press, "AP", "Sea drone used in Ukraine war detonates in Romania's Constanta port", "https://apnews.com/article/drone-romania-black-sea-explosion-ukraine-defc53b2383a67475230c8349a47d7c6", "2026-06-05"]
     - [eu_regional_press, "Antena 3", "Alertă în Portul Constanța. O dronă navală cu timer atașat a explodat. MApN: Este de tipul celor folosite în războiul din Ucraina", "https://www.antena3.ro/actualitate/alerta-in-portul-constanta-o-drona-marina-care-a-fost-adusa-la-mal-a-explodat-zona-a-fost-evacuata-790939.html", "2026-06-05"]
 
 - date: 2026-06-14
@@ -385,7 +386,7 @@
   attribution: 3
   summary: The Russian frigate Admiral Grigorovich fired flares and warning shots into the air as a British yacht approached it off the Isle of Wight, two days after the Smyrtos seizure. A Royal Navy patrol vessel assisted the yacht.
   src:
-    - [intl_press, "The Guardian", "Russian frigate fires warning shots at British yacht in Channel – reports", "https://www.theguardian.com/uk-news/2026/jun/16/russian-frigate-fires-warning-shots-at-british-yacht-in-channel-reports", "2026-06-16"]
+    - [intl_press, "The Guardian", "Russian frigate fires warning shots at British yacht in Channel", "https://www.theguardian.com/uk-news/2026/jun/16/russian-frigate-fires-warning-shots-at-british-yacht-in-channel-reports", "2026-06-16"]
 
 - date: 2026-07-21
   where: RO
@@ -422,7 +423,7 @@
   summary: A Romanian F-16 strafed an explosive Russian naval drone near the Neptun Deep offshore gas project, and navy divers finished it off as it sank.
   src:
     - [intl_press, "Reuters", "Romania destroys marine drone near Neptun Deep gas project, minister says", "https://www.reuters.com/world/europe/romania-destroys-marine-drone-near-neptun-deep-gas-project-minister-says-2026-08-20/", "2026-08-20"]
-    - [eu_gov_security, "Romanian Ministry of National Defence", "Informație de presă - update", "https://www.mapn.ro/cpresa/19361_informa%C8%9Bie-de-presa---update", "2026-08-20"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informatie de presa - update", "https://www.mapn.ro/cpresa/19361_informa%C8%9Bie-de-presa---update", "2026-08-20"]
 
 - date: 2026-08-28
   where: RO
@@ -451,7 +452,7 @@
   summary: Russian drones sank the Turkish-owned freighter Royad Mammadov, carrying Ukrainian maize from Izmail to Ravenna, off Romania; its captain was killed and 11 crew rescued. A Bulgarian tanker carrying grain to Romania was also sunk; its 18 crew were saved.
   src:
     - [ua_independent, "Militarnyi", "Russian Drones Sink Royad Mammadov Dry Cargo Ship Carrying Ukrainian Grain", "https://militarnyi.com/en/news/russia-sink-royad-mammadov-ship-ukr-grain/", "2026-10-05"]
-    - [eu_regional_press, "tagesschau", "Handelsschiff sinkt im Schwarzen Meer - mehrere Tote", "https://www.tagesschau.de/ausland/europa/schwarzes-meer-schiff-verunglueckt-100.html", "2026-10-05"]
+    - [eu_regional_press, "tagesschau", "Tote nach Schiffsunglück im Schwarzen Meer - Drohnenangriff?", "https://www.tagesschau.de/ausland/europa/schwarzes-meer-schiff-verunglueckt-100.html", "2026-10-05"]
 
 - date: 2026-10-13
   where: BG
@@ -466,8 +467,8 @@
   note: Bulgaria's president summoned the Russian ambassador.
   summary: Drones struck two ships in Bulgaria's waters overnight. The HS Dignity, bound for Brăila, sank with only one crew member rescued; the Malta-flagged Chelsea 3, bound for Giurgiulești, was badly damaged and its 15 crew evacuated, five injured.
   src:
-    - [eu_regional_press, "DW", "Wohl Tote bei Drohnenattacke auf Schiffe vor Bulgarien", "https://www.dw.com/de/wohl-tote-bei-drohnenattacke-auf-schiffe-vor-bulgarien/a-79649500", "2026-10-13"]
-    - [ru_by_independent, "Novaya Gazeta Europe", "Новый виток черноморской эскалации", "https://novayagazeta.eu/articles/2026/10/13/novyi-vitok-chernomorskoi-eskalatsii", "2026-10-13"]
+    - [eu_regional_press, "DW", "Schiffe vor Bulgarien mit Drohnen angegriffen - wohl Tote", "https://www.dw.com/de/wohl-tote-bei-drohnenattacke-auf-schiffe-vor-bulgarien/a-79649500", "2026-10-13"]
+    - [ru_by_independent, "Novaya Gazeta Europe", "Новый виток черноморской эскалации. У берегов стран НАТО за девять дней атакованы пять торговых судов. Эксперты считают, что Россия пытается нарушить украинский экспорт и одновременно проверить реакци", "https://novayagazeta.eu/articles/2026/10/13/novyi-vitok-chernomorskoi-eskalatsii", "2026-10-13"]
 
 - date: 2026-10-15
   where: RO

@@ -24,7 +24,7 @@
   attribution: 3
   summary: Ukraine shut down the last operating reactor at Zaporizhzhia after shelling cut its external power, putting all six reactors into cold shutdown.
   src:
-    - [intl_press, "ABC News (Australia)", "Zaporizhzhia nuclear power plant halts operations in Ukraine", "https://www.abc.net.au/news/2022-09-11/zaporizhzhia-nuclear-power-plant-halts-operations-in-ukraine/101427770", "2022-09-11"]
+    - [intl_press, "ABC News (Australia)", "Zaporizhzhia nuclear power plant halts operations in Ukraine amid fears of disaster during Russian invasion - ABC News", "https://www.abc.net.au/news/2022-09-11/zaporizhzhia-nuclear-power-plant-halts-operations-in-ukraine/101427770", "2022-09-11"]
 
 - date: 2022-11-20
   where: UA
@@ -80,7 +80,7 @@
   attribution: 3
   summary: Russia began drills of its non-strategic nuclear forces, practising the preparation and use of Iskander and Kinzhal missiles, after Western talk of sending troops to Ukraine. Belarus joined a second stage in June.
   src:
-    - [intl_press, "Al Jazeera", "Russia starts 'tactical nuclear drills' near Ukraine border", "https://www.aljazeera.com/news/2024/5/22/russia-starts-tactical-nuclear-drills-near-ukraine-border", "2024-05-22"]
+    - [intl_press, "Al Jazeera", "Russia starts ‘tactical nuclear drills’ near Ukraine border", "https://www.aljazeera.com/news/2024/5/22/russia-starts-tactical-nuclear-drills-near-ukraine-border", "2024-05-22"]
 
 - date: 2025-02-14
   where: UA
@@ -93,7 +93,7 @@
   summary: A drone punched a hole in the New Safe Confinement over Chornobyl's destroyed reactor and started a fire that took weeks to extinguish. Radiation levels did not rise.
   src:
     - [ua_independent, "Ukrinform", "Drone damages outer layer of Chornobyl NPP confinement structure – IAEA", "https://www.ukrinform.net/rubric-society/3960233-drone-damages-outer-layer-of-chornobyl-npp-confinement-structure-iaea.html", "2025-02-14"]
-    - [intl_press, "Al Jazeera", "IAEA flags damage to Chornobyl nuclear plant's protective shield", "https://www.aljazeera.com/news/2025/12/6/iaea-flags-damage-to-chornobyl-nuclear-plants-protective-shield", "2025-12-06"]
+    - [intl_press, "Al Jazeera", "IAEA flags damage to Chornobyl nuclear plant’s protective shield in Ukraine", "https://www.aljazeera.com/news/2025/12/6/iaea-flags-damage-to-chornobyl-nuclear-plants-protective-shield", "2025-12-06"]
 
 - date: 2025-09-23
   where: UA
@@ -104,7 +104,7 @@
   attribution: 2
   summary: Zaporizhzhia lost its last 750 kV line to military activity 1.5 km away, the tenth complete loss of off-site power, and ran on emergency diesel generators for weeks, the longest blackout of the war; the IAEA called it unsustainable.
   src:
-    - [intl_bodies, "IAEA (via GlobalSecurity.org)", "IAEA Director General statement on situation in Ukraine", "https://www.globalsecurity.org/wmd/library/news/ukraine/2025/09/ukraine-250924-iaea01.htm", "2025-09-24"]
+    - [intl_bodies, "IAEA (via GlobalSecurity.org)", "Update 315 - IAEA Director General Statement on Situation in Ukraine", "https://www.globalsecurity.org/wmd/library/news/ukraine/2025/09/ukraine-250924-iaea01.htm", "2025-09-24"]
 
 - date: 2025-10-22
   where: RU
@@ -126,7 +126,7 @@
   attribution: 3
   summary: Lukashenko said Russia's nuclear-capable Oreshnik intermediate-range missile system had arrived in Belarus and gone on combat duty; he gave no numbers.
   src:
-    - [intl_press, "Defense News", "Lukashenko: Russian nuclear-capable Oreshnik missiles now in Belarus", "https://www.defensenews.com/global/europe/2025/12/19/lukashenko-russian-nuclear-capable-oreshnik-missiles-now-in-belarus/", "2025-12-19"]
+    - [intl_press, "Defense News", "Lukashenko: Russian nuclear-capable Oreshnik missiles now in Belarus - Defense News", "https://www.defensenews.com/global/europe/2025/12/19/lukashenko-russian-nuclear-capable-oreshnik-missiles-now-in-belarus/", "2025-12-19"]
 
 - date: 2026-05-19
   where: RU
@@ -137,7 +137,7 @@
   attribution: 3
   summary: From 19 to 21 May, Russia held an exercise on preparing and using its nuclear forces against a threat of aggression, reportedly involving 64,000 personnel, one of the largest of its kind.
   src:
-    - [think_tank, "National Institute for Public Policy", "Russia's May 2026 Nuclear Exercise", "https://nipp.org/?p=4997", "2026-08-03"]
+    - [think_tank, "National Institute for Public Policy", "Mark B. Schneider, Russia’s May 2026 Nuclear Exercise, No. 666, August 3, 2026 – Nipp", "https://nipp.org/?p=4997", "2026-08-03"]
 
 - date: 2026-08-20
   where: UA
@@ -148,4 +148,4 @@
   attribution: 2
   summary: Military activity cut Zaporizhzhia's only remaining off-site line, its 26th loss of off-site power in the war. Power was restored in early September after an IAEA-brokered local ceasefire allowed repairs.
   src:
-    - [intl_press, "American Nuclear Society", "Zaporizhzhia restores off-site power following IAEA-brokered local ceasefire", "https://www.ans.org/news/2026-09-09/article-8377/zaporizhzhia-restores-offsite-power-following-iaeabrokered-local-ceasefire/", "2026-09-09"]
+    - [intl_press, "American Nuclear Society", "Zaporizhzhia restores off-site power following IAEA-brokered local ceasefire -- ANS / Nuclear Newswire", "https://www.ans.org/news/2026-09-09/article-8377/zaporizhzhia-restores-offsite-power-following-iaeabrokered-local-ceasefire/", "2026-09-09"]

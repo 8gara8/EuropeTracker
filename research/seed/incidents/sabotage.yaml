@@ -37,7 +37,7 @@
   hours: 3
   summary: Saboteurs cut Deutsche Bahn's GSM-R radio cables at two sites, stopping long-distance and freight trains across northern Germany and to Denmark and the Netherlands for about three hours.
   src:
-    - [eu_regional_press, "The Local Germany", "Germany probes rail sabotage amid Russia tensions", "https://www.thelocal.de/20221009/germany-probes-rail-sabotage-amid-russia-tensions", "2022-10-09"]
+    - [eu_regional_press, "The Local Germany", "Germany probes rail 'sabotage' amid Russia tensions", "https://www.thelocal.de/20221009/germany-probes-rail-sabotage-amid-russia-tensions", "2022-10-09"]
 
 # ---------------------------------------------------------------- 2023
 - date: 2023-03-15
@@ -62,7 +62,7 @@
   note: Estonia's Internal Security Service said Russian special services ordered the attacks.
   summary: Locally recruited proxies smashed the windows of cars belonging to Estonia's interior minister and a journalist. Estonia's security service later detained suspects acting on Russian orders.
   src:
-    - [eu_gov_security, "Estonian Internal Security Service", "Estonian Internal Security Service apprehended suspects for wrecking cars belonging to Minister of Internal Affairs and a journalist | Kaitsepolitseiamet", "https://kapo.ee/en/media/estonian-internal-security-service-apprehended-suspects-wrecking-cars-belonging-minister/", null]
+    - [eu_gov_security, "Estonian Internal Security Service", "Estonian Internal Security Service apprehended suspects for wrecking cars belonging to Minister of Internal Affairs and a journalist", "https://kapo.ee/en/media/estonian-internal-security-service-apprehended-suspects-wrecking-cars-belonging-minister/", null]
 
 # ---------------------------------------------------------------- 2024
 - date: 2024-02-13
@@ -99,7 +99,7 @@
   summary: German police arrested two German-Russian men accused of scouting US military sites and rail lines for bombing and arson attacks on behalf of Russia to undermine aid to Ukraine.
   src:
     - [eu_regional_press, "The Local Germany", "Two arrested in Bavaria for allegedly spying for Russia", "https://www.thelocal.de/20240418/two-arrested-in-bavaria-for-allegedly-spying-for-russia", "2024-04-18"]
-    - [intl_press, "Stars and Stripes", "Russian spy convicted in Bavaria", "https://www.stripes.com/theaters/europe/2025-11-03/russian-spy-bavaria-19637301.html", "2025-11-03"]
+    - [intl_press, "Stars and Stripes", "Men convicted of plotting to attack US forces in Bavaria and surveilling bases for Russia", "https://www.stripes.com/theaters/europe/2025-11-03/russian-spy-bavaria-19637301.html", "2025-11-03"]
 
 - date: 2024-05-09
   where: LT
@@ -122,7 +122,7 @@
   summary: A night fire destroyed Warsaw's Marywilska 44 shopping centre, with about 1,400 stalls. No one was hurt. Poland later said it was arson ordered by Russian military intelligence.
   src:
     - [intl_press, "CNN", "Poland blames Russian intelligence for arson attack on Warsaw shopping center last year", "https://www.cnn.com/2025/05/11/europe/poland-blames-russian-intelligence-fire-shopping-center-latam-intl", "2025-05-11"]
-    - [eu_regional_press, "Notes from Poland", "Poland confirms Russia behind fire that destroyed Warsaw's biggest shopping centre", "https://notesfrompoland.com/2025/05/12/poland-confirms-russia-behind-fire-that-destroyed-warsaws-biggest-shopping-centre", "2025-05-12"]
+    - [eu_regional_press, "Notes from Poland", "Poland confirms Russia behind fire that destroyed Warsaw’s biggest shopping centre", "https://notesfrompoland.com/2025/05/12/poland-confirms-russia-behind-fire-that-destroyed-warsaws-biggest-shopping-centre", "2025-05-12"]
 
 - date: 2024-06-07
   where: CZ
@@ -158,7 +158,7 @@
   note: In January 2026 prosecutors charged six foreign nationals with terrorism, saying handlers linked to Russia's GRU coordinated them.
   summary: Saboteurs set fire to the premises of a private company supplying military aid to Ukraine. Prosecutors later charged six people with terrorism.
   src:
-    - [eu_regional_press, "LRT", "Lithuania charges six suspects with 'terrorism' for targeting Ukraine military aid", "https://www.lrt.lt/en/news-in-english/19/2808132/lithuania-charges-six-suspects-with-terrorism-for-setting-fire-to-ukraine-military-aid", "2026-01-16"]
+    - [eu_regional_press, "LRT", "Lithuania charges six suspects with ‘terrorism’ for targeting Ukraine military aid - LRT", "https://www.lrt.lt/en/news-in-english/19/2808132/lithuania-charges-six-suspects-with-terrorism-for-setting-fire-to-ukraine-military-aid", "2026-01-16"]
 
 # ---------------------------------------------------------------- 2025
 - date: 2025-05-12
@@ -180,7 +180,7 @@
   attribution: 2
   summary: Several Rheinmetall military trucks were set on fire in Erfurt and three were destroyed. Investigators examined a possible Russian-directed sabotage motive.
   src:
-    - [intl_press, "The Economic Times", "KGB-style strike: Russia destroys NATO vehicles deep inside Germany — has Moscow adopted Ukraine's playbook?", "https://economictimes.indiatimes.com/news/international/us/kgb-style-strike-russia-destroys-nato-vehicles-deep-inside-germany-has-moscow-adopted-ukraines-playbook/articleshow/122096533.cms", "2025-06-27"]
+    - [intl_press, "The Economic Times", "russians escalate attacks on nato: KGB-style strike: Russia destroys NATO vehicles deep inside Germany — has Moscow adopted Ukraine's playbook? - The Economic Times", "https://economictimes.indiatimes.com/news/international/us/kgb-style-strike-russia-destroys-nato-vehicles-deep-inside-germany-has-moscow-adopted-ukraines-playbook/articleshow/122096533.cms", "2025-06-27"]
 
 - date: 2025-11-16
   where: PL
@@ -192,8 +192,8 @@
   note: Prosecutors charged two Ukrainians working for Russian intelligence, who fled to Belarus.
   summary: A military-grade explosive tore up the Warsaw–Lublin line used for aid to Ukraine near Mika as a freight train passed; near Puławy a bracket was jammed on the track and wires downed before a train with 473 passengers. Tusk called it unprecedented sabotage.
   src:
-    - [intl_press, "AP", "Poland railway line explosion near Warsaw ‘act of sabotage,’ prime minister says", "https://apnews.com/article/poland-sabotage-explosion-rail-track-warsaw-97dae3045d4e1ff329780526c6279c0f", "2025-11-17"]
-    - [intl_press, "The Guardian", "Ukrainians working for Russia in rail blasts, says Poland PM", "https://www.theguardian.com/world/2025/nov/18/ukrainians-working-for-russia-rail-blasts-says-poland-prime-minister-donald-tusk", "2025-11-18"]
+    - [intl_press, "AP", "Polish PM says rail line explosion was sabotage", "https://apnews.com/article/poland-sabotage-explosion-rail-track-warsaw-97dae3045d4e1ff329780526c6279c0f", "2025-11-17"]
+    - [intl_press, "The Guardian", "Ukrainians working for Russia were behind rail blasts, alleges Polish PM", "https://www.theguardian.com/world/2025/nov/18/ukrainians-working-for-russia-rail-blasts-says-poland-prime-minister-donald-tusk", "2025-11-18"]
 
 # ---------------------------------------------------------------- 2026
 - date: 2026-08-04
@@ -219,8 +219,8 @@
   note: Prime Minister Tusk said the suspect acted for Russian intelligence.
   summary: Poland detained a Russian citizen accused of planning, for Russian intelligence, to assassinate a dual US-Ukrainian citizen. Tusk called it the first Russian plot against an American on NATO territory.
   src:
-    - [intl_press, "Kyiv Post", "Poland Stops Russian Assassin Targeting US Citizen in First-Ever NATO Attack Plot", "https://www.kyivpost.com/post/82309", "2026-08-13"]
-    - [eu_regional_press, "Polsat News", "Nieudana egzekucja w Warszawie. Tusk: Zatrzymano Rosjanina", "https://www.polsatnews.pl/wiadomosc/2026-08-13/tusk-zatrzymalismy-obywatela-rosji-szykowal-zamach-na-obywatela-usa/", "2026-08-13"]
+    - [intl_press, "Kyiv Post", "Poland Uncovers Russian Plot to Kill US-Ukrainian Citizen in Warsaw", "https://www.kyivpost.com/post/82309", "2026-08-13"]
+    - [eu_regional_press, "Polsat News", "Nieudana egzekucja Amerykanina w Warszawie. Tusk: Zatrzymano Rosjanina - PolsatNews.pl", "https://www.polsatnews.pl/wiadomosc/2026-08-13/tusk-zatrzymalismy-obywatela-rosji-szykowal-zamach-na-obywatela-usa/", "2026-08-13"]
 
 - date: 2026-08-25
   where: SK

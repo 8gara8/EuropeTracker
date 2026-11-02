@@ -33,7 +33,7 @@
   attribution: 3
   summary: Gazprom cut Moldova's gas supply to well below contracted volumes after a fourfold price rise, while strikes on Ukraine's grid ended electricity imports, causing blackouts in Moldova's worst energy crisis since independence.
   src:
-    - [think_tank, "Atlantic Council", "Russia's Ukraine invasion is fueling an energy crisis in neighboring Moldova", "https://www.atlanticcouncil.org/blogs/ukrainealert/russias-ukraine-invasion-is-fueling-an-energy-crisis-in-neighboring-moldova/", "2022-12-05"]
+    - [think_tank, "Atlantic Council", "Russia’s Ukraine invasion is fueling an energy crisis in neighboring Moldova - Atlantic Council", "https://www.atlanticcouncil.org/blogs/ukrainealert/russias-ukraine-invasion-is-fueling-an-energy-crisis-in-neighboring-moldova/", "2022-12-05"]
 
 - date: 2023-02-13
   where: MD
@@ -43,7 +43,7 @@
   attribution: 3
   summary: President Maia Sandu said Moldova had confirmed a Russian plan, first revealed by Zelensky, to overthrow its government using saboteurs and staged protests. The government resigned days earlier amid paid protests.
   src:
-    - [intl_press, "ABC News (Australia)", "Has Russia been planning a coup in Ukraine's neighbour, Moldova? Here's what we know", "https://www.abc.net.au/news/2023-02-14/kremlin-accused-of-plotting-moldova-coup/101972428", "2023-02-14"]
+    - [intl_press, "ABC News (Australia)", "Has Russia been planning a coup in Ukraine's neighbour, Moldova? Here's what we know - ABC News", "https://www.abc.net.au/news/2023-02-14/kremlin-accused-of-plotting-moldova-coup/101972428", "2023-02-14"]
 
 - date: 2023-11-24
   where: FI
@@ -54,7 +54,7 @@
   note: Prime Minister Orpo called it an organised Russian hybrid attack; Russia denied it.
   summary: After hundreds of asylum seekers without visas arrived from Russia, Finland closed all but one eastern crossing and then the whole 1,340 km border.
   src:
-    - [intl_press, "The Irish Times", "Finland shuts more Russia border points and says asylum inflow must stop", "https://www.irishtimes.com/world/europe/2023/11/24/finland-shuts-more-russia-border-points-and-says-asylum-inflow-must-stop", "2023-11-24"]
+    - [intl_press, "The Irish Times", "Finland shuts more Russia border points and says asylum inflow must stop – The Irish Times", "https://www.irishtimes.com/world/europe/2023/11/24/finland-shuts-more-russia-border-points-and-says-asylum-inflow-must-stop", "2023-11-24"]
 
 - date: 2024-03-27
   where: CZ
@@ -67,7 +67,7 @@
   summary: Czechia exposed and sanctioned Voice of Europe, a Prague-based outlet run by Viktor Medvedchuk that covertly paid European politicians to spread Russian narratives before the European Parliament election.
   src:
     - [eu_regional_press, "Radio Prague International", "Czechs bust Russian network paying off European politicians", "https://english.radio.cz/node/8812632", "2024-03-27"]
-    - [ru_by_independent, "The Moscow Times", "Czechs Bust Major Russian Propaganda Network", "https://www.themoscowtimes.com/2024/03/27/czechs-bust-major-russian-propaganda-network-a84656", "2024-03-27"]
+    - [ru_by_independent, "The Moscow Times", "Czechs Bust Major Russian Propaganda Network - The Moscow Times", "https://www.themoscowtimes.com/2024/03/27/czechs-bust-major-russian-propaganda-network-a84656", "2024-03-27"]
 
 - date: 2024-10-20
   where: MD
@@ -79,7 +79,7 @@
   summary: Police said a network run by fugitive oligarch Ilan Shor paid about 130,000 voters, moving $39 million through a Russian bank, before the EU membership referendum, which passed by under one point.
   src:
     - [intl_press, "Euronews", "Moldovan officials accuse Kremlin of bribing voters ahead of EU membership referendum", "https://www.euronews.com/2024/10/04/moldovan-officials-accuse-kremlin-of-bribing-voters-ahead-of-eu-membership-referendum", "2024-10-04"]
-    - [ua_independent, "Euromaidan Press", "Russia-based oligarch funneled $39 million into vote-buying scheme in Moldova", "https://euromaidanpress.com/2024/10/27/russia-based-oligarch-funneled-39-million-into-vote-buying-scheme-in-moldova/", "2024-10-27"]
+    - [ua_independent, "Euromaidan Press", "Russia-based oligarch funneled $39 million into vote-buying scheme in Moldova - Euromaidan Press", "https://euromaidanpress.com/2024/10/27/russia-based-oligarch-funneled-39-million-into-vote-buying-scheme-in-moldova/", "2024-10-27"]
 
 - date: 2024-12-06
   where: RO
@@ -90,7 +90,7 @@
   note: Declassified intelligence pointed to a Russian-backed campaign; Russia denied interference.
   summary: Romania's Constitutional Court annulled the presidential election after declassified intelligence described a coordinated TikTok campaign and undeclared funding behind the first-round winner Călin Georgescu.
   src:
-    - [intl_press, "The Conversation", "Why Romania's election was annulled, and what happens next", "https://theconversation.com/why-romanias-election-was-annulled-and-what-happens-next-245779", "2024-12-09"]
+    - [intl_press, "The Conversation", "Why Romania’s election was annulled – and what happens next?", "https://theconversation.com/why-romanias-election-was-annulled-and-what-happens-next-245779", "2024-12-09"]
     - [intl_press, "The Star (Reuters)", "Romanian parliament sees evidence of election meddling, committee says", "https://www.thestar.com.my/news/world/2024/12/18/romanian-parliament-sees-evidence-of-election-meddling-committee-says", "2024-12-18"]
 
 - date: 2025-01-01
@@ -102,7 +102,7 @@
   note: Moldova's prime minister accused Moscow of using energy as a weapon; Gazprom cited debts.
   summary: Gazprom stopped gas deliveries to Moldova, leaving the Transnistria region without heating and with rolling blackouts and shutting its power plant, which supplied most of Moldova's electricity.
   src:
-    - [ua_independent, "The Kyiv Independent", "Moldova faces security crisis after Russian gas shut off, PM Recean says", "https://kyivindependent.com/moldova-faces-security-crisis-after-russian-gas-shut-off-pm-recean-says/", "2025-01-01"]
+    - [ua_independent, "The Kyiv Independent", "Moldova faces 'security crisis' after Russian gas shut-off, PM Recean says", "https://kyivindependent.com/moldova-faces-security-crisis-after-russian-gas-shut-off-pm-recean-says/", "2025-01-01"]
 
 - date: 2025-09-28
   where: MD
@@ -112,7 +112,7 @@
   attribution: 3
   summary: Moldova held parliamentary elections after authorities reported a large Russian-funded vote-buying network reaching over 138,000 people, cyberattacks, bomb threats and plans for riots. The pro-EU PAS kept its majority.
   src:
-    - [intl_press, "The Washington Times (AP)", "Moldovans vote in tense parliamentary election plagued by Russian interference claims", "https://m.washingtontimes.com/news/2025/sep/28/moldovans-vote-tense-parliamentary-election-plagued-russian/", "2025-09-28"]
+    - [intl_press, "The Washington Times (AP)", "Moldovans vote in a tense parliamentary election plagued by Russian interference claims", "https://m.washingtontimes.com/news/2025/sep/28/moldovans-vote-tense-parliamentary-election-plagued-russian/", "2025-09-28"]
 
 - date: 2026-10-05
   where: FI

@@ -29,7 +29,7 @@
   summary: Two Finnair flights to Tartu turned back to Helsinki because GPS interference prevented their approach. Finnair suspended the route from 29 April to 31 May while Tartu installed a non-GPS approach.
   src:
     - [eu_regional_press, "ERR News", "Finnair suspends flights to Tartu for 1 month to seek GPS jamming solution", "https://news.err.ee/1609328058/finnair-suspends-flights-to-tartu-for-1-month-to-seek-gps-jamming-solution", "2024-04-29"]
-    - [eu_regional_press, "Estonian World", "Finnair suspends Helsinki-Tartu flights for a month; airport under Russia's hybrid attack", "https://estonianworld.com/security/finnair-suspends-helsinki-tartu-flights-for-a-month-airport-under-russias-hybrid-attack/", "2024-04-29"]
+    - [eu_regional_press, "Estonian World", "Finnair suspends Helsinki-Tartu flights for a month; airport under Russia’s hybrid attack", "https://estonianworld.com/security/finnair-suspends-helsinki-tartu-flights-for-a-month-airport-under-russias-hybrid-attack/", "2024-04-29"]
 
 - date: 2024-05-03
   where: DE
@@ -53,7 +53,7 @@
   note: Declassified Romanian intelligence documents pointed to a state actor; Russia denied interference.
   summary: Declassified documents released on 4 December said Romania's election infrastructure faced more than 85,000 cyberattacks around the presidential first round, including on election day. The court annulled the vote two days later.
   src:
-    - [intl_press, "Security Affairs", "Romania's election systems hit by 85,000 attacks ahead of presidential vote", "https://securityaffairs.com/171758/cyber-warfare-2/romanias-election-systems-hit-by-85000-attacks.html", "2024-12-05"]
+    - [intl_press, "Security Affairs", "Romania ’s election systems hit by 85,000 attacks ahead of presidential vote", "https://securityaffairs.com/171758/cyber-warfare-2/romanias-election-systems-hit-by-85000-attacks.html", "2024-12-05"]
 
 - date: 2025-04-07
   where: "NO"
@@ -77,7 +77,7 @@
   summary: A plane carrying European Commission President Ursula von der Leyen was reported to have lost GPS navigation on approach to Plovdiv and landed using paper maps.
   src:
     - [intl_press, "BBC News", "EU chief von der Leyen's plane hit by suspected Russian GPS interference", "https://www.bbc.com/news/articles/c9d07z1439zo", "2025-09-01"]
-    - [intl_press, "Euronews", "No hay pruebas de las supuestas interferencias GPS al avión de Von der Leyen", "https://es.euronews.com/my-europe/2025/09/09/euroverify-no-hay-pruebas-de-las-supuestas-interferencias-gps-al-avion-de-von-der-leyen", "2025-09-09"]
+    - [intl_press, "Euronews", "Euroverify: No hay pruebas de interferencias rusas en el GPS del avión de Von der Leyen", "https://es.euronews.com/my-europe/2025/09/09/euroverify-no-hay-pruebas-de-las-supuestas-interferencias-gps-al-avion-de-von-der-leyen", "2025-09-09"]
 
 - date: 2026-03-09
   where: LT
@@ -87,7 +87,7 @@
   attribution: 3
   summary: Lithuania's aviation regulator said pilots had reported more than 300 GPS interference cases in its airspace so far in 2026; authorities link the jamming to Russia.
   src:
-    - [eu_regional_press, "LRT", "GPS jamming incidents reported by pilots continue in Lithuania, regulator says", "https://www.lrt.lt/en/news-in-english/19/2862230/gps-jamming-incidents-reported-by-pilots-continue-in-lithuania-regulator-says", "2026-03-09"]
+    - [eu_regional_press, "LRT", "GPS jamming incidents reported by pilots continue in Lithuania, regulator says - LRT", "https://www.lrt.lt/en/news-in-english/19/2862230/gps-jamming-incidents-reported-by-pilots-continue-in-lithuania-regulator-says", "2026-03-09"]
 
 - date: 2026-08-10
   where: DK
@@ -109,5 +109,4 @@
   note: The pro-Russian group Server Killers claimed it; Norway did not confirm the perpetrators.
   summary: A denial-of-service attack on Norway's Digitalisation Directorate disrupted about ten national services, including the ID-porten login and the Altinn portal, for several days, the biggest such attack it had seen.
   src:
-    - [eu_regional_press, "The Barents Observer", "Pro-Russian hackers declare 'cyberwar' on Norway", "https://www.thebarentsobserver.com/news/prorussian-hackers-declare-cyberwar-on-norway/456591", "2026-08-26"]
-    - [intl_press, "ABC News (AP)", "Pro-Russian hackers claim responsibility for major cyberattack on Norway's public digital services", "https://abcnews.com/Technology/wireStory/pro-russian-hackers-claim-responsibility-major-cyberattack-norways-135965611", "2026-08-26"]
+    - [eu_regional_press, "The Barents Observer", "Pro-Russian hackers declare ‘cyberwar’ on Norway", "https://www.thebarentsobserver.com/news/prorussian-hackers-declare-cyberwar-on-norway/456591", "2026-08-26"]
