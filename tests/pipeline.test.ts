@@ -14,6 +14,7 @@ import { changes, renderSummary } from "@/scripts/lib/summary";
 import { evidenceUrls, parseTranscript } from "@/scripts/lib/transcript";
 import { serialize, taipeiTimestamp } from "@/scripts/publish";
 import { promote } from "@/scripts/promote";
+import { preflight } from "@/scripts/preflight";
 
 const read = (f: string) => JSON.parse(fs.readFileSync(f, "utf8"));
 const tmp: string[] = [];
@@ -23,6 +24,13 @@ const mkdtemp = (prefix: string) => {
   return d;
 };
 afterEach(() => { for (const d of tmp.splice(0)) fs.rmSync(d, { recursive: true, force: true }); });
+
+describe("preflight", () => {
+  it("refuses a non-native (x64) Node before any other check", async () => {
+    const r = await preflight({ repo: "/nonexistent", date: "2026-11-04", force: false, dryRun: true, claudeBin: "/nonexistent", lockFile: "/nonexistent/lock", arch: "x64" });
+    expect(r).toMatchObject({ status: "fail", code: "E_ARCH" });
+  });
+});
 
 describe("lock", () => {
   it("is exclusive while the holder lives, and replaced when stale", () => {
