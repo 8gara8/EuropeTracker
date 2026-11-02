@@ -3,6 +3,7 @@ import os from "node:os";
 import path from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { pathwayCounts } from "@/lib/aggregate";
+import { applyIncidentChanges } from "@/lib/apply";
 import { addDays } from "@/lib/dates";
 import { loadContent } from "@/lib/content";
 import { buildContext } from "@/lib/context";
@@ -10,6 +11,7 @@ import { DRAFT_SCHEMA_PATH, renderDraftSchema } from "@/lib/json-schema";
 import { totalWords } from "@/lib/rules/words";
 import { AgentContext } from "@/lib/schema/context";
 import type { Brief } from "@/lib/schema/brief";
+import type { EvidenceSource } from "@/lib/schema/common";
 import type { DraftBrief, IncidentUpdate, StrikeUpdate } from "@/lib/schema/draft-brief";
 import type { Incident } from "@/lib/schema/incident";
 import { validateAll, validateDraft, validatePublished, worldFromContext, type World } from "@/lib/validate";
@@ -22,8 +24,13 @@ const weekdayEvidence = () => read("fixtures/evidence/weekday.json").urls as str
 /** The published form of a draft; `computed.pathways` comes from the incidents added by its date. */
 function publish(d: DraftBrief, incidents: Incident[] = [], publishedAt = "2026-10-28T06:10:00+08:00"): Brief {
   const counts = pathwayCounts(incidents.filter((x) => x.added <= d.date), d.date);
+  const assumptions = new Map(weekdayContext().state.assumptions.map((a) => [a.id, a.text]));
   return {
     ...d,
+    weekly_outlook: d.weekly_outlook && {
+      ...d.weekly_outlook,
+      assumptions_check: d.weekly_outlook.assumptions_check.map((a) => ({ ...a, text: assumptions.get(a.id)! })),
+    },
     published_at: publishedAt,
     computed: {
       pathways: Object.fromEntries(Object.entries(counts).map(([k, v]) => [k, { incidents_30d: v.incidents_30d, baseline_monthly: v.baseline_monthly }])) as Brief["computed"]["pathways"],
@@ -31,6 +38,22 @@ function publish(d: DraftBrief, incidents: Incident[] = [], publishedAt = "2026-
       source_count: d.sources.length,
       source_category_count: new Set(d.sources.map((s) => s.category)).size,
     },
+  };
+}
+
+/** A weekday-draft source, as a record's evidence. */
+function evidenceOf(id: string): EvidenceSource {
+  const s = weekday().sources.find((x) => x.id === id)!;
+  return { title: s.title, outlet: s.outlet, category: s.category, url: s.url, published_at: s.published_at };
+}
+
+/** INC-2026-0124, the cable the weekday draft raises to attribution 3, as a full pipeline record before that update. */
+function cable(extra: Partial<Incident> = {}): Incident {
+  return {
+    ...worldFromContext(weekdayContext()).incidents.find((x) => x.id === "INC-2026-0124")!,
+    date_precision: "day", location_country: "FI", location: "Gulf of Finland", sea: "baltic", serious: false,
+    attribution_note: null, host_statement: "none_yet", casualties: { killed: 0, injured: 0 }, disruption_hours: null,
+    sources: [evidenceOf("s8"), evidenceOf("s7")], seed: false, added: "2026-10-17", updated: null, ...extra,
   };
 }
 
@@ -98,7 +121,7 @@ describe("record updates", () => {
   type Ctx = ReturnType<typeof weekdayContext>;
   const incidentUpdate = (changes: Partial<IncidentUpdate["changes"]>, addSources: IncidentUpdate["add_sources"] = []): IncidentUpdate => ({
     id: "INC-2026-0118",
-    changes: { attribution: null, attribution_note: null, rung: null, serious: null, casualties: null, disruption_hours: null, summary: null, ...changes },
+    changes: { attribution: null, attribution_note: null, rung: null, serious: null, casualties: null, disruption_hours: null, summary: null, host_statement: null, ...changes },
     add_sources: addSources,
     reason: "SAMPLE: officials reported casualties from the incursion.",
   });
@@ -171,6 +194,26 @@ describe("record updates", () => {
     expect(r.errors).toContainEqual(expect.objectContaining({ code: "UPDATE_EVIDENCE", path: "strike_updates[1].changes.effect" }));
   });
 
+  it("make a raised attribution carry the host statement on pipeline records", () => {
+    const ctx = weekdayContext();
+    const run = (d: DraftBrief, rec = cable()) => {
+      const world = worldFromContext(ctx);
+      world.incidents = world.incidents.map((x) => (x.id === rec.id ? rec : x));
+      return validateDraft(d, { context: ctx, world, evidence: weekdayEvidence() });
+    };
+    // The weekday draft raises the cable to attribution 3 on a police statement but leaves host_statement alone.
+    expect(run(weekday()).errors).toEqual([expect.objectContaining({ code: "INCIDENT_SOURCES", path: "incident_updates[0].changes.host_statement" })]);
+    expect(run(weekday(), cable({ seed: true })).errors).toEqual([]); // seed records are exempt, as in validateAll
+    const d = weekday();
+    d.incident_updates[0]!.changes.host_statement = "yes";
+    expect(run(d).errors).toEqual([]);
+    d.incident_updates[0]!.add_sources = [evidenceOf("s16")]; // Bloomberg, not the statement
+    expect(run(d).errors).toEqual([expect.objectContaining({ code: "INCIDENT_SOURCES", path: "incident_updates[0].add_sources" })]);
+    const e = weekday();
+    e.incident_updates.push(incidentUpdate({ host_statement: "yes" }));
+    expect(run(e).errors).toContainEqual(expect.objectContaining({ code: "UPDATE_EVIDENCE", path: "incident_updates[1].add_sources" }));
+  });
+
   it("accept a new damage description without new sources, but not a level change without them", () => {
     const d = weekday();
     d.strike_updates.push(strikeUpdate({ damage: "SAMPLE: satellite images show two burned distillation units." }));
@@ -228,6 +271,24 @@ describe("validateAll", () => {
 
   it("passes the committed content", () => {
     expect(validateAll("content").errors).toEqual([]);
+  });
+
+  it("accepts a pipeline record whose update raised attribution along with the host statement", () => {
+    const dir = copyContent();
+    const write = (rec: Incident) => fs.writeFileSync(path.join(dir, "incidents/2026.json"), JSON.stringify({ schema_version: 1, year: 2026, incidents: [rec] }));
+    const before = cable();
+    const u = weekday().incident_updates[0]!; // attribution 3 on a police statement
+    const published = (host: IncidentUpdate["changes"]["host_statement"]): Incident => ({
+      ...applyIncidentChanges(before, { ...u, changes: { ...u.changes, host_statement: host } }),
+      sources: [...before.sources, ...u.add_sources],
+      updated: "2026-10-28",
+    });
+    write(before);
+    expect(validateAll(dir).errors).toEqual([]);
+    write(published(null)); // what publishing did before updates could set host_statement
+    expect(validateAll(dir).errors).toEqual([expect.objectContaining({ code: "INCIDENT_SOURCES", path: expect.stringContaining("attribution") })]);
+    write(published("yes"));
+    expect(validateAll(dir).errors).toEqual([]);
   });
 
   it("finds cross-file problems", () => {

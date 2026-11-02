@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Brief } from "@/lib/schema/brief";
 import type { Forecast } from "@/lib/schema/forecast";
 import type { Incident } from "@/lib/schema/incident";
-import type { Assumption, Indicator } from "@/lib/schema/state";
+import type { Indicator } from "@/lib/schema/state";
 import type { Strike } from "@/lib/schema/strike";
 import { longDate, paragraphs, windowLabel } from "@/lib/format";
 import { TAIWAN_NO_NEWS } from "@/lib/vocab";
@@ -21,7 +21,6 @@ export interface BriefViewProps {
   strikesById: Record<string, Strike>;
   forecastsById: Record<string, Forecast>;
   indicatorsById: Record<string, Indicator>;
-  assumptionsById: Record<string, Assumption>;
   archive: Record<string, string>;   // normalized URL → snapshot URL
   prevDate: string | null;
   nextDate: string | null;
@@ -29,7 +28,7 @@ export interface BriefViewProps {
 
 /** The whole brief, in the order SPEC §6 sets. */
 export function BriefView(props: BriefViewProps) {
-  const { brief: b, incidentsById, strikesById, forecastsById, indicatorsById, assumptionsById, archive, prevDate, nextDate } = props;
+  const { brief: b, incidentsById, strikesById, forecastsById, indicatorsById, archive, prevDate, nextDate } = props;
   const index = sourceIndex(b.sources);
   const hasIndicators = b.indicator_changes.length + b.indicators_new.length > 0;
 
@@ -109,7 +108,7 @@ export function BriefView(props: BriefViewProps) {
 
       {b.weekly_outlook ? (
         <Section id="weekly" title="Weekly outlook">
-          <WeeklyOutlookView outlook={b.weekly_outlook} assumptionsById={assumptionsById} />
+          <WeeklyOutlookView outlook={b.weekly_outlook} />
         </Section>
       ) : null}
 

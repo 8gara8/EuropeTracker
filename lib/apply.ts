@@ -28,6 +28,7 @@ export function applyIncidentChanges<T extends Pick<Incident, "attribution" | "r
     ...(c.casualties !== null && { casualties: c.casualties }),
     ...(c.disruption_hours !== null && { disruption_hours: c.disruption_hours }),
     ...(c.summary !== null && { summary: c.summary }),
+    ...(c.host_statement !== null && { host_statement: c.host_statement }),
   };
 }
 
