@@ -1490,6 +1490,43 @@
       "seed": false,
       "added": "2026-11-02",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0049",
+      "date": "2026-11-01",
+      "target_name": "Transneft oil pumping and storage station, south-east of Samara",
+      "target_type": "oil_depot",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck a Transneft station south-east of Samara (71 tanks, 1.6m m³; feeds two refineries and Druzhba) for the fifth time since 2 October. Astra identified it from eyewitness photos. The governor reported an air attack but gave no damage details.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Hit Major Oil Transport Hub in Samara Region",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/02/ukrainian-drones-hit-major-oil-transport-hub-in-samara-region-a94149",
+          "published_at": "2026-11-02T17:24:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones attack Russia's Samara region, reportedly striking Europe's largest oil storage facility",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/02/ukrainian-drones-attack-russia-s-samara-region-reportedly-striking-europe-s-largest-oil-storage-facility",
+          "published_at": "2026-11-02T16:16:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-03",
+      "updated": null
     }
   ]
 }

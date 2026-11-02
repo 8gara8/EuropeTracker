@@ -1,0 +1,953 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "window": {
+    "start": "2026-11-02T05:30:00+08:00",
+    "end": "2026-11-03T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-03T08:10:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Poland puts police on full readiness at Kaliningrad border over sabotage warning; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on Russian drone strikes on merchant ships off Romania and Bulgaria in October. No new incident met our logging threshold in the window. The main signal is a warning. Polish police are on full readiness from 2 to 8 November and have sent counter-terrorism units to the Kaliningrad border. Military intelligence and allied services had warned of possible sabotage, including incursions by armed groups. Russia attacked Ukraine's Danube ports overnight, but Romania's defence ministry reported no incursions. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s5",
+    "s6",
+    "s4"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "The computed rung stays 4. Russian drone strikes on ships off Romania and Bulgaria on 13, 15 and 23 October remain inside the 30-day window. No new incident was logged. Rung 5 needs deliberate, sustained Russian action against a NATO or EU state. Nothing in the window points there, so the odds stay remote (5%)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "8 incidents in 30 days against a baseline of 12.7 a month; no serious incident in 12 months. Held: the Danube attacks produced no crossing. Gerbera-2's range extends reach but does not change the 30-day odds.",
+        "source_ids": [
+          "s4",
+          "s12"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "1 incident in 30 days against a baseline of 1.3 a month; 2 serious in 12 months, about 15% a month. Held above that for the allied warning behind Poland's 2–8 November border readiness order.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "4 incidents in 30 days against a baseline of 1.3 a month; 12 serious in 12 months. Held: Russia's defence ministry again claims strikes on ships carrying 'military cargo' to the Danube ports.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No logged incident in 30 days against a baseline of 0.7 a month. Held: unattributed hacks of supermarket refrigeration in four countries caused brief disruption, far short of essential services.",
+        "source_ids": [
+          "s14"
+        ]
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and none serious since 2022. Held: Poland's warning of armed-group incursions is unconfirmed, and no Russian build-up has been reported.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month; none serious. Held: fake nuclear alerts sent through hacked apps in Ukraine and Russia changed no nuclear posture.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "1 incident in 30 days; no serious incident since 2022. Held: Estonia's expulsion and Bulgaria's presidential result block no NATO or EU decision.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1, held one above it: police are on full readiness from 2 to 8 November over warnings of sabotage and possible armed-group incursions from Kaliningrad.",
+        "source_ids": [
+          "s5"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1, held one above it: the unidentified object that crossed eastern Latvia on 1 November has not been identified, and drone entries have clustered since late October.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1, held one above it for persistent Baltic GPS interference and for KAPO's 2 November expulsion of a Russian citizen it linked to Russian intelligence.",
+        "source_ids": [
+          "s17"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Poland puts police on full readiness along the Kaliningrad border after warnings of sabotage",
+      "summary": "Polish police set up a special operation in Warmia-Masuria and Podlasie, with counter-terrorism units and the army, Border Guard and security services involved. A readiness order runs from 2 to 8 November. National police chief Marek Boroń linked it to sabotage and 'hybrid crime' by 'eastern services'. RMF reported that military intelligence and allied services had warned of sabotage, possibly including armed-group incursions.",
+      "category": "sabotage",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russian drones hit Ukraine's Danube ports; Romania reports no incursion",
+      "summary": "Romania's defence ministry said Ukrainian Danube ports came under massive drone attack overnight on 1–2 November and that no incursion into Romanian airspace was reported. The attacks continue the campaign behind October's ship sinkings off Romania and Bulgaria.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said (translated) it struck 'port infrastructure used in the interests of the Ukrainian armed forces' and 'vessels used to carry military cargo'.",
+      "source_ids": [
+        "s4",
+        "s3"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "HUR says Russia has turned the Gerbera decoy into a 1,200 km strike drone; one was found in Poland",
+      "summary": "Ukraine's military intelligence (HUR) said the Gerbera-2 has a range of 1,200 km and carries a 25 kg warhead. HUR said wreckage held components from the US, China, Taiwan, Switzerland, Ireland and the Netherlands, and that an armed Gerbera-2 was found on Poland's Baltic coast in mid-September.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Russian glide bombs kill at least 24 at an aid distribution point in Komyshuvakha",
+      "summary": "Russian aerial bombs hit a school used to hand out humanitarian aid in Komyshuvakha, Zaporizhzhia Oblast, about 20 km from the front. Ukraine's emergency service said at least 24 people were killed; Kyiv later cited 26. Zelensky said nine more bombs hit a shelter after the first strike.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s9",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ukrainian drones hit a Transneft oil hub in Samara region for the fifth time",
+      "summary": "Drones struck Samara region overnight on 1–2 November. Astra identified a Transneft pumping and storage station south-east of Samara from eyewitness photos; the site has 71 tanks and feeds the Druzhba export pipeline. Samara airport closed for two hours. There is no official damage assessment.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0049"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Governor Vyacheslav Fedorishchev said air defences were 'repelling an air barrage' and asked residents not to post photos (reported by The Moscow Times).",
+      "source_ids": [
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Hackers tamper with supermarket refrigeration in Estonia, Sweden, Belgium and Luxembourg",
+      "summary": "Attackers reached old refrigeration controllers and raised freezer settings at stores in four countries. In Estonia a Selver store recovered within 15 minutes; in Sweden six Coop stores were hit and food was discarded. Nobody has been identified or blamed. Separately, air-raid alert apps in Ukraine and Russia sent fake nuclear warnings.",
+      "category": "cyber_ew",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s14",
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Estonia expels a Russian academic it links to Russian intelligence and influence networks",
+      "summary": "On KAPO's recommendation, police escorted Russian citizen Leonid Karabeshkin, a former Euroacademy dean and ex-ERR reporter, to the border and imposed a Schengen ban. KAPO said he met Russian intelligence contacts, passed on information about Estonia's Russian speakers and was tied to the CIRP, RuBaltic and Regnum networks.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s17"
+      ]
+    },
+    {
+      "id": "d8",
+      "headline": "US says 500 Patriot interceptors approved for Ukraine will not arrive before late 2030",
+      "summary": "A State Department representative said the 500 PAC-3 missiles approved on 30 October, worth about $2.1bn and paid for by partners, could be delivered between late 2030 and late 2033. Zelensky said Ukraine receives about 12 Patriot missiles a month.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s18"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Ukraine's General Staff reported 191 clashes on 2 November. It accused Russia of using the six-day Oleshky humanitarian ceasefire to rotate troops and resupply; Russia's ombudsman called the operation a success. ISW's latest available assessment, from 16 October, found a Russian net loss of 122 km² since 1 September. There is no sign of collapse or breakthrough.",
+      "development_ids": [],
+      "source_ids": [
+        "s28",
+        "s19",
+        "s20",
+        "s27"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Drones hit a Transneft oil hub in Samara region for the fifth time since 2 October. Russia's defence ministry said it intercepted 212 drones overnight across more than a dozen regions.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s7",
+        "s8",
+        "s2"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 193 drones overnight, of which 154 were downed or jammed, then 171 drones and 10 S8000 cruise missiles by day. The Danube ports were attacked again without a crossing into Romania. A bombing in Komyshuvakha killed at least 24.",
+      "development_ids": [
+        "d2",
+        "d4"
+      ],
+      "source_ids": [
+        "s1",
+        "s26",
+        "s4",
+        "s9"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The Oleshky humanitarian ceasefire ended and fighting resumed in Kherson region. Lavrov arrived in Minsk for a Eurasian security conference, and Deputy Foreign Minister Grushko held consultations with Belarus on European issues, including OSCE coordination.",
+      "development_ids": [],
+      "source_ids": [
+        "s19",
+        "s20",
+        "s22",
+        "s21"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "No new violation logged; Romania reported no crossing during the Danube attacks. HUR's Gerbera-2 report adds a 1,200 km strike drone to the mix of cheap drones that stray across borders.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s4",
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Poland put police on full readiness at the Kaliningrad border after military intelligence and allied services warned of sabotage, possibly by armed groups. No incident has been reported and no government has publicly blamed Russia for this specific threat.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "The Royal Navy tracked the Russian intelligence ship Viktor Leonov as it monitored NATO drills off Scotland. This was surveillance without a confrontation, so it was not logged.",
+      "development_ids": [],
+      "source_ids": [
+        "s23"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "Unattributed hacks of supermarket refrigeration hit stores in Estonia, Sweden, Belgium and Luxembourg; disruption was brief. Air-raid alert apps in Ukraine and Russia sent fake nuclear warnings. Nothing was logged.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s14",
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "DW reported that Russia is close to completing a large radar complex in Kaliningrad able to monitor much of Europe. No new exercise or build-up near NATO borders was announced.",
+      "development_ids": [],
+      "source_ids": [
+        "s25"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Estonia expelled a Russian citizen it tied to Russian intelligence and influence networks. In Bulgaria, Iliana Yotova won the presidency promising to be a 'president of peace', after a campaign split over the war and the Black Sea drone attacks.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s17",
+        "s24"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "The State Department put delivery of 500 newly approved PAC-3 interceptors for Ukraine at late 2030 to late 2033. The backlog in interceptors for Europe's air defence is lengthening.",
+      "development_ids": [
+        "d8"
+      ],
+      "source_ids": [
+        "s18"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0049",
+      "date": "2026-11-01",
+      "target_name": "Transneft oil pumping and storage station, south-east of Samara",
+      "target_type": "oil_depot",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck a Transneft station south-east of Samara (71 tanks, 1.6m m³; feeds two refineries and Druzhba) for the fifth time since 2 October. Astra identified it from eyewitness photos. The governor reported an air attack but gave no damage details.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Hit Major Oil Transport Hub in Samara Region",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/02/ukrainian-drones-hit-major-oil-transport-hub-in-samara-region-a94149",
+          "published_at": "2026-11-02T17:24:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones attack Russia's Samara region, reportedly striking Europe's largest oil storage facility",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/02/ukrainian-drones-attack-russia-s-samara-region-reportedly-striking-europe-s-largest-oil-storage-facility",
+          "published_at": "2026-11-02T16:16:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-03",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The Black Sea shipping campaign remains the most likely route to further deaths, and airspace remains the most frequent source of incidents. Nothing in the window moves any pathway by 5 points.\n\nThe Polish operation is the day's most important signal, but it is a warning, not an incident. Police chief Marek Boroń tied it to sabotage and 'hybrid crime' by 'eastern services', and the readiness order covers Warmia-Masuria and Podlasie from 2 to 8 November. RMF, citing unnamed sources, reported that the warning came from military intelligence and allied services and mentioned armed groups crossing the border. No government has publicly named Russia for this specific threat, and we do not log preventive deployments. We hold the sabotage pathway at unlikely (25%). The base rate is lower: one incident in 30 days against a baseline of 1.3 a month, and two serious incidents in 12 months, about 15% a month. A specific allied warning of action within days justifies staying above it. An armed crossing would be new for Poland. We would log it at rung 2 or 3, which would lift Poland's floor from 1 to 3.\n\nHUR reports that Russia has turned the Gerbera decoy into a 1,200 km strike drone and that an armed one was found on Poland's Baltic coast in September. That extends the reach of cheap drones that stray across borders. It does not change 30-day airspace odds, which rest on strike routes near Romania and Moldova. Russia attacked the Danube ports overnight with no reported crossing. Russia's defence ministry repeated the framing it used during October's sinkings: that it struck port infrastructure serving Ukraine's armed forces and ships carrying military cargo. We read this as continued intent against Danube shipping.\n\nThe supermarket refrigeration hacks are unattributed and short-lived. We will log them only if a government links them to Russia or they disrupt essential services.",
+    "change_my_mind": "A Polish or allied statement naming Russia for a specific Kaliningrad-border plot, or an armed crossing, would raise the sabotage and military-pressure odds. A government attributing the supermarket hacks to Russia would add a cyber incident.",
+    "competing_explanations": [
+      {
+        "subject": "Polish police readiness on the Kaliningrad border, 2–8 November",
+        "hypotheses": [
+          {
+            "label": "Specific intelligence of an imminent Russian-directed plot",
+            "assessment": "Boroń cites an outside intelligence warning and a time-limited order, which fits a specific threat. No arrest or named target has been made public.",
+            "estimate": {
+              "probability": 55,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Precaution against a generalised hybrid threat",
+            "assessment": "Poland has faced repeated Russian-linked sabotage since 2024, and a broad warning could prompt the same posture without a concrete plot.",
+            "estimate": {
+              "probability": 40,
+              "term": "realistic_possibility",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Planted warning meant to tie down Polish forces",
+            "assessment": "Possible, but allied services corroborated the warning, according to RMF, and Polish services have no record of acting on single-source deception.",
+            "estimate": {
+              "probability": 5,
+              "term": "remote",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-014",
+      "question": "Will Polish authorities report sabotage, attempted sabotage or an armed-group crossing at Poland's border with Kaliningrad between 3 and 30 November 2026?",
+      "resolution_criteria": "Yes if Polish police, prosecutors, Border Guard, armed forces or ministers report an act or attempted act of sabotage, or an armed group crossing, on or near the Polish–Kaliningrad border between 3 and 30 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": "sabotage",
+      "probability": 15,
+      "base_rate": 5,
+      "base_rate_note": "We know of no reported sabotage at the Kaliningrad border since 2022; Russian-linked sabotage elsewhere in Poland comes a few times a year. Raised for the allied warning behind the 2–8 November readiness order."
+    }
+  ],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "Most direct: a State Department representative said 500 PAC-3 interceptors approved for Ukraine on 30 October would arrive between late 2030 and late 2033. That shows how deep the PAC-3 backlog runs. Taiwan's Patriot batteries draw on the same production line, and each new European or Ukrainian order lengthens the queue. Second, HUR found Taiwanese components alongside US, Chinese, Swiss, Irish and Dutch parts in Russia's new Gerbera-2 strike drone. That adds pressure on Taiwan's export-control enforcement. Third, the hacking of air-raid alert apps in Ukraine and Russia to send fake nuclear warnings shows that civil-defence warning systems are targets. Taiwan's alert apps and cell-broadcast systems could face the same tactic in a crisis.",
+  "next_72h": [
+    {
+      "date": "2026-11-04",
+      "event": "Results of the 3 November US midterm elections.",
+      "why": "The result may shape US funding for Ukraine and force posture in Europe (F-2026-013)."
+    },
+    {
+      "date": "2026-11-04",
+      "event": "Polish police full-readiness order on the Kaliningrad border stays in force until 8 November.",
+      "why": "An incident, arrest or attribution would test F-2026-014 and the sabotage pathway."
+    },
+    {
+      "date": "2026-11-05",
+      "event": "The 5 October incidents leave the 30-day window.",
+      "why": "Finland's floor falls from 2 to 1; Moldova's and Romania's floors hold on later incidents."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 193,
+      "unit": "count",
+      "period": "night of 1–2 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shahed-type including 75 jet-powered, plus Gerbera and decoys; Ukrainian figures."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 154,
+      "unit": "count",
+      "period": "night of 1–2 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shot down or jammed, per Ukraine's General Staff."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 10,
+      "unit": "count",
+      "period": "2 Nov, 06:30–19:00",
+      "source_ids": [
+        "s26"
+      ],
+      "note": "S8000 Banderol/Dan-T cruise missiles launched by day, not overnight."
+    },
+    {
+      "id": "ru_missiles_intercepted",
+      "value": 8,
+      "unit": "count",
+      "period": "2 Nov, 06:30–19:00",
+      "source_ids": [
+        "s26"
+      ],
+      "note": "Per Ukraine's Air Force."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "night of 1–2 Nov",
+      "source_ids": [
+        "s7"
+      ],
+      "note": "Samara Transneft station."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 154 ВОРОЖИЙ БПЛА (154 enemy drones shot down or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42767",
+      "language": "uk",
+      "published_at": "2026-11-02T14:11:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Дежурными силами ПВО перехвачены и уничтожены 212 украинских беспилотных летательных аппаратов (212 Ukrainian drones intercepted, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68706",
+      "language": "ru",
+      "published_at": "2026-11-02T13:31:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Продолжено нанесение ударов по объектам портовой инфраструктуры и морским судам (Strikes on port infrastructure and vessels continued, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68705",
+      "language": "ru",
+      "published_at": "2026-11-02T12:52:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Atacuri masive cu drone asupra porturilor ucrainene de la Dunăre. MApN a transmis că nu au fost raportate pătrunderi în România",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/evenimente/atacuri-masive-cu-drone-asupra-porturilor-ucrainene-de-la-dunare-mapn-a-transmis-ca-nu-au-fost-raportate-patrunderi-in-romania-4017689",
+      "language": "ro",
+      "published_at": "2026-11-02T14:17:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Poland launches operation along Russian border in response to reports of planned sabotage",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/02/poland-launches-operation-along-russian-border-in-response-to-reports-of-planned-sabotage/",
+      "language": "en",
+      "published_at": "2026-11-02T22:34:00+08:00",
+      "accessed_at": "2026-11-03T07:05:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Polish security forces prepare for possible sabotage on border with Russia's Kaliningrad Oblast",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/02/8060934/",
+      "language": "en",
+      "published_at": "2026-11-03T02:10:00+08:00",
+      "accessed_at": "2026-11-03T07:20:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Ukrainian Drones Hit Major Oil Transport Hub in Samara Region",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/02/ukrainian-drones-hit-major-oil-transport-hub-in-samara-region-a94149",
+      "language": "en",
+      "published_at": "2026-11-02T17:24:00+08:00",
+      "accessed_at": "2026-11-03T07:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Ukrainian drones attack Russia's Samara region, reportedly striking Europe's largest oil storage facility",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/02/ukrainian-drones-attack-russia-s-samara-region-reportedly-striking-europe-s-largest-oil-storage-facility",
+      "language": "en",
+      "published_at": "2026-11-02T16:16:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Ukraine war latest: Russian bomb strikes kill 24 at humanitarian aid center in Zaporizhzhia Oblast",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-russian-bomb-strikes-kill-24-at-humanitarian-aid-center-in-zaporizhzhia-oblast/",
+      "language": "en",
+      "published_at": "2026-11-03T03:00:00+08:00",
+      "accessed_at": "2026-11-03T07:20:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Надзвичайно страшний російський удар по селищу Комишуваха (An exceptionally horrific Russian strike on Komyshuvakha, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21601",
+      "language": "uk",
+      "published_at": "2026-11-03T01:03:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-03T05:10:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "War&Sanctions: противник застосовує велику версію БпЛА «Гербера» підвищеної дальності (The enemy uses a large, longer-range version of the Gerbera drone, translated)",
+      "outlet": "Ukrainian military intelligence HUR (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/DIUkraine/9912",
+      "language": "uk",
+      "published_at": "2026-11-02T15:07:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Russia adapts decoy drone for one-way attacks at ranges of up to 1,200 kilometers, HUR says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russia-adapts-decoy-drone-for-one-way-attacks-at-ranges-of-up-to-1-200-kilometers-hur-says/",
+      "language": "en",
+      "published_at": "2026-11-03T00:22:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Hackers raised freezer temperature at Selver supermarket to +50°C",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610183296/hackers-raised-freezer-temperature-at-selver-supermarket-to-50-c",
+      "language": "en",
+      "published_at": "2026-11-02T17:44:00+08:00",
+      "accessed_at": "2026-11-03T07:05:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Europe's supermarkets hit by new wave of cyberattacks targeting fridges",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/new-supermarket-hack-in-belgium-sweden-luxembourg/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-02T19:19:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Fake nuclear warnings issued after Ukrainian and Russian air alert apps hacked",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-02T22:35:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Russian citizen expelled to 'prevent activities' that 'threaten' Estonia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610183218/russian-citizen-expelled-to-prevent-activities-that-threaten-estonia",
+      "language": "en",
+      "published_at": "2026-11-02T16:44:00+08:00",
+      "accessed_at": "2026-11-03T07:05:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Ukraine won't receive 500 newly approved U.S. Patriot missiles until at least late 2030, State Department says",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/02/ukraine-won-t-receive-500-newly-approved-u-s-patriot-missiles-until-at-least-late-2030-state-department-says",
+      "language": "en",
+      "published_at": "2026-11-03T04:56:00+08:00",
+      "accessed_at": "2026-11-03T07:20:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Russia exploits ceasefire to mask military movements, General Staff says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russia-exploits-ceasefire-to-mask-military-movements-general-staff-says/",
+      "language": "en",
+      "published_at": "2026-11-02T19:51:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Oleshky Ceasefire and Aid Operation End Without Any Violations, Lantratova Says",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/02/oleshky-ceasefire-and-aid-operation-end-without-any-violations-lantratova-says-a94152",
+      "language": "en",
+      "published_at": "2026-11-02T20:31:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "2 ноября в Минске состоялись межмидовские консультации А.В.Грушко с И.В.Секретой (Grushko–Sekreta consultations in Minsk, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95394",
+      "language": "ru",
+      "published_at": "2026-11-03T03:49:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Министр иностранных дел России Сергей Лавров прибыл в Минск (Lavrov arrives in Minsk, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95392",
+      "language": "ru",
+      "published_at": "2026-11-03T02:58:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "UK intercepts Russian spy ship monitoring NATO military exercises",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/uk-intercepts-russian-spy-ship-monitoring-nato-military-exercises/",
+      "language": "en",
+      "published_at": "2026-11-02T22:43:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "How Iliana Yotova won the presidential election in Bulgaria",
+      "outlet": "DW",
+      "category": "intl_press",
+      "url": "https://www.dw.com/en/how-iliana-yotova-won-the-presidential-election-in-bulgaria/a-79829019?maca=en-rss-en-eu-2092-rdf",
+      "language": "en",
+      "published_at": "2026-11-02T20:15:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Russia's giant new radar in Kaliningrad raises alarm in NATO",
+      "outlet": "DW",
+      "category": "intl_press",
+      "url": "https://www.dw.com/en/russia-s-giant-new-radar-in-kaliningrad-raises-alarm-in-nato/a-79797815?maca=en-rss-en-eu-2092-rdf",
+      "language": "en",
+      "published_at": "2026-11-02T04:34:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Russia has attacked Ukraine with 171 drones during the day",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/02/8060929/",
+      "language": "en",
+      "published_at": "2026-11-03T01:57:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Russian Offensive Campaign Assessment, October 16, 2026",
+      "outlet": "Institute for the Study of War / Critical Threats",
+      "category": "osint_data",
+      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-october-16-2026",
+      "language": "en",
+      "published_at": "2026-10-16",
+      "accessed_at": "2026-11-03T08:00:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Оперативна інформація станом на 22:00 02.11.2026 (Operational update as of 22:00, 2 November, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42782",
+      "language": "uk",
+      "published_at": "2026-11-03T04:03:00+08:00",
+      "accessed_at": "2026-11-03T07:00:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-03T07:40:28+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 12.7
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 4,
+        "baseline_monthly": 1.3
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0
+      }
+    },
+    "word_count": 1924,
+    "source_count": 28,
+    "source_category_count": 7
+  }
+}

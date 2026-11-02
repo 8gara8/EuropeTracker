@@ -247,6 +247,25 @@
       "resolution_source": null,
       "brier": null,
       "brier_base": null
+    },
+    {
+      "id": "F-2026-014",
+      "question": "Will Polish authorities report sabotage, attempted sabotage or an armed-group crossing at Poland's border with Kaliningrad between 3 and 30 November 2026?",
+      "resolution_criteria": "Yes if Polish police, prosecutors, Border Guard, armed forces or ministers report an act or attempted act of sabotage, or an armed group crossing, on or near the Polish–Kaliningrad border between 3 and 30 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": "sabotage",
+      "probability": 15,
+      "base_rate": 5,
+      "base_rate_note": "We know of no reported sabotage at the Kaliningrad border since 2022; Russian-linked sabotage elsewhere in Poland comes a few times a year. Raised for the allied warning behind the 2–8 November readiness order.",
+      "opened": "2026-11-03",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
     }
   ]
 }
