@@ -23,7 +23,8 @@
     "promote": "tsx scripts/promote.ts",
     "archive-urls": "tsx scripts/archive-urls.ts",
     "forecasts:report": "tsx scripts/score-forecasts.ts --report",
-    "agent:check": "tsx scripts/agent-check.ts"
+    "agent:check": "tsx scripts/agent-check.ts",
+    "seed:build": "tsx scripts/seed-build.ts"
   },
   "dependencies": {
     "next": "16.4.3",

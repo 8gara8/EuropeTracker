@@ -1,0 +1,498 @@
+# Seed incidents: maritime (SPEC §9 Phase 4; counting rules in routine/STYLE.md §4).
+# Conventions: cable or pipeline damage is rung 2 (rung 3 with a naval stand-off); a European boarding or
+# seizure of a shadow-fleet ship is rung 2, a Russian escort or monitoring incident rung 1; a mine destroyed
+# offshore is rung 1, a mine in territorial waters or one that damages a ship rung 3; any death means rung 4.
+# src: [category, outlet, title, url, published]. Ids are assigned by seed:build.
+
+# ---------------------------------------------------------------- 2022
+- date: 2022-03-28
+  where: RO
+  location: About 70 km off Capu Midia
+  sea: black_sea
+  type: mine_drift
+  rung: 1
+  attribution: 1
+  summary: A fishing boat spotted a drifting naval mine about 70 km off Capu Midia; a Romanian minesweeper was sent to destroy it, one of the first of dozens of mines found in the western Black Sea after the invasion.
+  src:
+    - [intl_press, "gCaptain", "Romania Defuses Mine Drifting Near Its Black Sea Shore", "https://gcaptain.com/romania-defuses-mine-drifting-near-its-black-sea-shore", "2022-03-28"]
+
+- date: 2022-09-08
+  where: RO
+  location: 25 nautical miles north-east of Constanța
+  sea: black_sea
+  type: mine_drift
+  rung: 3
+  attribution: 1
+  summary: The Romanian minesweeper Locotenent Dimitrie Nicolescu was damaged by a drifting mine it had been sent to neutralise in rough seas. No one was hurt. It was the 28th mine found in the western Black Sea since the invasion.
+  src:
+    - [intl_press, "The Maritime Executive", "Romanian Navy Minesweeper Hit and Damaged by Drifting Mine", "https://maritime-executive.com/article/romanian-navy-minesweeper-hit-and-damaged-by-drifting-mine", "2022-09-08"]
+    - [eu_regional_press, "Romania Insider", "Romanian military ship damaged by naval mine it was sent to defuse", "https://romania-insider.com/romanian-military-ship-damaged-naval-mine", "2022-09-08"]
+
+- date: 2022-09-26
+  where: DK
+  affected: [DK, SE, DE]
+  location: Off Bornholm, in Danish and Swedish economic zones
+  sea: baltic
+  type: pipeline_damage
+  rung: 2
+  serious: true
+  attribution: 1
+  note: German prosecutors charged Ukrainian nationals in 2024–2025; no Russian link has been established.
+  summary: Underwater explosions ruptured three of the four Nord Stream 1 and 2 gas pipelines off Bornholm, releasing large amounts of gas. Seismologists recorded blasts equal to hundreds of kilograms of explosive.
+  src:
+    - [intl_press, "Reuters", "Q+A What is known so far about the Nord Stream gas pipeline leaks", "https://www.reuters.com/world/europe/qa-what-is-known-so-far-about-nord-stream-gas-pipeline-leaks-2022-09-27/", "2022-09-27"]
+    - [intl_press, "BBC News", "Ukrainian held in Italy over blast mystery of Nord Stream gas pipelines", "https://www.bbc.com/news/articles/crkz1jl5j06o", "2025-08-21"]
+
+# ---------------------------------------------------------------- 2023
+- date: 2023-10-08
+  where: FI
+  affected: [FI, EE, SE]
+  location: Gulf of Finland
+  sea: baltic
+  type: pipeline_damage
+  rung: 2
+  serious: true
+  attribution: 1
+  note: Investigators blamed the anchor of the Hong Kong-flagged Newnew Polar Bear; China later called it an accident in a storm.
+  summary: The Balticconnector gas pipeline between Finland and Estonia and two telecom cables were damaged by a dragged anchor. The pipeline stayed out of service until April 2024.
+  src:
+    - [eu_regional_press, "The Barents Observer", "Runaway ship Newnew Polar Bear, suspected of sabotage in Baltic Sea, is sailing into Russian Arctic waters", "https://www.thebarentsobserver.com/security/runaway-ship-newnew-polar-bear-suspected-of-sabotage-in-baltic-sea-is-sailing-into-russian-arctic-waters/164423", "2023-10-26"]
+
+# ---------------------------------------------------------------- 2024
+- date: 2024-11-17
+  where: SE
+  affected: [SE, LT, FI, DE]
+  location: Off Öland and Gotland
+  sea: baltic
+  type: cable_damage
+  rung: 2
+  serious: true
+  attribution: 2
+  note: Germany's defence minister assumed sabotage; the Chinese bulk carrier Yi Peng 3 was investigated. No party has been formally blamed.
+  summary: Two undersea data cables, BCS East-West Interlink (Lithuania–Sweden) and C-Lion1 (Finland–Germany), were cut within hours of each other. The BCS cable carried about a third of Lithuania's internet capacity.
+  src:
+    - [intl_press, "The Guardian", "We assume damage to Baltic Sea cables was sabotage, German minister says", "https://www.theguardian.com/world/2024/nov/19/baltic-sea-cables-damage-sabotage-german-minister", "2024-11-19"]
+
+- date: 2024-12-25
+  where: FI
+  affected: [FI, EE]
+  location: Gulf of Finland
+  sea: baltic
+  type: cable_damage
+  rung: 2
+  serious: true
+  attribution: 2
+  note: Finland suspected the shadow-fleet tanker Eagle S of dragging its anchor; a Helsinki court ruled in October 2025 it lacked jurisdiction.
+  summary: The Estlink 2 power cable between Finland and Estonia failed, cutting cross-border capacity from 1,016 to 358 MW for months, and four telecom cables were damaged. Finnish special forces boarded and detained the tanker Eagle S, which had left Ust-Luga.
+  src:
+    - [intl_press, "Reuters", "Finland boards oil tanker suspected of causing internet, power cable outages", "https://www.reuters.com/world/europe/finland-police-investigate-role-foreign-ship-after-power-cable-outage-2024-12-26/", "2024-12-26"]
+    - [eu_regional_press, "Yle News", "Finnish court: We have no jurisdiction in Eagle S case", "https://yle.fi/a/74-20186464", "2025-10-03"]
+
+# ---------------------------------------------------------------- 2025
+- date: 2025-01-26
+  where: LV
+  affected: [LV, SE]
+  location: Off Gotland
+  sea: baltic
+  type: cable_damage
+  rung: 2
+  attribution: 1
+  note: Sweden concluded the Bulgarian-owned bulk carrier Vezhen broke the cable by accident.
+  summary: A fibre-optic cable between Latvia and Gotland was damaged. Sweden seized the bulk carrier Vezhen and later ruled out sabotage.
+  src:
+    - [intl_press, "Reuters", "Sweden says ship broke Baltic Sea cable by accident", "https://www.reuters.com/world/europe/sweden-rules-out-sabotage-baltic-sea-cable-damage-case-2025-02-03/", "2025-02-03"]
+
+- date: 2025-02-21
+  where: SE
+  affected: [SE, FI, DE]
+  location: East of Gotland
+  sea: baltic
+  type: cable_damage
+  rung: 2
+  attribution: 1
+  summary: Sweden opened a sabotage investigation after the C-Lion1 data cable between Finland and Germany was damaged east of Gotland, its second fault in three months.
+  src:
+    - [intl_press, "BBC News", "Sweden investigates suspected sabotage of undersea telecoms cable", "https://www.bbc.co.uk/news/articles/cy5nydr9rqvo", "2025-02-21"]
+
+- date: 2025-03-21
+  where: DE
+  location: Off Rügen
+  sea: baltic
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: German customs seized the sanctioned tanker Eventin and its 100,000 tonnes of Russian crude. The Panama-flagged ship had drifted into German waters after losing power in January.
+  src:
+    - [eu_regional_press, "FAZ", "Zoll beschlagnahmt Tanker der russischen Schattenflotte", "https://www.faz.net/aktuell/politik/inland/russlands-schattenflotte-zoll-beschlagnahmt-tanker-110371513.html", "2025-03-21"]
+
+- date: 2025-04-11
+  where: EE
+  location: Near Tallinn
+  sea: baltic
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: The Estonian navy detained the flagless, EU- and UK-sanctioned tanker Kiwala on its way to load oil at Ust-Luga. It was released on 28 April.
+  src:
+    - [intl_press, "Euronews", "Estonian authorities detain Russian 'shadow fleet'-linked oil tanker near Tallinn", "https://www.euronews.com/my-europe/2025/04/11/estonian-authorities-detain-russian-shadow-fleet-linked-oil-tanker-near-tallinn", "2025-04-11"]
+
+- date: 2025-05-13
+  where: EE
+  location: Gulf of Finland near Vaindloo
+  sea: baltic
+  type: naval_confrontation
+  rung: 3
+  attribution: 3
+  note: Estonia said a Russian Su-35 violated its airspace during the operation.
+  summary: Estonian navy units tried to inspect the unflagged tanker Jaguar and escorted it out of Estonian waters. A Russian Su-35 fighter violated Estonian airspace for about a minute, and the tanker entered Russian waters.
+  src:
+    - [eu_regional_press, "ERR News", "Navy escorts suspected 'shadow fleet' tanker out of Estonian waters", "https://news.err.ee/1609694456/navy-escorts-suspected-shadow-fleet-tanker-out-of-estonian-waters", "2025-05-14"]
+    - [eu_regional_press, "ERR News", "Russian fighter jet breaches Estonia's airspace", "https://news.err.ee/1609694252/russian-fighter-jet-breaches-estonia-s-airspace", "2025-05-14"]
+
+- date: 2025-05-21
+  where: PL
+  affected: [PL, SE]
+  location: SwePol power cable, Baltic Sea
+  sea: baltic
+  type: shadow_fleet_incident
+  rung: 1
+  attribution: 2
+  summary: Poland said a sanctioned shadow-fleet tanker made suspicious manoeuvres near the power cable linking Poland and Sweden; a Polish military aircraft scared it off.
+  src:
+    - [intl_press, "Reuters", "Poland intervenes as Russian 'shadow fleet' ship spotted near power cable", "https://www.reuters.com/world/europe/poland-says-russian-ship-performed-suspicious-manoeuvres-near-cable-sweden-2025-05-21/", "2025-05-21"]
+
+- date: 2025-06-16
+  where: GB
+  affected: [GB, FR]
+  location: English Channel
+  sea: other
+  type: shadow_fleet_incident
+  rung: 1
+  attribution: 3
+  summary: For the first time a Russian Navy corvette, the Boykiy, escorted sanctioned shadow-fleet tankers, accompanying the Selva and Sierra through the English Channel.
+  src:
+    - [ua_independent, "Defense Express", "Corvette With Uran Missiles Deployed to Guard russian Shadow Fleet", "https://en.defence-ua.com/news/corvette_with_uran_missiles_deployed_to_guard_russian_shadow_fleet-14939.html", null]
+
+- date: 2025-09-30
+  where: FR
+  location: Off Saint-Nazaire
+  sea: other
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  note: French investigators linked the tanker to the drone flights over Denmark; Putin called the boarding piracy.
+  summary: French forces boarded the sanctioned, Benin-flagged tanker Boracay off Saint-Nazaire and arrested its captain and first mate. The tanker was released days later.
+  src:
+    - [intl_press, "BBC News", "France: Captain of tanker linked to Russian 'shadow fleet' charged", "https://www.bbc.com/news/articles/cqxz1wvqvzqo", "2025-10-02"]
+
+- date: 2025-11-28
+  where: TR
+  location: Off Turkey's northern Black Sea coast
+  sea: black_sea
+  type: strike_at_sea
+  rung: 3
+  attribution: 1
+  note: Ukraine's SBU claimed the attacks with Sea Baby naval drones.
+  summary: Naval drones struck the empty shadow-fleet tankers Kairos and Virat in Turkey's economic zone on their way to Novorossiysk. Kairos caught fire and its 25 crew were evacuated; Virat was hit again the next morning.
+  src:
+    - [intl_press, "CNN", "Ukraine says it hit Russian 'shadow fleet' tankers with underwater blasts in Black Sea", "https://www.cnn.com/2025/11/29/europe/russia-shadow-fleet-ukraine-explosions-intl", "2025-11-29"]
+
+- date: 2025-12-02
+  where: TR
+  location: About 80 nautical miles off Turkey
+  sea: black_sea
+  type: strike_at_sea
+  rung: 3
+  attribution: 1
+  injured: 2
+  note: Ukraine denied involvement and accused Russia of staging the attack.
+  summary: The tanker Midvolga 2, carrying sunflower oil from Russia to Georgia, was hit by an apparently shrapnel-armed drone off Turkey, injuring the master and second engineer.
+  src:
+    - [intl_press, "Lloyd's List", "Ukraine denies latest tanker attack :: Lloyd's List", "https://www.lloydslist.com/LL1155743/Ukraine-denies-latest-tanker-attack", "2025-12-03"]
+
+- date: 2025-12-18
+  where: MT
+  affected: [MT, GR]
+  location: Central Mediterranean between Crete and Malta
+  sea: mediterranean
+  type: strike_at_sea
+  rung: 3
+  attribution: 1
+  note: Ukraine's SBU claimed the strike, its first in the Mediterranean.
+  summary: Drones struck the empty Omani-flagged shadow-fleet tanker Qendil in the central Mediterranean, leaving it inoperable.
+  src:
+    - [intl_press, "The War Zone", "Ukraine Strikes Russia-Linked Tanker In The Mediterranean With ‘Bomber Drone’", "https://www.twz.com/news-features/ukraine-strikes-russia-linked-tanker-in-the-mediterranean-with-bomber-drone", "2025-12-19"]
+
+- date: 2025-12-31
+  where: FI
+  affected: [FI, EE]
+  location: Gulf of Finland
+  sea: baltic
+  type: cable_damage
+  rung: 2
+  attribution: 2
+  note: Investigators found a drag track and said the Fitburg's anchor damaged the cable; the crew included Russian nationals.
+  summary: A data cable linking Finland and Estonia and other cables in Estonia's economic zone were damaged. Finnish police and coast guard boarded the freighter Fitburg, bound from St Petersburg with its anchor down, and took it to port.
+  src:
+    - [eu_regional_press, "Yle News", "Finnish authorities seize vessel following sea cable disruption", "https://yle.fi/a/74-20202087", "2025-12-31"]
+    - [intl_press, "The Guardian", "Finnish police seize vessel suspected of damaging underwater cable", "https://www.theguardian.com/world/2025/dec/31/finnish-police-seize-vessel-suspected-damaging-underwater-cable", "2025-12-31"]
+
+# ---------------------------------------------------------------- 2026
+- date: 2026-01-08
+  where: TR
+  location: Off Turkey
+  sea: black_sea
+  type: strike_at_sea
+  rung: 3
+  attribution: 1
+  summary: A drone struck the shadow-fleet tanker Elbus off Turkey on its way to Novorossiysk. It was damaged; no crew were hurt.
+  src:
+    - [intl_press, "Reuters", "Russian-bound tanker hit by drone in Black Sea, maritime sources say", "https://www.reuters.com/world/russian-bound-tanker-hit-by-drone-black-sea-maritime-sources-say-2026-01-08/", "2026-01-08"]
+
+- date: 2026-01-22
+  where: FR
+  location: Alboran Sea
+  sea: mediterranean
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: French naval commandos boarded and seized the UK-sanctioned, Comoros-flagged tanker Grinch, which had left Murmansk, despite Russian warnings against boardings.
+  src:
+    - [intl_press, "BBC News", "France seizes suspected Russian 'shadow fleet' tanker in the Mediterranean", "https://www.bbc.com/news/articles/cdexxr2y907o", "2026-01-22"]
+
+- date: 2026-02-28
+  where: BE
+  location: Belgian economic zone, North Sea
+  sea: north_sea
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: Belgian special forces, helped by French helicopters, seized the tanker Ethera, sailing under a false Guinean flag back to Russia, and escorted it to Zeebrugge.
+  src:
+    - [intl_press, "The Guardian", "Suspected Russian ‘shadow fleet’ tanker seized in North Sea", "https://www.theguardian.com/world/2026/mar/01/suspected-russian-shadow-fleet-tanker-seized-north-sea", "2026-03-01"]
+
+- date: 2026-03-03
+  where: MT
+  location: Central Mediterranean south-east of Malta
+  sea: mediterranean
+  type: strike_at_sea
+  rung: 3
+  attribution: 1
+  note: A security source told Reuters Ukraine was suspected; Russia blamed Ukraine.
+  summary: The sanctioned Russian-flagged LNG carrier Arctic Metagaz, laden with about 62,000 tonnes of LNG, caught fire after a suspected drone strike and drifted badly damaged. Russia said all 30 crew were rescued.
+  src:
+    - [intl_press, "Reuters", "Russian-flagged sanctioned LNG tanker on fire in the Mediterranean, sources say, crew located in lifeboat off Libya", "https://www.reuters.com/business/energy/russian-flagged-sanctioned-lng-tanker-fire-mediterranean-crew-fate-unknown-2026-03-03/", "2026-03-03"]
+    - [eu_regional_press, "Times of Malta", "Russian gas tanker explodes between Malta and Libya", "https://timesofmalta.com/article/russialinked-gas-tanker-ablaze-150-miles-off-malta.1124914", "2026-03-03"]
+
+- date: 2026-03-07
+  where: SE
+  location: Swedish waters
+  sea: baltic
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: Sweden seized the false-flagged cargo ship Caffa 17, on Ukraine's sanctions list and suspected of carrying stolen Ukrainian grain, and detained a crew member.
+  src:
+    - [ru_by_independent, "The Moscow Times", "Sweden Detains Crew Member of Russian ‘Shadow Fleet’ Ship - The Moscow Times", "https://www.themoscowtimes.com/2026/03/08/sweden-detains-crew-member-of-russian-shadow-fleet-ship-a92156", "2026-03-08"]
+
+- date: 2026-03-12
+  where: SE
+  location: Swedish waters
+  sea: baltic
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: The Swedish coast guard seized the EU-sanctioned tanker Sea Owl II, sailing under a false Comoros flag, and its Russian captain was arrested for forged documents.
+  src:
+    - [intl_press, "BBC News", "Sweden detains captain of Russian shadow fleet ship", "https://www.bbc.com/news/articles/cpqwg0yej04o", "2026-03-15"]
+
+- date: 2026-03-20
+  where: FR
+  location: Western Mediterranean
+  sea: mediterranean
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: The French navy, with British support, seized the tanker Deyna from Russia, accused of flying a false Mozambican flag. It was freed in April after its owner paid a fine.
+  src:
+    - [intl_press, "France 24", "French navy seizes oil tanker sailing from Russia accused of flying false flag in Mediterranean", "https://www.france24.com/en/france/20260320-french-navy-seizes-oil-tanker-sailing-from-russia-accused-of-flying-false-flag-in-mediterranean", "2026-03-20"]
+
+- date: 2026-04-08
+  where: GB
+  affected: [GB, FR]
+  location: English Channel
+  sea: other
+  type: shadow_fleet_incident
+  rung: 1
+  attribution: 3
+  note: The Kremlin said Russia would protect its interests and called the boardings piracy.
+  summary: A Russian frigate escorted two sanctioned shadow-fleet tankers, Enigma and Universal, through the English Channel, shadowed by a British naval vessel.
+  src:
+    - [intl_press, "The Telegraph", "Exclusive: Putin mocks Starmer with warship in Channel", "https://www.telegraph.co.uk/news/2026/04/08/russia-warship-mocks-starmer-in-channel/", "2026-04-08"]
+
+- date: 2026-05-03
+  where: SE
+  location: Swedish waters
+  sea: baltic
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: The Swedish coast guard boarded the sanctioned tanker Jin Hui south of Trelleborg on suspicion of a false Syrian flag and arrested its Chinese captain for presenting a false document.
+  src:
+    - [intl_press, "WTOP (AP)", "Sweden detains sanctioned oil tanker believed to be linked to Russia's shadow fleet", "https://wtop.com/europe/2026/05/sweden-detains-sanctioned-oil-tanker-believed-to-be-linked-to-russias-shadow-fleet/", "2026-05-06"]
+    - [intl_press, "The Maritime Executive", "Sweden arrests Chinese master of detained shadow fleet tanker", "https://maritime-executive.com/article/sweden-arrests-chinese-master-of-detained-shadow-fleet-tanker", "2026-05-04"]
+
+- date: 2026-06-01
+  where: FR
+  location: Atlantic, 740 km west of Brittany
+  sea: other
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: French naval troops boarded the tanker Tagor after it left Murmansk, confirmed it was sailing under a false flag, and diverted it.
+  src:
+    - [intl_press, "BBC News", "France intercepts sanctioned Russian oil tanker with UK help, Macron says", "https://www.bbc.com/news/articles/cn8pwgej1gxo", "2026-06-01"]
+
+- date: 2026-06-05
+  where: RO
+  location: Port of Constanța
+  sea: black_sea
+  type: strike_at_sea
+  rung: 3
+  attribution: 2
+  note: Romania's president said Ukraine lost control of the drones to Russian electronic warfare.
+  summary: A Ukrainian Sargan-3000 naval drone, jammed off course, entered Constanța port and lodged in anti-pollution booms. The area was evacuated before it self-detonated without further damage; a second blew up outside the port and two more far offshore.
+  src:
+    - [intl_press, "AP", "Sea drone used in Ukraine war detonates in Romania's Constanta port", "https://apnews.com/article/drone-romania-black-sea-explosion-ukraine-defc53b2383a67475230c8349a47d7c6", "2026-06-05"]
+    - [eu_regional_press, "Antena 3", "Alertă în Portul Constanța. O dronă navală cu timer atașat a explodat. MApN: Este de tipul celor folosite în războiul din Ucraina", "https://www.antena3.ro/actualitate/alerta-in-portul-constanta-o-drona-marina-care-a-fost-adusa-la-mal-a-explodat-zona-a-fost-evacuata-790939.html", "2026-06-05"]
+
+- date: 2026-06-14
+  where: GB
+  location: English Channel
+  sea: other
+  type: shadow_fleet_incident
+  rung: 2
+  attribution: 3
+  summary: Royal Marines seized the shadow-fleet tanker Smyrtos in British waters in the Channel, the first UK-led capture. Its captain was charged under Russia sanctions law.
+  src:
+    - [intl_press, "BBC News", "Royal Marines board Russian shadow fleet oil tanker in English Channel", "https://www.bbc.com/news/articles/clyek039l2vo", "2026-06-14"]
+
+- date: 2026-06-16
+  where: GB
+  location: English Channel off the Isle of Wight
+  sea: other
+  type: naval_confrontation
+  rung: 3
+  attribution: 3
+  summary: The Russian frigate Admiral Grigorovich fired flares and warning shots into the air as a British yacht approached it off the Isle of Wight, two days after the Smyrtos seizure. A Royal Navy patrol vessel assisted the yacht.
+  src:
+    - [intl_press, "The Guardian", "Russian frigate fires warning shots at British yacht in Channel", "https://www.theguardian.com/uk-news/2026/jun/16/russian-frigate-fires-warning-shots-at-british-yacht-in-channel-reports", "2026-06-16"]
+
+- date: 2026-07-21
+  where: RO
+  location: Off Sfântu Gheorghe, outside territorial waters
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  attribution: 2
+  killed: 1
+  injured: 2
+  summary: An LPG tanker caught fire after crew said three drones attacked it at night off Sfântu Gheorghe, outside Romania's territorial waters. Romania evacuated the crew; three injured sailors were taken to Tulcea and one later died.
+  src:
+    - [eu_regional_press, "Digi24", "O navă cu GPL a luat foc în Marea Neagră. Nicușor Dan: A fost lovită în afara apelor teritoriale românești", "https://www.digi24.ro/stiri/actualitate/o-nava-cu-gpl-a-luat-foc-pe-marea-neagra-la-40-de-kilometri-distanta-de-sulina-trei-marinari-au-fost-raniti-3871345", "2026-07-21"]
+
+- date: 2026-07-24
+  where: RO
+  location: Romanian economic zone, 22 miles off Sfântu Gheorghe
+  sea: black_sea
+  type: strike_at_sea
+  rung: 3
+  attribution: 1
+  summary: The Liberian-flagged bulk carrier Christina B, carrying US coal to Ukraine, was hit by a mine or naval drone in Romania's economic zone. No casualties; it sought repairs in Constanța or Varna.
+  src:
+    - [eu_regional_press, "Digi24", "Încă o navă aflată în Zona Economică Exclusivă a României a transmis un apel de urgență. Instrucțiunile transmise de armatorul vasului", "https://www.digi24.ro/stiri/actualitate/inca-o-nava-aflata-in-zona-economica-exclusiva-a-romaniei-a-transmis-un-apel-de-urgenta-dsu-posibil-impact-cu-o-drona-sau-mina-marina-3876501", "2026-07-24"]
+
+- date: 2026-08-20
+  where: RO
+  location: Near the Neptun Deep gas platform, 80 nautical miles off Constanța
+  sea: black_sea
+  type: naval_confrontation
+  rung: 3
+  attribution: 3
+  note: President Dan attributed it to Russia; Ukraine confirmed it was not theirs.
+  summary: A Romanian F-16 strafed an explosive Russian naval drone near the Neptun Deep offshore gas project, and navy divers finished it off as it sank.
+  src:
+    - [intl_press, "Reuters", "Romania destroys marine drone near Neptun Deep gas project, minister says", "https://www.reuters.com/world/europe/romania-destroys-marine-drone-near-neptun-deep-gas-project-minister-says-2026-08-20/", "2026-08-20"]
+    - [eu_gov_security, "Romanian Ministry of National Defence", "Informatie de presa - update", "https://www.mapn.ro/cpresa/19361_informa%C8%9Bie-de-presa---update", "2026-08-20"]
+
+- date: 2026-08-28
+  where: RO
+  location: Off Sfântu Gheorghe
+  sea: black_sea
+  type: strike_at_sea
+  rung: 3
+  attribution: 2
+  note: Romania's president said a drone attack was suspected.
+  injured: 1
+  summary: The Dominican-flagged freighter Progress IV, carrying sugar from Sulina to Turkey, caught fire and sank. The Romanian coast guard and a civilian ship rescued all 12 crew; one was seriously injured.
+  src:
+    - [intl_press, "Marine Insight", "Cargo Ship With 12 Crew Sinks In Black Sea Off Romania Following Suspected Drone Attack", "https://www.marineinsight.com/cargo-ship-with-12-crew-sinks-in-black-sea-off-romania-following-suspected-drone-attack/", "2026-08-29"]
+
+- date: 2026-10-05
+  where: RO
+  affected: [RO, BG, TR]
+  location: Black Sea off Romania
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  attribution: 3
+  killed: 1
+  injured: 1
+  note: Zelensky said Russian drones sank the ships.
+  summary: Russian drones sank the Turkish-owned freighter Royad Mammadov, carrying Ukrainian maize from Izmail to Ravenna, off Romania; its captain was killed and 11 crew rescued. A Bulgarian tanker carrying grain to Romania was also sunk; its 18 crew were saved.
+  src:
+    - [ua_independent, "Militarnyi", "Russian Drones Sink Royad Mammadov Dry Cargo Ship Carrying Ukrainian Grain", "https://militarnyi.com/en/news/russia-sink-royad-mammadov-ship-ukr-grain/", "2026-10-05"]
+    - [eu_regional_press, "tagesschau", "Tote nach Schiffsunglück im Schwarzen Meer - Drohnenangriff?", "https://www.tagesschau.de/ausland/europa/schwarzes-meer-schiff-verunglueckt-100.html", "2026-10-05"]
+
+- date: 2026-10-13
+  where: BG
+  affected: [BG, MT]
+  location: Bulgarian economic zone, Black Sea
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  serious: true
+  attribution: 3
+  injured: 5
+  note: Bulgaria's president summoned the Russian ambassador.
+  summary: Drones struck two ships in Bulgaria's waters overnight. The HS Dignity, bound for Brăila, sank with only one crew member rescued; the Malta-flagged Chelsea 3, bound for Giurgiulești, was badly damaged and its 15 crew evacuated, five injured.
+  src:
+    - [eu_regional_press, "DW", "Schiffe vor Bulgarien mit Drohnen angegriffen - wohl Tote", "https://www.dw.com/de/wohl-tote-bei-drohnenattacke-auf-schiffe-vor-bulgarien/a-79649500", "2026-10-13"]
+    - [ru_by_independent, "Novaya Gazeta Europe", "Новый виток черноморской эскалации. У берегов стран НАТО за девять дней атакованы пять торговых судов. Эксперты считают, что Россия пытается нарушить украинский экспорт и одновременно проверить реакци", "https://novayagazeta.eu/articles/2026/10/13/novyi-vitok-chernomorskoi-eskalatsii", "2026-10-13"]
+
+- date: 2026-10-15
+  where: RO
+  location: 8–10 miles off Sulina
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  serious: true
+  attribution: 3
+  note: Romanian officials said Russian drones hit the ships.
+  summary: Russian drones struck two chemical tankers near Sulina. The Yara J caught fire at anchor inside Romanian territorial waters with no casualties; the Wine Trader was hit just outside them, and seven of its crew were missing after a search.
+  src:
+    - [intl_press, "Reuters", "Seven sailors missing after drones hit two ships near Romania", "https://www.reuters.com/world/two-ships-ablaze-romanian-black-sea-waters-8-sailors-missing-2026-10-15/", "2026-10-15"]
+    - [intl_press, "Reuters", "Romania resumes search for seven missing sailors from drone-hit ship", "https://www.reuters.com/world/romania-resumes-search-seven-missing-sailors-drone-hit-ship-2026-10-16/", "2026-10-16"]
+
+- date: 2026-10-23
+  where: RO
+  location: Just outside territorial waters off Constanța
+  sea: black_sea
+  type: strike_at_sea
+  rung: 4
+  attribution: 3
+  killed: 1
+  note: Romania blamed Russia.
+  summary: A Russian drone hit the Comoros-flagged bulk carrier Khoryv, which sank off Constanța. One sailor died, three were missing and nine were rescued.
+  src:
+    - [intl_press, "Reuters", "Romania blames Russia for drone that sinks cargo ship; 1 killed, 3 missing", "https://www.reuters.com/world/romania-blames-russia-drone-that-sinks-cargo-ship-1-killed-3-missing-2026-10-23/", "2026-10-23"]

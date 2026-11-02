@@ -1,0 +1,151 @@
+# Seed incidents: nuclear and radiological (SPEC §9 Phase 4; counting rules in routine/STYLE.md §4).
+# Exercises, deployments to Belarus or Kaliningrad, and plant-safety events the IAEA reports. Locations in
+# UA, RU or BY stay at rung 1. For Ukrainian plants, `affected` lists the nearest EU or NATO states.
+# Coverage is representative: Zaporizhzhia alone lost off-site power 26 times by August 2026.
+# src: [category, outlet, title, url, published]. Ids are assigned by seed:build.
+
+- date: 2022-08-25
+  where: UA
+  affected: [MD, RO]
+  location: Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 3
+  summary: The Russian-occupied Zaporizhzhia plant was disconnected from Ukraine's grid for the first time in its history after fires damaged its last working power lines; operators reconnected a reactor the next day.
+  src:
+    - [intl_press, "Reuters", "Russian-held nuclear plant resumes electricity supply to Ukraine - Energoatom", "https://www.reuters.com/world/europe/ukraine-says-one-reactor-nuclear-plant-reconnects-its-grid-2022-08-26/", "2022-08-26"]
+
+- date: 2022-09-11
+  where: UA
+  affected: [MD, RO]
+  location: Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 3
+  summary: Ukraine shut down the last operating reactor at Zaporizhzhia after shelling cut its external power, putting all six reactors into cold shutdown.
+  src:
+    - [intl_press, "ABC News (Australia)", "Zaporizhzhia nuclear power plant halts operations in Ukraine amid fears of disaster during Russian invasion - ABC News", "https://www.abc.net.au/news/2022-09-11/zaporizhzhia-nuclear-power-plant-halts-operations-in-ukraine/101427770", "2022-09-11"]
+
+- date: 2022-11-20
+  where: UA
+  affected: [MD, RO]
+  location: Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 2
+  summary: More than a dozen blasts shook the Zaporizhzhia plant; the IAEA chief said whoever was shelling it was playing with fire.
+  src:
+    - [intl_press, "The Guardian", "Shelling of Zaporizhzhia is playing with fire, says UN nuclear chief, as blasts reported", "https://www.theguardian.com/world/2022/nov/20/shelling-of-zaporizhzhia-is-playing-with-fire-says-un-nuclear-chief-ukraine", "2022-11-20"]
+
+- date: 2023-06-06
+  where: UA
+  affected: [MD, RO]
+  location: Kakhovka dam and Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 2
+  summary: The destruction of the Kakhovka dam drained the reservoir that supplied cooling water to the Zaporizhzhia plant; the IAEA director general went to inspect the plant.
+  src:
+    - [intl_press, "Nuclear Engineering International", "IAEA Director General to inspect Zaporizhia NPP in the aftermath of crucial dam destruction", "https://www.neimagazine.com/news/newsiaea-director-general-to-inspect-zaporizhia-npp-in-the-aftermath-of-crucial-dam-destruction-10925102", "2023-06-08"]
+
+- date: 2023-06-16
+  where: BY
+  affected: [PL, LT, LV]
+  location: Belarus
+  type: nuclear_deployment
+  rung: 1
+  attribution: 3
+  summary: Putin confirmed the first Russian tactical nuclear warheads had been delivered to Belarus, the first such deployment outside Russia since the Soviet collapse, with Russia keeping control of them.
+  src:
+    - [intl_press, "The National", "Russia has sent first tactical nuclear weapons to Belarus, Putin confirms", "https://www.thenationalnews.com/world/europe/2023/06/16/russia-has-sent-first-tactical-nuclear-weapons-to-belarus-putin-confirms", "2023-06-16"]
+
+- date: 2024-04-07
+  where: UA
+  affected: [MD, RO]
+  location: Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 1
+  note: Russia and Ukraine blamed each other.
+  summary: Drones struck the Zaporizhzhia plant, including the dome of reactor 6, in the first direct attacks on it since 2022. The IAEA chief condemned them; no radiation release was reported.
+  src:
+    - [intl_press, "The Guardian", "UN nuclear watchdog head condemns drone strike on Zaporizhzhia nuclear power plant", "https://www.theguardian.com/world/2024/apr/08/un-nuclear-watchdog-head-condemns-drone-strike-on-zaporizhzhia-power-plant", "2024-04-08"]
+
+- date: 2024-05-21
+  where: RU
+  affected: [PL, LT, LV, EE, FI]
+  location: Southern Military District
+  type: nuclear_exercise
+  rung: 1
+  attribution: 3
+  summary: Russia began drills of its non-strategic nuclear forces, practising the preparation and use of Iskander and Kinzhal missiles, after Western talk of sending troops to Ukraine. Belarus joined a second stage in June.
+  src:
+    - [intl_press, "Al Jazeera", "Russia starts ‘tactical nuclear drills’ near Ukraine border", "https://www.aljazeera.com/news/2024/5/22/russia-starts-tactical-nuclear-drills-near-ukraine-border", "2024-05-22"]
+
+- date: 2025-02-14
+  where: UA
+  affected: [PL, LT]
+  location: Chornobyl New Safe Confinement
+  type: plant_safety_event
+  rung: 1
+  attribution: 3
+  note: Ukraine blamed a Russian drone; in December 2025 the IAEA said the structure had lost its confinement function.
+  summary: A drone punched a hole in the New Safe Confinement over Chornobyl's destroyed reactor and started a fire that took weeks to extinguish. Radiation levels did not rise.
+  src:
+    - [ua_independent, "Ukrinform", "Drone damages outer layer of Chornobyl NPP confinement structure – IAEA", "https://www.ukrinform.net/rubric-society/3960233-drone-damages-outer-layer-of-chornobyl-npp-confinement-structure-iaea.html", "2025-02-14"]
+    - [intl_press, "Al Jazeera", "IAEA flags damage to Chornobyl nuclear plant’s protective shield in Ukraine", "https://www.aljazeera.com/news/2025/12/6/iaea-flags-damage-to-chornobyl-nuclear-plants-protective-shield", "2025-12-06"]
+
+- date: 2025-09-23
+  where: UA
+  affected: [MD, RO]
+  location: Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 2
+  summary: Zaporizhzhia lost its last 750 kV line to military activity 1.5 km away, the tenth complete loss of off-site power, and ran on emergency diesel generators for weeks, the longest blackout of the war; the IAEA called it unsustainable.
+  src:
+    - [intl_bodies, "IAEA (via GlobalSecurity.org)", "Update 315 - IAEA Director General Statement on Situation in Ukraine", "https://www.globalsecurity.org/wmd/library/news/ukraine/2025/09/ukraine-250924-iaea01.htm", "2025-09-24"]
+
+- date: 2025-10-22
+  where: RU
+  affected: [PL, LT, LV, EE, FI]
+  location: Plesetsk, Barents Sea and long-range aviation
+  type: nuclear_exercise
+  rung: 1
+  attribution: 3
+  summary: Putin oversaw an exercise of Russia's strategic nuclear forces with a Yars ICBM launch from Plesetsk, a Sineva missile from a submarine in the Barents Sea and Tu-95MS cruise missile launches.
+  src:
+    - [intl_press, "Anadolu Agency", "Putin supervises training of Russian nuclear forces", "https://aa.com.tr/en/asia-pacific/putin-supervises-training-of-russian-nuclear-forces/3723691", "2025-10-22"]
+
+- date: 2025-12-17
+  where: BY
+  affected: [PL, LT, LV]
+  location: Belarus
+  type: nuclear_deployment
+  rung: 1
+  attribution: 3
+  summary: Lukashenko said Russia's nuclear-capable Oreshnik intermediate-range missile system had arrived in Belarus and gone on combat duty; he gave no numbers.
+  src:
+    - [intl_press, "Defense News", "Lukashenko: Russian nuclear-capable Oreshnik missiles now in Belarus - Defense News", "https://www.defensenews.com/global/europe/2025/12/19/lukashenko-russian-nuclear-capable-oreshnik-missiles-now-in-belarus/", "2025-12-19"]
+
+- date: 2026-05-19
+  where: RU
+  affected: [PL, LT, LV, EE, FI]
+  location: Russia
+  type: nuclear_exercise
+  rung: 1
+  attribution: 3
+  summary: From 19 to 21 May, Russia held an exercise on preparing and using its nuclear forces against a threat of aggression, reportedly involving 64,000 personnel, one of the largest of its kind.
+  src:
+    - [think_tank, "National Institute for Public Policy", "Mark B. Schneider, Russia’s May 2026 Nuclear Exercise, No. 666, August 3, 2026 – Nipp", "https://nipp.org/?p=4997", "2026-08-03"]
+
+- date: 2026-08-20
+  where: UA
+  affected: [MD, RO]
+  location: Zaporizhzhia nuclear power plant
+  type: plant_safety_event
+  rung: 1
+  attribution: 2
+  summary: Military activity cut Zaporizhzhia's only remaining off-site line, its 26th loss of off-site power in the war. Power was restored in early September after an IAEA-brokered local ceasefire allowed repairs.
+  src:
+    - [intl_press, "American Nuclear Society", "Zaporizhzhia restores off-site power following IAEA-brokered local ceasefire -- ANS / Nuclear Newswire", "https://www.ans.org/news/2026-09-09/article-8377/zaporizhzhia-restores-offsite-power-following-iaeabrokered-local-ceasefire/", "2026-09-09"]

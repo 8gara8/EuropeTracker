@@ -1,0 +1,926 @@
+{
+  "schema_version": 1,
+  "year": 2022,
+  "incidents": [
+    {
+      "id": "INC-2022-0001",
+      "date": "2022-02-24",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE",
+        "FR",
+        "IT",
+        "PL",
+        "HU",
+        "GR"
+      ],
+      "location": "Europe-wide (KA-SAT satellite network)",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "cyberattack",
+      "rung": 2,
+      "serious": true,
+      "summary": "An hour before the invasion, a cyberattack on Viasat's KA-SAT network knocked out tens of thousands of satellite modems across Europe, including remote monitoring of about 5,800 German wind turbines, for weeks.",
+      "attribution": 4,
+      "attribution_note": "The EU, UK and US attributed the attack to Russia in May 2022.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia downed satellite internet in Ukraine: Western officials",
+          "outlet": "Al Jazeera",
+          "category": "intl_press",
+          "url": "https://www.aljazeera.com/news/2022/5/10/russia-behind-cyberattack-against-internet-network-in-ukraine",
+          "published_at": "2022-05-10"
+        },
+        {
+          "title": "US, EU attribute Viasat hack to Russia",
+          "outlet": "TechTarget",
+          "category": "intl_press",
+          "url": "https://www.techtarget.com/searchsecurity/news/252518023/US-EU-attribute-Viasat-hack-to-Russia",
+          "published_at": "2022-05-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0002",
+      "date": "2022-03-02",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE"
+      ],
+      "location": "Baltic Sea east of Gotland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Russian Su-27 and two Su-24 aircraft briefly violated Swedish airspace east of Gotland. Swedish Gripens photographed them.",
+      "attribution": 3,
+      "attribution_note": "The Swedish Armed Forces identified the aircraft as Russian.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Fyra ryska stridsflyg har kränkt svenskt luftrum",
+          "outlet": "SVT Nyheter",
+          "category": "eu_regional_press",
+          "url": "https://www.svt.se/nyheter/inrikes/ryskt-stridsflyg-har-krankt-svenskt-luftrum",
+          "published_at": "2022-03-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0003",
+      "date": "2022-03-10",
+      "date_precision": "day",
+      "location_country": "HR",
+      "affected": [
+        "HR",
+        "HU",
+        "RO"
+      ],
+      "location": "Zagreb",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Soviet-era Tu-141 reconnaissance drone flew across Romanian and Hungarian airspace and crashed in Zagreb, exploding near a student dormitory. No one was hurt. NATO air defences did not intercept it.",
+      "attribution": 1,
+      "attribution_note": "Russia and Ukraine both denied ownership; Croatian media later reported it belonged to Ukrainian forces.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Military drone from Ukraine war crashes into Croatian capital Zagreb",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2022/mar/11/ukraine-military-drone-crashes-into-croatian-capital-zagreb",
+          "published_at": "2022-03-11"
+        },
+        {
+          "title": "‘Jarunski’ dron pripadao je ukrajinskim vojnim snagama",
+          "outlet": "Nacional",
+          "category": "eu_regional_press",
+          "url": "https://www.nacional.hr/jarunski-dron-pripadao-je-ukrajinskim-vojnim-snagama/",
+          "published_at": "2022-03-15"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0004",
+      "date": "2022-03-13",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tărpiu, Bistrița-Năsăud County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A military Orlan-10 reconnaissance drone crashed in northern Romania, far from the Ukrainian border. First taken for a private drone, it was identified as a Russian army type.",
+      "attribution": 2,
+      "attribution_note": "Ukraine's air force said the drone belonged to the Russian army; Romanian prosecutors opened a case.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Aviația ucraineană spune că drona căzută lângă Bistrița e a armatei ruse. O alta, care a survolat Polonia, e fost doborâtă",
+          "outlet": "Libertatea",
+          "category": "eu_regional_press",
+          "url": "https://www.libertatea.ro/stiri/aviatia-ucraineana-spune-ca-drona-cazuta-langa-bistrita-e-a-armatei-ruse-o-alta-care-a-survolat-polonia-e-fost-doborata-4033475",
+          "published_at": "2022-03-15"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0005",
+      "date": "2022-03-28",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "About 70 km off Capu Midia",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "mine_drift",
+      "rung": 1,
+      "serious": false,
+      "summary": "A fishing boat spotted a drifting naval mine about 70 km off Capu Midia; a Romanian minesweeper was sent to destroy it, one of the first of dozens of mines found in the western Black Sea after the invasion.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania Defuses Mine Drifting Near Its Black Sea Shore",
+          "outlet": "gCaptain",
+          "category": "intl_press",
+          "url": "https://gcaptain.com/romania-defuses-mine-drifting-near-its-black-sea-shore",
+          "published_at": "2022-03-28"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0006",
+      "date": "2022-04-25",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Tiraspol, Transnistria",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "explosive",
+      "rung": 2,
+      "serious": false,
+      "summary": "Grenade-launcher fire hit the headquarters of the Transnistrian state security ministry in Tiraspol, the first of a series of blasts in the Russian-backed region. No one was hurt.",
+      "attribution": 2,
+      "attribution_note": "Kyiv called it a Russian provocation; the Institute for the Study of War judged it a likely Kremlin false-flag operation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ukraine warns against attempts to drag Moldova's Transniestria region into war",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/ukraine-warns-against-attempts-drag-moldovas-transniestria-region-into-war-2022-04-26/",
+          "published_at": "2022-04-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0007",
+      "date": "2022-04-26",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Maiac, Grigoriopol, Transnistria",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "infrastructure_sabotage",
+      "rung": 2,
+      "serious": false,
+      "summary": "Two explosions knocked out two radio masts broadcasting Russian stations at the Grigoriopol transmitter in Maiac, a day after the Tiraspol attack.",
+      "attribution": 2,
+      "attribution_note": "Kyiv blamed Russia; Moldova's president said factions in the region wanted to raise tension.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Tensions surge after breakaway Moldovan region reports attacks; Kyiv blames Russia",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/blasts-hit-soviet-era-radio-antennae-breakaway-moldovan-region-authorities-say-2022-04-26/",
+          "published_at": "2022-04-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0008",
+      "date": "2022-04-27",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL",
+        "BG"
+      ],
+      "location": "Poland and Bulgaria",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "energy_coercion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Gazprom halted gas supplies to Poland and Bulgaria for refusing to pay in roubles. It supplied about half of Poland's gas and 90% of Bulgaria's; both called it a breach of contract.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Gazprom halts gas supplies to Bulgaria and Poland as Russia demands rouble payments",
+          "outlet": "City A.M.",
+          "category": "intl_press",
+          "url": "https://www.cityam.com/gazprom-halts-gas-supplies-to-bulgaria-and-poland-as-russia-demands-rouble-payments/",
+          "published_at": "2022-04-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0009",
+      "date": "2022-04-29",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE",
+        "DK"
+      ],
+      "location": "East of Bornholm and south of Blekinge",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian An-30 surveillance aircraft entered Danish airspace east of Bornholm for close to a minute, then Swedish airspace south of Blekinge. Danish F-16s and Swedish Gripens were scrambled.",
+      "attribution": 3,
+      "attribution_note": "Denmark and Sweden both summoned Russian diplomats.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ryskt militärflygplan har kränkt svenskt luftrum",
+          "outlet": "SVT Nyheter",
+          "category": "eu_regional_press",
+          "url": "https://www.svt.se/nyheter/inrikes/ryskt-militarflygplan-har-krankt-svenskt-luftrum",
+          "published_at": "2022-04-30"
+        },
+        {
+          "title": "Denmark accuses Russian spy plane of violating airspace",
+          "outlet": "The Local Denmark",
+          "category": "eu_regional_press",
+          "url": "https://www.thelocal.dk/20220501/denmark-accuses-russian-spy-plane-of-violating-airspace/",
+          "published_at": "2022-05-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0010",
+      "date": "2022-05-04",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Eastern border near Kesälahti and Parikkala",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Finland's defence ministry said a Russian Mi-17 transport helicopter was suspected of flying about 4 km into Finnish airspace over the eastern border.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Puolustusministeriö: venäläiskoneen epäillään loukanneen Suomen ilmatilaa",
+          "outlet": "Ilta-Sanomat",
+          "category": "eu_regional_press",
+          "url": "https://www.is.fi/kotimaa/art-2000008793388.html",
+          "published_at": "2022-05-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0011",
+      "date": "2022-08-18",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Off Porvoo, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Russian MiG-31 fighters were suspected of violating Finnish airspace near Porvoo for about two minutes. Finland sent a reconnaissance flight.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian jets suspected of violating Finnish airspace, defence ministry says",
+          "outlet": "The Star (Reuters)",
+          "category": "intl_press",
+          "url": "https://www.thestar.com.my/news/world/2022/08/18/russian-jets-suspected-of-violating-finnish-airspace-defence-ministry-says",
+          "published_at": "2022-08-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0012",
+      "date": "2022-08-25",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The Russian-occupied Zaporizhzhia plant was disconnected from Ukraine's grid for the first time in its history after fires damaged its last working power lines; operators reconnected a reactor the next day.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian-held nuclear plant resumes electricity supply to Ukraine - Energoatom",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/ukraine-says-one-reactor-nuclear-plant-reconnects-its-grid-2022-08-26/",
+          "published_at": "2022-08-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0013",
+      "date": "2022-09-02",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Nord Stream 1",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "energy_coercion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Gazprom said Nord Stream 1 would stay shut indefinitely, citing a turbine fault, after cutting flows to 20% over the summer. Germany called the reason a pretext.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia scraps gas pipeline reopening, stoking European fuel fears",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/energy/russia-scraps-gas-pipeline-reopening-stoking-european-fears-2022-09-02/",
+          "published_at": "2022-09-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0014",
+      "date": "2022-09-08",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "25 nautical miles north-east of Constanța",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "mine_drift",
+      "rung": 3,
+      "serious": false,
+      "summary": "The Romanian minesweeper Locotenent Dimitrie Nicolescu was damaged by a drifting mine it had been sent to neutralise in rough seas. No one was hurt. It was the 28th mine found in the western Black Sea since the invasion.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romanian Navy Minesweeper Hit and Damaged by Drifting Mine",
+          "outlet": "The Maritime Executive",
+          "category": "intl_press",
+          "url": "https://maritime-executive.com/article/romanian-navy-minesweeper-hit-and-damaged-by-drifting-mine",
+          "published_at": "2022-09-08"
+        },
+        {
+          "title": "Romanian military ship damaged by naval mine it was sent to defuse",
+          "outlet": "Romania Insider",
+          "category": "eu_regional_press",
+          "url": "https://romania-insider.com/romanian-military-ship-damaged-naval-mine",
+          "published_at": "2022-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0015",
+      "date": "2022-09-11",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "Ukraine shut down the last operating reactor at Zaporizhzhia after shelling cut its external power, putting all six reactors into cold shutdown.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Zaporizhzhia nuclear power plant halts operations in Ukraine amid fears of disaster during Russian invasion - ABC News",
+          "outlet": "ABC News (Australia)",
+          "category": "intl_press",
+          "url": "https://www.abc.net.au/news/2022-09-11/zaporizhzhia-nuclear-power-plant-halts-operations-in-ukraine/101427770",
+          "published_at": "2022-09-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0016",
+      "date": "2022-09-26",
+      "date_precision": "day",
+      "location_country": "DK",
+      "affected": [
+        "DK",
+        "SE",
+        "DE"
+      ],
+      "location": "Off Bornholm, in Danish and Swedish economic zones",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "pipeline_damage",
+      "rung": 2,
+      "serious": true,
+      "summary": "Underwater explosions ruptured three of the four Nord Stream 1 and 2 gas pipelines off Bornholm, releasing large amounts of gas. Seismologists recorded blasts equal to hundreds of kilograms of explosive.",
+      "attribution": 1,
+      "attribution_note": "German prosecutors charged Ukrainian nationals in 2024–2025; no Russian link has been established.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Q+A What is known so far about the Nord Stream gas pipeline leaks",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/qa-what-is-known-so-far-about-nord-stream-gas-pipeline-leaks-2022-09-27/",
+          "published_at": "2022-09-27"
+        },
+        {
+          "title": "Ukrainian held in Italy over blast mystery of Nord Stream gas pipelines",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/crkz1jl5j06o",
+          "published_at": "2025-08-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0017",
+      "date": "2022-10-01",
+      "date_precision": "month",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldova",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "energy_coercion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Gazprom cut Moldova's gas supply to well below contracted volumes after a fourfold price rise, while strikes on Ukraine's grid ended electricity imports, causing blackouts in Moldova's worst energy crisis since independence.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia’s Ukraine invasion is fueling an energy crisis in neighboring Moldova - Atlantic Council",
+          "outlet": "Atlantic Council",
+          "category": "think_tank",
+          "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/russias-ukraine-invasion-is-fueling-an-energy-crisis-in-neighboring-moldova/",
+          "published_at": "2022-12-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0018",
+      "date": "2022-10-08",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Northern Germany (cuts near Berlin and in Herne)",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "rail_sabotage",
+      "rung": 2,
+      "serious": true,
+      "summary": "Saboteurs cut Deutsche Bahn's GSM-R radio cables at two sites, stopping long-distance and freight trains across northern Germany and to Denmark and the Netherlands for about three hours.",
+      "attribution": 2,
+      "attribution_note": "The interior minister called it deliberate; politicians raised suspicion of Russia, but no one was charged.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 3,
+      "sources": [
+        {
+          "title": "Germany probes rail 'sabotage' amid Russia tensions",
+          "outlet": "The Local Germany",
+          "category": "eu_regional_press",
+          "url": "https://www.thelocal.de/20221009/germany-probes-rail-sabotage-amid-russia-tensions",
+          "published_at": "2022-10-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0019",
+      "date": "2022-10-10",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldovan airspace",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Moldova said three Russian cruise missiles fired from the Black Sea at Ukraine crossed its airspace during the mass strike of 10 October.",
+      "attribution": 3,
+      "attribution_note": "Moldova's foreign minister summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian missiles crossed Moldova’s airspace, deputy PM says – POLITICO",
+          "outlet": "Politico Europe",
+          "category": "intl_press",
+          "url": "https://www.politico.eu/article/russian-missiles-crossed-moldova-airspace-deputy-prime-minister-claims/",
+          "published_at": "2022-10-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0020",
+      "date": "2022-10-31",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Naslavcea, Ocnița District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Debris of a Russian missile downed by Ukrainian air defences fell in the border village of Naslavcea, shattering windows in several houses. No one was hurt.",
+      "attribution": 3,
+      "attribution_note": "Moldovan authorities said it was a Russian missile shot down by Ukrainian air defences.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O rachetă rusească a căzut pe teritoriul R. Moldova. Mai multe case din Naslavcea, avariate",
+          "outlet": "Radio Europa Liberă Moldova",
+          "category": "intl_press",
+          "url": "https://moldova.europalibera.org/a/explozii-la-frontiera-de-nord-cu-ucraina-mai-multe-case-din-naslavcea-avariate/32108598.html",
+          "published_at": "2022-10-31"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0021",
+      "date": "2022-11-15",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Przewodów, Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 4,
+      "serious": true,
+      "summary": "During a massive Russian strike on Ukraine, a Ukrainian air-defence missile crashed into a grain dryer in Przewodów, six kilometres inside Poland, killing two farm workers.",
+      "attribution": 1,
+      "attribution_note": "Polish investigators concluded it was a Ukrainian air-defence missile fired during a Russian strike; no Russian launch.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 2,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Polish experts confirm missile that hit grain facility was Ukrainian - media",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/polish-experts-confirm-missile-that-hit-grain-facility-was-ukrainian-media-2023-09-26/",
+          "published_at": "2023-09-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0022",
+      "date": "2022-11-20",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "More than a dozen blasts shook the Zaporizhzhia plant; the IAEA chief said whoever was shelling it was playing with fire.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Shelling of Zaporizhzhia is playing with fire, says UN nuclear chief, as blasts reported",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2022/nov/20/shelling-of-zaporizhzhia-is-playing-with-fire-says-un-nuclear-chief-ukraine",
+          "published_at": "2022-11-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0023",
+      "date": "2022-12-05",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Briceni",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Border police found a missile in an orchard near Briceni after Russian strikes on Ukraine. Patrols and the alert level were raised in Briceni and Ocnița.",
+      "attribution": 1,
+      "attribution_note": "The interior ministry did not say who fired it.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "MAI, cu noi detalii despre despre racheta căzută la Briceni: \"La moment nu există niciun risc pentru cetățeni\"",
+          "outlet": "Unimedia",
+          "category": "eu_regional_press",
+          "url": "https://unimedia.info/ro/news/3939e5b5b18ac88a/mai-cu-noi-detalii-despre-despre-racheta-cazuta-la-briceni-la-moment-nu-exista-niciun-risc-pentru-cetateni.html",
+          "published_at": "2022-12-05"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2022-0024",
+      "date": "2022-12-16",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Zamość forest near Bydgoszcz",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Kh-55 cruise missile strayed through Belarus into Poland during a strike on Ukraine and crashed in a forest near Bydgoszcz. Its remains were found only in April 2023, prompting a row over why radars lost it.",
+      "attribution": 3,
+      "attribution_note": "Polish experts identified a Russian Kh-55, probably fired from a Su-34, which reached Poland through Belarus.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "NEWS RMF FM: Biegli wstępnie potwierdzili, że pod Bydgoszczą spadła rosyjska rakieta Ch-55",
+          "outlet": "RMF24",
+          "category": "eu_regional_press",
+          "url": "https://www.rmf24.pl/raporty/raport-wojna-z-rosja/news-news-rmf-fm-biegli-wstepnie-potwierdzili-ze-pod-bydgoszcza-s,nId,6767139",
+          "published_at": "2023-05-10"
+        },
+        {
+          "title": "Russian Cruise Missile That Struck Poland Exposes NATO's Air Defenses",
+          "outlet": "The Wall Street Journal",
+          "category": "intl_press",
+          "url": "https://www.wsj.com/articles/russian-cruise-missile-that-struck-poland-exposes-natos-air-defenses-3312d456",
+          "published_at": "2023-05-30"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    }
+  ]
+}

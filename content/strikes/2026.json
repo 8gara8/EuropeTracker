@@ -1,5 +1,1451 @@
 {
   "schema_version": 1,
   "year": 2026,
-  "strikes": []
+  "strikes": [
+    {
+      "id": "STR-2026-0001",
+      "date": "2026-09-03",
+      "target_name": "Sochi port oil depot",
+      "target_type": "oil_depot",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "sea_drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian naval drones attacked Sochi port; Ukrainian sources said nine fuel storage tanks were hit and an S-300 position struck, and the Russian vessel Nefrit was damaged.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Strike Nine Storage Tanks and S-300 Position in Sochi",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukrainian-drones-strike-nine-storage-tanks-and-s-300-position-in-sochi/",
+          "published_at": "2026-09-06"
+        },
+        {
+          "title": "Russia's Sochi port hit in fiery strike by Ukrainian sea drone, officials claim",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russias-sochi-port-hit-in-fiery-strike-by-ukrainian-sea-drone-officials-claim/",
+          "published_at": "2026-09-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0002",
+      "date": "2026-09-03",
+      "target_name": "Sochi International Airport (military helicopters)",
+      "target_type": "airbase",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's defence forces said they destroyed a Ka-52 and an Mi-28 and damaged an Mi-8 at Sochi airport.",
+      "sources": [
+        {
+          "title": "Ukraine’s Defense Forces Destroy Ka-52 and Mi-28 and Hit Mi-8 in Sochi",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukraine-s-defense-forces-destroy-ka-52-and-mi-28-and-hit-mi-8-in-sochi/",
+          "published_at": "2026-09-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0003",
+      "date": "2026-09-06",
+      "target_name": "Ryazan oil refinery",
+      "target_type": "refinery",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set the Ryazan refinery ablaze; explosions and air defence fire were also reported in Bataysk.",
+      "sources": [
+        {
+          "title": "Ukrainian drones strike Russia's Ryazan oil refinery, Rostov air defenses",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-target-ryazan-oil-refinery-cities-across-russia/",
+          "published_at": "2026-09-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0004",
+      "date": "2026-09-07",
+      "target_name": "Oil refinery in Perm Krai",
+      "target_type": "refinery",
+      "region": "Perm Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck refineries in Perm Krai, Ryazan Oblast and Tatarstan in one night, with fires or smoke at all three; Zelensky confirmed the strikes.",
+      "sources": [
+        {
+          "title": "Ukrainian drone blitz hits 3 Russian oil refineries, Zelensky confirms",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drone-blitz-hits-3-russian-oil-refineries-zelensky-confirms/",
+          "published_at": "2026-09-07"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0005",
+      "date": "2026-09-07",
+      "target_name": "Oil refinery in Tatarstan",
+      "target_type": "refinery",
+      "region": "Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "A refinery in Tatarstan was among three Russian refineries hit by Ukrainian drones overnight, with smoke reported at the site.",
+      "sources": [
+        {
+          "title": "Ukrainian drone blitz hits 3 Russian oil refineries, Zelensky confirms",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drone-blitz-hits-3-russian-oil-refineries-zelensky-confirms/",
+          "published_at": "2026-09-07"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0006",
+      "date": "2026-09-07",
+      "target_name": "Taganrog-Central air base",
+      "target_type": "airbase",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Taganrog-Central air base, hitting an Mi-35 and an Mi-8 helicopter, according to Ukrainian sources.",
+      "sources": [
+        {
+          "title": "Drones Strike Mi-35 and Mi-8 Helicopters at Taganrog Airbase",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/drones-strike-mi-35-and-mi-8-helicopters-at-taganrog-airbase/",
+          "published_at": "2026-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0007",
+      "date": "2026-09-08",
+      "target_name": "Saratov oil refinery",
+      "target_type": "refinery",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Residents reported explosions and a fire at the Saratov refinery during a Ukrainian drone attack.",
+      "sources": [
+        {
+          "title": "Ukrainian drones ignite blaze at Russia's Saratov Oil Refinery, locals report",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-saratov-oil-refinery-fire-reported/",
+          "published_at": "2026-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0008",
+      "date": "2026-09-09",
+      "target_name": "Novorossiysk naval base and fuel oil terminal",
+      "target_type": "naval",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones hit the Novorossiysk naval base and set fire to the port's fuel oil terminal; Russian officials said four people were killed.",
+      "sources": [
+        {
+          "title": "Ukrainian drones strike naval base, oil terminal in Russia's Novorossiysk, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-oil-terminal-in-russias-novorossiysk/",
+          "published_at": "2026-09-09"
+        },
+        {
+          "title": "4 Killed in Ukrainian Attack on Novorossiysk - The Moscow Times",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/09/09/4-killed-in-ukrainian-attack-on-novorossiysk-a93664",
+          "published_at": "2026-09-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0009",
+      "date": "2026-09-09",
+      "target_name": "Frigate Admiral Essen, Novorossiysk",
+      "target_type": "naval",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's military intelligence said a Neptune missile hit the Kalibr-carrying frigate Admiral Essen in Novorossiysk, starting a fire in its superstructure.",
+      "sources": [
+        {
+          "title": "Ukraine strikes Russian missile carrier Admiral Essen in Novorossiysk",
+          "outlet": "The New Voice of Ukraine",
+          "category": "ua_independent",
+          "url": "https://english.nv.ua/amp/ukraine-strikes-russian-missile-carrier-admiral-essen-in-novorossiysk-50640118.html",
+          "published_at": "2026-09-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0010",
+      "date": "2026-09-09",
+      "target_name": "Anapa airfield",
+      "target_type": "airbase",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's unmanned systems forces said they destroyed a Su-33 fighter and an Mi-8 helicopter at Anapa.",
+      "sources": [
+        {
+          "title": "Unmanned systems destroy Russian Su-33 fighter jet and Mi-8 helicopter in Anapa",
+          "outlet": "Ukrinform",
+          "category": "ua_independent",
+          "url": "https://www.ukrinform.net/amp/rubric-ato/4162356-unmanned-systems-destroy-russian-su33-fighter-jet-and-mi8-helicopter-in-anapa.html",
+          "published_at": "2026-09-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0011",
+      "date": "2026-09-09",
+      "target_name": "Purovsky gas condensate processing plant",
+      "target_type": "refinery",
+      "region": "Yamalo-Nenets Autonomous Okrug",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 3000,
+      "weapon": "drone",
+      "weapon_detail": "FP-1",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "FP-1 drones struck the Purovsky gas condensate plant in Siberia, over 3,000 km away, a range record; fires were reported and the plant flared excess gas.",
+      "sources": [
+        {
+          "title": "New record set: Ukrainian drones strike Russian gas facility over 3,000 km away in Siberia",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/new-record-set-ukrainian-drones-strike-russian-gas-facility-over-3-000-km-away-in-siberia/",
+          "published_at": "2026-09-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0012",
+      "date": "2026-09-11",
+      "target_name": "Saratov oil refinery and Ozon warehouse",
+      "target_type": "refinery",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Saratov refinery again and an Ozon warehouse in the city, which stopped working after a fire.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Attack Oil Refinery and Ozon Depot in Saratov",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukrainian-drones-attack-oil-refinery-and-ozon-depot-in-saratov/",
+          "published_at": "2026-09-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0013",
+      "date": "2026-09-11",
+      "target_name": "Volgogradpromproekt chemical plant",
+      "target_type": "defence_industry",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "FP-5 Flamingo",
+      "western_weapon": false,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian Flamingo missiles struck a US-sanctioned Volgograd plant making ferrocene, a rocket-propellant additive; satellite images later showed a section of the main workshop destroyed.",
+      "sources": [
+        {
+          "title": "Flamingo Missiles Strike Sanctioned Chemical Plant Volgogradpromproekt",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/flamingo-missiles-strike-sanctioned-chemical-plant-volgogradpromproekt/",
+          "published_at": "2026-09-11"
+        },
+        {
+          "title": "Satellite Images Reveal Aftermath of Flamingo Strike on Russian Volgogradpromproekt",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/satellite-images-reveal-aftermath-of-flamingo-strike-on-russian-volgogradpromproekt/",
+          "published_at": "2026-09-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0014",
+      "date": "2026-09-12",
+      "target_name": "Chemical plant in Tolyatti",
+      "target_type": "other",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked a strategic chemical plant in Tolyatti, as well as an airfield and an automobile plant in Taganrog.",
+      "sources": [
+        {
+          "title": "Drones strike Tolyatti and Taganrog - Chemical plant and airfield hit",
+          "outlet": "RBC-Ukraine",
+          "category": "ua_independent",
+          "url": "https://newsukraine.rbc.ua/news/drones-strike-chemical-plant-in-tolyatti-1789190407.html",
+          "published_at": "2026-09-12"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0015",
+      "date": "2026-09-13",
+      "target_name": "TANECO refinery, Nizhnekamsk",
+      "target_type": "refinery",
+      "region": "Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the TANECO refinery in Nizhnekamsk, one of Russia's largest, the same night as the Slavyansk refinery in Krasnodar Krai.",
+      "sources": [
+        {
+          "title": "Ukraine strikes 2 major Russian oil refineries in Krasnodar and Tatarstan, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/drone-attack-hits-industrial-hub-in-russias-tatarstan-casualties-reported/",
+          "published_at": "2026-09-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0016",
+      "date": "2026-09-13",
+      "target_name": "Slavyansk-on-Kuban oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Slavyansk ECO refinery in Slavyansk-on-Kuban.",
+      "sources": [
+        {
+          "title": "Ukraine strikes 2 major Russian oil refineries in Krasnodar and Tatarstan, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/drone-attack-hits-industrial-hub-in-russias-tatarstan-casualties-reported/",
+          "published_at": "2026-09-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0017",
+      "date": "2026-09-15",
+      "target_name": "Syzran oil refinery",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian forces struck the Syzran refinery, a regular target of the long-range campaign.",
+      "sources": [
+        {
+          "title": "Ukrainian forces strike Russia's Syzran Oil Refinery, drone production facility in Taganrog, military confirms",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-syzran-oil-refinery/",
+          "published_at": "2026-09-15"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0018",
+      "date": "2026-09-15",
+      "target_name": "Atlant Aero drone factory, Taganrog",
+      "target_type": "defence_industry",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Neptune missiles struck the Atlant Aero drone factory in Taganrog, collapsing part of its roof.",
+      "sources": [
+        {
+          "title": "Taganrog: Neptune Missile Strike Destroyed Atlant Aero Production Facilities",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/taganrog-neptune-strike-atlant-aero-factory/",
+          "published_at": "2026-09-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0019",
+      "date": "2026-09-17",
+      "target_name": "S-400 launchers in Bryansk Oblast",
+      "target_type": "air_defence",
+      "region": "Bryansk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's defence forces said they struck two S-400 air defence launchers in Bryansk Oblast.",
+      "sources": [
+        {
+          "title": "Ukraine’s Defense Forces struck two launchers of the S-400 air defense system on the territory of the Russian Federation",
+          "outlet": "UNN",
+          "category": "ua_independent",
+          "url": "https://unn.ua/en/news/ukraines-defense-forces-struck-two-launchers-of-the-s-400-air-defense-system-on-the-territory-of-the-russian-federation",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0020",
+      "date": "2026-09-17",
+      "target_name": "Saky air base",
+      "target_type": "airbase",
+      "region": "Crimea",
+      "occupied_territory": true,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces hit a Su-24M bomber at Saky air base in occupied Crimea.",
+      "sources": [
+        {
+          "title": "Ukraine hits Russian bomber in occupied Crimea, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-hits-russian-bomber-in-occupied-crimea-general-staff-says/",
+          "published_at": "2026-09-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0021",
+      "date": "2026-09-17",
+      "target_name": "Military airfield in Rostov Oblast",
+      "target_type": "airbase",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Drones hit six Russian aircraft at a Rostov airfield, Zelensky said; satellite images published by Ukrainian media showed two Mi-8s, an An-12 and an An-26 destroyed.",
+      "sources": [
+        {
+          "title": "Ukraine hits six Russian military aircraft in ‘precise’ airfield strike",
+          "outlet": "TVP World",
+          "category": "eu_regional_press",
+          "url": "https://tvpworld.com/95437504/ukraine-hit-six-russian-aircraft-in-precise-strike-on-rostov-airfield-zelenskyy",
+          "published_at": "2026-09-17"
+        },
+        {
+          "title": "Satellite Images Confirm Destruction of Mi-8 Helicopters and An-12 and An-26 Aircraft in Rostov",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/satellite-mi-8-an-12-an-26-destroyed-rostov/",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0022",
+      "date": "2026-09-20",
+      "target_name": "Moscow oil refinery (Kapotnya)",
+      "target_type": "refinery",
+      "region": "Moscow",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "In an attack of about 1,000 drones and FP-5 and FP-7 missiles, the Moscow refinery caught fire. Russia claimed 249 drones downed over Moscow; debris killed two people in the region.",
+      "sources": [
+        {
+          "title": "Moscow Oil Refinery ablaze after 'largest-ever' Ukraine missile, drone blitz on Russian capital",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russia-says-dozens-of-ukrainian-drones-targeted-moscow-as-broader-attack-hit-multiple-regions/",
+          "published_at": "2026-09-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0023",
+      "date": "2026-09-25",
+      "target_name": "Lukoil refinery, Perm",
+      "target_type": "refinery",
+      "region": "Perm Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Lukoil refinery in Perm, one of Russia's largest.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Attack One of Russia’s Largest Oil Refineries in Perm",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukrainian-drones-attack-one-of-russia-s-largest-oil-refineries-in-perm/",
+          "published_at": "2026-09-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0024",
+      "date": "2026-09-25",
+      "target_name": "Novoshakhtinsk oil refinery",
+      "target_type": "refinery",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "A drone attack halted operations at the Novoshakhtinsk refinery, Ukrainian media reported; Russia said 50 drones were shot down in the region.",
+      "sources": [
+        {
+          "title": "Drone Attack Halts Operations at Russia’s Novoshakhtinsk Oil Refinery",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/drone-attack-halts-operations-at-russia-s-novoshakhtinsk-oil-refinery/",
+          "published_at": "2026-09-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0025",
+      "date": "2026-09-25",
+      "target_name": "Iskra electronics plant, Ulyanovsk",
+      "target_type": "defence_industry",
+      "region": "Ulyanovsk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian forces struck the Iskra electronics plant in Ulyanovsk and damaged a synthetic rubber factory in Voronezh.",
+      "sources": [
+        {
+          "title": "Ukraine strikes Russian oil refineries, missile production facilities, General Staff confirms",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-refinery-1-500-kilometers-from-border-russian-electronics-factory/",
+          "published_at": "2026-09-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0026",
+      "date": "2026-09-26",
+      "target_name": "Ilsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine said it struck the Ilsky refinery; Russian authorities said a drone strike killed three people in Krasnodar Krai.",
+      "sources": [
+        {
+          "title": "Three reported killed in Ukrainian drone strike in south Russia; Kyiv says it struck oil refinery",
+          "outlet": "The Times of Israel",
+          "category": "intl_press",
+          "url": "https://www.timesofisrael.com/liveblog_entry/three-reported-killed-in-ukrainian-drone-strike-in-south-russia-kyiv-says-it-struck-oil-refinery/",
+          "published_at": "2026-09-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0027",
+      "date": "2026-10-02",
+      "target_name": "Oil refinery in Volgograd",
+      "target_type": "refinery",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck oil facilities in Volgograd and Samara regions, starting fires at both.",
+      "sources": [
+        {
+          "title": "Ukrainian forces strike oil facilities in Russia's Volgograd, Samara regions, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-facilities-in-russias-volgograd-samara-regions/",
+          "published_at": "2026-10-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0028",
+      "date": "2026-10-02",
+      "target_name": "Oil refinery in Samara region",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "A Samara-region refinery caught fire in the same night's Ukrainian drone strikes as Volgograd.",
+      "sources": [
+        {
+          "title": "Ukrainian forces strike oil facilities in Russia's Volgograd, Samara regions, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-oil-facilities-in-russias-volgograd-samara-regions/",
+          "published_at": "2026-10-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0029",
+      "date": "2026-10-04",
+      "target_name": "Khanskaya air base",
+      "target_type": "airbase",
+      "region": "Adygea",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 500,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones flew about 500 km to strike Khanskaya air base, hitting a Su-34, a Su-35 and refuelling facilities.",
+      "sources": [
+        {
+          "title": "Ukrainian drones fly 500 km to hit Russian Su-35 and Su-34 fighters at Khanskaya air base",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/10/04/8056419/index.amp",
+          "published_at": "2026-10-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0030",
+      "date": "2026-10-08",
+      "target_name": "Omsk oil refinery",
+      "target_type": "refinery",
+      "region": "Omsk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 2500,
+      "weapon": "drone",
+      "weapon_detail": "FP-1",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "FP-1 drones attacked the Omsk refinery, Russia's largest, about 2,500 km from occupied Ukraine; video showed explosions and fire.",
+      "sources": [
+        {
+          "title": "Ukraine strikes Russia's Omsk oil refinery in Siberia, General Staff confirms",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/drones-reportedly-strike-russias-omsk-oil-refinery-in-siberia/",
+          "published_at": "2026-10-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0031",
+      "date": "2026-10-08",
+      "target_name": "Sasta plant and Yandex data centre, Sasovo",
+      "target_type": "other",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian forces struck the Sasta machine-tool plant and a Yandex data centre in Sasovo; a fire caused major disruption to Yandex Cloud.",
+      "sources": [
+        {
+          "title": "Ukrainian Defense Forces Strike Sasta Plant and Yandex Data Center in Russia",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukrainian-defense-forces-strike-sasta-plant-and-yandex-data-center-in-russia/",
+          "published_at": "2026-10-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0032",
+      "date": "2026-10-09",
+      "target_name": "Redkino experimental chemical plant",
+      "target_type": "defence_industry",
+      "region": "Tver Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Drones struck the Redkino chemical plant, which makes fuel components for Kh-101 and Kh-55 cruise missiles.",
+      "sources": [
+        {
+          "title": "Drone Strike Hits Russian Plant Making Fuel Components for Kh-101 Cruise Missiles — UNITED24 Media",
+          "outlet": "United24 Media",
+          "category": "ua_gov",
+          "url": "https://united24media.com/war-in-ukraine/drone-strike-hits-russian-plant-making-fuel-components-for-kh-101-cruise-missiles-23275",
+          "published_at": "2026-10-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0033",
+      "date": "2026-10-09",
+      "target_name": "Ukhta oil refinery",
+      "target_type": "refinery",
+      "region": "Komi Republic",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Black smoke rose over the Ukhta refinery in Komi after a Ukrainian drone attack; an oil depot near Belgorod also burned.",
+      "sources": [
+        {
+          "title": "Oil Refinery Ablaze in Russia’s Ukhta Following Drone Attack",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/oil-refinery-ablaze-in-russia-s-ukhta-following-drone-attack/",
+          "published_at": "2026-10-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0034",
+      "date": "2026-10-10",
+      "target_name": "Oil terminal in Rostov-on-Don",
+      "target_type": "oil_terminal",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set an oil terminal in Rostov-on-Don ablaze; Ukrainian media said at least seven of its 12 storage tanks were destroyed before the fire was put out on 12 October.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Strike Oil Terminal in Rostov-on-Don",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukraine-strike-oil-terminal-rostov-on-don/",
+          "published_at": "2026-10-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0035",
+      "date": "2026-10-15",
+      "target_name": "Borisoglebsk air base",
+      "target_type": "airbase",
+      "region": "Voronezh Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "R-360 Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine said Neptune missiles damaged six Russian military jets at Borisoglebsk air base; later satellite imagery suggested at least four Su-34s were destroyed.",
+      "sources": [
+        {
+          "title": "Ukraine says it damaged six Russian military jets in missile strike on airfield",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/ukraine-says-it-damaged-six-russian-military-jets-missile-strike-airfield-2026-10-15/",
+          "published_at": "2026-10-15"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0036",
+      "date": "2026-10-15",
+      "target_name": "Ryazan oil refinery",
+      "target_type": "refinery",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Ryazan refinery in the first strike after a three-day pause Ukraine had observed.",
+      "sources": [
+        {
+          "title": "Ukraine Strikes Ryazan Oil Refinery After Announcing Resumption of Attacks",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukraine-strikes-ryazan-oil-refinery-after-announcing-resumption-of-attacks/",
+          "published_at": "2026-10-15"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0037",
+      "date": "2026-10-16",
+      "target_name": "Surgut gas processing complex",
+      "target_type": "other",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked Gazprom's Surgut gas processing complex in Siberia, causing a fire; about 22 Russian airports closed during the night's attacks.",
+      "sources": [
+        {
+          "title": "OSINT analysts showed the likely location of the strike and fire at a Gazprom plant near Surgut",
+          "outlet": "UNN",
+          "category": "ua_independent",
+          "url": "https://unn.ua/en/amp/osint-analysts-showed-the-likely-location-of-the-strike-and-fire-at-a-gazprom-plant-near-surgut",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0038",
+      "date": "2026-10-18",
+      "target_name": "Port of Saint Petersburg oil terminal",
+      "target_type": "oil_terminal",
+      "region": "Saint Petersburg",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "A fire broke out at the oil terminal of St Petersburg port after Ukrainian drone strikes, which also hit a VK data centre, an Ozon warehouse and a section of the Western High-Speed Diameter.",
+      "sources": [
+        {
+          "title": "Беспилотники атаковали Петербург: пожары и ограничения в Пулково",
+          "outlet": "Kommersant",
+          "category": "ru_state_media",
+          "url": "https://www.kommersant.ru/doc/9041206",
+          "published_at": "2026-10-18"
+        },
+        {
+          "title": "Sõja 1698. päev: Ukraina korraldas suure õhurünnaku Peterburi piirkonnas",
+          "outlet": "ERR",
+          "category": "eu_regional_press",
+          "url": "https://www.err.ee/1610169529/ukraina-korraldas-suure-ohurunnaku-peterburi-piirkonnas",
+          "published_at": "2026-10-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0039",
+      "date": "2026-10-23",
+      "target_name": "Proton plant, Oryol",
+      "target_type": "defence_industry",
+      "region": "Oryol Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian missiles, possibly Storm Shadow or Flamingo, struck the Proton military plant in Oryol, reportedly destroying a production workshop.",
+      "sources": [
+        {
+          "title": "Proton plant in Russia's Oryol under missile attack on October 23",
+          "outlet": "RBC-Ukraine",
+          "category": "ua_independent",
+          "url": "https://newsukraine.rbc.ua/news/missile-strike-hits-proton-military-plant-1792774014.html",
+          "published_at": "2026-10-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0040",
+      "date": "2026-10-23",
+      "target_name": "Federal Tax Service data centre, Gorodets",
+      "target_type": "other",
+      "region": "Nizhny Novgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked the tax service data centre in Gorodets, one of two main hubs for Russian state registers. Drone and balloon attacks also cancelled about 340 flights at Moscow airports.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Attack Taxation Service Data Center in Nizhny Novgorod Region",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukrainian-drones-attack-taxation-service-data-center-in-nizhny-novgorod-region/",
+          "published_at": "2026-10-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0041",
+      "date": "2026-10-24",
+      "target_name": "Togliattikauchuk petrochemical plant",
+      "target_type": "other",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine struck the Togliattikauchuk synthetic rubber plant in Tolyatti; the mayor said it was damaged without casualties.",
+      "sources": [
+        {
+          "title": "Kyiv says Starlink restored as attacks in Ukraine and Russia continue",
+          "outlet": "Al Jazeera",
+          "category": "intl_press",
+          "url": "https://www.aljazeera.com/news/2026/10/24/ukraine-says-starlink-restored-as-attacks-continue-in-russia-and-ukraine",
+          "published_at": "2026-10-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0042",
+      "date": "2026-10-25",
+      "target_name": "AVISMA titanium plant, Berezniki",
+      "target_type": "defence_industry",
+      "region": "Perm Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked the AVISMA plant in Berezniki, which makes titanium for military equipment; the fire injured five people.",
+      "sources": [
+        {
+          "title": "Drones attacked Perm Krai in Russian Federation: industrial facility has been damaged",
+          "outlet": "Censor.net",
+          "category": "ua_independent",
+          "url": "https://censor.net/en/n4030255",
+          "published_at": "2026-10-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0043",
+      "date": "2026-10-25",
+      "target_name": "Energia plant, Yelets",
+      "target_type": "defence_industry",
+      "region": "Lipetsk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian cruise missiles struck the Energia plant in Yelets, which makes batteries for Russian forces.",
+      "sources": [
+        {
+          "title": "Produces batteries for Russian forces: missiles hit the Energia plant in Yelets",
+          "outlet": "UNN",
+          "category": "ua_independent",
+          "url": "https://unn.ua/en/amp/produces-batteries-for-russian-forces-missiles-hit-the-energia-plant-in-yelets",
+          "published_at": "2026-10-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0044",
+      "date": "2026-10-28",
+      "target_name": "Novolipetsk steelworks and Azot plant",
+      "target_type": "other",
+      "region": "Lipetsk and Tula oblasts",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set off a large fire at the Novolipetsk steel plant in Lipetsk and set the Azot chemical plant in Novomoskovsk on fire.",
+      "sources": [
+        {
+          "title": "Ukraine reportedly strikes chemical, metallurgical plants in Russia",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/fires-burn-in-russian-city-of-lipetsk-after-reported-ukrainian-attack/",
+          "published_at": "2026-10-28"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0045",
+      "date": "2026-10-30",
+      "target_name": "Novokuybyshevsk oil refinery",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Drones attacked the Novokuybyshevsk refinery amid wide fires, described as Ukraine resuming refinery strikes after US pressure to pause them.",
+      "sources": [
+        {
+          "title": "Russian deputy PM confirms strikes on 3 refineries, gas-chemical complex",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russian-oil-refinery-reportedly-attacked-amid-renewed-ukrainian-strikes-on-energy-infrastructure/",
+          "published_at": "2026-10-30"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0046",
+      "date": "2026-10-31",
+      "target_name": "Bashneft-Novoil refinery, Ufa",
+      "target_type": "refinery",
+      "region": "Bashkortostan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": "Liutyi",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Liutyi drones set the L-35 catalytic reforming unit of the Bashneft-Novoil refinery in Ufa on fire.",
+      "sources": [
+        {
+          "title": "Bashneft-Novoyl Oil Refinery on Fire in Ufa Following Ukrainian Drone Attack",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/bashneft-novoyl-oil-refinery-on-fire-in-ufa/",
+          "published_at": "2026-10-31"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0047",
+      "date": "2026-11-01",
+      "target_name": "Lukoil refinery, Kstovo",
+      "target_type": "refinery",
+      "region": "Nizhny Novgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Lukoil refinery in Kstovo, starting a fire near its processing units.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Strike LUKOIL Oil Refinery in Kstovo, Fire Breaks Out",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/en/news/ukrainian-drones-strike-lukoil-oil-refinery-in-kstovo-fire-breaks-out/",
+          "published_at": "2026-11-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    }
+  ]
 }

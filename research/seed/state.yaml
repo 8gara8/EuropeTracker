@@ -1,0 +1,121 @@
+# Seed state (SPEC §4.8, §9 Phase 4). seed:build computes the ladder rung from the incidents; everything
+# else is a researched judgement, explained in docs/SEED-REPORT.md. Odds start from the base rates in the
+# report's "Computed starting values" table (Poisson: P = 1 − e^(−λ), λ = serious incidents per month).
+as_of: 2026-11-02     # the date the computed values refer to
+added: 2026-11-02     # `added` on every seed record and `opened` on every seed forecast
+
+# Rung 5 needs deliberate, sustained Russian military action against a NATO or EU state.
+next_rung_odds: { probability: 5, term: remote, confidence: moderate }
+
+pathways:
+  # Base rate ~2% (one serious case since 2022), raised for record incursion tempo and blasts near homes.
+  airspace:           { serious_odds: { probability: 15, term: highly_unlikely, confidence: moderate }, impact: 3 }
+  # 2 serious in 12 months (15%), raised for reported GRU orders to step up sabotage in October 2026.
+  sabotage:           { serious_odds: { probability: 25, term: unlikely, confidence: moderate }, impact: 3 }
+  # 5 serious in 12 months (34%), 4 of them in October 2026: Russia's campaign against Danube shipping.
+  maritime:           { serious_odds: { probability: 70, term: likely, confidence: moderate }, impact: 3 }
+  # No serious case since the 2022 Viasat attack; several multi-day disruptions came close.
+  cyber_ew:           { serious_odds: { probability: 10, term: highly_unlikely, confidence: low }, impact: 2 }
+  # No deliberate crossing of a NATO border by Russian forces since 2022.
+  military_pressure:  { serious_odds: { probability: 3, term: remote, confidence: moderate }, impact: 4 }
+  # No raised readiness or release since 2022; Zaporizhzhia keeps losing off-site power.
+  nuclear:            { serious_odds: { probability: 3, term: remote, confidence: moderate }, impact: 5 }
+  # No NATO or EU decision blocked, or government toppled, by a Russian operation in the database.
+  political_economic: { serious_odds: { probability: 10, term: highly_unlikely, confidence: low }, impact: 3 }
+
+# Floors from the incidents in the 30 days to 2 November (seed-build checks them in the report).
+countries:
+  PL: { score: 2, since: 2026-11-02 }   # floor 1 + 1: drone tracks along the border, balloons, jamming
+  LT: { score: 3, since: 2026-10-18 }   # floor 3: drone exploded over Juodzionys
+  LV: { score: 2, since: 2026-11-02 }   # floor 1 + 1: alerts on 18 October, jamming, drones in August
+  EE: { score: 2, since: 2026-11-02 }   # floor 1 + 1: jamming; troops moved toward the border in October
+  FI: { score: 2, since: 2026-10-05 }   # floor 2: break-ins at MPs' homes
+  RO: { score: 4, since: 2026-10-05 }   # floor 4: deadly drone strikes on ships off Romania
+  MD: { score: 3, since: 2026-10-05 }   # floor 3: repeated drone and missile crashes, injuries
+
+indicators:
+  ind-airspace-tempo:
+    status: watch
+    since: 2026-10-01
+    evidence: 8 airspace incidents in the 30 days to 2 November, below the 90-day baseline of 12.7 a month set by a record August; tempo is still far above 2025.
+    evidence_date: 2026-10-31
+  ind-border-tracks:
+    status: active
+    since: 2026-07-24
+    evidence: Russian drones crossed into Romania or Moldova on at least six days in October; Romanian F-16s shot down two jet-powered Gerans on 17 October.
+    evidence_date: 2026-10-31
+  ind-gnss-baltic:
+    status: active
+    since: 2024-04-25
+    evidence: Denmark recorded record GPS disruption around Bornholm in August 2026; Lithuanian pilots reported over 300 interference cases by March.
+    evidence_date: 2026-08-10
+  ind-sabotage-tempo:
+    status: active
+    since: 2026-08-04
+    evidence: Romania attributed the Carfil arson to a Russian-run network on 26 October; Lithuania foiled an arson on Starlink equipment; the FT reported GRU orders to intensify sabotage.
+    evidence_date: 2026-10-26
+  ind-undersea:
+    status: watch
+    since: 2025-12-31
+    evidence: No new Baltic cable or pipeline damage since the Fitburg case on 31 December 2025; attacks on shipping in the Black Sea continue.
+    evidence_date: 2025-12-31
+  ind-airport-closures:
+    status: active
+    since: 2026-08-11
+    evidence: Iași airport closed on 8 September and 31 October as Russian drones crossed Romania; Hanover closed on 11 August.
+    evidence_date: 2026-10-31
+  ind-redeployment:
+    status: watch
+    since: 2026-10-05
+    evidence: Estonia was reported to be moving troops toward the border over fears of a Russian operation; earlier imagery showed new facilities near Finland.
+    evidence_date: 2026-10-05
+  ind-exercises:
+    status: watch
+    since: 2026-05-19
+    evidence: Russia held a nuclear forces exercise with about 64,000 personnel in May and Baltic Fleet strike drills from Kaliningrad in June.
+    evidence_date: 2026-06-08
+  ind-nuclear-posture:
+    status: active
+    since: 2025-12-17
+    evidence: Russia's nuclear-capable Oreshnik system has been on combat duty in Belarus since December 2025.
+    evidence_date: 2025-12-17
+  ind-pretext:
+    status: watch
+    since: 2026-07-26
+    evidence: The Narva river border dispute continues, and Russian officials cast NATO Baltic drills as preparation to seize Kaliningrad.
+    evidence_date: 2026-07-26
+  ind-diplomatic:
+    status: watch
+    since: 2026-05-29
+    evidence: Romania closed Russia's consulate in Constanța in May, Germany closed the consulate in Bonn in September, and Moldova expelled a Russian diplomat on 23 October.
+    evidence_date: 2026-10-23
+  ind-cyber-prepositioning:
+    status: watch
+    since: 2026-04-15
+    evidence: Sweden warned in April 2026 that Russia-linked groups were moving to destructive attacks on critical infrastructure, after a hacked Norwegian dam in 2025.
+    evidence_date: 2026-04-15
+  ind-us-posture:
+    status: active
+    since: 2025-10-29
+    evidence: The US withdrew its rotational brigade from Romania, cancelled a planned rotation to Poland and Romania, and opened a European force posture review in June 2026.
+    evidence_date: 2026-06-18
+  ind-article4:
+    status: watch
+    since: 2026-10-17
+    evidence: Romania asked for a North Atlantic Council meeting after downing two drones on 17 October; the last formal Article 4 requests were Poland's and Estonia's in September 2025.
+    evidence_date: 2026-10-17
+  ind-ceasefire:
+    status: watch
+    since: 2026-10-11
+    evidence: Trump announced an energy ceasefire after a call with Putin; Kyiv said it learned of it from his post, and refinery strikes resumed on 15 October.
+    evidence_date: 2026-10-15
+  ind-refinery-offline:
+    status: watch
+    since: 2026-09-01
+    evidence: Ukraine struck more than 15 Russian refineries in September and October, but no current estimate puts capacity offline above 20%.
+    evidence_date: 2026-10-31
+  ind-fuel-export-ban:
+    status: active
+    since: 2026-08-06
+    evidence: Russia's gasoline export ban stays in force and several regions rationed fuel sales in August 2026; diesel export limits were extended to the end of October.
+    evidence_date: 2026-09-30
