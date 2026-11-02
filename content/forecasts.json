@@ -209,6 +209,44 @@
       "resolution_source": null,
       "brier": null,
       "brier_base": null
+    },
+    {
+      "id": "F-2026-012",
+      "question": "Will Latvia's armed forces report a drone entering Latvian airspace from Russia or Belarus between 3 November and 2 December 2026?",
+      "resolution_criteria": "Yes if Latvia's National Armed Forces or Defence Ministry reports an unmanned aircraft entering Latvian airspace from Russia or Belarus between 3 November and 2 December 2026, whether or not its origin is identified.",
+      "resolves_by": "2026-12-02",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 45,
+      "base_rate": 40,
+      "base_rate_note": "Latvia reported drone entries or crashes in March, June and August 2026, plus on 24 October and 1 November: about 0.5 a month, or roughly 40% over 30 days. Raised for the late-October cluster.",
+      "opened": "2026-11-02",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-013",
+      "question": "Will the US government announce a further reduction of US forces in European NATO countries between 3 November and 31 December 2026?",
+      "resolution_criteria": "Yes if the White House or Pentagon announces a withdrawal, a cancelled rotation or a permanent reduction of US forces stationed in a European NATO country between 3 November and 31 December 2026.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": null,
+      "probability": 30,
+      "base_rate": 25,
+      "base_rate_note": "There were two such announcements in about 14 months: the Romania brigade withdrawal and the cancelled Poland–Romania rotation. That is about 25% over two months. Raised for allied fears reported before the midterms.",
+      "opened": "2026-11-02",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
     }
   ]
 }
