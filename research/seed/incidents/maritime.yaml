@@ -357,7 +357,7 @@
   where: RO
   location: Port of Constanța
   sea: black_sea
-  type: strike_at_sea
+  type: mine_drift
   rung: 3
   attribution: 2
   note: Romania's president said Ukraine lost control of the drones to Russian electronic warfare.

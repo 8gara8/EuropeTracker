@@ -22,7 +22,7 @@ import { State } from "../lib/schema/state";
 import { Strike, StrikesFile } from "../lib/schema/strike";
 import { countWords } from "../lib/text";
 import { validateAll, type ValidationIssue } from "../lib/validate";
-import { COUNTRIES, PATHWAYS, RUNGS, TIER1, type PathwayId } from "../lib/vocab";
+import { COUNTRIES, PATHWAYS, RUNGS, TIER1, incidentTypeInfo, type PathwayId } from "../lib/vocab";
 
 const SEED_DIR = "research/seed";
 const CONTENT = "content";
@@ -154,7 +154,7 @@ export function buildIncidents(dir: string, added: string): Incident[] {
       pathway,
       type: rec.type,
       rung: rec.rung,
-      serious: rec.serious ?? (rec.rung >= 4 || killed > 0),
+      serious: rec.serious ?? (rec.rung >= 4 || killed > 0 || !!incidentTypeInfo(pathway, rec.type)?.serious),
       summary: rec.summary.trim(),
       attribution: rec.attribution,
       attribution_note: rec.note?.trim() ?? null,

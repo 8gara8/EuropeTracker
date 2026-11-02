@@ -175,7 +175,7 @@
     {
       "id": "F-2026-010",
       "question": "Will Russian armed forces cross a NATO member's land border by 30 April 2027?",
-      "resolution_criteria": "Yes if a NATO member's government reports Russian or Belarusian military personnel deliberately crossing its land border on duty, excluding defectors and border-marker disputes.",
+      "resolution_criteria": "Yes if a NATO member's government reports Russian armed forces personnel deliberately crossing its land border on duty, excluding defectors and border-marker disputes. Belarusian forces alone don't count.",
       "resolves_by": "2027-04-30",
       "horizon": "6-12m",
       "pathway": "military_pressure",

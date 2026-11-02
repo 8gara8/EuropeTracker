@@ -8,6 +8,7 @@ import { addDays } from "@/lib/dates";
 import { loadContent } from "@/lib/content";
 import { buildContext } from "@/lib/context";
 import { DRAFT_SCHEMA_PATH, renderDraftSchema } from "@/lib/json-schema";
+import { incidentRecordIssues } from "@/lib/rules/records";
 import { totalWords } from "@/lib/rules/words";
 import { AgentContext } from "@/lib/schema/context";
 import type { Brief } from "@/lib/schema/brief";
@@ -192,6 +193,23 @@ describe("record updates", () => {
     d.strike_updates.push(strikeUpdate({ effect }));
     const r = validateDraft(d, { context: ctx, world, evidence: weekdayEvidence() });
     expect(r.errors).toContainEqual(expect.objectContaining({ code: "UPDATE_EVIDENCE", path: "strike_updates[1].changes.effect" }));
+  });
+
+  it("treat every attack on or seizure of a ship as serious", () => {
+    const serious = (rec: Incident) => incidentRecordIssues(rec, "rec").filter((e) => e.code === "INCIDENT_SERIOUS");
+    for (const type of ["strike_at_sea", "vessel_seizure"]) {
+      expect(serious(cable({ type, rung: 3, serious: false }))).toEqual([expect.objectContaining({ path: "rec.serious" })]);
+      expect(serious(cable({ type, rung: 3, serious: true }))).toEqual([]);
+    }
+    expect(serious(cable({ type: "mine_drift", rung: 3, serious: false }))).toEqual([]);
+    // An update can't clear the flag either.
+    const ctx = weekdayContext();
+    const world = worldFromContext(ctx);
+    world.incidents = world.incidents.map((x) => (x.id === "INC-2026-0124" ? cable({ type: "strike_at_sea", rung: 3, serious: true, host_statement: "yes" }) : x));
+    const d = weekday();
+    d.incident_updates[0]!.changes.serious = false;
+    const r = validateDraft(d, { context: ctx, world, evidence: weekdayEvidence() });
+    expect(r.errors).toContainEqual(expect.objectContaining({ code: "INCIDENT_SERIOUS", path: "incident_updates[0].changes.serious" }));
   });
 
   it("make a raised attribution carry the host statement on pipeline records", () => {
