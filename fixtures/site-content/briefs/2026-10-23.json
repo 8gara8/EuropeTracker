@@ -405,7 +405,7 @@
   "computed": {
     "pathways": {
       "airspace": {
-        "incidents_30d": 4,
+        "incidents_30d": 3,
         "baseline_monthly": 0.3
       },
       "sabotage": {

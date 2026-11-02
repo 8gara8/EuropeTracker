@@ -1,4 +1,5 @@
 import { parseForecastId, parseRecordId } from "../aggregate";
+import { applyIncidentChanges, applyStrikeChanges } from "../apply";
 import { yearOf } from "../dates";
 import type { EvidenceSource } from "../schema/common";
 import type { Incident } from "../schema/incident";
@@ -219,12 +220,17 @@ const updates: Rule = ({ draft, context, world }) => {
         out.push(error("INCIDENT_RUNG", `${at}.changes.rung`, `${u.id} is a ${rec.type} incident, which must be rung ${info.min}–${info.max}.`));
       }
     }
-    if (rec && rec.serious !== undefined) {
-      const rung = u.changes.rung ?? rec.rung;
-      const killed = (u.changes.casualties ?? rec.casualties)?.killed ?? 0;
-      const serious = u.changes.serious ?? rec.serious;
-      if ((rung >= 4 || killed > 0) && !serious) {
-        out.push(error("INCIDENT_SERIOUS", `${at}.changes.serious`, `${u.id} would be rung ${rung} with ${killed} killed; set changes.serious to true.`));
+    if (rec) {
+      // Check the record as it will be after the update. The context's abbreviated records have no
+      // casualties or serious flag until an update supplies them.
+      const after = applyIncidentChanges(rec, u);
+      const killed = after.casualties?.killed ?? 0;
+      if (killed > 0 && after.rung < 4) {
+        out.push(error("INCIDENT_RUNG", `${at}.changes.rung`,
+          `${u.id} would have ${killed} killed at rung ${after.rung}; deaths on European soil mean rung 4 or higher. Set changes.rung to 4 and cite the source in add_sources.`));
+      }
+      if (after.serious !== undefined && (after.rung >= 4 || killed > 0) && !after.serious) {
+        out.push(error("INCIDENT_SERIOUS", `${at}.changes.serious`, `${u.id} would be rung ${after.rung} with ${killed} killed; set changes.serious to true.`));
       }
     }
   });
@@ -240,19 +246,16 @@ const updates: Rule = ({ draft, context, world }) => {
     if (Object.values(u.changes).every((v) => v === null)) {
       out.push(error("UPDATE_TARGET", `${at}.changes`, `The update to ${u.id} changes nothing; set a change or remove it.`));
     }
-    if (u.changes.verification !== null) {
-      if (u.add_sources.length === 0) {
-        out.push(error("UPDATE_EVIDENCE", `${at}.add_sources`, `${u.id}: a change of verification needs at least one new source in add_sources.`));
-      } else if (rec) {
-        const gaps = strikeEvidenceGaps(
-          u.changes.verification,
-          [...rec.sources, ...u.add_sources],
-          u.changes.damage ?? rec.damage,
-          u.changes.effect ?? rec.effect,
-        );
-        if (gaps.length) {
-          out.push(error("UPDATE_EVIDENCE", `${at}.add_sources`, `${u.id} at verification ${u.changes.verification} lacks ${gaps.join("; ")}.`));
-        }
+    const levelChange = u.changes.verification !== null;
+    if (levelChange && u.add_sources.length === 0) {
+      out.push(error("UPDATE_EVIDENCE", `${at}.add_sources`, `${u.id}: a change of verification needs at least one new source in add_sources.`));
+    } else if (rec) {
+      // The level after the update must still have its evidence, also when only damage or effect changes.
+      const after = applyStrikeChanges(rec, u);
+      const gaps = strikeEvidenceGaps(after.verification, [...rec.sources, ...u.add_sources], after.damage, after.effect);
+      if (gaps.length) {
+        const where = levelChange ? "add_sources" : u.changes.damage !== null ? "changes.damage" : u.changes.effect !== null ? "changes.effect" : "changes";
+        out.push(error("UPDATE_EVIDENCE", `${at}.${where}`, `${u.id} at verification ${after.verification} lacks ${gaps.join("; ")}.`));
       }
     }
   });

@@ -35,7 +35,7 @@
         },
         "impact": 3,
         "trend": "flat",
-        "rationale": "3 incidents in 30 days against a baseline of 0.3 a month; no change.",
+        "rationale": "2 incidents in 30 days against a baseline of 0.3 a month; no change.",
         "source_ids": [
           "s1",
           "s3"
@@ -506,7 +506,7 @@
   "computed": {
     "pathways": {
       "airspace": {
-        "incidents_30d": 3,
+        "incidents_30d": 2,
         "baseline_monthly": 0.3
       },
       "sabotage": {

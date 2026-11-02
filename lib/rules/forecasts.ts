@@ -23,6 +23,13 @@ export const forecastRules: Rule = ({ draft, date, context, derived }) => {
     }
   });
 
+  // Citations can be checked without the day-before context, so published briefs get this check too.
+  draft.forecast_resolutions.forEach((r, i) => {
+    if (!derived.sourcesById.has(r.source_id)) {
+      out.push(error("FORECAST_REF", `forecast_resolutions[${i}].source_id`, `Source id ${r.source_id} doesn't exist in sources; cite the source that settles ${r.id}.`));
+    }
+  });
+
   if (!context) return out;
 
   const open = new Map(context.open_forecasts.map((f) => [f.id, f]));
@@ -36,9 +43,6 @@ export const forecastRules: Rule = ({ draft, date, context, derived }) => {
     if (!f) out.push(error("FORECAST_REF", `${at}.id`, `${r.id} isn't an open forecast; check open_forecasts in the context.`));
     if (resolved.has(r.id)) out.push(error("FORECAST_REF", `${at}.id`, `${r.id} is resolved twice.`));
     resolved.add(r.id);
-    if (!derived.sourcesById.has(r.source_id)) {
-      out.push(error("FORECAST_REF", `${at}.source_id`, `Source id ${r.source_id} doesn't exist in sources; cite the source that settles ${r.id}.`));
-    }
     if (f && r.outcome === "no" && date < f.resolves_by) {
       out.push(warning("FORECAST_REF", `${at}.outcome`, `${r.id} resolves "no" before its date (${f.resolves_by}); check it can no longer happen.`));
     }
