@@ -88,7 +88,8 @@ async function runDaily(args: string[], token: string | null = "test-token") {
   const cwd = process.cwd();
   process.chdir(work);
   try {
-    const code = await daily.main(["--date", DATE, "--no-deadline", ...args], { readToken: () => token });
+    // CI runners are x64; the arm64 check itself is covered in tests/pipeline.test.ts.
+    const code = await daily.main(["--date", DATE, "--no-deadline", ...args], { readToken: () => token, arch: "arm64" });
     const summary = fs.readFileSync(path.join(work, "logs", `${DATE}.summary.md`), "utf8");
     const runs = fs.readFileSync(path.join(work, "logs", "runs.jsonl"), "utf8").trim().split("\n");
     return { code, summary, last: JSON.parse(runs.at(-1)!) };

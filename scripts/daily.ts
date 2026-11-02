@@ -113,6 +113,8 @@ function detach(argv: string[], repo: string, date: string): number {
 export interface Deps {
   /** Reads the agent's token; the keychain by default (tests inject a fake). */
   readToken?: () => string | null;
+  /** The CPU architecture preflight checks; process.arch by default (tests on x64 CI runners inject arm64). */
+  arch?: string;
 }
 
 export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promise<number> {
@@ -154,7 +156,7 @@ export async function main(argv = process.argv.slice(2), deps: Deps = {}): Promi
   log.line(`EuropeTracker daily run for ${date}${f["dry-run"] ? " (dry run)" : ""}${f.review ? " (review)" : ""}; hard stop ${taipeiTime(new Date(hardStop))}.`);
   try {
     // 1. Preflight.
-    const pre = await preflight({ repo, date, force: !!f.force, dryRun: !!f["dry-run"], claudeBin: CONFIG.claudeBin, lockFile, readToken: deps.readToken });
+    const pre = await preflight({ repo, date, force: !!f.force, dryRun: !!f["dry-run"], claudeBin: CONFIG.claudeBin, lockFile, readToken: deps.readToken, arch: deps.arch });
     if (pre.status === "skip") {
       log.line(pre.reason);
       outcome = "skipped";
