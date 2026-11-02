@@ -18,6 +18,7 @@ let work: string;
 let remote: string;
 let daily: typeof import("@/scripts/daily");
 
+const shq = (s: string) => `'${s.replace(/'/g, `'\\''`)}'`;
 const sh = (cwd: string, ...args: string[]) => execFileSync("git", args, { cwd, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
 
 /** The quiet-day fixture, reworked to be valid against the empty placeholder content. */
@@ -71,7 +72,11 @@ beforeAll(async () => {
 
   const good = emptyWorldDraft(DATE);
   const bad = { ...good, board: { ...good.board, pathways: good.board.pathways.map((p, i) => (i === 0 ? { ...p, trend: "up" as const } : p)) } };
-  process.env.ET_CLAUDE_BIN = FAKE;
+  // The agent's PATH has no Node outside Homebrew (scripts/lib/agent.ts), so CI runners can't resolve
+  // the stand-in's shebang; a wrapper starts it with the Node running these tests.
+  const bin = path.join(base, "fake-claude");
+  fs.writeFileSync(bin, `#!/bin/sh\nexec ${shq(process.execPath)} ${shq(FAKE)} "$@"\n`, { mode: 0o755 });
+  process.env.ET_CLAUDE_BIN = bin;
   process.env.ET_CLAUDE_CONFIG_DIR = path.join(base, "claude");
   process.env.ET_LIVE_WAIT_MS = "0";
   process.env.ET_ARCHIVE = "0";
