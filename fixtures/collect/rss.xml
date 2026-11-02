@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SAMPLE RSS 2.0 feed for collector tests; invented items. -->
+<rss version="2.0"><channel><title>Sample News</title><link>https://example.org/sample</link><description>Sample</description>
+<item><title>SAMPLE: Russian drone shot down over eastern Poland</title><link>https://example.org/sample/drone-poland?utm_source=rss</link><pubDate>Mon, 02 Nov 2026 20:40:00 GMT</pubDate><description><![CDATA[<p>SAMPLE: Polish jets scrambled as <b>drones</b> crossed the border.</p>]]></description></item>
+<item><title>SAMPLE: Russian drone shot down over eastern Poland, officials say</title><link>https://example.org/sample/drone-poland-2</link><pubDate>Mon, 02 Nov 2026 20:45:00 GMT</pubDate><description>SAMPLE: A near-duplicate headline.</description></item>
+<item><title>SAMPLE: Baltic cable damaged near Gotland</title><link>https://example.org/sample/cable</link><pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate><description>SAMPLE: Investigators examine a ship's anchor.</description></item>
+<item><title>SAMPLE: story without a date</title><link>https://example.org/sample/undated</link><description>No date.</description></item>
+</channel></rss>

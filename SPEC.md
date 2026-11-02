@@ -8,7 +8,7 @@
 **Date:** 2026-11-02
 **Design doc:** `docs/DESIGN.md` (design v0.2, approved by JL on 2026-11-02)
 **Repo:** https://github.com/8gara8/EuropeTracker (public, default branch `main`)
-**Pipeline host:** Kobol, `/Users/kobol/Documents/EuropeTracker`
+**Pipeline host:** Kobol, `/Users/kobol/Projects/EuropeTracker`
 
 ---
 
@@ -99,6 +99,16 @@ section in the same PR and is listed here.
 | 2 | `IncidentUpdate.changes` has no `host_statement`; the site shows each weekly check beside the assumption's current text | Updates can set `host_statement` (with the statement in `add_sources`), and the update rules check it on the merged record; a published brief's `assumptions_check` entries carry the assumption's text as assessed, and the page shows that text | PR #2 review: an incident created before its government spoke could never be raised above attribution 2 without failing `validateAll` at publish, and revising an assumption changed what archived outlooks said |
 | 2 | Vercel Node 24.x | Node 26.x, Vercel's default at creation, plus an Ignored Build Step (§8.1) | Matches Kobol's Node; CI still builds on 24 |
 | 2 | Screenshots with Playwright "if available" | Taken with `playwright-core` driving the installed Chrome, outside the repo | Playwright isn't installed on Kobol; nothing is added to the project's dependencies |
+| 3 | `npm install -g` the Claude CLI; flags including `--max-turns 150` | Installed in `/Users/kobol/.europetracker/cli`; flags updated for 2.1.316 (§8.4): `--restricted`, `--safe-mode`, `--tools`, `dontAsk`, a fallback model, no `--max-turns` | A global install would shadow JL's own `claude`; the new flags fence the agent in more tightly than allow and deny lists alone |
+| 3 | Run outcome from the agent's exit code | From the transcript's final `result` event (`is_error`) and the draft file | The CLI exits 0 even when sign-in fails |
+| 3 | Pack Markdown lists an item under every category it covers | Full line under its first category; a short "see <category>" line under the others. Google News items show "(lead: search for the original article)" instead of their redirect URL | The first real pack was 263 KB; it is now about 107 KB. The redirect URLs can't be cited or reliably opened |
+| 3 | Source registry candidates | 79 feeds, all live on 2026-11-02: 16 Telegram channels, 29 RSS feeds, 34 Google News searches. ISW, NATO and the US State Department block or lack RSS, so they are site searches | Verified with `npm run sources:check` |
+| 3 | Undated items are dropped; `--check-feeds` reports load failures | The collector also reads the IAEA's "26-10-30  17:50" dates (in the channel's zone) and the EU Council's Atom `<updated>`; `--check-feeds` reports `NODATE` for a feed whose items all lack a readable date | Both feeds loaded but every item was dropped as undated, so they added nothing, and the check called them ok |
+| 3 | Validate against the context | `daily.ts` validates against the context it built in memory (a copy goes to `logs/DATE.context.json`), never `drafts/context.json` | The agent can write in `drafts/` |
+| 3 | `--dry-run`: no git writes | Preflight also skips `git checkout main` and `git pull` on a dry run, and allows uncommitted changes | A dry run must work from a feature branch |
+| 3 | The repo lives in `/Users/kobol/Documents/EuropeTracker` | It lives in `/Users/kobol/Projects/EuropeTracker` (moved 2026-11-02) | `~/Documents` is synced by iCloud Drive, which made conflict copies ("state 2.json", ".git/index 2") of files the pipeline rewrites. The 05:30 run refuses a tree with stray files, and iCloud can roll a file back to an older copy. `~/Projects` isn't synced |
+| 3 | Preflight runs `git pull --ff-only` and exits 0 when today's brief exists; publish pushes once and reports success | Preflight and publish sync main with GitHub by rebasing local brief commits (content/ only) onto it. A brief committed here but missing on GitHub is pushed by the next run or `npm run publish -- --date D`, and success is reported only once GitHub's main has it. Publish refuses to run off `main` or with uncommitted `content/` changes. Repairs keep `PUBLISH_RESERVE` (4 min) free, and git and the live check stop at the hard stop | PR #3 review: after a failed push both recovery commands refused the brief as "already published"; a publish from another branch reported success without reaching main; publishing and the live check could run past 06:55 |
+| 3 | daily.ts runs its helpers by relative path | It runs `collect.ts` and `archive-urls.ts` with the repo's own `tsx` by absolute path, and takes an injectable token reader | So the end-to-end test can run the real pipeline against a temporary repo with a fake agent |
 
 ---
 
@@ -282,7 +292,8 @@ EuropeTracker/
 │   ├── gen-json-schema.ts         # Zod → routine/schema/draft-brief.schema.json
 │   ├── agent-check.ts             # One-turn smoke test of the headless agent
 │   └── lib/                       # log.ts, run.ts (child processes with timeouts), git.ts,
-│                                  # keychain.ts, transcript.ts (§7.10), lock.ts, summary.ts (§7.7)
+│                                  # keychain.ts, transcript.ts (§7.10), lock.ts, summary.ts (§7.7),
+│                                  # agent.ts (the agent's flags and environment, §8.4)
 ├── fixtures/
 │   ├── briefs/valid-weekday.json, valid-monday.json, valid-quiet.json
 │   ├── briefs/invalid--<CODE>.json # One per validation rule, ≥ 15 files
@@ -290,6 +301,7 @@ EuropeTracker/
 │   ├── evidence/*.json            # Evidence sets for SOURCE_UNSEEN tests
 │   ├── src/                       # Builds the brief, context and evidence fixtures (npm run fixtures:gen)
 │   ├── collect/                   # Saved RSS/Telegram HTML samples for collector tests
+│   ├── agent/                     # A real CLI transcript and fake-claude.mjs for the pipeline tests
 │   └── site-content/              # Coherent SAMPLE dataset for previews (§9 Phase 2)
 ├── tests/                         # Vitest: *.test.ts
 ├── drafts/                        # (gitignored) agent output and context
@@ -1289,7 +1301,7 @@ interface IncidentExplorerProps { incidents: Incident[] }
 #!/bin/zsh
 export PATH=/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export TZ=Asia/Taipei
-cd /Users/kobol/Documents/EuropeTracker || exit 1
+cd /Users/kobol/Projects/EuropeTracker || exit 1
 mkdir -p logs
 exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily.ts "$@"
 ```
@@ -1306,7 +1318,8 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
   fallback in §8.3 uses it.
 
 **Constants** (overridable by env, §8.7): `HARD_STOP = 06:55`, `RETRY_CUTOFF = 06:25`,
-`AGENT_TIMEOUT_MAX = 45 min`, `REPAIR_TIMEOUT = 6 min`, `MAX_REPAIRS = 2`, `LIVE_WAIT_MAX = 8 min`.
+`AGENT_TIMEOUT_MAX = 45 min`, `REPAIR_TIMEOUT = 6 min`, `MAX_REPAIRS = 2`, `LIVE_WAIT_MAX = 8 min`,
+`PUBLISH_RESERVE = 4 min` (kept free after the last repair for publishing and the live check).
 
 **Sequence.** Every step logs to `logs/DATE.daily.log` with timestamps.
 
@@ -1317,8 +1330,12 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
      (another run is going). If it is stale (dead pid, or older than 2 hours), remove it and log that.
    - Network: HEAD `https://github.com` within 10 s.
    - Git: `git status --porcelain` is empty. `GIT_TERMINAL_PROMPT=0 git ls-remote --heads origin main`
-     succeeds. `git checkout main && git pull --ff-only`.
-   - If `content/briefs/DATE.json` already exists and `--force` isn't set, exit 0 (idempotent).
+     succeeds. `git checkout main`, then sync with GitHub: `git fetch origin main` and
+     `git rebase origin/main`. Local commits GitHub lacks may only touch `content/` (briefs whose push
+     failed); anything else, or a conflict, is `E_GIT`.
+   - If `content/briefs/DATE.json` already exists and `--force` isn't set: when GitHub's main has it,
+     exit 0 (idempotent); when only this clone has it (an earlier push failed), push it (§7.6), wait
+     for the page and end as published, without running the agent.
    - The Claude binary exists at `ET_CLAUDE_BIN`, and the keychain token is readable (§8.6).
 2. **Collect.** Run `collect.ts` with a 4-minute timeout. On failure, continue with `degraded = true`
    and an empty pack.
@@ -1331,16 +1348,20 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
 5. **Validate** the draft with the context, the evidence and the pack (`lib/validate.ts`).
    - On errors, run up to `MAX_REPAIRS` repairs. Each repair resumes the session
      (`claude -p --resume <session_id>`) with `routine/REPAIR.md` and the errors JSON, under
-     `REPAIR_TIMEOUT`. Re-validate after each one.
+     `REPAIR_TIMEOUT`, and ends `PUBLISH_RESERVE` before `HARD_STOP`; when there is less room than
+     2 minutes, skip it. Re-validate after each one.
 6. **Retry.** If the agent failed (non-zero exit, timeout, no draft) or the draft still fails
    validation:
    - If this was attempt 1 and it's before `RETRY_CUTOFF`, start attempt 2 with a fresh session and go
      back to step 4.
    - Otherwise take the failure path.
 7. **Publish** (skipped with `--dry-run`).
-   - Run `publish.ts` (§7.6).
-   - Poll `ET_SITE_URL/brief/DATE` every 20 s for up to `LIVE_WAIT_MAX` until it returns 200. If it
-     times out, the summary says "not yet live"; that is a warning, not a failure.
+   - Run `publish.ts` (§7.6) with a deadline of `HARD_STOP − 30 s`: no git command runs past it, and
+     push retries stop rather than wait past it. A push still failing then is `E_PUBLISH`, and the
+     committed brief goes out with the next publish or run.
+   - Poll `ET_SITE_URL/brief/DATE` every 20 s for up to `min(LIVE_WAIT_MAX, HARD_STOP − 30 s − now)`
+     until it returns 200. If it times out, the summary says "not yet live"; that is a warning, not a
+     failure.
    - Spawn `archive-urls.ts` detached.
 8. **Failure path.**
    - Copy `drafts/DATE.json`, `drafts/context.json`, the validator report, the logs and the pack
@@ -1368,19 +1389,23 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
   - permalink from `a.tgme_widget_message_date[href]`
   - title = the first 120 chars of the text, snippet = the first 300.
   - **Verify** these selectors in Phase 3 against a saved page, stored in `fixtures/collect/`.
+    Done 2026-11-02: the live pages match. `fixtures/collect/telegram.html` keeps the real markup with
+    invented text. A reply's quoted text sits inside `.tgme_widget_message_reply` and is skipped.
 - `gnews` queries: build the URL in §4.12 and parse as RSS.
   - The outlet comes from `<source url=…>`; the category comes from the `domains` map, else
     "unclassified".
   - Set `lead_only: true`.
-- **Window:** keep items published in `[window.start − 6 h, window.end]`. Drop undated items.
+- **Window:** keep items published in `[window.start − 6 h, window.end]`. Drop undated items. A date
+  without a time zone takes the zone of the channel's own date, else UTC, never Kobol's local time.
 - **Dedupe:** first by normalized URL, then by title similarity (lowercase, punctuation stripped,
   Jaccard ≥ 0.8 on word sets). Keep the item from the higher-priority feed.
 - **Score:** `10 × (4 − priority)` + `3 × min(keyword hits, 5)` + recency bonus 0–5 (newer is higher)
   + 4 if the category is `ua_gov`, `ru_gov`, `eu_gov_security` or `nato_eu`.
 - **Caps:** top 30 per coverage category, 350 unique items overall.
 - **Exit codes:** 0 on success, including degraded. 1 if the config is invalid or zero items were kept.
-- `--check-feeds`: fetch every feed and print a table of id, ok, item count and newest date. Exit 1 if
-  any priority-1 feed fails.
+- `--check-feeds`: fetch every feed and print a table of id, status, item count and newest date. The
+  status is `FAIL` if the feed didn't load and `NODATE` if it has items but none with a readable date
+  (they would all be dropped). Exit 1 if any priority-1 feed is `FAIL` or `NODATE`.
 
 ### 7.4 `scripts/build-context.ts` and `lib/aggregate.ts`
 
@@ -1417,6 +1442,9 @@ tsx scripts/validate.ts --all
 
 `publish.ts --date D [--review]` takes these steps:
 
+0. Refuse unless the repo is on `main` and `content/` has no uncommitted changes. Sync with GitHub as
+   preflight does (§7.2). If `content/briefs/D.json` exists: when GitHub's main has it, abort ("already
+   exists"); when only this clone has it, an earlier push failed, so push it (step 5) and stop.
 1. Load `drafts/D.json` and validate it in full, with context and evidence. Abort on errors.
 2. Build the `Brief`: the draft plus `published_at` plus `computed` (counts from `aggregate.ts` after
    adding today's incidents; word and source counts).
@@ -1441,7 +1469,9 @@ tsx scripts/validate.ts --all
 5. Write the files with stable key order. Then:
    - `git add content/`
    - `git commit -m "brief: D — <title>"` (author from the repo's git config, §8.9)
-   - `git push origin main`, retrying 3 times with 2 s, 4 s and 8 s backoff.
+   - `git push origin main`, retrying 3 times with 2 s, 4 s and 8 s backoff. Before each try, sync with
+     GitHub again; if that rebased the brief onto newer commits, run `validateAll()` again first.
+   - Report success only after `git fetch` shows GitHub's main includes the commit.
 6. With `--review`, commit to the new branch `review/D` and push that instead. `promote.ts --date D`
    later runs `git checkout main && git merge --ff-only review/D && git push origin main`, then deletes
    the branch locally and on the remote.
@@ -1511,7 +1541,9 @@ Scoring itself happens in `publish.ts` through `aggregate.brier()`.
   - strip a `web.archive.org/web/<ts>/` prefix
 - Writes `logs/DATE.evidence.json`: `{ "urls": string[] }`.
 - **Verify** the event shapes against the installed CLI's real output in Phase 3, and keep a trimmed
-  real transcript in `fixtures/` for tests.
+  real transcript in `fixtures/` for tests. Done 2026-11-02 for a sign-in failure
+  (`fixtures/agent/transcript-auth-failed.jsonl`); `fixtures/agent/fake-claude.mjs` emits the same
+  event shapes for the end-to-end test.
 
 ---
 
@@ -1567,7 +1599,7 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
 - **What:** a scheduled task in the Claude desktop app on Kobol, the same mechanism MEtracker uses.
   - Name: "Europe tracker morning".
   - Schedule: daily at 05:30 Asia/Taipei (cron `30 5 * * *`), set to run on this computer.
-  - Working folder: `/Users/kobol/Documents/EuropeTracker`.
+  - Working folder: `/Users/kobol/Projects/EuropeTracker`.
   - Prompt: the contents of `routine/TASK.md`.
 - **What it does:** runs `zsh scripts/daily.sh` in the background, waits for it to finish, then
   replies with `logs/DATE.summary.md`. That reply is JL's morning update in the Claude app. The task
@@ -1576,7 +1608,7 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
 - **Creating it** (Phase 5, with JL present):
   1. Create the task with the scheduled-tasks tool, or in the app.
   2. A task created by the tool takes the creating session's folder and starts in Manual permission
-     mode, so set the folder to `/Users/kobol/Documents/EuropeTracker` on the task page.
+     mode, so set the folder to `/Users/kobol/Projects/EuropeTracker` on the task page.
   3. Click Run now once while JL watches, and approve `zsh scripts/daily.sh` and the summary read as
      "Always allowed". Later unattended runs then never stall on a permission prompt.
   4. Confirm the saved folder (`cwd`) in
@@ -1593,9 +1625,12 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
 
 ### 8.4 Claude Code CLI (headless research agent)
 
-- **Install the native build:** `/opt/homebrew/bin/npm install -g @anthropic-ai/claude-code@2.1.316`.
-  The package installs the `darwin-arm64` binary as an optional dependency.
-  - Check: `file -L /opt/homebrew/bin/claude` (or the binary it links to) must report arm64.
+- **Install the native build in its own folder:**
+  `/opt/homebrew/bin/npm install --prefix /Users/kobol/.europetracker/cli @anthropic-ai/claude-code@2.1.316`.
+  The binary is `/Users/kobol/.europetracker/cli/node_modules/.bin/claude` (`ET_CLAUDE_BIN`).
+  - Not `npm install -g`: npm's global prefix on Kobol is `~/.npm-global`, which comes first on the
+    PATH, so a global install would replace JL's own `claude`.
+  - Check: `file -L` on the binary must report arm64 (it did on 2026-11-02).
   - Never use `~/.local/bin/claude`, which is an Intel build from March 2026.
 - **Isolated config dir:** `CLAUDE_CONFIG_DIR=/Users/kobol/.europetracker/claude`, created with mode
   700. This keeps JL's plugins, MCP servers, hooks and memory out of the pipeline.
@@ -1605,15 +1640,30 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
   `HOME`, `PATH`, `TZ`, `CLAUDE_CONFIG_DIR`, `CLAUDE_CODE_OAUTH_TOKEN`, `DISABLE_AUTOUPDATER=1`.
 
 ```
-/opt/homebrew/bin/claude -p "<rendered PROMPT.md>" \
-  --model "${ET_MODEL:-opus}" \
+$ET_CLAUDE_BIN -p "<rendered PROMPT.md>" \
+  --model "${ET_MODEL:-opus}" --fallback-model "${ET_FALLBACK_MODEL:-sonnet}" \
   --output-format stream-json --verbose \
-  --max-turns 150 \
+  --restricted --safe-mode \
+  --tools WebSearch,WebFetch,Read,Glob,Grep,Write,Edit \
   --settings routine/agent-settings.json \
   --strict-mcp-config --mcp-config '{"mcpServers":{}}' \
+  --permission-mode dontAsk --permission-prompts none \
   --allowedTools "WebSearch" "WebFetch" "Read" "Glob" "Grep" "Write(drafts/**)" "Edit(drafts/**)" \
   --disallowedTools "Bash" "Task" "NotebookEdit"
 ```
+
+Verified against `claude --help` for 2.1.316 (2026-11-02):
+- `--max-turns` no longer exists; the agent timeout bounds the run instead.
+- `--restricted` removes every tool that runs commands or code, confines the file tools to the working
+  directory, and ignores user, project and local settings files. `--safe-mode` turns off CLAUDE.md,
+  skills, plugins, hooks, custom agents and MCP servers. `--tools` is the complete list of built-in
+  tools that exist in the session. With `--permission-mode dontAsk` and `--permission-prompts none`,
+  anything not allowed is denied without a prompt.
+- `--bare` is not used: it accepts only API keys, not the OAuth token.
+- The CLI exits 0 even when sign-in fails. A run's outcome is the final `{"type":"result"}` event's
+  `is_error` (its `subtype` says "success" either way), plus whether the draft exists.
+- `scripts/lib/agent.ts` builds these arguments; the prompt comes first because the allow and deny
+  lists are variadic.
 
 - **Repair:** the same flags plus `--resume <session_id>`, with the rendered REPAIR.md as the prompt.
 - **Verify** every flag and its exact syntax with `claude --help` for the installed version, and adapt.
@@ -1653,7 +1703,7 @@ Everything lives in JL's login keychain on Kobol. `scripts/lib/keychain.ts` read
 
 | Service name | What | How JL creates it |
 |---|---|---|
-| `europetracker-claude-oauth` | Claude Code OAuth token for the agent | In Terminal on Kobol: `CLAUDE_CONFIG_DIR=/Users/kobol/.europetracker/claude /opt/homebrew/bin/claude setup-token`, then `security add-generic-password -U -a kobol -s europetracker-claude-oauth -w` and paste the token at the prompt |
+| `europetracker-claude-oauth` | Claude Code OAuth token for the agent | In Terminal on Kobol: `CLAUDE_CONFIG_DIR=$HOME/.europetracker/claude $HOME/.europetracker/cli/node_modules/.bin/claude setup-token`, then `security add-generic-password -U -a kobol -s europetracker-claude-oauth -w` and paste the token at the prompt (twice) |
 
 `gh` already has a keyring login as 8gara8 with `repo` and `workflow` scopes. Git pushes over HTTPS use
 the same credentials.
@@ -1665,7 +1715,10 @@ the same credentials.
 | `ET_CONTENT_DIR` | `content` | Site loaders and scripts (Vercel Preview sets `fixtures/site-content`) |
 | `ET_SITE_URL` | `https://europetracker.vercel.app` | Live check, RSS links, metadata |
 | `ET_MODEL` | `opus` | Agent model alias |
-| `ET_CLAUDE_BIN` | `/opt/homebrew/bin/claude` | daily.ts |
+| `ET_CLAUDE_BIN` | `/Users/kobol/.europetracker/cli/node_modules/.bin/claude` | daily.ts |
+| `ET_FALLBACK_MODEL` | `sonnet` | Agent fallback when the main model is overloaded |
+| `ET_LIVE_WAIT_MS` | 8 minutes | How long publish waits for the brief to go live (tests set 0) |
+| `ET_ARCHIVE` | on | `0` skips the background Wayback requests (tests) |
 | `ET_CLAUDE_CONFIG_DIR` | `/Users/kobol/.europetracker/claude` | daily.ts |
 | `ET_HARD_STOP` | `06:55` | daily.ts |
 | `ET_RETRY_CUTOFF` | `06:25` | daily.ts |
@@ -1687,7 +1740,7 @@ There are no `.env` files with secrets. Tokens come only from the keychain.
 
 ### 8.9 One-time setup on Kobol (Phase 3, plus Phase 5 for the scheduled task)
 
-1. The repo is already cloned at `/Users/kobol/Documents/EuropeTracker`. Its git config has
+1. The repo is already cloned at `/Users/kobol/Projects/EuropeTracker`. Its git config has
    `user.name = 8gara8` and `user.email = 62337733+8gara8@users.noreply.github.com`.
 2. `/opt/homebrew/bin/npm ci`.
 3. Install the native Claude CLI (§8.4) and create the isolated config dir.
@@ -1978,5 +2031,5 @@ Assumptions. These are a starting set; JL can edit them in the Phase 4 review.
   - MEtracker morning brief, daily at 07:30 (Claude desktop scheduled task; don't touch)
   - a nightly job at 03:00
   - the AYW product scan, Mondays around 06:30 (a different folder; only shared Claude usage)
-- **Repo:** cloned at `/Users/kobol/Documents/EuropeTracker`, with repo-level git identity
+- **Repo:** cloned at `/Users/kobol/Projects/EuropeTracker`, with repo-level git identity
   `8gara8 <62337733+8gara8@users.noreply.github.com>`.

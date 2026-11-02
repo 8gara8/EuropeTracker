@@ -1,6 +1,6 @@
 # EuropeTracker — agent guide (read this first)
 > Internal AI working notes in a public repo: keep secrets, personal data and machine security details out. Never publish this file on the site.
-> Last reviewed 2026-11-02 · Folder: /Users/kobol/Documents/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
+> Last reviewed 2026-11-02 · Folder: /Users/kobol/Projects/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
 > About JL and other projects: /Users/8gara8/Documents/AGENTS.md, on JL's other Mac. It isn't reachable from Kobol; if you need it, ask JL rather than guess.
 
 ## 1. Who and what
@@ -35,6 +35,9 @@ tracked only as the drivers of that risk.
   `content/`, fixtures (3 valid, 54 invalid), 108 tests, and CI. Spec refinements are in `SPEC.md` §0.5.
 - **2026-11-02:** Phase 2 built: every page in §5, the SAMPLE dataset in `fixtures/site-content`, and
   the Vercel project `europetracker` (previews show the sample with a banner). No production deploy yet.
+- **2026-11-02:** Phase 3 code built: 79 verified feeds, the collector, `daily.ts` with retries,
+  repairs and the failure path, publish and promote, the run summary, and `docs/RUNBOOK.md`. The native
+  Claude CLI is installed in `~/.europetracker/cli`. The real dry run waits for JL's agent token.
 - **Decisions, 2026-11-02:**
   - **Goal:** gauge spillover risk to Europe. Ukraine's deep strikes into Russia are emphasised as a
     driver.
@@ -56,7 +59,7 @@ tracked only as the drivers of that risk.
 | 0. Design, spec, prompts | Done 2026-11-02 |
 | 1. Contract (schemas, validator, fixtures, tests) | Done 2026-11-02 |
 | 2. Site and Vercel project | Done 2026-11-02 (production shows empty states until the first brief) |
-| 3. Pipeline, dry run | Not started |
+| 3. Pipeline, dry run | Code done 2026-11-02; real dry run waits for the agent token |
 | 4. Seed data | Not started |
 | 5. Supervised runs, go-live | Not started |
 
@@ -106,6 +109,7 @@ tracked only as the drivers of that risk.
 | Change a schema or rule | Update `lib/schema` or `lib/rules`, then `npm run fixtures:gen` (it fails if a fixture stops validating as intended), the tests, and `npm run schema:gen`; bump `schema_version` if the content shape changes |
 | Checks before a PR | `npm run typecheck && npm test && npm run validate:all && npm run schema:check && npm run build` |
 | Preview the site | `npm run dev:sample` (sample data) or `npm run dev`; Vercel builds a preview of every pushed branch with the sample data |
+| Debug or recover a run | `docs/RUNBOOK.md`: files, error codes, manual runs, renewing the token |
 | Run results | No alerts by design. Every run ends with `logs/DATE.summary.md`, which the scheduled task posts in the Claude app; failed drafts go to `needs-review/DATE/` |
 
 ## 7. Memory
