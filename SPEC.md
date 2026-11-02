@@ -109,6 +109,10 @@ section in the same PR and is listed here.
 | 3 | The repo lives in `/Users/kobol/Documents/EuropeTracker` | It lives in `/Users/kobol/Projects/EuropeTracker` (moved 2026-11-02) | `~/Documents` is synced by iCloud Drive, which made conflict copies ("state 2.json", ".git/index 2") of files the pipeline rewrites. The 05:30 run refuses a tree with stray files, and iCloud can roll a file back to an older copy. `~/Projects` isn't synced |
 | 3 | Preflight runs `git pull --ff-only` and exits 0 when today's brief exists; publish pushes once and reports success | Preflight and publish sync main with GitHub by rebasing local brief commits (content/ only) onto it. A brief committed here but missing on GitHub is pushed by the next run or `npm run publish -- --date D`, and success is reported only once GitHub's main has it. Publish refuses to run off `main` or with uncommitted `content/` changes. Repairs keep `PUBLISH_RESERVE` (4 min) free, and git and the live check stop at the hard stop | PR #3 review: after a failed push both recovery commands refused the brief as "already published"; a publish from another branch reported success without reaching main; publishing and the live check could run past 06:55 |
 | 3 | daily.ts runs its helpers by relative path | It runs `collect.ts` and `archive-urls.ts` with the repo's own `tsx` by absolute path, and takes an injectable token reader | So the end-to-end test can run the real pipeline against a temporary repo with a fake agent |
+| 4 | Seed records written straight into `content/` | Written as YAML in `research/seed/` (one file per pathway, plus strikes, state and forecasts); `npm run seed:build` assigns ids in date order, checks every record and the country floors, validates the result as a whole, writes `content/` and the tables in `docs/SEED-REPORT.md`. It refuses to run once a daily brief or a non-seed record exists | Hundreds of records are easier to review and correct as YAML, and ids stay in date order after edits |
+| 4 | The end-to-end test copies `content/` | It copies `fixtures/empty-content` (the pre-seed placeholder); a new `tests/seed.test.ts` checks every pathway has an incident and that `research/seed` builds to the committed `content/` until go-live | Seeded content no longer matches the fixture drafts; the seed and `content/` must not drift apart before go-live |
+| 4 | Counting rules (STYLE.md §4) | Seed conventions, listed in `docs/SEED-REPORT.md`: stray Ukrainian drones logged as war munitions on European soil; airport closures by unidentified drones at rung 2; European boardings of shadow-fleet ships at rung 2, Russian escorts at rung 1; a death or a strike inside territorial waters at sea is rung 4 | The rules don't cover these cases explicitly; the daily agent should follow the same conventions |
+| 4 | The seed builder marks rung 4 or deaths as serious | It also applies the pathway threshold where a type meets it by definition: every maritime strike on or seizure of a vessel is serious, and `INCIDENT_SERIOUS` enforces that for seeds, drafts and updates | Seed review: seven ship strikes below rung 4 (Ukrainian strikes on shadow-fleet tankers off Turkey and Malta, and three ships off Romania) were left non-serious, so maritime showed 5 serious incidents in 12 months instead of 12 |
 
 ---
 
@@ -270,6 +274,7 @@ EuropeTracker/
 │   └── archive-index.json         # URL → Wayback snapshot
 ├── research/
 │   ├── sources.yaml               # Source registry: feeds, channels, queries, domain map
+│   ├── seed/                      # Phase 4 seed records as YAML (npm run seed:build → content/)
 │   └── packs/                     # (gitignored) daily source packs: YYYY-MM-DD.json/.md
 ├── routine/
 │   ├── TASK.md                    # Prompt of the Claude app's scheduled task (written in Phase 0)
@@ -302,6 +307,7 @@ EuropeTracker/
 │   ├── src/                       # Builds the brief, context and evidence fixtures (npm run fixtures:gen)
 │   ├── collect/                   # Saved RSS/Telegram HTML samples for collector tests
 │   ├── agent/                     # A real CLI transcript and fake-claude.mjs for the pipeline tests
+│   ├── empty-content/             # The pre-seed placeholder content, for the end-to-end tests
 │   └── site-content/              # Coherent SAMPLE dataset for previews (§9 Phase 2)
 ├── tests/                         # Vitest: *.test.ts
 ├── drafts/                        # (gitignored) agent output and context
@@ -434,7 +440,8 @@ export const COUNTRY_SCORES = {
 export const SEAS = ["baltic", "black_sea", "north_sea", "barents_norwegian", "mediterranean", "other"] as const;
 
 // Incident types per pathway, with the allowed rung range. "other" is allowed in every pathway with
-// range 1–6, and produces a warning.
+// range 1–6, and produces a warning. `serious: true` marks a type that meets its pathway's serious
+// threshold by definition: every maritime attack on or seizure of a vessel.
 export const INCIDENT_TYPES = {
   airspace: {
     drone_incursion:   { label: "Drone incursion",            min: 3, max: 4 },
@@ -459,9 +466,9 @@ export const INCIDENT_TYPES = {
     pipeline_damage:       { label: "Pipeline damage",             min: 2, max: 4 },
     shadow_fleet_incident: { label: "Shadow-fleet incident",       min: 1, max: 3 },
     naval_confrontation:   { label: "Naval or air confrontation at sea", min: 3, max: 4 },
-    vessel_seizure:        { label: "Vessel seized by force",      min: 3, max: 4 },
-    mine_drift:            { label: "Drifting mine",               min: 1, max: 4 },
-    strike_at_sea:         { label: "Strike on a vessel in European waters", min: 3, max: 4 },
+    vessel_seizure:        { label: "Vessel seized by force",      min: 3, max: 4, serious: true },
+    mine_drift:            { label: "Drifting mine or stray sea drone", min: 1, max: 4 },
+    strike_at_sea:         { label: "Strike on a vessel in European waters", min: 3, max: 4, serious: true },
   },
   cyber_ew: {
     gnss_jamming:   { label: "GPS jamming",          min: 1, max: 1 },
@@ -1005,7 +1012,7 @@ plus the draft's `incidents_new` and `incident_updates`, with the window "last 3
 | INCIDENT_TYPE | `type` isn't in INCIDENT_TYPES[pathway] (`other` gives a warning only) | error |
 | INCIDENT_RUNG | Rung outside the type's range; `killed > 0` with rung < 4; a BY/RU/UA location with rung > 1 | error |
 | INCIDENT_LOCATION | A BY/RU/UA location in a pathway other than military_pressure or nuclear; `affected` empty; a European `location_country` missing from `affected` | error |
-| INCIDENT_SERIOUS | Rung ≥ 4 or `killed > 0` but `serious` is false | error |
+| INCIDENT_SERIOUS | Rung ≥ 4 or `killed > 0` but `serious` is false; or a type that meets its pathway's threshold by definition (`serious: true` in `INCIDENT_TYPES`: a maritime strike on or seizure of a vessel) but `serious` is false. Updates are checked on the merged record | error |
 | INCIDENT_SOURCES | For non-seed incidents: ≥ 2 sources from ≥ 2 categories. If `host_statement` is "yes", one must be `eu_gov_security` or `nato_eu`; if "none_yet", attribution must be ≤ 2. Seeds need ≥ 1 source. Updates to non-seed incidents are checked on the merged record: attribution above 2 needs `host_statement` "yes", and an update that sets it must cite the statement in `add_sources` | error |
 | INCIDENT_PRECISION | `date_precision` is "month" on a non-seed incident | error |
 | UPDATE_TARGET | An update references an unknown id, or one in today's `*_new` | error |

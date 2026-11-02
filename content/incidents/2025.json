@@ -1,0 +1,2356 @@
+{
+  "schema_version": 1,
+  "year": 2025,
+  "incidents": [
+    {
+      "id": "INC-2025-0001",
+      "date": "2025-01-01",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Transnistria and Moldova",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "energy_coercion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Gazprom stopped gas deliveries to Moldova, leaving the Transnistria region without heating and with rolling blackouts and shutting its power plant, which supplied most of Moldova's electricity.",
+      "attribution": 3,
+      "attribution_note": "Moldova's prime minister accused Moscow of using energy as a weapon; Gazprom cited debts.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldova faces 'security crisis' after Russian gas shut-off, PM Recean says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/moldova-faces-security-crisis-after-russian-gas-shut-off-pm-recean-says/",
+          "published_at": "2025-01-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0002",
+      "date": "2025-01-12",
+      "date_precision": "day",
+      "location_country": "RU",
+      "affected": [
+        "FI"
+      ],
+      "location": "Kamenka and Petrozavodsk, near the Finnish border",
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "force_buildup",
+      "rung": 1,
+      "serious": false,
+      "summary": "Satellite imagery reported by Yle and later SVT showed Russia expanding military installations near the Finnish border, including tents for about 2,000 troops at Kamenka and vehicle storage at Petrozavodsk.",
+      "attribution": 3,
+      "attribution_note": "Finnish experts and NATO officials judged it no immediate threat.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia expands military installations near Finnish border, YLE reveals - Euromaidan Press",
+          "outlet": "Euromaidan Press",
+          "category": "ua_independent",
+          "url": "https://euromaidanpress.com/2025/01/12/russia-expands-military-installations-near-finnish-border-yle-reveals/",
+          "published_at": "2025-01-12"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0003",
+      "date": "2025-01-26",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV",
+        "SE"
+      ],
+      "location": "Off Gotland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": false,
+      "summary": "A fibre-optic cable between Latvia and Gotland was damaged. Sweden seized the bulk carrier Vezhen and later ruled out sabotage.",
+      "attribution": 1,
+      "attribution_note": "Sweden concluded the Bulgarian-owned bulk carrier Vezhen broke the cable by accident.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Sweden says ship broke Baltic Sea cable by accident",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/sweden-rules-out-sabotage-baltic-sea-cable-damage-case-2025-02-03/",
+          "published_at": "2025-02-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0004",
+      "date": "2025-02-11",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Gulf of Gdańsk",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Su-24 violated Polish airspace over the Gulf of Gdańsk for 72 seconds, reaching 6.5 km into Polish territory.",
+      "attribution": 3,
+      "attribution_note": "Polish officials said Russia admitted the violation and blamed a navigation fault.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian military jet violates Polish airspace after navigation failure, Poland says",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/russian-military-jet-violates-polish-airspace-after-navigation-failure-poland-2025-02-11/",
+          "published_at": "2025-02-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0005",
+      "date": "2025-02-13",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Ceadîr-Lunga and Ciumai, Taraclia District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Several drones carrying explosives crossed Moldova overnight during an attack on Ukraine; two crashed and exploded in empty fields near Ceadîr-Lunga and Ciumai. No one was hurt.",
+      "attribution": 3,
+      "attribution_note": "Police said the Ceadîr-Lunga fragments were from a Russian drone; Moldova summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "IGP: Fragments found in Ceadîr-Lunga belong to Russian drone",
+          "outlet": "Moldpres",
+          "category": "eu_regional_press",
+          "url": "https://www.moldpres.md/eng/society/igp-fragments-found-in-ceadir-lunga-belong-to-russian-drone",
+          "published_at": "2025-02-13"
+        },
+        {
+          "title": "Moldova summons Russian ambassador over drone violation of airspace – photos",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2025/02/13/7498069/",
+          "published_at": "2025-02-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0006",
+      "date": "2025-02-14",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "PL",
+        "LT"
+      ],
+      "location": "Chornobyl New Safe Confinement",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "A drone punched a hole in the New Safe Confinement over Chornobyl's destroyed reactor and started a fire that took weeks to extinguish. Radiation levels did not rise.",
+      "attribution": 3,
+      "attribution_note": "Ukraine blamed a Russian drone; in December 2025 the IAEA said the structure had lost its confinement function.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone damages outer layer of Chornobyl NPP confinement structure – IAEA",
+          "outlet": "Ukrinform",
+          "category": "ua_independent",
+          "url": "https://www.ukrinform.net/rubric-society/3960233-drone-damages-outer-layer-of-chornobyl-npp-confinement-structure-iaea.html",
+          "published_at": "2025-02-14"
+        },
+        {
+          "title": "IAEA flags damage to Chornobyl nuclear plant’s protective shield in Ukraine",
+          "outlet": "Al Jazeera",
+          "category": "intl_press",
+          "url": "https://www.aljazeera.com/news/2025/12/6/iaea-flags-damage-to-chornobyl-nuclear-plants-protective-shield",
+          "published_at": "2025-12-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0007",
+      "date": "2025-02-21",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE",
+        "FI",
+        "DE"
+      ],
+      "location": "East of Gotland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": false,
+      "summary": "Sweden opened a sabotage investigation after the C-Lion1 data cable between Finland and Germany was damaged east of Gotland, its second fault in three months.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Sweden investigates suspected sabotage of undersea telecoms cable",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/cy5nydr9rqvo",
+          "published_at": "2025-02-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0008",
+      "date": "2025-03-01",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Near the Moldovan border",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Shahed-type drone crashed in Romania; its remains, with explosives, were found about 500 metres from the border with Moldova.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "У Румунії виявили російський дрон із вибуховим зарядом",
+          "outlet": "Radio Svoboda",
+          "category": "intl_press",
+          "url": "https://www.radiosvoboda.org/a/news-rumunia-rosiyskyi-dron/33332718.html",
+          "published_at": "2025-03-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0009",
+      "date": "2025-03-21",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Off Rügen",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "German customs seized the sanctioned tanker Eventin and its 100,000 tonnes of Russian crude. The Panama-flagged ship had drifted into German waters after losing power in January.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Zoll beschlagnahmt Tanker der russischen Schattenflotte",
+          "outlet": "FAZ",
+          "category": "eu_regional_press",
+          "url": "https://www.faz.net/aktuell/politik/inland/russlands-schattenflotte-zoll-beschlagnahmt-tanker-110371513.html",
+          "published_at": "2025-03-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0010",
+      "date": "2025-04-07",
+      "date_precision": "day",
+      "location_country": "NO",
+      "affected": [
+        "NO"
+      ],
+      "location": "Bremanger, Vestland",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "cyberattack",
+      "rung": 2,
+      "serious": false,
+      "summary": "Hackers took control of a dam's systems in Bremanger and opened an outflow valve, releasing about 500 litres of water per second for four hours before it was noticed.",
+      "attribution": 3,
+      "attribution_note": "Norway's security service PST blamed pro-Russian hackers in August 2025.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Pro-Russian hackers blamed for water dam sabotage in Norway",
+          "outlet": "BleepingComputer",
+          "category": "intl_press",
+          "url": "https://www.bleepingcomputer.com/news/security/pro-russian-hackers-blamed-for-water-dam-sabotage-in-norway/",
+          "published_at": "2025-08-14"
+        },
+        {
+          "title": "Norway blames Russia for cyberattack on hydropower dam",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/norway-blames-russia-for-cyberattack-on-hydropower-dam/",
+          "published_at": "2025-08-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0011",
+      "date": "2025-04-11",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Near Tallinn",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "The Estonian navy detained the flagless, EU- and UK-sanctioned tanker Kiwala on its way to load oil at Ust-Luga. It was released on 28 April.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Estonian authorities detain Russian 'shadow fleet'-linked oil tanker near Tallinn",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/my-europe/2025/04/11/estonian-authorities-detain-russian-shadow-fleet-linked-oil-tanker-near-tallinn",
+          "published_at": "2025-04-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0012",
+      "date": "2025-04-25",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Polish territorial waters, Baltic Sea",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Baltic Fleet military helicopter entered Polish airspace over territorial waters in the evening and was tracked by military radar until it left.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian military helicopter violates Polish airspace",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2025/04/26/7509286/",
+          "published_at": "2025-04-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0013",
+      "date": "2025-05-12",
+      "date_precision": "day",
+      "location_country": "GB",
+      "affected": [
+        "GB"
+      ],
+      "location": "Kentish Town and Islington, London",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Arsonists set fire to Keir Starmer's family house, a car and a property linked to him in London over several days. Two men were convicted of conspiring to commit arson.",
+      "attribution": 3,
+      "attribution_note": "Prime Minister Starmer said in June 2026 the attacks were Russia-linked; a BBC investigation traced the handler to Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia-linked arson attacks show bad actors targeting UK, says Starmer",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/politics/2026/jun/18/keir-starmer-russian-linked-arson-attack-property-bad-actors",
+          "published_at": "2026-06-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0014",
+      "date": "2025-05-13",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Gulf of Finland near Vaindloo",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "naval_confrontation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Estonian navy units tried to inspect the unflagged tanker Jaguar and escorted it out of Estonian waters. A Russian Su-35 fighter violated Estonian airspace for about a minute, and the tanker entered Russian waters.",
+      "attribution": 3,
+      "attribution_note": "Estonia said a Russian Su-35 violated its airspace during the operation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Navy escorts suspected 'shadow fleet' tanker out of Estonian waters",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1609694456/navy-escorts-suspected-shadow-fleet-tanker-out-of-estonian-waters",
+          "published_at": "2025-05-14"
+        },
+        {
+          "title": "Russian fighter jet breaches Estonia's airspace",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1609694252/russian-fighter-jet-breaches-estonia-s-airspace",
+          "published_at": "2025-05-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0015",
+      "date": "2025-05-21",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL",
+        "SE"
+      ],
+      "location": "SwePol power cable, Baltic Sea",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 1,
+      "serious": false,
+      "summary": "Poland said a sanctioned shadow-fleet tanker made suspicious manoeuvres near the power cable linking Poland and Sweden; a Polish military aircraft scared it off.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland intervenes as Russian 'shadow fleet' ship spotted near power cable",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/poland-says-russian-ship-performed-suspicious-manoeuvres-near-cable-sweden-2025-05-21/",
+          "published_at": "2025-05-21"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0016",
+      "date": "2025-06-16",
+      "date_precision": "day",
+      "location_country": "GB",
+      "affected": [
+        "GB",
+        "FR"
+      ],
+      "location": "English Channel",
+      "sea": "other",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 1,
+      "serious": false,
+      "summary": "For the first time a Russian Navy corvette, the Boykiy, escorted sanctioned shadow-fleet tankers, accompanying the Selva and Sierra through the English Channel.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Corvette With Uran Missiles Deployed to Guard russian Shadow Fleet",
+          "outlet": "Defense Express",
+          "category": "ua_independent",
+          "url": "https://en.defence-ua.com/news/corvette_with_uran_missiles_deployed_to_guard_russian_shadow_fleet-14939.html",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0017",
+      "date": "2025-06-22",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Vaindloo island, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian emergencies ministry Il-76 transport aircraft entered Estonian airspace near Vaindloo without permission for about four minutes.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Venemaa Föderatsiooni lennuk rikkus Eesti õhupiiri – Kaitsevägi",
+          "outlet": "Estonian Defence Forces",
+          "category": "eu_gov_security",
+          "url": "https://mil.ee/uudised/venemaa-foderatsiooni-lennuk-rikkus-eesti-ohupiiri-22/",
+          "published_at": "2025-06-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0018",
+      "date": "2025-06-26",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Erfurt, Thuringia",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "Several Rheinmetall military trucks were set on fire in Erfurt and three were destroyed. Investigators examined a possible Russian-directed sabotage motive.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "russians escalate attacks on nato: KGB-style strike: Russia destroys NATO vehicles deep inside Germany — has Moscow adopted Ukraine's playbook? - The Economic Times",
+          "outlet": "The Economic Times",
+          "category": "intl_press",
+          "url": "https://economictimes.indiatimes.com/news/international/us/kgb-style-strike-russia-destroys-nato-vehicles-deep-inside-germany-has-moscow-adopted-ukraines-playbook/articleshow/122096533.cms",
+          "published_at": "2025-06-27"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0019",
+      "date": "2025-07-10",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Near the Belarusian border",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Gerbera drone flew in from Belarus and crashed about a kilometre inside Lithuania. The Lithuanian government was sent to shelter while it was tracked.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Уряд відправили в укриття: до Литви залетів російський дрон “Гербера”",
+          "outlet": "Militarnyi",
+          "category": "ua_independent",
+          "url": "https://militarnyi.com/uk/news/uryad-vidpravyly-v-ukryttya-do-lytvy-zaletiv-rosijskyj-rozviduvalnyj-dron-gerbera",
+          "published_at": "2025-07-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0020",
+      "date": "2025-07-28",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Gaižiūnai training area, Jonava District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Gerbera-type drone from Belarus overflew Vilnius and came down in the Gaižiūnai military training area, about 100 km from the border. Found on 1 August, it carried 2 kg of explosives, which were made safe.",
+      "attribution": 3,
+      "attribution_note": "Lithuania identified a Russian Gerbera-type drone launched from Belarus.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian drone that overflew Lithuania carried explosives",
+          "outlet": "AeroTime",
+          "category": "intl_press",
+          "url": "https://www.aerotime.aero/articles/russian-drone-overflew-vilnius-with-explosives-lithuania-urges-nato-response",
+          "published_at": "2025-08-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0021",
+      "date": "2025-08-20",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Osiny, Łuków County, Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone, probably a Geran-type decoy, crashed and exploded in a cornfield in Osiny, about 100 km inside Poland, damaging nearby buildings' windows. Radar had not tracked it. No one was hurt.",
+      "attribution": 3,
+      "attribution_note": "Poland's defence minister called it a Russian provocation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian drone fell in eastern Poland, Warsaw says",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/russian-drone-fell-eastern-poland-warsaw-says-2025-08-20/",
+          "published_at": "2025-08-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0022",
+      "date": "2025-08-25",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE",
+        "LV"
+      ],
+      "location": "Tartu County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a Ukrainian drone attack on Ust-Luga and St Petersburg, a drone crossed Latvian airspace into Estonia and exploded in a field in Tartu County.",
+      "attribution": 1,
+      "attribution_note": "Estonia's investigation found a Ukrainian drone pushed off course by Russian jamming.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Suspected Ukrainian combat drone parts found in Estonian field",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1609779060/suspected-ukrainian-combat-drone-parts-found-in-estonian-field",
+          "published_at": "2025-08-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0023",
+      "date": "2025-08-31",
+      "date_precision": "day",
+      "location_country": "BG",
+      "affected": [
+        "BG"
+      ],
+      "location": "Plovdiv Airport",
+      "sea": null,
+      "pathway": "cyber_ew",
+      "type": "gnss_jamming",
+      "rung": 1,
+      "serious": false,
+      "summary": "A plane carrying European Commission President Ursula von der Leyen was reported to have lost GPS navigation on approach to Plovdiv and landed using paper maps.",
+      "attribution": 2,
+      "attribution_note": "The European Commission suspected Russian interference; Bulgarian authorities later disputed that jamming occurred.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "EU chief von der Leyen's plane hit by suspected Russian GPS interference",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/c9d07z1439zo",
+          "published_at": "2025-09-01"
+        },
+        {
+          "title": "Euroverify: No hay pruebas de interferencias rusas en el GPS del avión de Von der Leyen",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://es.euronews.com/my-europe/2025/09/09/euroverify-no-hay-pruebas-de-las-supuestas-interferencias-gps-al-avion-de-von-der-leyen",
+          "published_at": "2025-09-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0024",
+      "date": "2025-09-04",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Russian drones entered Polish airspace during an attack on western Ukraine. Polish and allied aircraft were scrambled and tracked them until they left.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Polish airspace violated twice by drones last night, announces military chief",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2025/09/04/polish-airspace-violated-twice-by-drones-last-night-announces-military-chief/",
+          "published_at": "2025-09-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0025",
+      "date": "2025-09-07",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Vaindloo island, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Mi-8 helicopter entered Estonian airspace near Vaindloo without authorisation for about four minutes.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Venemaa Föderatsiooni õhusõiduk rikkus Eesti õhupiiri – Kaitsevägi",
+          "outlet": "Estonian Defence Forces",
+          "category": "eu_gov_security",
+          "url": "https://mil.ee/uudised/venemaa-foderatsiooni-ohusoiduk-rikkus-eesti-ohupiiri/",
+          "published_at": "2025-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0026",
+      "date": "2025-09-08",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Polatycze, Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "An unarmed drone with Cyrillic markings crashed in a field in Polatycze near the Belarusian border.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone with Cyrillic markings crashes in Poland near Belarus border",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/drone-with-cyrillic-markings-crashes-in-poland-near-belarus-border/",
+          "published_at": "2025-09-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0027",
+      "date": "2025-09-10",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Eastern and central Poland",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "About 21 Russian drones, mostly Gerbera decoys, entered Poland overnight during an attack on Ukraine. Polish and Dutch jets shot down up to four, the first NATO shoot-downs of Russian drones. A house in Wyryki was damaged and four airports closed. No one was hurt.",
+      "attribution": 4,
+      "attribution_note": "Poland invoked Article 4; NATO allies and the EU condemned Russia, and NATO launched Eastern Sentry.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 6,
+      "sources": [
+        {
+          "title": "NATO faces drone warfare threat as Russian attack drones breach Polish airspace",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/poland-russia-drones-jamming-ukraine-incursion-nato-27b1aeed542604c91386df1fbe4463c7",
+          "published_at": "2025-09-11"
+        },
+        {
+          "title": "Poland finds wreckage of 10 Russian drones that flew into country last night",
+          "outlet": "European Pravda",
+          "category": "ua_independent",
+          "url": "https://www.eurointegration.com.ua/eng/news/2025/09/10/7219905/",
+          "published_at": "2025-09-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0028",
+      "date": "2025-09-12",
+      "date_precision": "day",
+      "location_country": "BY",
+      "affected": [
+        "PL",
+        "LT",
+        "LV"
+      ],
+      "location": "Belarus",
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "exercise_near_border",
+      "rung": 1,
+      "serious": false,
+      "summary": "Russia and Belarus held the Zapad-2025 strategic exercise in Belarus, with nuclear and Oreshnik scenarios and up to 13,000 troops. Poland closed its border with Belarus and Lithuania and Latvia restricted airspace near it.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland to close Belarus border due to Russia-led military exercises, PM says",
+          "outlet": "The Star (Reuters)",
+          "category": "intl_press",
+          "url": "https://www.thestar.com.my/news/world/2025/09/09/poland-closing-belarus-border-due-to-zapad-excercises-pm-says",
+          "published_at": "2025-09-09"
+        },
+        {
+          "title": "Poland closes Belarus border over Russia-led war games - English Section",
+          "outlet": "Polskie Radio",
+          "category": "eu_regional_press",
+          "url": "https://www.polskieradio.pl/395/7784/artykul/3578321,poland-closes-belarus-border-over-russialed-war-games",
+          "published_at": "2025-09-12"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0029",
+      "date": "2025-09-13",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Chilia Veche to Pardina, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romanian F-16s tracked a Russian drone over Tulcea County for about 50 minutes. The pilots had permission to fire but held off to avoid collateral damage before it crossed back into Ukraine.",
+      "attribution": 3,
+      "attribution_note": "Romania's foreign minister summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Evaluarea incidentului produs de patrunderea unei drone rusesti in spatiul aerian national",
+          "outlet": "Romanian Ministry of National Defence",
+          "category": "eu_gov_security",
+          "url": "https://www.mapn.ro/cpresa/18970_evaluarea-incidentului-produs-de-patrunderea-unei-drone-ruse%C8%99ti%C2%A0in-spa%C8%9Biul-aerian-na%C8%9Bional",
+          "published_at": "2025-09-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0030",
+      "date": "2025-09-19",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Vaindloo island, Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Three Russian MiG-31s without flight plans or transponders flew 12 minutes inside Estonian airspace near Vaindloo until NATO F-35s escorted them out. Estonia summoned Russia's chargé d'affaires.",
+      "attribution": 4,
+      "attribution_note": "Estonia requested NATO Article 4 consultations; the North Atlantic Council condemned the violation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Kolm Venemaa hävitajat rikkus Eesti õhuruumi",
+          "outlet": "ERR",
+          "category": "eu_regional_press",
+          "url": "https://www.err.ee/1609806321/kolm-venemaa-havitajat-rikkus-eesti-ohuruumi",
+          "published_at": "2025-09-19"
+        },
+        {
+          "title": "Russian jets fly into Estonian airspace; Prime Minister invokes NATO Article 4 consultations",
+          "outlet": "The Hill",
+          "category": "intl_press",
+          "url": "https://thehill.com/policy/international/5512290-russian-jets-estonian-airspace/",
+          "published_at": "2025-09-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0031",
+      "date": "2025-09-19",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Orlen Petrobaltic platform, Baltic Sea",
+      "sea": "baltic",
+      "pathway": "military_pressure",
+      "type": "probe",
+      "rung": 1,
+      "serious": false,
+      "summary": "Two Russian fighter jets flew low over the Orlen Petrobaltic drilling platform, breaching its safety zone in Poland's economic zone, the same day MiG-31s violated Estonian airspace.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian jets violated safety zone of drilling platform in Baltic sea, Poland says",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/russian-jets-violated-safety-zone-drilling-platform-baltic-sea-poland-says-2025-09-19/",
+          "published_at": "2025-09-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0032",
+      "date": "2025-09-22",
+      "date_precision": "day",
+      "location_country": "DK",
+      "affected": [
+        "DK"
+      ],
+      "location": "Copenhagen Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Copenhagen Airport halted flights for nearly four hours after several large drones were reported inside its airspace. The prime minister called it the most serious attack yet on Danish critical infrastructure.",
+      "attribution": 2,
+      "attribution_note": "The government called it a hybrid attack by a capable actor; in June 2026 police said they could neither prove nor rule out drones.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 4,
+      "sources": [
+        {
+          "title": "Drone sightings disrupt flights at Copenhagen, Oslo airports",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/copenhagen-airport-halts-traffic-due-drone-sightings-police-says-2025-09-22/",
+          "published_at": "2025-09-22"
+        },
+        {
+          "title": "Politiet har ikke kunnet bevise droner over lufthavn",
+          "outlet": "DR",
+          "category": "eu_regional_press",
+          "url": "https://www.dr.dk/nyheder/indland/politiet-har-ikke-kunnet-bevise-droner-over-lufthavn",
+          "published_at": "2026-06-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0033",
+      "date": "2025-09-22",
+      "date_precision": "day",
+      "location_country": "NO",
+      "affected": [
+        "NO"
+      ],
+      "location": "Oslo Gardermoen Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Oslo Gardermoen closed its airspace for about three hours overnight after a drone sighting, the same evening as Copenhagen.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 3,
+      "sources": [
+        {
+          "title": "Drone Sightings Force Copenhagen and Oslo Airports to Close Temporarily",
+          "outlet": "The New York Times",
+          "category": "intl_press",
+          "url": "https://www.nytimes.com/2025/09/22/world/europe/copenhagen-oslo-airport-closed-drone.html",
+          "published_at": "2025-09-22"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0034",
+      "date": "2025-09-23",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "Zaporizhzhia lost its last 750 kV line to military activity 1.5 km away, the tenth complete loss of off-site power, and ran on emergency diesel generators for weeks, the longest blackout of the war; the IAEA called it unsustainable.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Update 315 - IAEA Director General Statement on Situation in Ukraine",
+          "outlet": "IAEA (via GlobalSecurity.org)",
+          "category": "intl_bodies",
+          "url": "https://www.globalsecurity.org/wmd/library/news/ukraine/2025/09/ukraine-250924-iaea01.htm",
+          "published_at": "2025-09-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0035",
+      "date": "2025-09-24",
+      "date_precision": "day",
+      "location_country": "DK",
+      "affected": [
+        "DK"
+      ],
+      "location": "Aalborg Airport and Air Base; Billund",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Aalborg's civil and military airport closed for hours after drone sightings, and Billund closed briefly. Drones were also reported near Esbjerg, Sønderborg and Skrydstrup air base, and Denmark raised national readiness.",
+      "attribution": 2,
+      "attribution_note": "Denmark said a professional actor was behind the incursions.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 4,
+      "sources": [
+        {
+          "title": "Denmark says 'professional actor' behind drone incursions over its airports",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/c7401vk4lgzo",
+          "published_at": "2025-09-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0036",
+      "date": "2025-09-28",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldova",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "election_interference",
+      "rung": 2,
+      "serious": false,
+      "summary": "Moldova held parliamentary elections after authorities reported a large Russian-funded vote-buying network reaching over 138,000 people, cyberattacks, bomb threats and plans for riots. The pro-EU PAS kept its majority.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldovans vote in a tense parliamentary election plagued by Russian interference claims",
+          "outlet": "The Washington Times (AP)",
+          "category": "intl_press",
+          "url": "https://m.washingtontimes.com/news/2025/sep/28/moldovans-vote-tense-parliamentary-election-plagued-russian/",
+          "published_at": "2025-09-28"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0037",
+      "date": "2025-09-30",
+      "date_precision": "day",
+      "location_country": "FR",
+      "affected": [
+        "FR"
+      ],
+      "location": "Off Saint-Nazaire",
+      "sea": "other",
+      "pathway": "maritime",
+      "type": "shadow_fleet_incident",
+      "rung": 2,
+      "serious": false,
+      "summary": "French forces boarded the sanctioned, Benin-flagged tanker Boracay off Saint-Nazaire and arrested its captain and first mate. The tanker was released days later.",
+      "attribution": 3,
+      "attribution_note": "French investigators linked the tanker to the drone flights over Denmark; Putin called the boarding piracy.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "France: Captain of tanker linked to Russian 'shadow fleet' charged",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cqxz1wvqvzqo",
+          "published_at": "2025-10-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0038",
+      "date": "2025-10-02",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Munich Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Munich Airport suspended flights for several hours in the evening after drone sightings; 17 flights were grounded and about 3,000 passengers affected.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 4,
+      "sources": [
+        {
+          "title": "Munich airport resumes flights after suspected drones force closure",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cge2v4r4gr1o",
+          "published_at": "2025-10-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0039",
+      "date": "2025-10-03",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Munich Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Munich Airport stopped flights for the second time in 24 hours after several drone sightings, affecting about 6,500 passengers.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Munich airport resumes flights after suspected drones force closure",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cge2v4r4gr1o",
+          "published_at": "2025-10-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0040",
+      "date": "2025-10-06",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Vilnius Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "At least 14 balloons carrying contraband cigarettes from Belarus closed Vilnius Airport overnight, cancelling 30 flights. Closures recurred through October.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 4,
+      "sources": [
+        {
+          "title": "Lithuania: Balloons used to smuggle cigarettes shut Vilnius airport",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/c0r0ezjzwpno",
+          "published_at": "2025-10-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0041",
+      "date": "2025-10-22",
+      "date_precision": "day",
+      "location_country": "RU",
+      "affected": [
+        "PL",
+        "LT",
+        "LV",
+        "EE",
+        "FI"
+      ],
+      "location": "Plesetsk, Barents Sea and long-range aviation",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "nuclear_exercise",
+      "rung": 1,
+      "serious": false,
+      "summary": "Putin oversaw an exercise of Russia's strategic nuclear forces with a Yars ICBM launch from Plesetsk, a Sineva missile from a submarine in the Barents Sea and Tu-95MS cruise missile launches.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Putin supervises training of Russian nuclear forces",
+          "outlet": "Anadolu Agency",
+          "category": "intl_press",
+          "url": "https://aa.com.tr/en/asia-pacific/putin-supervises-training-of-russian-nuclear-forces/3723691",
+          "published_at": "2025-10-22"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0042",
+      "date": "2025-10-23",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Kybartai area, near Kaliningrad",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian Su-30 fighter and an Il-78 tanker from Kaliningrad entered Lithuanian airspace for about 18 seconds. Spanish Eurofighters on Baltic air policing were scrambled.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Two Russian military aircraft enter NATO member Lithuania's airspace, military says",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/2025/10/23/two-russian-military-aircraft-enter-nato-member-lithuanias-airspace-military-says",
+          "published_at": "2025-10-23"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0043",
+      "date": "2025-10-31",
+      "date_precision": "day",
+      "location_country": "DE",
+      "affected": [
+        "DE"
+      ],
+      "location": "Berlin Brandenburg Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Berlin Brandenburg Airport suspended flights for almost two hours after sightings of unidentified drones.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 2,
+      "sources": [
+        {
+          "title": "Flights resume at Berlin airport after suspension over drone scare",
+          "outlet": "France 24",
+          "category": "intl_press",
+          "url": "https://www.france24.com/en/europe/20251101-flights-resume-at-berlin-airport-after-suspension-over-drone-scare",
+          "published_at": "2025-11-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0044",
+      "date": "2025-11-04",
+      "date_precision": "day",
+      "location_country": "BE",
+      "affected": [
+        "BE"
+      ],
+      "location": "Brussels and Liège airports",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Brussels and Liège airports halted flights in the evening after drone sightings, diverting flights to Maastricht and Cologne, after nights of large drones over the Kleine Brogel air base. Belgium called a national security meeting.",
+      "attribution": 2,
+      "attribution_note": "Belgium's defence minister linked a week of drones over Kleine Brogel and other bases to a state-level spying operation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 5,
+      "sources": [
+        {
+          "title": "Two airports in Belgium closed after reports of drones",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2025/11/04/8005872",
+          "published_at": "2025-11-04"
+        },
+        {
+          "title": "Drones plague Belgium – POLITICO",
+          "outlet": "Politico Europe",
+          "category": "intl_press",
+          "url": "https://www.politico.eu/article/drones-plague-belgium-airports-crisis-skies-traffic/",
+          "published_at": "2025-11-07"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0045",
+      "date": "2025-11-06",
+      "date_precision": "day",
+      "location_country": "SE",
+      "affected": [
+        "SE"
+      ],
+      "location": "Gothenburg Landvetter Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Drone sightings over Gothenburg Landvetter forced flights to divert to Copenhagen. Brussels Airport closed again the same evening.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone sighting forces closure at Brussels Airport",
+          "outlet": "The Jerusalem Post",
+          "category": "intl_press",
+          "url": "https://www.jpost.com/international/article-873050",
+          "published_at": "2025-11-06"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0046",
+      "date": "2025-11-11",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone entered Romania and crashed in an inhabited area just after midnight during an attack on Izmail. Bad weather kept fighters grounded; the foreign minister confirmed the fragments.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "NATO member Romania finds drone fragments after Russian strikes on Ukrainian ports",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/2025/11/11/nato-member-romania-finds-drone-fragments-after-russian-strikes-on-ukrainian-ports",
+          "published_at": "2025-11-11"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0047",
+      "date": "2025-11-16",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Mika and Puławy, Warsaw–Lublin railway",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "rail_sabotage",
+      "rung": 2,
+      "serious": true,
+      "summary": "A military-grade explosive tore up the Warsaw–Lublin line used for aid to Ukraine near Mika as a freight train passed; near Puławy a bracket was jammed on the track and wires downed before a train with 473 passengers. Tusk called it unprecedented sabotage.",
+      "attribution": 4,
+      "attribution_note": "Prosecutors charged two Ukrainians working for Russian intelligence, who fled to Belarus.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Polish PM says rail line explosion was sabotage",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/poland-sabotage-explosion-rail-track-warsaw-97dae3045d4e1ff329780526c6279c0f",
+          "published_at": "2025-11-17"
+        },
+        {
+          "title": "Ukrainians working for Russia were behind rail blasts, alleges Polish PM",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2025/nov/18/ukrainians-working-for-russia-rail-blasts-says-poland-prime-minister-donald-tusk",
+          "published_at": "2025-11-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0048",
+      "date": "2025-11-19",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": "Periprava and Chilia Veche; Colibași, Moldova",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone flew 8 km into Romania, back into Ukraine, across Moldova's Gagauzia region and into Romania again near Oancea. Romanian and German jets were scrambled but lost it.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă a intrat în spațiul aerian al României: patru avioane militare au fost ridicate. Piloții au avut aprobarea de a doborî ținta",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/mapn-a-ridicat-doua-avioane-de-lupta-in-timpul-noptii-dupa-ce-o-drona-a-intrat-in-spatiul-aerian-national-a-fost-emis-mesaj-ro-alert-3509181",
+          "published_at": "2025-11-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0049",
+      "date": "2025-11-22",
+      "date_precision": "day",
+      "location_country": "NL",
+      "affected": [
+        "NL"
+      ],
+      "location": "Volkel Air Base; Eindhoven Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "airport_closure",
+      "rung": 2,
+      "serious": false,
+      "summary": "Dutch troops opened fire on drones over Volkel Air Base, which hosts US nuclear weapons, but recovered no wreckage. Nearby Eindhoven Airport halted traffic for several hours.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 3,
+      "sources": [
+        {
+          "title": "Dutch military fires at drones over Volkel Air Base, no wreckage found",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/netherlands-air-base-drones-volkel-3ed1cca6b65f463fee34c60b15565fe0",
+          "published_at": "2025-11-22"
+        },
+        {
+          "title": "Mystery drones halt air traffic near Dutch city of Eindhoven",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/articles/cewjlr0v02ro",
+          "published_at": "2025-11-22"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0050",
+      "date": "2025-11-25",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Cuhureștii de Jos, Florești District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Six drones crossed Moldovan airspace in the morning; one crashed without exploding on the roof of a house in Cuhureștii de Jos, 20 km from the border. Nearby residents were evacuated.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ministerul Apărării de la Chișinău: Șase drone au survolat Moldova. Una a căzut peste o casă",
+          "outlet": "Mediafax",
+          "category": "eu_regional_press",
+          "url": "https://www.mediafax.ro/social/ministerul-apararii-de-la-chisinau-sase-drone-au-survolat-moldova-una-a-cazut-peste-o-casa-23647658",
+          "published_at": "2025-11-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0051",
+      "date": "2025-11-25",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO",
+        "MD"
+      ],
+      "location": "Galați, Vrancea and Vaslui counties",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone flew about four hours across Galați and Vrancea, filmed over Tecuci, the deepest incursion into Romania so far, then crashed in a yard in Puiești, Vaslui County.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O dronă rusească s-a prăbușit în județul Vaslui, după ce a fost urmărită mai multe ore prin spațiul aerian al României, prin mai multe județe / De ce nu a fost doborâtă de avioanele de vânătoare. Expl",
+          "outlet": "HotNews",
+          "category": "eu_regional_press",
+          "url": "https://hotnews.ro/tinte-aeriene-detectate-in-spatiul-aerian-al-romaniei-aeronave-de-lupta-au-fost-ridicate-de-la-sol-mesaj-ro-alert-pentru-populatia-din-galati-2115690",
+          "published_at": "2025-11-25"
+        },
+        {
+          "title": "VIDEO Primele imagini cu drona căzută în curtea unui localnic din județul Vaslui. „A auzit un vuiet și apoi o lovitură puternică în spatele casei” - HotNews.ro",
+          "outlet": "HotNews",
+          "category": "eu_regional_press",
+          "url": "https://hotnews.ro/video-primele-imagini-cu-drona-cazuta-in-curtea-unui-localnic-din-judetul-vaslui-mai-multe-echipaje-acum-la-fata-locului-2115955",
+          "published_at": "2025-11-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0052",
+      "date": "2025-11-28",
+      "date_precision": "day",
+      "location_country": "TR",
+      "affected": [
+        "TR"
+      ],
+      "location": "Off Turkey's northern Black Sea coast",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": true,
+      "summary": "Naval drones struck the empty shadow-fleet tankers Kairos and Virat in Turkey's economic zone on their way to Novorossiysk. Kairos caught fire and its 25 crew were evacuated; Virat was hit again the next morning.",
+      "attribution": 1,
+      "attribution_note": "Ukraine's SBU claimed the attacks with Sea Baby naval drones.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ukraine says it hit Russian 'shadow fleet' tankers with underwater blasts in Black Sea",
+          "outlet": "CNN",
+          "category": "intl_press",
+          "url": "https://www.cnn.com/2025/11/29/europe/russia-shadow-fleet-ukraine-explosions-intl",
+          "published_at": "2025-11-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0053",
+      "date": "2025-11-29",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Vilnius Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Balloons from Belarus closed Vilnius Airport for 11 hours. Lithuania's deputy foreign minister called it a cynical hybrid attack on the economy and aviation security.",
+      "attribution": 3,
+      "attribution_note": "Lithuania called the balloon flights a hybrid attack by Belarus.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 11,
+      "sources": [
+        {
+          "title": "Balloons from Belarus force closure of Lithuania’s airport – again",
+          "outlet": "The Independent",
+          "category": "intl_press",
+          "url": "https://www.independent.co.uk/news/world/europe/belarus-balloon-airport-closure-lithuania-b2876583.html",
+          "published_at": "2025-12-02"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0054",
+      "date": "2025-11-29",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldovan airspace",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Gerbera-type drones entered Moldova overnight, evading its radars, and Moldova closed its airspace for about 70 minutes; two passenger flights diverted to Romania. No debris was found.",
+      "attribution": 3,
+      "attribution_note": "Moldova's defence ministry called the incursions hostile acts of intimidation and destabilisation.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 1,
+      "sources": [
+        {
+          "title": "Moldova says briefly shut airspace after fresh drone breach",
+          "outlet": "EWN (Reuters)",
+          "category": "intl_press",
+          "url": "https://ewn.co.za/2025/11/29/moldova-says-briefly-shut-airspace-after-fresh-drone-breach",
+          "published_at": "2025-11-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0055",
+      "date": "2025-12-02",
+      "date_precision": "day",
+      "location_country": "TR",
+      "affected": [
+        "TR"
+      ],
+      "location": "About 80 nautical miles off Turkey",
+      "sea": "black_sea",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": true,
+      "summary": "The tanker Midvolga 2, carrying sunflower oil from Russia to Georgia, was hit by an apparently shrapnel-armed drone off Turkey, injuring the master and second engineer.",
+      "attribution": 1,
+      "attribution_note": "Ukraine denied involvement and accused Russia of staging the attack.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 2
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ukraine denies latest tanker attack :: Lloyd's List",
+          "outlet": "Lloyd's List",
+          "category": "intl_press",
+          "url": "https://www.lloydslist.com/LL1155743/Ukraine-denies-latest-tanker-attack",
+          "published_at": "2025-12-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0056",
+      "date": "2025-12-03",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT"
+      ],
+      "location": "Vilnius Airport",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Vilnius Airport shut for the tenth time in two months after suspected smuggling balloons from Belarus entered its airspace.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Lithuania's Vilnius airport reopens after suspected balloons force shutdown",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/lithuanias-vilnius-airport-shuts-again-over-balloon-incident-2025-12-03/",
+          "published_at": "2025-12-03"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0057",
+      "date": "2025-12-15",
+      "date_precision": "day",
+      "location_country": "TR",
+      "affected": [
+        "TR"
+      ],
+      "location": "Black Sea off northern Turkey",
+      "sea": "black_sea",
+      "pathway": "airspace",
+      "type": "shootdown",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Turkish F-16 shot down an out-of-control drone that entered Turkish airspace over the Black Sea. Two more crashed drones were found inland within days.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone incidents escalate as Turkey finds three UAVs in five days",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/2025/12/20/turkey-warns-russia-and-ukraine-over-downed-drones-in-black-sea",
+          "published_at": "2025-12-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0058",
+      "date": "2025-12-17",
+      "date_precision": "day",
+      "location_country": "BY",
+      "affected": [
+        "PL",
+        "LT",
+        "LV"
+      ],
+      "location": "Belarus",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "nuclear_deployment",
+      "rung": 1,
+      "serious": false,
+      "summary": "Lukashenko said Russia's nuclear-capable Oreshnik intermediate-range missile system had arrived in Belarus and gone on combat duty; he gave no numbers.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Lukashenko: Russian nuclear-capable Oreshnik missiles now in Belarus - Defense News",
+          "outlet": "Defense News",
+          "category": "intl_press",
+          "url": "https://www.defensenews.com/global/europe/2025/12/19/lukashenko-russian-nuclear-capable-oreshnik-missiles-now-in-belarus/",
+          "published_at": "2025-12-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0059",
+      "date": "2025-12-18",
+      "date_precision": "day",
+      "location_country": "MT",
+      "affected": [
+        "MT",
+        "GR"
+      ],
+      "location": "Central Mediterranean between Crete and Malta",
+      "sea": "mediterranean",
+      "pathway": "maritime",
+      "type": "strike_at_sea",
+      "rung": 3,
+      "serious": true,
+      "summary": "Drones struck the empty Omani-flagged shadow-fleet tanker Qendil in the central Mediterranean, leaving it inoperable.",
+      "attribution": 1,
+      "attribution_note": "Ukraine's SBU claimed the strike, its first in the Mediterranean.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ukraine Strikes Russia-Linked Tanker In The Mediterranean With ‘Bomber Drone’",
+          "outlet": "The War Zone",
+          "category": "intl_press",
+          "url": "https://www.twz.com/news-features/ukraine-strikes-russia-linked-tanker-in-the-mediterranean-with-bomber-drone",
+          "published_at": "2025-12-19"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0060",
+      "date": "2025-12-19",
+      "date_precision": "day",
+      "location_country": "TR",
+      "affected": [
+        "TR"
+      ],
+      "location": "Kocaeli Province",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A crashed Russian-made Orlan-10 reconnaissance drone was found in Kocaeli Province, days after Turkey shot down a stray drone over the Black Sea.",
+      "attribution": 2,
+      "attribution_note": "Turkey's interior minister identified a Russian-made Orlan-10.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Drone incidents escalate as Turkey finds three UAVs in five days",
+          "outlet": "Euronews",
+          "category": "intl_press",
+          "url": "https://www.euronews.com/2025/12/20/turkey-warns-russia-and-ukraine-over-downed-drones-in-black-sea",
+          "published_at": "2025-12-20"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0061",
+      "date": "2025-12-25",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Podlaskie Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Dozens of objects, four identified as smuggling balloons, entered Polish airspace from Belarus.",
+      "attribution": 3,
+      "attribution_note": "Poland's National Security Bureau called it a provocation disguised as smuggling.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland intercepts Russian plane over Baltic, reports airspace breaches from Belarus",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/business/aerospace-defense/poland-intercepts-russian-plane-over-baltic-sea-2025-12-25/",
+          "published_at": "2025-12-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2025-0062",
+      "date": "2025-12-31",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI",
+        "EE"
+      ],
+      "location": "Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "cable_damage",
+      "rung": 2,
+      "serious": false,
+      "summary": "A data cable linking Finland and Estonia and other cables in Estonia's economic zone were damaged. Finnish police and coast guard boarded the freighter Fitburg, bound from St Petersburg with its anchor down, and took it to port.",
+      "attribution": 2,
+      "attribution_note": "Investigators found a drag track and said the Fitburg's anchor damaged the cable; the crew included Russian nationals.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finnish authorities seize vessel following sea cable disruption",
+          "outlet": "Yle News",
+          "category": "eu_regional_press",
+          "url": "https://yle.fi/a/74-20202087",
+          "published_at": "2025-12-31"
+        },
+        {
+          "title": "Finnish police seize vessel suspected of damaging underwater cable",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2025/dec/31/finnish-police-seize-vessel-suspected-damaging-underwater-cable",
+          "published_at": "2025-12-31"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    }
+  ]
+}

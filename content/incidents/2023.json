@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "year": 2023,
+  "incidents": [
+    {
+      "id": "INC-2023-0001",
+      "date": "2023-01-14",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Larga, Briceni District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Border police found missile debris in Larga during a Russian strike on Ukraine; Moldova said its airspace had been crossed. Specialists blew up the debris the next day.",
+      "attribution": 3,
+      "attribution_note": "Moldova said a Russian missile crossed its airspace during the same attack.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Moldova says missile debris found in north of the country",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/moldova-says-missile-debris-found-north-country-2023-01-14/",
+          "published_at": "2023-01-14"
+        },
+        {
+          "title": "Rocket debris found again in Moldova, from war next door",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/russia-ukraine-8d35f4ea80376c6e9828e79c7f195e22",
+          "published_at": "2023-01-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0002",
+      "date": "2023-02-10",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Moldovan airspace",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian cruise missile fired at Ukraine crossed Moldovan airspace. The defence ministry confirmed the violation and Moldova summoned the Russian ambassador.",
+      "attribution": 3,
+      "attribution_note": "Moldova summoned the Russian ambassador.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O rachetă rusească a trecut prin spațiul aerian al Republicii Moldova. Ministerul Apărării de la Chișinău confirmă - Știrile ProTV",
+          "outlet": "Pro TV",
+          "category": "eu_regional_press",
+          "url": "https://stirileprotv.ro/stiri/actualitate/o-racheta-ruseasca-ar-fi-survolat-spatiul-aerien-al-republicii-moldova.html",
+          "published_at": "2023-02-10"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0003",
+      "date": "2023-02-13",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Chișinău",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "influence_operation",
+      "rung": 2,
+      "serious": false,
+      "summary": "President Maia Sandu said Moldova had confirmed a Russian plan, first revealed by Zelensky, to overthrow its government using saboteurs and staged protests. The government resigned days earlier amid paid protests.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Has Russia been planning a coup in Ukraine's neighbour, Moldova? Here's what we know - ABC News",
+          "outlet": "ABC News (Australia)",
+          "category": "intl_press",
+          "url": "https://www.abc.net.au/news/2023-02-14/kremlin-accused-of-plotting-moldova-coup/101972428",
+          "published_at": "2023-02-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0004",
+      "date": "2023-02-14",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Northern Moldova",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "balloon_incursion",
+      "rung": 1,
+      "serious": false,
+      "summary": "Moldova briefly closed its airspace after a small balloon-like object was detected over the north near the Ukrainian border. It reopened once the object was judged harmless.",
+      "attribution": 1,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": 1,
+      "sources": [
+        {
+          "title": "Moldova briefly shuts airspace after report of balloon-like object",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/moldova-has-temporarily-closed-its-airspace-national-airliner-says-2023-02-14/",
+          "published_at": "2023-02-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0005",
+      "date": "2023-02-16",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Larga, Briceni District",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Police found missile debris in Larga for the second time, the fourth time a missile or its debris had landed in Moldova.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Resturile unei rachete lansate de Rusia au căzut în Republica Moldova, la 10 kilometri de granița cu România",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/externe/o-bucata-dintr-o-racheta-lansata-de-rusia-a-cazut-in-republica-moldova-2254251",
+          "published_at": "2023-02-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0006",
+      "date": "2023-03-15",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Eastern Poland",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "sabotage_arrest",
+      "rung": 2,
+      "serious": false,
+      "summary": "Poland arrested members of a Russian spy network that planted cameras along rail lines carrying weapons to Ukraine and planned to derail supply trains. Fourteen were later convicted.",
+      "attribution": 4,
+      "attribution_note": "Polish courts convicted 14 members in December 2023.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russian spy network accused of sabotage arrested in Poland",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.com/news/world-europe-64971691",
+          "published_at": "2023-03-15"
+        },
+        {
+          "title": "Russia recruited operatives online to target weapons crossing Poland",
+          "outlet": "The Washington Post",
+          "category": "intl_press",
+          "url": "https://www.washingtonpost.com/world/2023/08/18/ukraine-weapons-sabotage-gru-poland",
+          "published_at": "2023-08-18"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0007",
+      "date": "2023-06-06",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Kakhovka dam and Zaporizhzhia nuclear power plant",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The destruction of the Kakhovka dam drained the reservoir that supplied cooling water to the Zaporizhzhia plant; the IAEA director general went to inspect the plant.",
+      "attribution": 2,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "IAEA Director General to inspect Zaporizhia NPP in the aftermath of crucial dam destruction",
+          "outlet": "Nuclear Engineering International",
+          "category": "intl_press",
+          "url": "https://www.neimagazine.com/news/newsiaea-director-general-to-inspect-zaporizhia-npp-in-the-aftermath-of-crucial-dam-destruction-10925102",
+          "published_at": "2023-06-08"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0008",
+      "date": "2023-06-16",
+      "date_precision": "day",
+      "location_country": "BY",
+      "affected": [
+        "PL",
+        "LT",
+        "LV"
+      ],
+      "location": "Belarus",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "nuclear_deployment",
+      "rung": 1,
+      "serious": false,
+      "summary": "Putin confirmed the first Russian tactical nuclear warheads had been delivered to Belarus, the first such deployment outside Russia since the Soviet collapse, with Russia keeping control of them.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Russia has sent first tactical nuclear weapons to Belarus, Putin confirms",
+          "outlet": "The National",
+          "category": "intl_press",
+          "url": "https://www.thenationalnews.com/world/europe/2023/06/16/russia-has-sent-first-tactical-nuclear-weapons-to-belarus-putin-confirms",
+          "published_at": "2023-06-16"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0009",
+      "date": "2023-07-29",
+      "date_precision": "day",
+      "location_country": "BY",
+      "affected": [
+        "PL",
+        "LT"
+      ],
+      "location": "Grodno region, near the Suwałki Gap",
+      "sea": null,
+      "pathway": "military_pressure",
+      "type": "force_buildup",
+      "rung": 1,
+      "serious": false,
+      "summary": "Poland said more than 100 Wagner fighters, relocated to Belarus after their mutiny, had moved near Grodno, close to the Suwałki Gap. Belarus then began drills near the Polish and Lithuanian borders.",
+      "attribution": 3,
+      "attribution_note": "Poland's prime minister called it a step toward a hybrid attack; Poland moved more than 1,000 troops east.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland raises alarm as Wagner forces move closer to border",
+          "outlet": "Al Jazeera",
+          "category": "intl_press",
+          "url": "https://www.aljazeera.com/news/2023/7/29/poland-raises-alarm-as-wagner-forces-move-closer-to-border",
+          "published_at": "2023-07-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0010",
+      "date": "2023-08-01",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Białowieża area, Podlaskie Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "aircraft_violation",
+      "rung": 3,
+      "serious": false,
+      "summary": "Two Belarusian military helicopters crossed into Polish airspace at very low altitude during exercises near the border, while Wagner forces were based in Belarus. Poland sent more troops to the border.",
+      "attribution": 3,
+      "attribution_note": "Poland blamed Belarus, Russia's ally, and summoned its chargé d'affaires; Minsk denied it.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland says two Belarusian helicopters violated its airspace, adding to tensions",
+          "outlet": "AP",
+          "category": "intl_press",
+          "url": "https://apnews.com/article/poland-belarus-helicopters-wagner-37ce52ace946a0f651ce1e4a3f6ee7eb",
+          "published_at": "2023-08-01"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0011",
+      "date": "2023-09-04",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Plauru, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a night attack on the Ukrainian port of Izmail, a Russian drone crashed near Plauru, across the Danube. Romania confirmed the fragments on 6 September, the first such case on NATO soil since 2022.",
+      "attribution": 3,
+      "attribution_note": "Romania first denied it, then confirmed fragments of a drone similar to those Russia uses.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Nato pledges ‘strong solidarity’ with Romania over likely Russian drone debris",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2023/sep/06/romania-says-possible-drone-debris-found-on-its-territory-near-ukraine",
+          "published_at": "2023-09-06"
+        },
+        {
+          "title": "Bucharest Denies Ukrainian Claim That Russian Drone Detonated On Romanian Territory",
+          "outlet": "RFE/RL",
+          "category": "intl_press",
+          "url": "https://www.rferl.org/a/romania-denies-russian-drones-ukraine-/32577643.html",
+          "published_at": "2023-09-04"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0012",
+      "date": "2023-09-09",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Plauru, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romania's defence ministry found more fragments of a suspected Russian drone near Plauru after further attacks on Ukraine's Danube ports.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania finds new suspected Russian drone fragments on its territory",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/romania-finds-new-possible-fragments-russian-drone-its-territory-defence-2023-09-09/",
+          "published_at": "2023-09-09"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0013",
+      "date": "2023-09-13",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Between Nufăru and Victoria, Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Romanian helicopter crew found drone fragments between Nufăru and Victoria after a Russian attack on Izmail. Locals said it fell about a kilometre from a military unit.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania Finds Possible Drone Fragments After Russian Attack Hits Ukrainian Ports",
+          "outlet": "RFE/RL",
+          "category": "intl_press",
+          "url": "https://www.rferl.org/a/romania-russian-drone-debris/32590895.html",
+          "published_at": "2023-09-13"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0014",
+      "date": "2023-09-25",
+      "date_precision": "day",
+      "location_country": "MD",
+      "affected": [
+        "MD"
+      ],
+      "location": "Chițcani, Transnistria",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "debris_impact",
+      "rung": 3,
+      "serious": false,
+      "summary": "An S-300 missile exploded over Chițcani in the Transnistria region and its warhead fell into a resident's yard, the first such case in territory Chișinău does not control.",
+      "attribution": 1,
+      "attribution_note": "Soviet-made S-300 missile; its launcher was not established.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "O rachetă S-300, de producție sovietică, a explodat deasupra Transnistriei. Focosul proiectilului a căzut &icirc;n gospodăria unui localnic - detalii exclusive​ - HotNews.ro",
+          "outlet": "HotNews",
+          "category": "eu_regional_press",
+          "url": "https://www.hotnews.ro/stiri-razboi_ucraina-26558577-racheta-300-productie-sovietica-explodat-deasupra-transnistriei-focosul-proiectilului-cazut-gospodarie-unui-localnic-detalii-exclusive.htm",
+          "published_at": "2023-09-25"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0015",
+      "date": "2023-09-30",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "Romania's defence ministry said radar detected a likely Russian drone entering Romanian airspace during an overnight attack on Ukraine.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Romania: Possible airspace breach during Ukraine drone attack",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/romania-detects-possible-airspace-breach-during-overnight-drone-attack-ukraine-2023-09-30/",
+          "published_at": "2023-09-30"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0016",
+      "date": "2023-10-08",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI",
+        "EE",
+        "SE"
+      ],
+      "location": "Gulf of Finland",
+      "sea": "baltic",
+      "pathway": "maritime",
+      "type": "pipeline_damage",
+      "rung": 2,
+      "serious": true,
+      "summary": "The Balticconnector gas pipeline between Finland and Estonia and two telecom cables were damaged by a dragged anchor. The pipeline stayed out of service until April 2024.",
+      "attribution": 1,
+      "attribution_note": "Investigators blamed the anchor of the Hong Kong-flagged Newnew Polar Bear; China later called it an accident in a storm.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Runaway ship Newnew Polar Bear, suspected of sabotage in Baltic Sea, is sailing into Russian Arctic waters",
+          "outlet": "The Barents Observer",
+          "category": "eu_regional_press",
+          "url": "https://www.thebarentsobserver.com/security/runaway-ship-newnew-polar-bear-suspected-of-sabotage-in-baltic-sea-is-sailing-into-russian-arctic-waters/164423",
+          "published_at": "2023-10-26"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0017",
+      "date": "2023-11-24",
+      "date_precision": "day",
+      "location_country": "FI",
+      "affected": [
+        "FI"
+      ],
+      "location": "Finland's eastern border",
+      "sea": null,
+      "pathway": "political_economic",
+      "type": "migration_pressure",
+      "rung": 1,
+      "serious": false,
+      "summary": "After hundreds of asylum seekers without visas arrived from Russia, Finland closed all but one eastern crossing and then the whole 1,340 km border.",
+      "attribution": 3,
+      "attribution_note": "Prime Minister Orpo called it an organised Russian hybrid attack; Russia denied it.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Finland shuts more Russia border points and says asylum inflow must stop – The Irish Times",
+          "outlet": "The Irish Times",
+          "category": "intl_press",
+          "url": "https://www.irishtimes.com/world/europe/2023/11/24/finland-shuts-more-russia-border-points-and-says-asylum-inflow-must-stop",
+          "published_at": "2023-11-24"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0018",
+      "date": "2023-12-01",
+      "date_precision": "month",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Tallinn",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "proxy_recruitment",
+      "rung": 2,
+      "serious": false,
+      "summary": "Locally recruited proxies smashed the windows of cars belonging to Estonia's interior minister and a journalist. Estonia's security service later detained suspects acting on Russian orders.",
+      "attribution": 3,
+      "attribution_note": "Estonia's Internal Security Service said Russian special services ordered the attacks.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Estonian Internal Security Service apprehended suspects for wrecking cars belonging to Minister of Internal Affairs and a journalist",
+          "outlet": "Estonian Internal Security Service",
+          "category": "eu_gov_security",
+          "url": "https://kapo.ee/en/media/estonian-internal-security-service-apprehended-suspects-wrecking-cars-belonging-minister/",
+          "published_at": null
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0019",
+      "date": "2023-12-14",
+      "date_precision": "day",
+      "location_country": "RO",
+      "affected": [
+        "RO"
+      ],
+      "location": "Tulcea County",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian drone entered Romanian airspace and crashed on Romanian territory during an attack on Ukrainian ports. German and Romanian fighters were scrambled.",
+      "attribution": 3,
+      "attribution_note": null,
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "NATO Fighters Scrambled As Russian Drone Violates Romanian Airspace",
+          "outlet": "The War Zone",
+          "category": "intl_press",
+          "url": "https://www.twz.com/nato-fighters-scrambled-as-russian-drone-violates-romanian-airspace",
+          "published_at": "2023-12-14"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    },
+    {
+      "id": "INC-2023-0020",
+      "date": "2023-12-29",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Lublin Voivodeship",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A Russian cruise missile entered Polish airspace from Ukraine for under three minutes during a massive strike and left again, tracked by Polish and allied radar.",
+      "attribution": 3,
+      "attribution_note": "Poland summoned Russia's chargé d'affaires.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Poland says Russian rocket entered its airspace, summons diplomat",
+          "outlet": "Reuters",
+          "category": "intl_press",
+          "url": "https://www.reuters.com/world/europe/unidentified-object-entered-poland-direction-ukraine-says-polish-army-2023-12-29/",
+          "published_at": "2023-12-29"
+        },
+        {
+          "title": "Poland says Russian missile briefly entered its airspace",
+          "outlet": "Al Jazeera",
+          "category": "intl_press",
+          "url": "https://www.aljazeera.com/news/2023/12/29/poland-says-russian-missile-briefly-entered-its-airspace",
+          "published_at": "2023-12-29"
+        }
+      ],
+      "seed": true,
+      "added": "2026-11-02",
+      "updated": null
+    }
+  ]
+}

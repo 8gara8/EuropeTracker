@@ -103,7 +103,8 @@ export const COUNTRY_SCORES = {
 export const SEAS = ["baltic", "black_sea", "north_sea", "barents_norwegian", "mediterranean", "other"] as const;
 
 // Incident types per pathway, with the allowed rung range. "other" is allowed in every pathway with
-// range 1–6, and produces a warning.
+// range 1–6, and produces a warning. `serious: true` marks a type that meets its pathway's serious
+// threshold by definition: every maritime attack on or seizure of a vessel.
 export const INCIDENT_TYPES = {
   airspace: {
     drone_incursion:   { label: "Drone incursion",            min: 3, max: 4 },
@@ -128,9 +129,9 @@ export const INCIDENT_TYPES = {
     pipeline_damage:       { label: "Pipeline damage",             min: 2, max: 4 },
     shadow_fleet_incident: { label: "Shadow-fleet incident",       min: 1, max: 3 },
     naval_confrontation:   { label: "Naval or air confrontation at sea", min: 3, max: 4 },
-    vessel_seizure:        { label: "Vessel seized by force",      min: 3, max: 4 },
-    mine_drift:            { label: "Drifting mine",               min: 1, max: 4 },
-    strike_at_sea:         { label: "Strike on a vessel in European waters", min: 3, max: 4 },
+    vessel_seizure:        { label: "Vessel seized by force",      min: 3, max: 4, serious: true },
+    mine_drift:            { label: "Drifting mine or stray sea drone", min: 1, max: 4 },
+    strike_at_sea:         { label: "Strike on a vessel in European waters", min: 3, max: 4, serious: true },
   },
   cyber_ew: {
     gnss_jamming:   { label: "GPS jamming",          min: 1, max: 1 },
@@ -240,10 +241,12 @@ export type VerificationLevel = 1 | 2 | 3 | 4 | 5;
 export const PATHWAYS_WITH_THREAT_LOCATIONS: readonly PathwayId[] = ["military_pressure", "nuclear"];
 export const OTHER_INCIDENT_TYPE = { label: "Other", min: 1, max: 6 } as const;
 
+export interface IncidentTypeInfo { label: string; min: number; max: number; serious?: boolean }
+
 /** The rung range for an incident type, or null when the type isn't defined for the pathway. */
-export function incidentTypeInfo(pathway: PathwayId, type: string): { label: string; min: number; max: number } | null {
+export function incidentTypeInfo(pathway: PathwayId, type: string): IncidentTypeInfo | null {
   if (type === "other") return OTHER_INCIDENT_TYPE;
-  const types: Record<string, { label: string; min: number; max: number }> = INCIDENT_TYPES[pathway];
+  const types: Record<string, IncidentTypeInfo> = INCIDENT_TYPES[pathway];
   return Object.hasOwn(types, type) ? types[type]! : null;
 }
 

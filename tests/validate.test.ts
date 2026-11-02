@@ -8,6 +8,7 @@ import { addDays } from "@/lib/dates";
 import { loadContent } from "@/lib/content";
 import { buildContext } from "@/lib/context";
 import { DRAFT_SCHEMA_PATH, renderDraftSchema } from "@/lib/json-schema";
+import { incidentRecordIssues } from "@/lib/rules/records";
 import { totalWords } from "@/lib/rules/words";
 import { AgentContext } from "@/lib/schema/context";
 import type { Brief } from "@/lib/schema/brief";
@@ -194,6 +195,23 @@ describe("record updates", () => {
     expect(r.errors).toContainEqual(expect.objectContaining({ code: "UPDATE_EVIDENCE", path: "strike_updates[1].changes.effect" }));
   });
 
+  it("treat every attack on or seizure of a ship as serious", () => {
+    const serious = (rec: Incident) => incidentRecordIssues(rec, "rec").filter((e) => e.code === "INCIDENT_SERIOUS");
+    for (const type of ["strike_at_sea", "vessel_seizure"]) {
+      expect(serious(cable({ type, rung: 3, serious: false }))).toEqual([expect.objectContaining({ path: "rec.serious" })]);
+      expect(serious(cable({ type, rung: 3, serious: true }))).toEqual([]);
+    }
+    expect(serious(cable({ type: "mine_drift", rung: 3, serious: false }))).toEqual([]);
+    // An update can't clear the flag either.
+    const ctx = weekdayContext();
+    const world = worldFromContext(ctx);
+    world.incidents = world.incidents.map((x) => (x.id === "INC-2026-0124" ? cable({ type: "strike_at_sea", rung: 3, serious: true, host_statement: "yes" }) : x));
+    const d = weekday();
+    d.incident_updates[0]!.changes.serious = false;
+    const r = validateDraft(d, { context: ctx, world, evidence: weekdayEvidence() });
+    expect(r.errors).toContainEqual(expect.objectContaining({ code: "INCIDENT_SERIOUS", path: "incident_updates[0].changes.serious" }));
+  });
+
   it("make a raised attribution carry the host statement on pipeline records", () => {
     const ctx = weekdayContext();
     const run = (d: DraftBrief, rec = cable()) => {
@@ -345,9 +363,12 @@ describe("validateAll", () => {
 
 describe("context and schema files", () => {
   it("builds a valid agent context from the committed content", () => {
-    const ctx = buildContext(loadContent("content", { fresh: true }), "2026-11-03");
+    const content = loadContent("content", { fresh: true });
+    const ctx = buildContext(content, "2026-11-03");
     expect(AgentContext.safeParse(ctx).success).toBe(true);
-    expect(ctx.next_ids).toEqual({ incident: { "2025": "INC-2025-0001", "2026": "INC-2026-0001" }, strike: { "2025": "STR-2025-0001", "2026": "STR-2026-0001" }, forecast: "F-2026-001" });
+    const taken = new Set([...content.incidents, ...content.strikes, ...content.forecasts].map((x) => x.id));
+    const next = [ctx.next_ids.incident["2026"], ctx.next_ids.strike["2026"], ctx.next_ids.forecast];
+    expect(next.every((id) => id !== undefined && !taken.has(id))).toBe(true);
     expect(ctx.window).toEqual({ start: "2026-11-02T05:30:00+08:00", end: "2026-11-03T05:30:00+08:00" });
   });
 

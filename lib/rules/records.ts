@@ -4,7 +4,7 @@ import { yearOf } from "../dates";
 import type { EvidenceSource } from "../schema/common";
 import type { Incident } from "../schema/incident";
 import type { Strike } from "../schema/strike";
-import { INCIDENT_TYPES, PATHWAYS_WITH_THREAT_LOCATIONS, THREAT_LOCATIONS, incidentTypeInfo, isEuropean } from "../vocab";
+import { INCIDENT_TYPES, PATHWAY_INFO, PATHWAYS_WITH_THREAT_LOCATIONS, THREAT_LOCATIONS, incidentTypeInfo, isEuropean } from "../vocab";
 import { error, warning, type Rule, type ValidationIssue } from "./types";
 
 // ID_FORMAT, ID_SEQUENCE, ID_DUPLICATE, RECORD_FIELDS, INCIDENT_TYPE, INCIDENT_RUNG, INCIDENT_LOCATION,
@@ -156,6 +156,8 @@ export function incidentRecordIssues(x: IncidentLike, at: string): ValidationIss
   }
   if ((x.rung >= 4 || x.casualties.killed > 0) && !x.serious) {
     out.push(error("INCIDENT_SERIOUS", `${at}.serious`, `${x.id}: rung 4 or higher, or any death, makes it serious; set serious to true.`));
+  } else if (info?.serious && !x.serious) {
+    out.push(error("INCIDENT_SERIOUS", `${at}.serious`, `${x.id}: a ${x.type} incident meets the ${x.pathway} serious threshold ("${PATHWAY_INFO[x.pathway].serious}"); set serious to true.`));
   }
   const cats = new Set(x.sources.map((s) => s.category));
   if (x.seed) {
@@ -231,6 +233,8 @@ const updates: Rule = ({ draft, context, world }) => {
       }
       if (after.serious !== undefined && (after.rung >= 4 || killed > 0) && !after.serious) {
         out.push(error("INCIDENT_SERIOUS", `${at}.changes.serious`, `${u.id} would be rung ${after.rung} with ${killed} killed; set changes.serious to true.`));
+      } else if (after.serious === false && rec.pathway && rec.type && incidentTypeInfo(rec.pathway, rec.type)?.serious) {
+        out.push(error("INCIDENT_SERIOUS", `${at}.changes.serious`, `${u.id} is a ${rec.type} incident, which is always serious; set changes.serious to true or null.`));
       }
       // INCIDENT_SOURCES's host-statement rules, which seed records are exempt from.
       if (rec.seed !== true && after.host_statement === "none_yet" && after.attribution > 2) {
