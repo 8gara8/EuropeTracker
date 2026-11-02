@@ -1,17 +1,17 @@
 // Source-pack collector (SPEC §7.3).
 //   tsx scripts/collect.ts [--date YYYY-MM-DD]   → research/packs/DATE.json and DATE.md
 //   tsx scripts/collect.ts --check-feeds         → table of every feed; exit 1 if a priority-1 feed fails
+//                                                   or has items without a readable date (NODATE)
 // Exit codes: 0 on success (including a degraded pack), 1 on an invalid registry or zero items kept.
 
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import Parser from "rss-parser";
 import YAML from "yaml";
 import {
   USER_AGENT, capItems, classifyDomain, dedupe, feedUrl, inWindow, parseTelegram, renderPackMd, rssItems,
-  score, stripOutletSuffix, toPackItems, LIMITS, type Candidate, type RawItem,
+  rssParser, score, stripOutletSuffix, toPackItems, LIMITS, type Candidate, type RawItem,
 } from "../lib/collect";
 import { isValidDate, taipeiToday, windowFor } from "../lib/dates";
 import { Pack, SourceRegistry, type Feed } from "../lib/schema/pack";
@@ -21,7 +21,7 @@ const CONCURRENCY = 8;
 const FEED_TIMEOUT_MS = 15_000;
 const TOTAL_CAP_MS = 180_000;
 
-const rss = new Parser({ customFields: { item: [["source", "source", { keepArray: true }]] } });
+const rss = rssParser();
 
 export function loadRegistry(file = REGISTRY_PATH): SourceRegistry {
   return SourceRegistry.parse(YAML.parse(fs.readFileSync(file, "utf8")));
@@ -65,7 +65,7 @@ async function pool<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>
   return out;
 }
 
-interface FeedResult { feed: Feed; ok: boolean; items: RawItem[]; error: string | null }
+export interface FeedResult { feed: Feed; ok: boolean; items: RawItem[]; error: string | null }
 
 async function fetchAll(registry: SourceRegistry): Promise<FeedResult[]> {
   const deadline = Date.now() + TOTAL_CAP_MS;
@@ -125,17 +125,27 @@ export function buildPack(date: string, results: FeedResult[], registry: SourceR
   });
 }
 
+/** A fetched feed's status: FAIL if it didn't load, NODATE if it has items but none with a readable
+ *  date (the collector drops undated items, so such a feed adds nothing). Zero items is ok: a narrow
+ *  search can be empty on a quiet day. */
+export function feedStatus(r: FeedResult): "ok" | "FAIL" | "NODATE" {
+  if (!r.ok) return "FAIL";
+  return r.items.length > 0 && r.items.every((i) => i.published_at === null) ? "NODATE" : "ok";
+}
+
 async function checkFeeds(registry: SourceRegistry): Promise<number> {
   const results = await fetchAll(registry);
   let badPriority1 = 0;
-  console.log(["id", "ok", "items", "newest", "priority", "error"].join("\t"));
+  let bad = 0;
+  console.log(["id", "status", "items", "newest", "priority", "error"].join("\t"));
   for (const r of results) {
+    const status = feedStatus(r);
     const newest = r.items.map((i) => i.published_at).filter(Boolean).sort().at(-1) ?? "-";
-    if (!r.ok && r.feed.priority === 1) badPriority1 += 1;
-    console.log([r.feed.id, r.ok ? "ok" : "FAIL", r.items.length, newest, r.feed.priority, r.error ?? ""].join("\t"));
+    if (status !== "ok") bad += 1;
+    if (status !== "ok" && r.feed.priority === 1) badPriority1 += 1;
+    console.log([r.feed.id, status, r.items.length, newest, r.feed.priority, r.error ?? ""].join("\t"));
   }
-  const failed = results.filter((r) => !r.ok).length;
-  console.log(`\n${results.length - failed} of ${results.length} feeds ok; ${badPriority1} priority-1 failures.`);
+  console.log(`\n${results.length - bad} of ${results.length} feeds ok; ${badPriority1} priority-1 problems.`);
   return badPriority1 ? 1 : 0;
 }
 

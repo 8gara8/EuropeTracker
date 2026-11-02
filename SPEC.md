@@ -101,6 +101,7 @@ section in the same PR and is listed here.
 | 3 | Run outcome from the agent's exit code | From the transcript's final `result` event (`is_error`) and the draft file | The CLI exits 0 even when sign-in fails |
 | 3 | Pack Markdown lists an item under every category it covers | Full line under its first category; a short "see <category>" line under the others. Google News items show "(lead: search for the original article)" instead of their redirect URL | The first real pack was 263 KB; it is now about 107 KB. The redirect URLs can't be cited or reliably opened |
 | 3 | Source registry candidates | 79 feeds, all live on 2026-11-02: 16 Telegram channels, 29 RSS feeds, 34 Google News searches. ISW, NATO and the US State Department block or lack RSS, so they are site searches | Verified with `npm run sources:check` |
+| 3 | Undated items are dropped; `--check-feeds` reports load failures | The collector also reads the IAEA's "26-10-30  17:50" dates (in the channel's zone) and the EU Council's Atom `<updated>`; `--check-feeds` reports `NODATE` for a feed whose items all lack a readable date | Both feeds loaded but every item was dropped as undated, so they added nothing, and the check called them ok |
 | 3 | Validate against the context | `daily.ts` validates against the context it built in memory (a copy goes to `logs/DATE.context.json`), never `drafts/context.json` | The agent can write in `drafts/` |
 | 3 | `--dry-run`: no git writes | Preflight also skips `git checkout main` and `git pull` on a dry run, and allows uncommitted changes | A dry run must work from a feature branch |
 | 3 | The repo lives in `/Users/kobol/Documents/EuropeTracker` | It lives in `/Users/kobol/Projects/EuropeTracker` (moved 2026-11-02) | `~/Documents` is synced by iCloud Drive, which made conflict copies ("state 2.json", ".git/index 2") of files the pipeline rewrites. The 05:30 run refuses a tree with stray files, and iCloud can roll a file back to an older copy. `~/Projects` isn't synced |
@@ -1378,15 +1379,17 @@ exec /usr/bin/caffeinate -i /opt/homebrew/bin/npx --no-install tsx scripts/daily
   - The outlet comes from `<source url=…>`; the category comes from the `domains` map, else
     "unclassified".
   - Set `lead_only: true`.
-- **Window:** keep items published in `[window.start − 6 h, window.end]`. Drop undated items.
+- **Window:** keep items published in `[window.start − 6 h, window.end]`. Drop undated items. A date
+  without a time zone takes the zone of the channel's own date, else UTC, never Kobol's local time.
 - **Dedupe:** first by normalized URL, then by title similarity (lowercase, punctuation stripped,
   Jaccard ≥ 0.8 on word sets). Keep the item from the higher-priority feed.
 - **Score:** `10 × (4 − priority)` + `3 × min(keyword hits, 5)` + recency bonus 0–5 (newer is higher)
   + 4 if the category is `ua_gov`, `ru_gov`, `eu_gov_security` or `nato_eu`.
 - **Caps:** top 30 per coverage category, 350 unique items overall.
 - **Exit codes:** 0 on success, including degraded. 1 if the config is invalid or zero items were kept.
-- `--check-feeds`: fetch every feed and print a table of id, ok, item count and newest date. Exit 1 if
-  any priority-1 feed fails.
+- `--check-feeds`: fetch every feed and print a table of id, status, item count and newest date. The
+  status is `FAIL` if the feed didn't load and `NODATE` if it has items but none with a readable date
+  (they would all be dropped). Exit 1 if any priority-1 feed is `FAIL` or `NODATE`.
 
 ### 7.4 `scripts/build-context.ts` and `lib/aggregate.ts`
 

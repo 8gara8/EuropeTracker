@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import Parser from "rss-parser";
 import type { Feed, Pack, PackItem, SourceRegistry } from "./schema/pack";
 import { normalizeUrl } from "./urls";
 import { CATEGORIES, type CategoryId, type SourceCategoryId } from "./vocab";
@@ -51,18 +52,60 @@ export function parseTelegram(html: string): RawItem[] {
   return items;
 }
 
+/** rss-parser set up for the registry's feeds: Google News's <source> with its url attribute, and the
+ *  Atom <updated> some RSS feeds carry instead of <pubDate> (the EU Council's a10:updated). */
+export function rssParser() {
+  return new Parser({ customFields: { item: [["source", "source", { keepArray: true }], "a10:updated", "atom:updated"] } });
+}
+
+const HAS_ZONE = /(?:Z|[+-]\d{2}:?\d{2}|\b(?:GMT|UTC|UT|[ECMP][SD]T))$/i;
+
+/**
+ * A feed's date as an ISO timestamp, or null. Date.parse would read a date without a zone as Kobol's
+ * local time, so such dates take `zone` (an offset like "+01:00", default UTC). Also reads the IAEA's
+ * "26-10-30  17:50": a two-digit year and local time with no zone.
+ */
+export function feedDate(raw: string | undefined, zone = "Z"): string | null {
+  let s = raw === undefined ? "" : squash(raw);
+  if (!s) return null;
+  const short = /^(\d{2})-(\d{2})-(\d{2}) (\d{2}):(\d{2})$/.exec(s);
+  if (short) s = `20${short[1]}-${short[2]}-${short[3]}T${short[4]}:${short[5]}:00`;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) s += "T00:00:00";
+  if (!HAS_ZONE.test(s)) s = /^\d{4}-\d{2}-\d{2}T/.test(s) ? `${s}${zone}` : `${s} ${zone === "Z" ? "GMT" : zone.replace(":", "")}`;
+  const t = Date.parse(s);
+  return Number.isNaN(t) ? null : new Date(t).toISOString();
+}
+
+/** The UTC offset a channel's own date is written in ("+01:00"), so its items' zoneless dates can use it. */
+export function zoneOf(date: string | undefined): string {
+  const m = /([+-])(\d{2}):?(\d{2})\s*$/.exec(date ?? "");
+  return m ? `${m[1]}${m[2]}:${m[3]}` : "Z";
+}
+
+interface RssParsed {
+  pubDate?: string;
+  lastBuildDate?: string;
+  items?: {
+    title?: string; link?: string; pubDate?: string; date?: string; "a10:updated"?: string; "atom:updated"?: string;
+    contentSnippet?: string; source?: unknown;
+  }[];
+}
+
 /** Items from an rss-parser result. */
-export function rssItems(parsed: { items?: { title?: string; link?: string; isoDate?: string; contentSnippet?: string; source?: unknown }[] }): RawItem[] {
+export function rssItems(parsed: RssParsed): RawItem[] {
+  const zone = zoneOf(parsed.pubDate ?? parsed.lastBuildDate);
   return (parsed.items ?? []).flatMap((i) => {
     if (!i.title || !i.link) return [];
     // rss-parser keeps <source url="…">Outlet</source> as [{ _: "Outlet", $: { url } }] with keepArray.
     const raw = Array.isArray(i.source) ? i.source[0] : i.source;
     const src = raw as { _?: string; $?: { url?: string } } | string | undefined;
     const outlet = typeof src === "string" ? src : src?._;
+    const published_at = [i.pubDate, i.date, i["a10:updated"], i["atom:updated"]]
+      .map((d) => feedDate(d, zone)).find((d) => d !== null) ?? null;
     return [{
       title: squash(i.title),
       url: i.link,
-      published_at: i.isoDate ?? null,
+      published_at,
       snippet: squash(i.contentSnippet ?? ""),
       ...(outlet ? { outlet: squash(outlet) } : {}),
       ...(typeof src === "object" && src?.$?.url ? { outletUrl: src.$.url } : {}),

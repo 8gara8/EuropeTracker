@@ -1,15 +1,14 @@
 import fs from "node:fs";
-import Parser from "rss-parser";
 import { describe, expect, it } from "vitest";
 import {
-  capItems, classifyDomain, dedupe, feedUrl, inWindow, jaccard, parseTelegram, renderPackMd, rssItems, score,
-  stripOutletSuffix, type Candidate,
+  capItems, classifyDomain, dedupe, feedDate, feedUrl, inWindow, jaccard, parseTelegram, renderPackMd, rssItems,
+  rssParser, score, stripOutletSuffix, zoneOf, type Candidate,
 } from "@/lib/collect";
 import { windowFor } from "@/lib/dates";
 import { Pack, SourceRegistry, type Feed } from "@/lib/schema/pack";
-import { buildPack, candidates, loadRegistry } from "@/scripts/collect";
+import { buildPack, candidates, feedStatus, loadRegistry } from "@/scripts/collect";
 
-const rss = new Parser({ customFields: { item: [["source", "source", { keepArray: true }]] } });
+const rss = rssParser();
 const window = windowFor("2026-11-03"); // 2026-11-02T05:30+08:00 → 2026-11-03T05:30+08:00
 
 const telegram: Feed = { id: "sample-tg", name: "Sample Air Force", kind: "telegram", channel: "samplechannel", category: "ua_gov", language: "uk", coverage: ["russian_strikes", "airspace"], priority: 1 };
@@ -32,6 +31,30 @@ describe("parsers", () => {
     const google = rssItems(await rss.parseString(fs.readFileSync("fixtures/collect/gnews.xml", "utf8")));
     expect(google[0]).toMatchObject({ outlet: "Notes from Poland", outletUrl: "https://notesfrompoland.com" });
     expect(stripOutletSuffix(google[0]!.title, google[0]!.outlet)).toBe("SAMPLE: Dron nad Lubelszczyzną");
+  });
+
+  it("reads the IAEA's short local dates and the EU Council's Atom <updated>", async () => {
+    const channel = (head: string, item: string) =>
+      `<?xml version="1.0"?><rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Sample</title>` +
+      `<link>https://example.org</link><description>Sample</description>${head}<item><title>SAMPLE</title>` +
+      `<link>https://example.org/a</link>${item}</item></channel></rss>`;
+    const iaea = rssItems(await rss.parseString(channel(
+      "<pubDate>Fri, 30 Oct 26 17:50:00 +0100</pubDate>", "<pubDate>\n26-10-30  17:50\n</pubDate>")));
+    expect(iaea[0]!.published_at).toBe("2026-10-30T16:50:00.000Z");
+    const council = rssItems(await rss.parseString(channel("", "<a10:updated>2026-10-30T18:50:00+01:00</a10:updated>")));
+    expect(council[0]!.published_at).toBe("2026-10-30T17:50:00.000Z");
+  });
+
+  it("never reads a date without a zone as Kobol's local time", () => {
+    expect(feedDate("Mon, 02 Nov 2026 20:40:00 GMT")).toBe("2026-11-02T20:40:00.000Z");
+    expect(feedDate("Fri, 30 Oct 2026 17:50:00")).toBe("2026-10-30T17:50:00.000Z");
+    expect(feedDate("Fri, 30 Oct 2026 17:50:00", "-05:00")).toBe("2026-10-30T22:50:00.000Z");
+    expect(feedDate("2026-10-30T17:50:00", "+02:00")).toBe("2026-10-30T15:50:00.000Z");
+    expect(feedDate("2026-10-30")).toBe("2026-10-30T00:00:00.000Z");
+    expect(feedDate("not a date")).toBeNull();
+    expect(feedDate(undefined)).toBeNull();
+    expect(zoneOf("Fri, 30 Oct 26 17:50:00 +0100")).toBe("+01:00");
+    expect(zoneOf("Sun, 01 Nov 2026 17:00:00 GMT")).toBe("Z");
   });
 
   it("builds feed URLs", () => {
@@ -111,6 +134,14 @@ describe("pack", () => {
   it("flags a degraded pack when 40% of feeds fail", () => {
     const results = [0, 1, 2, 3, 4].map((i) => ({ feed: { ...news, id: `f${i}` }, ok: i >= 2, error: i < 2 ? "timeout" : null, items: [] }));
     expect(buildPack("2026-11-03", results, registry).degraded).toBe(true);
+  });
+
+  it("reports a feed whose items have no readable date", () => {
+    const item = { title: "t", url: "https://x.example", snippet: "", published_at: null };
+    expect(feedStatus({ feed: news, ok: true, error: null, items: [item] })).toBe("NODATE");
+    expect(feedStatus({ feed: news, ok: true, error: null, items: [item, { ...item, published_at: window.end }] })).toBe("ok");
+    expect(feedStatus({ feed: news, ok: true, error: null, items: [] })).toBe("ok");
+    expect(feedStatus({ feed: news, ok: false, error: "HTTP 404", items: [] })).toBe("FAIL");
   });
 
   it("keeps per-feed candidates inside the window only", () => {
