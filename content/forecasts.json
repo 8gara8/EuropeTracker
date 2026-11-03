@@ -221,7 +221,13 @@
       "base_rate": 40,
       "base_rate_note": "Latvia reported drone entries or crashes in March, June and August 2026, plus on 24 October and 1 November: about 0.5 a month, or roughly 40% over 30 days. Raised for the late-October cluster.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-04",
+          "probability": 85,
+          "note": "Latvia's armed forces reported a drone entering over Balvi and Ludza, on the Russian border, on 3 November. We await confirmation of where it entered from."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -259,6 +265,31 @@
       "base_rate": 5,
       "base_rate_note": "We know of no reported sabotage at the Kaliningrad border since 2022; Russian-linked sabotage elsewhere in Poland comes a few times a year. Raised for the allied warning behind the 2–8 November readiness order.",
       "opened": "2026-11-03",
+      "updates": [
+        {
+          "date": "2026-11-04",
+          "probability": 20,
+          "note": "Tusk says Poland prevented a possible provocation at the Kaliningrad border on 3 November. No crossing was attempted, but the threat is now described as current."
+        }
+      ],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-015",
+      "question": "Will the IAEA report that a Ukrainian nuclear plant other than Zaporizhzhia cut output or lost an off-site power line because of military activity by 31 December 2026?",
+      "resolution_criteria": "Yes if an IAEA statement or update reports that Khmelnytskyi, Rivne or South Ukraine nuclear plant reduced power output or lost one or more off-site power lines because of military activity between 4 November and 31 December 2026.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "nuclear",
+      "probability": 60,
+      "base_rate": 50,
+      "base_rate_note": "The IAEA reported such cuts several times during Russia's winter grid campaigns of 2024–25 and 2025–26, about every two months. Raised for the drones aimed at a Khmelnytskyi substation on 3 November.",
+      "opened": "2026-11-04",
       "updates": [],
       "status": "open",
       "resolved_on": null,

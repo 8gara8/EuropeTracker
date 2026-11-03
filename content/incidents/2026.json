@@ -4190,6 +4190,49 @@
       "seed": true,
       "added": "2026-11-02",
       "updated": null
+    },
+    {
+      "id": "INC-2026-0111",
+      "date": "2026-11-01",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Krāslava and Ludza municipalities",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone crossed Latvian airspace over Krāslava and Ludza for about 17 minutes and left over the Russian border at 19:16. An interceptor drone was launched and later self-destructed. Latvia's armed forces said on 3 November it was most likely a Russian Geran type; whether it was armed is unknown.",
+      "attribution": 2,
+      "attribution_note": "Latvia's National Armed Forces assessed the drone as most likely a Russian Geran; no formal government attribution or blame.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Nacionālie bruņotie spēki sniedza papildu informāciju par 1. un 3. novembra incidentiem Latvijas gaisa telpā",
+          "outlet": "Latvian National Armed Forces",
+          "category": "eu_gov_security",
+          "url": "https://www.mil.lv/lv/zinas/nacionalie-brunotie-speki-sniedza-papildu-informaciju-par-1-un-3-novembra-incidentiem",
+          "published_at": "2026-11-03"
+        },
+        {
+          "title": "More details released about recent drone incidents in Latvia",
+          "outlet": "LSM",
+          "category": "eu_regional_press",
+          "url": "https://eng.lsm.lv/article/society/defence/03.11.2026-more-details-released-about-recent-drone-incidents-in-latvia.a670418/",
+          "published_at": "2026-11-03T23:48:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-04",
+      "updated": null
     }
   ]
 }

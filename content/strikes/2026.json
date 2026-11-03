@@ -1527,6 +1527,43 @@
       "seed": false,
       "added": "2026-11-03",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0050",
+      "date": "2026-11-02",
+      "target_name": "Slavneft-YANOS refinery, Yaroslavl",
+      "target_type": "refinery",
+      "region": "Yaroslavl Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 700,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Slavneft-YANOS refinery (about 300,000 barrels a day) overnight. Astra counted at least seven fire sites from eyewitness media. Governor Mikhail Yevrayev confirmed a hit and two injured workers, The Moscow Times reported.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Hit Yaroslavl Oil Refinery, Trigger Power Outages in Crimea",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
+          "published_at": "2026-11-03T17:57:00+08:00"
+        },
+        {
+          "title": "Ukrainian drone strike sparks major fire at one of Russia's largest oil refineries",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/03/ukrainian-drone-strike-sparks-major-fire-at-one-of-russia-s-largest-oil-refineries",
+          "published_at": "2026-11-03T16:31:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-04",
+      "updated": null
     }
   ]
 }

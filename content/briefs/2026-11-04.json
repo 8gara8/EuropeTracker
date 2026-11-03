@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "window": {
+    "start": "2026-11-03T05:30:00+08:00",
+    "end": "2026-11-04T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-04T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Latvia says 1 November intruder was most likely a Russian Geran; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. Latvia's armed forces said the drone that crossed Krāslava and Ludza on 1 November was most likely a Russian Geran. We log it at rung 3, which lifts Latvia's score from 2 to 3. A second drone entered Latvia on 3 November and may have crashed in Balvi. Tusk said Poland prevented a possible provocation on the Kaliningrad border. Russia fired 289 drones and 76 missiles at Ukraine's grid, including drones aimed at a substation serving the Khmelnytskyi nuclear plant. The chance of rung 5 within 30 days stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s2",
+    "s6",
+    "s7"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on three deadly or deliberate drone strikes on ships in Romanian and Bulgarian waters in October. Latvia's Geran is a rung-3 incident. Nothing in the window suggests deliberate, sustained Russian action against a NATO state (assumption A1 holds)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Eight incidents in 30 days, including Latvia's 1 November Geran, against a baseline of 13 a month; none serious in 12 months. Held at 15% because of October's crashes near homes in Moldova and Romania.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against a baseline of 1.3 a month; two serious in 12 months, about 15% a month. Held above the base rate for the allied warning behind Poland's Kaliningrad border operation.",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Three incidents in 30 days against a baseline of 1.7 a month; 12 serious in 12 months. Russia's defence ministry says it keeps striking ships it says carry military cargo. Held.",
+        "source_ids": [
+          "s18"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7 a month; none serious in 12 months. The unattributed supermarket refrigeration hacks do not meet the threshold. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and no serious incident since 2022. Poland's Border Guard says the people seen at the Kaliningrad border did not try to cross. Held.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. Drones aimed at a Khmelnytskyi substation raise plant-safety risk in Ukraine, not the chance of raised readiness or a release. Held.",
+        "source_ids": [
+          "s7"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. Russia's protest to Norway over seized assets is pressure, not a blocked decision. Held.",
+        "source_ids": [
+          "s15"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1. One above for the allied warning of sabotage or provocation at the Kaliningrad border, which Tusk says may continue.",
+        "source_ids": [
+          "s3",
+          "s4"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 2,
+        "reason": "Floor rises from 1 to 3. Latvia's armed forces said the 1 November drone was most likely a Russian Geran (INC-2026-0111).",
+        "source_ids": [
+          "s1",
+          "s2"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1. One above for continuing GPS interference over the Baltic and Estonia.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1. One above for continuing GPS interference over the Gulf of Finland and the Baltic.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "NO",
+        "score": 1,
+        "previous_score": null,
+        "reason": "Preventive NASAMS sensor deployment in Finnmark, and Russia protested Norwegian seizures of its assets. No incident.",
+        "source_ids": [
+          "s14",
+          "s15"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Latvia says the 1 November drone was most likely a Russian Geran; a second drone entered on 3 November",
+      "summary": "Latvia's National Armed Forces said a Russian Geran-type drone most likely crossed Krāslava and Ludza on 1 November and left toward Russia after 17 minutes; whether it was armed is unknown. A second drone entered over Balvi and Ludza at 00:10 on 3 November. It looked similar to Ukrainian military drones and may have crashed in Balvi, where the National Guard is searching.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0111"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 2,
+      "russian_framing": null,
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Tusk says Poland prevented a possible provocation on the Kaliningrad border",
+      "summary": "Tusk said the Border Guard reported 'individuals with flashlights' near the Kaliningrad border just after midnight, and that 'we managed to prevent the provocation' (translated). The regional Border Guard spokeswoman said several people were seen on the Russian side and none tried to cross. Tusk tied this to allied warnings of sabotage in early November and said tension from Russia may continue.",
+      "category": "sabotage",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Russia's biggest attack on Ukraine's energy this year targets a substation serving the Khmelnytskyi nuclear plant",
+      "summary": "Overnight on 2–3 November Russia launched 289 drones, 17 ballistic and 59 cruise missiles, Energy Minister Shmyhal said, hitting energy sites in 10 oblasts. Three drones targeted a substation critical to the Khmelnytskyi nuclear plant; Shmyhal said this threatened 'nuclear safety across Europe'. The Kyiv Independent reported 38 killed on 3 November.",
+      "category": "russian_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed a 'massive strike' on energy facilities supplying military industry, including Ladyzhyn and Kryvyi Rih power plants, plus port infrastructure at Kiliya and ships it said carried military cargo.",
+      "source_ids": [
+        "s6",
+        "s7",
+        "s9",
+        "s8",
+        "s21"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Ukrainian drones set the Slavneft-YANOS refinery in Yaroslavl on fire",
+      "summary": "Ukrainian drones struck the Slavneft-YANOS refinery in Yaroslavl again overnight, about 700 km from Ukrainian-held territory. Astra counted at least seven fire sites from eyewitness media. Governor Mikhail Yevrayev confirmed the hit and two injured workers, The Moscow Times reported. Russia claimed it downed 856 drones overnight, including over Yaroslavl oblast.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0050"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed air defences destroyed 856 Ukrainian drones over 13+ regions, including Yaroslavl, overnight; it did not mention the refinery.",
+      "source_ids": [
+        "s11",
+        "s12",
+        "s20"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "NATO to send patrol aircraft, radars and drones to the Black Sea; Norway adds drone sensors in Finnmark",
+      "summary": "Reuters, cited by Digi24, reported that NATO will deploy maritime patrol aircraft, radars and drones to the Black Sea after seven attacks on cargo ships near Romania and Bulgaria last month. Norway is sending NASAMS sensors and 30 troops to Kirkenes. Defence Minister Sandvik called this preventive and said Norway sees no elevated air threat.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Russia's defence minister hails 'unprecedented' military partnership in Beijing",
+      "summary": "Defence Minister Andrei Belousov held talks in China with Zhang Shengmin, vice chairman of the Central Military Commission, and said the Russia–China strategic partnership had 'reached an unprecedentedly high level' (translated), Russia's defence ministry reported. Zhang said he expected deeper military cooperation.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Moscow presented the visit as proof of a strategic partnership based on personal ties between Putin and Xi.",
+      "source_ids": [
+        "s10"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine struck the Slavneft-YANOS refinery in Yaroslavl, about 700 km deep. Ukrainian attacks also forced power cuts in five Crimean cities, according to Russian-installed authorities. Russia claimed 856 drones downed overnight; TASS reported Moscow's mayor claiming five more downed late in the window.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s11",
+        "s12",
+        "s20",
+        "s19"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia's biggest attack on Ukraine's energy system this year: 289 drones and 76 missiles hit 10 oblasts, including Odesa and the Danube port of Kiliya. No crossing into Romania or Moldova was reported.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s6",
+        "s7",
+        "s9",
+        "s8"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Zelensky was in Berlin for talks with Steinmeier and the Berlin Security Conference, and said a meeting in Brussels follows. Belousov held military talks in Beijing.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s17",
+        "s10"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Latvia assessed that the 1 November intruder was most likely a Russian Geran; we log it (INC-2026-0111). A second drone, similar to Ukrainian types, entered on 3 November and may have crashed in Balvi; we have not logged it pending identification or debris.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Poland mobilised forces after people with flashlights were seen on the Russian side of the Kaliningrad border. Tusk called it a prevented provocation. Not logged: no crossing, no damage, no named actor.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's defence ministry claimed strikes on a dry-cargo ship 24 km south of Odesa and two others near Yuzhny. These were outside European waters, so we log no incident. NATO plans more Black Sea surveillance.",
+      "development_ids": [
+        "d3",
+        "d5"
+      ],
+      "source_ids": [
+        "s18",
+        "s9",
+        "s13"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Three Russian drones targeted a substation critical to the Khmelnytskyi plant; Ukraine informed the IAEA. Russia's foreign ministry claimed a Ukrainian drone killed two people in a car, including a Zaporizhzhia plant employee.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s7",
+        "s16"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Russia summoned Norway's chargé d'affaires over court seizures of its property, including the research vessel Professor Molchanov at Barentsburg on Svalbard. Tusk accused Russia of fuelling instability in Poland's constitutional court dispute.",
+      "development_ids": [],
+      "source_ids": [
+        "s15",
+        "s3"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "NATO will add maritime patrol aircraft, radars and drones in the Black Sea, and a NATO official cited more than $40bn pledged for counter-drone capability over five years. Norway is adding NASAMS sensors and troops at Kirkenes.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s13",
+        "s14"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0111",
+      "date": "2026-11-01",
+      "date_precision": "day",
+      "location_country": "LV",
+      "affected": [
+        "LV"
+      ],
+      "location": "Krāslava and Ludza municipalities",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "A drone crossed Latvian airspace over Krāslava and Ludza for about 17 minutes and left over the Russian border at 19:16. An interceptor drone was launched and later self-destructed. Latvia's armed forces said on 3 November it was most likely a Russian Geran type; whether it was armed is unknown.",
+      "attribution": 2,
+      "attribution_note": "Latvia's National Armed Forces assessed the drone as most likely a Russian Geran; no formal government attribution or blame.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Nacionālie bruņotie spēki sniedza papildu informāciju par 1. un 3. novembra incidentiem Latvijas gaisa telpā",
+          "outlet": "Latvian National Armed Forces",
+          "category": "eu_gov_security",
+          "url": "https://www.mil.lv/lv/zinas/nacionalie-brunotie-speki-sniedza-papildu-informaciju-par-1-un-3-novembra-incidentiem",
+          "published_at": "2026-11-03"
+        },
+        {
+          "title": "More details released about recent drone incidents in Latvia",
+          "outlet": "LSM",
+          "category": "eu_regional_press",
+          "url": "https://eng.lsm.lv/article/society/defence/03.11.2026-more-details-released-about-recent-drone-incidents-in-latvia.a670418/",
+          "published_at": "2026-11-03T23:48:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-04",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0050",
+      "date": "2026-11-02",
+      "target_name": "Slavneft-YANOS refinery, Yaroslavl",
+      "target_type": "refinery",
+      "region": "Yaroslavl Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 700,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Slavneft-YANOS refinery (about 300,000 barrels a day) overnight. Astra counted at least seven fire sites from eyewitness media. Governor Mikhail Yevrayev confirmed a hit and two injured workers, The Moscow Times reported.",
+      "sources": [
+        {
+          "title": "Ukrainian Drones Hit Yaroslavl Oil Refinery, Trigger Power Outages in Crimea",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
+          "published_at": "2026-11-03T17:57:00+08:00"
+        },
+        {
+          "title": "Ukrainian drone strike sparks major fire at one of Russia's largest oil refineries",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/03/ukrainian-drone-strike-sparks-major-fire-at-one-of-russia-s-largest-oil-refineries",
+          "published_at": "2026-11-03T16:31:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-04",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that the 30-day spillover risk is unchanged in level but broader in geography. The Black Sea shipping campaign remains the most likely route to further deaths. Airspace remains the most frequent source of incidents: eight logged in 30 days, against a baseline of 13 a month. No pathway moves by 5 points.\n\nLatvia's identification matters more than the flight itself. A Russian Geran over Latgale is the first Russian strike drone we have logged in Latvia this autumn. It shows that Russian drone routes now reach the Baltic states as well as Romania and Moldova. We assess it was more likely a drone that strayed or was diverted by electronic warfare than a deliberate probe, because it left on its own within 17 minutes. Latvia could not say whether it was armed. The 3 November object looked like a Ukrainian type. If Latvia's armed forces confirm it as a Ukrainian drone diverted by Russian jamming, we would log it as war debris at rung 3. That would not change Latvia's floor, which is now 3.\n\nPoland's Kaliningrad episode remains a warning, not an incident. The Border Guard said several people with flashlights were seen on the Russian side and none tried to cross. Tusk said 'we managed to prevent the provocation' (translated). We do not log it, because there was no crossing, no damage and no named actor. We hold sabotage at unlikely (25%). We raise our estimate that Poland reports sabotage or an armed crossing at that border this month from 15% to 20%, because the government now describes the threat as current, not hypothetical.\n\nRussia's largest strike on Ukraine's energy system this year included three drones aimed at a substation serving Khmelnytskyi, in western Ukraine. This does not move the nuclear pathway, whose threshold is raised readiness or a release in Europe. It does make IAEA-reported output cuts at Ukrainian plants more likely this winter, and we open a forecast on that. Strike routes into western Ukraine and Odesa also feed airspace risk near Poland, Romania and Moldova, though no crossing was reported overnight.",
+    "change_my_mind": "An injury or death in a NATO state from a drone or debris; Latvia or Poland formally blaming Russia for a deliberate act; or a week of heavy Russian strikes on Odesa and the Danube with no crossing into Romania or Moldova, which would lower airspace odds.",
+    "competing_explanations": [
+      {
+        "subject": "Latvia, 3 November: drone over Balvi and Ludza, possibly crashed",
+        "hypotheses": [
+          {
+            "label": "Ukrainian long-range drone diverted by Russian electronic warfare",
+            "assessment": "Latvia says it resembled Ukrainian military drones. Ukraine's foreign ministry said a similar diversion probably explained the 18 October blast in Lithuania.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Russian drone or decoy entering from Russia",
+            "assessment": "Two days earlier, a Geran crossed nearby. Visual resemblance is weak evidence, and Russian Gerbera decoys can look like other types.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      },
+      {
+        "subject": "Poland, 3 November: people with flashlights at the Kaliningrad border",
+        "hypotheses": [
+          {
+            "label": "Russian probe of Polish border readiness",
+            "assessment": "This matches allied warnings of early-November provocations, and the people withdrew once Polish forces arrived. Tusk calls it a prevented provocation.",
+            "estimate": {
+              "probability": 40,
+              "term": "realistic_possibility",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Routine activity amplified by heightened alert",
+            "assessment": "No crossing was attempted and no one has been identified. Tusk himself could not confirm a provocation was intended, and readiness had been ordered beforehand.",
+            "estimate": {
+              "probability": 50,
+              "term": "realistic_possibility",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-015",
+      "question": "Will the IAEA report that a Ukrainian nuclear plant other than Zaporizhzhia cut output or lost an off-site power line because of military activity by 31 December 2026?",
+      "resolution_criteria": "Yes if an IAEA statement or update reports that Khmelnytskyi, Rivne or South Ukraine nuclear plant reduced power output or lost one or more off-site power lines because of military activity between 4 November and 31 December 2026.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "nuclear",
+      "probability": 60,
+      "base_rate": 50,
+      "base_rate_note": "The IAEA reported such cuts several times during Russia's winter grid campaigns of 2024–25 and 2025–26, about every two months. Raised for the drones aimed at a Khmelnytskyi substation on 3 November."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-012",
+      "probability": 85,
+      "note": "Latvia's armed forces reported a drone entering over Balvi and Ludza, on the Russian border, on 3 November. We await confirmation of where it entered from."
+    },
+    {
+      "id": "F-2026-014",
+      "probability": 20,
+      "note": "Tusk says Poland prevented a possible provocation at the Kaliningrad border on 3 November. No crossing was attempted, but the threat is now described as current."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A3",
+      "text": null,
+      "reason": "Latvia's Geran crossed and left within 17 minutes during Russian operations, consistent with spillover or a probe rather than preparation for attack."
+    }
+  ],
+  "taiwan": "Belousov's talks in Beijing, where he called Russia–China military ties 'unprecedented', are the most direct signal for Taiwan. They point to deeper military cooperation that could extend to joint activity near Japan and Taiwan, and to continued Chinese support for Russia's war economy. Russia's largest grid strike this year, with drones aimed at a substation serving a nuclear plant, is a direct lesson for Taiwan: an attacker can stress a grid that depends on a few large plants and key substations without striking the reactors. That argues for dispersed generation and hardened substations. NATO's planned counter-drone and Black Sea surveillance spending adds to Western demand for sensors and interceptors that Taiwan also buys, although we see no specific effect on deliveries today.",
+  "next_72h": [
+    {
+      "date": "2026-11-05",
+      "event": "Melania Trump hosts Russian and Ukrainian delegations at the White House on the Oleshky ceasefire.",
+      "why": "Rare direct contact; watch for any wider humanitarian or Black Sea truce."
+    },
+    {
+      "date": "2026-11-05",
+      "event": "Latvian National Guard search for the 3 November drone in Balvi continues.",
+      "why": "If found, its type and origin decide whether we log a second Latvian incident."
+    },
+    {
+      "date": "2026-11-07",
+      "event": "Polish police readiness on the Kaliningrad and Belarus borders enters its final days before it ends on 8 November.",
+      "why": "An extension would signal the allied warning is still current."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 289,
+      "unit": "count",
+      "period": "night of 2–3 Nov",
+      "source_ids": [
+        "s6"
+      ],
+      "note": "Energy Minister Shmyhal's figure."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 76,
+      "unit": "count",
+      "period": "night of 2–3 Nov",
+      "source_ids": [
+        "s6",
+        "s7"
+      ],
+      "note": "17 ballistic and 59 cruise missiles."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "2–3 Nov",
+      "source_ids": [
+        "s11"
+      ],
+      "note": "Strikes logged today."
+    },
+    {
+      "id": "ua_max_strike_depth_km",
+      "value": 700,
+      "unit": "km",
+      "period": "2–3 Nov",
+      "source_ids": [
+        "s11"
+      ],
+      "note": "Yaroslavl refinery; approximate distance."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Nacionālie bruņotie spēki sniedza papildu informāciju par 1. un 3. novembra incidentiem Latvijas gaisa telpā",
+      "outlet": "Latvian National Armed Forces",
+      "category": "eu_gov_security",
+      "url": "https://www.mil.lv/lv/zinas/nacionalie-brunotie-speki-sniedza-papildu-informaciju-par-1-un-3-novembra-incidentiem",
+      "language": "lv",
+      "published_at": "2026-11-03",
+      "accessed_at": "2026-11-04T06:05:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "More details released about recent drone incidents in Latvia",
+      "outlet": "LSM",
+      "category": "eu_regional_press",
+      "url": "https://eng.lsm.lv/article/society/defence/03.11.2026-more-details-released-about-recent-drone-incidents-in-latvia.a670418/",
+      "language": "en",
+      "published_at": "2026-11-03T23:48:00+08:00",
+      "accessed_at": "2026-11-04T05:50:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Poland Accuses Russia of 'Flashlight' Provocation Along Kaliningrad Border",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/03/poland-accuses-russia-of-flashlight-provocation-along-kaliningrad-border-a94167",
+      "language": "en",
+      "published_at": "2026-11-04T00:10:00+08:00",
+      "accessed_at": "2026-11-04T05:50:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Premier dostał meldunek o ruchach przy naszej granicy z Rosją. „Osobnicy z latarkami” (PM received report of movement at our border with Russia: 'Individuals with flashlights', translated)",
+      "outlet": "RMF24",
+      "category": "eu_regional_press",
+      "url": "https://www.rmf24.pl/fakty/polska/news-premier-dostal-meldunek-o-ruchach-przy-naszej-granicy-z-rosj,nIdn,1024572",
+      "language": "pl",
+      "published_at": "2026-11-03",
+      "accessed_at": "2026-11-04T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "\"Niepokojący ruch\" na granicy z Królewcem. \"Zmobilizowaliśmy odpowiednie siły i środki\" ('Disturbing movement' on the Kaliningrad border, translated)",
+      "outlet": "Nowy Dziennik (PAP)",
+      "category": "eu_regional_press",
+      "url": "https://dziennik.com/niepokojacy-ruch-na-granicy-z-krolewcem-zmobilizowalismy-odpowiednie-sily-i-srodki/",
+      "language": "pl",
+      "published_at": "2026-11-03",
+      "accessed_at": "2026-11-04T06:00:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Russia hits substation critical for nuclear power plant in biggest mass attack on Ukraine's energy this year",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russia-unleashes-biggest-mass-attack-on-ukraines-energy-this-year-2/",
+      "language": "en",
+      "published_at": "2026-11-03T19:06:00+08:00",
+      "accessed_at": "2026-11-04T05:50:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "\"Threat to nuclear safety across Europe\": Russia attacks substation critical to Khmelnytskyi Nuclear Power Plant",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/03/8061116/",
+      "language": "en",
+      "published_at": "2026-11-04T02:47:00+08:00",
+      "accessed_at": "2026-11-04T05:55:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Збито/подавлено 309 цілей противника (309 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42786",
+      "language": "uk",
+      "published_at": "2026-11-03T15:32:00+08:00",
+      "accessed_at": "2026-11-04T05:45:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Массированный удар по объектам энергетического комплекса Украины (Massive strike on Ukraine's energy facilities, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68728",
+      "language": "ru",
+      "published_at": "2026-11-03T14:38:00+08:00",
+      "accessed_at": "2026-11-04T06:08:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Андрей Белоусов: стратегическое партнерство России и Китая достигло беспрецедентно высокого уровня (Belousov: Russia–China strategic partnership has reached an unprecedented level, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68729",
+      "language": "ru",
+      "published_at": "2026-11-03T15:01:00+08:00",
+      "accessed_at": "2026-11-04T06:08:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Ukrainian Drones Hit Yaroslavl Oil Refinery, Trigger Power Outages in Crimea",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
+      "language": "en",
+      "published_at": "2026-11-03T17:57:00+08:00",
+      "accessed_at": "2026-11-04T05:55:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Ukrainian drone strike sparks major fire at one of Russia's largest oil refineries",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/03/ukrainian-drone-strike-sparks-major-fire-at-one-of-russia-s-largest-oil-refineries",
+      "language": "en",
+      "published_at": "2026-11-03T16:31:00+08:00",
+      "accessed_at": "2026-11-04T05:45:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Atacurile din Marea Neagră devin o provocare pentru NATO și lasă România și Bulgaria expuse (Black Sea attacks become a challenge for NATO and leave Romania and Bulgaria exposed, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/atacurile-din-marea-neagra-devin-o-provocare-pentru-nato-si-lasa-romania-si-bulgaria-expuse-este-vorba-despre-a-testa-liniile-rosii-4019287",
+      "language": "ro",
+      "published_at": "2026-11-03T16:35:00+08:00",
+      "accessed_at": "2026-11-04T05:50:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Norway deploys additional air defense sensors, troops near Russia border",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/norway-deploys-additional-air-defense-sensors-troops-near-russia-border/",
+      "language": "en",
+      "published_at": "2026-11-04T05:25:00+08:00",
+      "accessed_at": "2026-11-04T05:55:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "В МИД России был вызван Временный поверенный в делах Норвегии (Norway's chargé d'affaires summoned to the Russian Foreign Ministry, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95444",
+      "language": "ru",
+      "published_at": "2026-11-04T02:05:00+08:00",
+      "accessed_at": "2026-11-04T05:55:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "В результате атаки по гражданскому автомобилю погибли два человека (Two killed in attack on civilian car, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95452",
+      "language": "ru",
+      "published_at": "2026-11-04T03:31:00+08:00",
+      "accessed_at": "2026-11-04T05:55:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Зустрівся з Президентом Німеччини Франком-Вальтером Штайнмаєром (Met German President Frank-Walter Steinmeier, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21641",
+      "language": "uk",
+      "published_at": "2026-11-04T04:18:00+08:00",
+      "accessed_at": "2026-11-04T05:45:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "ВС РФ продолжают нанесение ударов по логистическим центрам и морским судам (Russian forces continue strikes on logistics centres and ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68735",
+      "language": "ru",
+      "published_at": "2026-11-03T22:26:00+08:00",
+      "accessed_at": "2026-11-04T06:08:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Пять беспилотников, летевших на Москву, уничтожены (Five drones flying toward Moscow destroyed, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/403865",
+      "language": "ru",
+      "published_at": "2026-11-04T04:48:00+08:00",
+      "accessed_at": "2026-11-04T05:45:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Дежурными силами ПВО уничтожены 856 украинских беспилотных летательных аппаратов (Air defences destroyed 856 Ukrainian drones, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68726",
+      "language": "ru",
+      "published_at": "2026-11-03T13:59:00+08:00",
+      "accessed_at": "2026-11-04T05:45:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Russian attacks across Ukraine kill 38, injure 167, as Russia hits Dnipro hospitals in morning missile strike",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russian-attacks-across-ukraine-kill-38-injure-158-as-russia-hits-dnipro-hospitals-in-morning-missile-strike/",
+      "language": "en",
+      "published_at": "2026-11-03T20:32:00+08:00",
+      "accessed_at": "2026-11-04T05:45:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-04T05:43:54+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1973,
+    "source_count": 21,
+    "source_category_count": 7
+  }
+}
