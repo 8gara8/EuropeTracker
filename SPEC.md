@@ -115,6 +115,9 @@ section in the same PR and is listed here.
 | 4 | The seed builder marks rung 4 or deaths as serious | It also applies the pathway threshold where a type meets it by definition: every maritime strike on or seizure of a vessel is serious, and `INCIDENT_SERIOUS` enforces that for seeds, drafts and updates | Seed review: seven ship strikes below rung 4 (Ukrainian strikes on shadow-fleet tankers off Turkey and Malta, and three ships off Romania) were left non-serious, so maritime showed 5 serious incidents in 12 months instead of 12 |
 | 5 | Supervised runs are reviewed on the `review/DATE` Vercel preview | Previews build from the sample data (`ET_CONTENT_DIR`), so `review/DATE` previews now build from `content/` instead | Found before the first supervised run: the preview would have shown the sample briefs, not the brief under review |
 | 5 | Plain site design (system fonts, white and blue, light and dark) | ME Tracker's paper design (cream paper, Newsreader, IBM Plex Sans and Mono, masthead with stamp and tab bar, square pills; light only), taken further from a Claude Design mock-up: a spillover gauge beside the title, the eastern flank as a tile map of the seven frontline countries, the pathways as a probability-by-impact risk matrix with a data table, pathway bars, developments split into Europe and the war, and the judgement beside a dark Taiwan card. Appendix A summarises the tokens | JL, on the first supervised preview: look like ME Tracker, then better than it |
+| 5 | Three supervised runs on three different days | Two (2 and 3 November), then unattended from 4 November | JL's decision after approving the second brief |
+| 5 | `routine/TASK.md`: check on the background run at most every 5 minutes; approve the command and the summary read | The task ends its turn and waits for the app to wake it when the command finishes, and reads files only with the Read tool. Only the command needs approval | The app skips a scheduled run while the previous run is waiting on a permission prompt (seen on Kobol), and checking on the run could have triggered a prompt. The summary is inside the task's folder, so reading it doesn't |
+| 5 | §8.3: verify start-time jitter and long background commands | Verified on 4 November: a fixed 7-minute delay (start 05:37), and a 7.5-minute background run woke the task when it ended, so one task is enough | The first unattended morning |
 
 ---
 
@@ -1612,23 +1615,28 @@ There are no alert or watchdog workflows, by design (§0.2, §7.7).
   - Schedule: daily at 05:30 Asia/Taipei (cron `30 5 * * *`), set to run on this computer.
   - Working folder: `/Users/kobol/Projects/EuropeTracker`.
   - Prompt: the contents of `routine/TASK.md`.
-- **What it does:** runs `zsh scripts/daily.sh` in the background, waits for it to finish, then
-  replies with `logs/DATE.summary.md`. That reply is JL's morning update in the Claude app. The task
-  session runs nothing else and never reads web content; research happens in the sandboxed headless
-  sub-process (§8.4).
+- **What it does:** runs `zsh scripts/daily.sh` in the background, ends its turn until the app wakes
+  it when the command finishes, then replies with `logs/DATE.summary.md`. That reply is JL's morning
+  update in the Claude app. The task session runs nothing else and never reads web content; research
+  happens in the sandboxed headless sub-process (§8.4).
 - **Creating it** (Phase 5, with JL present):
   1. Create the task with the scheduled-tasks tool, or in the app.
   2. A task created by the tool takes the creating session's folder and starts in Manual permission
      mode, so set the folder to `/Users/kobol/Projects/EuropeTracker` on the task page.
-  3. Click Run now once while JL watches, and approve `zsh scripts/daily.sh` and the summary read as
-     "Always allowed". Later unattended runs then never stall on a permission prompt.
+  3. Click Run now once while JL watches, and approve the
+     `zsh /Users/kobol/Projects/EuropeTracker/scripts/daily.sh` command as "Always allowed" (reading
+     the summary needs no approval: it's inside the task's folder). Later unattended runs then never
+     stall on a permission prompt.
   4. Confirm the saved folder (`cwd`) in
      `~/Library/Application Support/Claude/claude-code-sessions/*/*/scheduled-tasks.json`.
-- **Verify in Phase 5:**
-  - **Start-time jitter.** Tasks here have shown up to about 13 minutes. `daily.ts` sizes its timeouts
-    from the actual start, so a 05:43 start still finishes by 06:55.
-  - **Long background commands.** Confirm the task session can run a 30–60 minute command in the
-    background and wait for it. If it can't, fall back to two tasks: one at 05:30 runs
+- **Finding it:** the app's Scheduled page hides tasks Claude set up from a project; click Show beside
+  "N hidden tasks that Claude set up in Slack, a project or Claude Code".
+- **Verified in Phase 5 (4 November):**
+  - **Start-time jitter.** The app delays this task by a fixed 7 minutes, so it starts at 05:37 every
+    day. `daily.ts` sizes its timeouts from the actual start, so even a 05:43 start finishes by 06:55.
+  - **Long background commands.** The task started the pipeline in the background, ended its turn,
+    and was woken when the pipeline exited 7.5 minutes later. If a later app version can't do that,
+    fall back to two tasks: one at 05:30 runs
     `zsh scripts/daily.sh --detach` (returns at once), and one at 06:56 replies with the summary file.
 - **Requirements:** the Claude desktop app is running and Kobol is awake and logged in, the same as
   MEtracker's task.
@@ -1908,7 +1916,7 @@ scores mean something on day one.
 **Depends on:** Phases 1–4.
 
 **Tasks**
-1. Three supervised runs on three different days. For each:
+1. Three supervised runs on three different days (JL stopped at two; see §0.5). For each:
    - `npm run daily -- --review` (at 05:30, or `--no-deadline` later)
    - JL reviews the `review/DATE` preview
    - `npm run promote -- --date DATE` once approved
