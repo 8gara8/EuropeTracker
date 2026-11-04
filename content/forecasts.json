@@ -297,6 +297,44 @@
       "resolution_source": null,
       "brier": null,
       "brier_base": null
+    },
+    {
+      "id": "F-2026-016",
+      "question": "Will delegations of Russia, Ukraine and the United States hold trilateral talks in Abu Dhabi between 5 and 20 November 2026?",
+      "resolution_criteria": "Yes if at least two of the three governments, or credible wire reporting, confirm that Russian, Ukrainian and US delegations met in a trilateral format in Abu Dhabi between 5 and 20 November 2026.",
+      "resolves_by": "2026-11-20",
+      "horizon": "30d",
+      "pathway": null,
+      "probability": 60,
+      "base_rate": 50,
+      "base_rate_note": "Announced 2026 talks have often slipped. The Kremlin declined the round expected in October. Raised because Zelensky and the Kyiv Independent both give a date less than a week away.",
+      "opened": "2026-11-05",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-017",
+      "question": "Will Moldova's defence ministry report at least 10 airspace violations by drones in November 2026?",
+      "resolution_criteria": "Yes if Moldova's Ministry of Defence or National Army reports, in daily statements or a monthly summary, at least 10 unauthorised drone violations of Moldovan airspace dated 1–30 November 2026.",
+      "resolves_by": "2026-12-05",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 55,
+      "base_rate": 50,
+      "base_rate_note": "Moldova reported a record 19 violations in October, after fewer in earlier months. One was reported on 4 November. Russia's winter strikes on Odesa and the south continue.",
+      "opened": "2026-11-05",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
     }
   ]
 }

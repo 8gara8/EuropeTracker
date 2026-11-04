@@ -1564,6 +1564,43 @@
       "seed": false,
       "added": "2026-11-04",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0051",
+      "date": "2026-11-03",
+      "target_name": "Ozon logistics centre, Adygeysk",
+      "target_type": "other",
+      "region": "Republic of Adygea",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set fire to Ozon's logistics centre in Adygeysk, one of its main southern hubs, overnight into 4 November. Ozon said it evacuated workers and no one was hurt. The Moscow Times reported that Adygea's head confirmed the attack.",
+      "sources": [
+        {
+          "title": "Ukrainian Drone Assault Sparks Fire at Ozon Warehouse in Adygea",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/04/ukrainian-drone-assault-sparks-fire-at-ozon-warehouse-in-adygea-a94173",
+          "published_at": "2026-11-04T17:25:00+08:00"
+        },
+        {
+          "title": "Ukraine strikes Ozon logistics center in southern Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/04/ukraine-strikes-ozon-logistics-center-in-southern-russia",
+          "published_at": "2026-11-04T16:14:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-05",
+      "updated": null
     }
   ]
 }

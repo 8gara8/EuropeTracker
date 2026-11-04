@@ -1,4 +1,29 @@
 {
   "schema_version": 1,
-  "urls": {}
+  "urls": {
+    "https://themoscowtimes.com/2026/11/03/poland-accuses-russia-of-flashlight-provocation-along-kaliningrad-border-a94167": {
+      "snapshot": "https://web.archive.org/web/20261103164557/https://www.themoscowtimes.com/2026/11/03/poland-accuses-russia-of-flashlight-provocation-along-kaliningrad-border-a94167",
+      "at": "2026-11-03T21:45:57.336Z"
+    },
+    "https://dziennik.com/niepokojacy-ruch-na-granicy-z-krolewcem-zmobilizowalismy-odpowiednie-sily-i-srodki": {
+      "snapshot": "https://web.archive.org/web/20261103214651/https://dziennik.com/niepokojacy-ruch-na-granicy-z-krolewcem-zmobilizowalismy-odpowiednie-sily-i-srodki/",
+      "at": "2026-11-03T21:47:06.040Z"
+    },
+    "https://kyivindependent.com/russia-unleashes-biggest-mass-attack-on-ukraines-energy-this-year-2": {
+      "snapshot": "https://web.archive.org/web/20261103111834/https://kyivindependent.com/russia-unleashes-biggest-mass-attack-on-ukraines-energy-this-year-2/",
+      "at": "2026-11-03T21:47:27.709Z"
+    },
+    "https://themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162": {
+      "snapshot": "https://web.archive.org/web/20261103103157/https://www.themoscowtimes.com/2026/11/03/ukrainian-drones-hit-yaroslavl-oil-refinery-trigger-power-outages-in-crimea-a94162",
+      "at": "2026-11-03T21:50:09.292Z"
+    },
+    "https://meduza.io/en/news/2026/11/03/ukrainian-drone-strike-sparks-major-fire-at-one-of-russia-s-largest-oil-refineries": {
+      "snapshot": "https://web.archive.org/web/20261103152121/https://meduza.io/en/news/2026/11/03/ukrainian-drone-strike-sparks-major-fire-at-one-of-russia-s-largest-oil-refineries",
+      "at": "2026-11-03T21:50:30.898Z"
+    },
+    "https://digi24.ro/stiri/actualitate/atacurile-din-marea-neagra-devin-o-provocare-pentru-nato-si-lasa-romania-si-bulgaria-expuse-este-vorba-despre-a-testa-liniile-rosii-4019287": {
+      "snapshot": "https://web.archive.org/web/20261103152020/https://www.digi24.ro/stiri/actualitate/atacurile-din-marea-neagra-devin-o-provocare-pentru-nato-si-lasa-romania-si-bulgaria-expuse-este-vorba-despre-a-testa-liniile-rosii-4019287",
+      "at": "2026-11-03T21:50:52.635Z"
+    }
+  }
 }

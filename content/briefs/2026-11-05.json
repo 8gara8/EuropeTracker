@@ -1,0 +1,802 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "window": {
+    "start": "2026-11-04T05:30:00+08:00",
+    "end": "2026-11-05T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-05T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Drone crosses Moldova during 310-drone Russian raid as Abu Dhabi talks are set; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. No new incident met our logging threshold in the window. During a Russian raid of 310 drones on Ukraine, Moldova's defence ministry reported a drone crossing its north-east for two minutes. We have not yet opened the ministry's statement or seen the drone identified. US, Ukrainian and Russian delegations are due in Abu Dhabi on 10 November. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s20",
+    "s2",
+    "s4"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on three logged Russian drone strikes on merchant ships off Romania and Bulgaria in October. No new incident was logged today. Rung 5 needs deliberate, sustained Russian action against a NATO or EU state, and nothing in the window points to it."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "The base rate is eight incidents in 30 days against a baseline of 13 a month, with no serious incident in 12 months. The unlogged Moldovan crossing keeps the tempo but does not change it. Held.",
+        "source_ids": [
+          "s2"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "The base rate is one incident in 30 days against 1.3 a month, and two serious incidents in 12 months. Held above base for Poland's live Kaliningrad sabotage warning (2–8 November). No new incident.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "There were 12 serious incidents in 12 months and three in 30 days. Russia's defence ministry again claims strikes on cargo ships serving Ukraine, which confirms intent. Held.",
+        "source_ids": [
+          "s7"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a baseline of 0.7 a month, and none serious in 12 months. The suspected Russian attack on the Kyiv Independent was inside Ukraine. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incident in 30 days and no Russian border crossing since 2022. Nothing new in posture toward the Baltics or Finland. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a baseline of 0.3 a month. No change in readiness or deployments to Belarus or Kaliningrad was reported. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a baseline of 0.3 a month. No NATO or EU decision was blocked in the window. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Held one above the floor of 1. Police remain on readiness at the Kaliningrad border from 2 to 8 November over an allied sabotage warning, and Russian strike routes pass near the border.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Held one above the floor of 1 for persistent GPS interference over the Baltic (rung-1 activity, ind-gnss-baltic).",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Held one above the floor of 1 for persistent GPS interference over the Gulf of Finland and the Baltic (rung-1 activity, ind-gnss-baltic).",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Drone crosses north-east Moldova for two minutes during Russian raid",
+      "summary": "Digi24 and Charter'97 reported a statement from Moldova's defence ministry. It said a drone entered from near Zahnitkiv in Ukraine's Odesa oblast at 04:23 on 4 November, flew toward Camenca, and left toward Vinnytsia at 04:25. The ministry did not identify the drone's type. It recorded 19 airspace violations in October. We have not logged the crossing yet.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia launches 310 drones at Ukraine and claims a strike on a cargo ship in Odesa port",
+      "summary": "Ukraine's General Staff said Russia launched 310 strike and decoy drones overnight into 4 November, 81 of them jet-powered. It said 272 were downed or suppressed, with hits at 19 locations. Russia's defence ministry said it hit a dry-cargo ship in Odesa port that afternoon. We found no Romanian defence ministry report of an incursion.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed the ship was delivering military equipment and dual-use goods to Ukraine, and said drone strikes on vessels carrying military cargo for Ukraine's forces continue.",
+      "source_ids": [
+        "s1",
+        "s20",
+        "s7"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "US, Ukraine and Russia set technical talks in Abu Dhabi for 10 November",
+      "summary": "Zelensky said he spoke for an hour and a half with Steve Witkoff and Jared Kushner and that a trilateral format would meet 'in less than a week' (translated). They discussed air-defence munitions, a drone deal and security guarantees. The Kyiv Independent reported technical talks set for 10 November in Abu Dhabi. On 4 November the European Commission hosted US, Ukrainian, NATO and European officials in Brussels.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS reported Peskov saying Kirill Dmitriev would represent Russia at a 5 November meeting with Melania Trump, and Putin saying Russia 'never threatened anyone' (translated).",
+      "source_ids": [
+        "s6",
+        "s4",
+        "s5",
+        "s8"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Ukrainian intelligence says Russia can build more than 200 missiles a month",
+      "summary": "The Kyiv Independent reported HUR's estimate that Russia can produce more than 200 ballistic and cruise missiles a month, up to 110 of them ballistic. HUR also said Russia held up to 700 ballistic missiles and several thousand cruise missiles in October. It did not say how it obtained the figures. Zelensky said Russia fired 17 ballistic missiles on 3 November.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s12"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Democrats win US midterms as European allies await Trump's foreign-policy choices",
+      "summary": "An AFP analysis carried by Digi24 said Europe was relieved by the Republicans' defeat, but the implications for NATO and the EU remain unclear. Estonian experts told ERR that Trump may pursue an even more unpredictable foreign policy. Poland's ruling coalition welcomed the result. US Under Secretary Elbridge Colby met Romania's foreign minister, who promised a bigger contribution to 'NATO 3.0'.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s14",
+        "s15",
+        "s16",
+        "s19"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Ukrainian drones set an Ozon logistics hub in Adygea on fire",
+      "summary": "Ozon said a Ukrainian drone attack overnight into 4 November hit its logistics centre in Adygeysk, one of its main hubs in southern Russia. The company said it evacuated workers and no one was hurt. Meduza and The Moscow Times reported the fire. We grade it claimed (level 1), because we have not opened a Russian official source.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0051"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "According to The Moscow Times, Adygea's head Marat Kumpilov confirmed the attack and said drone debris damaged a residential gas pipeline in another village.",
+      "source_ids": [
+        "s9",
+        "s10"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukrainian drones hit an Ozon logistics hub in Adygeysk, which we grade claimed. Russia's defence ministry said it downed 46 Ukrainian drones in the daytime of 4 November over regions including Moscow, Samara, Saratov, Perm and Tyumen. That points to continuing long-range attacks, but we found no confirmed new refinery hit in the window.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s9",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 310 drones overnight into 4 November, 81 of them jet-powered, according to Ukraine's General Staff, which said 272 were stopped. HUR estimates Russian output at more than 200 missiles a month. Jet drones were again tracked toward Kyiv early on 5 November.",
+      "development_ids": [
+        "d2",
+        "d4"
+      ],
+      "source_ids": [
+        "s1",
+        "s20",
+        "s12"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Trilateral technical talks are set for 10 November in Abu Dhabi, after Brussels coordination on 4 November and Zelensky's call with Witkoff and Kushner. Moscow still demands Donbas and has rejected a full ceasefire, according to the Kyiv Independent.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s4",
+        "s5",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Media reports cite Moldova's defence ministry on a two-minute, unidentified drone crossing on 4 November, after 19 violations in October. Romania's presidential adviser Vlad Ionescu said incursions 'must not be treated as normal' (translated) and noted that President Dan has asked for a NATO meeting on the Black Sea.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s2",
+        "s3",
+        "s13"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's defence ministry claimed a drone strike on a dry-cargo ship in Odesa port and said such strikes continue. The ship was not in European waters, so we log nothing. Digi24, citing a Reuters chronology, counted at least eight ships hit off Romania and Bulgaria between 5 and 28 October.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s7",
+        "s13"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Democrats won both houses in the US midterms. European commentators expect continued uncertainty because foreign policy and force posture stay with the President. Colby's talks in Bucharest focused on Romania's larger NATO contribution. Nothing announced changes US forces in Europe.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s14",
+        "s15",
+        "s16",
+        "s19"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0051",
+      "date": "2026-11-03",
+      "target_name": "Ozon logistics centre, Adygeysk",
+      "target_type": "other",
+      "region": "Republic of Adygea",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set fire to Ozon's logistics centre in Adygeysk, one of its main southern hubs, overnight into 4 November. Ozon said it evacuated workers and no one was hurt. The Moscow Times reported that Adygea's head confirmed the attack.",
+      "sources": [
+        {
+          "title": "Ukrainian Drone Assault Sparks Fire at Ozon Warehouse in Adygea",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/04/ukrainian-drone-assault-sparks-fire-at-ozon-warehouse-in-adygea-a94173",
+          "published_at": "2026-11-04T17:25:00+08:00"
+        },
+        {
+          "title": "Ukraine strikes Ozon logistics center in southern Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/04/ukraine-strikes-ozon-logistics-center-in-southern-russia",
+          "published_at": "2026-11-04T16:14:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-05",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The Black Sea shipping campaign remains the most likely route to further deaths. Airspace remains the most frequent source of incidents: eight logged in 30 days, against a baseline of 13 a month. Nothing in the window moves any pathway by 5 points.\n\nThe Moldovan crossing fits the October pattern. The drone entered from Odesa oblast at 04:23 and left toward Vinnytsia two minutes later. It came during a raid in which Ukraine's General Staff counted 310 drones, 81 of them jet-powered. Moldova's defence ministry did not identify the drone's type, according to Digi24 and Charter'97. We have not logged it. Under our Latvia precedent, we log an unidentified object only once it is identified as a war drone or we have opened the host government's statement. Moldova's floor is already 3, so logging it would not change any score. We will log it at rung 3 once either condition is met. Moldova reported 19 violations in October, and one more on 4 November keeps the tempo near that record.\n\nRussia's defence ministry said it struck a dry-cargo ship in Odesa port that was carrying 'military equipment and dual-use goods' (translated). We read this as the same stated intent behind October's strikes off Romania and Bulgaria, so we hold maritime at likely (70%). HUR estimates Russia can build more than 200 ballistic and cruise missiles a month. That supports a sustained winter strike campaign and keeps strike routes near Moldova, Romania and Poland busy. It does not by itself raise 30-day airspace odds.\n\nThe Abu Dhabi talks on 10 November are the main scheduled driver. On the ceasefire paradox, a deal would lower near-term airspace and maritime risk but could free Russian forces facing NATO later. Moscow still demands Donbas, so we keep the general-ceasefire forecast at 15%. The Democrats' midterm win changes Congress, not the President's control of force posture. We see no direct effect on 30-day odds.\n\nThe source pack also carries a report that Germany detained a suspected organiser of September's Starlink arson in Poland. We could not confirm it from an official source and have not logged it.",
+    "change_my_mind": "Any of these would move the airspace or maritime odds by 5 points or more: Moldova or Romania identifying a Russian drone that crashed or caused damage, a strike on a ship inside Romanian or Bulgarian waters, or a Black Sea truce agreed at Abu Dhabi.",
+    "competing_explanations": [
+      {
+        "subject": "Unidentified drone crossing Moldova, 4 November",
+        "hypotheses": [
+          {
+            "label": "Russian strike drone on a route skirting Moldova",
+            "assessment": "It came during a 310-drone Russian raid and flew from Odesa oblast toward Vinnytsia, the path of October's Geran crossings. Moldova's October violations came overwhelmingly during Russian raids.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Ukrainian drone or decoy diverted by jamming",
+            "assessment": "Ukrainian interceptor or long-range drones have strayed before, as in Latvia on 3 November, but none has been reported over Moldova in this pattern. The ministry gave no type.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-016",
+      "question": "Will delegations of Russia, Ukraine and the United States hold trilateral talks in Abu Dhabi between 5 and 20 November 2026?",
+      "resolution_criteria": "Yes if at least two of the three governments, or credible wire reporting, confirm that Russian, Ukrainian and US delegations met in a trilateral format in Abu Dhabi between 5 and 20 November 2026.",
+      "resolves_by": "2026-11-20",
+      "horizon": "30d",
+      "pathway": null,
+      "probability": 60,
+      "base_rate": 50,
+      "base_rate_note": "Announced 2026 talks have often slipped. The Kremlin declined the round expected in October. Raised because Zelensky and the Kyiv Independent both give a date less than a week away."
+    },
+    {
+      "id": "F-2026-017",
+      "question": "Will Moldova's defence ministry report at least 10 airspace violations by drones in November 2026?",
+      "resolution_criteria": "Yes if Moldova's Ministry of Defence or National Army reports, in daily statements or a monthly summary, at least 10 unauthorised drone violations of Moldovan airspace dated 1–30 November 2026.",
+      "resolves_by": "2026-12-05",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 55,
+      "base_rate": 50,
+      "base_rate_note": "Moldova reported a record 19 violations in October, after fewer in earlier months. One was reported on 4 November. Russia's winter strikes on Odesa and the south continue."
+    }
+  ],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct link is interceptor demand. On 4 November Zelensky told Trump's envoys that air defence is Ukraine's top priority and that it needs Patriot interceptors. HUR estimates Russia can produce more than 200 ballistic and cruise missiles a month, up to 110 of them ballistic. Sustained Russian ballistic output keeps demand for PAC-3 interceptors high in Ukraine and on NATO's eastern flank through the winter. Those orders compete with Taiwan's Patriot deliveries from the same constrained production lines. We assess the effect as a continued backlog rather than a new priority decision, since no reallocation was announced. The Abu Dhabi talks are a second channel. Beijing would read a US-brokered deal that rewards Russian territorial gains as evidence that force wins concessions. A stalled process would keep US munitions flowing to Europe.",
+  "next_72h": [
+    {
+      "date": "2026-11-08",
+      "event": "Polish police readiness at the Kaliningrad border is due to end.",
+      "why": "Whether Poland extends it shows if the allied sabotage warning is still current."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 310,
+      "unit": "count",
+      "period": "night of 3–4 Nov",
+      "source_ids": [
+        "s1",
+        "s20"
+      ],
+      "note": "Includes 81 jet-powered Shaheds, Gerbera and Parodiya decoys."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 272,
+      "unit": "count",
+      "period": "night of 3–4 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Downed or suppressed by 08:00; more than 20 still airborne."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": null,
+      "unit": "count",
+      "period": "night of 3–4 Nov",
+      "source_ids": [],
+      "note": "The General Staff morning report did not mention missiles."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "night of 3–4 Nov",
+      "source_ids": [
+        "s9"
+      ],
+      "note": "Ozon hub in Adygeysk."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 272 ВОРОЖІ БПЛА (272 enemy drones downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42803",
+      "language": "uk",
+      "published_at": "2026-11-04T14:36:00+08:00",
+      "accessed_at": "2026-11-05T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "O nouă dronă a intrat în Republica Moldova. Record de incursiuni într-o singură lună",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/o-noua-drona-a-intrat-in-republica-moldova-record-de-incursiuni-intr-o-singura-luna-4021045",
+      "language": "ro",
+      "published_at": "2026-11-04T16:40:00+08:00",
+      "accessed_at": "2026-11-05T05:45:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "A Drone Violated Moldova's Airspace",
+      "outlet": "Charter'97",
+      "category": "ru_by_independent",
+      "url": "https://charter97.org/en/news/2026/11/4/704277",
+      "language": "en",
+      "published_at": "2026-11-04",
+      "accessed_at": "2026-11-05T06:05:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Ukraine, partners coordinate peace efforts ahead of Abu Dhabi talks with Russia",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-partners-coordinate-peace-efforts-ahead-of-abu-dhabi-talks-with-russia-2/",
+      "language": "en",
+      "published_at": "2026-11-05T04:32:00+08:00",
+      "accessed_at": "2026-11-05T05:50:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "'Security guarantees must be ironclad' — Zelensky speaks to Trump's envoys ahead of trilateral peace talks",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/security-guarantees-must-be-ironclad-zelensky-speaks-to-trumps-envoys-ahead-of-trilateral-peace-talks/",
+      "language": "en",
+      "published_at": "2026-11-05T04:24:00+08:00",
+      "accessed_at": "2026-11-05T06:05:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Півтори години зараз говорили дуже детально зі Стівом Віткоффом та Джаредом Кушнером (We spoke in detail for an hour and a half with Steve Witkoff and Jared Kushner, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21667",
+      "language": "uk",
+      "published_at": "2026-11-05T03:48:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "ВС РФ продолжают нанесение ударов беспилотными летательными аппаратами по морским судам (Russian forces continue drone strikes on ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68760",
+      "language": "ru",
+      "published_at": "2026-11-04T22:33:00+08:00",
+      "accessed_at": "2026-11-05T06:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Главные новости к этому часу (Main news at this hour, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/403985",
+      "language": "ru",
+      "published_at": "2026-11-05T01:00:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Ukrainian Drone Assault Sparks Fire at Ozon Warehouse in Adygea",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/04/ukrainian-drone-assault-sparks-fire-at-ozon-warehouse-in-adygea-a94173",
+      "language": "en",
+      "published_at": "2026-11-04T17:25:00+08:00",
+      "accessed_at": "2026-11-05T05:45:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukraine strikes Ozon logistics center in southern Russia",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/04/ukraine-strikes-ozon-logistics-center-in-southern-russia",
+      "language": "en",
+      "published_at": "2026-11-04T16:14:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "В течение дня дежурными силами ПВО уничтожены 46 украинских беспилотных летательных аппаратов (Air defences destroyed 46 Ukrainian drones during the day, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68763",
+      "language": "ru",
+      "published_at": "2026-11-05T01:08:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Russia has capacity to produce over 200 ballistic, cruise missiles per month, Ukraine's military intelligence says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russia-has-capacity-to-produce-over-200-ballistic-cruise-missiles-per-month-ukraines-military-intelligence-says/",
+      "language": "en",
+      "published_at": "2026-11-05T03:51:00+08:00",
+      "accessed_at": "2026-11-05T06:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Atacurile hibride ale Rusiei se intensifică. Ce măsuri ia România",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/atacurile-hibride-ale-rusiei-se-intensifica-ce-masuri-ia-romania-4021619",
+      "language": "ro",
+      "published_at": "2026-11-04T21:14:00+08:00",
+      "accessed_at": "2026-11-05T05:50:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "După înfrângerea republicanilor, UE și NATO așteaptă decizii cruciale ale administrației Trump",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/dupa-infrangerea-republicanilor-ue-si-nato-asteapta-decizii-cruciale-ale-administratiei-trump-4022157",
+      "language": "ro",
+      "published_at": "2026-11-05T02:36:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Experts: Foreign policy uncertainty to intensify after Democrats win US midterms",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610185915/experts-foreign-policy-uncertainty-to-intensify-after-democrats-win-us-midterms",
+      "language": "en",
+      "published_at": "2026-11-04T19:19:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "“Democracy won in America”: Polish leaders react to US midterm election results",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/04/democracy-won-in-america-polish-leaders-react-to-us-midterm-election-results/",
+      "language": "en",
+      "published_at": "2026-11-04T23:05:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "More details released about recent drone incidents in Latvia",
+      "outlet": "LSM (English)",
+      "category": "eu_regional_press",
+      "url": "https://eng.lsm.lv/article/society/defence/03.11.2026-more-details-released-about-recent-drone-incidents-in-latvia.a670418/",
+      "language": "en",
+      "published_at": "2026-11-03T23:48:00+08:00",
+      "accessed_at": "2026-11-05T06:05:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Ukrainian news outlet Kyiv Independent hit by suspected Russian cyberattack",
+      "outlet": "The Record",
+      "category": "intl_press",
+      "url": "https://therecord.media/ukraine-kyiv-independent-cyberattack",
+      "language": "en",
+      "published_at": "2026-11-05T00:15:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Ministrul de Externe a discutat cu Elbridge Colby: „România îşi intensifică contribuţia pentru NATO 3.0”",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/politica/ministrul-de-externe-a-discutat-cu-elbridge-colby-romania-isi-intensifica-contributia-pentru-nato-3-0-4022103",
+      "language": "ro",
+      "published_at": "2026-11-05T01:54:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Atac masiv al Rusiei asupra Ucrainei: 310 drone lansate într-o singură noapte",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/atac-masiv-al-rusiei-asupra-ucrainei-310-drone-lansate-intr-o-singura-noapte-exploziile-au-provocat-incendii-si-pene-de-curent-4020911",
+      "language": "ro",
+      "published_at": "2026-11-04T15:33:00+08:00",
+      "accessed_at": "2026-11-05T05:40:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-05T05:43:41+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1802,
+    "source_count": 20,
+    "source_category_count": 7
+  }
+}
