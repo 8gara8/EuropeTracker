@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "window": {
+    "start": "2026-11-05T05:30:00+08:00",
+    "end": "2026-11-06T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-06T06:10:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Drone fragments found in Romania's Neamț county as Finland convicts Fitburg crew of sabotage; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. No new incident met our logging threshold in the window. In Boghicea, Neamț county, Romanian police and an SRI bomb-disposal team recovered drone fragments and scheduled a controlled detonation. No authority has yet said what the drone was or where it came from. Russia's defence ministry claimed strikes on two dry-cargo ships south-west of Odesa. A Finnish court convicted the Fitburg's Russian captain of aggravated sabotage over damage to Baltic cables. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s5",
+    "s2",
+    "s4",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on drone strikes on merchant ships in Bulgarian and Romanian waters on 13, 15 and 23 October. Nothing in the window points to deliberate, sustained Russian action against a NATO state. Assumption A1 holds, so rung 5 stays remote."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Eight incidents in 30 days against a baseline of 13 a month, and no serious incident in 12 months. The unidentified Neamț debris and the Tulcea alert fit the existing pattern. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against a baseline of 1.3 a month, and two serious incidents in 12 months. Held above the base rate while Poland's warning about the Kaliningrad border stands, to 8 November.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Three incidents in 30 days and 12 serious ones in 12 months. Russia again claims strikes on ships off Odesa. The Fitburg verdict does not change near-term odds. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7 a month, and none serious in 12 months. A Russian-linked phone espionage campaign disrupted no service. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and a baseline of zero. No new build-up or border violation reported. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. Zelensky's warning about strikes on the equipment nuclear plants depend on does not meet the threshold. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. Putin's award to Transnistria's leader and Moldova's travel ban raise tension but block no decision. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Police remain on readiness at the Kaliningrad border to 8 November after an allied sabotage warning. Poland also detained six people over spying and supplying military parts to Russia.",
+        "source_ids": [
+          "s9"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Baltic GPS interference is persistent (ind-gnss-baltic), and Estonian experts warn that Russia is recruiting local youths online for arson.",
+        "source_ids": [
+          "s18"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. GPS interference over the Gulf of Finland persists (ind-gnss-baltic). A Helsinki court convicted the Fitburg crew of sabotaging cables in the Gulf of Finland.",
+        "source_ids": [
+          "s8"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Unidentified drone fragments with munitions found in Boghicea, Neamț county",
+      "summary": "Neamț county police said a resident reported drone fragments scattered over 200–300 metres in Boghicea. Firefighters and an SRI bomb-disposal team attended. An RO-Alert announced the 'destruction of munitions' (translated) by controlled detonation in Slobozia forest. No authority has identified the drone's type or origin. Separately, Tulcea residents received a drone-incursion alert on 5 November; we found no confirmed incursion.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Finnish court jails Fitburg's Russian captain for aggravated sabotage of Baltic cables",
+      "summary": "Helsinki District Court found the Fitburg's Russian captain and an Azerbaijani crew member guilty of aggravated sabotage. It said they deliberately dragged the ship's anchor about 130 km along the seabed, damaging two telecom cables in the Gulf of Finland. The captain received 3 years 6 months and the crew member 2 years 10 months. Both deny wrongdoing; the captain plans to appeal.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s8"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Russia claims drone strikes on two dry-cargo ships south-west of Odesa",
+      "summary": "Russia's defence ministry said its drones hit a dry-cargo ship 52 km south-west of Odesa overnight. It said they hit a second, 107 km south-west of Odesa, in the afternoon of 5 November. It claimed both carried military cargo for Ukraine. We have not found Ukrainian or independent confirmation, or the ships' names and flags. Both positions lie outside Romanian territorial waters.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The defence ministry said it struck vessels 'used to deliver military cargo to the Armed Forces of Ukraine', including one carrying 'military equipment and dual-use goods' (translated); TASS repeated this.",
+      "source_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Poland charges six over a Russian-linked network smuggling military components via Kaliningrad",
+      "summary": "Poland's ABW and the National Prosecutor's Office said five Poles and a Russian woman were detained on 21 October and 2 November. They are accused of exporting military components to Russia through Kaliningrad from 2023 to 2025. Four face espionage charges. No sabotage is alleged, so we do not log it.",
+      "category": "sabotage",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s9"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Moldova imposes a five-year travel ban on Transnistria's leader after Putin's award",
+      "summary": "Putin awarded Transnistrian leader Vadim Krasnoselsky the Order of Honour. Moldova's Bureau for Reintegration Policies called this a Russian 'provocation' aimed at obstructing Moldova's European integration (translated). It said Krasnoselsky would face a five-year ban on leaving the country when he returns. Krasnoselsky called Transnistria 'indisputably part of the Russian world'.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Putin credited Krasnoselsky with 'strengthening ties' with Russia despite 'external pressure', according to The Moscow Times.",
+      "source_ids": [
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Ukrainian drones set off fires in Ryazan; refinery hit claimed",
+      "summary": "Ryazan's governor Pavel Malkov said falling debris caused fires at industrial facilities overnight into 5 November, Meduza reported. He did not name them. Ukrainian monitoring channels said the Ryazan refinery was hit, and Astra reported a fire at a Wildberries warehouse. One person was injured. Russia's defence ministry claimed 496 Ukrainian drones downed overnight.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0052"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said air defences destroyed 496 Ukrainian drones over 15-plus regions overnight.",
+      "source_ids": [
+        "s12",
+        "s16"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "NATO launches a joint counter-drone procurement platform; Lithuania offers to host more US troops",
+      "summary": "NATO announced a joint platform for its 32 members to buy counter-drone systems faster, citing the rise in drone incidents in Europe. Lithuania's defence minister, Robertas Kaunas, said Lithuania was ready to host more US troops and provide the infrastructure, after meeting the US ambassador to NATO.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s13",
+        "s17"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Ukraine's General Staff counted 167 clashes, 161 guided bombs and 4,873 kamikaze drones on 5 November. Kherson's city military administration said no district is safe from Russian drones. No sources we opened reported significant territorial change.",
+      "development_ids": [],
+      "source_ids": [
+        "s21",
+        "s20"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukrainian drones caused fires at industrial sites in Ryazan overnight into 5 November, which the governor attributed to falling debris. A refinery hit is claimed but unconfirmed. Logged at verification 1. Russia claimed 496 drones downed that night.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s12",
+        "s16"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Overnight into 5 November, Russia launched 128 Shahed-type drones, 65 of them jet-powered, and two Kh-35 missiles. Ukraine's General Staff said 105 drones were downed or suppressed and recorded impacts at 18 sites. Zelensky said every Ukrainian power plant has been damaged, including equipment nuclear plants depend on.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s1",
+        "s15",
+        "s3"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Zelensky said EU, NATO and US representatives are at a Brussels meeting on security guarantees, and asked for clear written answers on who acts if Russia attacks again. Russian diesel tankers bound for the US changed course; TASS reported Trump called the US law barring Russian fuel 'bad' (translated).",
+      "development_ids": [],
+      "source_ids": [
+        "s14",
+        "s22",
+        "s23"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Unidentified drone fragments, treated as munitions, were found in Boghicea, Neamț county, and scheduled for controlled detonation. Not logged until identified or until we open the host statement. North-east Tulcea received a drone-incursion RO-Alert, with no confirmed entry. Our searches found no new incidents in Poland, the Baltic states, Finland or Moldova.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Poland charged six people over a Russian-linked network that smuggled military components via Kaliningrad, four of them with espionage. No sabotage is alleged. Estonian experts told ERR that Russia increasingly recruits petty criminals and youths online for arson.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s9",
+        "s18"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "A Finnish court convicted the Fitburg's captain and a crew member of aggravated sabotage over Gulf of Finland cable damage. Russia claimed strikes on two dry-cargo ships 52 km and 107 km south-west of Odesa, outside Romanian waters.",
+      "development_ids": [
+        "d2",
+        "d3"
+      ],
+      "source_ids": [
+        "s8",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Putin decorated Transnistria's leader, Krasnoselsky. Chișinău called it a provocation against Moldova's EU integration and imposed a five-year travel ban on him. Transnistria's unrecognised presidential election is due next month.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "NATO launched a joint procurement platform for counter-drone systems. Lithuania said it is ready to host additional US troops. Neither changes 30-day odds, but both thicken air defence on the eastern flank.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s13",
+        "s17"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0052",
+      "date": "2026-11-04",
+      "target_name": "Ryazan oil refinery and industrial sites",
+      "target_type": "refinery",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked Ryazan overnight into 5 November. Governor Malkov said falling debris caused fires at unnamed industrial facilities, Meduza reported. Ukrainian channels claimed the refinery was hit. Astra reported a fire at a Wildberries warehouse. One person was injured.",
+      "sources": [
+        {
+          "title": "Ukrainian drones strike Russia's Ryazan region, with fires reported at oil refinery and Wildberries warehouse",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/05/ukrainian-drones-strike-russia-s-ryazan-region-with-fires-reported-at-oil-refinery-and-wildberries-warehouse",
+          "published_at": "2026-11-05T20:56:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-06",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The Black Sea shipping campaign remains the most likely route to further deaths. Airspace remains the most frequent source of incidents: eight logged in 30 days, against a baseline of 13 a month. Nothing in the window moves any pathway by 5 points.\n\nThe Neamț find is the day's most important item, but we have not logged it. Police said a resident reported fragments spread over 200–300 metres in Boghicea. The RO-Alert announced the 'destruction of munitions' (translated), which suggests a warhead. No authority has stated the type or origin, and we have not opened a defence ministry statement. Under our Latvia and Moldova precedent, we log an object only once it is identified as a war drone or we have opened the host government's statement. We will log it at rung 3 when either happens. Romania's floor is already 4, so no score would change. The debris could come from the drone that vanished from radar between Vaslui and Bacău on 31 October (INC-2026-0110). That is plausible but unproven. If confirmed, we would update that incident rather than open a new one.\n\nThe Helsinki verdict matters for deterrence more than for near-term risk. The court found that the anchor-dragging was intentional. In what we read, it did not find that a state directed it, so we do not treat it as establishing Russian state responsibility. A sabotage conviction makes future boardings in the Baltic easier to justify. We hold maritime at likely (70%) because of the Black Sea. Russia's defence ministry again claimed hits on ships 'carrying military cargo' (translated), one of them 107 km south-west of Odesa, nearer Romanian waters than most. No second source confirms the ship or its position.\n\nPoland's espionage arrests and Moldova's travel ban on Transnistria's leader are pressure signals, not spillover incidents. Zelensky says EU, NATO and US officials are meeting in Brussels on security guarantees before the Abu Dhabi round. On the ceasefire paradox, a deal would lower near-term airspace and maritime risk but could raise later risk as Russian forces regenerate near NATO.",
+    "change_my_mind": "We would raise airspace odds if Romania identified the Neamț debris as an armed Geran launched this week, or if a drone hit a populated area. A strike inside Romanian or Bulgarian waters would push maritime higher. A ceasefire agreed in Abu Dhabi would lower both.",
+    "competing_explanations": [
+      {
+        "subject": "Drone fragments with munitions found in Boghicea, Neamț, 5 November",
+        "hypotheses": [
+          {
+            "label": "Debris of the Russian drone lost on 31 October",
+            "assessment": "On 31 October, one of two drones that crossed into north-east Romania vanished from radar between Vaslui and Bacău, close to eastern Neamț. A late find in farmland is common.",
+            "estimate": {
+              "probability": 40,
+              "term": "realistic_possibility",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "A Russian drone from another recent raid, undetected",
+            "assessment": "Russian raids crossed near Moldova and Romania several times this autumn. A low-flying Geran could have crashed without a reported radar track.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "A Ukrainian drone diverted by electronic warfare",
+            "assessment": "Latvia's August precedent shows diverted Ukrainian drones reaching NATO territory. Neamț lies off usual Ukrainian routes, so this is less likely.",
+            "estimate": {
+              "probability": 15,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-018",
+      "question": "Will Romanian authorities state by 20 November 2026 that the drone fragments found in Boghicea, Neamț county, on 5 November came from a Russian drone?",
+      "resolution_criteria": "Yes if Romania's Ministry of National Defence, SRI, police or prosecutors publicly say between 6 and 20 November 2026 that the Boghicea fragments are of Russian origin or from a Geran-type drone.",
+      "resolves_by": "2026-11-20",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 60,
+      "base_rate": 65,
+      "base_rate_note": "MApN has usually identified Russian drone debris in Tulcea and Galați within days. Lowered because Neamț is far from usual routes, no ministry statement has appeared yet, and some finds stay unidentified."
+    }
+  ],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct effect runs through counter-drone demand. NATO's new joint procurement platform for counter-drone systems, and the drone debris in Neamț, add European competition for short-range air defence that Taiwan also wants. The effect is likely to be small and gradual, not a re-prioritisation. Second, Beijing will note the sanctions signal: TASS reported that Trump called the US law barring Russian fuel 'bad' (translated), and US-bound Russian diesel tankers diverted. Wavering enforcement would weaken the precedent sanctions set for a Taiwan contingency. Third, Finland's conviction of the Fitburg crew for deliberately cutting cables offers Taiwan a legal model. Taiwan faces similar anchor-dragging incidents around its own undersea cables.",
+  "next_72h": [
+    {
+      "date": "2026-11-07",
+      "event": "Possible Romanian identification of the drone fragments found in Boghicea, Neamț county.",
+      "why": "Identification as a Russian war drone would add a rung-3 airspace incident or update INC-2026-0110."
+    },
+    {
+      "date": "2026-11-08",
+      "event": "Polish police full-readiness order at the Kaliningrad border is due to end.",
+      "why": "An extension would signal that the allied sabotage warning is still current; it bears on F-2026-014."
+    },
+    {
+      "date": "2026-11-09",
+      "event": "Delegations are expected to travel for the 10 November US–Ukraine–Russia talks in Abu Dhabi.",
+      "why": "A postponement or confirmation bears on F-2026-016 and the ceasefire driver."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 128,
+      "unit": "count",
+      "period": "night of 4–5 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shahed-type only, 65 jet-powered; Gerbera and decoys not counted."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 105,
+      "unit": "count",
+      "period": "night of 4–5 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shahed-type downed or suppressed, per General Staff."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 2,
+      "unit": "count",
+      "period": "night of 4–5 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Kh-35 from the Black Sea."
+    },
+    {
+      "id": "ru_missiles_intercepted",
+      "value": null,
+      "unit": "count",
+      "period": "night of 4–5 Nov",
+      "source_ids": [],
+      "note": "Not stated by the General Staff."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "5 Nov",
+      "source_ids": [
+        "s12"
+      ],
+      "note": "Ryazan; logged at verification 1."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 105 ВОРОЖИХ ЦІЛЕЙ (105 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42817",
+      "language": "uk",
+      "published_at": "2026-11-05T15:02:00+08:00",
+      "accessed_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "ВС РФ продолжают нанесение ударов по морским судам (Russian forces continue strikes on sea vessels, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68782",
+      "language": "ru",
+      "published_at": "2026-11-05T23:10:00+08:00",
+      "accessed_at": "2026-11-06T05:50:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "В течение ночи ВС РФ продолжили нанесение ударов (Overnight strikes on energy, logistics and vessels, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68771",
+      "language": "ru",
+      "published_at": "2026-11-05T12:56:00+08:00",
+      "accessed_at": "2026-11-06T05:50:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Главные новости к этому часу (Top news at this hour, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404159",
+      "language": "ru",
+      "published_at": "2026-11-06T02:00:00+08:00",
+      "accessed_at": "2026-11-06T05:45:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "O dronă s-a prăbușit într-o comună din Neamț. Fragmentele găsite vor fi detonate controlat de autorități",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/o-drona-s-a-prabusit-intr-o-comuna-din-neamt-in-zona-intervin-politisti-pompieri-si-specialisti-sri-4023487",
+      "language": "ro",
+      "published_at": "2026-11-05",
+      "accessed_at": "2026-11-06T05:55:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Polițiștii și pirotehniștii SRI verifică fragmente de dronă găsite în comuna Boghicea, județul Neamț",
+      "outlet": "Informat.ro",
+      "category": "eu_regional_press",
+      "url": "https://informat.ro/actualitate/politistii-pirotehnistii-sri-verifica-drona-boghicea-146988",
+      "language": "ro",
+      "published_at": null,
+      "accessed_at": "2026-11-06T05:55:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Mesaj Ro-Alert în nord-estul judeţului Tulcea: posibilă incursiune a unor drone",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/mesaj-ro-alert-in-nord-estul-judetului-tulcea-posibila-incursiune-a-unor-drone-4022699",
+      "language": "ro",
+      "published_at": "2026-11-05T16:19:00+08:00",
+      "accessed_at": "2026-11-06T05:45:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Finland Jails Russian Captain and Azerbaijani Crew Member Over Baltic Sea Cable Damage",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/05/finland-jails-russian-captain-and-azerbaijani-crew-member-over-baltic-sea-cable-damage-a94185",
+      "language": "en",
+      "published_at": "2026-11-05T21:05:00+08:00",
+      "accessed_at": "2026-11-06T05:50:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Six detained in Poland on suspicion of exporting military components to Russia",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/05/six-detained-in-poland-on-suspicion-of-exporting-military-components-to-russia/",
+      "language": "en",
+      "published_at": "2026-11-05T19:36:00+08:00",
+      "accessed_at": "2026-11-06T05:58:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Moldova Hits Kremlin-Backed Transnistria Leader With 5-Year Travel Ban After Putin Award",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/05/moldova-hits-kremlin-backed-transnistria-leader-with-5-year-travel-ban-after-putin-award-a94183",
+      "language": "en",
+      "published_at": "2026-11-05T19:43:00+08:00",
+      "accessed_at": "2026-11-06T05:58:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Șeful separatiștilor din Transnistria a fost decorat de Putin. Repercusiunile anunțate de către Chișinău",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/seful-separatistilor-din-transnistria-a-fost-decorat-de-putin-repercusiunile-anuntate-de-catre-chisinau-4022697",
+      "language": "ro",
+      "published_at": "2026-11-05T16:19:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Ukrainian drones strike Russia's Ryazan region, with fires reported at oil refinery and Wildberries warehouse",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/05/ukrainian-drones-strike-russia-s-ryazan-region-with-fires-reported-at-oil-refinery-and-wildberries-warehouse",
+      "language": "en",
+      "published_at": "2026-11-05T20:56:00+08:00",
+      "accessed_at": "2026-11-06T05:58:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "NATO a lansat o platformă de tip e-commerce, unde țările membre pot cumpăra sisteme antidronă",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/nato-a-lansat-o-platforma-de-tip-e-commerce-unde-tarile-membre-pot-cumpara-sisteme-antidrona-cat-costa-echipamentele-4023833",
+      "language": "ro",
+      "published_at": "2026-11-06T02:41:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Важливо, що на зустрічі в Брюсселі є всі представники щодо гарантій безпеки (All parties to security guarantees are at the Brussels meeting, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21683",
+      "language": "uk",
+      "published_at": "2026-11-06T03:47:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Росіяни використовують «шахеди» та ракети, щоб бити навіть по енергетичному обладнанню АЕС (Russians strike equipment nuclear plants rely on, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21676",
+      "language": "uk",
+      "published_at": "2026-11-06T01:51:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Дежурными силами ПВО перехвачены и уничтожены 496 украинских БПЛА (Air defences intercepted 496 Ukrainian drones, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68773",
+      "language": "ru",
+      "published_at": "2026-11-05T13:36:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Lithuania ready to host additional US troops, defence minister says",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3105072/lithuania-ready-to-host-additional-us-troops-defence-minister-says",
+      "language": "en",
+      "published_at": "2026-11-05T15:19:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Estonian youths offer arson and property damage services online",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610186890/estonian-youths-offer-arson-and-property-damage-services-online",
+      "language": "en",
+      "published_at": "2026-11-05T15:42:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Russian state-linked hackers target iPhone, Android devices in zero-click espionage campaign",
+      "outlet": "The Record",
+      "category": "intl_press",
+      "url": "https://therecord.media/russia-hackers-smartphone-cyberattacks",
+      "language": "en",
+      "published_at": "2026-11-06T01:00:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "У Херсоні немає безпечних районів, куди б не долітали російські безпілотники (No district of Kherson is safe from Russian drones, translated)",
+      "outlet": "Suspilne News (Telegram)",
+      "category": "ua_independent",
+      "url": "https://t.me/suspilnenews/78883",
+      "language": "uk",
+      "published_at": "2026-11-05T22:36:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Оперативна інформація станом на 22:00 05.11.2026 (Operational update as of 22:00 on 5 November, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42821",
+      "language": "uk",
+      "published_at": "2026-11-06T04:03:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Russian Diesel Tankers Bound for U.S. Change Course, Casting Doubt on Trump Deal",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/05/russian-diesel-tankers-bound-for-us-change-course-casting-doubt-on-trump-deal-a94182",
+      "language": "en",
+      "published_at": "2026-11-05T18:00:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Трамп назвал плохим американский закон, фактически запрещающий поставки топлива из РФ в США (Trump calls US law barring Russian fuel bad, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404174",
+      "language": "ru",
+      "published_at": "2026-11-06T05:28:00+08:00",
+      "accessed_at": "2026-11-06T05:40:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-06T05:42:48+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1955,
+    "source_count": 23,
+    "source_category_count": 7
+  }
+}

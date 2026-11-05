@@ -335,6 +335,25 @@
       "resolution_source": null,
       "brier": null,
       "brier_base": null
+    },
+    {
+      "id": "F-2026-018",
+      "question": "Will Romanian authorities state by 20 November 2026 that the drone fragments found in Boghicea, Neamț county, on 5 November came from a Russian drone?",
+      "resolution_criteria": "Yes if Romania's Ministry of National Defence, SRI, police or prosecutors publicly say between 6 and 20 November 2026 that the Boghicea fragments are of Russian origin or from a Geran-type drone.",
+      "resolves_by": "2026-11-20",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 60,
+      "base_rate": 65,
+      "base_rate_note": "MApN has usually identified Russian drone debris in Tulcea and Galați within days. Lowered because Neamț is far from usual routes, no ministry statement has appeared yet, and some finds stay unidentified.",
+      "opened": "2026-11-06",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
     }
   ]
 }

@@ -1601,6 +1601,36 @@
       "seed": false,
       "added": "2026-11-05",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0052",
+      "date": "2026-11-04",
+      "target_name": "Ryazan oil refinery and industrial sites",
+      "target_type": "refinery",
+      "region": "Ryazan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked Ryazan overnight into 5 November. Governor Malkov said falling debris caused fires at unnamed industrial facilities, Meduza reported. Ukrainian channels claimed the refinery was hit. Astra reported a fire at a Wildberries warehouse. One person was injured.",
+      "sources": [
+        {
+          "title": "Ukrainian drones strike Russia's Ryazan region, with fires reported at oil refinery and Wildberries warehouse",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/05/ukrainian-drones-strike-russia-s-ryazan-region-with-fires-reported-at-oil-refinery-and-wildberries-warehouse",
+          "published_at": "2026-11-05T20:56:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-06",
+      "updated": null
     }
   ]
 }
