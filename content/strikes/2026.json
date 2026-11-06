@@ -1631,6 +1631,43 @@
       "seed": false,
       "added": "2026-11-06",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0053",
+      "date": "2026-11-05",
+      "target_name": "Afipsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked Krasnodar Krai overnight into 6 November. The regional operational headquarters said debris started a fire at an enterprise in Afipsky; Astra identified it as the refinery (9.1m tonnes a year). No casualties reported.",
+      "sources": [
+        {
+          "title": "Ukraine attacks Afipsky oil refinery in southern Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/06/ukraine-attacks-afipsky-oil-refinery-in-southern-russia",
+          "published_at": "2026-11-06T17:30:00+08:00"
+        },
+        {
+          "title": "Ukraine and Russia Trade Volley of Strikes Against Each Other's Energy Infrastructure",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/06/ukraine-and-russia-trade-volley-of-strikes-against-each-others-energy-infrastructure-a94189",
+          "published_at": "2026-11-06T17:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-07",
+      "updated": null
     }
   ]
 }

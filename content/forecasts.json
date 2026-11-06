@@ -309,7 +309,13 @@
       "base_rate": 50,
       "base_rate_note": "Announced 2026 talks have often slipped. The Kremlin declined the round expected in October. Raised because Zelensky and the Kyiv Independent both give a date less than a week away.",
       "opened": "2026-11-05",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-07",
+          "probability": 65,
+          "note": "The Moscow Times reports a US delegation is due to mediate Russian–Ukrainian talks in Abu Dhabi on 10–11 November; Trump met Dmitriev and says a deal could come soon."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,

@@ -1,0 +1,658 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "window": {
+    "start": "2026-11-06T05:30:00+08:00",
+    "end": "2026-11-07T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-07T06:10:00+08:00",
+  "quiet_day": true,
+  "weekly": false,
+  "title": "Russia claims another ship strike off Odesa as Zelensky warns of a new mass raid; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. No new incident in Europe met our logging threshold, and searches covering all seven frontline states found none in the window. Russia's defence ministry claimed another drone strike on a dry-cargo ship south-west of Odesa. Ukrainian drones set the Afipsky refinery in Krasnodar Krai on fire. Zelensky said intelligence shows a new Russian strike on energy and Dnipro bridges is being prepared. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s5",
+    "s7",
+    "s1"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on October's deadly drone strikes on ships in Romanian and Bulgarian waters (INC-2026-0100, 0103, 0109). Nothing in the window suggests deliberate, sustained Russian action against a NATO or EU state, so rung-5 odds stay remote."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Eight incidents in 30 days against a baseline of 13 a month; no serious case in 12 months. No crossing reported in the window. A warned mass raid keeps the risk live but does not move it.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against a baseline of 1.3 a month; two serious in 12 months. No new incident or attribution in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Three incidents in 30 days against a baseline of 1.7; 12 serious in 12 months. Russia's defence ministry again claims a ship strike off Odesa, restating its intent; no change.",
+        "source_ids": [
+          "s5"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7 a month; none serious in 12 months. Nothing new in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No logged incidents in 90 days. Lithuania says its Kaliningrad border is calmer than Poland's and keeps troops there preventively; no change.",
+        "source_ids": [
+          "s11"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. No change in Russian nuclear readiness seen in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. No blocked NATO or EU decision in view.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above floor 1: Poland's Kaliningrad border readiness order runs to 8 November after a warned provocation; Lithuania's defence minister says activity is higher on the Polish side.",
+        "source_ids": [
+          "s11"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above floor 1 for persistent GPS interference over the Baltic (ind-gnss-baltic) and drone routes reaching neighbouring Latvia; no rung-2 incident in 30 days.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above floor 1 for persistent GPS interference over the Baltic and Finland (ind-gnss-baltic); no rung-2 incident in 30 days.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Zelensky warns of a new Russian strike on energy and Dnipro bridges as ballistic missiles head for Kyiv",
+      "summary": "Zelensky said intelligence shows Russia is preparing a strike on energy, bridges across the Dnipro and civilian infrastructure, and asked partners not to delay Patriot interceptors. Just before the window closed, Ukraine's Air Force reported at least six ballistic missiles heading for Kyiv. On the night of 5–6 November the General Staff counted 227 Russian drones, 196 downed or suppressed; outages hit seven regions.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said its strikes from 31 October to 6 November hit defence plants, logistics centres and energy and transport sites that it said Ukraine's armed forces used.",
+      "source_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s8",
+        "s15"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukrainian drones set the Afipsky oil refinery in Krasnodar Krai on fire",
+      "summary": "Krasnodar Krai's operational headquarters said drone debris started a fire at an unnamed enterprise in Afipsky. Astra identified it from eyewitness footage as the Afipsky refinery, about 3% of Russian refining capacity, The Moscow Times reported. Zelensky said the campaign against Russia's refining industry continues in response to strikes on Ukraine's grid.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0053"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Regional authorities said falling debris caused a fire at an unnamed enterprise; Russia's defence ministry said it downed 142 Ukrainian drones overnight.",
+      "source_ids": [
+        "s7",
+        "s8",
+        "s2"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Trump meets Kremlin envoy Dmitriev privately as Abu Dhabi talks are set for 10–11 November",
+      "summary": "Trump said he met Kirill Dmitriev privately after a White House event marking the Oleshky humanitarian truce, and predicted a deal 'is going to involve more than Ukraine', The Moscow Times reported. A US delegation is due to mediate Russian–Ukrainian talks in Abu Dhabi on 10–11 November. Kushner described Brussels talks on a European security framework.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS reported Dmitriev telling Europe, in English, 'Don't worry, be happy' about Kushner's security talks, and cited Politico that European allies had not known of Trump's plans.",
+      "source_ids": [
+        "s9",
+        "s6"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Estonian defence ministry official Gert Kaju said front lines are largely unchanged, with Russia's main effort near Pokrovsk and Kostiantynivka. Zaporizhzhia's governor said the death toll from Russia's 2 November bombing of Komyshuvakha rose to 53.",
+      "development_ids": [],
+      "source_ids": [
+        "s14",
+        "s10"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukrainian drones set the Afipsky refinery on fire overnight into 6 November (verification 1, claimed). Regional authorities acknowledged a fire at an unnamed enterprise; we have not opened a Russian official source, so we do not grade it higher.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s7",
+        "s8",
+        "s2"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 227 drones on the night of 5–6 November, Ukraine's General Staff said; 196 were downed or suppressed. Zelensky warned of a new mass strike, and ballistic missiles were heading for Kyiv as the window closed.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s4",
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Trump met Dmitriev privately and said a deal could come soon. Abu Dhabi talks with US mediation are set for 10–11 November.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s9",
+        "s6"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's defence ministry claimed a drone hit a dry-cargo ship south-west of Odesa that it said was 'carrying military equipment and dual-use cargo' (translated). It gave no name or position, and we found no second source.",
+      "development_ids": [],
+      "source_ids": [
+        "s5"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Lithuania's defence minister Robertas Kaunas said its Kaliningrad border is calmer than Poland's. He said troops deployed there since 8 October will stay until mid-November and probably longer.",
+      "development_ids": [],
+      "source_ids": [
+        "s11"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "A new US Army cavalry rotation arrived in Estonia after a summer gap that a former minister blamed on the Pentagon's posture review. German-led exercises with over 6,000 troops began in Lithuania and run to 3 December. Zelensky urged faster Patriot interceptor deliveries.",
+      "development_ids": [],
+      "source_ids": [
+        "s12",
+        "s13",
+        "s1"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0053",
+      "date": "2026-11-05",
+      "target_name": "Afipsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones attacked Krasnodar Krai overnight into 6 November. The regional operational headquarters said debris started a fire at an enterprise in Afipsky; Astra identified it as the refinery (9.1m tonnes a year). No casualties reported.",
+      "sources": [
+        {
+          "title": "Ukraine attacks Afipsky oil refinery in southern Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/06/ukraine-attacks-afipsky-oil-refinery-in-southern-russia",
+          "published_at": "2026-11-06T17:30:00+08:00"
+        },
+        {
+          "title": "Ukraine and Russia Trade Volley of Strikes Against Each Other's Energy Infrastructure",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/06/ukraine-and-russia-trade-volley-of-strikes-against-each-others-energy-infrastructure-a94189",
+          "published_at": "2026-11-06T17:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-07",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The Black Sea shipping campaign remains the most likely route to further deaths. Airspace remains the most frequent source of incidents: eight logged in 30 days against a baseline of 13 a month. Nothing in the window moves any pathway by 5 points.\n\nRussia's defence ministry again claimed a hit on a dry-cargo ship south-west of Odesa. It made similar claims in each of our last two briefs, and it named neither ship nor position. We hold maritime at likely (70%), because each claim restates the intent behind October's strikes in Romanian and Bulgarian waters.\n\nZelensky's warning of a mass strike on energy and Dnipro bridges matters most for airspace risk. Raids on southern and western Ukraine are the usual source of drones straying into Moldova and Romania. Ballistic missiles were heading for Kyiv as the window closed, and we hold airspace at highly unlikely (15%) until the overnight tally is in.\n\nOn diplomacy, Trump said a deal 'is going to involve more than Ukraine'. On the ceasefire paradox, a deal would cut near-term airspace and maritime risk. A European security framework that allies learn of late could weaken deterrence later. We raise our Abu Dhabi forecast from 60% to 65%.",
+    "change_my_mind": "A Romanian or Bulgarian statement naming a ship hit in its waters, or a defence ministry identifying the Boghicea fragments as a Russian Geran, would raise maritime or airspace odds. A signed Abu Dhabi ceasefire framework would lower near-term risk.",
+    "competing_explanations": []
+  },
+  "forecasts_new": [],
+  "forecast_updates": [
+    {
+      "id": "F-2026-016",
+      "probability": 65,
+      "note": "The Moscow Times reports a US delegation is due to mediate Russian–Ukrainian talks in Abu Dhabi on 10–11 November; Trump met Dmitriev and says a deal could come soon."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct effect is on Patriot interceptors. Zelensky publicly asked partners not to delay Patriot interceptor deliveries ahead of an expected Russian mass strike, adding to the pressure on PAC-3 production that Taiwan's own orders depend on. If Washington reprioritises deliveries to Kyiv this winter, Taiwan's backlog could stretch, though one appeal does not shift allocations. Second, Trump's remark that a Ukraine deal will 'involve more than Ukraine', and reports that European allies were not told of US security proposals, give Beijing a test case of whether Washington will negotiate regional security arrangements over allies' heads. The size of that effect depends on what Abu Dhabi produces.",
+  "next_72h": [
+    {
+      "date": "2026-11-08",
+      "event": "Tally of the Russian mass strike Zelensky warned of, including any drone crossings into Moldova, Romania or Poland.",
+      "why": "Mass raids on southern and western Ukraine are the main source of airspace incidents."
+    },
+    {
+      "date": "2026-11-08",
+      "event": "Poland's full-readiness order for police at the Kaliningrad border is due to expire.",
+      "why": "An extension would signal that Warsaw judges the provocation threat persists (F-2026-014)."
+    },
+    {
+      "date": "2026-11-10",
+      "event": "US-mediated Russian–Ukrainian talks are due to open in Abu Dhabi.",
+      "why": "Main scheduled driver of ceasefire odds; resolves F-2026-016."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 227,
+      "unit": "count",
+      "period": "night of 5–6 Nov",
+      "source_ids": [
+        "s4"
+      ],
+      "note": "86 jet-powered, per Ukraine's General Staff."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 196,
+      "unit": "count",
+      "period": "night of 5–6 Nov",
+      "source_ids": [
+        "s4",
+        "s8"
+      ],
+      "note": "Shot down or suppressed; impacts at 22 locations."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "6 Nov",
+      "source_ids": [
+        "s7"
+      ],
+      "note": "Afipsky refinery."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "We now have intel that another strike is being prepared – targeting our energy sector, bridges across the Dnipro, and civilian infrastructure",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21703",
+      "language": "en",
+      "published_at": "2026-11-07T04:20:00+08:00",
+      "accessed_at": "2026-11-07T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Доповідь щодо наших дипстрайків (Report on our deep strikes, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21698",
+      "language": "uk",
+      "published_at": "2026-11-07T01:15:00+08:00",
+      "accessed_at": "2026-11-07T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Щонайменше 6 балістичних ракет курсом на Київ! (At least 6 ballistic missiles heading for Kyiv, translated)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/kpszsu/93753",
+      "language": "uk",
+      "published_at": "2026-11-07T04:52:00+08:00",
+      "accessed_at": "2026-11-07T05:50:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Збито/подавлено 196 ворожих цілей (196 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42824",
+      "language": "uk",
+      "published_at": "2026-11-06T14:17:00+08:00",
+      "accessed_at": "2026-11-07T05:50:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Strike on a dry-cargo ship south-west of Odesa (translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68802",
+      "language": "ru",
+      "published_at": "2026-11-06T22:02:00+08:00",
+      "accessed_at": "2026-11-07T05:55:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Кирилл Дмитриев призвал ЕС не волноваться после слов Джареда Кушнера (Dmitriev urges EU not to worry after Kushner's remarks, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404359",
+      "language": "ru",
+      "published_at": "2026-11-07T04:34:00+08:00",
+      "accessed_at": "2026-11-07T05:50:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Ukraine attacks Afipsky oil refinery in southern Russia",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/06/ukraine-attacks-afipsky-oil-refinery-in-southern-russia",
+      "language": "en",
+      "published_at": "2026-11-06T17:30:00+08:00",
+      "accessed_at": "2026-11-07T05:52:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Ukraine and Russia Trade Volley of Strikes Against Each Other's Energy Infrastructure",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/06/ukraine-and-russia-trade-volley-of-strikes-against-each-others-energy-infrastructure-a94189",
+      "language": "en",
+      "published_at": "2026-11-06T17:59:00+08:00",
+      "accessed_at": "2026-11-07T05:52:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Trump Meets Privately With Putin Envoy After White House Event Marking Oleshky Ceasefire",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/06/trump-meets-privately-with-putin-envoy-after-white-house-event-marking-oleshky-ceasefire-a94188",
+      "language": "en",
+      "published_at": "2026-11-06T16:36:00+08:00",
+      "accessed_at": "2026-11-07T06:00:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukraine war latest: Komyshuvakha search operation enters 5th day as death toll rises to 53",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-komyshuvakha-search-operation-enters-5th-day-as-death-toll-rises-to-53/",
+      "language": "en",
+      "published_at": "2026-11-07T03:06:00+08:00",
+      "accessed_at": "2026-11-07T05:52:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Lithuania's border with Kaliningrad calmer than Poland's, defence minister says",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3106360/lithuania-s-border-with-kaliningrad-calmer-than-poland-s-defence-minister-says",
+      "language": "en",
+      "published_at": "2026-11-06T21:45:00+08:00",
+      "accessed_at": "2026-11-07T06:00:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "New US troop rotation arrives in Estonia after summer gap",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610188411/new-us-troop-rotation-arrives-in-estonia-after-summer-gap",
+      "language": "en",
+      "published_at": "2026-11-06T17:23:00+08:00",
+      "accessed_at": "2026-11-07T06:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "More than 6,000 NATO troops to take part in German-led exercises in Lithuania",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3106178/more-than-6-000-nato-troops-to-take-part-in-german-led-exercises-in-lithuania",
+      "language": "en",
+      "published_at": "2026-11-06T17:14:00+08:00",
+      "accessed_at": "2026-11-07T06:03:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Defense official: Russia is stepping up attacks on civilian infrastructure",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610188570/defense-official-russia-is-stepping-up-attacks-on-civilian-infrastructure",
+      "language": "en",
+      "published_at": "2026-11-06T22:10:00+08:00",
+      "accessed_at": "2026-11-07T06:05:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "С 31 октября по 6 ноября нанесены массированные и 11 групповых ударов (Massed and 11 group strikes from 31 October to 6 November, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68796",
+      "language": "ru",
+      "published_at": "2026-11-06T17:13:00+08:00",
+      "accessed_at": "2026-11-07T05:50:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-07T05:41:24+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1362,
+    "source_count": 15,
+    "source_category_count": 6
+  }
+}
