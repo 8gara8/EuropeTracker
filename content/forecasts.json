@@ -290,7 +290,13 @@
       "base_rate": 50,
       "base_rate_note": "The IAEA reported such cuts several times during Russia's winter grid campaigns of 2024–25 and 2025–26, about every two months. Raised for the drones aimed at a Khmelnytskyi substation on 3 November.",
       "opened": "2026-11-04",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-08",
+          "probability": 70,
+          "note": "Zelensky says substations connecting the Rivne and Khmelnytskyi plants to Kyiv were struck on 6–7 November. We await an IAEA statement on output or lines."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -314,6 +320,11 @@
           "date": "2026-11-07",
           "probability": 65,
           "note": "The Moscow Times reports a US delegation is due to mediate Russian–Ukrainian talks in Abu Dhabi on 10–11 November; Trump met Dmitriev and says a deal could come soon."
+        },
+        {
+          "date": "2026-11-08",
+          "probability": 70,
+          "note": "Zelensky says Russia is preparing for 'the trilateral talks' with strikes, which signals that Kyiv expects the round to go ahead."
         }
       ],
       "status": "open",

@@ -1668,6 +1668,73 @@
       "seed": false,
       "added": "2026-11-07",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0054",
+      "date": "2026-11-06",
+      "target_name": "Proton-Elektrotex plant, Oryol",
+      "target_type": "defence_industry",
+      "region": "Oryol Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 200,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Neptune coastal missiles hit the Proton-Elektrotex optoelectronics plant in Oryol overnight into 7 November, causing a fire amid explosions. It said the strike complicates production of components for cruise and ballistic missiles. No Russian confirmation found.",
+      "sources": [
+        {
+          "title": "Ракетні війська «Нептунами» уразили «Протон-Електротекс» в Орлі (Missile forces hit Proton-Elektrotex in Oryol with Neptunes, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42833",
+          "published_at": "2026-11-07T15:45:00+08:00"
+        },
+        {
+          "title": "Ukraine strikes Oryol factory with Neptune missile, reportedly Saratov Oil Refinery in mass attack on Russian regions",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+          "published_at": "2026-11-07T11:01:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-08",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0055",
+      "date": "2026-11-06",
+      "target_name": "Saratov oil refinery",
+      "target_type": "refinery",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 600,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Monitoring channels reported that Ukrainian drones set the Saratov refinery ablaze overnight into 7 November; it was last hit on 11 September. Governor Busargin reported damaged homes and no casualties but did not mention the refinery.",
+      "sources": [
+        {
+          "title": "Ukraine strikes Oryol factory with Neptune missile, reportedly Saratov Oil Refinery in mass attack on Russian regions",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+          "published_at": "2026-11-07T11:01:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-08",
+      "updated": null
     }
   ]
 }

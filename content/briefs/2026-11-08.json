@@ -1,0 +1,841 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "window": {
+    "start": "2026-11-07T05:30:00+08:00",
+    "end": "2026-11-08T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-08T06:15:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Russia hits Kyiv's grid with 36 ballistic missiles as remains are found aboard a ship struck off Romania; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. No new incident in Europe met our logging threshold. Overnight, Russia hit Kyiv's grid with 172 drones and 36 ballistic missiles; Ukraine says it stopped only four missiles and lacks Patriot interceptors. Varna prosecutors found human remains aboard the Wine Trader, struck near Sulina on 15 October. A shooting in Kraków that killed six has no reported Russian link. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s9",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on the deadly drone strikes on ships in Romanian and Bulgarian waters on 13, 15 and 23 October. No new incident was logged today. A step to rung 5 needs deliberate, sustained Russian military action against a NATO or EU state, and we see no sign of it."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 8 incidents in 30 days against a baseline of 13 a month, and no serious incident in 12 months. The 6–7 November raid was aimed at Kyiv and produced no reported crossing. Held.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 1 incident in 30 days against 1.3 a month, and 2 serious in 12 months. Polish officials have not linked the Kraków shooting to Russia. Held.",
+        "source_ids": [
+          "s11"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 3 incidents in 30 days against 1.7 a month, and 12 serious in 12 months. Remains found aboard the Wine Trader and new Russian claims of ship strikes off Odesa sustain the October pattern. Held.",
+        "source_ids": [
+          "s8",
+          "s5"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Base rate: no incidents in 30 days against 0.7 a month, and none serious in 12 months. Reports of pro-Russian hacking of Italy's foreign minister are unverified. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "Base rate: no incidents in 30 days and no serious case in 12 months. Nothing in the window points to forces moving toward a NATO border. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Base rate: no incidents in 30 days against 0.3 a month. Substations linking the Rivne and Khmelnytskyi plants were hit, but there is no readiness change or release. Held.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: no incidents in 30 days against 0.3 a month. KAPO's warning about students in Russia is a pressure signal, not an exposed operation. Held.",
+        "source_ids": [
+          "s16"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. The active border-tracks indicator names Poland, and the threat of a Kaliningrad border provocation behind the 2–8 November readiness order persists. No incident logged in 30 days.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 because of persistent GPS interference (active indicator naming Estonia). KAPO warns that about 400 Estonian students in Russia face recruitment risk.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 because of persistent GPS interference over the Gulf of Finland (active indicator naming Finland). No incident logged in 30 days.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Russia hits Kyiv's grid with 36 ballistic missiles and 172 drones; four missiles intercepted",
+      "summary": "Ukraine's General Staff said Russia launched Iskander-M, Zircon, KN-23 and S-400 missiles and 172 drones overnight on 6–7 November, 137 of the drones jet-powered. It said four missiles and 149 drones were downed, with hits at 24 locations. Zelensky said substations linking the Rivne and Khmelnytskyi nuclear plants to Kyiv were struck. The Pivnichnyi bridge closed, and nine people were injured.",
+      "category": "russian_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed a 'massive strike' (translated) on military-industrial, energy and transport targets in Kyiv. It named the Severny bridge and the Meridian plant, which it says makes Flamingo missiles.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9",
+        "s4"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukraine hits Oryol electronics plant with Neptune missiles; Saratov refinery reported on fire",
+      "summary": "Ukraine's General Staff said Neptune coastal missiles hit the Proton-Elektrotex plant in Oryol overnight into 7 November, causing a fire. It said the strike complicates production of missile components. Monitoring channels reported that the Saratov refinery was set ablaze. Governor Busargin reported damage to homes but did not mention the refinery, so both strikes stay at claimed.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0054",
+        "STR-2026-0055"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed it downed 411 Ukrainian drones overnight over ten regions, Crimea and the Black and Azov Seas.",
+      "source_ids": [
+        "s7",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Human remains found aboard the Wine Trader, struck by a drone near Sulina on 15 October",
+      "summary": "Varna prosecutors said badly damaged human remains were found aboard the San Marino-flagged tanker during repairs in Bulgaria and ordered DNA tests. A Bulgarian law-enforcement source told AFP there were 'very probably six' (translated) bodies. Seven of its 12 crew had been missing. Digi24 counts at least nine ships hit off Romania and Bulgaria since early October, with 34 dead or missing.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [
+        "INC-2026-0103"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 3,
+      "russian_framing": "Russia's defence ministry claimed new strikes on dry-cargo ships east and south-east of Odesa that it said carried 'military property and dual-use goods' (translated).",
+      "source_ids": [
+        "s8",
+        "s5"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Zelensky warns of Patriot interceptor shortage and cautions on a European–Russian security track before talks",
+      "summary": "Zelensky said Ukraine faces a 'significant shortage of interceptors for Patriots' (translated) and asked the US to speed up deliveries before winter and before renewed negotiations. He said Russia was preparing for trilateral talks with ballistic strikes. He also said discussing a European–Russian security infrastructure 'may be dangerous' (translated), and that ending the war and guarantees for Ukraine must come first.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s2",
+        "s19",
+        "s13",
+        "s12"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Shooting in Kraków kills six; Polish officials call it terrorism and cite the suspect's far-right views",
+      "summary": "A 24-year-old Polish man opened fire on Kraków's Market Square on 7 November, killing six and injuring 15. Police later found three more bodies at his home. Interior Minister Kierwiński called it terrorism and said the suspect may have been fascinated by far-right ideologies. No official has raised a Russian link, so we have not logged it.",
+      "category": "sabotage",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's embassy in Poland issued a comment on the shooting, citing Polish authorities and media.",
+      "source_ids": [
+        "s11",
+        "s20"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine says Neptune missiles hit the Proton-Elektrotex plant in Oryol. Monitoring channels report the Saratov refinery on fire. Both strikes are logged at claimed. Russia's defence ministry said it downed 411 drones overnight and 28 more by day.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s7",
+        "s6",
+        "s10",
+        "s17"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia fired 36 ballistic missiles and 172 drones, mainly at Kyiv's grid; four missiles were intercepted. Substations serving the Rivne and Khmelnytskyi nuclear plants and the Pivnichnyi bridge were hit. Kyiv faces blackouts and water shortages.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Kyiv is preparing for trilateral talks with the US and Russia. Zelensky warned that a European–Russian security discussion could be dangerous. ICDS's Kristi Raik called the US plan to link Ukraine talks to European security a concession to Russia.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s19",
+        "s13",
+        "s12"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Six people were killed in a shooting in Kraków. Polish officials treat it as terrorism and cite the suspect's far-right views. No official has raised a Russian link, so we have not logged it.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s11"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Bulgarian prosecutors found human remains aboard the Wine Trader, struck near Sulina on 15 October (INC-2026-0103). Russia's defence ministry claimed two more strikes on dry-cargo ships off Odesa.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s8",
+        "s5"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Zelensky said substations connecting the Rivne and Khmelnytskyi nuclear plants to Kyiv were struck. We have seen no IAEA statement yet on output cuts or lost lines.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Estonia's KAPO warned that nearly 400 young Estonians studying in Russia risk being recruited by intelligence services or sent to the front.",
+      "development_ids": [],
+      "source_ids": [
+        "s16"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Finland is studying Ukrainian-style anti-tank obstacles for its Russian border. Zelensky asked the US to speed up Patriot interceptor deliveries and expects new European contributions to PURL.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s15",
+        "s2"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [
+    {
+      "id": "INC-2026-0103",
+      "changes": {
+        "attribution": null,
+        "attribution_note": null,
+        "rung": null,
+        "serious": null,
+        "casualties": null,
+        "disruption_hours": null,
+        "summary": "Russian drones struck two chemical tankers near Sulina. The Yara J caught fire at anchor inside Romanian territorial waters with no casualties. The Wine Trader was hit just outside them, and seven crew went missing. On 7 November, Varna prosecutors said badly damaged human remains were found aboard it during repairs.",
+        "host_statement": null
+      },
+      "add_sources": [
+        {
+          "title": "Descoperire macabră pe nava lovită de dronă în largul României: rămășițe umane găsite la bord de autoritățile bulgare",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/evenimente/descoperire-macabra-pe-nava-lovita-de-drona-in-largul-romaniei-ramasite-umane-gasite-la-bord-de-autoritatile-bulgare-4026163",
+          "published_at": "2026-11-07T22:47:00+08:00"
+        }
+      ],
+      "reason": "Varna prosecutors report human remains aboard the Wine Trader; a source told AFP probably six. Casualties are left unchanged until DNA identification confirms the deaths."
+    }
+  ],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0054",
+      "date": "2026-11-06",
+      "target_name": "Proton-Elektrotex plant, Oryol",
+      "target_type": "defence_industry",
+      "region": "Oryol Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 200,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Neptune coastal missiles hit the Proton-Elektrotex optoelectronics plant in Oryol overnight into 7 November, causing a fire amid explosions. It said the strike complicates production of components for cruise and ballistic missiles. No Russian confirmation found.",
+      "sources": [
+        {
+          "title": "Ракетні війська «Нептунами» уразили «Протон-Електротекс» в Орлі (Missile forces hit Proton-Elektrotex in Oryol with Neptunes, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42833",
+          "published_at": "2026-11-07T15:45:00+08:00"
+        },
+        {
+          "title": "Ukraine strikes Oryol factory with Neptune missile, reportedly Saratov Oil Refinery in mass attack on Russian regions",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+          "published_at": "2026-11-07T11:01:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-08",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0055",
+      "date": "2026-11-06",
+      "target_name": "Saratov oil refinery",
+      "target_type": "refinery",
+      "region": "Saratov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 600,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Monitoring channels reported that Ukrainian drones set the Saratov refinery ablaze overnight into 7 November; it was last hit on 11 September. Governor Busargin reported damaged homes and no casualties but did not mention the refinery.",
+      "sources": [
+        {
+          "title": "Ukraine strikes Oryol factory with Neptune missile, reportedly Saratov Oil Refinery in mass attack on Russian regions",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+          "published_at": "2026-11-07T11:01:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-08",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The Black Sea shipping campaign remains the most likely route to further deaths. Airspace remains the most frequent source of incidents: eight logged in 30 days against a baseline of 13 a month. Nothing in the window moves any pathway by 5 points.\n\nThe raid Zelensky warned of arrived overnight. Ukraine's General Staff counted 36 ballistic missiles, including Zircon and North Korean KN-23s, and 172 drones, 137 of them jet-powered. It said four missiles and 149 drones were downed. Zelensky said substations linking the Rivne and Khmelnytskyi nuclear plants to Kyiv were hit. Russia's defence ministry claimed military-industrial, energy and transport targets, including the Severny bridge. The main axis was Kyiv, not the south-west, and we found no reported crossing into Moldova, Romania or Poland. We hold airspace at highly unlikely (15%). We assess that the growing share of jet-powered drones shortens reaction times for Romanian and Moldovan air defences when raids are routed over Odesa.\n\nThe Varna find adds weight, not new risk. Bulgarian prosecutors said badly damaged remains were found aboard the Wine Trader, and a source told AFP there were probably six bodies. If DNA tests confirm this, the October campaign on the Danube approaches was deadlier than our database records. Russia's defence ministry again claimed strikes on dry-cargo ships off Odesa. We hold maritime at likely (70%).\n\nOn current evidence, the Kraków shooting is not a spillover event. Interior Minister Kierwiński called it terrorism and cited the suspect's far-right views, and no official has raised a Russian link. Reports that pro-Russian hackers targeted Italy's foreign minister reached us only as leads we could not open, so we have not logged them.\n\nZelensky said Russia was 'preparing for the trilateral talks by launching ballistic missiles' (translated). He warned that a European–Russian security discussion 'may be dangerous' (translated). On the ceasefire paradox, a deal would cut near-term airspace and maritime risk. A framework settled over Europe's head could weaken deterrence later.",
+    "change_my_mind": "We would revise if a Russian drone or missile crosses into Moldova, Romania or Poland during a raid routed over Odesa or Vinnytsia, if an official links the Kraków attacker to Russia, or if the IAEA reports that Rivne or Khmelnytskyi lost off-site power.",
+    "competing_explanations": []
+  },
+  "forecasts_new": [],
+  "forecast_updates": [
+    {
+      "id": "F-2026-015",
+      "probability": 70,
+      "note": "Zelensky says substations connecting the Rivne and Khmelnytskyi plants to Kyiv were struck on 6–7 November. We await an IAEA statement on output or lines."
+    },
+    {
+      "id": "F-2026-016",
+      "probability": 70,
+      "note": "Zelensky says Russia is preparing for 'the trilateral talks' with strikes, which signals that Kyiv expects the round to go ahead."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct impact is on the supply of Patriot interceptors. Zelensky said Ukraine stopped only four of 36 ballistic missiles and asked the US to speed up Patriot interceptor deliveries before winter. Ukraine's PAC-3 demand draws on the same constrained production that fills Taiwan's orders. If Washington prioritises Kyiv this winter, Taiwan's delivery queue could lengthen. Second, Ukraine's General Staff listed North Korean KN-23 missiles in the salvo. That shows the Russia–North Korea munitions pipeline is still active, which matters for deterrence in North-East Asia. Third, the raid shows that mass ballistic salvos can overwhelm thin missile defences around a capital's grid. That is a direct lesson for Taiwan's planning on grid hardening and dispersed generation.",
+  "next_72h": [
+    {
+      "date": "2026-11-09",
+      "event": "Ursula von der Leyen visits the Black Sea region on 9–10 November.",
+      "why": "Possible EU steps on Danube and Black Sea shipping security after the drone strikes."
+    },
+    {
+      "date": "2026-11-09",
+      "event": "Possible IAEA update on the Rivne and Khmelnytskyi plants after the substation strikes.",
+      "why": "Would resolve evidence for F-2026-015 and gauge radiological-safety pressure."
+    },
+    {
+      "date": "2026-11-10",
+      "event": "Expected start of US-mediated Russia–Ukraine talks in Abu Dhabi (10–11 November).",
+      "why": "Main diplomatic driver; tests F-2026-016 and the ceasefire paradox."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 172,
+      "unit": "count",
+      "period": "night of 6–7 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "137 jet-powered, per Ukraine's General Staff."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 149,
+      "unit": "count",
+      "period": "night of 6–7 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shot down or suppressed, as of 09:00 Kyiv."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 36,
+      "unit": "count",
+      "period": "night of 6–7 Nov",
+      "source_ids": [
+        "s2",
+        "s9"
+      ],
+      "note": "All ballistic, including Zircon and KN-23."
+    },
+    {
+      "id": "ru_missiles_intercepted",
+      "value": 4,
+      "unit": "count",
+      "period": "night of 6–7 Nov",
+      "source_ids": [
+        "s1",
+        "s2"
+      ],
+      "note": null
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 2,
+      "unit": "count",
+      "period": "night of 6–7 Nov",
+      "source_ids": [
+        "s6",
+        "s7"
+      ],
+      "note": "Oryol and Saratov logged; Rostov reports not logged."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 153 ЦІЛІ (153 targets shot down or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42832",
+      "language": "uk",
+      "published_at": "2026-11-07T15:11:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Провів селектор по наслідках російського удару (Held a call on the aftermath of the Russian strike, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21717",
+      "language": "uk",
+      "published_at": "2026-11-07T21:14:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Russia attacks substations connecting Kyiv to nuclear power plants and infrastructure overnight – Zelenskyy",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/07/8061693/",
+      "language": "en",
+      "published_at": "2026-11-07T16:54:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Массированный удар по объектам ВПК, энергетики и транспорта в Киеве (Massive strike on defence-industry, energy and transport targets in Kyiv, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68817",
+      "language": "ru",
+      "published_at": "2026-11-07T14:19:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Удары по объектам ТЭК и морским судам (Strikes on energy facilities and sea vessels, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68825",
+      "language": "ru",
+      "published_at": "2026-11-07T22:42:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Ukraine strikes Oryol factory with Neptune missile, reportedly Saratov Oil Refinery in mass attack on Russian regions",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+      "language": "en",
+      "published_at": "2026-11-07T11:01:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Ракетні війська «Нептунами» уразили «Протон-Електротекс» в Орлі (Missile forces hit Proton-Elektrotex in Oryol with Neptunes, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42833",
+      "language": "uk",
+      "published_at": "2026-11-07T15:45:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Descoperire macabră pe nava lovită de dronă în largul României: rămășițe umane găsite la bord de autoritățile bulgare",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/evenimente/descoperire-macabra-pe-nava-lovita-de-drona-in-largul-romaniei-ramasite-umane-gasite-la-bord-de-autoritatile-bulgare-4026163",
+      "language": "ro",
+      "published_at": "2026-11-07T22:47:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Blackouts and water shortages in Kyiv after Russia strikes Ukraine's energy grid",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/2026/nov/07/blackout-water-shortage-kyiv-russia-strike-ukraine-energy-grid",
+      "language": "en",
+      "published_at": "2026-11-07T21:03:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Перехвачены и уничтожены 411 украинских БПЛА (411 Ukrainian drones intercepted and destroyed, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68815",
+      "language": "ru",
+      "published_at": "2026-11-07T13:36:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Six killed in terrorist shooting in Polish city of Kraków",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/07/fatalities-reported-in-shooting-on-historical-market-square-in-krakow/",
+      "language": "en",
+      "published_at": "2026-11-07T23:40:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Expert: US plan ties Ukraine talks to Europe's security, favors Russia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610189155/expert-us-plan-ties-ukraine-talks-to-europe-s-security-favors-russia",
+      "language": "en",
+      "published_at": "2026-11-07T15:55:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Ідея обговорення європейсько-російської інфраструктури безпеки непроста (A European–Russian security infrastructure is not a simple idea, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21714",
+      "language": "uk",
+      "published_at": "2026-11-07T18:15:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "NATO reconnaissance aircraft spotted over Black Sea for second time this week",
+      "outlet": "TASS",
+      "category": "ru_state_media",
+      "url": "https://tass.com/world/2214209",
+      "language": "en",
+      "published_at": "2026-11-07T16:16:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Finland considers installing Ukrainian-style anti-tank barriers to strengthen Russian border",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/07/8061722/",
+      "language": "en",
+      "published_at": "2026-11-07T21:09:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "400 Estonian students in Russia face recruitment risk, warns KAPO",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610189221/400-estonian-students-in-russia-face-recruitment-risk-warns-kapo",
+      "language": "en",
+      "published_at": "2026-11-07T19:02:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "В течение дня над регионами РФ перехвачены и уничтожены 28 беспилотников ВСУ (28 Ukrainian drones intercepted over Russian regions during the day, translated)",
+      "outlet": "ASTRA (Telegram)",
+      "category": "ru_by_independent",
+      "url": "https://t.me/astrapress/130507",
+      "language": "ru",
+      "published_at": "2026-11-08T01:25:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Zelenskyy reports four out of 36 missiles shot down overnight and Russian use of North Korean weapons",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/07/8061727/",
+      "language": "en",
+      "published_at": "2026-11-07T21:35:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "До тристоронніх перемовин Росія готується, запускаючи балістику (Russia prepares for trilateral talks by launching ballistic missiles, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21704",
+      "language": "uk",
+      "published_at": "2026-11-07T16:28:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Комментарий Посольства России в Польше в связи со стрельбой в Кракове (Comment by Russia's embassy in Poland on the Kraków shooting, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95798",
+      "language": "ru",
+      "published_at": "2026-11-08T04:31:00+08:00",
+      "accessed_at": "2026-11-08T06:05:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-08T05:42:21+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1731,
+    "source_count": 20,
+    "source_category_count": 7
+  }
+}

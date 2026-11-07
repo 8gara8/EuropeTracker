@@ -3895,7 +3895,7 @@
       "type": "strike_at_sea",
       "rung": 4,
       "serious": true,
-      "summary": "Russian drones struck two chemical tankers near Sulina. The Yara J caught fire at anchor inside Romanian territorial waters with no casualties; the Wine Trader was hit just outside them, and seven of its crew were missing after a search.",
+      "summary": "Russian drones struck two chemical tankers near Sulina. The Yara J caught fire at anchor inside Romanian territorial waters with no casualties. The Wine Trader was hit just outside them, and seven crew went missing. On 7 November, Varna prosecutors said badly damaged human remains were found aboard it during repairs.",
       "attribution": 3,
       "attribution_note": "Romanian officials said Russian drones hit the ships.",
       "host_statement": "yes",
@@ -3918,11 +3918,18 @@
           "category": "intl_press",
           "url": "https://www.reuters.com/world/romania-resumes-search-seven-missing-sailors-drone-hit-ship-2026-10-16/",
           "published_at": "2026-10-16"
+        },
+        {
+          "title": "Descoperire macabră pe nava lovită de dronă în largul României: rămășițe umane găsite la bord de autoritățile bulgare",
+          "outlet": "Digi24",
+          "category": "eu_regional_press",
+          "url": "https://www.digi24.ro/stiri/actualitate/evenimente/descoperire-macabra-pe-nava-lovita-de-drona-in-largul-romaniei-ramasite-umane-gasite-la-bord-de-autoritatile-bulgare-4026163",
+          "published_at": "2026-11-07T22:47:00+08:00"
         }
       ],
       "seed": true,
       "added": "2026-11-02",
-      "updated": null
+      "updated": "2026-11-08"
     },
     {
       "id": "INC-2026-0104",
