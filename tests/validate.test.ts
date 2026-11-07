@@ -280,10 +280,14 @@ describe("validateAll", () => {
   const dirs: string[] = [];
   afterEach(() => { for (const d of dirs.splice(0)) fs.rmSync(d, { recursive: true, force: true }); });
 
+  // The tests below replace the incident files, which the live briefs' computed counts no longer match,
+  // so the copy starts with no briefs. "passes the committed content" checks the live ones.
   const copyContent = () => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), "et-content-"));
     dirs.push(dir);
     fs.cpSync("content", dir, { recursive: true });
+    fs.rmSync(path.join(dir, "briefs"), { recursive: true, force: true });
+    fs.mkdirSync(path.join(dir, "briefs"));
     return dir;
   };
 

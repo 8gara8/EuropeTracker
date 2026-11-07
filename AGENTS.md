@@ -1,6 +1,6 @@
 # EuropeTracker — agent guide (read this first)
 > Internal AI working notes in a public repo: keep secrets, personal data and machine security details out. Never publish this file on the site.
-> Last reviewed 2026-11-02 · Folder: /Users/kobol/Projects/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
+> Last reviewed 2026-11-04 · Folder: /Users/kobol/Projects/EuropeTracker (Kobol) · Claude Project: Ukraine Tracker
 > About JL and other projects: /Users/8gara8/Documents/AGENTS.md, on JL's other Mac. It isn't reachable from Kobol; if you need it, ask JL rather than guess.
 
 ## 1. Who and what
@@ -41,6 +41,12 @@ tracked only as the drivers of that risk.
 - **2026-11-02:** Phase 4 seed built for JL's review: 248 incidents (February 2022 to 2 November 2026),
   47 strikes from the last 60 days, the starting state (rung 4) and 11 forecasts, written as YAML in
   `research/seed/` and built with `npm run seed:build`. Gaps and judgement calls: `docs/SEED-REPORT.md`.
+- **2026-11-02:** Phase 3's real dry run passed once JL had created the agent token (11 minutes, one
+  repair). JL merged the seed (PR #5).
+- **2026-11-02 to 11-04:** Phase 5. The site took ME Tracker's paper design and went further (PR #7).
+  JL approved supervised briefs on 2 and 3 November, then chose to go unattended instead of running a
+  third. The scheduled task "Europe tracker morning" was set up on 3 November. On 4 November the first
+  unattended brief started at 05:37 and was live at 05:44. **EuropeTracker is live.**
 - **Decisions, 2026-11-02:**
   - **Goal:** gauge spillover risk to Europe. Ukraine's deep strikes into Russia are emphasised as a
     driver.
@@ -61,12 +67,12 @@ tracked only as the drivers of that risk.
 |---|---|
 | 0. Design, spec, prompts | Done 2026-11-02 |
 | 1. Contract (schemas, validator, fixtures, tests) | Done 2026-11-02 |
-| 2. Site and Vercel project | Done 2026-11-02 (production shows empty states until the first brief) |
-| 3. Pipeline, dry run | Code done 2026-11-02; real dry run waits for the agent token |
-| 4. Seed data | Not started |
-| 5. Supervised runs, go-live | Not started |
+| 2. Site and Vercel project | Done 2026-11-02; redesigned in Phase 5 |
+| 3. Pipeline, dry run | Done 2026-11-02 |
+| 4. Seed data | Done 2026-11-02 |
+| 5. Supervised runs, go-live | Done 2026-11-04: unattended every morning since then |
 
-- **Main deliverable:** the daily brief at https://europetracker.vercel.app. It isn't live yet.
+- **Main deliverable:** the daily brief at https://europetracker.vercel.app, live since 2 November 2026.
 
 ## 4. Map
 
@@ -105,7 +111,7 @@ tracked only as the drivers of that risk.
 
 | Job | How |
 |---|---|
-| Daily brief (after go-live) | The scheduled task "Europe tracker morning" in the Claude app (05:30, prompt `routine/TASK.md`) runs `scripts/daily.sh`, which runs `scripts/daily.ts`, then replies with `logs/DATE.summary.md` |
+| Daily brief | The scheduled task "Europe tracker morning" in the Claude app (05:30, starting at 05:37 after the app's fixed delay; prompt `routine/TASK.md`) runs `scripts/daily.sh`, which runs `scripts/daily.ts`, then replies with `logs/DATE.summary.md`. Finding and changing the task: `docs/RUNBOOK.md` |
 | Manual or test run | `npm run daily -- --dry-run --no-deadline`; supervised: `npm run daily -- --review`, then `npm run promote -- --date D` |
 | Validate | `npm run validate -- drafts/D.json` or `npm run validate:all` |
 | Check feeds | `npm run sources:check` |

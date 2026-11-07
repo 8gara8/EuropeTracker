@@ -1,6 +1,6 @@
 # EuropeTracker
 
-A daily morning brief, published at about 06:15 Taipei, that gauges the risk of the Russia-Ukraine war
+A daily morning brief, published by about 06:15 Taipei, that gauges the risk of the Russia-Ukraine war
 spilling into Europe. It covers:
 
 - a seven-rung spillover ladder
@@ -15,6 +15,6 @@ spilling into Europe. It covers:
 - **Build spec:** [`SPEC.md`](SPEC.md)
 - **Agent guide:** [`AGENTS.md`](AGENTS.md)
 
-**Status (2026-11-02):** Phases 1 and 2 are built: the data contract, the validator and the site
-(previews run on sample data). The daily pipeline and the seed data come next. See the phase table in
-`AGENTS.md`.
+**Status (2026-11-04):** live. A scheduled task on Kobol publishes the brief unattended every morning,
+usually by 05:45 Taipei. See the phase table in `AGENTS.md` and the operator's notes in
+[`docs/RUNBOOK.md`](docs/RUNBOOK.md).

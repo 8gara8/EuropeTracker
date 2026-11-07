@@ -7,15 +7,40 @@ Asia/Taipei. The spec is `SPEC.md` §7–§8; this file is the operator's view.
 
 | Time | What happens |
 |---|---|
-| 05:30 | The Claude app's scheduled task "Europe tracker morning" runs `zsh scripts/daily.sh` (prompt: `routine/TASK.md`) |
-| 05:30–05:35 | Preflight, then the collector builds `research/packs/DATE.json` and `.md` |
-| 05:35–06:10 | The headless agent researches and writes `drafts/DATE.json`; the validator checks it, and the agent repairs it up to twice |
+| 05:37 | The Claude app's scheduled task "Europe tracker morning" runs `zsh scripts/daily.sh` (prompt: `routine/TASK.md`). It's set for 05:30, and the app adds a fixed 7-minute delay to this task |
+| 05:37–05:40 | Preflight, then the collector builds `research/packs/DATE.json` and `.md` |
+| 05:40–06:10 | The headless agent researches and writes `drafts/DATE.json`; the validator checks it, and the agent repairs it up to twice |
 | up to 06:25 | One fresh retry if the first attempt failed |
-| about 06:15 | Published: `content/briefs/DATE.json` committed and pushed; Vercel deploys in about a minute |
+| 05:45–06:15 | Published: `content/briefs/DATE.json` committed and pushed; Vercel deploys in about a minute. The first unattended run, on 4 November, was live at 05:44 |
+| after publishing | The source URLs go to the Wayback Machine in the background (`logs/DATE.archive.log`). Timeouts there are common and don't affect the brief |
 | 06:55 | Hard stop. Whatever happened, the run ends with `logs/DATE.summary.md`, which the task posts in the Claude app |
 
 There are no alerts (JL's decision). The summary in the Claude app is the update. If no summary appears
-by 07:00, Kobol did not run the task: check that it is awake, logged in and the Claude app is open.
+by 07:00, Kobol did not run the task (check that it is awake, logged in and the Claude app is open), or
+the run is waiting on a prompt (below).
+
+## The scheduled task
+
+- **Where:** the Claude desktop app on Kobol, under **Scheduled**. That page hides tasks Claude set up
+  from a project: click **Show** beside "N hidden tasks that Claude set up in Slack, a project or Claude
+  Code". The Code tab's **Scheduled** page lists it too. It doesn't appear on the phone or the web.
+- **Settings:** daily at 05:30 (cron `30 5 * * *`), folder `/Users/kobol/Projects/EuropeTracker`, the
+  default permission mode, and one rule under **Always allowed**: Bash
+  `zsh /Users/kobol/Projects/EuropeTracker/scripts/daily.sh`.
+- **A run:** the task starts that command in the background and ends its turn. The app wakes it when
+  the pipeline exits; it reads `logs/DATE.summary.md` and replies with it. Each run is listed under
+  **History** on the task page.
+- **A run waiting on a permission prompt blocks the next morning:** the app skips a scheduled run
+  while the previous one is still in progress. If a run is stuck, open it from History, then answer
+  the prompt or stop the run. Keep the command in `routine/TASK.md` exactly as approved.
+- **Changing the prompt:** merge the change to `routine/TASK.md`, then paste it into the task's Edit
+  form (pencil icon) or into `~/.claude/scheduled-tasks/europe-tracker-morning/SKILL.md`, below the
+  front matter.
+- **Run now** on the task page runs the morning job at once. If today's brief is already published,
+  it skips and says so.
+- **Needs** the Claude app open and Kobol awake. If Kobol slept through 05:37, the app starts one
+  catch-up run when it wakes. Too close to 06:55, that run ends with `E_TIMEOUT`; rerun it by hand
+  (below).
 
 ## What each file tells you
 
@@ -28,6 +53,7 @@ by 07:00, Kobol did not run the task: check that it is awake, logged in and the 
 | `logs/DATE.context.json` | The exact context the validator used (the copy in `drafts/` could have been edited by the agent) |
 | `logs/DATE.agent-N.jsonl` | The agent's stream-json transcript for attempt N; `…-repair-K.jsonl` for repairs; `.stderr` beside each |
 | `logs/DATE.evidence.json` | Every URL the agent could cite: pack items, fetched pages and search results |
+| `logs/DATE.archive.log` | The Wayback Machine requests made after publishing. Timeouts are common and harmless |
 | `logs/archive-index.pending.json` | Wayback snapshots requested after publishing, merged by the next publish |
 | `drafts/DATE.json`, `drafts/context.json` | The agent's draft and its context |
 | `research/packs/DATE.md` | The source pack the agent read |
@@ -57,6 +83,7 @@ All from `~/Projects/EuropeTracker`, with the native tools on the PATH (`export 
 
 | Job | Command |
 |---|---|
+| Rerun from the Claude app | **Run now** on the task page (skips if today's brief exists) |
 | Rerun this morning's brief | `npm run daily -- --no-deadline` (the deadline becomes start + 75 minutes) |
 | Rerun even though today's brief exists | `npm run daily -- --no-deadline --force` (publish still refuses to overwrite; delete the brief by PR first) |
 | Dry run (no git writes, no publish) | `npm run daily -- --dry-run --no-deadline` |
@@ -87,6 +114,9 @@ errors listed in `validator-report.json`, validate, then publish.
 
   The first command signs in through the browser and prints a token; the second stores it, asking for
   it twice. Never paste the token anywhere else.
+- The current token was created on 2 November 2026 and lasts a year: renew it before 2 November 2027.
+  On Kobol, `~/.europetracker/save-token.zsh` (outside the repo) runs both steps and saves the token
+  only after a test call with it works.
 - **Update the CLI:** `/opt/homebrew/bin/npm install --prefix $HOME/.europetracker/cli @anthropic-ai/claude-code@<version>`,
   then `npm run agent:check -- --sandbox`. Check `claude --help` for changed flags first (SPEC §8.4).
 
