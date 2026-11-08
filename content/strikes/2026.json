@@ -1735,6 +1735,66 @@
       "seed": false,
       "added": "2026-11-08",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0056",
+      "date": "2026-11-08",
+      "target_name": "R-280 highway bridge over the Mius river, Neklinovsky district",
+      "target_type": "logistics_rail",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Yuri Slyusar said drone debris damaged the bridge at km 97 of the R-280 and traffic was shut down, the Kyiv Independent reported. The road links Rostov to occupied regions and Crimea. A monitoring channel claimed an FP-2 drone; this is unverified.",
+      "sources": [
+        {
+          "title": "Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/",
+          "published_at": "2026-11-09T01:39:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-09",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0057",
+      "date": "2026-11-08",
+      "target_name": "Sulin power substation, Millerovsky district",
+      "target_type": "power",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Slyusar said a drone damaged a transformer at the Sulin substation, cutting power to several villages, the Kyiv Independent reported. No casualties.",
+      "sources": [
+        {
+          "title": "Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/",
+          "published_at": "2026-11-09T01:39:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-09",
+      "updated": null
     }
   ]
 }

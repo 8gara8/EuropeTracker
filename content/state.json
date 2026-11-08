@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-09",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -426,7 +426,7 @@
     }
   ],
   "weekly": {
-    "as_of": "2026-11-02",
+    "as_of": "2026-11-09",
     "medium_term": {
       "question": "Will a Russian drone, missile or debris kill anyone on the land territory of a NATO or EU member state between 2 November 2026 and 2 November 2027?",
       "estimate": {

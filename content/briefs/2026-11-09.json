@@ -1,0 +1,1008 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "window": {
+    "start": "2026-11-08T05:30:00+08:00",
+    "end": "2026-11-09T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-09T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": true,
+  "title": "Zaporizhzhia plant loses all off-site power for the 27th time as Russia claims three more ship strikes; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. No new incident on European territory, airspace or waters met our logging threshold. The IAEA said the Zaporizhzhia nuclear plant lost all off-site power for the 27th time; power returned hours later, and we log it at rung 1. After an overnight raid of 164 drones and three missiles, Russia's defence ministry claimed strikes on three cargo ships at Odesa and Chornomorsk. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s3",
+    "s6",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on the October ship strikes off Romania and Bulgaria (INC-2026-0100, 0103, 0109). Today's only new incident, the Zaporizhzhia outage, is rung 1. Nothing suggests deliberate, sustained Russian action against a NATO or EU state, so a step to rung 5 stays remote (5%)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Eight incidents in 30 days against a 12.7 baseline; no serious incident in 12 months. Romania tracked targets near Snake Island but reported no violation. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against a 1.3 baseline; two serious in 12 months. Nothing new in the window. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Three incidents in 30 days against 1.7 a month; 12 serious in 12 months. Russia claimed three more cargo-ship strikes off Odesa, again unnamed. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No logged incident in 30 days against 0.7 a month. The Tajani data leak is intimidation, not disruption of essential services. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days; no deliberate Russian border crossing since 2022. Nothing new in the window. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Baseline 0.3 incidents a month; none serious. The 27th Zaporizhzhia blackout ended within hours with two weeks of diesel in reserve. It shows fragility but no release or readiness change. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Baseline 0.3 a month; none serious. Moldova's new line to Romania reduces exposure to energy coercion. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1: Tusk said Poland prevented a possible provocation at the Kaliningrad border on 3 November, and Russian strike routes still pass near the border.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 for persistent GPS interference over the Baltic, and for drone incidents in neighbouring Latvia in November.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 for persistent GPS interference over the Gulf of Finland and the closed eastern border.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Zaporizhzhia nuclear plant loses all off-site power for the 27th time; power restored hours later",
+      "summary": "The IAEA said the plant lost Ferosplavna-1, its only remaining external line, early on 8 November. It switched to diesel generators with about two weeks of fuel. Energoatom said an automatic reconnection failed. Reuters reported, citing the IAEA, that power returned the same day. The IAEA said the cause and location of the fault were unknown.",
+      "category": "nuclear",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0112"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 1,
+      "russian_framing": "The Russian-installed plant management attributed the shutdown to 'automatic protection' and said radiation was normal. TASS, citing the station, reported that external supply was restored.",
+      "source_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia claims drone strikes on three cargo ships at Odesa, Chornomorsk and south-west of Odesa",
+      "summary": "Russia's defence ministry claimed hits on two container ships, one at Odesa and one in Chornomorsk port, and on a dry-cargo ship south-west of Odesa. It named none of them. Reuters could not verify the claims, and Ukraine had not commented. No position inside Romanian or Bulgarian waters was given.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said the ships carried weapons, military equipment or dual-use cargo for Ukraine's armed forces.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Overnight raid of 164 drones and three missiles leaves 600,000 without power in Dnipropetrovsk",
+      "summary": "Ukraine's General Staff said Russia launched three Kh-59/69 missiles and 164 Shahed-type drones, 112 of them jet-powered, and that 137 targets were downed or suppressed. Zelensky said more than 600,000 customers in Dnipropetrovsk lost power at the peak. Zelensky said Russia fired 115 missiles and more than 3,000 drones over the week.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed hits on substations in Dnipropetrovsk and Zhytomyr oblasts that it said powered military-industrial enterprises.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s5",
+        "s20"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Romania tracks two aerial targets near Snake Island; Spanish jets scramble, no violation reported",
+      "summary": "Romania's defence ministry said radar tracked two targets on Sunday afternoon, one about 30 km east of Snake Island in Ukrainian airspace. Two Spanish F-18s and two NH-90 helicopters took off from Mihail Kogălniceanu, and eastern Tulcea received an RO-Alert. No entry into Romanian airspace was reported.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ukrainian drones close R-280 bridge over the Mius and hit a substation in Rostov Oblast",
+      "summary": "Governor Yuri Slyusar said drone debris damaged the bridge on the R-280 highway in Neklinovsky district, a road linking Rostov to occupied Ukraine and Crimea. Traffic was shut down. He also said a transformer at the Sulin substation was hit, cutting power to villages. No casualties were reported.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0056",
+        "STR-2026-0057"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Italy blames pro-Russian hackers for leaking Tajani's personal data and puts cyberattacks on the G7 agenda",
+      "summary": "Foreign Minister Tajani said pro-Russian hackers published his personal data on the dark web. He said they were seeking more information about his family. Prime Minister Meloni said groups sympathetic to Russia were behind the attack. Tajani did not blame the Russian state. He asked the G7 foreign ministers meeting in Paris to coordinate a response to hybrid attacks.",
+      "category": "cyber_ew",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "France says Europeans will be 'well represented' at the US-brokered Abu Dhabi talks",
+      "summary": "French Foreign Minister Jean-Noël Barrot said Europeans would be 'well represented' and that France would take part in Abu Dhabi, without naming its envoy. Meloni has called for a dedicated EU envoy. The round is expected this week.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS reported the French announcement of European participation in its news summary, without Kremlin comment.",
+      "source_ids": [
+        "s12",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "id": "d8",
+      "headline": "Moldova opens Vulcănești–Chișinău power line, cutting reliance on the Transnistrian route",
+      "summary": "Moldova inaugurated a new power line linking it with Romania. President Maia Sandu said 'no one will be able to blackmail us any more' (translated). The line cuts Moldova's dependence on the limited routes Russia has used for energy coercion.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s17",
+        "s18"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Ukraine's General Staff claimed a record 16,130 Russian casualties for 1–7 November. In Komyshuvakha, rescuers have recovered 55 bodies from the aid site struck on 2 November, and 45 people are still missing. Neither changes spillover risk.",
+      "development_ids": [],
+      "source_ids": [
+        "s19",
+        "s21"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukrainian drones closed the R-280 bridge over the Mius and hit the Sulin substation in Rostov Oblast. Both are logged at verification 1. Russia's defence ministry claimed 50 Ukrainian drones downed over five regions during the day.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s11",
+        "s22"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 164 drones and three missiles overnight, cutting power to 600,000 in Dnipropetrovsk. As the window closed, jet-powered drones were heading for Sharhorod and Tulchyn in Vinnytsia, near Moldova's northern border.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s23"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "France says Europeans will attend the Abu Dhabi round. Zelensky again called for sanctions on missile producers before the talks.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s13",
+        "s5"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Romania tracked two targets near Snake Island and Spanish jets scrambled; no violation was reported. Searches for Poland, the Baltic states, Finland, Romania and Moldova found no new incursion in the window.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia claimed strikes on three cargo ships at Odesa, Chornomorsk and south-west of Odesa. This is the fourth such claim in four days, and again no vessel was named.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "Italy's leaders blamed pro-Russian hackers for leaking Tajani's data, and the G7 will discuss hybrid attacks. It is not logged, because we have not opened an Italian government statement and there is no state attribution.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "The IAEA reported that Zaporizhzhia lost all off-site power for the 27th time; power returned hours later. The plant hangs on one line. The IAEA has not yet commented on the substations serving Rivne and Khmelnytskyi.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Moldova opened a new line to Romania, reducing its exposure to energy coercion. Messages published by Politico show Jan Marsalek telling a convicted Russian spy that he helped 'topple' Austria's Kurz in 2021. This is a historical claim, not a new operation.",
+      "development_ids": [
+        "d8"
+      ],
+      "source_ids": [
+        "s17",
+        "s24"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0112",
+      "date": "2026-11-08",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant, Enerhodar",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The plant lost Ferosplavna-1, its only remaining off-site line, at 02:36 and ran on diesel generators. The IAEA reported this as its 27th total loss of off-site power, with about two weeks of fuel. Power was restored hours later.",
+      "attribution": 1,
+      "attribution_note": "The IAEA said the cause and location are unknown. Energoatom links outages to Russian strikes on lines; the Russian-installed management cited automatic protection.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ukraine's Zaporizhzhya nuclear plant loses all external power for 27th time: UN nuclear watchdog",
+          "outlet": "Anadolu Agency",
+          "category": "intl_press",
+          "url": "https://www.aa.com.tr/en/world/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903",
+          "published_at": "2026-11-08"
+        },
+        {
+          "title": "Power restored to Zaporizhzhia nuclear plant, IAEA says",
+          "outlet": "Reuters (via Yahoo News)",
+          "category": "intl_press",
+          "url": "https://www.yahoo.com/news/articles/zaporizhzhia-nuclear-plant-loses-external-084120498.html",
+          "published_at": "2026-11-08"
+        },
+        {
+          "title": "Zaporizhzhia Nuclear Power Plant experiences another blackout",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061781/",
+          "published_at": "2026-11-08T16:36:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-09",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0056",
+      "date": "2026-11-08",
+      "target_name": "R-280 highway bridge over the Mius river, Neklinovsky district",
+      "target_type": "logistics_rail",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Yuri Slyusar said drone debris damaged the bridge at km 97 of the R-280 and traffic was shut down, the Kyiv Independent reported. The road links Rostov to occupied regions and Crimea. A monitoring channel claimed an FP-2 drone; this is unverified.",
+      "sources": [
+        {
+          "title": "Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/",
+          "published_at": "2026-11-09T01:39:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-09",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0057",
+      "date": "2026-11-08",
+      "target_name": "Sulin power substation, Millerovsky district",
+      "target_type": "power",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Slyusar said a drone damaged a transformer at the Sulin substation, cutting power to several villages, the Kyiv Independent reported. No casualties.",
+      "sources": [
+        {
+          "title": "Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/",
+          "published_at": "2026-11-09T01:39:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-09",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The Black Sea shipping campaign remains the most likely route to further deaths. Airspace remains the most frequent source of incidents: eight logged in 30 days against a baseline of 12.7 a month. Nothing in the window moves any pathway by 5 points.\n\nThe Zaporizhzhia outage is the day's most important item, but it is a safety warning, not spillover. The IAEA said the plant lost Ferosplavna-1, its only remaining line, and fell back on diesel generators with about two weeks of fuel. Reuters reported that power returned hours later. Energoatom ties such outages to Russia deliberately disabling the lines. The Russian-installed management cited 'automatic protection', and the IAEA said the cause was unknown. With one line left, every fault is a single point of failure. We hold nuclear at remote (3%), because a release would need a long loss of cooling that diesel reserves still cover. The outage resolves F-2026-007 as yes.\n\nRussia's defence ministry claimed hits on three cargo ships at Odesa, Chornomorsk and south-west of Odesa. It is the fourth such claim in four days, and again no ship was named. We hold maritime at likely (70%).\n\nRomania's radar tracked two targets near Snake Island; Spanish jets scrambled and Tulcea received an RO-Alert, but no violation was reported. As the window closed, Ukraine's Air Force tracked jet-powered drones towards Sharhorod and Tulchyn, near Moldova's northern border. We will check for crossings. Jet drones made up 112 of last night's 164, which shortens reaction times for Moldovan and Romanian air defences.\n\nItaly's leaders blamed pro-Russian hackers for leaking Foreign Minister Tajani's data. Tajani did not blame the Russian state. We have not logged it; it fits assumption A4.\n\nOn the ceasefire paradox, France says Europeans will attend the Abu Dhabi talks. A deal would cut near-term airspace and maritime risk. Russian forces regenerating near NATO would raise risk later.",
+    "change_my_mind": "We would raise our estimates if Moldova or Romania confirms a crossing from tonight's raid, if a ship named by Russia was hit inside Romanian or Bulgarian waters, or if the IAEA finds military action cut Zaporizhzhia's last line and cannot be repaired.",
+    "competing_explanations": [
+      {
+        "subject": "INC-2026-0112: Zaporizhzhia loses its last off-site line",
+        "hypotheses": [
+          {
+            "label": "Military damage to the line or its substation",
+            "assessment": "Energoatom links the pattern of outages to Russian strikes on supply lines. Military activity around Zaporizhzhia is intense, and a failed automatic reconnection fits physical damage.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Technical fault or protective trip",
+            "assessment": "The plant management cited automatic protection. Power returned within hours, which fits a trip or minor fault better than heavy damage. The IAEA has not yet found the cause.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-019",
+      "question": "Will the IAEA report that the Zaporizhzhia nuclear power plant lost all off-site power between 10 November and 31 December 2026?",
+      "resolution_criteria": "Yes if an IAEA statement or update reports that the Zaporizhzhia plant lost all off-site power, even briefly, at any time between 10 November and 31 December 2026.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "nuclear",
+      "probability": 45,
+      "base_rate": 35,
+      "base_rate_note": "27 total losses in about 51 months, roughly 0.5 a month, or about 35% over 52 days. We raised it because the plant now depends on a single line and Russia's winter grid campaign is under way."
+    }
+  ],
+  "forecast_updates": [],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-007",
+      "outcome": "yes",
+      "note": "The IAEA said Zaporizhzhia lost its only remaining off-site line, Ferosplavna-1, on 8 November. This was its 27th total loss of off-site power. Power was restored hours later.",
+      "source_id": "s6"
+    }
+  ],
+  "assumption_updates": [],
+  "taiwan": "The most direct lesson is for air defence against mass raids. Jet-powered drones made up 112 of Russia's 164 drones last night. That shortens reaction times and favours fast interceptors and guns over slower counter-drone systems. Ukraine, Europe and Taiwan all compete for the same US production of Patriot and NASAMS interceptors. Zaporizhzhia's 27th blackout shows how a single surviving grid line can put a nuclear plant at risk in wartime, which matters for planning against grid strikes on Taiwan.",
+  "next_72h": [
+    {
+      "date": "2026-11-10",
+      "event": "G7 foreign ministers meet in Paris; Italy has asked them to coordinate a response to recent cyberattacks and hybrid warfare.",
+      "why": "A joint attribution to Russia would test assumption A4 and could raise cyber incidents to attribution level 4."
+    },
+    {
+      "date": "2026-11-10",
+      "event": "Expected start of US-mediated Russia–Ukraine talks in Abu Dhabi, with European participation according to France.",
+      "why": "This resolves F-2026-016 and tests the ceasefire paradox."
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Moldovan and Romanian defence ministry reports on drone tracks from the night of 8–9 November near Vinnytsia and Odesa.",
+      "why": "A crossing would add an airspace incident and count toward F-2026-017."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "IAEA update on Zaporizhzhia's power lines and the cause of the 8 November outage.",
+      "why": "The cause will settle our competing explanations; repairs bear on F-2026-019."
+    }
+  ],
+  "weekly_outlook": {
+    "medium_term": {
+      "question": "Will a Russian drone, missile or debris kill anyone on the land territory of a NATO or EU member state between 2 November 2026 and 2 November 2027?",
+      "estimate": {
+        "probability": 40,
+        "term": "realistic_possibility",
+        "confidence": "low"
+      },
+      "text": "We hold at a realistic possibility (40%). The October ship strikes killed crew at sea, but no one has died on NATO land since Przewodów. Airspace incidents run at eight in 30 days. Jet-powered drones now dominate raids (112 of 164 last night), and strike routes pass close to Moldova and Romania. Both raise the chance of a lethal crash. Most crossings still end in open country. A ceasefire from the Abu Dhabi track would lower the odds sharply, and we see no sign that one is near."
+    },
+    "long_term": {
+      "question": "Will Russia carry out a deliberate, attributable armed attack on the territory of a NATO member by 2 November 2030?",
+      "estimate": {
+        "probability": 20,
+        "term": "highly_unlikely",
+        "confidence": "low"
+      },
+      "text": "We hold at highly unlikely (20%). European services and NATO judge that Russia could be ready to test the alliance within a few years of the war ending. They base this on its force regeneration and on a defence industry producing more than 200 missiles a month, by Ukraine's estimate. US posture is the key amplifier, and the European force posture review is still open. Rising European defence spending and German forces based in Lithuania raise the cost of an attack. No new evidence this week moves the estimate."
+    },
+    "assumptions_check": [
+      {
+        "id": "A1",
+        "status": "holds",
+        "note": "Russia's ship strikes come close to European waters, but no deliberate attributable attack on NATO land took place this week.",
+        "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine."
+      },
+      {
+        "id": "A2",
+        "status": "holds",
+        "note": "No new US statement or posture change this week. The force posture review and post-midterm politics remain the risk.",
+        "text": "The United States remains committed to defending NATO allies under Article 5."
+      },
+      {
+        "id": "A3",
+        "status": "holds",
+        "note": "This week's tracks and crossings followed strike routes into Ukraine. Nothing pointed to preparation for invasion.",
+        "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion."
+      },
+      {
+        "id": "A4",
+        "status": "holds",
+        "note": "Cyber intimidation of Italy's foreign minister and the cyberattack on Moldova's government systems continue regardless of the Abu Dhabi diplomacy.",
+        "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments."
+      },
+      {
+        "id": "A5",
+        "status": "holds",
+        "note": "No ceasefire is in force. The Abu Dhabi round is the test, and France says Europeans will attend.",
+        "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders."
+      }
+    ],
+    "calibration_note": "One forecast has resolved. F-2026-007 (Zaporizhzhia losing all off-site power) resolved yes. We had it at 75% against a base rate of 80%, so our Brier score was 0.0625 against 0.04 for the base rate. We shaded below history on the strength of IAEA-brokered repairs, and the base rate did slightly better. One result is too few to judge calibration."
+  },
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 164,
+      "unit": "count",
+      "period": "night of 7–8 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shahed-type, 112 of them jet-powered; Gerbera and decoys also used."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 3,
+      "unit": "count",
+      "period": "night of 7–8 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Kh-59/69 from the Sea of Azov."
+    },
+    {
+      "id": "znpp_offsite_power_lines",
+      "value": 1,
+      "unit": "count",
+      "period": "8 Nov, after restoration",
+      "source_ids": [
+        "s6",
+        "s7"
+      ],
+      "note": "Only Ferosplavna-1 was connected before the outage; restored line not specified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 137 ВОРОЖИХ ЦІЛЕЙ (137 enemy targets shot down or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42838",
+      "language": "uk",
+      "published_at": "2026-11-08T14:14:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Провів селектор. Перше – Дніпровщина (Held a conference call. First, Dnipropetrovsk region, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21734",
+      "language": "uk",
+      "published_at": "2026-11-08T22:28:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "ВС РФ продолжают нанесение ударов по объектам энергетики Украины и морским судам (Russian forces continue strikes on Ukraine's energy and ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68867",
+      "language": "ru",
+      "published_at": "2026-11-08T22:06:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Russia Says Hit Power Substations in Ukraine and 3 Ships in Black Sea",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/08/russia-says-hit-power-substations-in-ukraine-and-3-ships-in-black-sea-a94203",
+      "language": "en",
+      "published_at": "2026-11-09T01:03:00+08:00",
+      "accessed_at": "2026-11-09T05:50:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Russian strikes leave 600,000 in the dark in eastern Ukraine",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/russian-strikes-leave-600000-in-the-dark-in-eastern-ukraine-dnipropetrovsk/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-08T19:09:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Ukraine's Zaporizhzhya nuclear plant loses all external power for 27th time: UN nuclear watchdog",
+      "outlet": "Anadolu Agency",
+      "category": "intl_press",
+      "url": "https://www.aa.com.tr/en/world/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903",
+      "language": "en",
+      "published_at": "2026-11-08",
+      "accessed_at": "2026-11-09T06:05:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Power restored to Zaporizhzhia nuclear plant, IAEA says",
+      "outlet": "Reuters (via Yahoo News)",
+      "category": "intl_press",
+      "url": "https://www.yahoo.com/news/articles/zaporizhzhia-nuclear-plant-loses-external-084120498.html",
+      "language": "en",
+      "published_at": "2026-11-08",
+      "accessed_at": "2026-11-09T06:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Zaporizhzhia Nuclear Power Plant experiences another blackout",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061781/",
+      "language": "en",
+      "published_at": "2026-11-08T16:36:00+08:00",
+      "accessed_at": "2026-11-09T05:55:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "На Запорожской АЭС восстановлено внешнее электроснабжение (External power restored at Zaporizhzhia NPP, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404610",
+      "language": "ru",
+      "published_at": "2026-11-09T01:25:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Drone detectate lângă Insula Șerpilor. Aeronave şi elicoptere ale Forţelor Armate Spaniole, mobilizate. Ro-Alert în jud. Tulcea",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/evenimente/drone-detectate-langa-insula-serpilor-aeronave-si-elicoptere-ale-fortelor-armate-spaniole-mobilizate-ro-alert-pentru-in-jud-tulcea-4026739",
+      "language": "ro",
+      "published_at": "2026-11-08T22:16:00+08:00",
+      "accessed_at": "2026-11-09T05:50:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/",
+      "language": "en",
+      "published_at": "2026-11-09T01:39:00+08:00",
+      "accessed_at": "2026-11-09T05:50:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Ukraine war latest: Ukraine hits key bridge on 'highway of death' linking mainland Russia to occupied regions",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-ukraine-hits-key-bridge-on-highway-of-death-linking-mainland-russia-to-occupied-regions/",
+      "language": "en",
+      "published_at": "2026-11-09T02:44:00+08:00",
+      "accessed_at": "2026-11-09T06:08:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Europe will be represented in Abu Dhabi talks on Ukraine, French foreign minister says",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/europe-will-be-represented-in-abu-dhabi-talks-on-ukraine-french-foreign-minister-jean-noel-barrot-says/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-08T22:03:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Главные новости к этому часу (Top news at this hour, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404608",
+      "language": "ru",
+      "published_at": "2026-11-09T01:01:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "G7 Ministers to Discuss Recent Cyber Attacks, Italy Says",
+      "outlet": "Reuters (via U.S. News & World Report)",
+      "category": "intl_press",
+      "url": "https://www.usnews.com/news/world/articles/2026-11-08/g7-ministers-to-discuss-recent-cyber-attacks-italy-says",
+      "language": "en",
+      "published_at": "2026-11-08",
+      "accessed_at": "2026-11-09T06:02:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Sybiha Backs Italian FM Tajani Targeted by Pro-Russian Hackers Over Kyiv",
+      "outlet": "Kyiv Post",
+      "category": "ua_independent",
+      "url": "https://www.kyivpost.com/post/89475",
+      "language": "en",
+      "published_at": null,
+      "accessed_at": "2026-11-09T06:02:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Санду на запуске ЛЭП Вулканешты — Кишинев: «Никто больше не сможет шантажировать нас» (Sandu at the launch of the Vulcănești–Chișinău line: 'No one will be able to blackmail us any more', translated)",
+      "outlet": "NewsMaker (Moldova)",
+      "category": "eu_regional_press",
+      "url": "https://newsmaker.md/ru/sandu-na-zapuske-linii-vulkaneshty-kishinev-nikto-bolshe-ne-smojet-shantajirovat-nas",
+      "language": "ru",
+      "published_at": "2026-11-09T01:28:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "„Dependenţa de energia rusească este cu adevărat încheiată”. R. Moldova a inaugurat o nouă linie electrică ce o conectează cu România",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/dependenta-de-energia-ruseasca-este-cu-adevarat-incheiata-r-moldova-a-inaugurat-o-noua-linie-electrica-ce-o-conecteaza-cu-romania-4027055",
+      "language": "ro",
+      "published_at": "2026-11-09T04:50:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Полк за добу (A regiment a day, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42842",
+      "language": "uk",
+      "published_at": "2026-11-08T17:33:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Russia has attacked Ukraine with 115 missiles and over 3,000 drones this week, Zelenskyy reports",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061791/",
+      "language": "en",
+      "published_at": "2026-11-08T18:09:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Forty-five people still missing following Russian strike on Komyshuvakha",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061823/",
+      "language": "en",
+      "published_at": "2026-11-08T21:56:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "В течение дня… перехвачены и уничтожены 50 украинских беспилотных летательных аппаратов (50 Ukrainian drones intercepted during the day, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68871",
+      "language": "ru",
+      "published_at": "2026-11-09T01:14:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Вінниччина: Реактивний БпЛА курсом на Шаргород (Vinnytsia region: jet-powered drone heading for Sharhorod, translated)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/kpszsu/94316",
+      "language": "uk",
+      "published_at": "2026-11-09T04:15:00+08:00",
+      "accessed_at": "2026-11-09T05:58:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Wirecard fugitive claimed he toppled Sebastian Kurz in messages to Russian spy",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/wirecard-fugitive-jan-marsalek-claimed-he-toppled-sebastian-kurz-in-messages-to-russian-spy/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-09T00:57:00+08:00",
+      "accessed_at": "2026-11-09T06:00:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-09T05:45:08+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 12.7
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1891,
+    "source_count": 24,
+    "source_category_count": 7
+  }
+}

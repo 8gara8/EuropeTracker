@@ -4240,6 +4240,57 @@
       "seed": false,
       "added": "2026-11-04",
       "updated": null
+    },
+    {
+      "id": "INC-2026-0112",
+      "date": "2026-11-08",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant, Enerhodar",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The plant lost Ferosplavna-1, its only remaining off-site line, at 02:36 and ran on diesel generators. The IAEA reported this as its 27th total loss of off-site power, with about two weeks of fuel. Power was restored hours later.",
+      "attribution": 1,
+      "attribution_note": "The IAEA said the cause and location are unknown. Energoatom links outages to Russian strikes on lines; the Russian-installed management cited automatic protection.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ukraine's Zaporizhzhya nuclear plant loses all external power for 27th time: UN nuclear watchdog",
+          "outlet": "Anadolu Agency",
+          "category": "intl_press",
+          "url": "https://www.aa.com.tr/en/world/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903",
+          "published_at": "2026-11-08"
+        },
+        {
+          "title": "Power restored to Zaporizhzhia nuclear plant, IAEA says",
+          "outlet": "Reuters (via Yahoo News)",
+          "category": "intl_press",
+          "url": "https://www.yahoo.com/news/articles/zaporizhzhia-nuclear-plant-loses-external-084120498.html",
+          "published_at": "2026-11-08"
+        },
+        {
+          "title": "Zaporizhzhia Nuclear Power Plant experiences another blackout",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061781/",
+          "published_at": "2026-11-08T16:36:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-09",
+      "updated": null
     }
   ]
 }
