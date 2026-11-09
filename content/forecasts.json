@@ -276,6 +276,11 @@
           "date": "2026-11-04",
           "probability": 20,
           "note": "Tusk says Poland prevented a possible provocation at the Kaliningrad border on 3 November. No crossing was attempted, but the threat is now described as current."
+        },
+        {
+          "date": "2026-11-10",
+          "probability": 15,
+          "note": "The 2–8 November warning window passed with no reported sabotage or crossing at the Kaliningrad border. The threat period Tusk cited runs to mid-November."
         }
       ],
       "status": "open",
@@ -331,6 +336,11 @@
           "date": "2026-11-08",
           "probability": 70,
           "note": "Zelensky says Russia is preparing for 'the trilateral talks' with strikes, which signals that Kyiv expects the round to go ahead."
+        },
+        {
+          "date": "2026-11-10",
+          "probability": 75,
+          "note": "Estonia's foreign minister refers to 'this week's' US-mediated Abu Dhabi talks, which is a further sign that the round is going ahead."
         }
       ],
       "status": "open",

@@ -1,0 +1,845 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "window": {
+    "start": "2026-11-09T05:30:00+08:00",
+    "end": "2026-11-10T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-10T06:15:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Ukrainian drones set Russia's second-largest refinery ablaze as Moscow warns over Kaliningrad; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. Searches across all seven frontline states found no new incident on European territory, airspace or waters. Overnight into 9 November, Russia launched 317 drones at Ukraine, 105 of them jet-powered. Ukrainian drones set Russia's second-largest refinery, at Kirishi near St Petersburg, on fire. Russia's deputy foreign minister warned that any blockade of Kaliningrad would end in catastrophe. France blamed Iran, not Russia, for sabotage of supermarket fridges across Europe. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s3",
+    "s4",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on the deadly drone strikes on merchant ships in Bulgarian and Romanian waters on 13, 15 and 23 October, all inside 30 days. No new incident was logged today. Rung 5 needs deliberate, sustained Russian military action against an ally, and nothing in the window points that way."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Eight incidents in 30 days against a baseline of 12.7 a month; none serious in 12 months. We found no crossing in the window. Held: a retaliatory raid after the Kirishi strike could again route drones near Moldova and Romania.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against a baseline of 1.3 a month; two serious in 12 months. No new Russia-linked case surfaced. The fridge sabotage was attributed to Iran, so it does not move this pathway.",
+        "source_ids": [
+          "s9"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Three incidents in 30 days against 1.7 a month, and 12 serious in 12 months, driven by October's ship strikes off Romania and Bulgaria. No new strike at sea was reported in the window. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against 0.7 a month. The supermarket attacks show that European refrigeration controls are exposed, but France attributed them to an Iranian unit. Held.",
+        "source_ids": [
+          "s9",
+          "s10"
+        ]
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and a baseline near zero. Ryabkov's warning over Kaliningrad is rhetoric, not a deployment. Held.",
+        "source_ids": [
+          "s8"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One incident in 30 days against 0.3 a month. The IAEA reported a plant worker killed by a drone; that is a personnel safety warning with no effect on cooling or power. Held.",
+        "source_ids": [
+          "s6"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against 0.3 a month. Nothing in the window exposed a new Russian operation against an EU or NATO decision. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1: Russian strike routes near the border (ind-border-tracks) and the early-November warning of sabotage or armed provocation at the Kaliningrad border.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 for persistent Baltic GPS interference (ind-gnss-baltic, active). Estonia was among the 11 countries hit by the supermarket fridge sabotage, which France attributes to Iran.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 for persistent GPS interference over the Gulf of Finland (ind-gnss-baltic, active) and Russian naval activity in the Baltic.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Ukrainian drones set the Kirishi refinery on fire; Kyiv claims hits on a plant making Iskander fuel",
+      "summary": "Overnight into 9 November, Ukrainian drones set the Kirishi refinery, Russia's second-largest, on fire. Governor Drozdenko said 113 drones were downed and debris killed a woman in Vsevolozhsk. Ukraine's General Staff said three workshops were damaged at the Morozov plant, which it says makes Iskander-M fuel charges.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0058",
+        "STR-2026-0059"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry claimed 430 Ukrainian drones intercepted overnight, including over Leningrad Oblast. Drozdenko at first reported no damage in Kirishi district, Meduza says, but later confirmed that the refinery was struck.",
+      "source_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia launches 317 drones at Ukraine, 105 of them jet-powered; three killed in Odesa",
+      "summary": "Ukraine's General Staff said Russia launched 317 Shahed-type drones overnight into 9 November, 105 of them jet-powered. It said 276 targets were downed or suppressed and drones hit 31 locations. Odesa officials said at least three people were killed, The Moscow Times reported. We found no crossing into Moldova or Romania.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said it struck energy infrastructure that supports Ukraine's defence industry and military, plus drone production and storage sites.",
+      "source_ids": [
+        "s1",
+        "s4",
+        "s16"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "IAEA says a Zaporizhzhia nuclear plant worker was killed in a drone attack",
+      "summary": "The IAEA said an employee of the Russian-occupied Zaporizhzhia nuclear plant was killed in a drone attack on 9 November, and a worker at the nearby thermal plant was also killed. Grossi condemned the strikes. The IAEA did not say who launched the drone. As with the 29 October death, we have not logged it.",
+      "category": "nuclear",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s6"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Coalition of the Willing begins a 5,000-strong exercise in Poland for a post-war Ukraine force",
+      "summary": "The Multinational Force-Ukraine began exercise Koalicja at Nowa Dęba, about 100 km from Ukraine, running from 9 to 22 November. About 2,800 coalition personnel take part, led by France and the UK, with just under 2,000 Polish troops. Commander Lt-Gen Tom Bateman called it 'a real, capable, readily deployable force'.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Foreign Ministry spokeswoman Zakharova condemned the exercise and said Russia would regard any such military units in Ukraine as legitimate targets, Notes from Poland reported.",
+      "source_ids": [
+        "s7"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ryabkov denies plans to attack the West but warns a Kaliningrad blockade would bring catastrophe",
+      "summary": "Speaking in Vienna on 9 November, Deputy Foreign Minister Sergei Ryabkov said Russia has 'no intentions, plans, or reasons to attack Western countries' (translated). He accused the West of obstructing Russian shipping in the Baltic, and warned that any blockade of Kaliningrad would lead directly to catastrophe.",
+      "category": "military_pressure",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Ryabkov presents NATO and EU militarisation and northern exercises as preparation for strikes on Russia, and Russia as acting only in response.",
+      "source_ids": [
+        "s8"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "France blames an Iranian IRGC unit, not Russia, for the supermarket fridge sabotage across Europe",
+      "summary": "France attributed the October attack on refrigeration systems in about 700 French stores to Shahid Kaveh, an IRGC cyber unit. It said the attacks caused at least 15 fires. A second wave in early November reached at least 11 European countries, including Estonia. No official has raised a Russian link.",
+      "category": "cyber_ew",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Abu Dhabi talks due this week as Canada adds 62 Russian sanctions targets",
+      "summary": "Estonia's Foreign Minister Tsahkna said a ceasefire would be the best outcome of this week's US-mediated Abu Dhabi talks, though he does not personally expect one, and that a broader European settlement need not be feared. Canada sanctioned 38 entities and 24 individuals tied to ballistic missiles, cyber activity and crypto exchanges.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "At the UN Security Council, Russia's envoy Nebenzia said breaking ties with Moscow, sanctions and support for Kyiv had placed a heavy burden on European budgets.",
+      "source_ids": [
+        "s11",
+        "s12",
+        "s17"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Russia's defence ministry claimed the capture of Vasylkove in Zaporizhzhia Oblast. Ukraine's General Staff counted 148 clashes and 163 guided bombs on 9 November. Neither side's reporting shows a breakthrough or collapse.",
+      "development_ids": [],
+      "source_ids": [
+        "s15",
+        "s18"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukrainian drones set the Kirishi refinery in Leningrad Oblast on fire; debris killed a woman in Vsevolozhsk. The General Staff claimed damage to three workshops at the Morozov plant, which it says makes Iskander fuel charges. Both are at verification 1. TASS reported that a Ukrainian drone strike blacked out occupied Luhansk.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s20"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 317 drones overnight into 9 November, 105 of them jet-powered; three people were reported killed in Odesa. As the window closed, jet drones were tracked towards Shyriaieve in Odesa Oblast and towards Rivne Oblast.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s1",
+        "s4",
+        "s19"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The US-mediated Abu Dhabi talks are due this week; Estonia's foreign minister calls a ceasefire the best possible outcome but does not expect one. Canada sanctioned 62 targets in Russia's missile, cyber and financial networks.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "France attributed the supermarket refrigeration sabotage to Iran's IRGC Shahid Kaveh unit. A second wave reached at least 11 European countries, including Estonia. We have not logged it, because no official links it to Russia.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Ryabkov warned that any blockade of Kaliningrad would lead to catastrophe, and accused the West of obstructing Russian shipping in the Baltic, while denying that Russia plans to attack. This fits the pretext-narrative indicator, which stays at watch.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s8"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "The IAEA said a drone killed a Zaporizhzhia nuclear plant employee and a thermal plant worker on 9 November, the second staff death at the plant since 29 October. Grossi condemned the attacks.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s6"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "The Coalition of the Willing began a 5,000-strong exercise in Poland for a post-war Ukraine force. The EU Council extended the mandate of its military assistance mission for Ukraine to November 2028.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s7",
+        "s13"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0058",
+      "date": "2026-11-08",
+      "target_name": "Kirishinefteorgsintez (KINEF) oil refinery, Kirishi",
+      "target_type": "refinery",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set the Surgutneftegaz-owned Kirishi refinery (about 350,000 b/d) on fire overnight into 9 November. Governor Drozdenko said 113 drones were downed and later confirmed the refinery was hit, Meduza reported. Debris killed a woman in Vsevolozhsk.",
+      "sources": [
+        {
+          "title": "Ukrainian drones strike Russia's Leningrad region, sparking fire at one of the country's largest oil refineries",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/09/ukrainian-drones-strike-russia-s-leningrad-region-sparking-fire-at-one-of-the-country-s-largest-oil-refineries",
+          "published_at": "2026-11-09T17:08:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drone Attack Kills Woman, Sparks Fire at Leningrad Region Refinery",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/09/ukrainian-drone-attack-kills-woman-sparks-fire-at-leningrad-region-refinery-a94204",
+          "published_at": "2026-11-09T17:39:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-10",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0059",
+      "date": "2026-11-08",
+      "target_name": "Morozov Plant (Rostec), near St Petersburg",
+      "target_type": "defence_industry",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces struck the Morozov Plant overnight into 9 November and damaged three production workshops. It says the plant makes explosives and solid-fuel charges for Iskander-M engines and Topol-M fuel. No Russian confirmation was found.",
+      "sources": [
+        {
+          "title": "Паливо для «Іскандерів» під ударом: Сили оборони уразили завод під Санкт-Петербургом (Fuel for Iskanders under attack: Defence Forces hit a plant near St Petersburg, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42850",
+          "published_at": "2026-11-09T18:15:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-10",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. Searches covering Poland, Lithuania, Latvia, Estonia, Finland, Romania and Moldova found no new incursion, sabotage or maritime incident in the window, so we log no new incident. The rung stays at 4, resting on October's ship strikes off Romania and Bulgaria. Airspace remains the most frequent source of incidents: eight in 30 days against a baseline of 12.7 a month. No pathway moves by 5 points.\n\nThe night of 8–9 November was a two-way long-range exchange. Ukraine's General Staff counted 317 Shahed-type drones, 105 of them jet-powered, and said 276 targets were downed or suppressed. Odesa officials said at least three people were killed there. Ukrainian drones in turn set the Kirishi refinery, Russia's second-largest, on fire, and the General Staff claimed damage at the Morozov plant, which it says supplies Iskander fuel. We assess the deep strikes do not raise spillover risk directly. They do make a large Russian retaliatory raid more likely during the Abu Dhabi talks, and raids routed over Odesa and the south-west are the usual source of drones straying into Moldova and Romania. We hold airspace at highly unlikely (15%).\n\nRyabkov's Vienna speech paired a denial with a warning. He said Russia has 'no intentions, plans, or reasons to attack Western countries' (translated) and warned that any blockade of Kaliningrad would lead to catastrophe. We read this as deterrent messaging aimed at allied inspections of Russian shipping in the Baltic, not as pretext-building, and keep ind-pretext at watch.\n\nOn current evidence, the supermarket fridge sabotage that reached 11 European countries, including Estonia, is not a spillover event: France attributed it to an Iranian IRGC unit. We have not logged it. It does show how exposed everyday industrial controls are.\n\nOn the ceasefire paradox, the Koalicja exercise in Poland rehearses a post-ceasefire force that Moscow already calls a legitimate target. A deal would cut near-term airspace and maritime risk. A European force in Ukraine would add a new point of friction later.",
+    "change_my_mind": "A confirmed Russian drone crossing into Moldova, Romania or Poland during a retaliatory raid would raise airspace odds. So would Russian action against allied inspections of shadow-fleet ships in the Baltic, for maritime. A ceasefire agreed in Abu Dhabi would lower both.",
+    "competing_explanations": [
+      {
+        "subject": "Ryabkov's warning that a Kaliningrad blockade would lead to catastrophe",
+        "hypotheses": [
+          {
+            "label": "Deterrent messaging against Baltic shipping enforcement",
+            "assessment": "This repeats long-standing lines. It comes as allies step up checks on shadow-fleet tankers and hold Baltic exercises, and it is paired with an explicit denial of any plan to attack.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "moderate"
+            }
+          },
+          {
+            "label": "Early pretext-building for action near Suwałki or the Baltic",
+            "assessment": "Russian officials have used blockade narratives before, but we see no matching redeployment, exercise surge or diplomatic drawdown that would signal preparation.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [],
+  "forecast_updates": [
+    {
+      "id": "F-2026-016",
+      "probability": 75,
+      "note": "Estonia's foreign minister refers to 'this week's' US-mediated Abu Dhabi talks, which is a further sign that the round is going ahead."
+    },
+    {
+      "id": "F-2026-014",
+      "probability": 15,
+      "note": "The 2–8 November warning window passed with no reported sabotage or crossing at the Kaliningrad border. The threat period Tusk cited runs to mid-November."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A1",
+      "text": null,
+      "reason": "Ryabkov said Russia has no plans to attack Western countries. That is a claim, but no evidence in the window points to deliberate attacks on NATO territory."
+    }
+  ],
+  "taiwan": "The most direct lesson is military. Russia's raid used 105 jet-powered drones out of 317. Ukraine's HUR found close to 100 foreign-made electronic components in the new Geran-5 K5-K. Faster drones cut reaction times and drain interceptors, the same mass-raid problem Taiwan's air defence would face. The component count also shows Russia still sources Western-designed parts through third countries, so export-control enforcement, including on Taiwanese suppliers, stays relevant. Ukraine's strikes on Russia's second-largest refinery and an Iskander fuel plant show how cheap long-range drones can hit an aggressor's energy and missile supply chain. In Poland, European forces are rehearsing a post-war Ukraine force led by France and the UK. That marginally lowers the call on US forces in Europe, which bears on the US ability to prioritise the Indo-Pacific.",
+  "next_72h": [
+    {
+      "date": "2026-11-11",
+      "event": "Second day of the US-mediated Russia–Ukraine talks expected in Abu Dhabi.",
+      "why": "A ceasefire or energy truce would cut near-term airspace and maritime risk; failure may bring a mass raid."
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Zakharova's weekly Foreign Ministry briefing.",
+      "why": "Likely Russian framing of the Abu Dhabi talks, the Koalicja exercise in Poland and Kaliningrad."
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Overnight tally of any Russian retaliatory raid after the Kirishi strike.",
+      "why": "Raids routed over Odesa and the south-west are the usual source of drones straying into Moldova and Romania."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Exercise Koalicja continues at Nowa Dęba in Poland, running to 22 November.",
+      "why": "Watch for Russian drone overflights, jamming or sabotage aimed at the exercise."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 317,
+      "unit": "count",
+      "period": "night of 8–9 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shahed-type drones, 105 of them jet-powered; Ukraine's General Staff figure."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 276,
+      "unit": "count",
+      "period": "night of 8–9 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Targets downed or suppressed, including 271 Shahed-type drones."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 276 ВОРОЖИХ ЦІЛЕЙ (276 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42847",
+      "language": "uk",
+      "published_at": "2026-11-09T14:08:00+08:00",
+      "accessed_at": "2026-11-10T05:55:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Паливо для «Іскандерів» під ударом: Сили оборони уразили завод під Санкт-Петербургом (Fuel for Iskanders under attack: Defence Forces hit a plant near St Petersburg, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42850",
+      "language": "uk",
+      "published_at": "2026-11-09T18:15:00+08:00",
+      "accessed_at": "2026-11-10T05:55:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Ukrainian drones strike Russia's Leningrad region, sparking fire at one of the country's largest oil refineries",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/09/ukrainian-drones-strike-russia-s-leningrad-region-sparking-fire-at-one-of-the-country-s-largest-oil-refineries",
+      "language": "en",
+      "published_at": "2026-11-09T17:08:00+08:00",
+      "accessed_at": "2026-11-10T05:55:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Ukrainian Drone Attack Kills Woman, Sparks Fire at Leningrad Region Refinery",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/09/ukrainian-drone-attack-kills-woman-sparks-fire-at-leningrad-region-refinery-a94204",
+      "language": "en",
+      "published_at": "2026-11-09T17:39:00+08:00",
+      "accessed_at": "2026-11-10T05:58:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Дежурными силами ПВО перехвачены и уничтожены 430 украинских беспилотных летательных аппаратов (Air defences intercepted and destroyed 430 Ukrainian drones, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68876",
+      "language": "ru",
+      "published_at": "2026-11-09T13:34:00+08:00",
+      "accessed_at": "2026-11-10T05:50:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Zaporizhzhia Nuclear Plant Worker Killed in Drone Attack, IAEA Says",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/09/zaporizhzhia-nuclear-plant-worker-killed-in-drone-attack-iaea-says-a94213",
+      "language": "en",
+      "published_at": "2026-11-10T00:05:00+08:00",
+      "accessed_at": "2026-11-10T05:55:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Coalition of the Willing military exercises begin in Poland to prepare support for postwar Ukraine",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/09/coalition-of-the-willing-military-exercises-begin-in-poland-to-prepare-support-for-postwar-ukraine/",
+      "language": "en",
+      "published_at": "2026-11-10T04:14:00+08:00",
+      "accessed_at": "2026-11-10T06:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Выступление С.А.Рябкова «Оценки ситуации в сфере военной безопасности в Европе» (Ryabkov's speech on military security in Europe, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95912",
+      "language": "ru",
+      "published_at": "2026-11-10T00:04:00+08:00",
+      "accessed_at": "2026-11-10T05:58:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "France blames Iran for fridge cyberattacks, says some caused fires",
+      "outlet": "The Record",
+      "category": "intl_press",
+      "url": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks",
+      "language": "en",
+      "published_at": "2026-11-10T02:45:00+08:00",
+      "accessed_at": "2026-11-10T05:58:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "How is Estonia protecting itself against intensifying cyberthreats?",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610190514/how-is-estonia-protecting-itself-against-intensifying-cyberthreats",
+      "language": "en",
+      "published_at": "2026-11-09T20:04:00+08:00",
+      "accessed_at": "2026-11-10T05:58:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Canada sanctions Russian ballistic missile manufacturers and cyber-sabotage organisers",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/09/8061961/",
+      "language": "en",
+      "published_at": "2026-11-09T21:18:00+08:00",
+      "accessed_at": "2026-11-10T06:08:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Estonian foreign minister on Abu Dhabi talks: Best possible outcome would be a ceasefire",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610190274/estonian-foreign-minister-on-abu-dhabi-talks-best-possible-outcome-would-be-a-ceasefire",
+      "language": "en",
+      "published_at": "2026-11-09T19:00:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Ukraine: Council extends EU Military Assistance Mission mandate for two years",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+      "language": "en",
+      "published_at": "2026-11-10T01:01:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Главное за день: подразделения группировки войск «Восток» освободили населенный пункт Васильковое (Main events of the day: Vostok group 'liberated' Vasylkove, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68893",
+      "language": "ru",
+      "published_at": "2026-11-10T02:21:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "ВС РФ продолжают нанесение ударов по объектам энергетической инфраструктуры (Russian forces continue strikes on energy infrastructure, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68878",
+      "language": "ru",
+      "published_at": "2026-11-09T13:52:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Выступление В.А.Небензи на заседании Совета Безопасности ООН по Украине (Nebenzia's statement to the UN Security Council on Ukraine, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95928",
+      "language": "ru",
+      "published_at": "2026-11-10T04:59:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Оперативна інформація станом на 22:00 09.11.2026 (Operational update as of 22:00 on 9 November 2026, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42853",
+      "language": "uk",
+      "published_at": "2026-11-10T04:02:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Одещина: Реактивний БпЛА на Ширяєве (Odesa Oblast: jet drone towards Shyriaieve, translated)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/kpszsu/94670",
+      "language": "uk",
+      "published_at": "2026-11-10T04:58:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Удар БПЛА ВСУ привел к массовому отключению электроэнергии в Луганске (Ukrainian drone strike causes mass blackout in Luhansk, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404783",
+      "language": "ru",
+      "published_at": "2026-11-10T05:21:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "War&Sanctions: ГУР дослідило нову «Герань-5 К5-К» (HUR examines the new Geran-5 K5-K, translated)",
+      "outlet": "Ukrainian military intelligence HUR (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/DIUkraine/9951",
+      "language": "uk",
+      "published_at": "2026-11-09T15:15:00+08:00",
+      "accessed_at": "2026-11-10T05:45:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-10T05:43:56+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 12.7
+      },
+      "sabotage": {
+        "incidents_30d": 1,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1975,
+    "source_count": 20,
+    "source_category_count": 8
+  }
+}

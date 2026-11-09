@@ -1795,6 +1795,73 @@
       "seed": false,
       "added": "2026-11-09",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0058",
+      "date": "2026-11-08",
+      "target_name": "Kirishinefteorgsintez (KINEF) oil refinery, Kirishi",
+      "target_type": "refinery",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones set the Surgutneftegaz-owned Kirishi refinery (about 350,000 b/d) on fire overnight into 9 November. Governor Drozdenko said 113 drones were downed and later confirmed the refinery was hit, Meduza reported. Debris killed a woman in Vsevolozhsk.",
+      "sources": [
+        {
+          "title": "Ukrainian drones strike Russia's Leningrad region, sparking fire at one of the country's largest oil refineries",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/09/ukrainian-drones-strike-russia-s-leningrad-region-sparking-fire-at-one-of-the-country-s-largest-oil-refineries",
+          "published_at": "2026-11-09T17:08:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drone Attack Kills Woman, Sparks Fire at Leningrad Region Refinery",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/09/ukrainian-drone-attack-kills-woman-sparks-fire-at-leningrad-region-refinery-a94204",
+          "published_at": "2026-11-09T17:39:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-10",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0059",
+      "date": "2026-11-08",
+      "target_name": "Morozov Plant (Rostec), near St Petersburg",
+      "target_type": "defence_industry",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces struck the Morozov Plant overnight into 9 November and damaged three production workshops. It says the plant makes explosives and solid-fuel charges for Iskander-M engines and Topol-M fuel. No Russian confirmation was found.",
+      "sources": [
+        {
+          "title": "Паливо для «Іскандерів» під ударом: Сили оборони уразили завод під Санкт-Петербургом (Fuel for Iskanders under attack: Defence Forces hit a plant near St Petersburg, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42850",
+          "published_at": "2026-11-09T18:15:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-10",
+      "updated": null
     }
   ]
 }
