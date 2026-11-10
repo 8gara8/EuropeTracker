@@ -1862,6 +1862,43 @@
       "seed": false,
       "added": "2026-11-10",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0060",
+      "date": "2026-11-09",
+      "target_name": "123rd Aircraft Repair Plant, Staraya Russa",
+      "target_type": "defence_industry",
+      "region": "Novgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces struck the plant, which repairs A-50 radar aircraft, overnight into 10 November, causing explosions and a fire. Governor Dronov said drones damaged an unnamed industrial facility and two dachas, with no injuries, Meduza reported.",
+      "sources": [
+        {
+          "title": "Небезпека для \"літаючих радарів\" (Danger for 'flying radars': Defence Forces hit an A-50 repair plant in Novgorod Oblast, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42858",
+          "published_at": "2026-11-10T20:14:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones reportedly strike aircraft repair plant in Russia's Novgorod region. Governor confirms damage to industrial facility.",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/10/ukrainian-drones-reportedly-strike-aircraft-repair-plant-in-russia-s-novgorod-region-governor-confirms-damage-to-industrial-facility",
+          "published_at": "2026-11-10T16:25:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-11",
+      "updated": null
     }
   ]
 }

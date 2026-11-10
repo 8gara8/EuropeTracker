@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-11",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -84,8 +84,8 @@
   "countries": [
     {
       "country": "PL",
-      "score": 2,
-      "since": "2026-11-02"
+      "score": 3,
+      "since": "2026-11-11"
     },
     {
       "country": "LT",
@@ -366,10 +366,10 @@
       "name": "Russian refinery capacity offline above 20%",
       "description": "Estimates from credible reporting that more than 20% of Russian refining capacity is offline.",
       "countries": [],
-      "status": "watch",
-      "since": "2026-09-01",
-      "last_evidence": "Ukraine struck more than 15 Russian refineries in September and October, but no current estimate puts capacity offline above 20%.",
-      "last_evidence_date": "2026-10-31"
+      "status": "active",
+      "since": "2026-11-11",
+      "last_evidence": "Ukrainska Pravda, citing Reuters and two industry sources, says strikes since late October have cut Russian crude processing capacity by about 30% and disrupted nine of the 35 largest refineries.",
+      "last_evidence_date": "2026-11-11"
     },
     {
       "id": "ind-fuel-export-ban",

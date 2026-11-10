@@ -4242,6 +4242,49 @@
       "updated": null
     },
     {
+      "id": "INC-2026-0113",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Mińsk Mazowiecki, Masovian Voivodeship",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "sabotage_arrest",
+      "rung": 2,
+      "serious": false,
+      "summary": "The ABW detained two Ukrainians, aged 24 and 25. They allegedly photographed military and critical-infrastructure sites and set fire to cars fitted with Ukrainian military plates to stir anti-Ukrainian sentiment, and were paid partly in cryptocurrency. They are charged with espionage and with sabotage for foreign intelligence, and held for three months.",
+      "attribution": 2,
+      "attribution_note": "Minister Siemoniak said they acted for Russian services, as quoted by Notes from Poland and Meduza. The charges name 'foreign intelligence'. We have not opened the official statement, so attribution is held at 2 for now.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Two Ukrainians charged with spying and sabotage for Russia in Poland",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2026/11/10/two-ukrainians-charged-with-spying-and-sabotage-for-russia-in-poland/",
+          "published_at": "2026-11-10T20:56:00+08:00"
+        },
+        {
+          "title": "Poland arrests two Ukrainians suspected of spying and sabotage for Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/10/poland-arrests-two-ukrainians-suspected-of-spying-and-sabotage-for-russia",
+          "published_at": "2026-11-11T01:09:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-11",
+      "updated": null
+    },
+    {
       "id": "INC-2026-0112",
       "date": "2026-11-08",
       "date_precision": "day",

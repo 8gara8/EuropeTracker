@@ -1,0 +1,993 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "window": {
+    "start": "2026-11-10T05:30:00+08:00",
+    "end": "2026-11-11T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-11T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Poland charges two men with sabotage for Russia as Lithuania sounds an air alert over Belarus; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania and Bulgaria. Poland charged two Ukrainians who, its intelligence coordinator says, worked for Russian services: they allegedly scouted military sites and burned cars fitted with Ukrainian military plates. We log the case at rung 2 and raise Poland to 3 (elevated). Lithuania issued an air alert over an unidentified object from Belarus. Overnight, Russia launched 162 drones and one ballistic missile at Ukraine, and Ukraine said it downed 135. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s2",
+    "s4",
+    "s3"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "The rung stays at 4 on October's deadly ship strikes off Romania and Bulgaria (INC-2026-0103, INC-2026-0109). Today's one new incident, a Polish sabotage arrest, is rung 2. Nothing in the window points to deliberate, sustained Russian action against an ally, so a step to rung 5 stays remote."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "8 incidents in 30 days against a baseline of 12.7 a month, and no serious incident in 12 months. Lithuania's unconfirmed object from Belarus does not change the estimate. Held.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "With the Polish arrests, 2 incidents in 30 days against a baseline of 1.3 a month, and 2 serious in 12 months. The Polish case involved car arson, not a halt to infrastructure. Held.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "3 incidents in 30 days against a baseline of 1.7, and 12 serious in 12 months. Russia's defence ministry again claims strikes on vessels serving Ukraine. Held.",
+        "source_ids": [
+          "s14"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7, and none serious in 12 months. No new disruption or attribution in the window. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days, and a long-run average of 0.1 a month. The Putin–Lukashenko meeting before the CSTO summit shows no sign of a build-up near NATO borders. Held.",
+        "source_ids": [
+          "s22"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "1 incident in 30 days against a baseline of 0.3. The drone death of a Zaporizhzhia worker is a safety warning, not a sign of a release or of a change in readiness. Held.",
+        "source_ids": [
+          "s10"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3. The Russia–Moldova diplomatic expulsions and Slovakia's quarrel with Germany over Ukraine funding block no decision. Held.",
+        "source_ids": [
+          "s9",
+          "s15"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 2,
+        "reason": "Poland's floor rises to 3 with INC-2026-0113. Two Ukrainians were charged with sabotage and espionage which the intelligence coordinator says were done for Russian services, including arson on cars.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 because GPS interference over the Baltic (ind-gnss-baltic) remains active and affects Estonia.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1 because GPS interference over the Baltic and Finland (ind-gnss-baltic) remains active.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "SK",
+        "score": 1,
+        "previous_score": null,
+        "reason": "Cohesion flag: TASS reports Prime Minister Fico said Germany is wrong to insist on financing the war, after Merz threatened to block the EU budget unless all states fund Ukraine.",
+        "source_ids": [
+          "s15"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": true
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Poland charges two Ukrainians with sabotage and espionage which it says were done for Russian services",
+      "summary": "Poland's ABW detained two Ukrainians, aged 24 and 25, in Mińsk Mazowiecki on 3 November. Minister Siemoniak said they acted 'on commission of Russian special services' (translated). They allegedly photographed military and infrastructure sites and set fire to cars fitted with Ukrainian military plates, which prosecutors said was meant to fuel anti-Ukrainian sentiment. Both men face sabotage charges carrying 10 years to life.",
+      "category": "sabotage",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0113"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 2,
+      "russian_framing": null,
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Lithuania issues a yellow air alert for Vilnius and Utena over an object from Belarus",
+      "summary": "Late on 10 November, Lithuania warned the Vilnius and Utena districts of a possible air raid after an object from Belarus headed towards the Ignalina area. Crisis centre chief Vitkauskas said it was 'difficult to say' whether it was a drone. Vilnius airport was restricted; no violation was confirmed in the window.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Ukraine hits an aircraft repair plant that services A-50s as Reuters puts Russian refining about 30% down",
+      "summary": "Ukraine's General Staff said its forces struck the 123rd aircraft repair plant at Staraya Russa overnight into 10 November, causing explosions and a fire; an A-50 was damaged at the plant in March. Ukrainska Pravda, citing Reuters, said the renewed refinery strikes have cut Russian crude processing capacity by about 30%. It also reported that Rosneft limited fuel sales.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0060"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Novgorod governor Dronov said Ukrainian drones damaged an industrial facility and two dacha houses, with no injuries, Meduza reported. TASS said air defences downed 52 drones over Russia during the day.",
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s25"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Russia launches 162 drones and an Iskander overnight, then 155 drones and 16 missiles by day",
+      "summary": "Ukraine's General Staff said Russia launched one Iskander-M and 162 drones, 96 of them jet-powered, overnight into 10 November. It said 135 were downed and impacts were recorded at 19 locations. By day Russia launched 155 more drones and 16 missiles; 124 drones and 14 missiles were stopped.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said it continues drone strikes on Ukrainian energy infrastructure, logistics centres and ships 'used in the interests of the Ukrainian armed forces' (translated).",
+      "source_ids": [
+        "s4",
+        "s8",
+        "s24",
+        "s14"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Abu Dhabi talks open as Lithuania rejects any Russian say over NATO deployments",
+      "summary": "An EU Council statement says European, Ukrainian, US and NATO officials met in Abu Dhabi on 10 November. ERR reported that Ukraine, Russia and the US began talks there; Estonian adviser Rainer Saks called a ceasefire unlikely. Lithuania's Budrys said Lithuania would reject any deal letting Russia restrict NATO deployments.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s12",
+        "s11",
+        "s13"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Russia expels a Moldovan diplomat in reply to Chișinău's October expulsion",
+      "summary": "Russia's foreign ministry summoned Moldova's ambassador, Darii, on 10 November and declared a Moldovan embassy employee unacceptable on grounds of reciprocity. It was protesting Moldova's 23 October expulsion of a Russian diplomat over drone wreckage carrying explosives. Separately, Moldova said it has matched 91% of EU sanctions on Russia and Belarus and plans full alignment.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The foreign ministry says no Russian origin of the drone was proven, calls the October expulsion baseless and hostile, and says it is meant to damage centuries-old Russian–Moldovan ties.",
+      "source_ids": [
+        "s9",
+        "s20"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Russia's defence ministry claimed Nikolske in Sumy Oblast. The Kyiv Independent reports fighting has resumed in Kherson after the Oleshky ceasefire, during which Russia reinforced. No sign of collapse or breakthrough.",
+      "development_ids": [],
+      "source_ids": [
+        "s26",
+        "s23"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine struck the Staraya Russa plant that services A-50s; the governor confirmed damage to an industrial facility. A Reuters estimate puts Russian refining capacity about 30% down, moving ind-refinery-offline to active.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 162 drones and an Iskander-M overnight, then 155 drones and 16 missiles by day; Ukraine reports most were downed. Late jet-drone tracks reached Sharhorod, on a route that has sent drones into Moldova.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s4",
+        "s8",
+        "s24"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The US-mediated Abu Dhabi round opened on 10 November alongside a European–Ukrainian–US–NATO meeting. Estonian and Lithuanian officials warned against expecting a ceasefire or accepting limits on NATO deployments.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s12",
+        "s11",
+        "s13"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Lithuania issued a yellow air alert over an unidentified object from Belarus and restricted Vilnius airport. No violation was confirmed, so we log no incident. Searches of the other six frontline states found no new incursion.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Poland charged two Ukrainians with sabotage for Russian services, including false-flag car arson (INC-2026-0113), resolving F-2026-004. British police arrested a US soldier on suspicion of spying for Russia; that is espionage, so we have not logged it.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s16"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's defence ministry again claimed drone strikes on ships 'used in the interests' of Ukraine's forces (translated). It named no ship, and no strike in European waters was reported in the window.",
+      "development_ids": [],
+      "source_ids": [
+        "s14"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Putin met Lukashenko at Novo-Ogaryovo ahead of a CSTO summit in Moscow, where defence ministers discussed drafts on collective air defence and aviation. We see no announced exercise or build-up near NATO borders.",
+      "development_ids": [],
+      "source_ids": [
+        "s22"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "The IAEA said a drone killed a Zaporizhzhia plant employee on 9 November and named no attacker. Consistent with earlier worker deaths, we have not logged it. The plant still depends on one off-site line.",
+      "development_ids": [],
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Russia expelled a Moldovan diplomat in reply to Chișinău's October expulsion, while Moldova moves to full alignment with EU sanctions. Slovakia's Fico attacked Germany's push for all member states to fund Ukraine.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s9",
+        "s20",
+        "s15"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Denmark pledged about €643m for drones, interceptors, F-16 munitions and PURL. Poland plans to swap two MiG-29s for Ukrainian drone technology. Romania gets two low-altitude radars early. Lithuania tightens Russian grain transit checks from 16 November.",
+      "development_ids": [],
+      "source_ids": [
+        "s18",
+        "s19",
+        "s17",
+        "s21"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0113",
+      "date": "2026-11-03",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Mińsk Mazowiecki, Masovian Voivodeship",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "sabotage_arrest",
+      "rung": 2,
+      "serious": false,
+      "summary": "The ABW detained two Ukrainians, aged 24 and 25. They allegedly photographed military and critical-infrastructure sites and set fire to cars fitted with Ukrainian military plates to stir anti-Ukrainian sentiment, and were paid partly in cryptocurrency. They are charged with espionage and with sabotage for foreign intelligence, and held for three months.",
+      "attribution": 2,
+      "attribution_note": "Minister Siemoniak said they acted for Russian services, as quoted by Notes from Poland and Meduza. The charges name 'foreign intelligence'. We have not opened the official statement, so attribution is held at 2 for now.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Two Ukrainians charged with spying and sabotage for Russia in Poland",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2026/11/10/two-ukrainians-charged-with-spying-and-sabotage-for-russia-in-poland/",
+          "published_at": "2026-11-10T20:56:00+08:00"
+        },
+        {
+          "title": "Poland arrests two Ukrainians suspected of spying and sabotage for Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/10/poland-arrests-two-ukrainians-suspected-of-spying-and-sabotage-for-russia",
+          "published_at": "2026-11-11T01:09:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-11",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0060",
+      "date": "2026-11-09",
+      "target_name": "123rd Aircraft Repair Plant, Staraya Russa",
+      "target_type": "defence_industry",
+      "region": "Novgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces struck the plant, which repairs A-50 radar aircraft, overnight into 10 November, causing explosions and a fire. Governor Dronov said drones damaged an unnamed industrial facility and two dachas, with no injuries, Meduza reported.",
+      "sources": [
+        {
+          "title": "Небезпека для \"літаючих радарів\" (Danger for 'flying radars': Defence Forces hit an A-50 repair plant in Novgorod Oblast, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42858",
+          "published_at": "2026-11-10T20:14:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones reportedly strike aircraft repair plant in Russia's Novgorod region. Governor confirms damage to industrial facility.",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/10/ukrainian-drones-reportedly-strike-aircraft-repair-plant-in-russia-s-novgorod-region-governor-confirms-damage-to-industrial-facility",
+          "published_at": "2026-11-10T16:25:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-11",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [
+    {
+      "id": "ind-refinery-offline",
+      "to": "active",
+      "evidence": "Ukrainska Pravda, citing Reuters and two industry sources, says strikes since late October have cut Russian crude processing capacity by about 30% and disrupted nine of the 35 largest refineries.",
+      "source_ids": [
+        "s7"
+      ]
+    }
+  ],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. Today's only new logged incident is covert, not military. Poland's ABW detained two Ukrainian men on 3 November. Minister Siemoniak says they worked for Russian services, photographing military and infrastructure sites and burning cars fitted with Ukrainian military plates. The case is rung 2, so the rung stays at 4. It raises Poland's score to its new floor of 3. Sabotage now has two incidents in 30 days against a baseline of 1.3 a month. We hold the pathway at unlikely (25%), because neither case came close to halting infrastructure. The false-flag detail fits assumption A4 and the pattern of hiring Ukrainian nationals for cheap tasks meant to turn hosts against Ukraine.\n\nLithuania's yellow alert is the item to watch. Officials tracked an object from Belarus over the Ignalina area and restricted Vilnius airport, but had not identified it or confirmed a violation by the end of the window. We have not logged it. Earlier alerts from that direction turned out to be drones, balloons and once birds.\n\nUkraine's deep strikes now matter strategically. A Reuters estimate puts Russian refining capacity about 30% down, so ind-refinery-offline moves to active. Overnight, drones hit the Staraya Russa plant that services A-50 radar aircraft. We assess the campaign does not raise spillover risk directly. It does keep Moscow's incentive for heavy retaliatory raids, and raids over Odesa and Vinnytsia are the usual source of drones straying into Moldova and Romania. Late-night jet-drone tracks reached Sharhorod, near Moldova's northern border, so we will check for crossings. We hold airspace at highly unlikely (15%).\n\nMoscow's tit-for-tat expulsion of a Moldovan diplomat keeps ind-diplomatic at watch.\n\nOn the ceasefire paradox, the Abu Dhabi talks opened on 10 November, and Estonia's security adviser expects no ceasefire. A deal would cut near-term airspace and maritime risk. Terms that limit NATO deployments, which Lithuania says it would reject, would raise risk later.",
+    "change_my_mind": "We would raise airspace or military pressure if a Russian drone or aircraft were confirmed inside Lithuanian or Polish airspace, if sabotage halted infrastructure, or if Russian munitions killed anyone on NATO soil. A signed general ceasefire would lower the near-term pathways.",
+    "competing_explanations": [
+      {
+        "subject": "Unidentified object from Belarus behind Lithuania's 10 November air alert",
+        "hypotheses": [
+          {
+            "label": "Smuggling balloon or other non-military object",
+            "assessment": "Balloons from Belarus have repeatedly closed Vilnius airport, and officials could not call it a drone. This is the most frequent explanation for alerts on this axis.",
+            "estimate": {
+              "probability": 55,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Russian or Belarusian-launched drone, stray or probing",
+            "assessment": "Drones from the Belarus direction entered Lithuania in May and October 2026. Without a track or debris, the evidence is thin.",
+            "estimate": {
+              "probability": 35,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "False or ambiguous radar track",
+            "assessment": "One earlier alert was traced to birds. Possible, but officials tracked a single object moving on a consistent course.",
+            "estimate": {
+              "probability": 10,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-020",
+      "question": "Will Polish authorities announce new detentions for sabotage or espionage on behalf of Russian intelligence between 11 November and 10 December 2026?",
+      "resolution_criteria": "Yes if the ABW, SKW, police, prosecutors or the minister coordinating special services announce new detentions or charges, for acts or plots on behalf of Russian intelligence, made between 11 November and 10 December 2026.",
+      "resolves_by": "2026-12-10",
+      "horizon": "30d",
+      "pathway": "sabotage",
+      "probability": 75,
+      "base_rate": 70,
+      "base_rate_note": "Poland announced such cases on 5 and 10 November 2026 and several times in autumn 2025, about monthly or more. Raised slightly for the mid-November threat period Tusk cited."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-016",
+      "probability": 80,
+      "note": "ERR reports Ukraine, Russia and the US began talks in Abu Dhabi on 10 November; an EU statement confirms a parallel meeting. We await wire confirmation of the trilateral."
+    }
+  ],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-004",
+      "outcome": "yes",
+      "note": "On 10 November, Poland's special services coordinator Siemoniak said two Ukrainians charged with sabotage, including car arson in Poland, acted on commission of Russian special services.",
+      "source_id": "s1"
+    }
+  ],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A4",
+      "text": null,
+      "reason": "Poland's charges against two Ukrainians who, it says, did sabotage for Russian services came while the Abu Dhabi talks opened. The covert campaign continues regardless of diplomacy."
+    }
+  ],
+  "taiwan": "The most direct link is demand for interceptors. Denmark's €643m package funds interceptor drones and PURL purchases, through which Europe buys US weapons for Ukraine. Those draw on the same US air-defence production lines and backlogs that Taiwan's Patriot and NASAMS orders depend on. Romania's early radars and Poland's MiG-29 swap for drone technology show allies building cheap counter-drone layers, a model for Taiwan against mass raids. Russia's 30% refining loss from long-range drones shows how deep strikes on energy can work, which is relevant to Taiwan's own long-range strike planning. LRT reported that Taiwan has no plans to rename its office in Vilnius, so Lithuania–Taiwan ties are unchanged.",
+  "next_72h": [
+    {
+      "date": "2026-11-12",
+      "event": "Lithuanian officials expected to identify the object behind the 10 November alert.",
+      "why": "A confirmed drone entry would be a new rung-3 airspace incident for Lithuania."
+    },
+    {
+      "date": "2026-11-13",
+      "event": "Poland's mid-November threat period at the Kaliningrad border, cited by Tusk, continues.",
+      "why": "This tests F-2026-014 on sabotage or a crossing at the Kaliningrad border."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 162,
+      "unit": "count",
+      "period": "night of 9–10 Nov",
+      "source_ids": [
+        "s4"
+      ],
+      "note": "96 jet-powered; plus 155 more by day on 10 Nov"
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 135,
+      "unit": "count",
+      "period": "night of 9–10 Nov",
+      "source_ids": [
+        "s4"
+      ],
+      "note": "As of 07:30 Kyiv; some drones still airborne"
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 1,
+      "unit": "count",
+      "period": "night of 9–10 Nov",
+      "source_ids": [
+        "s4"
+      ],
+      "note": "Iskander-M from Millerovo; 16 more by day"
+    },
+    {
+      "id": "ru_missiles_intercepted",
+      "value": null,
+      "unit": "count",
+      "period": "night of 9–10 Nov",
+      "source_ids": [],
+      "note": "General Staff gave no missile intercept figure"
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 1,
+      "unit": "count",
+      "period": "night of 9–10 Nov",
+      "source_ids": [
+        "s5"
+      ],
+      "note": "Staraya Russa aircraft repair plant"
+    },
+    {
+      "id": "ru_refinery_offline_pct",
+      "value": 30,
+      "unit": "%",
+      "period": "since late Oct, to 10 Nov",
+      "source_ids": [
+        "s7"
+      ],
+      "note": "Reuters estimate via Ukrainska Pravda"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Two Ukrainians charged with spying and sabotage for Russia in Poland",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/10/two-ukrainians-charged-with-spying-and-sabotage-for-russia-in-poland/",
+      "language": "en",
+      "published_at": "2026-11-10T20:56:00+08:00",
+      "accessed_at": "2026-11-11T05:45:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Poland arrests two Ukrainians suspected of spying and sabotage for Russia",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/10/poland-arrests-two-ukrainians-suspected-of-spying-and-sabotage-for-russia",
+      "language": "en",
+      "published_at": "2026-11-11T01:09:00+08:00",
+      "accessed_at": "2026-11-11T05:55:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Lithuania issues possible air alert warning in Vilnius and Utena districts",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3110468/lithuania-issues-possible-air-alert-warning-in-vilnius-and-utena-districts",
+      "language": "en",
+      "published_at": "2026-11-11T04:59:00+08:00",
+      "accessed_at": "2026-11-11T05:45:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "ЗБИТО/ПОДАВЛЕНО 135 ВОРОЖИХ ЦІЛЕЙ (135 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42857",
+      "language": "uk",
+      "published_at": "2026-11-10T15:06:00+08:00",
+      "accessed_at": "2026-11-11T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Небезпека для \"літаючих радарів\": Сили оборони вдарили по заводу, що ремонтує А-50, у Новгородській області (Defence Forces hit an A-50 repair plant in Novgorod Oblast, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42858",
+      "language": "uk",
+      "published_at": "2026-11-10T20:14:00+08:00",
+      "accessed_at": "2026-11-11T06:00:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Ukrainian drones reportedly strike aircraft repair plant in Russia's Novgorod region. Governor confirms damage to industrial facility.",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/10/ukrainian-drones-reportedly-strike-aircraft-repair-plant-in-russia-s-novgorod-region-governor-confirms-damage-to-industrial-facility",
+      "language": "en",
+      "published_at": "2026-11-10T16:25:00+08:00",
+      "accessed_at": "2026-11-11T05:45:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Recent Ukrainian strikes have reduced Russian oil processing capacity by 30%, says Reuters",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/10/8062172/",
+      "language": "en",
+      "published_at": "2026-11-10T22:29:00+08:00",
+      "accessed_at": "2026-11-11T05:45:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Ukrainian air defences down 124 Russian drones and 14 Banderol missiles during day",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/10/8062221/",
+      "language": "en",
+      "published_at": "2026-11-11T02:46:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "В МИД России был вызван Посол Республики Молдова Л.Дарий (Moldova's ambassador summoned to the Russian Foreign Ministry, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95979",
+      "language": "ru",
+      "published_at": "2026-11-11T03:40:00+08:00",
+      "accessed_at": "2026-11-11T05:58:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Zaporizhzhia Nuclear Plant Worker Killed in Drone Attack, IAEA Says",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/09/zaporizhzhia-nuclear-plant-worker-killed-in-drone-attack-iaea-says-a94213",
+      "language": "en",
+      "published_at": "2026-11-10T00:05:00+08:00",
+      "accessed_at": "2026-11-11T05:55:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Presidential security adviser: Abu Dhabi talks unlikely to stop the war",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610191402/presidential-security-adviser-abu-dhabi-talks-unlikely-to-stop-the-war",
+      "language": "en",
+      "published_at": "2026-11-10T18:10:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Statement on today's meeting in Abu Dhabi between the EU, France, Germany, Italy, United Kingdom, Ukraine, United States and NATO",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/",
+      "language": "en",
+      "published_at": "2026-11-10T17:22:00+08:00",
+      "accessed_at": "2026-11-11T05:45:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Russia must have no say over NATO deployments, Lithuanian FM says amid Abu Dhabi talks",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3110211/russia-must-have-no-say-over-nato-deployments-lithuanian-fm-says-amid-abu-dhabi-talks",
+      "language": "en",
+      "published_at": "2026-11-10T18:42:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Вооруженные Силы РФ продолжают нанесение ударов беспилотниками (Russian forces continue drone strikes on energy, logistics and ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68909",
+      "language": "ru",
+      "published_at": "2026-11-10T22:30:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Германия ошибается, настаивая на финансировании войны, заявил премьер-министр Словакии Фицо (Germany is wrong to insist on financing the war, Slovak PM Fico says, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404952",
+      "language": "ru",
+      "published_at": "2026-11-11T02:24:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "British counterterrorism police arrest US soldier accused of spying on behalf of Russia",
+      "outlet": "DW",
+      "category": "intl_press",
+      "url": "https://www.dw.com/en/british-counterterrorism-police-arrest-us-soldier-accused-of-spying-on-behalf-of-russia/a-79913240?maca=en-rss-en-eu-2092-rdf",
+      "language": "en",
+      "published_at": "2026-11-11T03:35:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Armata Română va primi mai devreme două radare care pot detecta drone la joasă altitudine (The Romanian Army will receive two low-altitude drone-detection radars early, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/armata-romana-va-primi-mai-devreme-doua-radare-care-pot-detecta-drone-la-joasa-altitudine-anuntul-ministrului-apararii-4030543",
+      "language": "ro",
+      "published_at": "2026-11-11T04:52:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Хороша зустріч із Премʼєр-міністеркою Данії Метте Фредеріксен (A good meeting with Danish Prime Minister Mette Frederiksen, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21750",
+      "language": "uk",
+      "published_at": "2026-11-10T23:03:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Poland to transfer 2 MiG-29 jets to Ukraine in exchange for drone technology, Polish official says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/poland-may-transfer-2-mig-29-jets-to-ukraine-in-exchange-for-drone-technology-polish-official-says/",
+      "language": "en",
+      "published_at": "2026-11-11T02:18:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Moldova Readies Full Alignment With EU Sanctions on Russia and Belarus",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/10/moldova-readies-full-alignment-with-eu-sanctions-on-russia-and-belarus-a94223",
+      "language": "en",
+      "published_at": "2026-11-10T23:37:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Lithuania tightens Russian grain transit checks",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3110325/lithuania-tightens-russian-grain-transit-checks",
+      "language": "en",
+      "published_at": "2026-11-10T21:45:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "В Ново-Огарёве состоялась встреча Владимира Путина с Президентом Республики Беларусь Александром Лукашенко (Putin meets Lukashenko at Novo-Ogaryovo, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/95980",
+      "language": "ru",
+      "published_at": "2026-11-11T04:04:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "What Russia's military buildup during Oleshky ceasefire could mean for Kherson Oblast",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/what-russias-military-buildup-during-oleshky-ceasefire-could-mean-for-kherson-oblast/",
+      "language": "en",
+      "published_at": "2026-11-11T02:08:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Вінниччина: реактивні БпЛА курсом на захід (Vinnytsia: jet drones near Trostianets, Sharhorod, Pohrebyshche and Ivaniv heading west, translated)",
+      "outlet": "Ukrainian Air Force (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/kpszsu/94927",
+      "language": "uk",
+      "published_at": "2026-11-11T05:01:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Средства ПВО за день сбили 52 украинских беспилотника над регионами РФ (Air defences downed 52 Ukrainian drones over Russian regions during the day, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/404955",
+      "language": "ru",
+      "published_at": "2026-11-11T02:53:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Подразделения группировки войск «Север» освободили населенный пункт Никольское Сумской области (Group North units 'liberated' Nikolske, Sumy Oblast, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68902",
+      "language": "ru",
+      "published_at": "2026-11-10T17:09:00+08:00",
+      "accessed_at": "2026-11-11T05:40:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-11T05:45:02+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 12.7
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 3,
+        "baseline_monthly": 1.7
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1981,
+    "source_count": 26,
+    "source_category_count": 8
+  }
+}

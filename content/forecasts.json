@@ -70,12 +70,18 @@
       "base_rate_note": "Governments attributed or charged Russian-linked sabotage in most months of 2025–2026, including Germany on 1 September and Romania on 26 October 2026.",
       "opened": "2026-11-02",
       "updates": [],
-      "status": "open",
-      "resolved_on": null,
-      "resolution_note": null,
-      "resolution_source": null,
-      "brier": null,
-      "brier_base": null
+      "status": "resolved_yes",
+      "resolved_on": "2026-11-11",
+      "resolution_note": "On 10 November, Poland's special services coordinator Siemoniak said two Ukrainians charged with sabotage, including car arson in Poland, acted on commission of Russian special services.",
+      "resolution_source": {
+        "title": "Two Ukrainians charged with spying and sabotage for Russia in Poland",
+        "outlet": "Notes from Poland",
+        "category": "eu_regional_press",
+        "url": "https://notesfrompoland.com/2026/11/10/two-ukrainians-charged-with-spying-and-sabotage-for-russia-in-poland/",
+        "published_at": "2026-11-10T20:56:00+08:00"
+      },
+      "brier": 0.0225,
+      "brier_base": 0.04
     },
     {
       "id": "F-2026-005",
@@ -341,6 +347,11 @@
           "date": "2026-11-10",
           "probability": 75,
           "note": "Estonia's foreign minister refers to 'this week's' US-mediated Abu Dhabi talks, which is a further sign that the round is going ahead."
+        },
+        {
+          "date": "2026-11-11",
+          "probability": 80,
+          "note": "ERR reports Ukraine, Russia and the US began talks in Abu Dhabi on 10 November; an EU statement confirms a parallel meeting. We await wire confirmation of the trilateral."
         }
       ],
       "status": "open",
@@ -399,6 +410,25 @@
       "base_rate": 35,
       "base_rate_note": "27 total losses in about 51 months, roughly 0.5 a month, or about 35% over 52 days. We raised it because the plant now depends on a single line and Russia's winter grid campaign is under way.",
       "opened": "2026-11-09",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-020",
+      "question": "Will Polish authorities announce new detentions for sabotage or espionage on behalf of Russian intelligence between 11 November and 10 December 2026?",
+      "resolution_criteria": "Yes if the ABW, SKW, police, prosecutors or the minister coordinating special services announce new detentions or charges, for acts or plots on behalf of Russian intelligence, made between 11 November and 10 December 2026.",
+      "resolves_by": "2026-12-10",
+      "horizon": "30d",
+      "pathway": "sabotage",
+      "probability": 75,
+      "base_rate": 70,
+      "base_rate_note": "Poland announced such cases on 5 and 10 November 2026 and several times in autumn 2025, about monthly or more. Raised slightly for the mid-November threat period Tusk cited.",
+      "opened": "2026-11-11",
       "updates": [],
       "status": "open",
       "resolved_on": null,
