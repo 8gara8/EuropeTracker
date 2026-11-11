@@ -1,0 +1,1210 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "window": {
+    "start": "2026-11-11T05:30:00+08:00",
+    "end": "2026-11-12T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-12T06:10:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Stray drone crosses Lithuania and Latvia as NATO jets miss twice; two Russian missiles cross Moldova; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania. During Ukraine's drone raid on the Ust-Luga oil port, a drone crossed Lithuania and Latvia overnight. NATO jets failed twice to down it, and debris from a NATO missile fell near Biržai. Latvia's armed forces said three drones entered its airspace. We log the night at rung 3. Moldova said two Russian Banderol missiles crossed its territory. Russia launched 163 drones and one missile at Ukraine. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s12",
+    "s14",
+    "s1",
+    "s20"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on October's drone strikes on merchant ships off Romania (INC-2026-0103, INC-2026-0109). Today's only new incident, the drone crossing Lithuania and Latvia, is rung 3. A step to rung 5 needs deliberate, sustained Russian action against an ally, and nothing in the window points that way."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Nine incidents in 30 days against a baseline of 12.7 a month; none serious in 12 months. Failed intercepts and missile debris over Lithuania raise harm risk at the margin, but nobody was hurt. Held.",
+        "source_ids": [
+          "s14",
+          "s15"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days against a baseline of 1.3 a month. No new sabotage logged; the FSB arrests in Kaliningrad and the UK espionage case are spy-war moves, not attacks. Held.",
+        "source_ids": [
+          "s24",
+          "s25"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days, baseline 2 a month, 12 serious in 12 months. Russia's defence ministry claims another dry-cargo ship hit south-west of Odesa; the campaign continues. Held.",
+        "source_ids": [
+          "s3"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7 a month. Lithuania suspects electronic warfare diverted drones, but no service disruption was reported. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and no Russian border crossings since 2022. The CSTO summit discussed new mobile air-defence units, which does not change posture toward NATO. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One incident in 30 days (the 27th Zaporizhzhia blackout), baseline 0.3 a month. No new IAEA report found; the Franco-German missile debate is allied doctrine, not Russian readiness. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month; nothing new in the window. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1: the Defence Forces issued air-threat alerts in eight counties as a drone tracked from Latvia toward Estonia; no entry is confirmed. Baltic GPS interference persists.",
+        "source_ids": [
+          "s17"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1: the defence ministry suspects a drone violated airspace off the south-east coast on 11 November and briefly closed air and sea space; an inquiry is under way.",
+        "source_ids": [
+          "s18"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Drone from Ukraine's Ust-Luga raid crosses Lithuania and Latvia; NATO jets miss twice and missile debris falls near Biržai",
+      "summary": "A drone entered Lithuania from Belarus at about 01:20 and flew north past Kaunas into Latvia. NATO jets failed twice to down it; debris from a self-destructed NATO missile fell near Biržai. Vilnius and Kaunas airports closed. Latvia said three drones entered its airspace.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0114"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 2,
+      "russian_framing": "Moscow accused Kyiv of using NATO airspace as cover for its attacks, Reuters reported.",
+      "source_ids": [
+        "s12",
+        "s14",
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Moldova says two Russian Banderol missiles crossed its south-east during the morning raid",
+      "summary": "Moldova's defence ministry said two Banderol cruise missiles crossed from Odesa region at 06:04 and 06:06 for four to five minutes each. No damage was reported. Not yet logged: we could not open the ministry's statement.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s20",
+        "s21",
+        "s22"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Finland suspects a drone violated its airspace; Estonia sounds alerts in eight counties",
+      "summary": "Finland's defence ministry suspects a drone crossed the south-east coast for about five minutes after 02:00 and closed eastern Gulf of Finland air and sea space until 07:20. Estonia issued air-threat alerts in eight counties.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s18",
+        "s17",
+        "s15"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Ukraine strikes Ust-Luga oil terminals and a Buyan-M missile ship, then Russia's largest refinery at Omsk",
+      "summary": "The SBU said drones hit the Novatek and Ust-Luga Oil terminals and the missile ship Naro-Fominsk. Leningrad's governor said 150 drones were downed, Meduza reported. Residents reported hits on the Omsk refinery, about 2,500 km from Ukraine.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0061",
+        "STR-2026-0062",
+        "STR-2026-0063"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said air defences downed 85 Ukrainian drones over Russian regions during the day on 11 November, TASS reported.",
+      "source_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s5"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Russia launches 163 drones and a missile; a jet drone kills four at a Chornomorsk market",
+      "summary": "Ukraine's General Staff said Russia launched 163 drones, 91 jet-powered, and one Kh-59/69 missile; 144 targets were downed or suppressed. A jet drone killed four at a Chornomorsk market. Russia claimed a dry-cargo ship hit off Odesa.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's defence ministry said it struck a ship carrying weapons and military equipment for Ukraine's armed forces.",
+      "source_ids": [
+        "s1",
+        "s23",
+        "s3"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "FSB detains two Poles in Kaliningrad; Kremlin denies ties to a US soldier held in Britain",
+      "summary": "The FSB said on Poland's Independence Day that it arrested two Poles in Kaliningrad for espionage. The Kremlin denied links to a US soldier arrested in England on suspicion of spying for Russia. Both are espionage, not sabotage; neither is logged.",
+      "category": "sabotage",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The FSB described a Polish intelligence 'network of agents' gathering data on Russian military facilities.",
+      "source_ids": [
+        "s24",
+        "s25",
+        "s26"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "France presses Germany on the nuclear risks of its long-range missile plans",
+      "summary": "Meduza, citing the Financial Times, reported that France is pressing Germany to clarify how it would use long-range missiles against Russia, fearing nuclear escalation. This is allied doctrine debate, not a Russian posture change.",
+      "category": "nuclear",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s27"
+      ]
+    },
+    {
+      "id": "d8",
+      "headline": "Denmark passes a €645m aid package as Poland and the US sign a defence-industry statement",
+      "summary": "Zelensky said Denmark's parliament unanimously approved a 32nd defence package worth €645 million. Poland and the US signed a defence-industry statement of intent. Zelensky arrived in Dublin for the European Political Community summit.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s29",
+        "s28",
+        "s31"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Russia's defence ministry claimed the capture of Shylivka in Donetsk region and Voskresenka in Zaporizhzhia region. Ukraine's General Staff counted 149 clashes by 22:00. There is no sign of a breakthrough or collapse.",
+      "development_ids": [],
+      "source_ids": [
+        "s4",
+        "s2"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine struck Ust-Luga's oil terminals, a Buyan-M missile ship and the Omsk refinery; all are at verification 1. The Ust-Luga raid drove the Baltic incursions.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s10"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 163 drones and a missile overnight; Ukraine said it stopped 144. A jet drone killed four in Chornomorsk. Banderols routed over Odesa region crossed Moldova.",
+      "development_ids": [
+        "d5",
+        "d2"
+      ],
+      "source_ids": [
+        "s1",
+        "s23"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The Abu Dhabi talks entered a second day, TV8 reported; Estonian diplomat Jüri Luik said Russia is testing boundaries. EU leaders meet in Dublin on 12–13 November.",
+      "development_ids": [
+        "d8"
+      ],
+      "source_ids": [
+        "s35",
+        "s32",
+        "s31"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "A drone crossed Lithuania and Latvia; NATO jets missed twice and missile debris fell near Biržai. Finland suspects a violation. Moldova says two Russian missiles crossed it; not yet logged.",
+      "development_ids": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "source_ids": [
+        "s12",
+        "s14",
+        "s18",
+        "s20"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "No new sabotage incident. The Kaliningrad arrests of two Poles and the UK arrest of a US soldier are espionage cases, not logged.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s24",
+        "s25"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia claimed a drone hit an unnamed dry-cargo ship south-west of Odesa. Nothing occurred in Romanian or Bulgarian waters.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "Lithuania's armed forces chief said some drones were probably diverted by electronic warfare. No jamming disruption or cyberattack was reported.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s15"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "The CSTO summit discussed forming mobile air-defence units (translated). Nothing points to a build-up near NATO borders.",
+      "development_ids": [],
+      "source_ids": [
+        "s34"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "France is pressing Germany over the nuclear risks of long-range missiles, the FT reported. No new IAEA report on Zaporizhzhia was found.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s27"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Denmark approved €645m in aid; Poland and the US signed a defence-industry statement. A NATO commander praised Ukraine's oil strikes, Digi24 reported. Zelensky welcomed new EU sanctions.",
+      "development_ids": [
+        "d8"
+      ],
+      "source_ids": [
+        "s29",
+        "s28",
+        "s33",
+        "s30"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0114",
+      "date": "2026-11-11",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT",
+        "LV"
+      ],
+      "location": "Druskininkai–Kaunas–Biržai, Lithuania; eastern and central Latvia",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During Ukraine's drone raid on Ust-Luga, a drone entered Lithuania from Belarus at about 01:20, possibly crossed briefly into Poland, and flew north past Kaunas into Latvia and toward Estonia. NATO jets failed twice to down it; debris from a NATO missile fell near Biržai. Latvia said three drones entered its airspace. Vilnius and Kaunas airports closed.",
+      "attribution": 2,
+      "attribution_note": "Lithuania's defence minister said the drones were most likely Ukrainian and off course; its armed forces chief said some were probably diverted by electronic warfare and the origin is unconfirmed.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Naktī uz 11. novembri Latvijas gaisa telpā ielidojuši trīs bezpilota lidaparāti (Three unmanned aircraft entered Latvian airspace overnight into 11 November, translated)",
+          "outlet": "Latvian National Armed Forces",
+          "category": "eu_gov_security",
+          "url": "https://www.mil.lv/lv/zinas/nakti-uz-11-novembri-latvijas-gaisa-telpa-ielidojusi-tris-bezpilota-lidaparati",
+          "published_at": "2026-11-11"
+        },
+        {
+          "title": "Drone incursions trigger air alerts across Lithuania, NATO jets scrambled",
+          "outlet": "LRT",
+          "category": "eu_regional_press",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3111025/drone-incursions-trigger-air-alerts-across-lithuania-nato-jets-scrambled",
+          "published_at": "2026-11-11"
+        },
+        {
+          "title": "Baltic nations, Finland issue overnight drone warnings as Russia, Ukraine exchange strikes",
+          "outlet": "Reuters (via Al-Monitor)",
+          "category": "intl_press",
+          "url": "https://www.al-monitor.com/originals/2026/11/baltic-nations-finland-issue-overnight-drone-warnings-russia-ukraine-exchange",
+          "published_at": "2026-11-11"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0061",
+      "date": "2026-11-10",
+      "target_name": "Ust-Luga port oil terminals (Novatek, Ust-Luga Oil)",
+      "target_type": "oil_terminal",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU said drones hit the Novatek and Ust-Luga Oil terminals, the Factor terminal and Luzhskaya station, causing fires and a spill. Governor Drozdenko said 150 drones were downed, three port workers were hurt and a substation shut down, Meduza reported. The fire was visible from Estonia.",
+      "sources": [
+        {
+          "title": "СБУ спільно з іншими складовими Сил оборони уразила портову та нафтову інфраструктуру рф в Усть-Лузі (The SBU and other defence forces hit Russian port and oil infrastructure in Ust-Luga, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19036",
+          "published_at": "2026-11-12T00:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike port in Russia's Leningrad region, sparking fire",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/11/ukrainian-drones-strike-port-in-russia-s-leningrad-region-sparking-fire",
+          "published_at": "2026-11-11T16:13:00+08:00"
+        },
+        {
+          "title": "Video: Fire at Russia's Port of Ust-Luga visible from Estonia",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610192180/video-fire-at-russia-s-port-of-ust-luga-visible-from-estonia",
+          "published_at": "2026-11-11T14:29:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0062",
+      "date": "2026-11-10",
+      "target_name": "Buyan-M small missile ship Naro-Fominsk, Ust-Luga",
+      "target_type": "naval",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU said its drone operators hit the Kalibr- and Onyx-capable Buyan-M ship Naro-Fominsk during the overnight raid on Ust-Luga. It gave no damage details. No Russian confirmation was found.",
+      "sources": [
+        {
+          "title": "СБУ ... уразила ... ракетний корабель «Буян-М» (The SBU hit a Buyan-M missile ship, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19036",
+          "published_at": "2026-11-12T00:45:00+08:00"
+        },
+        {
+          "title": "Ukraine's Security Service hits Russian missile ship Naro-Fominsk",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062398/",
+          "published_at": "2026-11-12T01:11:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0063",
+      "date": "2026-11-11",
+      "target_name": "Omsk oil refinery",
+      "target_type": "refinery",
+      "region": "Omsk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 2500,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Residents reported hits on Russia's largest refinery during a drone attack that kept Omsk under alert for hours on the evening of 11 November. The governor's spokesperson said mobile internet was restricted, and the airport halted flights. No official damage confirmation was found.",
+      "sources": [
+        {
+          "title": "Russia's largest oil refinery hit by drones 2,500 km from Ukraine – videos",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062379/",
+          "published_at": "2026-11-11T23:23:00+08:00"
+        },
+        {
+          "title": "Russia's Omsk under drone alert for seven hours amid Ukrainian attack, governor urges residents to stay indoors",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/11/russia-s-omsk-under-drone-alert-for-seven-hours-amid-ukrainian-attack-governor-urges-residents-to-stay-indoors",
+          "published_at": "2026-11-12T02:08:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged, but the night exposed a gap in Baltic air defence. We log one new incident, at rung 3, so the rung stays at 4. Airspace now has nine incidents in 30 days against a baseline of 12.7 a month.\n\nThe Lithuanian case matters more for what it showed than for who launched the drone. Defence Minister Robertas Kaunas said the drones were most likely Ukrainian and had drifted off course toward Ust-Luga. Armed forces chief Giedrius Premeneckas said some were probably diverted by electronic warfare and that the origin is unconfirmed. Moscow accused Kyiv of using NATO airspace as cover, Reuters reported. One drone flew the length of Lithuania. Jets held fire over Kaunas to protect the city, then failed twice, and debris from a self-destructed NATO missile fell near Biržai. We assess that intercept debris over populated areas is now about as likely to cause harm on Baltic soil as the drones themselves. We hold airspace at highly unlikely (15%), because nobody was hurt and the serious threshold needs deaths or a deliberate strike.\n\nThis single raid set off alerts in four NATO states. Latvia counted three drones, Estonia alerted eight counties and Finland is investigating a suspected violation. Such incursions will recur while Ukraine keeps striking Baltic export terminals, and Russian jamming makes the routes harder to predict.\n\nMoldova's defence ministry said two Banderol missiles crossed its south-east for four to five minutes each. We have not logged the case because we could not open the ministry's own statement; we will log it once we can cite it. It would not change Moldova's score, which already sits at its floor of 3. Banderols fly fast and low, so Moldova's thin air defence gets little warning.\n\nThe FSB announced its arrest of two Poles in Kaliningrad on Poland's Independence Day. We read it as tit-for-tat messaging after this month's Polish arrests, and we do not log it.\n\nOn the ceasefire paradox, the Abu Dhabi talks entered a second day with no sign of a ceasefire. A deal would cut stray-drone traffic over the Baltic and near Moldova. Russian forces regenerating near NATO would raise risk later.",
+    "change_my_mind": "Evidence that the Lithuanian drone was Russian, or carried explosives, would point to a probe and raise airspace risk. Injuries from intercept debris would also raise it. A Ukrainian pause on Baltic port strikes would lower it.",
+    "competing_explanations": [
+      {
+        "subject": "INC-2026-0114: drone across Lithuania and Latvia",
+        "hypotheses": [
+          {
+            "label": "Ukrainian drone diverted by Russian jamming",
+            "assessment": "It fits the timing of the Ust-Luga raid, Lithuania's defence minister's view and earlier 2026 cases where Russian electronic warfare pushed Ukrainian drones into Baltic airspace.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "moderate"
+            }
+          },
+          {
+            "label": "Russian drone or decoy sent as a deliberate probe",
+            "assessment": "Russia has used decoys before. Its entry from Belarus and Premeneckas's refusal to rule out a Russian origin keep this open, but nothing specific points to it.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Other origin",
+            "assessment": "A Belarusian or non-state drone is possible in principle, but no official has raised it.",
+            "estimate": {
+              "probability": 5,
+              "term": "remote",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-021",
+      "question": "Will Finnish authorities confirm by 30 November 2026 that a drone entered Finnish airspace on 11 November 2026?",
+      "resolution_criteria": "Yes if Finland's Ministry of Defence, Defence Forces or Border Guard states between 12 and 30 November 2026 that a drone violated Finnish airspace on 11 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 60,
+      "base_rate": 55,
+      "base_rate_note": "Finland confirmed Ukrainian drone entries within days in May 2026, but some 2026 closures ended with no drone found. Raised because the ministry already says it suspects a violation."
+    },
+    {
+      "id": "F-2026-022",
+      "question": "Will a NATO aircraft shoot down a drone over Lithuania, Latvia, Estonia or Finland between 12 November and 11 December 2026?",
+      "resolution_criteria": "Yes if the armed forces of Lithuania, Latvia, Estonia or Finland, or NATO, report an allied aircraft destroying a drone over their territory or territorial waters between 12 November and 11 December 2026.",
+      "resolves_by": "2026-12-11",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 35,
+      "base_rate": 35,
+      "base_rate_note": "Allied shoot-downs over Estonia (May), Latvia (August) and Lithuania (September) 2026 come to about 0.4 a month, roughly 35% over 30 days. The two failed attempts on 11 November show the difficulty."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-016",
+      "probability": 85,
+      "note": "Moldova's TV8 reports a second day of negotiations on 11 November, and Digi24 says NATO officials attend in Abu Dhabi. We await wire confirmation of the trilateral format."
+    }
+  ],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-012",
+      "outcome": "yes",
+      "note": "Latvia's National Armed Forces said three drones entered Latvian airspace overnight into 11 November, two of them briefly across the eastern border with Russia.",
+      "source_id": "s12"
+    }
+  ],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A3",
+      "text": null,
+      "reason": "The 11 November incursions over Lithuania, Latvia and Moldova fit spillover from strikes and jamming, not preparation for an invasion."
+    }
+  ],
+  "taiwan": "Most direct: the Baltic night showed the cost of using fighter-launched missiles against single drones. NATO jets failed twice against one drone, and a missile self-destructed over Lithuania. This adds to European demand for cheaper interceptors and counter-drone systems. That demand competes for the production lines and missile stocks Taiwan relies on, though one night's effect is small. Second, Ukraine's strikes on Baltic oil terminals and on a refinery 2,500 km away strengthen the case for long-range strike and for hardening energy hubs, both lessons for Taiwan's defence. Third, OSINT reporting that Russia has gathered 47 strategic bombers at Ukrainka in Amur region, out of reach of Ukrainian drones, puts more Russian long-range aviation near China and Japan. We assess this is a basing choice, not a signal to the region. It does make joint China–Russia bomber patrols easier.",
+  "next_72h": [
+    {
+      "date": "2026-11-13",
+      "event": "Informal meeting of EU heads of state or government.",
+      "why": "Sanctions unity and support for Ukraine after the Abu Dhabi round."
+    },
+    {
+      "date": "2026-11-13",
+      "event": "Finnish inquiry into the suspected 11 November drone violation.",
+      "why": "Confirmation would add Finland to INC-2026-0114 and resolve F-2026-021."
+    },
+    {
+      "date": "2026-11-14",
+      "event": "Moldovan defence ministry statement on the two Banderol missiles, for logging.",
+      "why": "The case is pending until we can cite the host statement."
+    },
+    {
+      "date": "2026-11-15",
+      "event": "End of the mid-November threat period Tusk cited for the Kaliningrad border.",
+      "why": "It bears on F-2026-014 and Polish sabotage risk."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 163,
+      "unit": "count",
+      "period": "night of 10–11 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "91 jet-powered; Ukrainian General Staff figure."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 144,
+      "unit": "count",
+      "period": "night of 10–11 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Includes 14 Banderol/Dan-T; downed or suppressed."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 1,
+      "unit": "count",
+      "period": "night of 10–11 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "One Kh-59/69 from the Black Sea."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 3,
+      "unit": "count",
+      "period": "10–11 Nov",
+      "source_ids": [
+        "s6",
+        "s8"
+      ],
+      "note": "Ust-Luga terminals, Naro-Fominsk ship, Omsk refinery."
+    },
+    {
+      "id": "ua_max_strike_depth_km",
+      "value": 2500,
+      "unit": "km",
+      "period": "11 Nov",
+      "source_ids": [
+        "s8"
+      ],
+      "note": "Omsk refinery, as reported by Ukrainska Pravda."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 144 ВОРОЖІ ЦІЛІ (144 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42863",
+      "language": "uk",
+      "published_at": "2026-11-11T14:32:00+08:00",
+      "accessed_at": "2026-11-12T05:45:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Оперативна інформація станом на 22:00 11.11.2026 (Operational update as of 22:00 on 11 November 2026, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42873",
+      "language": "uk",
+      "published_at": "2026-11-12T04:01:00+08:00",
+      "accessed_at": "2026-11-12T05:45:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "ВС РФ продолжают нанесение ударов БПЛА по морским судам (Russian forces continue drone strikes on ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68935",
+      "language": "ru",
+      "published_at": "2026-11-11T22:02:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Подразделения группировки войск «Центр» освободили населенный пункт Шиловка (Centre group units 'liberated' Shylivka, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68927",
+      "language": "ru",
+      "published_at": "2026-11-11T17:22:00+08:00",
+      "accessed_at": "2026-11-12T05:45:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Средства ПВО за день сбили 85 украинских беспилотников над регионами РФ (Air defences downed 85 Ukrainian drones over Russian regions during the day, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/405189",
+      "language": "ru",
+      "published_at": "2026-11-12T01:27:00+08:00",
+      "accessed_at": "2026-11-12T05:45:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "СБУ уразила портову та нафтову інфраструктуру рф в Усть-Лузі та корабель «Буян-М» (The SBU hit Ust-Luga port and oil infrastructure and a Buyan-M ship, translated)",
+      "outlet": "Security Service of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/SBUkr/19036",
+      "language": "uk",
+      "published_at": "2026-11-12T00:45:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Ukrainian drones strike port in Russia's Leningrad region, sparking fire",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/11/ukrainian-drones-strike-port-in-russia-s-leningrad-region-sparking-fire",
+      "language": "en",
+      "published_at": "2026-11-11T16:13:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Russia's largest oil refinery hit by drones 2,500 km from Ukraine – videos",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062379/",
+      "language": "en",
+      "published_at": "2026-11-11T23:23:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Russia's Omsk under drone alert for seven hours amid Ukrainian attack, governor urges residents to stay indoors",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/11/russia-s-omsk-under-drone-alert-for-seven-hours-amid-ukrainian-attack-governor-urges-residents-to-stay-indoors",
+      "language": "en",
+      "published_at": "2026-11-12T02:08:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukraine's Security Service hits Russian missile ship Naro-Fominsk",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062398/",
+      "language": "en",
+      "published_at": "2026-11-12T01:11:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Video: Fire at Russia's Port of Ust-Luga visible from Estonia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610192180/video-fire-at-russia-s-port-of-ust-luga-visible-from-estonia",
+      "language": "en",
+      "published_at": "2026-11-11T14:29:00+08:00",
+      "accessed_at": "2026-11-12T05:50:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Naktī uz 11. novembri Latvijas gaisa telpā ielidojuši trīs bezpilota lidaparāti (Three unmanned aircraft entered Latvian airspace overnight into 11 November, translated)",
+      "outlet": "Latvian National Armed Forces",
+      "category": "eu_gov_security",
+      "url": "https://www.mil.lv/lv/zinas/nakti-uz-11-novembri-latvijas-gaisa-telpa-ielidojusi-tris-bezpilota-lidaparati",
+      "language": "lv",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-12T05:55:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Latvian armed forces outline reasons for multiple drone alerts",
+      "outlet": "LSM",
+      "category": "eu_regional_press",
+      "url": "https://eng.lsm.lv/article/society/defence/11.11.2026-latvian-armed-forces-outline-reasons-for-multiple-drone-alerts.a671452/",
+      "language": "en",
+      "published_at": "2026-11-11T17:08:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Drone incursions trigger air alerts across Lithuania, NATO jets scrambled",
+      "outlet": "LRT",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3111025/drone-incursions-trigger-air-alerts-across-lithuania-nato-jets-scrambled",
+      "language": "en",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-12T05:45:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Baltic nations, Finland issue overnight drone warnings as Russia, Ukraine exchange strikes",
+      "outlet": "Reuters (via Al-Monitor)",
+      "category": "intl_press",
+      "url": "https://www.al-monitor.com/originals/2026/11/baltic-nations-finland-issue-overnight-drone-warnings-russia-ukraine-exchange",
+      "language": "en",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-12T05:45:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Drone care vizau un port petrolier din Rusia au pus în alertă trei state NATO (Drones aimed at a Russian oil port put three NATO states on alert, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/drone-care-vizau-un-port-petrolier-din-rusia-au-pus-in-alerta-trei-state-nato-avioane-de-vanatoare-au-decolat-de-urgenta-4031305",
+      "language": "ro",
+      "published_at": "2026-11-11T19:22:00+08:00",
+      "accessed_at": "2026-11-12T05:35:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "EDF issues potential air threat alerts across southern, eastern Estonia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610192126/edf-issues-potential-air-threat-alerts-across-southern-eastern-estonia",
+      "language": "en",
+      "published_at": "2026-11-11T13:11:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Finlanda investighează încălcarea spaţiului său aerian de o dronă (Finland investigates a drone violation of its airspace, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ue/finlanda-investigheaza-incalcarea-spatiului-sau-aerian-de-o-drona-de-unde-ar-fi-provenit-aparatul-4031589",
+      "language": "ro",
+      "published_at": "2026-11-11T21:37:00+08:00",
+      "accessed_at": "2026-11-12T05:35:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Ukrainian Drones Kill 2 in Western Smolensk Region as Baltics and Finland Issue Air Alerts",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/11/ukrainian-drones-kill-2-in-western-smolensk-region-as-baltics-and-finland-issue-air-alerts-a94226",
+      "language": "en",
+      "published_at": "2026-11-11T17:34:00+08:00",
+      "accessed_at": "2026-11-12T05:55:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Două rachete rusești au pătruns în spațiul aerian al Republicii Moldova (Two Russian missiles entered Moldovan airspace, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/doua-rachete-rusesti-au-patruns-in-spatiul-aerian-al-republicii-moldova-in-timpul-unui-atac-masiv-asupra-ucrainei-4031015",
+      "language": "ro",
+      "published_at": "2026-11-11T17:01:00+08:00",
+      "accessed_at": "2026-11-12T05:35:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Două rachete rusești de croazieră au survolat Moldova: Spațiul aerian, încălcat în plin atac asupra Ucrainei (Two Russian cruise missiles flew over Moldova, translated)",
+      "outlet": "TV8",
+      "category": "eu_regional_press",
+      "url": "https://tv8.md/2026/11/11/doua-rachete-rusesti-de-croaziera-au-survolat-moldova-spatiul-aerian-incalcat-in-plin-atac-asupra-ucrainei/312369",
+      "language": "ro",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-12T05:55:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Two Russian Banderol missiles enter skies over Moldova",
+      "outlet": "The New Voice of Ukraine",
+      "category": "ua_independent",
+      "url": "https://english.nv.ua/nation/two-russian-banderol-missiles-enter-skies-over-moldova-50658238.html",
+      "language": "en",
+      "published_at": null,
+      "accessed_at": "2026-11-12T05:55:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Russian strike on crowded market in Odesa Oblast kills at least 4, injures 8",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russian-strike-on-crowded-market-in-odesa-oblast-kills-at-least-3-injures-8/",
+      "language": "en",
+      "published_at": "2026-11-11T21:16:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "On Poland's Independence Day, FSB says it detained two Poles in Russia on espionage charges",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/11/on-poland-s-independence-day-fsb-says-it-detained-two-poles-in-russia-on-espionage-charges",
+      "language": "en",
+      "published_at": "2026-11-11T17:22:00+08:00",
+      "accessed_at": "2026-11-12T06:00:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Kremlin Denies Having Ties to American Soldier Arrested in U.K. for Spying",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/11/kremlin-denies-having-ties-to-american-soldier-arrested-in-uk-for-spying-a94229",
+      "language": "en",
+      "published_at": "2026-11-11T21:52:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "British counterterrorism police arrest US soldier accused of spying on behalf of Russia",
+      "outlet": "DW",
+      "category": "intl_press",
+      "url": "https://www.dw.com/en/british-counterterrorism-police-arrest-us-soldier-accused-of-spying-on-behalf-of-russia/a-79913240?maca=en-rss-en-eu-2092-rdf",
+      "language": "en",
+      "published_at": "2026-11-11T03:35:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "France presses Germany to clarify how it would use long-range missiles in war with Russia amid fears of nuclear escalation, FT reports",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/11/france-presses-germany-to-clarify-how-it-would-use-long-range-missiles-in-war-with-russia-amid-fears-of-nuclear-escalation-ft-reports",
+      "language": "en",
+      "published_at": "2026-11-11T18:43:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Poland and US sign statement of intent on strengthening defence industry cooperation",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/11/poland-and-us-sign-statement-of-intent-on-strengthening-defence-industry-cooperation/",
+      "language": "en",
+      "published_at": "2026-11-11T19:20:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s29",
+      "title": "Важлива зустріч зі Спікером Фолькетингу Данії (An important meeting with the Speaker of Denmark's Folketing, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21778",
+      "language": "uk",
+      "published_at": "2026-11-11T21:47:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s30",
+      "title": "Хочу відзначити європейську санкційну роботу (I want to note Europe's sanctions work, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21790",
+      "language": "uk",
+      "published_at": "2026-11-12T04:53:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s31",
+      "title": "Media advisory - Meeting of the European Political Community of 12 November 2026 and the Informal meeting of Heads of State or Government of 13 November 2026",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/11/media-advisory-meeting-of-the-european-political-community-of-12-november-2026-and-the-informal-meeting-of-heads-of-state-or-government-of-13-november-2026/",
+      "language": "en",
+      "published_at": "2026-11-12T01:20:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s32",
+      "title": "Expert: Russia using Abu Dhabi meeting to test boundaries",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610192272/expert-russia-using-abu-dhabi-meeting-to-test-boundaries",
+      "language": "en",
+      "published_at": "2026-11-11T15:30:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s33",
+      "title": "Mesajul unui comandant NATO după loviturile Ucrainei asupra infrastructurii petroliere ruse (A NATO commander's message on Ukraine's oil strikes, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ue/mesajul-unui-comandant-nato-dupa-loviturile-ucrainei-asupra-infrastructurii-petroliere-ruse-il-afecteaza-pe-putin-4032369",
+      "language": "ro",
+      "published_at": "2026-11-12T04:18:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s34",
+      "title": "Коллективные силы ОДКБ продолжают оснащаться современными видами оружия и техникой (CSTO collective forces continue to receive modern weapons and equipment, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68936",
+      "language": "ru",
+      "published_at": "2026-11-11T22:32:00+08:00",
+      "accessed_at": "2026-11-12T05:40:00+08:00"
+    },
+    {
+      "id": "s35",
+      "title": "Război în Ucraina, ziua 1722: Rachete în Moldova și a doua zi de negocieri (War in Ukraine, day 1722: missiles in Moldova and a second day of negotiations, translated)",
+      "outlet": "TV8",
+      "category": "eu_regional_press",
+      "url": "https://tv8.md/2026/11/11/live-text-razboi-in-ucraina-ziua-1722-rachete-in-moldova-si-a-doua-zi-de-negocieri-zelenski-putin-traieste-intr-o-realitate-diferita/312370",
+      "language": "ro",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-12T05:55:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-12T05:48:14+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 9,
+        "baseline_monthly": 12.7
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 2,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1943,
+    "source_count": 35,
+    "source_category_count": 9
+  }
+}

@@ -240,12 +240,18 @@
           "note": "Latvia's armed forces reported a drone entering over Balvi and Ludza, on the Russian border, on 3 November. We await confirmation of where it entered from."
         }
       ],
-      "status": "open",
-      "resolved_on": null,
-      "resolution_note": null,
-      "resolution_source": null,
-      "brier": null,
-      "brier_base": null
+      "status": "resolved_yes",
+      "resolved_on": "2026-11-12",
+      "resolution_note": "Latvia's National Armed Forces said three drones entered Latvian airspace overnight into 11 November, two of them briefly across the eastern border with Russia.",
+      "resolution_source": {
+        "title": "Naktī uz 11. novembri Latvijas gaisa telpā ielidojuši trīs bezpilota lidaparāti (Three unmanned aircraft entered Latvian airspace overnight into 11 November, translated)",
+        "outlet": "Latvian National Armed Forces",
+        "category": "eu_gov_security",
+        "url": "https://www.mil.lv/lv/zinas/nakti-uz-11-novembri-latvijas-gaisa-telpa-ielidojusi-tris-bezpilota-lidaparati",
+        "published_at": "2026-11-11"
+      },
+      "brier": 0.0225,
+      "brier_base": 0.36
     },
     {
       "id": "F-2026-013",
@@ -352,6 +358,11 @@
           "date": "2026-11-11",
           "probability": 80,
           "note": "ERR reports Ukraine, Russia and the US began talks in Abu Dhabi on 10 November; an EU statement confirms a parallel meeting. We await wire confirmation of the trilateral."
+        },
+        {
+          "date": "2026-11-12",
+          "probability": 85,
+          "note": "Moldova's TV8 reports a second day of negotiations on 11 November, and Digi24 says NATO officials attend in Abu Dhabi. We await wire confirmation of the trilateral format."
         }
       ],
       "status": "open",
@@ -429,6 +440,44 @@
       "base_rate": 70,
       "base_rate_note": "Poland announced such cases on 5 and 10 November 2026 and several times in autumn 2025, about monthly or more. Raised slightly for the mid-November threat period Tusk cited.",
       "opened": "2026-11-11",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-021",
+      "question": "Will Finnish authorities confirm by 30 November 2026 that a drone entered Finnish airspace on 11 November 2026?",
+      "resolution_criteria": "Yes if Finland's Ministry of Defence, Defence Forces or Border Guard states between 12 and 30 November 2026 that a drone violated Finnish airspace on 11 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 60,
+      "base_rate": 55,
+      "base_rate_note": "Finland confirmed Ukrainian drone entries within days in May 2026, but some 2026 closures ended with no drone found. Raised because the ministry already says it suspects a violation.",
+      "opened": "2026-11-12",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-022",
+      "question": "Will a NATO aircraft shoot down a drone over Lithuania, Latvia, Estonia or Finland between 12 November and 11 December 2026?",
+      "resolution_criteria": "Yes if the armed forces of Lithuania, Latvia, Estonia or Finland, or NATO, report an allied aircraft destroying a drone over their territory or territorial waters between 12 November and 11 December 2026.",
+      "resolves_by": "2026-12-11",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 35,
+      "base_rate": 35,
+      "base_rate_note": "Allied shoot-downs over Estonia (May), Latvia (August) and Lithuania (September) 2026 come to about 0.4 a month, roughly 35% over 30 days. The two failed attempts on 11 November show the difficulty.",
+      "opened": "2026-11-12",
       "updates": [],
       "status": "open",
       "resolved_on": null,

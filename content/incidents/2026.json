@@ -4334,6 +4334,57 @@
       "seed": false,
       "added": "2026-11-09",
       "updated": null
+    },
+    {
+      "id": "INC-2026-0114",
+      "date": "2026-11-11",
+      "date_precision": "day",
+      "location_country": "LT",
+      "affected": [
+        "LT",
+        "LV"
+      ],
+      "location": "Druskininkai–Kaunas–Biržai, Lithuania; eastern and central Latvia",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "drone_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During Ukraine's drone raid on Ust-Luga, a drone entered Lithuania from Belarus at about 01:20, possibly crossed briefly into Poland, and flew north past Kaunas into Latvia and toward Estonia. NATO jets failed twice to down it; debris from a NATO missile fell near Biržai. Latvia said three drones entered its airspace. Vilnius and Kaunas airports closed.",
+      "attribution": 2,
+      "attribution_note": "Lithuania's defence minister said the drones were most likely Ukrainian and off course; its armed forces chief said some were probably diverted by electronic warfare and the origin is unconfirmed.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Naktī uz 11. novembri Latvijas gaisa telpā ielidojuši trīs bezpilota lidaparāti (Three unmanned aircraft entered Latvian airspace overnight into 11 November, translated)",
+          "outlet": "Latvian National Armed Forces",
+          "category": "eu_gov_security",
+          "url": "https://www.mil.lv/lv/zinas/nakti-uz-11-novembri-latvijas-gaisa-telpa-ielidojusi-tris-bezpilota-lidaparati",
+          "published_at": "2026-11-11"
+        },
+        {
+          "title": "Drone incursions trigger air alerts across Lithuania, NATO jets scrambled",
+          "outlet": "LRT",
+          "category": "eu_regional_press",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3111025/drone-incursions-trigger-air-alerts-across-lithuania-nato-jets-scrambled",
+          "published_at": "2026-11-11"
+        },
+        {
+          "title": "Baltic nations, Finland issue overnight drone warnings as Russia, Ukraine exchange strikes",
+          "outlet": "Reuters (via Al-Monitor)",
+          "category": "intl_press",
+          "url": "https://www.al-monitor.com/originals/2026/11/baltic-nations-finland-issue-overnight-drone-warnings-russia-ukraine-exchange",
+          "published_at": "2026-11-11"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
     }
   ]
 }

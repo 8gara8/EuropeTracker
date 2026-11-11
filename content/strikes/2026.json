@@ -1899,6 +1899,124 @@
       "seed": false,
       "added": "2026-11-11",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0061",
+      "date": "2026-11-10",
+      "target_name": "Ust-Luga port oil terminals (Novatek, Ust-Luga Oil)",
+      "target_type": "oil_terminal",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU said drones hit the Novatek and Ust-Luga Oil terminals, the Factor terminal and Luzhskaya station, causing fires and a spill. Governor Drozdenko said 150 drones were downed, three port workers were hurt and a substation shut down, Meduza reported. The fire was visible from Estonia.",
+      "sources": [
+        {
+          "title": "СБУ спільно з іншими складовими Сил оборони уразила портову та нафтову інфраструктуру рф в Усть-Лузі (The SBU and other defence forces hit Russian port and oil infrastructure in Ust-Luga, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19036",
+          "published_at": "2026-11-12T00:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike port in Russia's Leningrad region, sparking fire",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/11/ukrainian-drones-strike-port-in-russia-s-leningrad-region-sparking-fire",
+          "published_at": "2026-11-11T16:13:00+08:00"
+        },
+        {
+          "title": "Video: Fire at Russia's Port of Ust-Luga visible from Estonia",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610192180/video-fire-at-russia-s-port-of-ust-luga-visible-from-estonia",
+          "published_at": "2026-11-11T14:29:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0062",
+      "date": "2026-11-10",
+      "target_name": "Buyan-M small missile ship Naro-Fominsk, Ust-Luga",
+      "target_type": "naval",
+      "region": "Leningrad Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU said its drone operators hit the Kalibr- and Onyx-capable Buyan-M ship Naro-Fominsk during the overnight raid on Ust-Luga. It gave no damage details. No Russian confirmation was found.",
+      "sources": [
+        {
+          "title": "СБУ ... уразила ... ракетний корабель «Буян-М» (The SBU hit a Buyan-M missile ship, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19036",
+          "published_at": "2026-11-12T00:45:00+08:00"
+        },
+        {
+          "title": "Ukraine's Security Service hits Russian missile ship Naro-Fominsk",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062398/",
+          "published_at": "2026-11-12T01:11:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0063",
+      "date": "2026-11-11",
+      "target_name": "Omsk oil refinery",
+      "target_type": "refinery",
+      "region": "Omsk Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 2500,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Residents reported hits on Russia's largest refinery during a drone attack that kept Omsk under alert for hours on the evening of 11 November. The governor's spokesperson said mobile internet was restricted, and the airport halted flights. No official damage confirmation was found.",
+      "sources": [
+        {
+          "title": "Russia's largest oil refinery hit by drones 2,500 km from Ukraine – videos",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062379/",
+          "published_at": "2026-11-11T23:23:00+08:00"
+        },
+        {
+          "title": "Russia's Omsk under drone alert for seven hours amid Ukrainian attack, governor urges residents to stay indoors",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/11/russia-s-omsk-under-drone-alert-for-seven-hours-amid-ukrainian-attack-governor-urges-residents-to-stay-indoors",
+          "published_at": "2026-11-12T02:08:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-12",
+      "updated": null
     }
   ]
 }
