@@ -1982,6 +1982,57 @@
       "updated": null
     },
     {
+      "id": "STR-2026-0064",
+      "date": "2026-11-10",
+      "target_name": "Russian Navy small warship, Gulf of Finland",
+      "target_type": "naval",
+      "region": "Leningrad Oblast (Gulf of Finland)",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Finland's Defence Forces said they detected a strike on a Russian warship in the Gulf of Finland on 11 November, during Ukraine's raid on Ust-Luga. Estonia's defence minister said Ukraine had said it attacked the ship, which returned to St Petersburg. The BBC reports a Ukrainian drone. No Russian confirmation.",
+      "sources": [
+        {
+          "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-13T04:09:00+08:00"
+        },
+        {
+          "title": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
+          "outlet": "gCaptain (Reuters)",
+          "category": "intl_press",
+          "url": "https://gcaptain.com/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/",
+          "published_at": "2026-11-12"
+        },
+        {
+          "title": "Finland Says It Detected Strike on Russian Warship in Baltic Sea",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/12/finland-says-it-detected-strike-on-russian-warship-in-baltic-sea-a94245",
+          "published_at": "2026-11-12"
+        },
+        {
+          "title": "Defense minister: Drones entered Estonian airspace from northeast and southeast",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610193178/defense-minister-drones-entered-estonian-airspace-from-northeast-and-southeast",
+          "published_at": "2026-11-12T14:41:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-13",
+      "updated": null
+    },
+    {
       "id": "STR-2026-0063",
       "date": "2026-11-11",
       "target_name": "Omsk oil refinery",

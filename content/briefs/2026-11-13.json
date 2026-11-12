@@ -1,0 +1,1027 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-13",
+  "window": {
+    "start": "2026-11-12T05:30:00+08:00",
+    "end": "2026-11-13T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-13T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Finland detects strike on Russian warship in Gulf of Finland as Kremlin restates NATO rollback demand; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strikes on merchant ships off Romania. We log no new incident. Finland's Defence Forces said they detected a strike on a Russian warship in the Gulf of Finland on 11 November, which the BBC reports was hit by a Ukrainian drone. Estonia's defence minister confirmed that drones from that raid entered Estonian airspace. Moldovan police identified debris found at Antonești as a Russian Geran-2. After the Abu Dhabi round, the Kremlin restated its demand that NATO return to its 1997 posture. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s4",
+    "s7",
+    "s9",
+    "s10",
+    "s13"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "No new incident is logged, so the rung stays at 4 on October's deadly ship strikes off Romania. Nothing in the window suggests deliberate, sustained Russian action against a NATO or EU state, so rung 5 stays remote."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Eight incidents in 30 days against a baseline of 13 a month, and none serious in 12 months. Drones keep entering Baltic and Moldovan airspace without casualties, so we hold at 15%.",
+        "source_ids": [
+          "s10",
+          "s13"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days against 1.3 a month, and two serious in 12 months. Poland's new indictment in the Mika case adds no new attack, so we hold.",
+        "source_ids": [
+          "s16"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Twelve serious incidents in 12 months, driven by Black Sea ship strikes, and two incidents in 30 days. The Gulf of Finland warship strike adds friction in the Baltic but is not an incident in European waters, so we hold.",
+        "source_ids": [
+          "s9"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against 0.7 a month. Romania's SRI disclosed a Turla email intrusion from December 2025 that it says it contained, which falls short of the serious threshold. We hold.",
+        "source_ids": [
+          "s17"
+        ]
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and none serious since 2022. Ushakov's rollback demands are diplomatic, not force movements, so we hold at remote.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One plant-safety incident in 30 days against 0.3 a month, and none serious since 2022. Russia's MoD reported routine loading of a Yars missile into a silo. We hold.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against 0.3 a month. New UK sanctions drew a Russian protest but no coercive step, so we hold.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Estonia's defence minister confirmed that drones from the 11 November Ust-Luga raid entered Estonian airspace. INC-2026-0114 does not yet list Estonia as affected.",
+        "source_ids": [
+          "s10"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Finland is investigating a suspected drone violation on 11 November and detected a strike on a Russian warship in the Gulf of Finland the same day.",
+        "source_ids": [
+          "s9"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Finland detects strike on a Russian warship in the Gulf of Finland during Ukraine's Baltic raid",
+      "summary": "Finland's Defence Forces said they detected a strike on a Russian warship in the Gulf of Finland on 11 November, while Ukrainian drones were attacking Ust-Luga. They said Finland faces no immediate military threat. Estonia's defence minister said Ukraine had said it attacked the ship. The BBC reports it was the first Ukrainian drone attack on a Russian ship in the open Baltic.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0064"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Estonia confirms that drones from the Ust-Luga raid entered its airspace",
+      "summary": "Defence Minister Martin Herem said one drone briefly entered Estonian airspace from the direction of Latvia at about 03:30 on 11 November, and that some others crossed over the Gulf of Finland. He said Estonia had not authorised any country to use its airspace and had asked Ukraine for an explanation. We record it under INC-2026-0114.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [
+        "INC-2026-0114"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 2,
+      "russian_framing": null,
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Moldovan police identify drone debris in an Antonești vineyard as a Russian Geran-2",
+      "summary": "Debris was found on 12 November in a vineyard at Antonești, Ștefan Vodă district, about 10 km from Odesa Oblast, hours after a large Russian daytime attack on Odesa. Police explosives experts identified it as a jet-powered Geran-2 that hit a concrete pylon and exploded. No one was hurt. Separately, Moldova's foreign ministry condemned two Banderol missiles that crossed its airspace on 11 November.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s12",
+        "s13",
+        "s14",
+        "s15"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Kremlin restates demand to return NATO to its 1997 posture after the Abu Dhabi round",
+      "summary": "After Putin met Witkoff and Kushner, Ushakov said Moscow backs a post-conflict European security system built on its 2021 draft treaties: no NATO enlargement, no threatening weapons near Russia, and NATO forces back to their 1997 positions. RBC-Ukraine sources say Russia refused to discuss a ceasefire or territory in Abu Dhabi. A prisoner exchange was agreed in principle.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Ushakov called the talks constructive and said European states must decide whether they want peace or continued war. A Kremlin post said European troops in Ukraine are unacceptable to Russia.",
+      "source_ids": [
+        "s4",
+        "s5",
+        "s21"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Russia strikes Kyiv with ballistic missiles and 123 drones hours after the talks end",
+      "summary": "Ukraine's General Staff said Russia launched Iskander-M, KN-23 and S-400 ballistic missiles, Zircon missiles and 123 strike drones, 73 of them jet-powered, overnight into 12 November. It said 94 targets were downed or suppressed, with hits at 17 locations. Klitschko reported one person killed and eight injured in Kyiv. A daytime attack on Odesa followed.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's MoD said it carried out a massive precision strike on military-industrial and energy facilities in Kyiv and Kyiv Oblast.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s25",
+        "s12"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Poland indicts a third suspect in the 2025 Mika rail sabotage for Russian intelligence",
+      "summary": "Polish prosecutors indicted a Ukrainian man named as Volodymyr B. at Warsaw Regional Court. They say he helped Yevhenii Ivanov scout the line and prepare the November 2025 attack on the Warsaw–Lublin railway while 'participating in the activities of Russian intelligence'. The two main suspects fled to Belarus and remain at large.",
+      "category": "sabotage",
+      "importance": "notable",
+      "incident_ids": [
+        "INC-2025-0047"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 4,
+      "russian_framing": null,
+      "source_ids": [
+        "s16"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "UK sanctions Russia's ten largest oil producers and shadow-fleet vessels",
+      "summary": "The UK announced a sanctions package on Russian energy and shipping. It says it is the first country to target all ten of Russia's largest oil producers. Prime Minister Andy Burnham said the aim is to press Russia to agree a full and immediate ceasefire.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Foreign Ministry called the measures illegal, saying they confirm London's destructive course of confrontation while settlement talks are under way.",
+      "source_ids": [
+        "s19",
+        "s20"
+      ]
+    },
+    {
+      "id": "d8",
+      "headline": "Zelensky says Starshield speed limits are back, hampering interception of jet drones",
+      "summary": "Zelensky said speed restrictions of 161 km/h have reappeared on Starshield, SpaceX's military service, over Ukrainian territory, including occupied areas. He says this directly hurts Ukraine's ability to intercept jet-powered Shaheds and calls the restrictions systematic. Ukraine is working with the US on the cause. In Dublin, his first request was interceptors for Patriot and NASAMS.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s6",
+        "s3",
+        "s22"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Finland detected a strike on a Russian warship in the Gulf of Finland during the 11 November raid (STR-2026-0064). Ukraine's General Staff says strikes since 30 October have hit all five of Russia's largest refineries. TASS counted 36 drones downed approaching Moscow on 12 November.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s7",
+        "s9",
+        "s30",
+        "s26"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 123 strike drones, 73 of them jet-powered, plus ballistic and Zircon missiles at Kyiv overnight; 94 targets were downed. A daytime attack using drones and Banderol/Dan-T missiles followed, and Ukraine said it downed 124 drones during the day.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s25"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The Abu Dhabi round ended with Moscow pressing for NATO to return to its 1997 posture and, according to RBC-Ukraine sources, refusing to discuss a ceasefire. A prisoner exchange was agreed in principle. The UK imposed new oil and shadow-fleet sanctions.",
+      "development_ids": [
+        "d4",
+        "d7"
+      ],
+      "source_ids": [
+        "s4",
+        "s5",
+        "s19"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Estonia confirmed that drones from the 11 November raid entered its airspace. Moldovan police identified Geran-2 debris at Antonești, and Moldova's foreign ministry condemned two Banderol missile crossings on 11 November. We have not logged either Moldovan item because we could not open the official statements.",
+      "development_ids": [
+        "d2",
+        "d3"
+      ],
+      "source_ids": [
+        "s10",
+        "s13",
+        "s15"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Polish prosecutors indicted a third suspect in the November 2025 Mika rail sabotage, which they attribute to Russian intelligence. We found no new attack in the window.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s16"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's MoD claimed drone hits on two vessels south-west of Odesa and in Chornomorsk. Romania's defence minister said new Black Sea command centres will make drones easier to detect from next year. We found no incident in European waters.",
+      "development_ids": [],
+      "source_ids": [
+        "s23",
+        "s27"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "Romania's SRI said it stopped an intrusion into a government institution's email by Turla, which it links to Russia; Reuters ties the group to the FSB. The SRI says it detected the intrusion in December 2025 and no sensitive data left. We have not logged it yet because the day is unknown.",
+      "development_ids": [],
+      "source_ids": [
+        "s17",
+        "s18"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Russia's MoD said its Strategic Missile Forces loaded an intercontinental ballistic missile into a silo, which we read as routine. We found no new IAEA update on Zaporizhzhia in the window.",
+      "development_ids": [],
+      "source_ids": [
+        "s24"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "European leaders met Zelensky at the European Political Community in Dublin, and Costa set out the summit's outcomes. Zelensky met Rutte and pressed for Patriot and NASAMS interceptors. He says restored Starshield speed limits are hampering interception of drones.",
+      "development_ids": [
+        "d8"
+      ],
+      "source_ids": [
+        "s28",
+        "s22",
+        "s29",
+        "s6"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [
+    {
+      "id": "INC-2026-0114",
+      "changes": {
+        "attribution": null,
+        "attribution_note": null,
+        "rung": null,
+        "serious": null,
+        "casualties": null,
+        "disruption_hours": null,
+        "summary": "During Ukraine's drone raid on Ust-Luga, a drone entered Lithuania from Belarus at about 01:20 and flew past Kaunas into Latvia; NATO jets failed twice to down it and NATO missile debris fell near Biržai. Latvia counted three drones; Vilnius and Kaunas airports closed. Estonia's defence minister said drones also entered Estonian airspace, one at about 03:30 from Latvia's direction.",
+        "host_statement": null
+      },
+      "add_sources": [
+        {
+          "title": "Defense minister: Drones entered Estonian airspace from northeast and southeast",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610193178/defense-minister-drones-entered-estonian-airspace-from-northeast-and-southeast",
+          "published_at": "2026-11-12T14:41:00+08:00"
+        }
+      ],
+      "reason": "Estonia's defence minister confirmed that drones from the same raid entered Estonian airspace. It is one event, so we update rather than log a new one. An editor should add EE to its affected list, which this update cannot change."
+    },
+    {
+      "id": "INC-2025-0047",
+      "changes": {
+        "attribution": null,
+        "attribution_note": null,
+        "rung": null,
+        "serious": null,
+        "casualties": null,
+        "disruption_hours": null,
+        "summary": "A military-grade explosive tore up the Warsaw–Lublin line near Mika as a freight train passed; near Puławy a passenger train braked after damage to the line. Two Ukrainians working for Russian intelligence fled to Belarus. On 12 November 2026 prosecutors indicted a third Ukrainian, Volodymyr B., for helping scout and prepare the attack.",
+        "host_statement": null
+      },
+      "add_sources": [
+        {
+          "title": "Poland indicts Ukrainian man for assisting in rail sabotage on behalf of Russia",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2026/11/12/poland-indicts-ukrainian-man-for-assisting-in-rail-sabotage-on-behalf-of-russia/",
+          "published_at": "2026-11-12T18:48:00+08:00"
+        }
+      ],
+      "reason": "Prosecutors filed an indictment against a third suspect. Attribution is already 4."
+    }
+  ],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0064",
+      "date": "2026-11-10",
+      "target_name": "Russian Navy small warship, Gulf of Finland",
+      "target_type": "naval",
+      "region": "Leningrad Oblast (Gulf of Finland)",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Finland's Defence Forces said they detected a strike on a Russian warship in the Gulf of Finland on 11 November, during Ukraine's raid on Ust-Luga. Estonia's defence minister said Ukraine had said it attacked the ship, which returned to St Petersburg. The BBC reports a Ukrainian drone. No Russian confirmation.",
+      "sources": [
+        {
+          "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-13T04:09:00+08:00"
+        },
+        {
+          "title": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
+          "outlet": "gCaptain (Reuters)",
+          "category": "intl_press",
+          "url": "https://gcaptain.com/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/",
+          "published_at": "2026-11-12"
+        },
+        {
+          "title": "Finland Says It Detected Strike on Russian Warship in Baltic Sea",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/12/finland-says-it-detected-strike-on-russian-warship-in-baltic-sea-a94245",
+          "published_at": "2026-11-12"
+        },
+        {
+          "title": "Defense minister: Drones entered Estonian airspace from northeast and southeast",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610193178/defense-minister-drones-entered-estonian-airspace-from-northeast-and-southeast",
+          "published_at": "2026-11-12T14:41:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-13",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. We log no new incident, so the rung stays at 4. Airspace has eight incidents in 30 days against a 90-day baseline of 13 a month, and no pathway moves.\n\nThe Gulf of Finland strike takes Ukraine's Baltic campaign out to sea. Finland's Defence Forces said they detected a strike on a Russian warship there on 11 November, but that Finland faces no immediate threat. Estonia's defence minister said Ukraine had said it attacked the ship. We assess that the strike does not directly endanger Finland or Estonia. It does put Russian warships firing air defences and jamming at night close to busy Finnish and Estonian shipping lanes. It also gives Moscow a fresh reason to cast NATO's Baltic airspace as a Ukrainian launch corridor. We hold maritime at likely (70%), a figure set by Black Sea ship strikes, not by the Baltic.\n\nEstonia's confirmation means that drones from that single raid entered the airspace of Lithuania, Latvia and Estonia, and that Finland is still investigating a suspected entry. Herem said Estonia had authorised no one to use its airspace and has asked Kyiv for an explanation. We assess that such strays will recur while Ukraine strikes Baltic export terminals. They also strain relations between Kyiv and its closest allies.\n\nIn Moldova, police identified Geran-2 debris at Antonești, and the foreign ministry condemned two Banderol missile crossings on 11 November. We could not open either agency's own statement, so we have logged neither yet. Neither would change Moldova's score, which sits at its floor of 3. Both support F-2026-017.\n\nOn the ceasefire paradox, Ushakov said Moscow wants a European security system built on its 2021 draft treaties, with NATO forces back at their 1997 positions. We assess that a settlement on those terms would cut stray-drone and ship-strike risk in the near term. It would weaken the forward defence of Poland, the Baltic states and Romania later, so it would raise medium-term risk.",
+    "change_my_mind": "We would raise the airspace and maritime odds if Finland or Estonia reported Russian fire or debris reaching their territory or ships during Baltic raids, or if Moldova confirmed casualties from Russian munitions.",
+    "competing_explanations": [
+      {
+        "subject": "STR-2026-0064: strike on a Russian warship in the Gulf of Finland",
+        "hypotheses": [
+          {
+            "label": "Ukrainian long-range drone hit the ship",
+            "assessment": "This fits the BBC's report, Herem's account of Ukraine's claim and the timing during the Ust-Luga raid. Ukraine has hit Baltic Fleet ships in port before.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Russian air-defence fire or intercept debris",
+            "assessment": "Ships in the gulf were engaging drones that night, so fratricide or debris is plausible. No source suggests it.",
+            "estimate": {
+              "probability": 20,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Onboard accident unrelated to the raid",
+            "assessment": "The coincidence with the raid makes this improbable.",
+            "estimate": {
+              "probability": 5,
+              "term": "remote",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-023",
+      "question": "Will Estonia, Latvia, Lithuania or Finland report a drone entering its airspace between 14 November and 13 December 2026?",
+      "resolution_criteria": "Yes if the defence ministry, armed forces or border guard of Estonia, Latvia, Lithuania or Finland states that a drone entered its national airspace on a date between 14 November and 13 December 2026.",
+      "resolves_by": "2026-12-13",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 85,
+      "base_rate": 80,
+      "base_rate_note": "Drones entered Baltic or Finnish airspace in most months since March 2026, including on 1 and 11 November. Raised slightly because Ukraine keeps striking Baltic export terminals."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-017",
+      "probability": 60,
+      "note": "Moldovan police identified Geran-2 debris at Antonești on 12 November, which points to another November drone entry. The count is still well short of 10."
+    }
+  ],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-016",
+      "outcome": "yes",
+      "note": "The Kremlin's Ushakov described the 10–11 November Abu Dhabi contacts as trilateral and constructive, and Zelensky briefed European leaders on the Abu Dhabi meetings.",
+      "source_id": "s4"
+    }
+  ],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A3",
+      "text": null,
+      "reason": "The latest Baltic entries came from Ukrainian raids diverted off course, not from Russian probes. Nothing points to preparation for an invasion."
+    }
+  ],
+  "taiwan": "The most direct link is Starshield. Zelensky says SpaceX's military service has again stopped working above 161 km/h over Ukrainian territory, and that this hampers the interception of jet-powered Shaheds. For Taiwan, this is a warning about depending on one US commercial provider whose settings can change without notice. It strengthens the case for Taiwan's own satellite and backup links. Second, Zelensky's first request in Dublin was interceptors for Patriot and NASAMS, the same production lines Taiwan's orders depend on, so continued Ukrainian and European demand keeps delivery queues long. Third, if confirmed, the drone strike on a warship in the Gulf of Finland shows cheap long-range drones reaching naval units in confined waters. That lesson applies to both sides of the Taiwan Strait.",
+  "next_72h": [
+    {
+      "date": "2026-11-15",
+      "event": "The mid-November threat period Tusk cited for the Kaliningrad border winds down.",
+      "why": "It tests F-2026-014 on sabotage or crossings at the Polish–Kaliningrad border."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 123,
+      "unit": "count",
+      "period": "night of 11–12 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Strike drones, 73 jet-powered; decoys not counted"
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 94,
+      "unit": "count",
+      "period": "night of 11–12 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "General Staff count as of 08:00, including five Banderol/Dan-T"
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": null,
+      "unit": "count",
+      "period": "night of 11–12 Nov",
+      "source_ids": [],
+      "note": "Ballistic and Zircon types named; no count given"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 94 ВОРОЖІ ЦІЛІ (94 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42876",
+      "language": "uk",
+      "published_at": "2026-11-12T14:19:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Massive strike on military-industrial and energy facilities in Kyiv and Kyiv Oblast (translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68950",
+      "language": "ru",
+      "published_at": "2026-11-12T14:09:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Ukraine war latest: Starshield speed restrictions return, Zelensky says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-starshield-speed-restrictions-return-zelensky-says/",
+      "language": "en",
+      "published_at": "2026-11-13T02:58:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Ushakov's comment on Putin's meeting with Witkoff and Kushner, 12 November 2026 (translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96099",
+      "language": "ru",
+      "published_at": "2026-11-13T03:05:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Russia refused to discuss ceasefire or territorial issues on second day of Abu Dhabi peace talks, shifting focus to European security architecture, RBC-Ukraine reports",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/12/russia-refused-to-discuss-ceasefire-or-territorial-issues-on-second-day-of-abu-dhabi-peace-talks-shifting-focus-to-european-security-architecture-rbc-ukraine-reports",
+      "language": "en",
+      "published_at": "2026-11-12T16:10:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Starshield speed restrictions recorded on Ukrainian territory (translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21800",
+      "language": "uk",
+      "published_at": "2026-11-12T23:45:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-13T04:09:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Finland Says It Detected Strike on Russian Warship in Baltic Sea",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/12/finland-says-it-detected-strike-on-russian-warship-in-baltic-sea-a94245",
+      "language": "en",
+      "published_at": "2026-11-12",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
+      "outlet": "gCaptain (Reuters)",
+      "category": "intl_press",
+      "url": "https://gcaptain.com/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/",
+      "language": "en",
+      "published_at": "2026-11-12",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Defense minister: Drones entered Estonian airspace from northeast and southeast",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610193178/defense-minister-drones-entered-estonian-airspace-from-northeast-and-southeast",
+      "language": "en",
+      "published_at": "2026-11-12T14:41:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "EDF issues potential air threat alerts across southern, eastern Estonia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610192126/edf-issues-potential-air-threat-alerts-across-southern-eastern-estonia",
+      "language": "en",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Moldovan police find drone fragments in vineyard near Ukrainian border",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/moldovan-police-find-drone-fragments-in-vineyard-near-ukrainian-border/",
+      "language": "en",
+      "published_at": "2026-11-13T01:50:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Drona prăbușită la Antonești este de tip „Geran-2”. Aparatul a lovit un pilon de beton (The drone that crashed at Antonești is a Geran-2; it hit a concrete pylon, translated)",
+      "outlet": "Deschide.md",
+      "category": "eu_regional_press",
+      "url": "https://www.deschide.md/drona-prabusita-la-antonesti-este-de-tip-geran-2-aparatul-a-lovit-un-pilon-de-beton",
+      "language": "ro",
+      "published_at": "2026-11-12",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Un aparat de zbor găsit într-o plantație de viță-de-vie din satul Antonești, raionul Ștefan Vodă (A flying device found in a vineyard in Antonești, translated)",
+      "outlet": "PRO TV Chișinău",
+      "category": "eu_regional_press",
+      "url": "https://protv.md/actualitate/un-aparat-de-zbor-gasit-intr-o-plantatie-de-vita-de-vie-din-satul-antonesti-raionul-stefan-voda-politia-investigheaza-cazul-foto---2771870.html",
+      "language": "ro",
+      "published_at": "2026-11-12",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "MAE condamnă încălcarea spațiului aerian național de către două rachete de croazieră (Foreign ministry condemns violation of national airspace by two cruise missiles, translated)",
+      "outlet": "Radio Chișinău",
+      "category": "eu_regional_press",
+      "url": "https://radiochisinau.md/mae-condamna-incalcarea-spatiului-aerian-national-de-catre-doua-rachete-de-croaziera--acest-incident-reprezinta-o-amenintare-directa-asupra-sigurantei-cetatenilor---230902.html",
+      "language": "ro",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Poland indicts Ukrainian man for assisting in rail sabotage on behalf of Russia",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/12/poland-indicts-ukrainian-man-for-assisting-in-rail-sabotage-on-behalf-of-russia/",
+      "language": "en",
+      "published_at": "2026-11-12T18:48:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Romania says it stopped Russian cyberattack targeting government emails",
+      "outlet": "The Record",
+      "category": "intl_press",
+      "url": "https://therecord.media/romania-russia-cyberattack-emails",
+      "language": "en",
+      "published_at": "2026-11-12T21:40:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Romanian intelligence agency says it identified Russian-linked cyber attack",
+      "outlet": "The Irish Times (Reuters)",
+      "category": "intl_press",
+      "url": "https://www.irishtimes.com/world/europe/2026/11/11/romanian-intelligence-agency-says-it-identified-russian-linked-cyber-attack/",
+      "language": "en",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "UK says it's 1st country to target all of Russia's top 10 oil producers with latest round of sanctions",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/uk-says-its-1st-country-to-target-all-of-russias-top-10-oil-producers-with-latest-round-of-sanctions/",
+      "language": "en",
+      "published_at": "2026-11-13T01:04:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "London announced further illegal restrictions on Russian companies (translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96098",
+      "language": "ru",
+      "published_at": "2026-11-13T02:47:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Размещение европейских войск на Украине для России неприемлемо (Deployment of European troops in Ukraine is unacceptable to Russia, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68958",
+      "language": "ru",
+      "published_at": "2026-11-12T22:11:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Our priorities remain unchanged. First, air defence: interceptors for Patriot and NASAMS (translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21799",
+      "language": "uk",
+      "published_at": "2026-11-12T23:40:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Strikes continue on vessels carrying military cargo; two ships hit south-west of Odesa and in Chornomorsk (translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68959",
+      "language": "ru",
+      "published_at": "2026-11-12T22:31:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Главное за день (Main events of the day, including ICBM loading by the Strategic Missile Forces, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68966",
+      "language": "ru",
+      "published_at": "2026-11-13T03:31:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Ukrainian air defences down 124 Russian drones during day",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/12/8062587/",
+      "language": "en",
+      "published_at": "2026-11-13T01:16:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Сбит 31 летевший на Москву БПЛА; всего с начала суток сбиты 36 БПЛА (31 more drones downed approaching Moscow; 36 since the start of the day, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/405448",
+      "language": "ru",
+      "published_at": "2026-11-13T03:09:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Radu Oprea: Zona de unde se vor extrage gaze din Marea Neagră este deja una sigură (The Black Sea gas extraction zone is already safe, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/politica/radu-oprea-zona-de-unde-se-vor-extrage-gaze-din-marea-neagra-este-deja-una-sigura-iar-de-la-anul-detectarea-dronelor-va-fi-mai-usoara-4034279",
+      "language": "ro",
+      "published_at": "2026-11-13T04:22:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Remarks by President António Costa at the press conference following the meeting of the European Political Community in Dublin",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/12/remarks-by-president-antonio-costa-at-the-press-conference-following-the-meeting-of-the-european-political-community-in-dublin/",
+      "language": "en",
+      "published_at": "2026-11-13T02:45:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s29",
+      "title": "Met NATO Secretary General Mark Rutte (translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21802",
+      "language": "uk",
+      "published_at": "2026-11-13T02:10:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    },
+    {
+      "id": "s30",
+      "title": "П'ять з п'яти найбільших нафтопереробних заводів росії уразили Сили оборони (Defence Forces have hit five of Russia's five largest refineries, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42879",
+      "language": "uk",
+      "published_at": "2026-11-12T18:59:00+08:00",
+      "accessed_at": "2026-11-13T06:00:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-13T05:45:41+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 8,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 2,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1922,
+    "source_count": 30,
+    "source_category_count": 8
+  }
+}

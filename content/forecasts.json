@@ -365,12 +365,18 @@
           "note": "Moldova's TV8 reports a second day of negotiations on 11 November, and Digi24 says NATO officials attend in Abu Dhabi. We await wire confirmation of the trilateral format."
         }
       ],
-      "status": "open",
-      "resolved_on": null,
-      "resolution_note": null,
-      "resolution_source": null,
-      "brier": null,
-      "brier_base": null
+      "status": "resolved_yes",
+      "resolved_on": "2026-11-13",
+      "resolution_note": "The Kremlin's Ushakov described the 10–11 November Abu Dhabi contacts as trilateral and constructive, and Zelensky briefed European leaders on the Abu Dhabi meetings.",
+      "resolution_source": {
+        "title": "Ushakov's comment on Putin's meeting with Witkoff and Kushner, 12 November 2026 (translated)",
+        "outlet": "Russian Foreign Ministry (Telegram)",
+        "category": "ru_gov",
+        "url": "https://t.me/MID_Russia/96099",
+        "published_at": "2026-11-13T03:05:00+08:00"
+      },
+      "brier": 0.0225,
+      "brier_base": 0.25
     },
     {
       "id": "F-2026-017",
@@ -383,7 +389,13 @@
       "base_rate": 50,
       "base_rate_note": "Moldova reported a record 19 violations in October, after fewer in earlier months. One was reported on 4 November. Russia's winter strikes on Odesa and the south continue.",
       "opened": "2026-11-05",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-13",
+          "probability": 60,
+          "note": "Moldovan police identified Geran-2 debris at Antonești on 12 November, which points to another November drone entry. The count is still well short of 10."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -478,6 +490,25 @@
       "base_rate": 35,
       "base_rate_note": "Allied shoot-downs over Estonia (May), Latvia (August) and Lithuania (September) 2026 come to about 0.4 a month, roughly 35% over 30 days. The two failed attempts on 11 November show the difficulty.",
       "opened": "2026-11-12",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-023",
+      "question": "Will Estonia, Latvia, Lithuania or Finland report a drone entering its airspace between 14 November and 13 December 2026?",
+      "resolution_criteria": "Yes if the defence ministry, armed forces or border guard of Estonia, Latvia, Lithuania or Finland states that a drone entered its national airspace on a date between 14 November and 13 December 2026.",
+      "resolves_by": "2026-12-13",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 85,
+      "base_rate": 80,
+      "base_rate_note": "Drones entered Baltic or Finnish airspace in most months since March 2026, including on 1 and 11 November. Raised slightly because Ukraine keeps striking Baltic export terminals.",
+      "opened": "2026-11-13",
       "updates": [],
       "status": "open",
       "resolved_on": null,

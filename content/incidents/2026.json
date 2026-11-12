@@ -4350,7 +4350,7 @@
       "type": "drone_incursion",
       "rung": 3,
       "serious": false,
-      "summary": "During Ukraine's drone raid on Ust-Luga, a drone entered Lithuania from Belarus at about 01:20, possibly crossed briefly into Poland, and flew north past Kaunas into Latvia and toward Estonia. NATO jets failed twice to down it; debris from a NATO missile fell near Biržai. Latvia said three drones entered its airspace. Vilnius and Kaunas airports closed.",
+      "summary": "During Ukraine's drone raid on Ust-Luga, a drone entered Lithuania from Belarus at about 01:20 and flew past Kaunas into Latvia; NATO jets failed twice to down it and NATO missile debris fell near Biržai. Latvia counted three drones; Vilnius and Kaunas airports closed. Estonia's defence minister said drones also entered Estonian airspace, one at about 03:30 from Latvia's direction.",
       "attribution": 2,
       "attribution_note": "Lithuania's defence minister said the drones were most likely Ukrainian and off course; its armed forces chief said some were probably diverted by electronic warfare and the origin is unconfirmed.",
       "host_statement": "yes",
@@ -4380,11 +4380,18 @@
           "category": "intl_press",
           "url": "https://www.al-monitor.com/originals/2026/11/baltic-nations-finland-issue-overnight-drone-warnings-russia-ukraine-exchange",
           "published_at": "2026-11-11"
+        },
+        {
+          "title": "Defense minister: Drones entered Estonian airspace from northeast and southeast",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610193178/defense-minister-drones-entered-estonian-airspace-from-northeast-and-southeast",
+          "published_at": "2026-11-12T14:41:00+08:00"
         }
       ],
       "seed": false,
       "added": "2026-11-12",
-      "updated": null
+      "updated": "2026-11-13"
     }
   ]
 }

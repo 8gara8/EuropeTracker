@@ -1756,7 +1756,7 @@
       "type": "rail_sabotage",
       "rung": 2,
       "serious": true,
-      "summary": "A military-grade explosive tore up the Warsaw–Lublin line used for aid to Ukraine near Mika as a freight train passed; near Puławy a bracket was jammed on the track and wires downed before a train with 473 passengers. Tusk called it unprecedented sabotage.",
+      "summary": "A military-grade explosive tore up the Warsaw–Lublin line near Mika as a freight train passed; near Puławy a passenger train braked after damage to the line. Two Ukrainians working for Russian intelligence fled to Belarus. On 12 November 2026 prosecutors indicted a third Ukrainian, Volodymyr B., for helping scout and prepare the attack.",
       "attribution": 4,
       "attribution_note": "Prosecutors charged two Ukrainians working for Russian intelligence, who fled to Belarus.",
       "host_statement": "yes",
@@ -1779,11 +1779,18 @@
           "category": "intl_press",
           "url": "https://www.theguardian.com/world/2025/nov/18/ukrainians-working-for-russia-rail-blasts-says-poland-prime-minister-donald-tusk",
           "published_at": "2025-11-18"
+        },
+        {
+          "title": "Poland indicts Ukrainian man for assisting in rail sabotage on behalf of Russia",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2026/11/12/poland-indicts-ukrainian-man-for-assisting-in-rail-sabotage-on-behalf-of-russia/",
+          "published_at": "2026-11-12T18:48:00+08:00"
         }
       ],
       "seed": true,
       "added": "2026-11-02",
-      "updated": null
+      "updated": "2026-11-13"
     },
     {
       "id": "INC-2025-0048",
