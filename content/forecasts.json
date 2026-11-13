@@ -516,6 +516,25 @@
       "resolution_source": null,
       "brier": null,
       "brier_base": null
+    },
+    {
+      "id": "F-2026-024",
+      "question": "Will a NATO or EU member government publicly confirm, by 31 December 2026, that Russia has demanded Finland leave NATO or NATO bases be removed from the Baltic states?",
+      "resolution_criteria": "Yes if a head of government, foreign or defence minister, or official spokesperson of a NATO or EU member state says on the record between 14 November and 31 December 2026 that Russia made either demand in Ukraine-related talks.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "political_economic",
+      "probability": 30,
+      "base_rate": 20,
+      "base_rate_note": "Leaked Russian talk terms have sometimes been confirmed by Western officials within weeks, but often not. We raised it because the Baltic states and Finland have strong incentives to make any such demand public.",
+      "opened": "2026-11-14",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
     }
   ]
 }

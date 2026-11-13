@@ -1,0 +1,887 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "window": {
+    "start": "2026-11-13T05:30:00+08:00",
+    "end": "2026-11-14T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-14T06:15:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Bild reports Russian demand that Finland quit NATO; Estonia says struck corvette took casualties; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's drone strike on a merchant ship off Romania. We log no new incident. Bild reported that Russian negotiators want Finland out of NATO and NATO bases removed from the Baltic states; ERR says Kremlin spokesman Peskov denied it. An Estonian officer said Ukraine's 11 November strike left the corvette Naro-Fominsk crippled, with casualties. Romania scrambled F-16s for a target near Snake Island that stayed in Ukrainian airspace. Russia launched 117 drones at Ukraine overnight, and Ukraine said it downed 80. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s13",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "No new incident today. The rung stays at 4 on the 23 October Khoryv sinking off Constanța. Nothing in the window suggests deliberate, sustained Russian action against a NATO or EU state, and assumption A1 holds."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Seven incidents in 30 days against a 13.3 monthly baseline, and no serious case in 12 months. The Tulcea alert ended without a violation, so we hold the probability.",
+        "source_ids": [
+          "s10"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days against a 1.3 monthly baseline, and two serious cases in 12 months. Nothing new in the window, so we hold.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Twelve serious cases in 12 months, driven by Black Sea ship strikes. Russia's MoD claims another strike on a cargo ship bound for Chornomorsk, outside EU waters. We hold.",
+        "source_ids": [
+          "s11"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a 0.7 monthly baseline. The Quantum Systems breach caused no disruption and has no attribution, so we hold.",
+        "source_ids": [
+          "s15"
+        ]
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No border crossing by Russian forces since 2022. The Bild-reported demands are a negotiating claim, denied by the Kremlin, not a sign of force posture change.",
+        "source_ids": [
+          "s8",
+          "s9"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One plant-safety event in 30 days and no serious case in 12 months. No IAEA update on Zaporizhzhia in the window, so we hold.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a 0.3 monthly baseline. The reported Moldova federalisation demand is a talks claim, not an operation, so we hold.",
+        "source_ids": [
+          "s8"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Estonian officials say drones from the 11 November Ust-Luga raid crossed its south-east and the Gulf of Finland for minutes, and Baltic GPS interference persists.",
+        "source_ids": [
+          "s7"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Finland is still investigating a suspected 11 November drone violation, and Bild reports a Russian demand that it leave NATO.",
+        "source_ids": [
+          "s8"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Bild reports Russia demanded Finland's exit from NATO and no NATO bases in the Baltic states",
+      "summary": "Bild, cited by Anadolu and Digi24, reported that Russian negotiators in the Abu Dhabi track sought a new European security order: Finland out of NATO, no NATO bases in Estonia, Latvia or Lithuania, and a federal Moldova. In return, Russia would reportedly withdraw nuclear weapons from Belarus. ERR reports that Peskov denied the claims. Former Estonian NATO envoy Jüri Luik said Bild is the only source.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "ERR reports Kremlin spokesman Dmitry Peskov denied the Bild claims. TASS quoted Maria Zakharova saying European participation in the talks with Witkoff and Kushner was not discussed.",
+      "source_ids": [
+        "s8",
+        "s9",
+        "s12"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukraine claims hits on Volgograd refinery and Rostov drone plants; four killed in Volgograd",
+      "summary": "Ukraine's General Staff said drones hit primary distillation units and tanks at Lukoil's Volgograd refinery overnight into 13 November. It said Neptune missiles struck a drone plant, a store and a service centre in Rostov-on-Don. Governor Bocharov reported fires at a plant in the southern industrial zone and four workers killed, Meduza reported. Samara's governor reported four dead at an industrial site.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0065",
+        "STR-2026-0066",
+        "STR-2026-0067"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s20"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Russia launches 117 drones at Ukraine; Kyiv hospital hit as Starshield limits hamper interceptors",
+      "summary": "Ukraine's General Staff said Russia launched 117 drones overnight, 63 of them jet-powered, and 80 were downed or suppressed. Russian attacks killed nine people and injured 61 over the day, the Kyiv Independent reported, including a strike on a Kyiv trauma hospital. Zelensky said speed limits on SpaceX's Starshield made interceptor drones unusable against Shaheds near the front.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's MoD said it struck energy, port and rail targets and a cargo ship carrying military cargo to Chornomorsk.",
+      "source_ids": [
+        "s1",
+        "s13",
+        "s14",
+        "s11"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Estonian officer: Ukrainian drones crippled Russian corvette in the Baltic, with casualties",
+      "summary": "Col. Aron Kalmus of the Estonian Defence Forces said more than three Ukrainian drones hit the corvette Naro-Fominsk during the 11 November Ust-Luga raid, causing deaths and injuries. He said the ship is being escorted to St Petersburg without power and that friendly fire downed a Russian Mi-8/17. He said drones spent minutes over south-east Estonia and the Gulf of Finland.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0062"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s7",
+        "s19"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Romania issues Ro-Alert in northern Tulcea and scrambles two F-16s; target stays in Ukrainian airspace",
+      "summary": "Romania's defence ministry said radar detected an air target south-east of Snake Island, in Ukrainian airspace, on the evening of 13 November. A Ro-Alert went to northern Tulcea from 21:53 to 22:58, and two F-16s took off from Fetești. No entry into Romanian airspace and no debris were reported, so we log no incident.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s10"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine claims drone hits on Lukoil's Volgograd refinery and Neptune strikes on drone plants in Rostov-on-Don. Volgograd's governor reported four workers killed at an unnamed plant, and Samara's governor reported four dead at an industrial site. All three strikes are logged at verification 1.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s2",
+        "s3",
+        "s4",
+        "s20"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 117 drones overnight, 63 of them jet-powered, and Ukraine said 80 were downed. A Kyiv trauma hospital was hit and nine people were killed nationwide. Jet-drone tracks crossed Vinnytsia and the Odesa–Mykolaiv boundary before dawn on 14 November.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s1",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Bild reports that Russia's terms include Finland leaving NATO, no NATO bases in the Baltic states and a federal Moldova. The Kremlin denies this. Estonian voices fault Washington for folding European security into Ukraine talks.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s8",
+        "s9",
+        "s12"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Romania alerted northern Tulcea and scrambled F-16s over a target that stayed in Ukrainian airspace. The US Air Force responded to suspected unauthorised drones over RAF Lakenheath, with no damage and no state link stated. Neither is logged.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s10",
+        "s16"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "An Estonian officer says the Baltic Fleet corvette Naro-Fominsk was crippled, with deaths and injuries. Russia's MoD claims a strike on a cargo ship bound for Chornomorsk, outside EU waters.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s7",
+        "s19",
+        "s11"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "German drone maker Quantum Systems, a supplier to Ukraine, confirmed a late-October cyberattack. It blamed unnamed \"hostile actors\" and reports no disruption. Not logged, because there is no disruption and no government attribution.",
+      "development_ids": [],
+      "source_ids": [
+        "s15"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Germany's reforms give the BND and BfV wider powers against espionage, sabotage and hybrid threats. EU foreign ministers meet on 16 November.",
+      "development_ids": [],
+      "source_ids": [
+        "s17",
+        "s18"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0065",
+      "date": "2026-11-12",
+      "target_name": "Lukoil Volgograd oil refinery (Volgogradneftepererabotka)",
+      "target_type": "refinery",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 550,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said drones hit primary distillation units, a hydrotreater, a loading rack and six tanks at the 15m-tonne refinery overnight into 13 November. Governor Bocharov reported fires at a plant in the southern industrial zone, four workers killed and fuel queues, Meduza reported.",
+      "sources": [
+        {
+          "title": "Пальне для війни горить у Волгограді: уражено один із найбільших НПЗ росії (Fuel for war burns in Volgograd: one of Russia's largest refineries hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42886",
+          "published_at": "2026-11-13T20:59:00+08:00"
+        },
+        {
+          "title": "Ukrainian drone attack sparks fire at Volgograd oil refinery, killing four. Lines form at gas stations across city.",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/13/ukrainian-drone-attack-sparks-fire-at-volgograd-oil-refinery-killing-four-lines-form-at-gas-stations-across-city",
+          "published_at": "2026-11-13T16:20:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drone Attack Kills 4 Workers, Sparks Fire at Volgograd Oil Refinery",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/13/ukrainian-drone-attack-kills-4-workers-sparks-fire-at-volgograd-oil-refinery-a94250",
+          "published_at": "2026-11-13T17:26:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-14",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0066",
+      "date": "2026-11-12",
+      "target_name": "Ionos drone plant, drone store and Aero-Hit service centre, Rostov-on-Don",
+      "target_type": "defence_industry",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 250,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Navy Neptune missiles hit the Ionos tactical attack-drone plant, its drone store and the Aero-Hit FPV service centre in Rostov-on-Don overnight into 13 November. No Russian confirmation was found.",
+      "sources": [
+        {
+          "title": "«Нептуни» прилетіли: у Ростові-на-Дону ВМС ЗСУ уразили виробництво, склад і сервісний центр БпЛА (Neptunes hit drone sites in Rostov-on-Don, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42885",
+          "published_at": "2026-11-13T19:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-14",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0067",
+      "date": "2026-11-13",
+      "target_name": "Unnamed industrial facility, Samara Oblast",
+      "target_type": "other",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Vyacheslav Fedorishchev said four people were killed in a Ukrainian drone attack on an industrial facility in Samara region on the morning of 13 November, Meduza reported. The facility was not named.",
+      "sources": [
+        {
+          "title": "Four people killed in Ukrainian drone attack in Russia's Samara region, governor says",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/13/four-people-killed-in-ukrainian-drone-attack-in-russia-s-samara-region-governor-says",
+          "published_at": "2026-11-13T20:06:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-14",
+      "updated": null
+    }
+  ],
+  "strike_updates": [
+    {
+      "id": "STR-2026-0062",
+      "changes": {
+        "verification": null,
+        "damage": null,
+        "effect": null,
+        "summary": "The SBU said it hit the Buyan-M ship Naro-Fominsk during the Ust-Luga raid. An Estonian Defence Forces officer said on 13 November that it was hit more than three times, with deaths and injuries, and is being escorted to St Petersburg without power. Probably the same ship as STR-2026-0064.",
+        "weapon_detail": null,
+        "western_weapon": null
+      },
+      "add_sources": [
+        {
+          "title": "Officer: Russian warship hit multiple times in Baltic, with casualties",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610195272/officer-russian-warship-hit-multiple-times-in-baltic-with-casualties",
+          "published_at": "2026-11-13T21:22:00+08:00"
+        }
+      ],
+      "reason": "The Estonian military gives damage and casualty details. No Russian confirmation or imagery, so verification stays at 1. We flag a likely duplicate of STR-2026-0064 for merging."
+    }
+  ],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. We log no new incident, so the rung stays at 4. Airspace has seven incidents in 30 days against a 90-day baseline of 13.3 a month, and no pathway moves.\n\nThe Bild report is the item that matters most, and it is also the least verified. Bild says Russian negotiators want Finland out of NATO, NATO bases removed from the Baltic states and Moldova turned into a federation. ERR reports that Peskov denied it, and Jüri Luik notes that Bild is the only source. We assess that the terms fit Moscow's stated aim of rolling NATO back to its 1997 posture, which Ushakov restated this week. The report adds no new evidence of intent to use force. We keep ind-pretext at watch, because a leaked negotiating position is not an official pretext narrative. On the ceasefire paradox, a settlement on such terms would cut stray-drone and ship-strike risk in the near term. It would hollow out forward defence in Finland and the Baltic states, raising medium-term risk under A5.\n\nThe Estonian account of the Naro-Fominsk strike confirms that Ukraine's Baltic campaign now kills Russian sailors within sight of Estonian shores. Drones again spent minutes over Estonian territory, and NATO jets held fire because debris could fall in Russia. We assess this raises the chance of a Russian naval or air reaction in the Gulf of Finland, such as heavier jamming or warships firing air defences near shipping lanes. It does not yet point to deliberate action against Estonia or Finland, so A1 holds.\n\nIn the south, Romania's Tulcea alert ended without a violation. Russia's 117-drone night was below this month's peaks. Jet-drone tracks across Vinnytsia and the Odesa–Mykolaiv boundary keep Moldova and Romania exposed, so F-2026-017 and F-2026-002 stand.\n\nUkraine's strikes on Volgograd, Rostov and Samara killed eight workers, according to Russian governors. They sustain Moscow's motive for retaliatory raids on the south, the usual source of strays.",
+    "change_my_mind": "An official Russian text, or a European government confirming the Bild terms, would raise military_pressure and political_economic. So would a Russian naval or air move against Estonian or Finnish shipping after the corvette strike, or a drone crossing into Romania from the Snake Island axis.",
+    "competing_explanations": [
+      {
+        "subject": "Bild report of Russian demands on Finland, the Baltic states and Moldova",
+        "hypotheses": [
+          {
+            "label": "Genuine Russian negotiating position",
+            "assessment": "The terms match Moscow's 2021 draft treaties and Ushakov's call this week for NATO's return to 1997 positions. The Kremlin's denial may be tactical while talks continue.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Inaccurate or overstated leak",
+            "assessment": "There is a single tabloid source, no European government has confirmed it, and Peskov denied it. The terms may blend unofficial soundings with older positions.",
+            "estimate": {
+              "probability": 40,
+              "term": "realistic_possibility",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-024",
+      "question": "Will a NATO or EU member government publicly confirm, by 31 December 2026, that Russia has demanded Finland leave NATO or NATO bases be removed from the Baltic states?",
+      "resolution_criteria": "Yes if a head of government, foreign or defence minister, or official spokesperson of a NATO or EU member state says on the record between 14 November and 31 December 2026 that Russia made either demand in Ukraine-related talks.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "political_economic",
+      "probability": 30,
+      "base_rate": 20,
+      "base_rate_note": "Leaked Russian talk terms have sometimes been confirmed by Western officials within weeks, but often not. We raised it because the Baltic states and Finland have strong incentives to make any such demand public."
+    }
+  ],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct effect is a lesson on depending on a single commercial provider. Zelensky says speed limits on SpaceX's Starshield over the front made interceptor drones unusable against Shaheds, and a Kyiv hospital was hit. Taiwan plans to use drone-based air defence and has its own satellite-link dependence, so it faces the same risk: a foreign company's policy setting can switch off a defensive capability overnight. That strengthens the case for sovereign or multi-vendor links. Second, the Bild-reported Russian demands would roll NATO back from Finland and the Baltic states in a US-led settlement. If Washington entertains them, Beijing may read that great-power bargaining can trade away a partner's alignment. Ukraine's Neptune strikes on Rostov drone plants also show the value of domestically built long-range missiles against an adversary's drone production.",
+  "next_72h": [
+    {
+      "date": "2026-11-16",
+      "event": "EU Foreign Affairs Council meets in Brussels.",
+      "why": "Watch for the European response to the Bild-reported demands, plus sanctions and shadow-fleet steps."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 117,
+      "unit": "count",
+      "period": "night of 12–13 Nov",
+      "source_ids": [
+        "s1",
+        "s13"
+      ],
+      "note": "Includes 63 jet-powered Shaheds, Gerbera and decoys."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 80,
+      "unit": "count",
+      "period": "night of 12–13 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Downed or suppressed, per the General Staff."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": null,
+      "unit": "count",
+      "period": "night of 12–13 Nov",
+      "source_ids": [],
+      "note": null
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 3,
+      "unit": "count",
+      "period": "12–13 Nov",
+      "source_ids": [
+        "s2",
+        "s3",
+        "s20"
+      ],
+      "note": "Volgograd, Rostov-on-Don, Samara."
+    },
+    {
+      "id": "ua_max_strike_depth_km",
+      "value": 900,
+      "unit": "km",
+      "period": "13 Nov",
+      "source_ids": [
+        "s20"
+      ],
+      "note": "Samara region, approximate."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 80 ВОРОЖИХ ЦІЛЕЙ (80 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42883",
+      "language": "uk",
+      "published_at": "2026-11-13T14:12:00+08:00",
+      "accessed_at": "2026-11-14T06:05:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Пальне для війни горить у Волгограді: уражено один із найбільших НПЗ росії (Fuel for war burns in Volgograd, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42886",
+      "language": "uk",
+      "published_at": "2026-11-13T20:59:00+08:00",
+      "accessed_at": "2026-11-14T06:05:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "«Нептуни» прилетіли: у Ростові-на-Дону ВМС ЗСУ уразили виробництво, склад і сервісний центр БпЛА (Neptunes hit drone sites in Rostov-on-Don, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42885",
+      "language": "uk",
+      "published_at": "2026-11-13T19:59:00+08:00",
+      "accessed_at": "2026-11-14T06:05:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Ukrainian drone attack sparks fire at Volgograd oil refinery, killing four. Lines form at gas stations across city.",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/13/ukrainian-drone-attack-sparks-fire-at-volgograd-oil-refinery-killing-four-lines-form-at-gas-stations-across-city",
+      "language": "en",
+      "published_at": "2026-11-13T16:20:00+08:00",
+      "accessed_at": "2026-11-14T06:04:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Ukrainian Drone Attack Kills 4 Workers, Sparks Fire at Volgograd Oil Refinery",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/13/ukrainian-drone-attack-kills-4-workers-sparks-fire-at-volgograd-oil-refinery-a94250",
+      "language": "en",
+      "published_at": "2026-11-13T17:26:00+08:00",
+      "accessed_at": "2026-11-14T06:04:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Ukraine's General Staff reports strike on key fuel supplier of Russian forces – video",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/13/8062729/",
+      "language": "en",
+      "published_at": "2026-11-13T21:03:00+08:00",
+      "accessed_at": "2026-11-14T06:04:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Officer: Russian warship hit multiple times in Baltic, with casualties",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610195272/officer-russian-warship-hit-multiple-times-in-baltic-with-casualties",
+      "language": "en",
+      "published_at": "2026-11-13T21:22:00+08:00",
+      "accessed_at": "2026-11-14T06:04:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Rusia cere retragerea unei țări europene din NATO pentru a pune capăt războiului din Ucraina (Russia demands a European country leave NATO to end the war in Ukraine, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/rusia-cere-retragerea-unei-tari-europene-din-nato-pentru-a-pune-capat-razboiului-din-ucraina-ce-pretentii-are-privind-r-moldova-4035093",
+      "language": "ro",
+      "published_at": "2026-11-13T20:36:00+08:00",
+      "accessed_at": "2026-11-14T06:05:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Estonian ex-NATO envoy faults US for opening door to Russia's Europe demands",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610195500/estonian-ex-nato-envoy-faults-us-for-opening-door-to-russia-s-europe-demands",
+      "language": "en",
+      "published_at": "2026-11-14T00:03:00+08:00",
+      "accessed_at": "2026-11-14T06:08:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Țintă aeriană detectată la sud-est de Insula Șerpilor: mesaj Ro-Alert în nordul județului Tulcea (Air target south-east of Snake Island: Ro-Alert in northern Tulcea, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/tinta-aeriana-detectata-la-sud-est-de-insula-serpilor-mesaj-ro-alert-in-zona-de-nord-a-judetului-tulcea-doua-avioane-f-16-ridicate-4036035",
+      "language": "ro",
+      "published_at": "2026-11-14T05:20:00+08:00",
+      "accessed_at": "2026-11-14T06:05:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Сегодня днем ВС РФ нанесены удары БПЛА по объектам энергетики, портовой и железнодорожной инфраструктуры (Today Russian forces struck energy, port and rail infrastructure with drones, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/68995",
+      "language": "ru",
+      "published_at": "2026-11-13T23:22:00+08:00",
+      "accessed_at": "2026-11-14T06:07:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Главные новости к этому часу (Top news at this hour, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/405604",
+      "language": "ru",
+      "published_at": "2026-11-14T02:01:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Russian attacks kill 9, injure 61 across Ukraine over past day, spark fire at Kyiv hospital",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russian-attacks-kill-9-injure-61-across-ukraine-over-past-day-spark-fire-at-kyiv-hospital/",
+      "language": "en",
+      "published_at": "2026-11-13T18:48:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Russia strikes hospital in central Kyiv after SpaceX system falters again",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/2026/nov/13/russia-strikes-hospital-central-kyiv-spacex-starshield-system-fails",
+      "language": "en",
+      "published_at": "2026-11-13T19:24:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Cyberattack hits German drone manufacturer supplying Ukraine in late October, company confirms",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/cyberattack-hits-german-drone-manufacturer-supplying-ukraine-in-late-october-company-confirms/",
+      "language": "en",
+      "published_at": "2026-11-14T01:00:00+08:00",
+      "accessed_at": "2026-11-14T06:07:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Forţele Aeriene ale SUA au intervenit în urma apariţiei unor „drone suspecte” deasupra unei baze din Marea Britanie (US Air Force responds to suspected drones over a UK base, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/fortele-aeriene-ale-sua-au-intervenit-in-urma-aparitiei-unor-drone-suspecte-deasupra-unei-baze-din-marea-britanie-4036051",
+      "language": "ro",
+      "published_at": "2026-11-14T05:11:00+08:00",
+      "accessed_at": "2026-11-14T06:07:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-13T23:42:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Media advisory - Foreign Affairs Council of 16 November 2026",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/13/media-advisory-foreign-affairs-council-of-16-november-2026/",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "ERR: Miehistön jäseniä kuoli iskussa Venäjän sota-alukseen Suomenlahdella (ERR: Crew members killed in strike on Russian warship in the Gulf of Finland, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20256928?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-14T02:41:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Four people killed in Ukrainian drone attack in Russia's Samara region, governor says",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/13/four-people-killed-in-ukrainian-drone-attack-in-russia-s-samara-region-governor-says",
+      "language": "en",
+      "published_at": "2026-11-13T20:06:00+08:00",
+      "accessed_at": "2026-11-14T06:10:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-14T05:41:51+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 7,
+        "baseline_monthly": 13.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 2.3
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1675,
+    "source_count": 20,
+    "source_category_count": 8
+  }
+}

@@ -1960,7 +1960,7 @@
       "verification": 1,
       "damage": null,
       "effect": null,
-      "summary": "The SBU said its drone operators hit the Kalibr- and Onyx-capable Buyan-M ship Naro-Fominsk during the overnight raid on Ust-Luga. It gave no damage details. No Russian confirmation was found.",
+      "summary": "The SBU said it hit the Buyan-M ship Naro-Fominsk during the Ust-Luga raid. An Estonian Defence Forces officer said on 13 November that it was hit more than three times, with deaths and injuries, and is being escorted to St Petersburg without power. Probably the same ship as STR-2026-0064.",
       "sources": [
         {
           "title": "СБУ ... уразила ... ракетний корабель «Буян-М» (The SBU hit a Buyan-M missile ship, translated)",
@@ -1975,11 +1975,18 @@
           "category": "ua_independent",
           "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062398/",
           "published_at": "2026-11-12T01:11:00+08:00"
+        },
+        {
+          "title": "Officer: Russian warship hit multiple times in Baltic, with casualties",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610195272/officer-russian-warship-hit-multiple-times-in-baltic-with-casualties",
+          "published_at": "2026-11-13T21:22:00+08:00"
         }
       ],
       "seed": false,
       "added": "2026-11-12",
-      "updated": null
+      "updated": "2026-11-14"
     },
     {
       "id": "STR-2026-0064",
@@ -2067,6 +2074,110 @@
       ],
       "seed": false,
       "added": "2026-11-12",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0065",
+      "date": "2026-11-12",
+      "target_name": "Lukoil Volgograd oil refinery (Volgogradneftepererabotka)",
+      "target_type": "refinery",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 550,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said drones hit primary distillation units, a hydrotreater, a loading rack and six tanks at the 15m-tonne refinery overnight into 13 November. Governor Bocharov reported fires at a plant in the southern industrial zone, four workers killed and fuel queues, Meduza reported.",
+      "sources": [
+        {
+          "title": "Пальне для війни горить у Волгограді: уражено один із найбільших НПЗ росії (Fuel for war burns in Volgograd: one of Russia's largest refineries hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42886",
+          "published_at": "2026-11-13T20:59:00+08:00"
+        },
+        {
+          "title": "Ukrainian drone attack sparks fire at Volgograd oil refinery, killing four. Lines form at gas stations across city.",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/13/ukrainian-drone-attack-sparks-fire-at-volgograd-oil-refinery-killing-four-lines-form-at-gas-stations-across-city",
+          "published_at": "2026-11-13T16:20:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drone Attack Kills 4 Workers, Sparks Fire at Volgograd Oil Refinery",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/13/ukrainian-drone-attack-kills-4-workers-sparks-fire-at-volgograd-oil-refinery-a94250",
+          "published_at": "2026-11-13T17:26:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-14",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0066",
+      "date": "2026-11-12",
+      "target_name": "Ionos drone plant, drone store and Aero-Hit service centre, Rostov-on-Don",
+      "target_type": "defence_industry",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 250,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Navy Neptune missiles hit the Ionos tactical attack-drone plant, its drone store and the Aero-Hit FPV service centre in Rostov-on-Don overnight into 13 November. No Russian confirmation was found.",
+      "sources": [
+        {
+          "title": "«Нептуни» прилетіли: у Ростові-на-Дону ВМС ЗСУ уразили виробництво, склад і сервісний центр БпЛА (Neptunes hit drone sites in Rostov-on-Don, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42885",
+          "published_at": "2026-11-13T19:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-14",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0067",
+      "date": "2026-11-13",
+      "target_name": "Unnamed industrial facility, Samara Oblast",
+      "target_type": "other",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Vyacheslav Fedorishchev said four people were killed in a Ukrainian drone attack on an industrial facility in Samara region on the morning of 13 November, Meduza reported. The facility was not named.",
+      "sources": [
+        {
+          "title": "Four people killed in Ukrainian drone attack in Russia's Samara region, governor says",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/13/four-people-killed-in-ukrainian-drone-attack-in-russia-s-samara-region-governor-says",
+          "published_at": "2026-11-13T20:06:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-14",
       "updated": null
     }
   ]
