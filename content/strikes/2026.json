@@ -2166,7 +2166,7 @@
       "verification": 1,
       "damage": null,
       "effect": null,
-      "summary": "Governor Vyacheslav Fedorishchev said four people were killed in a Ukrainian drone attack on an industrial facility in Samara region on the morning of 13 November, Meduza reported. The facility was not named.",
+      "summary": "The SBU said its Alpha long-range drones hit the Samara linear production-dispatch station near Prosvet, where Urals export blend is prepared, and that hits on oil tanks were preliminarily confirmed. Governor Fedorishchev said four people were killed at an unnamed industrial facility in the region, Meduza reported.",
       "sources": [
         {
           "title": "Four people killed in Ukrainian drone attack in Russia's Samara region, governor says",
@@ -2174,11 +2174,25 @@
           "category": "ru_by_independent",
           "url": "https://meduza.io/en/news/2026/11/13/four-people-killed-in-ukrainian-drone-attack-in-russia-s-samara-region-governor-says",
           "published_at": "2026-11-13T20:06:00+08:00"
+        },
+        {
+          "title": "СБУ уразила один із ключових вузлів нафтової системи рф — ЛВДС «Самара» (The SBU hit one of the key nodes of Russia's oil system, the Samara station, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19077",
+          "published_at": "2026-11-14T18:05:00+08:00"
+        },
+        {
+          "title": "Удари по місцю, де народжується російська Urals, та аеродрому (Strikes on the place where Russian Urals is born, and on an airfield, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42899",
+          "published_at": "2026-11-14T18:05:00+08:00"
         }
       ],
       "seed": false,
       "added": "2026-11-14",
-      "updated": null
+      "updated": "2026-11-15"
     }
   ]
 }

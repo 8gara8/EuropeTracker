@@ -1,0 +1,879 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "window": {
+    "start": "2026-11-14T05:30:00+08:00",
+    "end": "2026-11-15T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-15T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Drone hits cargo ship inside Romanian waters; Zelensky says US floated Donbas-for-NATO deal; spillover rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's deadly drone strike on a merchant ship off Romania. On Friday evening a drone hit the Palau-flagged cargo ship Larissa 1 inside Romanian territorial waters, about 12 km north of Sfântu Gheorghe. Defence Minister Ștefan-Radu Oprea said no one was hurt and that the drone's origin is under investigation. Zelensky said US envoys floated Ukraine ceding Donbas in exchange for NATO membership. Finland and Estonia rejected Moscow's demands on European security. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s5",
+    "s6",
+    "s7",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "No new incident is logged today. The rung stays at 4 on the Khoryv sinking of 23 October (INC-2026-0109). Rung 5 needs deliberate, sustained Russian action against a NATO or EU state, and nothing in the window points that way."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "6 incidents in 30 days against a baseline of 13.7 a month; no serious incident in 12 months. No new violation was confirmed in the window, so the score is unchanged.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "2 incidents in 30 days against a baseline of 1.3 a month; 2 serious in 12 months. Nothing new in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "12 serious incidents in 12 months, mostly Black Sea ship strikes. The Larissa 1 hit inside Romanian waters confirms the tempo continues, so we hold at 70%.",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "0 incidents in 30 days against a baseline of 0.7 a month; none serious in 12 months. No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and no Russian crossing of a NATO border since 2022. Moscow's rhetoric about NATO rollback is not a force movement. No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "1 incident in 30 days against a baseline of 0.3 a month. The IAEA reports grid-driven power cuts at operating units, but nothing points to a raised nuclear readiness or a release. No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "0 incidents in 30 days against a baseline of 0.3 a month. Finland and Estonia publicly rejected Russia's security demands, so no NATO or EU decision is at risk. No change.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": "At its floor of 3, set by the ABW sabotage arrests of 3 November (INC-2026-0113).",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": "At its floor of 3, set by the drone crossings of 18 October and 11 November.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": "At its floor of 3, set by the drone crossings of 1 and 11 November.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above its floor of 1. Estonia's defence minister confirmed that drones from the 11 November Ust-Luga raid entered Estonian airspace (noted in INC-2026-0114), and the Naro-Fominsk strike happened off its coast.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above its floor of 1. A suspected drone violation on 11 November is still under investigation (F-2026-021), and Bild reports a Russian demand that Finland leave NATO.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": "At its floor of 4, set by the deadly Khoryv strike. The Larissa 1 hit, which we have not yet logged, would not change it.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": "At its floor of 3, set by the drone crashes of 23 and 31 October.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Drone hits Ukraine-bound cargo ship Larissa 1 inside Romanian territorial waters",
+      "summary": "On Friday evening, at about 21:40, a drone hit the Palau-flagged Larissa 1 about 7 nautical miles off Sfântu Gheorghe, inside Romania's territorial waters. The ship was heading to the Sulina anchorage, bound for Ukraine. Defence Minister Ștefan-Radu Oprea confirmed the hit, said nobody was hurt and said an investigation into the drone's origin is under way. The cargo crane was damaged and there was no fire.",
+      "category": "maritime",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry said on 14 November that its drones hit dry cargo ships carrying military cargo to Odesa and Chornomorsk. It did not mention Larissa 1.",
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Zelensky says US envoys floated Ukraine ceding Donbas for NATO membership; Putin rejected energy truce",
+      "summary": "Zelensky said that after the Abu Dhabi round, US negotiators raised for the first time the idea of Ukraine withdrawing from Donbas in exchange for NATO membership, and that any security deal could go to a referendum. He said Putin rejected a mutual halt to strikes on energy infrastructure. The BBC reports that the US has not confirmed his account.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Foreign Ministry spokeswoman Maria Zakharova said Europe would be safer without NATO, and compared the alliance to a \"rotten tooth\" (translated).",
+      "source_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s14"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Finland and Estonia reject Russian demands on NATO and European security",
+      "summary": "Finnish Defence Minister Antti Häkkänen said it was \"absolutely outrageous to even suggest\" that Finland leave NATO as part of the peace talks. He was responding to the report, without confirming it. Estonian Prime Minister Kristen Michal said in Dublin that Europe had \"nothing to discuss with Russia\" about its security architecture.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Zakharova, replying to Merz, said the reorganisation of Europe's security that Moscow seeks would make the continent safer without NATO.",
+      "source_ids": [
+        "s12",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "IAEA says grid instability cut power at some operating Ukrainian nuclear units this week",
+      "summary": "Reuters reported that IAEA Director General Rafael Grossi said on 14 November that military activity had destabilised Ukraine's grid this week. That instability forced power reductions at some operating units of the country's nuclear plants. The report does not name the plants or say whether any lost off-site lines.",
+      "category": "nuclear",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s15"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Russia launches 96 drones overnight; Naftogaz site in Poltava Oblast set ablaze",
+      "summary": "Ukraine's General Staff said Russia launched 96 strike drones overnight into 14 November, 61 of them jet-powered, and that 81 were downed or suppressed. It recorded hits at eight locations. In the afternoon, a Russian drone strike started a large fire at a Naftogaz facility in Poltava Oblast. Russia's Defence Ministry said it hit substations, locomotives and cargo ships.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry said its targets were energy, port and rail sites and ships serving Ukraine's armed forces.",
+      "source_ids": [
+        "s1",
+        "s4",
+        "s2"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "SBU names Samara oil pumping and blending station as target of 13 November strike",
+      "summary": "The SBU said its Alpha long-range drones hit the Samara linear production-dispatch station near Prosvet on 13 November, and that hits on oil storage tanks were preliminarily confirmed. The SBU says Urals export blend is prepared at the station. Ukraine's General Staff said an airfield was also hit. We link this to STR-2026-0067.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0067"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry said air defences downed 39 Ukrainian drones over Russian regions in daytime on 14 November, TASS reported.",
+      "source_ids": [
+        "s16",
+        "s17",
+        "s22"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "White House says Trump, Putin and Xi plan joint meeting in China next week",
+      "summary": "The BBC reported that the White House said Trump, Putin and Xi plan an unprecedented joint meeting in China next week. A White House spokeswoman said Trump would discuss the reduction of nuclear weapons. Separately, Zelensky announced a €645 million Danish defence package and new British sanctions on Russia's oil sector.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s18",
+        "s19"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Russia's Defence Ministry said its forces captured Tersianka in Zaporizhzhia Oblast. Ukraine's General Staff counted 54 clashes on 14 November. We see no sign of a breakthrough that would change forces facing NATO.",
+      "development_ids": [],
+      "source_ids": [
+        "s23",
+        "s24"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "The SBU named the 13 November Samara target as the oil pumping and Urals-blending station near Prosvet. Russia said it downed 39 drones over its regions during the day. No Ukrainian strike near Baltic terminals was reported in the window.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s16",
+        "s17",
+        "s22"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 96 drones overnight, and Ukraine said 81 were stopped. A Naftogaz site in Poltava burned. Moscow says it is hitting cargo ships bound for Odesa and Chornomorsk, the same routes that pass Romanian waters.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s1",
+        "s4",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Zelensky said US envoys floated a Donbas-for-NATO trade and that Putin refused an energy truce. Finland and Estonia rejected Russia's security demands. A Trump–Putin–Xi meeting is planned for next week, and EU foreign ministers meet on 16 November.",
+      "development_ids": [
+        "d2",
+        "d3",
+        "d7"
+      ],
+      "source_ids": [
+        "s8",
+        "s9",
+        "s12",
+        "s13",
+        "s18",
+        "s25"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "No new violation of NATO, EU or Moldovan airspace was confirmed in the window. US forces responded to suspected drones over RAF Lakenheath on 13 November. The base was not reported closed and no state link was suspected, so we do not log it.",
+      "development_ids": [],
+      "source_ids": [
+        "s21"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "A drone hit the cargo ship Larissa 1 inside Romanian territorial waters off Sfântu Gheorghe. Romania says the drone's origin is under investigation. F-2026-003's criteria look met, and we will log the incident once we can cite the ministry's statement.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Reuters reported the IAEA as saying that grid instability caused by military activity cut power at some operating Ukrainian nuclear units this week. We raise F-2026-015 to 90% until we see text that names the plants.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s15"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Denmark pledged a €645 million defence package for Ukraine, and Britain added sanctions on Russia's oil sector. Finland's Defence Forces downed a target drone with an interceptor drone for the first time, in an exercise at Vattaja.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s19",
+        "s20"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [],
+  "strike_updates": [
+    {
+      "id": "STR-2026-0067",
+      "changes": {
+        "verification": null,
+        "damage": null,
+        "effect": null,
+        "summary": "The SBU said its Alpha long-range drones hit the Samara linear production-dispatch station near Prosvet, where Urals export blend is prepared, and that hits on oil tanks were preliminarily confirmed. Governor Fedorishchev said four people were killed at an unnamed industrial facility in the region, Meduza reported.",
+        "weapon_detail": null,
+        "western_weapon": null
+      },
+      "add_sources": [
+        {
+          "title": "СБУ уразила один із ключових вузлів нафтової системи рф — ЛВДС «Самара» (The SBU hit one of the key nodes of Russia's oil system, the Samara station, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19077",
+          "published_at": "2026-11-14T18:05:00+08:00"
+        },
+        {
+          "title": "Удари по місцю, де народжується російська Urals, та аеродрому (Strikes on the place where Russian Urals is born, and on an airfield, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42899",
+          "published_at": "2026-11-14T18:05:00+08:00"
+        }
+      ],
+      "reason": "On 14 November the SBU and the General Staff named the target in Samara Oblast, which the earlier record left unnamed. Verification stays at 1, because we have not opened a Russian official source naming the site."
+    }
+  ],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. We log no new incident, so the rung stays at 4, and no pathway moves.\n\nThe Larissa 1 strike is the day's most direct spillover. Romanian reporting puts the hit about 7 nautical miles off Sfântu Gheorghe, inside the 12-mile limit, on a ship sailing for Ukraine via Sulina. Defence Minister Oprea confirmed it and said the drone's origin is still being checked. That confirmation meets the criteria for F-2026-003, which we raise to 99% until its resolution date. We have not yet logged the incident, because we could not open a Ministry of National Defence statement. That matches our handling of this week's Moldovan cases, and we will log it at rung 3 once we can cite one. We assess that a Russian strike drone aimed at Ukraine-bound shipping is the likeliest explanation (likely, 70%). The same day, Russia's Defence Ministry said it was hitting cargo ships carrying military goods to Odesa and Chornomorsk. Nobody was hurt, so Romania stays at its floor of 4. Still, the Danube approaches remain the likeliest place for the next deadly incident on NATO territory, and we hold maritime at likely (70%).\n\nOn diplomacy, Zelensky said US envoys raised Ukraine giving up Donbas in exchange for NATO membership, and that Putin refused a mutual halt to energy strikes. Finland's defence minister called the reported demand that Finland leave NATO outrageous, and Estonia's prime minister said there was nothing to discuss with Russia on European security. Zakharova replied that Europe would be safer without NATO. No government has confirmed the Bild report, so F-2026-024 stays at 30%.\n\nOn the ceasefire paradox, Putin's refusal of an energy truce keeps Russia's strike campaign on Odesa and the Danube going. That sustains stray-drone and ship-strike risk to Romania and Moldova in the near term. A Donbas-for-NATO deal is far from agreed. If it came, it would cut near-term incidents but shift risk onto NATO's eastern flank over the medium term, as A5 expects.",
+    "change_my_mind": "A Romanian finding that the Larissa 1 drone was not Russian, a ship strike in Romanian or Bulgarian waters that kills crew, or a NATO government confirming on the record that Russia demanded Finland leave NATO.",
+    "competing_explanations": [
+      {
+        "subject": "Larissa 1: drone strike inside Romanian waters, 13 November",
+        "hypotheses": [
+          {
+            "label": "Russian strike drone targeting Ukraine-bound shipping",
+            "assessment": "The ship was sailing for Ukraine. Moscow says it is striking cargo ships bound for Ukrainian ports, and Russian drones hit Khoryv off Constanța in October.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Stray Russian drone aimed at Danube ports",
+            "assessment": "Two alerts were issued in Tulcea that day. A drone aimed at Izmail or Reni could have hit a ship by chance, though a hit on a moving vessel suggests targeting.",
+            "estimate": {
+              "probability": 15,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Other source, such as Ukrainian air defence or a drifting naval drone",
+            "assessment": "Oprea was told a drone was shot down that evening. Intercept debris or a drifting naval drone cannot be ruled out until Romania's investigation reports.",
+            "estimate": {
+              "probability": 15,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-025",
+      "question": "Will Romanian authorities state by 15 December 2026 that the drone that hit the ship Larissa 1 on 13 November was Russian?",
+      "resolution_criteria": "Yes if Romania's Ministry of National Defence, SRI, foreign ministry, prosecutors or president publicly say between 15 November and 15 December 2026 that the drone that hit Larissa 1 was Russian or of the Geran type.",
+      "resolves_by": "2026-12-15",
+      "horizon": "30d",
+      "pathway": "maritime",
+      "probability": 55,
+      "base_rate": 60,
+      "base_rate_note": "Romania attributed the October Khoryv strike to Russia and usually identifies Russian drone debris within days. Lowered slightly because a strike on a ship at sea may leave little debris to identify."
+    },
+    {
+      "id": "F-2026-026",
+      "question": "Will Donald Trump, Vladimir Putin and Xi Jinping meet together in person between 15 and 30 November 2026?",
+      "resolution_criteria": "Yes if the White House, the Kremlin or China's foreign ministry confirms that the three leaders held a joint in-person meeting between 15 and 30 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": null,
+      "probability": 50,
+      "base_rate": 40,
+      "base_rate_note": "The three have never held formal trilateral talks, and Beijing has rejected trilateral nuclear talks. Raised because the White House now says a meeting in China is planned for next week."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-003",
+      "probability": 99,
+      "note": "Romania's defence minister confirmed a drone hit Larissa 1 inside Romanian territorial waters off Sfântu Gheorghe on 13 November. The criteria look met; we resolve at the due date."
+    },
+    {
+      "id": "F-2026-015",
+      "probability": 90,
+      "note": "Reuters reports Grossi saying grid instability this week cut power at some operating units. Those can only be Khmelnytskyi, Rivne or South Ukraine. We resolve once IAEA text names them."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct link is the Trump–Putin–Xi meeting the White House says is planned in China next week, with nuclear arms reduction on the agenda. That format casts Beijing as a co-arbiter of arms control while Washington seeks Russian concessions on Ukraine. If the US eases pressure on Moscow or Beijing to get a deal, Beijing would read it as a sign that Western resolve can be traded, a moderate effect on deterrence over Taiwan. The Larissa 1 hit offers a military lesson. A single cheap drone struck a merchant ship at the approaches to a neutral state's port, without needing casualties to raise shipping risk. Taiwan's ports and LNG terminals would face the same threat in a blockade. Harbour air defence and insurers' confidence would matter as much as naval strength.",
+  "next_72h": [
+    {
+      "date": "2026-11-16",
+      "event": "EU Foreign Affairs Council in Brussels, with Ukraine and Russia sanctions on the agenda.",
+      "why": "This tests EU unity on the planned 22nd sanctions package and on the reply to Russia's demands."
+    },
+    {
+      "date": "2026-11-16",
+      "event": "A possible Romanian defence ministry statement on the drone that hit Larissa 1.",
+      "why": "It would let us log the incident and set its attribution, and it bears on F-2026-025."
+    },
+    {
+      "date": "2026-11-18",
+      "event": "The APEC summit opens in Shenzhen, where a Trump–Putin–Xi meeting is planned.",
+      "why": "Any US–Russia understanding on Ukraine or arms control would shift the ceasefire paradox and Taiwan calculus."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 96,
+      "unit": "count",
+      "period": "night of 13–14 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "61 of them jet-powered Shahed types, per the General Staff."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 81,
+      "unit": "count",
+      "period": "night of 13–14 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Downed or suppressed as of 07:30 Kyiv time."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 81 ВОРОЖУ ЦІЛЬ (81 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42890",
+      "language": "uk",
+      "published_at": "2026-11-14T13:47:00+08:00",
+      "accessed_at": "2026-11-15T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Ночью продолжено нанесение ударов по объектам энергетики, портовой и железнодорожной инфраструктуры (Overnight strikes continued on energy, port and rail infrastructure, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69004",
+      "language": "ru",
+      "published_at": "2026-11-14T13:02:00+08:00",
+      "accessed_at": "2026-11-15T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Удары по портовой инфраструктуре и морским судам, задействованным в интересах ВСУ (Strikes on port infrastructure and ships serving Ukraine's armed forces, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69016",
+      "language": "ru",
+      "published_at": "2026-11-14T23:58:00+08:00",
+      "accessed_at": "2026-11-15T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Russian drone attack sparks large fire at Naftogaz facility in Poltava Oblast",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/14/8062885/",
+      "language": "en",
+      "published_at": "2026-11-15T01:02:00+08:00",
+      "accessed_at": "2026-11-15T06:05:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Navă lovită de o dronă în Marea Neagră, la 12 kilometri de Sfântu Gheorghe (Ship hit by a drone 12 km from Sfântu Gheorghe, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/evenimente/nava-lovita-de-o-drona-in-marea-neagra-la-12-kilometri-de-sfantu-gheorghe-ministrul-apararii-nu-sunt-pierderi-de-vieti-omenesti-4036381",
+      "language": "ro",
+      "published_at": "2026-11-14T19:37:00+08:00",
+      "accessed_at": "2026-11-15T05:50:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Navă lovită de o dronă în apele României, lângă Sfântu Gheorghe (Ship hit by a drone in Romanian waters near Sfântu Gheorghe, translated)",
+      "outlet": "HotNews.ro",
+      "category": "eu_regional_press",
+      "url": "https://hotnews.ro/nava-lovita-de-o-drona-in-apele-romaniei-langa-sfantu-gheorghe-anuntul-ministerului-apararii-2404236",
+      "language": "ro",
+      "published_at": "2026-11-14T12:35:00+02:00",
+      "accessed_at": "2026-11-15T06:05:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Ship heading to Ukraine attacked by drone in Black Sea off Romanian coast",
+      "outlet": "RBC-Ukraine",
+      "category": "ua_independent",
+      "url": "https://newsukraine.rbc.ua/news/drone-attacks-vessel-bound-for-ukraine-in-1794685443.html",
+      "language": "en",
+      "published_at": "2026-11-14",
+      "accessed_at": "2026-11-15T06:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-15T04:41:00+08:00",
+      "accessed_at": "2026-11-15T05:55:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "US suggested Ukraine could give up Donbas for NATO membership, Zelenskyy says",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/us-suggested-ukraine-could-give-up-donbas-for-nato-membership-zelenskyy-says/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-14T18:48:00+08:00",
+      "accessed_at": "2026-11-15T05:55:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukraine: Zelenskyy says security deal could go to referendum",
+      "outlet": "DW",
+      "category": "intl_press",
+      "url": "https://www.dw.com/en/ukraine-zelenskyy-says-security-deal-could-go-to-referendum/a-79947535?maca=en-rss-en-eu-2092-rdf",
+      "language": "en",
+      "published_at": "2026-11-14T19:40:00+08:00",
+      "accessed_at": "2026-11-15T05:55:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Trimișii lui Trump i-au propus o concesie lui Zelenski în schimbul aderării la NATO (Trump's envoys proposed a concession to Zelensky in exchange for NATO membership, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/trimisii-lui-trump-i-au-propus-o-concesie-lui-zelenski-in-schimbul-aderarii-la-nato-ce-ar-trebui-sa-cedeze-rusiei-4036355",
+      "language": "ro",
+      "published_at": "2026-11-14T19:02:00+08:00",
+      "accessed_at": "2026-11-15T05:55:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Finland rejects reported Russian demand to leave NATO as part of peace talks",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/finland-rejects-reported-russian-demand-to-leave-nato-as-part-of-peace-talks/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-14T17:57:00+08:00",
+      "accessed_at": "2026-11-15T05:55:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Prime minister: We have nothing to discuss with Russia on European security",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610196385/prime-minister-we-have-nothing-to-discuss-with-russia-on-european-security",
+      "language": "en",
+      "published_at": "2026-11-14T21:48:00+08:00",
+      "accessed_at": "2026-11-15T06:00:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Rusia susține că Europa ar fi mai sigură fără NATO (Russia says Europe would be safer without NATO, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ue/rusia-sustine-ca-europa-ar-fi-mai-sigura-fara-nato-zaharova-compara-alianta-cu-o-masea-stricata-4036891",
+      "language": "ro",
+      "published_at": "2026-11-15T02:38:00+08:00",
+      "accessed_at": "2026-11-15T06:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Military activity caused instability in electrical grid at some Ukraine nuclear units, IAEA says",
+      "outlet": "Arab News (Reuters)",
+      "category": "intl_press",
+      "url": "https://arabnews.com/world/military-activity-caused-instability-in-electrical-grid-at-some-ukraine-nuclear-units-iaea-says-3011907",
+      "language": "en",
+      "published_at": "2026-11-14",
+      "accessed_at": "2026-11-15T06:05:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "СБУ уразила один із ключових вузлів нафтової системи рф — ЛВДС «Самара» (The SBU hit one of the key nodes of Russia's oil system, the Samara station, translated)",
+      "outlet": "Security Service of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/SBUkr/19077",
+      "language": "uk",
+      "published_at": "2026-11-14T18:05:00+08:00",
+      "accessed_at": "2026-11-15T06:05:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Удари по місцю, де народжується російська Urals, та аеродрому (Strikes on the place where Russian Urals is born, and on an airfield, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42899",
+      "language": "uk",
+      "published_at": "2026-11-14T18:05:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-14T23:53:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Новий оборонний пакет на 645 мільйонів євро від Данії; нові санкційні кроки Великої Британії (A new €645 million defence package from Denmark; new British sanctions steps, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21819",
+      "language": "uk",
+      "published_at": "2026-11-14T17:01:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Ensimmäinen kerta Suomessa: Puolustusvoimat ampui lennokin alas torjuntadroonilla harjoituksessa (Finnish forces down a drone with an interceptor drone, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20256816?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-14T21:14:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "US Air Force responds to suspected drone activity at military base in UK",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/us-air-force-responds-to-suspected-drone-activity-at-military-base-in-uk/",
+      "language": "en",
+      "published_at": "2026-11-14T07:57:00+08:00",
+      "accessed_at": "2026-11-15T06:00:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "За день над регионами РФ сбиты 39 украинских БПЛА (39 Ukrainian drones downed over Russian regions during the day, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/405740",
+      "language": "ru",
+      "published_at": "2026-11-15T01:23:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Подразделения группировки войск «Восток» освободили населенный пункт Терсянка (Vostok group units captured Tersianka, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69009",
+      "language": "ru",
+      "published_at": "2026-11-14T16:54:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Оперативна інформація станом на 22:00 14.11.2026 (Operational update as of 22:00 on 14 November 2026, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42906",
+      "language": "uk",
+      "published_at": "2026-11-15T04:03:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Media advisory - Foreign Affairs Council of 16 November 2026",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/13/media-advisory-foreign-affairs-council-of-16-november-2026/",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00+08:00",
+      "accessed_at": "2026-11-15T05:45:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-15T05:44:08+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 6,
+        "baseline_monthly": 13.7
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.3
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 2.3
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1962,
+    "source_count": 25,
+    "source_category_count": 7
+  }
+}

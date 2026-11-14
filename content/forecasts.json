@@ -50,7 +50,13 @@
       "base_rate": 35,
       "base_rate_note": "One ship hit inside territorial waters (Yara J, 15 October) and several just outside them since July 2026; raised because the campaign against Danube shipping intensified in October.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-15",
+          "probability": 99,
+          "note": "Romania's defence minister confirmed a drone hit Larissa 1 inside Romanian territorial waters off Sfântu Gheorghe on 13 November. The criteria look met; we resolve at the due date."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -318,6 +324,11 @@
           "date": "2026-11-08",
           "probability": 70,
           "note": "Zelensky says substations connecting the Rivne and Khmelnytskyi plants to Kyiv were struck on 6–7 November. We await an IAEA statement on output or lines."
+        },
+        {
+          "date": "2026-11-15",
+          "probability": 90,
+          "note": "Reuters reports Grossi saying grid instability this week cut power at some operating units. Those can only be Khmelnytskyi, Rivne or South Ukraine. We resolve once IAEA text names them."
         }
       ],
       "status": "open",
@@ -528,6 +539,44 @@
       "base_rate": 20,
       "base_rate_note": "Leaked Russian talk terms have sometimes been confirmed by Western officials within weeks, but often not. We raised it because the Baltic states and Finland have strong incentives to make any such demand public.",
       "opened": "2026-11-14",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-025",
+      "question": "Will Romanian authorities state by 15 December 2026 that the drone that hit the ship Larissa 1 on 13 November was Russian?",
+      "resolution_criteria": "Yes if Romania's Ministry of National Defence, SRI, foreign ministry, prosecutors or president publicly say between 15 November and 15 December 2026 that the drone that hit Larissa 1 was Russian or of the Geran type.",
+      "resolves_by": "2026-12-15",
+      "horizon": "30d",
+      "pathway": "maritime",
+      "probability": 55,
+      "base_rate": 60,
+      "base_rate_note": "Romania attributed the October Khoryv strike to Russia and usually identifies Russian drone debris within days. Lowered slightly because a strike on a ship at sea may leave little debris to identify.",
+      "opened": "2026-11-15",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-026",
+      "question": "Will Donald Trump, Vladimir Putin and Xi Jinping meet together in person between 15 and 30 November 2026?",
+      "resolution_criteria": "Yes if the White House, the Kremlin or China's foreign ministry confirms that the three leaders held a joint in-person meeting between 15 and 30 November 2026.",
+      "resolves_by": "2026-11-30",
+      "horizon": "30d",
+      "pathway": null,
+      "probability": 50,
+      "base_rate": 40,
+      "base_rate_note": "The three have never held formal trilateral talks, and Beijing has rejected trilateral nuclear talks. Raised because the White House now says a meeting in China is planned for next week.",
+      "opened": "2026-11-15",
       "updates": [],
       "status": "open",
       "resolved_on": null,
