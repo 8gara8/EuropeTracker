@@ -2193,6 +2193,80 @@
       "seed": false,
       "added": "2026-11-14",
       "updated": "2026-11-15"
+    },
+    {
+      "id": "STR-2026-0068",
+      "date": "2026-11-14",
+      "target_name": "Akhtubinsk airfield (929th State Flight Test Centre)",
+      "target_type": "airbase",
+      "region": "Astrakhan Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 650,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces struck the Akhtubinsk airfield, about 650 km from the front, overnight into 15 November, causing a secondary detonation at a missile-kit depot. It also claimed a hit on a drone launch site in Oryol Oblast. No Russian official confirmation was found.",
+      "sources": [
+        {
+          "title": "Злітна смуга у вогні: уражено аеродром «Ахтубінськ» і дронопорт (Runway on fire: Akhtubinsk airfield and a drone port hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42912",
+          "published_at": "2026-11-15T19:59:00+08:00"
+        },
+        {
+          "title": "Ukraine strikes Russian military airfield in Astrakhan Oblast, drone launch site in Oryol Oblast, General Staff says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-reportedly-strikes-russian-military-airfield-in-astrakhan-oblast-at-least-30-explosions-heard/",
+          "published_at": "2026-11-15T18:05:00+08:00"
+        },
+        {
+          "title": "Генштаб ВСУ подтвердил удар по военному аэродрому в Ахтубинске (Ukraine's General Staff confirmed strike on Akhtubinsk military airfield, translated)",
+          "outlet": "ASTRA (Telegram)",
+          "category": "ru_by_independent",
+          "url": "https://t.me/astrapress/131204",
+          "published_at": "2026-11-16T02:40:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-16",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0069",
+      "date": "2026-11-14",
+      "target_name": "Petrochemical and refining enterprises, Nizhnekamsk",
+      "target_type": "refinery",
+      "region": "Republic of Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1000,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces reached Nizhnekamsk, one of Russia's main petrochemical hubs and more than 1,000 km from the border, overnight into 15 November. It claimed hits on three defence-related enterprises covering oil, synthetic rubber and helicopters. No Russian official confirmation was found.",
+      "sources": [
+        {
+          "title": "Нафта, каучук і вертольоти: Сили оборони уразили три підприємства російського ВПК (Oil, rubber and helicopters: Defence Forces hit three Russian defence-industry enterprises, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42911",
+          "published_at": "2026-11-15T18:44:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-16",
+      "updated": null
     }
   ]
 }
