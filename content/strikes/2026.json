@@ -2378,6 +2378,101 @@
       "seed": false,
       "added": "2026-11-17",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0073",
+      "date": "2026-11-16",
+      "target_name": "Crimean (Kerch) bridge, road arch and span",
+      "target_type": "logistics_rail",
+      "region": "Kerch Strait (Crimea–Krasnodar Krai)",
+      "occupied_territory": true,
+      "lat": 45.31,
+      "lon": 36.51,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Flamingo missile and drones (reported)",
+      "western_weapon": null,
+      "verification": 5,
+      "damage": "The SBU says one metal arch and a road span were destroyed. Reported footage appears to show the road arch collapsing into the strait; the rail arch stood.",
+      "effect": "Aksyonov said road traffic across the bridge was suspended. Ferries carry vehicle traffic, and rail service later resumed.",
+      "summary": "In the second strike on the bridge in a day, Ukraine hit it late on 16 November with missiles and drones. Aksyonov reported the attack and suspended road traffic. The Guardian reports the bridge was critically damaged. Peskov said a repair plan is being prepared.",
+      "sources": [
+        {
+          "title": "Противник вновь атаковал Крымский мост (The adversary attacked the Crimean Bridge again, translated)",
+          "outlet": "Sergei Aksyonov (Telegram)",
+          "category": "ru_gov",
+          "url": "https://t.me/s/Aksenov82",
+          "published_at": null
+        },
+        {
+          "title": "Ukraine Strikes Crimean Bridge for Second Day as Russia Pounds Kyiv Bridges",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/17/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-a94281",
+          "published_at": "2026-11-17T16:31:00+08:00"
+        },
+        {
+          "title": "Ukraine critically damages Kerch bridge linking occupied Crimea with Russia",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/nov/17/ukraine-strikes-critical-damage-russia-kerch-bridge-crimea",
+          "published_at": "2026-11-17T21:25:00+08:00"
+        },
+        {
+          "title": "СБУ спільно із Силами оборони уразила Кримський міст (The SBU with the Defence Forces struck the Crimean bridge, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19093",
+          "published_at": "2026-11-17T18:00:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-18",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0074",
+      "date": "2026-11-16",
+      "target_name": "Gazprom Neftekhim Salavat refinery and petrochemical complex",
+      "target_type": "refinery",
+      "region": "Republic of Bashkortostan",
+      "occupied_territory": false,
+      "lat": 53.36,
+      "lon": 55.93,
+      "distance_km": 1200,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit the Salavat complex overnight into 17 November, causing explosions and a fire. Bashkortostan's emergencies committee, reported by Meduza, said drones attacked industrial zones in Ufa and Salavat, with \"no critical damage\". We did not open a Russian official source directly.",
+      "sources": [
+        {
+          "title": "Башкортостан у вогні: уражено один із найбільших нафтохімічних комплексів рф (Bashkortostan on fire: one of Russia's largest petrochemical complexes hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42927",
+          "published_at": "2026-11-17T18:59:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drones Hit Gazprom Refinery in Bashkortostan in Second Record Overnight Attack",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/17/ukrainian-drones-hit-gazprom-refinery-in-bashkortostan-in-second-record-overnight-attack-a94282",
+          "published_at": "2026-11-17T17:50:00+08:00"
+        },
+        {
+          "title": "More than 1,400 Ukrainian drones attacked Russia and Crimea, Russia's Defense Ministry says",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/17/more-than-1-400-ukrainian-drones-attacked-russia-and-crimea-russia-s-defense-ministry-says",
+          "published_at": "2026-11-17T16:47:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-18",
+      "updated": null
     }
   ]
 }

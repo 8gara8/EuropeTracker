@@ -1,0 +1,922 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "window": {
+    "start": "2026-11-17T05:30:00+08:00",
+    "end": "2026-11-18T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-18T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Seven Russian drones cross Moldova, one tracked over Chișinău; Ukraine drops a Kerch bridge span; rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's deadly drone strike on a merchant ship off Romania. On Tuesday afternoon seven drones crossed Moldova during a Russian attack on Ukraine, Moldova's Defence Ministry said. Five crashed near villages and one was tracked toward Chișinău, and the country's airspace was closed. No one was hurt. Overnight Ukraine brought down a road span of the Kerch bridge, and Russia struck two Kyiv bridges. We have not yet logged the Moldovan case. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s2",
+    "s7"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "The rung stays at 4 because of the deadly Khoryv strike off Constanța on 23 October. We log no new incident today. Nothing points to deliberate, sustained Russian action against a NATO or EU state, so a step to rung 5 stays remote (5%)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: 4 logged incidents in 30 days against a baseline of 14.3 a month, and none serious in 12 months. Seven drones over Moldova, five crashing near villages, keep the risk high but give no reason to move.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: 2 incidents in 30 days against a baseline of 1.7 a month, and 1 serious in 12 months. No new case today. The Threod attribution keeps it at unlikely.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: 12 serious incidents in 12 months. Russia's Defence Ministry again claims hits on cargo ships, and retaliation for Kerch is likely to target Black Sea shipping. Held.",
+        "source_ids": [
+          "s16"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Base: no incidents in 30 days against a baseline of 0.7 a month, and none serious in 12 months. Nothing new found.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "Base: no incidents in 30 days and none serious in 12 months. Lithuania's army chief proposing Kaliningrad border barriers reflects allied concern, not new Russian activity.",
+        "source_ids": [
+          "s22"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Base: one plant-safety event in 30 days and no serious incident in 12 months. We found no new IAEA plant-safety report in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: no incidents in 30 days against a baseline of 0.3 a month. No operation was exposed today.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above its floor of 1. GPS interference over the Gulf of Finland remains an active indicator, and the suspected drone entry on 11 November is still unconfirmed (F-2026-021).",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Seven drones cross Moldova during Russian attack; five crash near villages, one tracked toward Chișinău",
+      "summary": "Moldova's Defence Ministry recorded seven drones in its airspace between 15:45 and 18:10 local time on 17 November. Five fell near Cheltuitori, Pohorniceni, Pogrebeni, Cuhureștii de Jos and Băxani, and one disappeared near Leova. A Shahed-type drone was tracked toward Chișinău's Botanica sector. Airspace closed at 16:27, and six border crossings with Ukraine were shut. No injuries were reported.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Reuters reports that Russia has rejected Moldova's accusations of drone incursions, saying Chișinău has provided no proof that the drones are Russian.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s26"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukraine brings down a road span of the Kerch bridge in second strike in a day",
+      "summary": "On the night of 16–17 November, Ukraine's SBU and other forces struck the Crimean bridge again; the SBU says one metal arch and a road span were destroyed. Aksyonov said road traffic was suspended. The Kyiv Independent reports a Flamingo missile was used, and Zelensky described it as the seventh phase of a weeks-long operation. Rail traffic later resumed.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0073"
+      ],
+      "verification": 5,
+      "attribution": null,
+      "russian_framing": "Peskov said Putin had been informed, a repair plan would be drawn up and the bridge would emerge stronger than before.",
+      "source_ids": [
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Russia claims a record 1,441 Ukrainian drones downed; Salavat petrochemical complex reported on fire",
+      "summary": "Ukraine's General Staff said it hit the Gazprom Neftekhim Salavat refinery in Bashkortostan, about 1,200 km from the border, overnight into 17 November. Bashkortostan's emergencies committee reported attacks on industrial zones in Ufa and Salavat. Russia's Defence Ministry claimed 1,441 drones downed, a second record in two nights.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0074"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Bashkortostan's emergencies committee said more than 50 drones were repelled, all plants were working normally and there was \"no critical damage\".",
+      "source_ids": [
+        "s12",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Russian missiles hit both Kyiv Dnipro bridges; Moscow claims strikes on ports and cargo ships",
+      "summary": "Zelensky said four ballistic missiles targeted Kyiv's Southern Bridge and three the Northern Bridge. Both closed, two people died in Obolonskyi district, and eight regions had outages. Russia's Defence Ministry said it struck port and rail infrastructure and a dry-cargo ship at sea. Hungary suspended rail traffic with Ukraine for 17–18 November after a drone fell near Mukachevo station.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry said it struck defence-industry, energy, transport and port targets and ships \"used in the interests of the Ukrainian armed forces\" (translated).",
+      "source_ids": [
+        "s8",
+        "s10",
+        "s15",
+        "s16",
+        "s19"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ramstein meets at NATO; Zelensky proposes swap of partners' Patriot and IRIS-T interceptors",
+      "summary": "The Ukraine Defence Contact Group met at NATO headquarters on 17 November. Zelensky said Ukraine's priorities were Patriot and NASAMS missiles and more F-16s. He proposed that partners hand over Patriot and IRIS-T interceptors from existing stocks now, in exchange for new missiles Ukraine has ordered. Lithuania completed the deployment of two US rotational battalions.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s17",
+        "s18",
+        "s28",
+        "s21",
+        "s20"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine dropped a Kerch bridge road span in a second strike within a day, halting road traffic (verification 5). Its General Staff claimed a hit on the Salavat refinery about 1,200 km away. Russia claimed a record 1,441 drones downed.",
+      "development_ids": [
+        "d2",
+        "d3"
+      ],
+      "source_ids": [
+        "s7",
+        "s9",
+        "s11",
+        "s12",
+        "s14"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russian ballistic missiles hit both Kyiv Dnipro bridges, and Moscow claimed hits on ports and a cargo ship. Romanian F-16s scrambled for 11 targets near the border overnight, with no violation recorded. Hungary suspended rail traffic with Ukraine after a drone fell near Mukachevo.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s10",
+        "s16",
+        "s19",
+        "s24"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Putin arrived in China for APEC ahead of Thursday's planned meeting with Trump and Xi in Shenzhen. Kyiv says it proposed extending the Oleshky-style humanitarian operation to 10 more occupied settlements.",
+      "development_ids": [],
+      "source_ids": [
+        "s23",
+        "s10"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Seven drones crossed Moldova in about two and a half hours. Five crashed near villages, one about 11 km from Chișinău, and a Shahed-type drone was tracked toward the capital. We have not yet logged it because we could not open a Moldovan government statement.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's Defence Ministry claimed a drone hit on a dry-cargo ship at sea. A ship damaged by a drone in Ukrainian waters in September ran aground at Vadu, Romania, after its anchor broke. Romanian authorities say it was not hit in Romanian waters, so we do not log it.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s16",
+        "s27"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Lithuania's Chief of Defence Raimundas Vaikšnoras proposed physical barriers on vulnerable stretches of the Kaliningrad border, saying continuous patrols are costly. We found no new Russian exercise or build-up announced in the window.",
+      "development_ids": [],
+      "source_ids": [
+        "s22"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Ramstein met at NATO, and Zelensky proposed swapping partners' Patriot and IRIS-T stocks for interceptors Ukraine has already ordered. Two US rotational battalions finished deploying to Lithuania. Estonia's foreign minister cited Bloomberg's report that US troop cuts in Europe will be smaller than feared.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s17",
+        "s18",
+        "s20",
+        "s21",
+        "s28"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0073",
+      "date": "2026-11-16",
+      "target_name": "Crimean (Kerch) bridge, road arch and span",
+      "target_type": "logistics_rail",
+      "region": "Kerch Strait (Crimea–Krasnodar Krai)",
+      "occupied_territory": true,
+      "lat": 45.31,
+      "lon": 36.51,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Flamingo missile and drones (reported)",
+      "western_weapon": null,
+      "verification": 5,
+      "damage": "The SBU says one metal arch and a road span were destroyed. Reported footage appears to show the road arch collapsing into the strait; the rail arch stood.",
+      "effect": "Aksyonov said road traffic across the bridge was suspended. Ferries carry vehicle traffic, and rail service later resumed.",
+      "summary": "In the second strike on the bridge in a day, Ukraine hit it late on 16 November with missiles and drones. Aksyonov reported the attack and suspended road traffic. The Guardian reports the bridge was critically damaged. Peskov said a repair plan is being prepared.",
+      "sources": [
+        {
+          "title": "Противник вновь атаковал Крымский мост (The adversary attacked the Crimean Bridge again, translated)",
+          "outlet": "Sergei Aksyonov (Telegram)",
+          "category": "ru_gov",
+          "url": "https://t.me/s/Aksenov82",
+          "published_at": null
+        },
+        {
+          "title": "Ukraine Strikes Crimean Bridge for Second Day as Russia Pounds Kyiv Bridges",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/17/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-a94281",
+          "published_at": "2026-11-17T16:31:00+08:00"
+        },
+        {
+          "title": "Ukraine critically damages Kerch bridge linking occupied Crimea with Russia",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/nov/17/ukraine-strikes-critical-damage-russia-kerch-bridge-crimea",
+          "published_at": "2026-11-17T21:25:00+08:00"
+        },
+        {
+          "title": "СБУ спільно із Силами оборони уразила Кримський міст (The SBU with the Defence Forces struck the Crimean bridge, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19093",
+          "published_at": "2026-11-17T18:00:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-18",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0074",
+      "date": "2026-11-16",
+      "target_name": "Gazprom Neftekhim Salavat refinery and petrochemical complex",
+      "target_type": "refinery",
+      "region": "Republic of Bashkortostan",
+      "occupied_territory": false,
+      "lat": 53.36,
+      "lon": 55.93,
+      "distance_km": 1200,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit the Salavat complex overnight into 17 November, causing explosions and a fire. Bashkortostan's emergencies committee, reported by Meduza, said drones attacked industrial zones in Ufa and Salavat, with \"no critical damage\". We did not open a Russian official source directly.",
+      "sources": [
+        {
+          "title": "Башкортостан у вогні: уражено один із найбільших нафтохімічних комплексів рф (Bashkortostan on fire: one of Russia's largest petrochemical complexes hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42927",
+          "published_at": "2026-11-17T18:59:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drones Hit Gazprom Refinery in Bashkortostan in Second Record Overnight Attack",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/17/ukrainian-drones-hit-gazprom-refinery-in-bashkortostan-in-second-record-overnight-attack-a94282",
+          "published_at": "2026-11-17T17:50:00+08:00"
+        },
+        {
+          "title": "More than 1,400 Ukrainian drones attacked Russia and Crimea, Russia's Defense Ministry says",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/17/more-than-1-400-ukrainian-drones-attacked-russia-and-crimea-russia-s-defense-ministry-says",
+          "published_at": "2026-11-17T16:47:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-18",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The rung stays at 4, and no pathway moves. Airspace holds at four logged incidents in 30 days against a 90-day baseline of 14.3 a month. Part of that gap reflects cases, like today's, that we have not yet logged.\n\nThe Moldovan incursion is the day's most direct spillover. NewsMaker, citing the Defence Ministry, says seven drones crossed the country between 15:45 and 18:10 local time. Five came down near villages, including Cheltuitori, about 11 km from the capital, and a Shahed-type drone was tracked toward Chișinău's Botanica sector. Moldova closed its airspace at 16:27 and shut six crossings with Ukraine. Sandu said Moldova lacks the means to defend itself against drones. We do not log the incursion today because we could not open a Moldovan government statement. That is the standard we applied to earlier cases, and we expect to log it at rung 3 once we can. We assess that Russian Gerans routed over Moldova toward Odesa oblast are the likeliest explanation (likely, 65%). Five crashes near villages in one evening make a first injury in Moldova more plausible, so we raise F-2026-008 to 60%. Moldova stays at its floor of 3.\n\nThe Kerch bridge strike matters for Europe mainly through Moscow's likely response. Aksyonov said road traffic was suspended after the second attack in a day, and Peskov promised repairs. That same day, Russia's Defence Ministry said it struck Ukrainian ports and a cargo ship, and Russian missiles hit both Kyiv bridges. We assess that retaliation will concentrate on Odesa, the Danube ports and shipping. That keeps stray-drone and ship-strike risk to Romania and Moldova high over the coming weeks, and we hold maritime at likely (70%).\n\nOn the ceasefire paradox, Putin arrived in China ahead of Thursday's planned meeting with Trump and Xi. A deal there that sidelines Europe could cut near-term drone and ship risk while leaving the medium-term pressure on the eastern flank that A5 expects.",
+    "change_my_mind": "A Moldovan or Romanian statement that drones over Moldova flew deliberate patterns over Chișinău or state facilities, rather than transit routes to Odesa, would point to intimidation rather than spillover. So would casualties, or repeat overflights of the capital on nights without strikes on southern Ukraine.",
+    "competing_explanations": [
+      {
+        "subject": "Drones over Moldova and toward Chișinău, 17 November",
+        "hypotheses": [
+          {
+            "label": "Routing spillover from strikes on Odesa oblast",
+            "assessment": "The drones entered from Odesa oblast during a mass attack, and their crashes cluster along known transit routes. Moldova lacks the air defence to stop them, so routing through its airspace costs Russia little.",
+            "estimate": {
+              "probability": 65,
+              "term": "likely",
+              "confidence": "moderate"
+            }
+          },
+          {
+            "label": "Deliberate intimidation of Moldova",
+            "assessment": "A drone tracked toward the capital and seven entries in one evening could be meant to pressure Chișinău, but we have no statement saying the flight paths were unusual.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-031",
+      "question": "Will Moldova's Ministry of Defence report drones entering Moldovan airspace on at least three separate days between 18 November and 17 December 2026?",
+      "resolution_criteria": "Yes if Moldova's Ministry of Defence or National Army reports unauthorised drone entries into Moldovan airspace on at least three distinct calendar dates between 18 November and 17 December 2026.",
+      "resolves_by": "2026-12-18",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 70,
+      "base_rate": 65,
+      "base_rate_note": "Moldova reported a record 19 violations in October. November drone entries came on about three days to the 17th (4, 12 and 17 November). Raised slightly for likely Russian retaliation on Odesa after Kerch."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-017",
+      "probability": 75,
+      "note": "Moldova's Defence Ministry recorded seven drones on 17 November, which brings the November count close to 10, with 13 days remaining."
+    },
+    {
+      "id": "F-2026-008",
+      "probability": 60,
+      "note": "Five drones crashed near Moldovan villages on 17 November, one about 11 km from Chișinău; no injuries yet."
+    },
+    {
+      "id": "F-2026-026",
+      "probability": 85,
+      "note": "Russia's Foreign Ministry says Putin has arrived in China for APEC; the trilateral meeting is planned for Thursday in Shenzhen."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct effect is on interceptor supply. Zelensky asked partners to hand Ukraine Patriot and IRIS-T interceptors from existing stocks now, in exchange for missiles Ukraine has ordered. Any such swap would reshuffle delivery queues for the same PAC-3 production lines that fill Taiwan's orders. The size depends on Ramstein pledges, which are not yet published. Second, Ukraine's weeks-long campaign against radars and air defence before dropping a Kerch bridge span is a lesson in how a defended fixed crossing can be cut. It argues for dispersing Taiwan's key logistics nodes and layering their air defence. Third, Putin is in China ahead of Thursday's planned meeting with Trump and Xi in Shenzhen. Any US–Russia deal struck in Beijing's presence would tell China how far Washington will trade European security interests for great-power bargains.",
+  "next_72h": [
+    {
+      "date": "2026-11-19",
+      "event": "Planned Trump–Putin–Xi meeting in Shenzhen alongside APEC.",
+      "why": "Any Ukraine or European-security deal without Europe would shift near- and medium-term spillover risk (A5); resolves F-2026-026."
+    },
+    {
+      "date": "2026-11-19",
+      "event": "EU General Affairs Council meets in Brussels.",
+      "why": "Possible sanctions and Ukraine support decisions; a test of EU unity."
+    },
+    {
+      "date": "2026-11-20",
+      "event": "Deadline for Romanian attribution of the Boghicea drone fragments (F-2026-018).",
+      "why": "Tests how quickly Romania attributes drone debris found deep inside the country."
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Watch for Russian retaliation on Odesa and the Danube after the Kerch strike.",
+      "why": "Those routes are the usual source of strays into Moldova and Romania and of ship strikes off Sulina."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "7 drones cross into Moldovan airspace during latest Russian attack against Ukraine, 1 spotted over Chisinau",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/7-drones-cross-into-moldovan-airspace-during-latest-russian-attack-against-ukraine-1-spotted-over-chisinau/",
+      "language": "en",
+      "published_at": "2026-11-18T02:37:00+08:00",
+      "accessed_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Над Молдовой за два с половиной часа пролетели семь беспилотников (Seven drones flew over Moldova in two and a half hours, translated)",
+      "outlet": "NewsMaker",
+      "category": "eu_regional_press",
+      "url": "https://newsmaker.md/ru/nad-moldovoi-za-dva-s-polovinoi-chasa-proleteli-sem-bespilotnikov-minoborony-soobshilo-o-padenii-pyati-iz-nih",
+      "language": "ru",
+      "published_at": "2026-11-18T01:45:00+08:00",
+      "accessed_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Drone rusești deasupra Chișinăului. Reacția Maiei Sandu (Russian drones over Chișinău. Maia Sandu's reaction, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/drone-rusesti-deasupra-chisinaului-autoritatile-din-republica-moldova-au-inchis-spatiul-aerian-4040501",
+      "language": "ro",
+      "published_at": "2026-11-18T00:19:00+08:00",
+      "accessed_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Moldova closes airspace after 'Shahed-type' drone detected heading towards Chișinău",
+      "outlet": "Euronews",
+      "category": "intl_press",
+      "url": "https://www.euronews.com/2026/11/17/moldova-closes-airspace-after-shahed-type-drone-detected-heading-towards-chisinau",
+      "language": "en",
+      "published_at": "2026-11-17",
+      "accessed_at": "2026-11-18T06:02:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Moldovan president says Russian drone flew over capital",
+      "outlet": "Reuters (via WHBL)",
+      "category": "intl_press",
+      "url": "https://whbl.com/2026/11/17/moldovan-president-says-russian-drone-flew-over-capital/",
+      "language": "en",
+      "published_at": "2026-11-17",
+      "accessed_at": "2026-11-18T06:01:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Ambasadorul României la Chișinău: „Nu mai vorbim de incidente izolate” (Romania's ambassador in Chișinău: 'We are no longer talking about isolated incidents', translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ambasadorul-romaniei-la-chisinau-dupa-ce-drone-rusesti-au-incalcat-spatiul-aerian-al-r-moldova-nu-mai-vorbim-de-incidente-izolate-4040851",
+      "language": "ro",
+      "published_at": "2026-11-18T03:58:00+08:00",
+      "accessed_at": "2026-11-18T06:01:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Противник вновь атаковал Крымский мост (The adversary attacked the Crimean Bridge again, translated)",
+      "outlet": "Sergei Aksyonov (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/s/Aksenov82",
+      "language": "ru",
+      "published_at": null,
+      "accessed_at": "2026-11-18T06:04:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Ukraine Strikes Crimean Bridge for Second Day as Russia Pounds Kyiv Bridges",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/17/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-a94281",
+      "language": "en",
+      "published_at": "2026-11-17T16:31:00+08:00",
+      "accessed_at": "2026-11-18T06:03:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Ukraine critically damages Kerch bridge linking occupied Crimea with Russia",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/2026/nov/17/ukraine-strikes-critical-damage-russia-kerch-bridge-crimea",
+      "language": "en",
+      "published_at": "2026-11-17T21:25:00+08:00",
+      "accessed_at": "2026-11-18T06:03:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukraine war latest: Entire section of Crimean Bridge collapses after 'seven-phase operation,' Zelensky reveals",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-entire-section-of-crimean-bridge-collapses-after-seven-phase-operation-zelensky-reveals/",
+      "language": "en",
+      "published_at": "2026-11-18T03:20:00+08:00",
+      "accessed_at": "2026-11-18T06:04:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "СБУ спільно із Силами оборони уразила Кримський міст (The SBU with the Defence Forces struck the Crimean bridge, translated)",
+      "outlet": "Security Service of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/SBUkr/19093",
+      "language": "uk",
+      "published_at": "2026-11-17T18:00:00+08:00",
+      "accessed_at": "2026-11-18T06:04:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Башкортостан у вогні: уражено один із найбільших нафтохімічних комплексів рф (Bashkortostan on fire: one of Russia's largest petrochemical complexes hit, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42927",
+      "language": "uk",
+      "published_at": "2026-11-17T18:59:00+08:00",
+      "accessed_at": "2026-11-18T06:04:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Ukrainian Drones Hit Gazprom Refinery in Bashkortostan in Second Record Overnight Attack",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/17/ukrainian-drones-hit-gazprom-refinery-in-bashkortostan-in-second-record-overnight-attack-a94282",
+      "language": "en",
+      "published_at": "2026-11-17T17:50:00+08:00",
+      "accessed_at": "2026-11-18T06:03:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "More than 1,400 Ukrainian drones attacked Russia and Crimea, Russia's Defense Ministry says",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/17/more-than-1-400-ukrainian-drones-attacked-russia-and-crimea-russia-s-defense-ministry-says",
+      "language": "en",
+      "published_at": "2026-11-17T16:47:00+08:00",
+      "accessed_at": "2026-11-18T06:04:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Главное за день (Main events of the day, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69094",
+      "language": "ru",
+      "published_at": "2026-11-18T02:36:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Удары по объектам портовой и железнодорожной инфраструктуры и морским судам (Strikes on port and rail infrastructure and ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69090",
+      "language": "ru",
+      "published_at": "2026-11-17T23:48:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "The Ramstein meeting also took place today",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21865",
+      "language": "en",
+      "published_at": "2026-11-18T03:50:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "У нас є дуже практична пропозиція (We have a very practical proposal, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21866",
+      "language": "uk",
+      "published_at": "2026-11-18T04:34:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Ungaria suspendă serviciile feroviare cu Ucraina (Hungary suspends rail services with Ukraine after Russian drone attacks in Transcarpathia, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ungaria-suspenda-serviciile-feroviare-cu-ucraina-in-urma-unor-atacuri-cu-drone-rusesti-in-transcarpatia-4040507",
+      "language": "ro",
+      "published_at": "2026-11-17T23:33:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "FM: More US troops needed on Europe's eastern flank",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610198297/fm-more-us-troops-needed-on-europe-s-eastern-flank",
+      "language": "en",
+      "published_at": "2026-11-17T19:40:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Lithuania breathes easy after US troop arrival, says army chief",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3117122/lithuania-breathes-easy-after-us-troop-arrival-says-army-chief",
+      "language": "en",
+      "published_at": "2026-11-17T16:52:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Lithuania's military chief suggests building physical barriers along Kaliningrad border",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3117079/lithuania-s-military-chief-suggests-building-physical-barriers-along-kaliningrad-border",
+      "language": "en",
+      "published_at": "2026-11-17T15:39:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Президент Российской Федерации Владимир Путин прибыл с рабочим визитом в КНР (President Putin arrives in China on a working visit, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96418",
+      "language": "ru",
+      "published_at": "2026-11-18T02:40:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Unsprezece drone, în două roiuri distincte, detectate în apropierea graniţei cu România (Eleven drones in two swarms detected near Romania's border, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/unsprezece-drone-in-doua-roiuri-distincte-detectate-in-apropierea-granitei-cu-romania-aeronave-f-16-ridicate-de-la-sol-4039497",
+      "language": "ro",
+      "published_at": "2026-11-17T14:13:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "UN: Russia killed at least 372 civilians in Ukraine in October – 95% more than last year",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/17/8063349/",
+      "language": "en",
+      "published_at": "2026-11-18T03:28:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Moldova closes six border crossing points with Ukraine following Russian drone incursion",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/17/8063332/",
+      "language": "en",
+      "published_at": "2026-11-18T02:00:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Nava eşuată în zona Vadu a fost lovită de dronă în apele Ucrainei (Romanian Naval Authority says ship aground at Vadu was hit by a drone in Ukrainian waters, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/autoritatea-navala-romana-a-anuntat-ca-nava-esuata-in-zona-vadu-a-fost-lovita-de-drona-in-apele-teritoriale-ale-ucrainei-in-septembrie-4039789",
+      "language": "ro",
+      "published_at": "2026-11-17T17:46:00+08:00",
+      "accessed_at": "2026-11-18T05:55:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Meeting of the Ukraine Defence Contact Group",
+      "outlet": "NATO",
+      "category": "nato_eu",
+      "url": "https://www.nato.int/en/news-and-events/events/event-programmes/2026/11/meeting-of-the-ukraine-defence-contact-group",
+      "language": "en",
+      "published_at": "2026-11-17",
+      "accessed_at": "2026-11-18T06:06:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-18T05:44:38+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 14.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1833,
+    "source_count": 28,
+    "source_category_count": 7
+  }
+}

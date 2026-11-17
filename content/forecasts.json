@@ -163,7 +163,13 @@
       "base_rate": 45,
       "base_rate_note": "Two incidents with injuries in Moldova in October 2026 and none recorded before; raised for the October tempo of crashes near homes.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-18",
+          "probability": 60,
+          "note": "Five drones crashed near Moldovan villages on 17 November, one about 11 km from Chișinău; no injuries yet."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -415,6 +421,11 @@
           "date": "2026-11-17",
           "probability": 50,
           "note": "No new Moldovan drone violation found. The 15 November Chișinău scare involved light aircraft with GPS trouble, not drones. Two weeks remain, and the count is well short of 10."
+        },
+        {
+          "date": "2026-11-18",
+          "probability": 75,
+          "note": "Moldova's Defence Ministry recorded seven drones on 17 November, which brings the November count close to 10, with 13 days remaining."
         }
       ],
       "status": "open",
@@ -592,6 +603,11 @@
           "date": "2026-11-17",
           "probability": 80,
           "note": "Ushakov and China's foreign ministry describe a trilateral meeting set for Thursday in Shenzhen alongside APEC; the White House says Trump will raise nuclear arms."
+        },
+        {
+          "date": "2026-11-18",
+          "probability": 85,
+          "note": "Russia's Foreign Ministry says Putin has arrived in China for APEC; the trilateral meeting is planned for Thursday in Shenzhen."
         }
       ],
       "status": "open",
@@ -675,6 +691,25 @@
       "base_rate": 10,
       "base_rate_note": "Only Finland (2023) and now Estonia have shut all road crossings with Russia. Raised because Nausėda raised the option after the Threod plot, though Kaliningrad transit constrains Lithuania.",
       "opened": "2026-11-17",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-031",
+      "question": "Will Moldova's Ministry of Defence report drones entering Moldovan airspace on at least three separate days between 18 November and 17 December 2026?",
+      "resolution_criteria": "Yes if Moldova's Ministry of Defence or National Army reports unauthorised drone entries into Moldovan airspace on at least three distinct calendar dates between 18 November and 17 December 2026.",
+      "resolves_by": "2026-12-18",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 70,
+      "base_rate": 65,
+      "base_rate_note": "Moldova reported a record 19 violations in October. November drone entries came on about three days to the 17th (4, 12 and 17 November). Raised slightly for likely Russian retaliation on Odesa after Kerch.",
+      "opened": "2026-11-18",
       "updates": [],
       "status": "open",
       "resolved_on": null,
