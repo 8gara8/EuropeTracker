@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-17",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -99,8 +99,8 @@
     },
     {
       "country": "EE",
-      "score": 2,
-      "since": "2026-11-02"
+      "score": 3,
+      "since": "2026-11-17"
     },
     {
       "country": "FI",

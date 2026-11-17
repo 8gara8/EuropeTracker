@@ -1,0 +1,1149 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "window": {
+    "start": "2026-11-16T05:30:00+08:00",
+    "end": "2026-11-17T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-17T22:30:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Estonia formally blames GRU for Threod arson; grain ship sinks off Bulgaria after reported drone hit; rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident). That rung rests on October's deadly drone strike on a merchant ship off Romania. We now log the 14 November arson attempt on Estonian drone maker Threod Systems: Estonia's Foreign Ministry says Russia's GRU ordered it, and it summoned Russia's chargé d'affaires. The grain ship Betul8 sank about 40 nautical miles off Bulgaria after a reported sea-drone hit; all 12 crew were rescued. Russia's Defence Ministry claimed it downed a record 1,336 Ukrainian drones overnight, and drones hit the Crimean bridge. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s6",
+    "s12",
+    "s9"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "Rung 4 rests on the deadly Khoryv strike off Constanța on 23 October (INC-2026-0109). Today's new incident, the GRU-attributed Threod arson attempt, is rung 2. Nothing in the window points to deliberate, sustained Russian military action against a NATO state, so rung 5 stays remote."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Four incidents in 30 days against a 90-day baseline of 14.3 a month, and none serious in 12 months. Romanian F-16s scrambled for 11 targets near Izmail, but the ministry recorded no violation. Unchanged.",
+        "source_ids": [
+          "s7"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 25,
+          "term": "unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days with Threod, against a baseline of 1.7 a month, and one serious in 12 months. KAPO says Russia targets about 10 Estonian defence firms, but attacks so far failed. Unchanged.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Twelve serious incidents in 12 months, mostly Black Sea ship strikes. The Betul8 sinking off Bulgaria, the 17th ship attacked off Bulgaria and Romania since mid-July, confirms the tempo but adds no new mechanism. Unchanged.",
+        "source_ids": [
+          "s6"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7 a month, and none serious. GPS problems for light aircraft over Chișinău caused no diversion or attribution. Unchanged.",
+        "source_ids": [
+          "s27"
+        ]
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and none serious since 2022. Estonia's border closure and Lithuania's warning drew Russian rhetoric, not military moves. Unchanged.",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One plant-safety incident in 30 days against a baseline of 0.3 a month. Regulators from 38 countries warn that accident risk is rising this winter, but no new IAEA-reported event. Unchanged.",
+        "source_ids": [
+          "s20"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. The EU sanctioned 30 people for Russian information and cyber operations, and Moldova barred Transnistria's leader from leaving. Unchanged.",
+        "source_ids": [
+          "s22",
+          "s25"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 2,
+        "reason": "The floor rises to 3 with INC-2026-0115, the 14 November arson attempt on Threod Systems (rung 2), which Estonia's Foreign Ministry says the GRU ordered.",
+        "source_ids": [
+          "s1",
+          "s3"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. The suspected drone entry on 11 November is still unconfirmed (F-2026-021), and Ukraine's Baltic raids keep drones and jamming near Finnish airspace.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "BG",
+        "score": 2,
+        "previous_score": null,
+        "reason": "Floor of 1, as no incident is logged. Betul8 sank in Bulgaria's exclusive economic zone after a reported sea-drone hit, the latest of several strikes on shipping off its coast since October.",
+        "source_ids": [
+          "s6"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Estonia's Foreign Ministry says GRU ordered Threod arson attempt and summons Russia's chargé d'affaires",
+      "summary": "Estonia's Foreign Ministry, citing KAPO, said Russia's GRU ordered the 14 November attempt to burn Threod Systems near Tallinn, and summoned Russia's chargé d'affaires. Eight Latvian nationals were detained. We log it as INC-2026-0115.",
+      "category": "sabotage",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0115"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 3,
+      "russian_framing": "Foreign Ministry spokeswoman Zakharova told TASS that closing the border would be \"another demonstration of Russophobia\". We found no Russian response to the GRU charge.",
+      "source_ids": [
+        "s1",
+        "s3",
+        "s4",
+        "s10"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia claims a record 1,336 Ukrainian drones overnight as drones hit the Crimean bridge and southern fuel sites",
+      "summary": "Russia's Defence Ministry said it downed a record 1,336 Ukrainian drones overnight into 16 November. Aksyonov said drones struck the Crimean bridge and restricted road traffic. Ukraine's General Staff claimed hits on the Ilsky refinery and an Azov oil depot.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0070",
+        "STR-2026-0071",
+        "STR-2026-0072"
+      ],
+      "verification": 2,
+      "attribution": null,
+      "russian_framing": "Peskov said \"minor damage is being assessed\" and that Russian air defences worked \"very effectively\".",
+      "source_ids": [
+        "s9",
+        "s11",
+        "s12",
+        "s14",
+        "s17"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Grain ship Betul8 sinks in Bulgaria's economic zone after reported sea-drone hit; 12 crew rescued",
+      "summary": "The Somali-flagged Betul8, carrying wheat from Romania to Egypt, sank on 16 November about 40 nautical miles off Cape Kaliakra. Maritime security sources cited by Reuters said a sea drone hit it. All 12 crew were rescued. We do not log it, because it sank outside territorial waters.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Digi24, citing Reuters, says Moscow denies involvement in such attacks. Russia's Defence Ministry said it struck \"sea vessels used in the interests of\" Ukraine's forces (translated).",
+      "source_ids": [
+        "s6",
+        "s16"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Romanian F-16s scramble for 11 drone targets near Izmail; drifting drones found off Romania's coast",
+      "summary": "Romania's defence ministry said radar tracked 11 targets near Vâlcove and Izmail on 16 November. Two F-16s took off and a RO-Alert went to northern Tulcea; no violation was recorded. EOD divers were sent to drifting drone debris spotted by a French Atlantique 2.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s7",
+        "s8",
+        "s30"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ushakov denies Europe is joining talks as Trump–Putin–Xi meeting is set for Thursday; EU adds sanctions",
+      "summary": "Kremlin aide Ushakov said Russia has not agreed to European participation in talks. Zelensky said Ukrainian, US and European teams spoke again. A Trump–Putin–Xi meeting is set for Thursday in Shenzhen. The EU listed 113 more people and entities, including shadow-fleet operators.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Ushakov said \"a great deal would have to be done\" before Europe could join, and that Russia needs \"a clear signal from the Europeans about what they want\".",
+      "source_ids": [
+        "s18",
+        "s19",
+        "s26",
+        "s21"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Two US Army battalions arrive in Lithuania; Nausėda says Lithuania may consider closing its Russian border",
+      "summary": "Heavy and engineer battalions from the US 1st Infantry Division arrived at Pabradė on rotation. President Nausėda backed Estonia's border closure and said Lithuania would consider similar measures if destabilisation continues, noting its Kaliningrad transit role.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s23",
+        "s24"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Regulators from 38 countries warn of rising nuclear-accident risk in Ukraine this winter",
+      "summary": "Nuclear safety regulators from 38 countries warned that Russia's grid strikes raise accident risk at Rivne, South Ukraine and Khmelnytskyi this winter, citing \"an urgent need for Russia to cease attacks\". Zaporizhzhia still depends on a single off-site line.",
+      "category": "nuclear",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s20"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Russia claims a record 1,336 Ukrainian drones in one night. Aksyonov acknowledged the Crimean bridge hit. Ukraine claims hits on the Ilsky refinery and an Azov oil depot.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s9",
+        "s12",
+        "s14",
+        "s15"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Ukraine's General Staff said Russia launched 158 drones overnight into 16 November and 131 were downed or suppressed. Russia's Defence Ministry said it hit port infrastructure and vessels serving Ukraine's forces.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s13",
+        "s16"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Ushakov denied that Russia agreed to European participation in talks. A Trump–Putin–Xi meeting is due on Thursday. The EU listed 113 people and entities over war financing and the shadow fleet.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s18",
+        "s26",
+        "s21",
+        "s22"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Romanian F-16s scrambled for 11 targets near Izmail; no violation was recorded. We found no new incursion in Poland, the Baltic states, Finland or Moldova.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s7"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Estonia's Foreign Ministry formally attributes the Threod arson attempt to the GRU, and we log it. KAPO says Russia targets about 10 Estonian defence firms.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Betul8 sank in Bulgaria's economic zone after a reported sea-drone hit. Romanian EOD teams were sent to drifting drone debris, and the Black Sea mine-countermeasures group moved to Constanța.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "Moldova's civil aviation authority said light aircraft had GPS reception trouble over Chișinău on 15 November but landed normally; it named no cause. The EU sanctioned 30 people for Russian information and cyber operations.",
+      "development_ids": [],
+      "source_ids": [
+        "s27",
+        "s22"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Regulators from 38 countries warned of rising nuclear-accident risk this winter. No new IAEA-reported power loss at Zaporizhzhia.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s20"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Moldova barred Transnistria's leader Krasnoselski from leaving through its border crossings for five years, after Putin decorated him.",
+      "development_ids": [],
+      "source_ids": [
+        "s25"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Two US Army battalions arrived in Lithuania on rotation. Zelensky said Ukraine will press for air-defence interceptors at the Ramstein group.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s23",
+        "s24",
+        "s29"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0115",
+      "date": "2026-11-14",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Threod Systems plant, Viimsi, near Tallinn",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "In the early hours of 14 November, attackers tried to set fire to and blow up the Threod Systems drone plant. The building was damaged but production continued, and no one was hurt. Eight Latvian nationals were detained. KAPO had advance intelligence and says Russia's GRU ordered the attack.",
+      "attribution": 3,
+      "attribution_note": "Estonia's Foreign Ministry, citing KAPO, says the GRU ordered the attack, and it summoned Russia's chargé d'affaires on 16 November. Foreign Minister Tsahkna and PM Michal blamed Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ministry of Foreign Affairs summons Russian chargé d'affaires over attempted act of sabotage",
+          "outlet": "Estonian Ministry of Foreign Affairs",
+          "category": "eu_gov_security",
+          "url": "https://www.vm.ee/en/news/ministry-foreign-affairs-summons-russian-charge-daffaires-over-attempted-act-sabotage",
+          "published_at": "2026-11-16"
+        },
+        {
+          "title": "Security service: Russia targeting around 10 Estonian defense companies",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610197171/security-service-russia-targeting-around-10-estonian-defense-companies",
+          "published_at": "2026-11-16T15:08:00+08:00"
+        },
+        {
+          "title": "Eight Latvian nationals arrested over suspected Estonia drone arson plot",
+          "outlet": "LSM",
+          "category": "eu_regional_press",
+          "url": "https://eng.lsm.lv/article/society/crime/15.11.2026-eight-latvian-nationals-arrested-over-suspected-estonia-drone-arson-plot.a672001/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "published_at": "2026-11-15T23:57:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0070",
+      "date": "2026-11-15",
+      "target_name": "Crimean (Kerch) bridge",
+      "target_type": "logistics_rail",
+      "region": "Kerch Strait (Crimea–Krasnodar Krai)",
+      "occupied_territory": true,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones hit the bridge early on 16 November. Aksyonov restricted road traffic, and Meduza reports it was closed for 12 hours, while trains kept running. Peskov called the damage minor. Mash claimed an arch was shifted; this is unverified.",
+      "sources": [
+        {
+          "title": "Аксёнов: движение по Крымскому мосту ограничено (Aksyonov: traffic on the Crimean bridge restricted, translated)",
+          "outlet": "Sergei Aksyonov (Telegram)",
+          "category": "ru_gov",
+          "url": "https://t.me/Aksenov82/10187",
+          "published_at": "2026-11-16"
+        },
+        {
+          "title": "Ukrainian drone attack damages Crimea Bridge, shutting down road traffic for hours. Kremlin says damage is 'minor.'",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/feature/2026/11/16/ukrainian-drone-attack-damages-crimea-bridge-shutting-down-road-traffic-for-hours-kremlin-says-damage-is-minor",
+          "published_at": "2026-11-16T22:58:00+08:00"
+        },
+        {
+          "title": "Ukraine hits Kerch bridge between Russia and occupied Crimea",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/nov/16/ukraine-drone-kerch-bridge-russia-occupied-crimea",
+          "published_at": "2026-11-16T20:45:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0071",
+      "date": "2026-11-15",
+      "target_name": "Ilsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces hit the AT-4, AT-5 and AT-6 crude distillation units and the gasoline complex at the 6.6m-tonne Ilsky refinery overnight into 16 November. It said the damage is still being assessed. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "НПЗ-пад триває: Сили оборони уразили Ільський нафтопереробний завод (The refinery strikes continue: Defence Forces hit the Ilsky refinery, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42919",
+          "published_at": "2026-11-16T19:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0072",
+      "date": "2026-11-15",
+      "target_name": "Flash Energy oil depot, Azov",
+      "target_type": "oil_depot",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit the Flash Energy oil depot in Azov on 15–16 November, causing explosions and a fire. The Moscow Times reported fires at four industrial sites in Azov, at least two of them near oil depots, according to Astra.",
+      "sources": [
+        {
+          "title": "Пальне ворога для фронту у вогні: уражено нафтобазу в Ростовській області (Enemy fuel for the front on fire: an oil depot in Rostov Oblast hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42918",
+          "published_at": "2026-11-16T18:50:00+08:00"
+        },
+        {
+          "title": "Ukraine Hits Crimean Bridge Amid Record Overnight Drone Attack",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/16/ukraine-hits-crimean-bridge-amid-record-overnight-drone-attack-a94265",
+          "published_at": "2026-11-16T17:16:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged. The rung stays at 4, and no pathway moves. We log one new incident, the Threod arson attempt. That brings sabotage to two incidents in 30 days, against a 90-day baseline of 1.7 a month. Airspace holds at four incidents against a baseline of 14.3 a month.\n\nThe Threod case now meets attribution 3. Estonia's Foreign Ministry, citing KAPO, says the GRU ordered the attack, and it summoned Russia's chargé d'affaires. KAPO's director told ERR that Russia is targeting about 10 Estonian defence firms. We assess this confirms A4: Moscow's covert campaign is aimed at the firms arming Ukraine, and it uses cheap recruits from neighbouring EU states. Estonia's floor rises to 3. Zakharova called the border closure \"Russophobia\" but, in what we saw, did not address the GRU charge. Nausėda said Lithuania may follow if attacks continue. We hold sabotage at unlikely (25%), because the attacks so far target property and have failed or done limited damage.\n\nBetul8 is the 17th ship attacked off Bulgaria and Romania since mid-July, by Diaplous's count. It sank in Bulgaria's exclusive economic zone, not its territorial sea, so we note it but do not log it, as with earlier strikes in that zone. All 12 crew were rescued. We assess that a Russian strike on shipping that serves Ukraine's trade is the likeliest cause (likely, 60%). Russia's Defence Ministry says it is hitting vessels used by Ukraine's forces. We hold maritime at likely (70%).\n\nUkraine's record raid matters for Europe because it sustains Moscow's motive for retaliatory strikes on Odesa and the Danube. Those strikes are the usual source of strays into Romania and Moldova. That evening Romanian F-16s scrambled for 11 targets near Izmail, though no violation was recorded. On talks, Ushakov denied that Russia had agreed to European participation, and a Trump–Putin–Xi meeting is due on Thursday. On the ceasefire paradox, a deal struck without Europe could cut ship and drone risk in the near term. It would leave the medium-term pressure on the eastern flank that A5 expects.",
+    "change_my_mind": "Evidence that the Threod recruits worked for criminals rather than the GRU would lower the attribution. A deadly drone hit inside Romanian or Bulgarian territorial waters, or casualties in Moldova, would raise the maritime and airspace odds and could add a fresh rung-4 incident.",
+    "competing_explanations": [
+      {
+        "subject": "Betul8 sinking off Cape Kaliakra, 16 November",
+        "hypotheses": [
+          {
+            "label": "Russian drone strike on Ukraine-linked trade",
+            "assessment": "Fits Russia's stated campaign against vessels serving Ukraine and the run of strikes off Bulgaria and Romania. But the ship sailed from Tulcea to Egypt, not from a Ukrainian port.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Ukrainian sea drone, misdirected or misidentified target",
+            "assessment": "Ukraine uses sea drones against Russian-linked tankers, but it has no clear motive against a wheat cargo leaving an EU port. Security sources cited only a sea drone.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Mine, accident or other non-drone cause",
+            "assessment": "Drifting drones and mines are present in the western Black Sea, and the Transport Ministry spoke only of capsizing.",
+            "estimate": {
+              "probability": 15,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-029",
+      "question": "Will a drone or missile hit a merchant ship in Bulgaria's territorial sea or exclusive economic zone between 17 November and 16 December 2026?",
+      "resolution_criteria": "Yes if Bulgarian authorities, or Reuters or AP citing officials or maritime security firms, report a merchant ship hit by a drone or missile inside Bulgaria's territorial sea or EEZ on a date between 17 November and 16 December 2026.",
+      "resolves_by": "2026-12-16",
+      "horizon": "30d",
+      "pathway": "maritime",
+      "probability": 80,
+      "base_rate": 80,
+      "base_rate_note": "At least four ships hit off Bulgaria between 6 October and 16 November 2026, about three a month, and 17 attacked off Bulgaria and Romania since mid-July. We do not adjust it."
+    },
+    {
+      "id": "F-2026-030",
+      "question": "Will Lithuania or Latvia announce the closure of all its road border crossings with Russia by 31 December 2026?",
+      "resolution_criteria": "Yes if the government, interior ministry or border guard of Lithuania or Latvia announces between 17 November and 31 December 2026 that all its road crossings with Russia will close to vehicles and pedestrians.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "military_pressure",
+      "probability": 20,
+      "base_rate": 10,
+      "base_rate_note": "Only Finland (2023) and now Estonia have shut all road crossings with Russia. Raised because Nausėda raised the option after the Threod plot, though Kaliningrad transit constrains Lithuania."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-027",
+      "probability": 85,
+      "note": "Estonia's Foreign Ministry confirmed again on 16 November that road crossings close to vehicles and pedestrians on 1 December; the interior minister says preparations are under way."
+    },
+    {
+      "id": "F-2026-026",
+      "probability": 80,
+      "note": "Ushakov and China's foreign ministry describe a trilateral meeting set for Thursday in Shenzhen alongside APEC; the White House says Trump will raise nuclear arms."
+    },
+    {
+      "id": "F-2026-017",
+      "probability": 50,
+      "note": "No new Moldovan drone violation found. The 15 November Chișinău scare involved light aircraft with GPS trouble, not drones. Two weeks remain, and the count is well short of 10."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A4",
+      "text": null,
+      "reason": "Estonia formally attributes the Threod arson attempt to the GRU, and KAPO says Russia targets about 10 Estonian defence firms while talks continue."
+    }
+  ],
+  "taiwan": "The most direct effect runs through air-defence supply. Zelensky says Ukraine will put interceptors for air defence at the top of its requests at the Ramstein group. That adds to demand for the Patriot and NASAMS interceptors Taiwan is also waiting for, though today's news changes no delivery decision. Second, Ukraine's record raid of 1,336 drones, as counted by Russia, and its hit on the Crimean bridge show that cheap mass drones can strain a large air-defence network and reach critical fixed links. That is a direct lesson for defending, and holding at risk, cross-strait logistics. Third, Thursday's Trump–Putin–Xi meeting in Shenzhen could show how far Washington will deal with Beijing and Moscow together on arms control. Beijing could read that as a test of US resolve.",
+  "next_72h": [
+    {
+      "date": "2026-11-18",
+      "event": "NATO's Black Sea mine-countermeasures group ends its activation off Constanța.",
+      "why": "Its work clearing drifting drones and mines bears on shipping risk near Romanian waters."
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Trump, Putin and Xi are due to meet in Shenzhen alongside the APEC summit.",
+      "why": "It could shape the Ukraine talks format and Europe's role; it resolves F-2026-026."
+    },
+    {
+      "date": "2026-11-20",
+      "event": "Deadline for Romania to identify the Boghicea drone fragments (F-2026-018).",
+      "why": "Attribution would confirm another Russian drone deep inside Romania."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 158,
+      "unit": "count",
+      "period": "night of 15–16 Nov",
+      "source_ids": [
+        "s13"
+      ],
+      "note": "Ukraine's General Staff; 77 were jet-powered."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 131,
+      "unit": "count",
+      "period": "night of 15–16 Nov",
+      "source_ids": [
+        "s13"
+      ],
+      "note": "Downed or suppressed, per Ukraine's General Staff."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 3,
+      "unit": "count",
+      "period": "night of 15–16 Nov",
+      "source_ids": [
+        "s9",
+        "s14",
+        "s15"
+      ],
+      "note": "Strikes logged today; Russia claims 1,336 drones downed."
+    },
+    {
+      "id": "ru_refinery_offline_pct",
+      "value": null,
+      "unit": "%",
+      "period": "16 Nov",
+      "source_ids": [],
+      "note": "Zelensky claims over 55% of capacity hit; unverified."
+    },
+    {
+      "id": "znpp_offsite_power_lines",
+      "value": 1,
+      "unit": "count",
+      "period": "16 Nov",
+      "source_ids": [
+        "s20"
+      ],
+      "note": "Single line since late March, per the IAEA."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ministry of Foreign Affairs summons Russian chargé d'affaires over attempted act of sabotage",
+      "outlet": "Estonian Ministry of Foreign Affairs",
+      "category": "eu_gov_security",
+      "url": "https://www.vm.ee/en/news/ministry-foreign-affairs-summons-russian-charge-daffaires-over-attempted-act-sabotage",
+      "language": "en",
+      "published_at": "2026-11-16",
+      "accessed_at": "2026-11-17T22:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Foreign Minister Tsahkna: Estonia to close road border crossings with Russia",
+      "outlet": "Estonian Ministry of Foreign Affairs",
+      "category": "eu_gov_security",
+      "url": "https://www.vm.ee/en/news/foreign-minister-tsahkna-estonia-close-road-border-crossings-russia",
+      "language": "en",
+      "published_at": "2026-11-15",
+      "accessed_at": "2026-11-17T22:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Security service: Russia targeting around 10 Estonian defense companies",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610197171/security-service-russia-targeting-around-10-estonian-defense-companies",
+      "language": "en",
+      "published_at": "2026-11-16T15:08:00+08:00",
+      "accessed_at": "2026-11-17T21:40:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Estonia's proposed eastern border closures are 'Russophobia,' Russian MFA says",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610197091/estonia-s-proposed-eastern-border-closures-are-russophobia-russian-mfa-says",
+      "language": "en",
+      "published_at": "2026-11-16T14:55:00+08:00",
+      "accessed_at": "2026-11-17T21:50:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Foreign Ministry summons Russian chargé d'affaires",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610197744/foreign-ministry-summons-russian-charg-d-affaires",
+      "language": "en",
+      "published_at": "2026-11-16T22:19:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Un atac cu o dronă ar fi cauzat scufundarea unei nave cargo în largul coastelor Bulgariei (A drone attack reportedly sank a cargo ship off Bulgaria's coast, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/un-atac-cu-o-drona-ar-fi-cauzat-scufundarea-unei-nave-cargo-in-largul-coastelor-bulgariei-potrivit-unor-surse-din-domeniul-securitatii-4039199",
+      "language": "ro",
+      "published_at": "2026-11-17T04:01:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Informație de presă nr. 371 (Press information no. 371: targets near Vâlcove and Izmail, F-16s scrambled, translated)",
+      "outlet": "Romanian Ministry of National Defence",
+      "category": "eu_gov_security",
+      "url": "https://www.mapn.ro/cpresa/19480_informație-de-presa",
+      "language": "ro",
+      "published_at": "2026-11-17",
+      "accessed_at": "2026-11-17T21:45:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Informație de presă nr. 369 (Press information no. 369: EOD teams to drifting drone debris, translated)",
+      "outlet": "Romanian Ministry of National Defence",
+      "category": "eu_gov_security",
+      "url": "https://www.mapn.ro/cpresa/19478_informație-de-presa",
+      "language": "ro",
+      "published_at": "2026-11-16",
+      "accessed_at": "2026-11-17T21:45:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Аксёнов: движение по Крымскому мосту ограничено (Aksyonov: traffic on the Crimean bridge restricted, translated)",
+      "outlet": "Sergei Aksyonov (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/Aksenov82/10187",
+      "language": "ru",
+      "published_at": "2026-11-16",
+      "accessed_at": "2026-11-17T22:05:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Ukrainian drone attack damages Crimea Bridge, shutting down road traffic for hours. Kremlin says damage is 'minor.'",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/16/ukrainian-drone-attack-damages-crimea-bridge-shutting-down-road-traffic-for-hours-kremlin-says-damage-is-minor",
+      "language": "en",
+      "published_at": "2026-11-16T22:58:00+08:00",
+      "accessed_at": "2026-11-17T22:00:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Ukraine Hits Crimean Bridge Amid Record Overnight Drone Attack",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/16/ukraine-hits-crimean-bridge-amid-record-overnight-drone-attack-a94265",
+      "language": "en",
+      "published_at": "2026-11-16T17:16:00+08:00",
+      "accessed_at": "2026-11-17T22:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Збито/подавлено 131 ворожу ціль (131 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42916",
+      "language": "uk",
+      "published_at": "2026-11-16T14:16:00+08:00",
+      "accessed_at": "2026-11-17T21:55:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "НПЗ-пад триває: Сили оборони уразили Ільський нафтопереробний завод (The refinery strikes continue: Defence Forces hit the Ilsky refinery, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42919",
+      "language": "uk",
+      "published_at": "2026-11-16T19:59:00+08:00",
+      "accessed_at": "2026-11-17T22:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Пальне ворога для фронту у вогні: уражено нафтобазу в Ростовській області (Enemy fuel for the front on fire: an oil depot in Rostov Oblast hit, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42918",
+      "language": "uk",
+      "published_at": "2026-11-16T18:50:00+08:00",
+      "accessed_at": "2026-11-17T21:55:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Главное за день: ударили по объектам портовой и железнодорожной инфраструктуры, а также морским судам (Day's summary: strikes on port and rail infrastructure and sea vessels, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69068",
+      "language": "ru",
+      "published_at": "2026-11-17T03:28:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Ukraine hits Kerch bridge between Russia and occupied Crimea",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/2026/nov/16/ukraine-drone-kerch-bridge-russia-occupied-crimea",
+      "language": "en",
+      "published_at": "2026-11-16T20:45:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Kremlin Aide Denies Russia Agreed to Include Europe in Ukraine Peace Talks",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/16/kremlin-aide-denies-russia-agreed-to-include-europe-in-ukraine-peace-talks-a94279",
+      "language": "en",
+      "published_at": "2026-11-17T00:18:00+08:00",
+      "accessed_at": "2026-11-17T22:05:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Today, there was another discussion between the negotiating groups – Ukrainian, American, and European",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21846",
+      "language": "en",
+      "published_at": "2026-11-17T03:08:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Nuclear regulators from 38 countries warn of a growing risk of a nuclear accident in Ukraine this winter and urge Russia to stop striking the power grid",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/16/nuclear-regulators-from-38-countries-warn-of-a-growing-risk-of-a-nuclear-accident-in-ukraine-this-winter-and-urge-russia-to-stop-striking-the-power-grid",
+      "language": "en",
+      "published_at": "2026-11-17T02:29:00+08:00",
+      "accessed_at": "2026-11-17T22:05:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Ukraine: EU lists 113 individuals and entities to further restrict Russia's ability to finance its war of aggression",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/ukraine-eu-lists-113-individuals-and-entities-to-further-restrict-russia-s-ability-to-finance-its-war-of-aggression/",
+      "language": "en",
+      "published_at": "2026-11-16T19:35:00+08:00",
+      "accessed_at": "2026-11-17T22:10:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Russia's FIMI and malicious cyber activities: Council imposes sanctions on 30 individuals and two entities",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/16/russia-s-fimi-and-malicious-cyber-activities-council-imposes-sanctions-on-30-individuals-and-two-entities/",
+      "language": "en",
+      "published_at": "2026-11-16T19:10:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Two new US Army battalions arrive in Lithuania for NATO's eastern flank deployment",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3116184/two-new-us-army-battalions-arrive-in-lithuania-for-nato-s-eastern-flank-deployment",
+      "language": "en",
+      "published_at": "2026-11-16T18:11:00+08:00",
+      "accessed_at": "2026-11-17T22:10:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Nausėda: Lithuania may consider closing border with Russia following plot in Estonia",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3116219/nauseda-lithuania-may-consider-closing-border-with-russia-following-plot-in-estonia",
+      "language": "en",
+      "published_at": "2026-11-16T18:46:00+08:00",
+      "accessed_at": "2026-11-17T22:15:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Metoda inedită prin care Moldova l-a sancționat pe liderul separatiștilor din Transnistria (How Moldova sanctioned Transnistria's separatist leader, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/metoda-inedita-prin-care-moldova-l-a-sanctionat-pe-liderul-separatistilor-din-transnistria-dupa-ce-a-fost-decorat-de-putin-4037869",
+      "language": "ro",
+      "published_at": "2026-11-16T15:40:00+08:00",
+      "accessed_at": "2026-11-17T22:10:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Kremlin Says Putin-Xi-Trump Meeting in China Will Have Major Impact on Global Affairs",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/16/kremlin-says-putin-xi-trump-meeting-in-china-will-have-major-impact-on-global-affairs-a94268",
+      "language": "en",
+      "published_at": "2026-11-16T22:00:00+08:00",
+      "accessed_at": "2026-11-17T22:15:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Panică la Chișinău: trei avioane care au pierdut semnalul GPS (Panic in Chișinău: three planes that lost GPS signal, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/panica-la-chisinau-duminica-seara-din-cauza-unor-lumini-ce-se-invarteau-pe-cer-trei-avioane-care-au-pierdut-semnalul-gps-4037721",
+      "language": "ro",
+      "published_at": "2026-11-16T14:50:00+08:00",
+      "accessed_at": "2026-11-17T21:45:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-17T04:16:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s29",
+      "title": "Готуємось до зустрічі оборонної контактної групи у форматі «Рамштайн» (Preparing for the Ramstein-format defence contact group meeting, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21843",
+      "language": "uk",
+      "published_at": "2026-11-16T22:37:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Eight Latvian nationals arrested over suspected Estonia drone arson plot",
+      "outlet": "LSM",
+      "category": "eu_regional_press",
+      "url": "https://eng.lsm.lv/article/society/crime/15.11.2026-eight-latvian-nationals-arrested-over-suspected-estonia-drone-arson-plot.a672001/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+      "language": "en",
+      "published_at": "2026-11-15T23:57:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    },
+    {
+      "id": "s30",
+      "title": "Drone aeriene detectate de o aeronavă franceză în Marea Neagră (Aerial drones detected by a French aircraft in the Black Sea, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/evenimente/ministrul-apararii-anunta-doua-misiuni-de-interventie-asupra-unor-drone-aeriene-care-plutesc-in-marea-neagra-4038033",
+      "language": "ro",
+      "published_at": "2026-11-16T17:55:00+08:00",
+      "accessed_at": "2026-11-17T21:45:00+08:00"
+    },
+    {
+      "id": "s31",
+      "title": "EU commissioner says Taiwan office name is Lithuania's internal matter",
+      "outlet": "LRT English",
+      "category": "eu_regional_press",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3116276/eu-commissioner-says-taiwan-office-name-is-lithuania-s-internal-matter",
+      "language": "en",
+      "published_at": "2026-11-16T20:08:00+08:00",
+      "accessed_at": "2026-11-17T21:30:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-17T22:19:11+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 14.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 2.3
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1961,
+    "source_count": 31,
+    "source_category_count": 7
+  }
+}

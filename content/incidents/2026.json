@@ -4392,6 +4392,56 @@
       "seed": false,
       "added": "2026-11-12",
       "updated": "2026-11-13"
+    },
+    {
+      "id": "INC-2026-0115",
+      "date": "2026-11-14",
+      "date_precision": "day",
+      "location_country": "EE",
+      "affected": [
+        "EE"
+      ],
+      "location": "Threod Systems plant, Viimsi, near Tallinn",
+      "sea": null,
+      "pathway": "sabotage",
+      "type": "arson",
+      "rung": 2,
+      "serious": false,
+      "summary": "In the early hours of 14 November, attackers tried to set fire to and blow up the Threod Systems drone plant. The building was damaged but production continued, and no one was hurt. Eight Latvian nationals were detained. KAPO had advance intelligence and says Russia's GRU ordered the attack.",
+      "attribution": 3,
+      "attribution_note": "Estonia's Foreign Ministry, citing KAPO, says the GRU ordered the attack, and it summoned Russia's chargé d'affaires on 16 November. Foreign Minister Tsahkna and PM Michal blamed Russia.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Ministry of Foreign Affairs summons Russian chargé d'affaires over attempted act of sabotage",
+          "outlet": "Estonian Ministry of Foreign Affairs",
+          "category": "eu_gov_security",
+          "url": "https://www.vm.ee/en/news/ministry-foreign-affairs-summons-russian-charge-daffaires-over-attempted-act-sabotage",
+          "published_at": "2026-11-16"
+        },
+        {
+          "title": "Security service: Russia targeting around 10 Estonian defense companies",
+          "outlet": "ERR News",
+          "category": "eu_regional_press",
+          "url": "https://news.err.ee/1610197171/security-service-russia-targeting-around-10-estonian-defense-companies",
+          "published_at": "2026-11-16T15:08:00+08:00"
+        },
+        {
+          "title": "Eight Latvian nationals arrested over suspected Estonia drone arson plot",
+          "outlet": "LSM",
+          "category": "eu_regional_press",
+          "url": "https://eng.lsm.lv/article/society/crime/15.11.2026-eight-latvian-nationals-arrested-over-suspected-estonia-drone-arson-plot.a672001/?utm_source=rss&utm_campaign=rss&utm_medium=links",
+          "published_at": "2026-11-15T23:57:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
     }
   ]
 }

@@ -2267,6 +2267,117 @@
       "seed": false,
       "added": "2026-11-16",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0070",
+      "date": "2026-11-15",
+      "target_name": "Crimean (Kerch) bridge",
+      "target_type": "logistics_rail",
+      "region": "Kerch Strait (Crimea–Krasnodar Krai)",
+      "occupied_territory": true,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones hit the bridge early on 16 November. Aksyonov restricted road traffic, and Meduza reports it was closed for 12 hours, while trains kept running. Peskov called the damage minor. Mash claimed an arch was shifted; this is unverified.",
+      "sources": [
+        {
+          "title": "Аксёнов: движение по Крымскому мосту ограничено (Aksyonov: traffic on the Crimean bridge restricted, translated)",
+          "outlet": "Sergei Aksyonov (Telegram)",
+          "category": "ru_gov",
+          "url": "https://t.me/Aksenov82/10187",
+          "published_at": "2026-11-16"
+        },
+        {
+          "title": "Ukrainian drone attack damages Crimea Bridge, shutting down road traffic for hours. Kremlin says damage is 'minor.'",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/feature/2026/11/16/ukrainian-drone-attack-damages-crimea-bridge-shutting-down-road-traffic-for-hours-kremlin-says-damage-is-minor",
+          "published_at": "2026-11-16T22:58:00+08:00"
+        },
+        {
+          "title": "Ukraine hits Kerch bridge between Russia and occupied Crimea",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/nov/16/ukraine-drone-kerch-bridge-russia-occupied-crimea",
+          "published_at": "2026-11-16T20:45:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0071",
+      "date": "2026-11-15",
+      "target_name": "Ilsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said its forces hit the AT-4, AT-5 and AT-6 crude distillation units and the gasoline complex at the 6.6m-tonne Ilsky refinery overnight into 16 November. It said the damage is still being assessed. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "НПЗ-пад триває: Сили оборони уразили Ільський нафтопереробний завод (The refinery strikes continue: Defence Forces hit the Ilsky refinery, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42919",
+          "published_at": "2026-11-16T19:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0072",
+      "date": "2026-11-15",
+      "target_name": "Flash Energy oil depot, Azov",
+      "target_type": "oil_depot",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit the Flash Energy oil depot in Azov on 15–16 November, causing explosions and a fire. The Moscow Times reported fires at four industrial sites in Azov, at least two of them near oil depots, according to Astra.",
+      "sources": [
+        {
+          "title": "Пальне ворога для фронту у вогні: уражено нафтобазу в Ростовській області (Enemy fuel for the front on fire: an oil depot in Rostov Oblast hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42918",
+          "published_at": "2026-11-16T18:50:00+08:00"
+        },
+        {
+          "title": "Ukraine Hits Crimean Bridge Amid Record Overnight Drone Attack",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/16/ukraine-hits-crimean-bridge-amid-record-overnight-drone-attack-a94265",
+          "published_at": "2026-11-16T17:16:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-17",
+      "updated": null
     }
   ]
 }
