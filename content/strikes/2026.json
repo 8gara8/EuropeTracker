@@ -2390,8 +2390,8 @@
       "lon": 36.51,
       "distance_km": null,
       "weapon": "missile",
-      "weapon_detail": "Flamingo missile and drones (reported)",
-      "western_weapon": null,
+      "weapon_detail": "Destinus Ruta missiles and drones",
+      "western_weapon": true,
       "verification": 5,
       "damage": "The SBU says one metal arch and a road span were destroyed. Reported footage appears to show the road arch collapsing into the strait; the rail arch stood.",
       "effect": "Aksyonov said road traffic across the bridge was suspended. Ferries carry vehicle traffic, and rail service later resumed.",
@@ -2424,11 +2424,25 @@
           "category": "ua_gov",
           "url": "https://t.me/SBUkr/19093",
           "published_at": "2026-11-17T18:00:00+08:00"
+        },
+        {
+          "title": "Russia Asks if Netherlands Is Joining Ukraine War After Dutch Company's Missiles Used in Bridge Attack",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/18/russia-asks-if-netherlands-is-joining-ukraine-war-after-dutch-companys-missiles-used-in-bridge-attack-a94298",
+          "published_at": "2026-11-18T19:56:00+08:00"
+        },
+        {
+          "title": "Ukraine hit the Crimean Bridge with Ruta missiles from a firm Russian-born Mikhail Kokorich founded in Switzerland",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/feature/2026/11/18/ukraine-hit-the-crimean-bridge-with-ruta-missiles-from-a-firm-russian-born-mikhail-kokorich-founded-in-switzerland-after-the-u-s-barred-him-from-his-own-startup-s-technology",
+          "published_at": "2026-11-19T03:48:00+08:00"
         }
       ],
       "seed": false,
       "added": "2026-11-18",
-      "updated": null
+      "updated": "2026-11-19"
     },
     {
       "id": "STR-2026-0074",
@@ -2472,6 +2486,80 @@
       ],
       "seed": false,
       "added": "2026-11-18",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0075",
+      "date": "2026-11-17",
+      "target_name": "Ilsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it attacked the 6.6m-tonne Ilsky refinery from the air overnight into 18 November, causing explosions and a fire and hitting storage tanks. Meduza reported four injured in the Seversky district, citing the regional headquarters. We opened no Russian official source.",
+      "sources": [
+        {
+          "title": "Нафтовий дубль на Кубані: уражено Ільський і Афіпський НПЗ (An oil double in Kuban: Ilsky and Afipsky refineries hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42938",
+          "published_at": "2026-11-18T20:31:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike two oil refineries in southern Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/18/ukrainian-drones-strike-two-oil-refineries-in-southern-russia",
+          "published_at": "2026-11-18T15:54:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-19",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0076",
+      "date": "2026-11-17",
+      "target_name": "Afipsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said preliminary information shows an oil processing unit was hit at the 6.25m-tonne Afipsky refinery overnight into 18 November. The Kyiv Independent reported the claim. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "Нафтовий дубль на Кубані: уражено Ільський і Афіпський НПЗ (An oil double in Kuban: Ilsky and Afipsky refineries hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42938",
+          "published_at": "2026-11-18T20:31:00+08:00"
+        },
+        {
+          "title": "Ukraine war latest: Drones strike 2 Russian oil refineries in Krasnodar Krai, Kyiv says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-war-latest-drones-strike-2-russian-oil-refineries-in-krasnodar-krai-kyiv-says/",
+          "published_at": "2026-11-19T02:36:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-19",
       "updated": null
     }
   ]

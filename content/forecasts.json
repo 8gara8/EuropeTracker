@@ -310,6 +310,11 @@
           "date": "2026-11-16",
           "probability": 10,
           "note": "The mid-November threat period Tusk cited has passed with no reported sabotage or armed crossing at the Kaliningrad border. Two weeks remain."
+        },
+        {
+          "date": "2026-11-19",
+          "probability": 20,
+          "note": "Poland's defence minister confirmed services foiled a planned Russian mass-casualty provocation at the Kaliningrad border; an on-record account of an attempted act could resolve this."
         }
       ],
       "status": "open",
@@ -446,7 +451,13 @@
       "base_rate": 65,
       "base_rate_note": "MApN has usually identified Russian drone debris in Tulcea and Galați within days. Lowered because Neamț is far from usual routes, no ministry statement has appeared yet, and some finds stay unidentified.",
       "opened": "2026-11-06",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-19",
+          "probability": 25,
+          "note": "Thirteen days on, we have found no Romanian official statement identifying the Boghicea fragments, and the deadline is 20 November."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -560,7 +571,13 @@
       "base_rate": 20,
       "base_rate_note": "Leaked Russian talk terms have sometimes been confirmed by Western officials within weeks, but often not. We raised it because the Baltic states and Finland have strong incentives to make any such demand public.",
       "opened": "2026-11-14",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-19",
+          "probability": 35,
+          "note": "Bloomberg reports a Russian demand for a NATO rollback to its 1997 footprint. That raises the chance an allied government confirms a Baltic-bases demand on the record."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -608,6 +625,11 @@
           "date": "2026-11-18",
           "probability": 85,
           "note": "Russia's Foreign Ministry says Putin has arrived in China for APEC; the trilateral meeting is planned for Thursday in Shenzhen."
+        },
+        {
+          "date": "2026-11-19",
+          "probability": 90,
+          "note": "Trump has landed in China, and the Moscow Times reports the three leaders are due to meet on Thursday."
         }
       ],
       "status": "open",
@@ -672,7 +694,13 @@
       "base_rate": 80,
       "base_rate_note": "At least four ships hit off Bulgaria between 6 October and 16 November 2026, about three a month, and 17 attacked off Bulgaria and Romania since mid-July. We do not adjust it.",
       "opened": "2026-11-17",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-19",
+          "probability": 95,
+          "note": "Gas Husky sank about 80 km off Biala on 17 November after four hits reported by the Varna governor, apparently in Bulgaria's EEZ. We resolve at the due date."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -710,6 +738,25 @@
       "base_rate": 65,
       "base_rate_note": "Moldova reported a record 19 violations in October. November drone entries came on about three days to the 17th (4, 12 and 17 November). Raised slightly for likely Russian retaliation on Odesa after Kerch.",
       "opened": "2026-11-18",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-032",
+      "question": "Will Polish authorities announce detentions or charges linked to the planned Russian provocation at the Kaliningrad border by 31 December 2026?",
+      "resolution_criteria": "Yes if Polish prosecutors, the ABW, SKW, police or a minister announce, between 19 November and 31 December 2026, detentions or charges of people tied to the Russian plot at the Kaliningrad border reported in November 2026.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "sabotage",
+      "probability": 20,
+      "base_rate": 15,
+      "base_rate_note": "Disrupted plots in Poland often end in arrests within weeks, but none crossed the border here and the planners appear to be in Russia. Raised slightly because Poland announces sabotage detentions about monthly.",
+      "opened": "2026-11-19",
       "updates": [],
       "status": "open",
       "resolved_on": null,

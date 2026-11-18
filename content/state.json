@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-18",
+  "as_of": "2026-11-19",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -23,12 +23,12 @@
     {
       "pathway": "sabotage",
       "serious_odds": {
-        "probability": 25,
+        "probability": 30,
         "term": "unlikely",
-        "confidence": "moderate"
+        "confidence": "low"
       },
       "impact": 3,
-      "trend": "flat"
+      "trend": "up"
     },
     {
       "pathway": "maritime",

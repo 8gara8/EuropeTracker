@@ -1,0 +1,976 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "window": {
+    "start": "2026-11-18T05:30:00+08:00",
+    "end": "2026-11-19T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-19T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Poland confirms it foiled a Russian false-flag plot at the Kaliningrad border; LPG tanker sinks off Bulgaria; rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident), resting on October's deadly drone strike on a ship off Romania. Poland's defence minister confirmed a Rzeczpospolita report that Polish services disrupted a Russian false-flag plot at the Kaliningrad border. The plot was meant to cause mass casualties and to be blamed on Ukraine. Moldova summoned Russia's envoy over seven drones that crossed the country on 17 November. The LPG tanker Gas Husky sank about 80 km off Bulgaria after what the Varna governor called four hits. Russia launched 141 Shahed-type drones overnight. Reuters sources say Ukraine has cut Russian refining by 45%. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s11",
+    "s12",
+    "s1",
+    "s3"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "The rung stays at 4 on the October Khoryv sinking. We log no new incident today. The foiled Polish plot shows intent to cause mass casualties, but A1 still holds: we see no deliberate, sustained Russian military action against an ally. So rung-5 odds stay remote (5%)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Four logged incidents in 30 days against a 90-day baseline of 14.3 a month, and no serious incident in 12 months. Moldova's record seven drones on 17 November, not yet logged, keep crash risk near homes high. No change.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 30,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "up",
+        "rationale": "Two incidents in 30 days against a baseline of 1.7 a month. Raised 5 points because Poland's defence minister confirmed a disrupted Russian plot that planned mass casualties, a step beyond property attacks.",
+        "source_ids": [
+          "s5",
+          "s6"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "One logged incident in 30 days and 12 serious incidents in 12 months. Gas Husky sank after reported hits off Bulgaria, and Russia's Defence Ministry claims more strikes on ships bound for Odesa. No change.",
+        "source_ids": [
+          "s3",
+          "s4"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.7 a month. We verified no disruptive, attributed attack in the window. No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days, and no deliberate Russian border crossing since 2022. Russia's reported offer to thin its forces in Kaliningrad and Belarus changes nothing on the ground yet. No change.",
+        "source_ids": [
+          "s8"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One plant-safety event in 30 days against a baseline of 0.3 a month. We verified no new IAEA report today; the IAEA feed failed. No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a baseline of 0.3 a month. The reported 1997-footprint demand targets alliance cohesion, but no NATO or EU decision is blocked. No change.",
+        "source_ids": [
+          "s8"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. A suspected drone violation on 11 November awaits confirmation (F-2026-021), and GPS interference over the Gulf of Finland continues.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "BG",
+        "score": 2,
+        "previous_score": null,
+        "reason": "The LPG tanker Gas Husky sank about 80 km off Biala after reported drone hits, the second sinking in Bulgaria's waters in two days. Neither happened in the territorial sea, so neither is logged.",
+        "source_ids": [
+          "s3"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Poland's defence minister confirms services foiled a Russian false-flag plot at the Kaliningrad border",
+      "summary": "Rzeczpospolita reported that Russian intelligence planned a sabotage operation near the Kaliningrad border in late October or early November. The aim was mass casualties that would be blamed on Ukraine. Defence Minister Władysław Kosiniak-Kamysz confirmed that services knew of the plan and acted. Special-services coordinator Tomasz Siemoniak called the threat real but did not confirm details. No arrests have been announced.",
+      "category": "sabotage",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Moldova summons Russia's envoy after a record seven drones cross its airspace",
+      "summary": "Moldova's Foreign Ministry summoned Russia's ambassador-designate, Oleg Ozerov, and handed him a protest note over seven drones that crossed the country on 17 November, Digi24 reports. The ministry said it \"strongly condemns these actions\" (translated). Police found fragments of a Gerbera-type drone near Naslavcea, about 50 metres from the Ukrainian border. We have not yet logged the incursion.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "LPG tanker Gas Husky sinks off Bulgaria after four reported hits; all 19 crew rescued",
+      "summary": "The Liberian-flagged Gas Husky was carrying about 3,400 tonnes of LPG from Egypt to Romania. It sank about 80 km east of Biala on 17 November. Varna governor Mario Smarkov reported four hits, and two maritime security sources said an unmanned system struck it. Separately, Russia's Defence Ministry said it hit a dry-cargo ship carrying military cargo to Odesa.",
+      "category": "maritime",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry says it continues drone strikes on ships \"used in the interests of the Ukrainian armed forces\" (translated). It did not address Gas Husky.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Bloomberg: Russia offers to cut forces in Kaliningrad and Belarus if NATO returns to its 1997 footprint",
+      "summary": "Bloomberg, as relayed by Meduza, reports that Moscow's negotiating position asks the EU and NATO to roll the alliance's military presence back to 1997 levels and to stop treating Russia as a threat. In return, Russia would reduce its military presence in Kaliningrad and Belarus. European governments reportedly reject linking Ukraine talks to NATO security.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ukraine hits Ilsky and Afipsky refineries; Reuters sources put the cut in Russian refining at 45%",
+      "summary": "Ukraine's General Staff said it struck the Ilsky and Afipsky refineries in Krasnodar Krai overnight into 18 November, hitting tanks and a processing unit. Krasnodar's regional headquarters reported four injured in the Seversky district. Two industry sources told Reuters that refining has fallen 45% since late October, to about 400,000 tonnes a day, with 15 of the 35 largest refineries disrupted.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0075",
+        "STR-2026-0076"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "The Moscow Times reports that Russia's Defence Ministry says it intercepted 183 Ukrainian drones over Russian regions overnight.",
+      "source_ids": [
+        "s10",
+        "s12",
+        "s13",
+        "s21",
+        "s19"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Russia's embassy asks whether the Netherlands is joining the war after Dutch firm's missiles hit Kerch bridge",
+      "summary": "Destinus, a Dutch-headquartered firm, said its missiles were the only foreign-made weapons used in Ukraine's strike on the Kerch bridge. Meduza identifies them as Ruta. Russia's embassy in The Hague replied: \"Is The Hague openly joining the conflict?\" No Dutch government response is reported.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0073"
+      ],
+      "verification": 5,
+      "attribution": null,
+      "russian_framing": "The Russian embassy said Moscow \"has been duly informed of the NL involvement\" and asked whether The Hague is openly joining the conflict.",
+      "source_ids": [
+        "s14",
+        "s20"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Russian drones strike central Odesa three times, killing four",
+      "summary": "Odesa governor Oleh Kiper said repeated Russian strikes on central Odesa killed four people and injured nine on 18 November. Ukraine's General Staff said Russia launched 141 Shahed-type drones overnight and that 126 were downed or suppressed.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s17",
+        "s7",
+        "s11"
+      ]
+    },
+    {
+      "id": "d8",
+      "headline": "US armour returns to Lithuania's Pabradė base; UK pledges over 1,000 air-defence missiles for Ukraine",
+      "summary": "More than 1,000 soldiers from two US 1st Infantry Division battalions are deploying to Pabradė, 10–15 km from Belarus, Digi24 reports. This restores a rotation suspended earlier this year. Nausėda said it is \"not a single or temporary rotation\" (translated). Ukraine's General Staff welcomed a UK package worth £240m: more than 1,000 short-range air-defence missiles plus radars.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s15",
+        "s16"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine struck the Ilsky and Afipsky refineries; Reuters sources say Russian refining is down 45% since late October. Destinus confirmed its missiles were used on the Kerch bridge, and Russia's embassy asked whether the Netherlands is joining the war.",
+      "development_ids": [
+        "d5",
+        "d6"
+      ],
+      "source_ids": [
+        "s10",
+        "s12",
+        "s14",
+        "s20"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 141 Shahed-type drones overnight; Ukraine says it downed or suppressed 126. Repeated strikes on central Odesa killed four.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s11",
+        "s17",
+        "s7"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Bloomberg reports that Russia seeks a NATO rollback to its 1997 footprint in exchange for force cuts in Kaliningrad and Belarus. Trump has arrived in China ahead of a planned meeting with Xi and Putin.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s8",
+        "s9",
+        "s18"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Moldova summoned Russia's envoy over a record seven drones on 17 November. Police found Gerbera fragments near Naslavcea. We have not yet logged the incursion pending a ministry text.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Poland's defence minister confirmed that services disrupted a Russian false-flag plot at the Kaliningrad border meant to cause mass casualties and be blamed on Ukraine. He will seek an extension of Operation Horyzont. There have been no arrests.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Gas Husky sank about 80 km off Biala after four reported hits, the second sinking off Bulgaria in two days. Russia's Defence Ministry claims another strike on a cargo ship bound for Odesa.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "More than 1,000 US troops are deploying to Pabradė in Lithuania, restoring a suspended rotation. The UK pledged a £240m air-defence package. Zelensky says the Coalition of the Willing meets on 19 November.",
+      "development_ids": [
+        "d8"
+      ],
+      "source_ids": [
+        "s15",
+        "s16"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0075",
+      "date": "2026-11-17",
+      "target_name": "Ilsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it attacked the 6.6m-tonne Ilsky refinery from the air overnight into 18 November, causing explosions and a fire and hitting storage tanks. Meduza reported four injured in the Seversky district, citing the regional headquarters. We opened no Russian official source.",
+      "sources": [
+        {
+          "title": "Нафтовий дубль на Кубані: уражено Ільський і Афіпський НПЗ (An oil double in Kuban: Ilsky and Afipsky refineries hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42938",
+          "published_at": "2026-11-18T20:31:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike two oil refineries in southern Russia",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/18/ukrainian-drones-strike-two-oil-refineries-in-southern-russia",
+          "published_at": "2026-11-18T15:54:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-19",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0076",
+      "date": "2026-11-17",
+      "target_name": "Afipsky oil refinery",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said preliminary information shows an oil processing unit was hit at the 6.25m-tonne Afipsky refinery overnight into 18 November. The Kyiv Independent reported the claim. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "Нафтовий дубль на Кубані: уражено Ільський і Афіпський НПЗ (An oil double in Kuban: Ilsky and Afipsky refineries hit, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42938",
+          "published_at": "2026-11-18T20:31:00+08:00"
+        },
+        {
+          "title": "Ukraine war latest: Drones strike 2 Russian oil refineries in Krasnodar Krai, Kyiv says",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-war-latest-drones-strike-2-russian-oil-refineries-in-krasnodar-krai-kyiv-says/",
+          "published_at": "2026-11-19T02:36:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-19",
+      "updated": null
+    }
+  ],
+  "strike_updates": [
+    {
+      "id": "STR-2026-0073",
+      "changes": {
+        "verification": null,
+        "damage": null,
+        "effect": null,
+        "summary": null,
+        "weapon_detail": "Destinus Ruta missiles and drones",
+        "western_weapon": true
+      },
+      "add_sources": [
+        {
+          "title": "Russia Asks if Netherlands Is Joining Ukraine War After Dutch Company's Missiles Used in Bridge Attack",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/18/russia-asks-if-netherlands-is-joining-ukraine-war-after-dutch-companys-missiles-used-in-bridge-attack-a94298",
+          "published_at": "2026-11-18T19:56:00+08:00"
+        },
+        {
+          "title": "Ukraine hit the Crimean Bridge with Ruta missiles from a firm Russian-born Mikhail Kokorich founded in Switzerland",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/feature/2026/11/18/ukraine-hit-the-crimean-bridge-with-ruta-missiles-from-a-firm-russian-born-mikhail-kokorich-founded-in-switzerland-after-the-u-s-barred-him-from-his-own-startup-s-technology",
+          "published_at": "2026-11-19T03:48:00+08:00"
+        }
+      ],
+      "reason": "Destinus, a Dutch-headquartered firm, says its missiles were the only foreign-made weapons used. Meduza identifies them as Ruta. That makes this a Western-made weapon."
+    }
+  ],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged in level but carries a sharper sabotage signal. The rung stays at 4. We log no new incident, because we could not open the Polish or Moldovan governments' own statements; that is the standard we have applied all month. Airspace holds at four logged incidents in 30 days against a 90-day baseline of 14.3 a month, and sabotage holds at two against 1.7.\n\nThe Polish report is the day's most important development. Rzeczpospolita, as relayed by the Kyiv Post, says Russian intelligence planned an attack near the Kaliningrad border to cause mass casualties and to be blamed on Ukraine. TVP Info reports that Defence Minister Władysław Kosiniak-Kamysz confirmed that the services knew of the plan and acted. Siemoniak called the threat real but did not confirm details. We assess that a genuine Russian plot, deterred by a visible security surge, is the likeliest reading (likely, 60%). A planned mass-casualty attack goes beyond the property attacks at Threod and Carfil, so we raise sabotage from 25% to unlikely (30%). It confirms A4. We raise F-2026-014 to 20%, because an on-record account of an attempted act could resolve it.\n\nAt sea, the Varna governor reported four hits on the LPG tanker Gas Husky, which then sank about 80 km east of Biala. That is beyond the territorial sea and apparently inside Bulgaria's exclusive economic zone. All 19 crew were rescued. As with Betul8, we note the case but do not log it. Russia's Defence Ministry claimed another strike on a cargo ship bound for Odesa. We hold maritime at likely (70%) and move F-2026-029 to 95%.\n\nMoldova's protest over a record seven drones keeps F-2026-008 and F-2026-031 on track. We expect to log the incursion at rung 3 once we can open a ministry text.\n\nOn the ceasefire paradox, Bloomberg reports that Moscow offered to thin its forces in Kaliningrad and Belarus if NATO returns to its 1997 footprint. We assess the offer aims to split Washington from frontline allies. A deal on those terms would cut near-term incidents but leave the medium-term exposure that A5 expects.",
+    "change_my_mind": "Arrests or charges in Poland naming Russian officers would raise sabotage further. A Romanian or Bulgarian statement of a deadly hit inside the territorial sea would add a rung-4 incident. A Trump–Putin–Xi outcome that pauses strikes on Odesa would lower the airspace and maritime odds.",
+    "competing_explanations": [
+      {
+        "subject": "The Polish report of a Russian false-flag plot at the Kaliningrad border",
+        "hypotheses": [
+          {
+            "label": "Genuine Russian plot deterred by Polish deployments",
+            "assessment": "This fits the allied warnings, the 2–8 November readiness order, the 3 November sightings near Sępopol and the minister's confirmation. The lack of arrests fits a plot deterred before anyone crossed the border.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Threat real but plot details overstated",
+            "assessment": "Siemoniak would not confirm a terrorist attack was planned. The mass-casualty detail rests on anonymous sources and may reflect worst-case intelligence used to justify the surge.",
+            "estimate": {
+              "probability": 35,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      },
+      {
+        "subject": "Who struck the LPG tanker Gas Husky off Bulgaria",
+        "hypotheses": [
+          {
+            "label": "Russian campaign against shipping that serves Ukraine and the Danube",
+            "assessment": "This fits the 17-ship pattern off Bulgaria and Romania and Russia's stated policy of striking ships it says serve Ukraine's forces. The cargo was bound for Romania, a Danube trade link.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Another or unidentified attacker",
+            "assessment": "Bulgarian officials have not named an attacker. Sea drones of unclear origin operate in the western Black Sea, and the crew did not confirm the weapon type.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-032",
+      "question": "Will Polish authorities announce detentions or charges linked to the planned Russian provocation at the Kaliningrad border by 31 December 2026?",
+      "resolution_criteria": "Yes if Polish prosecutors, the ABW, SKW, police or a minister announce, between 19 November and 31 December 2026, detentions or charges of people tied to the Russian plot at the Kaliningrad border reported in November 2026.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "sabotage",
+      "probability": 20,
+      "base_rate": 15,
+      "base_rate_note": "Disrupted plots in Poland often end in arrests within weeks, but none crossed the border here and the planners appear to be in Russia. Raised slightly because Poland announces sabotage detentions about monthly."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-014",
+      "probability": 20,
+      "note": "Poland's defence minister confirmed services foiled a planned Russian mass-casualty provocation at the Kaliningrad border; an on-record account of an attempted act could resolve this."
+    },
+    {
+      "id": "F-2026-029",
+      "probability": 95,
+      "note": "Gas Husky sank about 80 km off Biala on 17 November after four hits reported by the Varna governor, apparently in Bulgaria's EEZ. We resolve at the due date."
+    },
+    {
+      "id": "F-2026-024",
+      "probability": 35,
+      "note": "Bloomberg reports a Russian demand for a NATO rollback to its 1997 footprint. That raises the chance an allied government confirms a Baltic-bases demand on the record."
+    },
+    {
+      "id": "F-2026-026",
+      "probability": 90,
+      "note": "Trump has landed in China, and the Moscow Times reports the three leaders are due to meet on Thursday."
+    },
+    {
+      "id": "F-2026-018",
+      "probability": 25,
+      "note": "Thirteen days on, we have found no Romanian official statement identifying the Boghicea fragments, and the deadline is 20 November."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A4",
+      "text": null,
+      "reason": "Poland confirms it disrupted a Russian false-flag plot on its border days after the Threod arson, while Moscow pursues talks with Washington."
+    }
+  ],
+  "taiwan": "The most direct effect runs through air-defence supply. The UK is sending Ukraine more than 1,000 short-range air-defence missiles, and the US is restoring an armoured battalion in Lithuania. Both draw on short-range interceptor and armour production that Taiwan also competes for, though the UK package does not touch US Patriot or NASAMS lines. Thursday's Trump–Putin–Xi meeting in Shenzhen matters more for Taiwan. A US–Russia deal that trades NATO's 1997 footprint for force cuts in Kaliningrad would tell Beijing that frontline allies' security can be negotiated over their heads. For Taiwan's defence, Ukraine's use of a European-made missile on the Kerch bridge and the continuing drone hits on Black Sea shipping are fresh lessons in cheap long-range strike and in the exposure of energy shipping. That is relevant to LNG cargoes bound for Taiwan.",
+  "next_72h": [
+    {
+      "date": "2026-11-20",
+      "event": "Deadline for Romania to identify the Boghicea drone fragments (F-2026-018).",
+      "why": "This resolves a forecast and tests how quickly Romania attributes inland debris."
+    },
+    {
+      "date": "2026-11-20",
+      "event": "EU–United Kingdom summit in Brussels.",
+      "why": "A possible signal on European defence cooperation and sanctions unity."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 141,
+      "unit": "count",
+      "period": "night of 17–18 Nov",
+      "source_ids": [
+        "s11"
+      ],
+      "note": "Shahed-type only (73 jet-powered); Gerbera and decoys not counted."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 126,
+      "unit": "count",
+      "period": "night of 17–18 Nov",
+      "source_ids": [
+        "s11"
+      ],
+      "note": "Downed or suppressed, as of 08:00 Kyiv time."
+    },
+    {
+      "id": "ru_refinery_offline_pct",
+      "value": 45,
+      "unit": "%",
+      "period": "late Oct to 18 Nov",
+      "source_ids": [
+        "s12"
+      ],
+      "note": "Throughput cut estimated by two industry sources to Reuters."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Trimisul lui Putin la Chișinău a fost convocat la MAE, după ce un număr record de drone a intrat în spațiul aerian al R. Moldova (Putin's envoy summoned over record drone incursions, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/moldova/trimisul-lui-putin-la-chisinau-a-fost-convocat-la-mae-dupa-ce-un-numar-record-de-drone-a-intrat-in-spatiul-aerian-al-r-moldova-4041727",
+      "language": "ro",
+      "published_at": "2026-11-18T11:28:00+02:00",
+      "accessed_at": "2026-11-19T05:50:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Moldova summons Russia's envoy over multiple drone incursions",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/moldova-summons-russia-envoy-over-drone-incursions/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-18T20:57:00+08:00",
+      "accessed_at": "2026-11-19T05:45:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Nava-cisternă cu GPL care s-a scufundat în largul Bulgariei a fost lovită de drone (oficial) (The LPG tanker that sank off Bulgaria was hit by drones, official, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/nava-cisterna-cu-gpl-care-s-a-scufundat-in-largul-bulgariei-a-fost-lovita-de-drone-oficial-4042375",
+      "language": "ro",
+      "published_at": "2026-11-18T23:03:00+08:00",
+      "accessed_at": "2026-11-19T05:45:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Вооруженные Силы Российской Федерации продолжают нанесение ударов беспилотными летательными аппаратами по морским судам (Russia's armed forces continue drone strikes on ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69121",
+      "language": "ru",
+      "published_at": "2026-11-18T23:13:00+08:00",
+      "accessed_at": "2026-11-19T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Russia Planned Bloody Provocation in Poland to Blame Ukraine, Report Says",
+      "outlet": "Kyiv Post",
+      "category": "ua_independent",
+      "url": "https://www.kyivpost.com/post/90505",
+      "language": "en",
+      "published_at": "2026-11-18",
+      "accessed_at": "2026-11-19T05:55:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Tajna akcja przy obwodzie królewieckim. Kosiniak-Kamysz potwierdza (Secret operation near Kaliningrad oblast: Kosiniak-Kamysz confirms, translated)",
+      "outlet": "TVP Info",
+      "category": "eu_regional_press",
+      "url": "https://www.tvp.info/96547316/tajna-akcja-przy-obwodzie-krolewieckim-kosiniak-kamysz-potwierdza",
+      "language": "pl",
+      "published_at": "2026-11-18",
+      "accessed_at": "2026-11-19T06:05:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Ukraine war latest: Drones strike 2 Russian oil refineries in Krasnodar Krai, Kyiv says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-drones-strike-2-russian-oil-refineries-in-krasnodar-krai-kyiv-says/",
+      "language": "en",
+      "published_at": "2026-11-19T02:36:00+08:00",
+      "accessed_at": "2026-11-19T05:58:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Russia is prepared to reduce its military presence in the Kaliningrad region and Belarus if its demands are met, Bloomberg reports",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/18/russia-is-prepared-to-reduce-its-military-presence-in-the-kaliningrad-region-and-belarus-if-its-demands-are-met-bloomberg-reports",
+      "language": "en",
+      "published_at": "2026-11-19T04:29:00+08:00",
+      "accessed_at": "2026-11-19T05:48:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Mărul otrăvit pe care îl oferă Putin pentru a-și atinge obiectivele antebelice (Putin's poisoned apple to reach his pre-war goals, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/rusia/marul-otravit-pe-care-il-ofera-putin-pentru-a-si-atinge-obiectivele-antebelice-romania-este-direct-vizata-bloomberg-4041941",
+      "language": "ro",
+      "published_at": "2026-11-18T23:50:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Нафтовий дубль на Кубані: уражено Ільський і Афіпський НПЗ (An oil double in Kuban: Ilsky and Afipsky refineries hit, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42938",
+      "language": "uk",
+      "published_at": "2026-11-18T20:31:00+08:00",
+      "accessed_at": "2026-11-19T06:01:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Збито/подавлено 126 ворожих цілей (126 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42933",
+      "language": "uk",
+      "published_at": "2026-11-18T14:14:00+08:00",
+      "accessed_at": "2026-11-19T06:01:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Ukrainian drone attacks have cut the amount of oil Russia refines by 45% since late October, Reuters reports",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/19/ukrainian-drone-attacks-have-cut-the-amount-of-oil-russia-refines-by-45-since-late-october-reuters-reports",
+      "language": "en",
+      "published_at": "2026-11-19T05:05:00+08:00",
+      "accessed_at": "2026-11-19T05:58:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Ukrainian drones strike two oil refineries in southern Russia",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/18/ukrainian-drones-strike-two-oil-refineries-in-southern-russia",
+      "language": "en",
+      "published_at": "2026-11-18T15:54:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Russia Asks if Netherlands Is Joining Ukraine War After Dutch Company's Missiles Used in Bridge Attack",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/18/russia-asks-if-netherlands-is-joining-ukraine-war-after-dutch-companys-missiles-used-in-bridge-attack-a94298",
+      "language": "en",
+      "published_at": "2026-11-18T19:56:00+08:00",
+      "accessed_at": "2026-11-19T05:50:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "SUA au trimis peste 1.000 de militari la granița cu Belarus (US sends over 1,000 troops to the Belarus border, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ue/sua-au-trimis-peste-1-000-de-militari-la-granita-cu-belarus-doua-batalioane-americane-desfasurate-intr-o-zona-strategica-pentru-nato-4041761",
+      "language": "ro",
+      "published_at": "2026-11-18T17:51:00+08:00",
+      "accessed_at": "2026-11-19T05:58:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Понад 1 000 ракет ППО та радари для України (Over 1,000 air-defence missiles and radars for Ukraine, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42936",
+      "language": "uk",
+      "published_at": "2026-11-18T18:42:00+08:00",
+      "accessed_at": "2026-11-19T06:01:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Зараз в Одесі допомагають людям, які постраждали від удару російських дронів (People hurt by the Russian drone strike in Odesa are being helped now, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21872",
+      "language": "uk",
+      "published_at": "2026-11-18T20:07:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Xi and Putin Blast Western 'Protectionism,' Sanctions as Trump Lands in China",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/18/xi-and-putin-blast-western-protectionism-sanctions-as-trump-lands-in-china-a94292",
+      "language": "en",
+      "published_at": "2026-11-18T22:21:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Средства ПВО за день сбили 51 украинский БПЛА над Краснодарским краем и Азовским морем (Air defences downed 51 Ukrainian drones over Krasnodar Krai and the Sea of Azov during the day, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/406421",
+      "language": "ru",
+      "published_at": "2026-11-19T01:19:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Ukraine hit the Crimean Bridge with Ruta missiles from a firm Russian-born Mikhail Kokorich founded in Switzerland",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/18/ukraine-hit-the-crimean-bridge-with-ruta-missiles-from-a-firm-russian-born-mikhail-kokorich-founded-in-switzerland-after-the-u-s-barred-him-from-his-own-startup-s-technology",
+      "language": "en",
+      "published_at": "2026-11-19T03:48:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Ukrainian Drones Target Krasnodar Region Refineries",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/18/ukrainian-drones-target-krasnodar-region-refineries-a94294",
+      "language": "en",
+      "published_at": "2026-11-18T17:39:00+08:00",
+      "accessed_at": "2026-11-19T05:40:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-19T05:44:23+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 14.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1945,
+    "source_count": 21,
+    "source_category_count": 7
+  }
+}
