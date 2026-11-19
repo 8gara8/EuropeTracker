@@ -2561,6 +2561,73 @@
       "seed": false,
       "added": "2026-11-19",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0077",
+      "date": "2026-11-18",
+      "target_name": "Crimean (Kerch) bridge, railway track",
+      "target_type": "logistics_rail",
+      "region": "Kerch Strait (Crimea–Krasnodar Krai)",
+      "occupied_territory": true,
+      "lat": 45.31,
+      "lon": 36.51,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Navy Neptune coastal missile systems struck the bridge overnight into 19 November and damaged the railway track. The Kyiv Independent reports rail traffic was halted. Putin vowed a \"much more painful\" response but, in what we saw, did not describe the damage.",
+      "sources": [
+        {
+          "title": "«Нептун» б'є по символу: залізничне полотно Керченського мосту пошкоджено (Neptune strikes the symbol: Kerch bridge railway track damaged, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42945",
+          "published_at": "2026-11-19T18:45:00+08:00"
+        },
+        {
+          "title": "Ukraine war latest: Russian drones kill 1, damage 2 European embassies, cathedral in hours-long drone raid on Kyiv",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-war-latest-russian-drones-kill-1-damage-2-european-embassies-cathedral-in-hours-long-drone-raid-on-kyiv/",
+          "published_at": "2026-11-20T03:40:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-20",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0078",
+      "date": "2026-11-18",
+      "target_name": "Kaleykino oil pumping station (Transneft-Prikamye), near Almetyevsk",
+      "target_type": "pipeline",
+      "region": "Republic of Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1200,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Tatarstan's head's press service, as reported by Meduza, said drones hit oil storage tanks near Almetyevsk overnight into 19 November, and fragments damaged civilian facilities. It said automatic fire suppression prevented a large fire and no one was hurt. We opened no Russian official source directly.",
+      "sources": [
+        {
+          "title": "Ukrainian drones attack oil storage tanks in Russia's Tatarstan",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/19/ukrainian-drones-attack-oil-storage-tanks-in-russia-s-tatarstan",
+          "published_at": "2026-11-19T17:03:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-20",
+      "updated": null
     }
   ]
 }

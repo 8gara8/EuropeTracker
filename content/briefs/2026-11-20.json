@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "window": {
+    "start": "2026-11-19T05:30:00+08:00",
+    "end": "2026-11-20T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-20T06:15:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Putin rejects Black Sea truce talks and vows 'more painful' Kerch retaliation; Europe joins talks format; rung holds at 4",
+  "bottom_line": "Spillover risk is unchanged at rung 4 (deadly or deliberate incident), resting on October's deadly drone strike on a ship off Romania. We found no new incident on European soil in the window. After Ukraine's Neptune strike on the Kerch bridge's rail line, Putin said Russia will no longer discuss an energy or Black Sea truce and promised a response \"far more painful\". The Coalition of the Willing agreed that Europe will join the negotiating format. Russian drones damaged the Dutch and Austrian embassies in Kyiv. The 30-day chance of a step up to rung 5 stays remote (5%).",
+  "bottom_line_source_ids": [
+    "s5",
+    "s3"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 4,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 5,
+        "term": "remote",
+        "confidence": "moderate"
+      },
+      "rationale": "No new incident in the window. Rung 4 rests on the 23 October Khoryv sinking off Constanța (INC-2026-0109). Nothing in the window points to deliberate, sustained Russian military action against a NATO or EU state."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 15,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "We log 4 incidents in 30 days against a 90-day baseline of 14.3 a month, with no serious case in 12 months. Putin's retaliation vow raises the strike tempo near Odesa, but no violation was found today. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 30,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "We log 2 incidents in 30 days against a baseline of 1.7 and 1 serious case in 12 months. Held after yesterday's rise for the foiled Kaliningrad-border plot. Nothing new today.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "We log 1 incident in 30 days and 12 serious cases in 12 months. Putin ruled out a Black Sea truce, and Russia's Defence Ministry claimed another cargo-ship strike. Held at a high level.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "We log 0 incidents in 30 days against a baseline of 0.7. The AI-assisted campaign against the Commission was not attributed and disrupted no service. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "We log 0 incidents in 30 days and no Russian crossing of a NATO border since 2022. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "We log 1 plant-safety event in 30 days against a baseline of 0.3. At the trilateral, the leaders condemned nuclear war, and we found no readiness change. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "We log 0 incidents in 30 days against a baseline of 0.3. Europe's seat in the talks lowers the risk of a deal that bypasses it; Moscow's pressure on Finland and the Netherlands is rhetorical. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1, unchanged. GPS interference over the Gulf of Finland persists, Ukraine's Baltic export-terminal strikes run near the border, and Moscow summoned Finland's chargé on 19 November.",
+        "source_ids": [
+          "s7"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 4,
+        "previous_score": 4,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Putin rules out energy and Black Sea truce talks and vows a 'far more painful' response to the Kerch strikes",
+      "summary": "At his Shenzhen press conference, Putin called the Crimean bridge a civilian object and said Russia will answer any attack on it with responses \"much more painful\" than the strike (translated). The Kyiv Independent reports he said Moscow no longer plans to discuss ceasefires on energy and Black Sea shipping. He added, \"We will not negotiate.\"",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Putin claims Russia is \"trying to end\" a war it did not start, backs Anchorage compromises, and says Kyiv and its European backers reject them.",
+      "source_ids": [
+        "s5",
+        "s3"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukraine says Neptune missiles damaged the Kerch bridge rail line; rail traffic halted",
+      "summary": "Ukraine's General Staff said Navy Neptune coastal missile systems struck the bridge overnight into 19 November and damaged the railway track. The Kyiv Independent reports rail traffic was halted. Fire Point says the attacks since 17 November involved more than 16 strikes. Ukraine's Defence Ministry posted: \"Final stop. Please vacate Crimea.\"",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0077"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Putin calls the bridge a purely civilian object and promises retaliation.",
+      "source_ids": [
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Coalition of the Willing agrees Europe will join the negotiating format with Russia",
+      "summary": "More than 40 partners met in Berlin with US envoys Witkoff and Kushner. Zelensky said Europe will be represented in talks with Russia by five countries plus the EU and NATO. The leaders of Germany, France, the UK and Ukraine called on Russia to accept a winter energy truce and safe passage for food exports in the Black Sea. They also pledged more air defence and new sanctions.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s4",
+        "s14",
+        "s21"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Russian drones damage Dutch and Austrian embassies in Kyiv as Moscow calls Dutch Destinus staff legitimate targets",
+      "summary": "An hours-long drone raid on Kyiv killed one man, and a projectile hit behind the Dutch embassy, causing minor damage. The Austrian embassy and St Volodymyr's Cathedral were also damaged. Russia's embassy in The Hague cited NRC reports that Destinus employees launched drones and said such civilians become lawful targets under the Geneva Conventions.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The embassy says The Hague is \"deepening its involvement in the conflict\" and demands it explain its oversight of Destinus (translated).",
+      "source_ids": [
+        "s3",
+        "s6",
+        "s8"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Trump, Putin and Xi hold first trilateral meeting in Shenzhen",
+      "summary": "Putin said the three leaders discussed security \"in the broadest sense\": preventing the spread of weapons of mass destruction, non-proliferation and freedom of navigation (translated). He said the talks set conditions for further agreements. Meduza reports Russia's drone raid on Kyiv began almost as soon as the APEC summit ended.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Putin says Trump \"sincerely\" seeks to settle conflicts including Ukraine and that partial agreements beat none (translated).",
+      "source_ids": [
+        "s5",
+        "s19"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "China imposes licences on exports of drone engines used in Russia's jet-powered Gerans",
+      "summary": "China's Commerce Ministry now requires licences for jet-turbine and electric drone engines, radio transmitters and speed controllers, effective 18 November. Ukraine's sanctions commissioner Vlasiuk thanked China. He said the rules miss anti-jamming antennas, navigation modules and servos, and urged strict enforcement.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s10"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Russia's Defence Ministry claims a drone hit on a cargo ship bound for Odesa",
+      "summary": "Russia's Defence Ministry said a drone struck a dry-cargo ship at sea that it claimed was carrying military cargo to Odesa. It gave no name, flag or position, and we found no independent confirmation or report placing the strike in Romanian or Bulgarian waters.",
+      "category": "maritime",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The ministry claims the ships it hits serve Ukraine's armed forces.",
+      "source_ids": [
+        "s13"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine says Neptune missiles damaged the Kerch bridge rail line, and rail traffic was halted. Tatarstan's head's press service, as reported by Meduza, said drones hit oil tanks at the Kaleykino pumping station near Almetyevsk; a large fire was avoided.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s2",
+        "s3",
+        "s9"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Ukraine's General Staff counted 98 Shahed-type drones (61 jet-powered) and Onyx missiles overnight into 19 November, with 69 downed or suppressed and hits at 18 locations. A daytime raid on Kyiv killed one and damaged the Dutch and Austrian embassies.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s1",
+        "s3",
+        "s17"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Putin rejected truces on energy and the Black Sea. The Coalition of the Willing secured a European seat in the talks, made up of five states plus the EU and NATO. The first Trump–Putin–Xi meeting took place, and China tightened controls on exports of Geran engines.",
+      "development_ids": [
+        "d1",
+        "d3",
+        "d5",
+        "d6"
+      ],
+      "source_ids": [
+        "s5",
+        "s4",
+        "s14",
+        "s10"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Russia's Defence Ministry claimed a drone hit on a dry-cargo ship bound for Odesa, which we could not locate or confirm. Putin's rejection of a Black Sea truce removes the main diplomatic brake on the campaign against shipping off Romania and Bulgaria.",
+      "development_ids": [
+        "d7",
+        "d1"
+      ],
+      "source_ids": [
+        "s13",
+        "s3"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Russia's envoy Ulyanov told the IAEA board that Ukrainian attacks have killed 15 Zaporizhzhia plant workers since April, a claim we could not verify. In Shenzhen, the three leaders discussed non-proliferation. We could not open IAEA Update 376.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s20",
+        "s5"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Moscow summoned Finland's chargé over new entry limits on Russians and warned the steps will shape relations. Estonian PM Michal warned that Russia's European-security talks demand could put the Baltics and Poland on the table.",
+      "development_ids": [],
+      "source_ids": [
+        "s7",
+        "s11"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Coalition leaders pledged more air defence and new sanctions on oil and crypto. Moldova's parliament ratified, 56 votes in favour, a military-technical pact with Ukraine that covers drone detection. Wadephul said Berlin sent a strong signal to Moscow.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s4",
+        "s12",
+        "s21"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0077",
+      "date": "2026-11-18",
+      "target_name": "Crimean (Kerch) bridge, railway track",
+      "target_type": "logistics_rail",
+      "region": "Kerch Strait (Crimea–Krasnodar Krai)",
+      "occupied_territory": true,
+      "lat": 45.31,
+      "lon": 36.51,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Navy Neptune coastal missile systems struck the bridge overnight into 19 November and damaged the railway track. The Kyiv Independent reports rail traffic was halted. Putin vowed a \"much more painful\" response but, in what we saw, did not describe the damage.",
+      "sources": [
+        {
+          "title": "«Нептун» б'є по символу: залізничне полотно Керченського мосту пошкоджено (Neptune strikes the symbol: Kerch bridge railway track damaged, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42945",
+          "published_at": "2026-11-19T18:45:00+08:00"
+        },
+        {
+          "title": "Ukraine war latest: Russian drones kill 1, damage 2 European embassies, cathedral in hours-long drone raid on Kyiv",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukraine-war-latest-russian-drones-kill-1-damage-2-european-embassies-cathedral-in-hours-long-drone-raid-on-kyiv/",
+          "published_at": "2026-11-20T03:40:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-20",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0078",
+      "date": "2026-11-18",
+      "target_name": "Kaleykino oil pumping station (Transneft-Prikamye), near Almetyevsk",
+      "target_type": "pipeline",
+      "region": "Republic of Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1200,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Tatarstan's head's press service, as reported by Meduza, said drones hit oil storage tanks near Almetyevsk overnight into 19 November, and fragments damaged civilian facilities. It said automatic fire suppression prevented a large fire and no one was hurt. We opened no Russian official source directly.",
+      "sources": [
+        {
+          "title": "Ukrainian drones attack oil storage tanks in Russia's Tatarstan",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/19/ukrainian-drones-attack-oil-storage-tanks-in-russia-s-tatarstan",
+          "published_at": "2026-11-19T17:03:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-20",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess the 30-day spillover picture is unchanged in level, but the diplomatic brake on the Black Sea campaign has weakened. The rung stays at 4, and no pathway moves. We found no new incident in Europe in the window. Airspace holds at four logged incidents in 30 days against a 90-day baseline of 14.3 a month, and maritime at one against two.\n\nPutin's statements in Shenzhen are the day's most important development for Europe. Russia's Foreign Ministry relays his claim that the Crimean bridge is a civilian object, and his promise that responses to attacks on it will be \"much more painful\" (translated). The Kyiv Independent reports he dropped talk of energy and Black Sea truces. We assess that retaliation will most likely fall on Odesa, the Danube ports and shipping (likely, 60%). That is the route that sends drones into Moldova and Romania and puts ships at risk off Romania and Bulgaria. We hold maritime at likely (70%) and raise F-2026-028.\n\nRussia's embassy in The Hague said that Destinus employees who launch drones are lawful targets. That is a threat against nationals of a supplier state, but so far it is rhetorical. We assess that the damage to the Dutch and Austrian embassies in Kyiv was more likely collateral than deliberate (likely, 65%). We do not log it, because embassies in Ukraine fall outside our territorial scope.\n\nOn talks, Europe's seat (five states plus the EU and NATO) lowers the risk that a deal imposes terms on the Baltics behind their backs. Estonian PM Michal's warning shows the fear persists. On the ceasefire paradox, Putin's rejection of partial truces keeps near-term incident risk high. It also pushes back the medium-term reconstitution risk that A5 expects. China's new licences on Geran engines may slow Russia's jet-drone output over months, not days. All five assumptions hold.",
+    "change_my_mind": "A Romanian or Moldovan statement of a drone violation or a ship hit in territorial waters would lift airspace or maritime odds. A Russian strike on a Dutch or other European target outside Ukraine would challenge A1. A Black Sea truce would lower maritime odds.",
+    "competing_explanations": [
+      {
+        "subject": "Where Putin's promised Kerch retaliation lands",
+        "hypotheses": [
+          {
+            "label": "Odesa, Danube ports and Black Sea shipping",
+            "assessment": "This fits the pattern after the 16–17 November strikes and Putin's rejection of a Black Sea truce. It brings the highest spillover risk to Romania, Moldova and Bulgaria.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Kyiv government and symbolic targets",
+            "assessment": "Bridges and central Kyiv were hit after the earlier strikes, and the 19 November raid reached the diplomatic quarter. This brings little direct spillover risk to NATO territory.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Action against a European supplier outside Ukraine",
+            "assessment": "The embassy's threat over Destinus is rhetorical. A1 and the risk of escalation with NATO argue strongly against it.",
+            "estimate": {
+              "probability": 5,
+              "term": "remote",
+              "confidence": "moderate"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-033",
+      "question": "Will Russia and Ukraine both announce a truce on attacks against Black Sea commercial shipping by 31 December 2026?",
+      "resolution_criteria": "Yes if both governments announce, between 20 November and 31 December 2026, an agreed halt to attacks on merchant shipping or ports in the Black Sea that takes effect in that period.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "maritime",
+      "probability": 5,
+      "base_rate": 10,
+      "base_rate_note": "The only Black Sea deal, the 2022 grain corridor, lasted a year, and the 2025 proposals never took effect. Lowered because Putin explicitly ruled out Black Sea truce talks on 19 November."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-028",
+      "probability": 75,
+      "note": "Putin rejected a Black Sea truce and vowed a \"more painful\" response to the Kerch strikes; Odesa-bound shipping is the likeliest target."
+    },
+    {
+      "id": "F-2026-011",
+      "probability": 10,
+      "note": "Putin ruled out even partial energy and Black Sea truces on 19 November, though Europe now joins the talks format."
+    }
+  ],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-026",
+      "outcome": "yes",
+      "note": "Russia's Foreign Ministry relayed Putin's Shenzhen press conference describing the trilateral meeting with the leaders of China and the US on 19 November.",
+      "source_id": "s5"
+    },
+    {
+      "id": "F-2026-018",
+      "outcome": "no",
+      "note": "By the 20 November deadline, we found no Romanian official statement identifying the Boghicea fragments. Reporting says authorities had not disclosed the drone's origin.",
+      "source_id": "s16"
+    }
+  ],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A5",
+      "text": null,
+      "reason": "Putin's rejection of partial truces delays any ceasefire. Near-term incident risk stays high, and the medium-term reconstitution risk is unchanged."
+    }
+  ],
+  "taiwan": "China's new licences on exports of the jet engines and radio parts in Russia's Geran drones are the most direct signal. Beijing shows it will tighten dual-use exports when pressed, but it left out navigation modules and servos, so the effect is likely partial and slow. The US and Europe will read this as leverage that works, which could encourage similar pressure over components that reach Taiwan's region. The Coalition of the Willing pledged more air defence for Ukraine, including through PURL purchases of US systems. That adds to demand for the Patriot and NASAMS interceptors that Taiwan is also waiting for. Ukraine's Neptune strikes on the Kerch bridge are a lesson for Taiwan: coastal anti-ship missiles can be repurposed to hit fixed logistics links across a strait.",
+  "next_72h": [
+    {
+      "date": "2026-11-21",
+      "event": "Watch for Russia's promised retaliation on Odesa, Izmail and Danube ports, and Romanian or Moldovan scrambles.",
+      "why": "This is the main source of stray drones and ship strikes off Romania and Bulgaria."
+    },
+    {
+      "date": "2026-11-21",
+      "event": "The IAEA Board of Governors continues its session on Ukraine's nuclear safety.",
+      "why": "It could produce IAEA text on Zaporizhzhia power lines and other plants (F-2026-015, F-2026-019)."
+    },
+    {
+      "date": "2026-11-22",
+      "event": "Follow-up on the format for European participation in talks with Russia.",
+      "why": "It will show whether Moscow accepts a European seat or makes its NATO footprint demands public."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 98,
+      "unit": "count",
+      "period": "night of 18–19 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Shahed-type only (61 jet-powered); Gerbera and decoys not counted"
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 69,
+      "unit": "count",
+      "period": "night of 18–19 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Includes 48 jet-powered Shaheds; count as of 08:00 Kyiv"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 69 ВОРОЖИХ ЦІЛЕЙ (69 enemy targets downed or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42943",
+      "language": "uk",
+      "published_at": "2026-11-19T14:17:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "«Нептун» б'є по символу: залізничне полотно Керченського мосту пошкоджено (Neptune strikes the symbol: Kerch bridge railway track damaged, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42945",
+      "language": "uk",
+      "published_at": "2026-11-19T18:45:00+08:00",
+      "accessed_at": "2026-11-20T05:50:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Ukraine war latest: Russian drones kill 1, damage 2 European embassies, cathedral in hours-long drone raid on Kyiv",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-russian-drones-kill-1-damage-2-european-embassies-cathedral-in-hours-long-drone-raid-on-kyiv/",
+      "language": "en",
+      "published_at": "2026-11-20T03:40:00+08:00",
+      "accessed_at": "2026-11-20T05:50:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Coalition of the Willing calls on Russia to accept winter energy truce",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/coalition-of-the-willing-calls-on-russia-to-accept-winter-energy-truce/",
+      "language": "en",
+      "published_at": "2026-11-20T05:05:00+08:00",
+      "accessed_at": "2026-11-20T05:52:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Пресс-конференция Президента России В.В.Путина по итогам визита в Китай (Putin's press conference after his visit to China, Shenzhen, 19 November 2026, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96543",
+      "language": "ru",
+      "published_at": "2026-11-20T01:14:00+08:00",
+      "accessed_at": "2026-11-20T05:53:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Заявление Посольства России в Нидерландах (Statement of the Russian Embassy in the Netherlands on Destinus staff, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96547",
+      "language": "ru",
+      "published_at": "2026-11-20T01:29:00+08:00",
+      "accessed_at": "2026-11-20T05:53:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "19 ноября в МИД России была вызвана Временная поверенная в делах Финляндии (Finland's chargé d'affaires summoned to the Russian Foreign Ministry on 19 November, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96535",
+      "language": "ru",
+      "published_at": "2026-11-19T23:44:00+08:00",
+      "accessed_at": "2026-11-20T05:53:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Ukraine struck the Crimean Bridge with missiles made by a Dutch company. Two days later, a Russian drone crashed near the Dutch Embassy in Kyiv.",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/19/ukraine-struck-the-crimean-bridge-with-missiles-made-by-a-dutch-company-two-days-later-a-russian-drone-crashed-near-the-dutch-embassy-in-kyiv",
+      "language": "en",
+      "published_at": "2026-11-20T01:53:00+08:00",
+      "accessed_at": "2026-11-20T05:51:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Ukrainian drones attack oil storage tanks in Russia's Tatarstan",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/19/ukrainian-drones-attack-oil-storage-tanks-in-russia-s-tatarstan",
+      "language": "en",
+      "published_at": "2026-11-19T17:03:00+08:00",
+      "accessed_at": "2026-11-20T05:58:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "China tightens export controls on components for Russian drones",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/china-tightens-export-controls-on-components-for-russian-drones/",
+      "language": "en",
+      "published_at": "2026-11-20T03:41:00+08:00",
+      "accessed_at": "2026-11-20T05:58:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Estonian PM warns Europe against falling for 'security' talks with Russia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610200870/estonian-pm-warns-europe-against-falling-for-security-talks-with-russia",
+      "language": "en",
+      "published_at": "2026-11-20T00:51:00+08:00",
+      "accessed_at": "2026-11-20T05:58:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "«Катализатор — ваш дедушка Путин»: Парламент Молдовы ратифицировал соглашение с Украиной («The catalyst is your grandpa Putin»: Moldova's parliament ratifies agreement with Ukraine, translated)",
+      "outlet": "NewsMaker (Moldova)",
+      "category": "eu_regional_press",
+      "url": "https://newsmaker.md/ru/katalizator-vash-dedushka-putin-parlament-moldovy-ratificziroval-soglashenie-s-ukrainoi-na-fone-kritiki-oppoziczii",
+      "language": "ru",
+      "published_at": "2026-11-20T00:59:00+08:00",
+      "accessed_at": "2026-11-20T05:58:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Нанесены удары по объектам портовой инфраструктуры и морским судам (Strikes on port infrastructure and ships used by Ukraine's forces, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69156",
+      "language": "ru",
+      "published_at": "2026-11-20T00:18:00+08:00",
+      "accessed_at": "2026-11-20T06:03:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "На зустрічі Коаліції були сьогодні наші американські партнери – Стів Віткофф і Джаред Кушнер (Our American partners Steve Witkoff and Jared Kushner attended the Coalition meeting today, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21901",
+      "language": "uk",
+      "published_at": "2026-11-20T02:24:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Ambasadele Olandei și Austriei din Kiev au fost avariate (Dutch and Austrian embassies in Kyiv damaged, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ambasada-olandei-din-kiev-a-fost-avariata-in-urma-unui-atac-cu-drone-asupra-capitalei-ucrainei-4044469",
+      "language": "ro",
+      "published_at": "2026-11-20T01:38:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Drone fragments discovered in a field in Neamț",
+      "outlet": "Informat.ro",
+      "category": "eu_regional_press",
+      "url": "https://informat.ro/en/current-affairs/drone-fragments-discovered-in-a-field-in-neamt-146988",
+      "language": "en",
+      "published_at": null,
+      "accessed_at": "2026-11-20T06:03:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Russian drone damages Dutch Embassy building in Kyiv during attack – photo",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/19/8063652/",
+      "language": "en",
+      "published_at": "2026-11-19T22:37:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "NATO drone loses contact with base over Black Sea for fifth time this year — source",
+      "outlet": "TASS",
+      "category": "ru_state_media",
+      "url": "https://tass.com/world/2222101",
+      "language": "en",
+      "published_at": "2026-11-20T05:05:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Russian drone attack kills one in Kyiv and damages Dutch Embassy just after APEC summit ends",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/19/russian-drone-attack-kills-one-in-kyiv-and-damages-dutch-embassy-just-after-apec-summit-ends",
+      "language": "en",
+      "published_at": "2026-11-20T00:43:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Выступление М.И.Ульянова на сессии Совета управляющих МАГАТЭ (Ulyanov's statement to the IAEA Board of Governors, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96553",
+      "language": "ru",
+      "published_at": "2026-11-20T05:01:00+08:00",
+      "accessed_at": "2026-11-20T05:53:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Wadephul: 'Coalition of the Willing' talks in Berlin send strong signal to Moscow",
+      "outlet": "DW",
+      "category": "intl_press",
+      "url": "https://www.dw.com/en/wadephul-coalition-of-the-willing-talks-in-berlin-send-strong-signal-to-moscow/a-79990664?maca=en-rss-en-eu-2092-rdf",
+      "language": "en",
+      "published_at": "2026-11-19T21:56:00+08:00",
+      "accessed_at": "2026-11-20T06:05:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-20T05:41:52+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 14.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 1,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1849,
+    "source_count": 21,
+    "source_category_count": 7
+  }
+}

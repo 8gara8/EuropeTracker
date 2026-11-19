@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-19",
+  "as_of": "2026-11-20",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -28,7 +28,7 @@
         "confidence": "low"
       },
       "impact": 3,
-      "trend": "up"
+      "trend": "flat"
     },
     {
       "pathway": "maritime",

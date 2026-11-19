@@ -226,7 +226,13 @@
       "base_rate": 10,
       "base_rate_note": "No general ceasefire in 56 months of war despite repeated talks; partial truces (energy, local, IAEA-brokered) have not held.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-20",
+          "probability": 10,
+          "note": "Putin ruled out even partial energy and Black Sea truces on 19 November, though Europe now joins the talks format."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -458,12 +464,18 @@
           "note": "Thirteen days on, we have found no Romanian official statement identifying the Boghicea fragments, and the deadline is 20 November."
         }
       ],
-      "status": "open",
-      "resolved_on": null,
-      "resolution_note": null,
-      "resolution_source": null,
-      "brier": null,
-      "brier_base": null
+      "status": "resolved_no",
+      "resolved_on": "2026-11-20",
+      "resolution_note": "By the 20 November deadline, we found no Romanian official statement identifying the Boghicea fragments. Reporting says authorities had not disclosed the drone's origin.",
+      "resolution_source": {
+        "title": "Drone fragments discovered in a field in Neamț",
+        "outlet": "Informat.ro",
+        "category": "eu_regional_press",
+        "url": "https://informat.ro/en/current-affairs/drone-fragments-discovered-in-a-field-in-neamt-146988",
+        "published_at": null
+      },
+      "brier": 0.0625,
+      "brier_base": 0.4225
     },
     {
       "id": "F-2026-019",
@@ -632,12 +644,18 @@
           "note": "Trump has landed in China, and the Moscow Times reports the three leaders are due to meet on Thursday."
         }
       ],
-      "status": "open",
-      "resolved_on": null,
-      "resolution_note": null,
-      "resolution_source": null,
-      "brier": null,
-      "brier_base": null
+      "status": "resolved_yes",
+      "resolved_on": "2026-11-20",
+      "resolution_note": "Russia's Foreign Ministry relayed Putin's Shenzhen press conference describing the trilateral meeting with the leaders of China and the US on 19 November.",
+      "resolution_source": {
+        "title": "Пресс-конференция Президента России В.В.Путина по итогам визита в Китай (Putin's press conference after his visit to China, Shenzhen, 19 November 2026, translated)",
+        "outlet": "Russian Foreign Ministry (Telegram)",
+        "category": "ru_gov",
+        "url": "https://t.me/MID_Russia/96543",
+        "published_at": "2026-11-20T01:14:00+08:00"
+      },
+      "brier": 0.01,
+      "brier_base": 0.36
     },
     {
       "id": "F-2026-027",
@@ -675,7 +693,13 @@
       "base_rate": 60,
       "base_rate_note": "Reported hits inside or at the edge of Romanian waters came on 15 October, 13 November and 14 November, about 1.5 a month. Raised for the November surge near Sulina.",
       "opened": "2026-11-16",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-20",
+          "probability": 75,
+          "note": "Putin rejected a Black Sea truce and vowed a \"more painful\" response to the Kerch strikes; Odesa-bound shipping is the likeliest target."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -757,6 +781,25 @@
       "base_rate": 15,
       "base_rate_note": "Disrupted plots in Poland often end in arrests within weeks, but none crossed the border here and the planners appear to be in Russia. Raised slightly because Poland announces sabotage detentions about monthly.",
       "opened": "2026-11-19",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-033",
+      "question": "Will Russia and Ukraine both announce a truce on attacks against Black Sea commercial shipping by 31 December 2026?",
+      "resolution_criteria": "Yes if both governments announce, between 20 November and 31 December 2026, an agreed halt to attacks on merchant shipping or ports in the Black Sea that takes effect in that period.",
+      "resolves_by": "2026-12-31",
+      "horizon": "90d",
+      "pathway": "maritime",
+      "probability": 5,
+      "base_rate": 10,
+      "base_rate_note": "The only Black Sea deal, the 2022 grain corridor, lasted a year, and the 2025 proposals never took effect. Lowered because Putin explicitly ruled out Black Sea truce talks on 19 November.",
+      "opened": "2026-11-20",
       "updates": [],
       "status": "open",
       "resolved_on": null,
