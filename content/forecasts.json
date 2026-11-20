@@ -12,7 +12,13 @@
       "base_rate": 5,
       "base_rate_note": "One deadly case on NATO land since February 2022 (Przewodów, a Ukrainian interceptor), about 5% over 90 days; raised for record incursion tempo and recent blasts near homes in Galați.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-21",
+          "probability": 20,
+          "note": "Two Kh-101s crashed in Poland on 20 November; one landed several hundred metres from buildings. It is the second Kh-101 in Poland since July."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -188,7 +194,13 @@
       "base_rate": 25,
       "base_rate_note": "Article 4 was invoked three times since February 2022 (February 2022, and by Poland and Estonia in September 2025), about 25% over six months.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-21",
+          "probability": 35,
+          "note": "Poland asked allies for AWACS and F-35s after two Kh-101s crashed, but did not request Article 4. Tusk calls it a provocation."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -437,6 +449,11 @@
           "date": "2026-11-18",
           "probability": 75,
           "note": "Moldova's Defence Ministry recorded seven drones on 17 November, which brings the November count close to 10, with 13 days remaining."
+        },
+        {
+          "date": "2026-11-21",
+          "probability": 90,
+          "note": "Two more Moldovan drone entries on 20 November take our November count to about 11, pending a ministry tally."
         }
       ],
       "status": "open",
@@ -507,7 +524,13 @@
       "base_rate": 70,
       "base_rate_note": "Poland announced such cases on 5 and 10 November 2026 and several times in autumn 2025, about monthly or more. Raised slightly for the mid-November threat period Tusk cited.",
       "opened": "2026-11-11",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-21",
+          "probability": 90,
+          "note": "Prosecutors confirmed charges against two Ukrainians acting for Russian intelligence, announced about 19 November. We are checking the detention dates before resolving."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -673,6 +696,11 @@
           "date": "2026-11-17",
           "probability": 85,
           "note": "Estonia's Foreign Ministry confirmed again on 16 November that road crossings close to vehicles and pedestrians on 1 December; the interior minister says preparations are under way."
+        },
+        {
+          "date": "2026-11-21",
+          "probability": 95,
+          "note": "The government formally decided on 20 November to close Narva-1, Narva-2, Koidula, Luhamaa and Saatse from 07:00 on 1 December."
         }
       ],
       "status": "open",
@@ -762,7 +790,13 @@
       "base_rate": 65,
       "base_rate_note": "Moldova reported a record 19 violations in October. November drone entries came on about three days to the 17th (4, 12 and 17 November). Raised slightly for likely Russian retaliation on Odesa after Kerch.",
       "opened": "2026-11-18",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-21",
+          "probability": 80,
+          "note": "Moldova reported two drone entries on 20 November, the first qualifying day in the window. Two more days are needed."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -800,6 +834,44 @@
       "base_rate": 10,
       "base_rate_note": "The only Black Sea deal, the 2022 grain corridor, lasted a year, and the 2025 proposals never took effect. Lowered because Putin explicitly ruled out Black Sea truce talks on 19 November.",
       "opened": "2026-11-20",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-034",
+      "question": "Will Polish authorities report a Russian missile or drone entering Polish airspace on a date between 21 November and 20 December 2026?",
+      "resolution_criteria": "Yes if Poland's Operational Command, defence ministry, prime minister or prosecutors state that a Russian missile or drone entered Polish airspace on a date between 21 November and 20 December 2026.",
+      "resolves_by": "2026-12-21",
+      "horizon": "30d",
+      "pathway": "airspace",
+      "probability": 45,
+      "base_rate": 35,
+      "base_rate_note": "Russian missiles or drones entered Polish airspace on 30 July and 20 November 2026, about one case every two months, or roughly 35% over 30 days. Raised for winter mass raids routed over western Ukraine.",
+      "opened": "2026-11-21",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-035",
+      "question": "Will Denmark announce a suspension of Schengen visa issuance to Russian nationals by 31 January 2027?",
+      "resolution_criteria": "Yes if the Danish government or foreign ministry announces, between 21 November 2026 and 31 January 2027, that Denmark suspends or stops issuing Schengen visas to Russian nationals, in general or for most categories.",
+      "resolves_by": "2027-01-31",
+      "horizon": "90d",
+      "pathway": null,
+      "probability": 25,
+      "base_rate": 10,
+      "base_rate_note": "Few EU states have unilaterally halted visas for Russians since the 2022 restrictions. Raised because Løkke Rasmussen said Denmark is weighing exactly this after the plot.",
+      "opened": "2026-11-21",
       "updates": [],
       "status": "open",
       "resolved_on": null,

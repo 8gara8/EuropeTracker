@@ -2628,6 +2628,43 @@
       "seed": false,
       "added": "2026-11-20",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0079",
+      "date": "2026-11-19",
+      "target_name": "Dorogobuzh chemical (nitrogen fertiliser) plant",
+      "target_type": "defence_industry",
+      "region": "Smolensk Oblast",
+      "occupied_territory": false,
+      "lat": 54.91,
+      "lon": 33.3,
+      "distance_km": 290,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukrainian drones struck the Dorogobuzh plant overnight into 20 November, according to Astra and monitoring channels reported by Meduza and The Moscow Times. Eyewitness footage suggests a fire. The plant makes about 11% of Russia's ammonium nitrate and components for explosives. No Russian official confirmation found.",
+      "sources": [
+        {
+          "title": "Ukrainian drones hit Russian fertilizer plant that also makes components for explosives",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/20/ukrainian-drones-hit-russian-fertilizer-plant-that-also-makes-components-for-explosives",
+          "published_at": "2026-11-20T14:56:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drones Target Smolensk Region Fertilizer Plant",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/20/ukrainian-drones-target-smolensk-region-fertilizer-plant-a94325",
+          "published_at": "2026-11-20T18:05:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-21",
+      "updated": null
     }
   ]
 }

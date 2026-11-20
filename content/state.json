@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-21",
   "ladder": {
     "current_rung": 4,
     "next_rung_odds": {
@@ -13,22 +13,22 @@
     {
       "pathway": "airspace",
       "serious_odds": {
-        "probability": 15,
+        "probability": 20,
         "term": "highly_unlikely",
         "confidence": "moderate"
       },
       "impact": 3,
-      "trend": "flat"
+      "trend": "up"
     },
     {
       "pathway": "sabotage",
       "serious_odds": {
-        "probability": 30,
+        "probability": 35,
         "term": "unlikely",
         "confidence": "low"
       },
       "impact": 3,
-      "trend": "flat"
+      "trend": "up"
     },
     {
       "pathway": "maritime",
