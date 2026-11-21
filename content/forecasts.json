@@ -106,7 +106,13 @@
       "base_rate": 60,
       "base_rate_note": "Seven Russian aircraft violations of Estonian or Finnish airspace from May 2025 to August 2026, about 0.3 a month, or 60% over 90 days.",
       "opened": "2026-11-02",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-22",
+          "probability": 85,
+          "note": "Finland's defence ministry suspects a Russian helicopter flew 4.1 km into Finnish airspace off Loviisa on 21 November. It resolves yes if the violation is confirmed."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -454,6 +460,11 @@
           "date": "2026-11-21",
           "probability": 90,
           "note": "Two more Moldovan drone entries on 20 November take our November count to about 11, pending a ministry tally."
+        },
+        {
+          "date": "2026-11-22",
+          "probability": 95,
+          "note": "Moldova's ministry reported a jet drone crossing twice on 21 November; TRUmedia counts ten aerial incidents from 14 to 20 November."
         }
       ],
       "status": "open",
@@ -795,6 +806,11 @@
           "date": "2026-11-21",
           "probability": 80,
           "note": "Moldova reported two drone entries on 20 November, the first qualifying day in the window. Two more days are needed."
+        },
+        {
+          "date": "2026-11-22",
+          "probability": 90,
+          "note": "Ministry-reported drone entries on 20 and 21 November make two qualifying days. One more is needed by 17 December."
         }
       ],
       "status": "open",
@@ -872,6 +888,25 @@
       "base_rate": 10,
       "base_rate_note": "Few EU states have unilaterally halted visas for Russians since the 2022 restrictions. Raised because Løkke Rasmussen said Denmark is weighing exactly this after the plot.",
       "opened": "2026-11-21",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-036",
+      "question": "Will Finnish or Estonian authorities report a drone or missile strike on a vessel in the Gulf of Finland between 22 November and 21 December 2026?",
+      "resolution_criteria": "Yes if Finland's or Estonia's defence forces, border guard or government report a drone or missile hitting a vessel in the Gulf of Finland on a date between 22 November and 21 December 2026.",
+      "resolves_by": "2026-12-22",
+      "horizon": "30d",
+      "pathway": "maritime",
+      "probability": 60,
+      "base_rate": 60,
+      "base_rate_note": "Finland reported strikes on Russian vessels in the Gulf of Finland on 11 and 21 November 2026, and none earlier that we know of. On that short record, the rate is about two a month.",
+      "opened": "2026-11-22",
       "updates": [],
       "status": "open",
       "resolved_on": null,

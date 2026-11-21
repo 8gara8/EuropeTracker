@@ -1,0 +1,927 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-22",
+  "window": {
+    "start": "2026-11-21T05:30:00+08:00",
+    "end": "2026-11-22T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-22T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Drone-struck Russian ship drifts into Finnish waters; Russian helicopter suspected in Finnish airspace; rung eases to 3",
+  "bottom_line": "Spillover risk eases to rung 3 (overt military incidents, no deaths), because October's deadly drone strike on a ship off Romania has left the 30-day window and no new incident replaces it. The tension moved to the Gulf of Finland. Drones, which Finland's Defence Forces believe were most likely Ukrainian, set the Russian cargo ship Sparta II on fire, and it drifted into Finnish waters. Finland suspects a Russian helicopter then flew 4.1 km into its airspace. A jet drone crossed into Moldova twice. Russia launched 148 drones and three ballistic missiles at Ukraine overnight. A return to rung 4 within 30 days is unlikely (35%).",
+  "bottom_line_source_ids": [
+    "s10",
+    "s11",
+    "s1",
+    "s7"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 4,
+      "next_rung_odds": {
+        "probability": 35,
+        "term": "unlikely",
+        "confidence": "low"
+      },
+      "rationale": "The computed rung is 3. INC-2026-0110, 0111 and 0114 are the highest-rung incidents in the last 30 days, and October's deadly ship strike off Romania has aged out. We log no new incident today. Rung 4 needs deaths or a deliberate strike. Ship attacks off Romania and stray missiles over Poland make that unlikely (35%)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Three logged incidents in 30 days against a baseline of 14 a month, an undercount of unlogged Polish and Moldovan cases. No serious incident in 12 months. Held after the Moldovan drone and the suspected Finnish helicopter violation.",
+        "source_ids": [
+          "s7",
+          "s8"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days against a baseline of 1.7 a month, and one serious incident in 12 months. Held: we found no new plot in the window after the Danish and Polish cases.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No logged incidents in 30 days against a baseline of 2 a month, but 12 serious incidents in 12 months, mostly Black Sea ship hits. Sparta II was struck in Russian waters, so the score is held.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No logged incidents in 30 days against a baseline of 0.7 a month, and no serious incident in 12 months. We found nothing new in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No logged incidents in 30 days and a baseline of zero. Russian rescue or escort activity near Finnish waters adds encounter risk, not border-crossing intent.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "One plant-safety incident in 30 days against a baseline of 0.3 a month. We found no new IAEA report or readiness change in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No logged incidents in 30 days against a baseline of 0.3 a month. We found no new exposed operation in the window.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. A Russian helicopter is suspected of violating Finnish airspace off Loviisa, a drone-struck Russian ship is burning in Finnish waters, and the active GPS interference indicator names Finland.",
+        "source_ids": [
+          "s7",
+          "s3"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 4,
+        "reason": "Lowered to the floor. October's deadly ship strike, the basis for High, has left the 30-day window. INC-2026-0110 keeps Romania at Elevated, and attacks on Black Sea shipping continue.",
+        "source_ids": [
+          "s21"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Drone-struck Russian cargo ship Sparta II burns and drifts into Finnish waters off Loviisa",
+      "summary": "Two drones hit the Kaliningrad-bound Sparta II in the eastern Gulf of Finland. It caught fire, lost power and drifted into Finnish waters off Loviisa, and the crew was evacuated to a Russian vessel. Finland's Defence Forces believe Ukraine was most likely behind the strike. Prime Minister Orpo said the war is spilling into Finland's neighbourhood, and Häkkänen called it a step in a more serious direction.",
+      "category": "maritime",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0080"
+      ],
+      "verification": 2,
+      "attribution": null,
+      "russian_framing": "TASS relays Governor Drozdenko saying the ship was hit in international waters and that an evacuation was not needed. Yle reports that state media played the strike down, while a milblogger blamed NATO.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s24",
+        "s25"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Finland suspects a Russian helicopter flew 4.1 km into its airspace off Loviisa",
+      "summary": "Finland's defence ministry said a Russian helicopter is suspected of violating Finnish airspace off Loviisa at 12:34 on 21 November, reaching 4.1 km inside. Häkkänen linked it to rescue or tracking of the damaged ship. The Border Guard is investigating. We do not log it until the violation is confirmed, as with the 11 November drone case.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s7",
+        "s6",
+        "s2"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Jet-powered drone crosses into south-east Moldova twice in 12 minutes",
+      "summary": "Moldova's defence ministry, as reported by NewsMaker and IPN, said a jet drone entered from Troitske towards Purcari at 11:20, left at 11:25, re-entered at 11:31 and left at 11:32. No debris was reported. We could not open the ministry's own text, so we do not log the incident yet.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Russia launches 148 drones and three ballistic missiles; two killed in Kryvyi Rih",
+      "summary": "Ukraine's General Staff said Russia launched three ballistic missiles and 148 drones, 87 of them jet-powered, overnight into 21 November, and that 117 drones were downed or suppressed. The Kyiv Independent reports two people killed and 58 injured in Kryvyi Rih. Russia's Defence Ministry claimed hits on energy sites and on ships it says serve Ukraine's forces.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry says its strikes hit energy facilities and vessels \"used in the interests of the Ukrainian armed forces\" (translated).",
+      "source_ids": [
+        "s10",
+        "s11",
+        "s22",
+        "s12"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Kaliningrad drone alert blamed on an object from Lithuania; unverified explosions near Baltiysk",
+      "summary": "Governor Besprozvannykh said an object approaching from Lithuania triggered a drone alert in Neman district, then said there was no threat. Astra reported air-defence activity over Baltiysk and flight limits at Khrabrovo. The Kyiv Independent could not verify the reported explosions near the Baltic Fleet base. Lithuania has not commented.",
+      "category": "military_pressure",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS relays the governor's claim that the object came from Lithuania. This echoes Russian claims, which Vilnius has called disinformation, that Lithuania lets Ukrainian drones through.",
+      "source_ids": [
+        "s13",
+        "s14",
+        "s15",
+        "s27"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "ISW judges Poland's missile crashes deliberate; Polish defence minister says the attack 'was not accidental'",
+      "summary": "Digi24 reports ISW's assessment that Russia deliberately sent two missiles and a drone into Poland to test NATO during Coalition of the Willing drills. Kosiniak-Kamysz says the attack was not accidental. Rutte pledged that NATO will defend every centimetre of Polish territory. Poland has still not requested Article 4 consultations.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s16",
+        "s17",
+        "s26"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "UK and Ukraine agree to produce Ukrainian mid-range and deep-strike drones in Britain",
+      "summary": "Ukraine's Defence Minister Khmara and UK Defence Secretary Streeting signed project agreements in Kyiv to build Ukrainian mid-range and deep-strike drones in the UK, with UK funding, Ukrainska Pravda reports. Zelensky said new joint steps in defence cooperation are being prepared.",
+      "category": "resolve",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s18",
+        "s19"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Drones crippled the military-linked cargo ship Sparta II in the Gulf of Finland, about 950 km from Ukrainian-held territory (STR-2026-0080). Russia's Defence Ministry said 47 drones were downed over regions including Leningrad and Pskov. Reports of explosions near Baltiysk are unverified. Britain will fund production of Ukrainian deep-strike drones.",
+      "development_ids": [
+        "d1",
+        "d5",
+        "d7"
+      ],
+      "source_ids": [
+        "s1",
+        "s5",
+        "s23",
+        "s13",
+        "s18"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Overnight into 21 November, Russia launched 148 drones, 87 of them jet-powered, and three ballistic missiles; 117 drones were downed. Two people were killed in Kryvyi Rih. Russia's Defence Ministry claims hits on energy sites and on ships serving Ukraine.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Finland suspects a Russian helicopter flew 4.1 km into its airspace off Loviisa. A jet drone crossed into Moldova twice. Estonia issued and then lifted a drone warning for two north-eastern counties, and no entry has been confirmed. Kaliningrad blamed a drone alert on an object from Lithuania.",
+      "development_ids": [
+        "d2",
+        "d3",
+        "d5"
+      ],
+      "source_ids": [
+        "s7",
+        "s8",
+        "s20",
+        "s15"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Sparta II is burning and at anchor in Finnish waters off Loviisa with its engines out. The Border Guard says the fire may last days or weeks and that the cargo, possibly explosive, is unknown. Estonia sent a vessel to help, and Finland reimposed air and sea restrictions in the eastern Gulf.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s3",
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Rutte pledged that NATO will defend every centimetre of Poland. Stubb said he had informed key partners and allies about Sparta II. Britain and Ukraine signed deals to produce Ukrainian long-range drones in the UK. Poland has still not requested Article 4 consultations.",
+      "development_ids": [
+        "d6",
+        "d7"
+      ],
+      "source_ids": [
+        "s17",
+        "s3",
+        "s18",
+        "s19"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0080",
+      "date": "2026-11-21",
+      "target_name": "Cargo ship Sparta II (Kaliningrad-bound, military-linked)",
+      "target_type": "other",
+      "region": "Leningrad Oblast (Gulf of Finland)",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 950,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Drozdenko said two drones hit the Kaliningrad-bound ship west of Gogland on 21 November. It caught fire and drifted into Finnish waters off Loviisa, and the crew was evacuated. Finland's Defence Forces believe Ukraine was most likely responsible; Ukraine has not claimed it.",
+      "sources": [
+        {
+          "title": "Главные новости к этому часу: В Финском заливе БПЛА атаковали судно, следовавшее в Калининград (Top news: drones attacked a Kaliningrad-bound ship in the Gulf of Finland, translated)",
+          "outlet": "TASS (Telegram)",
+          "category": "ru_state_media",
+          "url": "https://t.me/tass_agency/407004",
+          "published_at": "2026-11-22T01:01:00+08:00"
+        },
+        {
+          "title": "Russia Says Cargo Vessel Struck by Drones in Gulf of Finland",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/21/russia-says-cargo-vessel-struck-by-drones-in-gulf-of-finland-a94342",
+          "published_at": "2026-11-21T19:50:00+08:00"
+        },
+        {
+          "title": "Finland confirms Ukraine attacked ship linked to Russian military",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/21/8063980/",
+          "published_at": "2026-11-21T23:37:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-22",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that 30-day spillover risk is broadly unchanged, although the rung falls from 4 to 3. The drop is mechanical. October's deadly drone strike on a ship off Romania is now more than 30 days old, and nothing dated in the window replaces it. We log no new incident today. Moldova's defence ministry reported a jet drone crossing twice near Purcari, but we could not open the ministry's own text, which is the standard we have applied all month. The same applies to Poland's 20 November Kh-101s. Airspace therefore stays at three logged incidents in 30 days against a 90-day baseline of 14 a month. We flag that undercount rather than lower the standard.\n\nThe Gulf of Finland is the day's most important development. TASS relays Leningrad governor Drozdenko saying two drones hit Sparta II about three nautical miles from Russia's border. Finland's Border Guard says the ship drifted into Finnish waters off Loviisa, where it is still burning. Finland's Defence Forces believe Ukraine was most likely behind the strike. It is a Ukrainian strike, not Russian hostile activity, so under our rules it is not a spillover incident. The spillover risk lies in what followed. Finland's defence ministry suspects a Russian helicopter flew 4.1 km into Finnish airspace, probably during rescue or escort work. Defence Minister Häkkänen called the strikes \"a step in a more serious direction\" (translated). We assess that an unplanned crossing during the rescue is likelier than a deliberate probe (likely, 70%). If Russia escorts Kaliningrad-bound ships through these narrow waters, the chance of naval or air encounters near Finland and Estonia rises. We hold maritime at likely (70%) and raise F-2026-005 to 85%.\n\nKaliningrad's governor said an object approaching from Lithuania set off a drone alert, and monitoring channels reported explosions near Baltiysk. Neither claim is verified. The governor's claim fits a Russian narrative that Lithuania lets Ukrainian drones through, which Vilnius calls disinformation.\n\nISW assesses that the Polish crashes were deliberate, and Kosiniak-Kamysz says the attack \"was not accidental\" (translated). That strains A1, but no Polish official has said Poland itself was the target, so A1 holds. All five assumptions hold.",
+    "change_my_mind": "We would raise our estimates if the Border Guard finds the helicopter flew well away from the rescue area, if Russian naval escorts enter Finnish or Estonian waters, or if Poland or Moldova confirm injuries. A week without Baltic strikes or incursions would lower them.",
+    "competing_explanations": [
+      {
+        "subject": "Russian helicopter suspected over Loviisa, 21 November",
+        "hypotheses": [
+          {
+            "label": "Unplanned crossing during rescue or escort of Sparta II",
+            "assessment": "The ship drifted into Finnish waters off Loviisa, and Häkkänen linked the flight to rescue or tracking work. A 4.1 km depth fits a helicopter shadowing a drifting vessel.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "moderate"
+            }
+          },
+          {
+            "label": "Deliberate probe exploiting the incident",
+            "assessment": "Russia has used incidents to test Finnish responses before, as off Loviisa in June 2024. A rescue would offer cover, but we have seen no sign of intent.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Navigation error unrelated to the ship",
+            "assessment": "The timing and location, close to the drifting ship, make an unrelated error improbable.",
+            "estimate": {
+              "probability": 5,
+              "term": "remote",
+              "confidence": "moderate"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-036",
+      "question": "Will Finnish or Estonian authorities report a drone or missile strike on a vessel in the Gulf of Finland between 22 November and 21 December 2026?",
+      "resolution_criteria": "Yes if Finland's or Estonia's defence forces, border guard or government report a drone or missile hitting a vessel in the Gulf of Finland on a date between 22 November and 21 December 2026.",
+      "resolves_by": "2026-12-22",
+      "horizon": "30d",
+      "pathway": "maritime",
+      "probability": 60,
+      "base_rate": 60,
+      "base_rate_note": "Finland reported strikes on Russian vessels in the Gulf of Finland on 11 and 21 November 2026, and none earlier that we know of. On that short record, the rate is about two a month."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-005",
+      "probability": 85,
+      "note": "Finland's defence ministry suspects a Russian helicopter flew 4.1 km into Finnish airspace off Loviisa on 21 November. It resolves yes if the violation is confirmed."
+    },
+    {
+      "id": "F-2026-017",
+      "probability": 95,
+      "note": "Moldova's ministry reported a jet drone crossing twice on 21 November; TRUmedia counts ten aerial incidents from 14 to 20 November."
+    },
+    {
+      "id": "F-2026-031",
+      "probability": 90,
+      "note": "Ministry-reported drone entries on 20 and 21 November make two qualifying days. One more is needed by 17 December."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct lesson is military. A drone strike about 950 km from Ukrainian-held territory crippled a military-linked cargo ship in a narrow, busy sea, and the burning hulk drifted into a neighbouring state's waters. That is how a Taiwan Strait conflict could spill into Japanese or Philippine waters and draw third parties in through rescue and escort operations. Britain's deal to build Ukrainian mid-range and deep-strike drones with UK funding moves long-range strike production outside US supply lines. Over months, that should slightly ease European demand on US munitions that Taiwan also needs. We see no change today in US air-defence allocations or in China's support for Russia's war economy.",
+  "next_72h": [
+    {
+      "date": "2026-11-23",
+      "event": "Salvage or towing of the burning Sparta II from Finnish waters off Loviisa",
+      "why": "The ship's cargo, possibly explosive, is unknown, and Russian rescue craft are operating close to Finnish waters."
+    },
+    {
+      "date": "2026-11-23",
+      "event": "Finnish Border Guard findings on the suspected Russian helicopter violation",
+      "why": "Confirmation would resolve F-2026-005 and log a rung-3 incident that lifts Finland's floor to 3."
+    },
+    {
+      "date": "2026-11-24",
+      "event": "Moldovan defence ministry reporting on further drone entries",
+      "why": "One more day of entries resolves F-2026-031, and an official text would let us log the incursions."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 148,
+      "unit": "count",
+      "period": "night of 20–21 Nov",
+      "source_ids": [
+        "s11",
+        "s10"
+      ],
+      "note": "87 of them jet-powered, per Ukraine's Air Force."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 117,
+      "unit": "count",
+      "period": "night of 20–21 Nov",
+      "source_ids": [
+        "s11",
+        "s10"
+      ],
+      "note": "Includes 67 jet-powered drones."
+    },
+    {
+      "id": "ru_missiles_launched",
+      "value": 3,
+      "unit": "count",
+      "period": "night of 20–21 Nov",
+      "source_ids": [
+        "s11",
+        "s10"
+      ],
+      "note": "Iskander-M/KN-23/S-400 ballistic missiles."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Russia Says Cargo Vessel Struck by Drones in Gulf of Finland",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/21/russia-says-cargo-vessel-struck-by-drones-in-gulf-of-finland-a94342",
+      "language": "en",
+      "published_at": "2026-11-21T19:50:00+08:00",
+      "accessed_at": "2026-11-22T05:50:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Finland confirms Ukraine attacked ship linked to Russian military",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/21/8063980/",
+      "language": "en",
+      "published_at": "2026-11-21T23:37:00+08:00",
+      "accessed_at": "2026-11-22T05:50:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Presidentti Stubb: Tapahtumat Sparta II -aluksella ovat vakavia (President Stubb: the events on the Sparta II are serious, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20258284?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-21T22:51:00+08:00",
+      "accessed_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Suomenlahdella tapahtuneet iskut ovat askel vaarallisempaan suuntaan, sanoo Häkkänen (Gulf of Finland strikes a step in a more dangerous direction, says Häkkänen, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20258297?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-22T01:58:00+08:00",
+      "accessed_at": "2026-11-22T05:55:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Главные новости к этому часу (Top news at this hour, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407004",
+      "language": "ru",
+      "published_at": "2026-11-22T01:01:00+08:00",
+      "accessed_at": "2026-11-22T05:55:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Venäläisen helikopterin epäillään loukanneen Suomen ilmatilaa (A Russian helicopter is suspected of violating Finnish airspace, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20258277?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-21T21:39:00+08:00",
+      "accessed_at": "2026-11-22T05:52:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Venäläisen helikopterin epäillään loukanneen Suomen ilmatilaa (A Russian helicopter is suspected of violating Finnish airspace, translated)",
+      "outlet": "Finnish Ministry of Defence",
+      "category": "eu_gov_security",
+      "url": "https://defmin.fi/-/venalaisen-helikopterin-epaillaan-loukanneen-suomen-ilmatilaa",
+      "language": "fi",
+      "published_at": "2026-11-21",
+      "accessed_at": "2026-11-22T05:58:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "В минобороны Молдовы сообщили, что реактивный беспилотник дважды нарушил воздушное пространство страны (Moldova's defence ministry says a jet drone twice violated the country's airspace, translated)",
+      "outlet": "NewsMaker",
+      "category": "eu_regional_press",
+      "url": "https://newsmaker.md/ru/v-minoborony-moldovy-soobshili-chto-reaktivnyi-bespilotnik-dvajdy-narushil-vozdushnoe-prostranstvo-strany",
+      "language": "ru",
+      "published_at": "2026-11-21T18:45:00+08:00",
+      "accessed_at": "2026-11-22T05:48:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "O dronă cu propulsie reactivă a încălcat de două ori spațiul aerian al Republicii Moldova (A jet-powered drone twice violated Moldova's airspace, translated)",
+      "outlet": "IPN",
+      "category": "eu_regional_press",
+      "url": "https://ipn.md/o-drona-cu-propulsie-reactiva-a-incalcat-de-doua-ori-spatiul-aerian-al-republicii-moldova",
+      "language": "ro",
+      "published_at": "2026-11-21",
+      "accessed_at": "2026-11-22T05:57:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Russian attacks kill at least 2, injure 83 across Ukraine, as strikes devastate Kryvyi Rih",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russian-attacks-kill-at-least-2-injure-83-across-ukraine-as-strikes-devastate-kryvyi-rih/",
+      "language": "en",
+      "published_at": "2026-11-21T16:58:00+08:00",
+      "accessed_at": "2026-11-22T06:02:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "ЗБИТО/ПОДАВЛЕНО 117 ВОРОЖИХ ЦІЛЕЙ (117 enemy targets shot down or suppressed, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42962",
+      "language": "uk",
+      "published_at": "2026-11-21T14:47:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Нанесены удары по объектам энергетики, а также морским судам (Strikes on energy facilities and ships, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69216",
+      "language": "ru",
+      "published_at": "2026-11-21T23:27:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Explosions reported near Russian Baltic Fleet base in Kaliningrad Oblast amid drone alerts",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/explosions-reported-near-russian-baltic-fleet-base-in-kaliningrad-oblast-amid-drone-alerts/",
+      "language": "en",
+      "published_at": "2026-11-22T03:01:00+08:00",
+      "accessed_at": "2026-11-22T05:48:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Кадры работы ПВО над Балтийском в Калининградской области (Footage of air defence over Baltiysk, Kaliningrad Oblast, translated)",
+      "outlet": "ASTRA (Telegram)",
+      "category": "ru_by_independent",
+      "url": "https://t.me/astrapress/131822",
+      "language": "ru",
+      "published_at": "2026-11-22T04:12:00+08:00",
+      "accessed_at": "2026-11-22T06:02:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "\"Беспилотная опасность\" в Калининградской области из-за объекта со стороны Литвы (Kaliningrad drone alert over an object from Lithuania, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407006",
+      "language": "ru",
+      "published_at": "2026-11-22T01:38:00+08:00",
+      "accessed_at": "2026-11-22T05:55:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Rusia a încălcat intenționat spațiul aerian al Poloniei. Ce ar fi urmărit Moscova prin această provocare (ISW) (Russia deliberately violated Poland's airspace: what Moscow sought, ISW, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/rusia-a-incalcat-intentionat-spatiul-aerian-al-poloniei-ce-ar-fi-urmarit-moscova-prin-aceasta-provocare-isw-4046935",
+      "language": "ro",
+      "published_at": "2026-11-21T16:48:00+08:00",
+      "accessed_at": "2026-11-22T06:03:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Rutte: NATO va apăra fiecare centimetru din teritoriul Poloniei, după încălcarea spaţiului aerian de către Rusia (Rutte: NATO will defend every centimetre of Poland's territory, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/rutte-nato-va-apara-fiecare-centimetru-din-teritoriul-poloniei-dupa-incalcarea-spatiului-aerian-de-catre-rusia-pot-garanta-4047207",
+      "language": "ro",
+      "published_at": "2026-11-21T23:11:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Ukrainian mid- and long-range strike drones to be produced in UK",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/21/8063992/",
+      "language": "en",
+      "published_at": "2026-11-22T02:46:00+08:00",
+      "accessed_at": "2026-11-22T06:02:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Провели хорошу й продуктивну зустріч із міністром оборони Британії Весом Стрітінгом у Києві (A good and productive meeting with UK Defence Secretary Wes Streeting in Kyiv, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21934",
+      "language": "uk",
+      "published_at": "2026-11-21T20:23:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Defense Forces issue, lift drone threat warning for northeast Estonia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610202574/defense-forces-issue-lift-drone-threat-warning-for-northeast-estonia",
+      "language": "en",
+      "published_at": "2026-11-21T12:59:00+08:00",
+      "accessed_at": "2026-11-22T05:52:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "România și Polonia, „doi piloni ai stabilității” pe flancul estic al Europei (Romania and Poland, 'two pillars of stability' on Europe's eastern flank, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/romania-si-polonia-doi-piloni-ai-stabilitatii-pe-flancul-estic-al-europei-afirma-seful-diplomatiei-romane-la-televiziunea-poloneza-4046727",
+      "language": "ro",
+      "published_at": "2026-11-21T13:00:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Ще з вечора триває ліквідація наслідків російського удару по Кривому Рогу (Clean-up after the Russian strike on Kryvyi Rih continues, translated)",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21924",
+      "language": "uk",
+      "published_at": "2026-11-21T18:51:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Дежурными силами ПВО перехвачены и уничтожены 47 украинских беспилотных летательных аппаратов (Air defences intercepted and destroyed 47 Ukrainian drones, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69218",
+      "language": "ru",
+      "published_at": "2026-11-22T01:51:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Venäjän valtionmedia reagoi iskuun rauhoittelemalla kansaa (Russian state media reacted to the strike by calming the public, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20258295?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-22T02:20:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Russia-bound ship attacked in Gulf of Finland",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-22T03:20:00+08:00",
+      "accessed_at": "2026-11-22T05:45:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Rosyjskie rakiety w Polsce. Władysław Kosiniak-Kamysz: Ten atak nie był przypadkowy (Russian missiles in Poland. Kosiniak-Kamysz: this attack was not accidental, translated)",
+      "outlet": "Rzeczpospolita",
+      "category": "eu_regional_press",
+      "url": "https://rp.pl/wojsko/art45521081-rosyjskie-rakiety-w-polsce-wladyslaw-kosiniak-kamysz-ten-atak-nie-byl-przypadkowy",
+      "language": "pl",
+      "published_at": null,
+      "accessed_at": "2026-11-22T05:56:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Lithuania warns Russia is exploiting drone incidents to spread disinformation",
+      "outlet": "Evropeiska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.eurointegration.com.ua/eng/news/2026/11/11/7249760/",
+      "language": "en",
+      "published_at": "2026-11-11",
+      "accessed_at": "2026-11-22T05:53:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-22T05:44:45+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 3,
+        "baseline_monthly": 14
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 0,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1846,
+    "source_count": 27,
+    "source_category_count": 8
+  }
+}

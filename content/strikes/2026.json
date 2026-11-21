@@ -2665,6 +2665,50 @@
       "seed": false,
       "added": "2026-11-21",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0080",
+      "date": "2026-11-21",
+      "target_name": "Cargo ship Sparta II (Kaliningrad-bound, military-linked)",
+      "target_type": "other",
+      "region": "Leningrad Oblast (Gulf of Finland)",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 950,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 2,
+      "damage": null,
+      "effect": null,
+      "summary": "Governor Drozdenko said two drones hit the Kaliningrad-bound ship west of Gogland on 21 November. It caught fire and drifted into Finnish waters off Loviisa, and the crew was evacuated. Finland's Defence Forces believe Ukraine was most likely responsible; Ukraine has not claimed it.",
+      "sources": [
+        {
+          "title": "Главные новости к этому часу: В Финском заливе БПЛА атаковали судно, следовавшее в Калининград (Top news: drones attacked a Kaliningrad-bound ship in the Gulf of Finland, translated)",
+          "outlet": "TASS (Telegram)",
+          "category": "ru_state_media",
+          "url": "https://t.me/tass_agency/407004",
+          "published_at": "2026-11-22T01:01:00+08:00"
+        },
+        {
+          "title": "Russia Says Cargo Vessel Struck by Drones in Gulf of Finland",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/21/russia-says-cargo-vessel-struck-by-drones-in-gulf-of-finland-a94342",
+          "published_at": "2026-11-21T19:50:00+08:00"
+        },
+        {
+          "title": "Finland confirms Ukraine attacked ship linked to Russian military",
+          "outlet": "Ukrainska Pravda",
+          "category": "ua_independent",
+          "url": "https://www.pravda.com.ua/eng/news/2026/11/21/8063980/",
+          "published_at": "2026-11-21T23:37:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-22",
+      "updated": null
     }
   ]
 }

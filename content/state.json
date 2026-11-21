@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-21",
+  "as_of": "2026-11-22",
   "ladder": {
-    "current_rung": 4,
+    "current_rung": 3,
     "next_rung_odds": {
-      "probability": 5,
-      "term": "remote",
-      "confidence": "moderate"
+      "probability": 35,
+      "term": "unlikely",
+      "confidence": "low"
     }
   },
   "pathways": [
@@ -18,7 +18,7 @@
         "confidence": "moderate"
       },
       "impact": 3,
-      "trend": "up"
+      "trend": "flat"
     },
     {
       "pathway": "sabotage",
@@ -28,7 +28,7 @@
         "confidence": "low"
       },
       "impact": 3,
-      "trend": "up"
+      "trend": "flat"
     },
     {
       "pathway": "maritime",
@@ -109,8 +109,8 @@
     },
     {
       "country": "RO",
-      "score": 4,
-      "since": "2026-10-05"
+      "score": 3,
+      "since": "2026-11-22"
     },
     {
       "country": "MD",
