@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "window": {
+    "start": "2026-11-22T05:30:00+08:00",
+    "end": "2026-11-23T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-23T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": true,
+  "title": "Sea drones hit a Russian corvette in Libya; Sparta II towed out of Finnish waters; no new European incident; rung holds at 3",
+  "bottom_line": "Spillover risk holds at rung 3 (overt military incidents, no deaths), and we log no new incident. Ukraine's sea war on Russian shipping is widening. Libyan officials say sea drones badly damaged the Russian corvette Merkury in Benghazi, and Russia towed the burning Sparta II out of Finnish waters. Estonia's navy warns that more attacks in the Gulf of Finland cannot be ruled out. Russia launched 186 drones at Ukraine overnight, and a strike on Dymer killed at least four people. A step up to rung 4 within 30 days is unlikely (35%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s3",
+    "s5",
+    "s8"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 35,
+        "term": "unlikely",
+        "confidence": "low"
+      },
+      "rationale": "Rung 3 rests on drone incursions into Romania, Moldova, Latvia and Lithuania in the last 30 days. We log no new incident today. Rung 4 needs a death or a deliberate strike. The near-misses from the Kh-101s in Poland on 20 November keep that unlikely (35%), not remote."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 3 logged incidents in 30 days against a 13.7 monthly baseline, and no serious incident in 12 months. The Kh-101s that came down near buildings in Poland on 20 November keep it at 20%. No change.",
+        "source_ids": []
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "2 incidents in 30 days against a 1.7 baseline, and 1 serious incident in 12 months. The Danish murder plot and Poland's foiled Kaliningrad provocation keep it at 35%. No new case today.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No logged incident in 30 days against a baseline of 2, but 12 serious incidents in 12 months, mostly Black Sea ship strikes. Russia's MoD claims another cargo ship hit off Mykolaiv. Held at 70%.",
+        "source_ids": [
+          "s16"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a 0.7 baseline, and none serious in 12 months. Nothing new in the window. Held at 10%.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incident in 30 days, and no serious incident since 2022. Possible Russian escorts in the Gulf of Finland are a watch item, not a border crossing. Held at 3%.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "1 plant-safety event in 30 days against a 0.3 baseline, and no serious incident. Zaporizhzhia still depends on a single line. Nothing new in the window. Held at 3%.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incident in 30 days against a 0.3 baseline. The Kaliningrad disinformation and Cyprus's spy expulsions show pressure, but no blocked decision. Held at 10%.",
+        "source_ids": [
+          "s12",
+          "s18"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1. Drone-struck Sparta II burned in Finnish waters until it was towed out on 22 November, and the suspected Russian helicopter violation of 21 November is still under investigation.",
+        "source_ids": [
+          "s8",
+          "s21"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Libyan officials say sea drones severely damaged the Russian corvette Merkury in Benghazi",
+      "summary": "Eastern Libya's government said a blast on a Russian ship in Benghazi was likely a drone attack. Two Libyan military officials told AP that Ukrainian sea drones launched from western Libya severely damaged the corvette Merkury. ASTRA, citing Al Arabiya, reports casualties after a second attack near the port. Kyiv has not commented.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0082"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russian officials had not commented. RT, as relayed by ASTRA, claimed Ukraine launched at least six sea drones.",
+      "source_ids": [
+        "s5",
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia tows the burning Sparta II out of Finnish waters; Estonia warns of more Gulf of Finland attacks",
+      "summary": "A Russian rescue vessel began towing Sparta II out of Finnish waters on 22 November, and responsibility then passed to Russia, Reuters reports via The Moscow Times. Two Estonian ships joined the firefighting. Estonia's navy commander said more attacks cannot be ruled out. Estonia's prime minister and foreign minister denied that Estonian airspace or waters were used for attacks.",
+      "category": "maritime",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0080"
+      ],
+      "verification": 2,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "186 Russian drones overnight; strike on Dymer apartment block kills at least four",
+      "summary": "Ukraine's General Staff said Russia launched 186 attack drones, 72 of them jet-powered, and 161 were downed or suppressed. Zelensky said four people were killed and ten were still unaccounted for in Dymer, Kyiv region, after a child was rescued. Politico reports he pressed Washington to authorise allied-financed Patriot missiles.",
+      "category": "russian_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry claimed it hit a 330 kV substation in Kamianske and a cargo ship off Mykolaiv carrying dual-use cargo for Ukraine's forces.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s16"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Poland and Lithuania push back on Russian claims that NATO attacked Kaliningrad",
+      "summary": "Polish deputy digital minister Paweł Olszewski said Poland's disinformation centre is tracking false claims that NATO, Poland and Lithuania attacked Kaliningrad Oblast, and that German troops in Poland coordinated it. Lithuania's foreign minister, Kęstutis Budrys, rejected claims of Lithuanian involvement and said Vilnius has not authorised use of its airspace.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The narratives Poland is tracking say NATO, Poland and Lithuania attacked Kaliningrad, and that Ukraine is attacking to pull Poland into the war.",
+      "source_ids": [
+        "s12"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Washington Post: Putin privately accepted Article 5-style guarantees for Ukraine without Western troops",
+      "summary": "Digi24, relaying The Washington Post, which cites one US source close to the talks, says Putin privately accepted post-war guarantees for Ukraine modelled on Article 5. The conditions are no US or European troops in Ukraine and sanctions relief. Deputy Foreign Minister Ryabkov publicly rejected any \"quasi-member\" status (translated). Donbas remains the main obstacle.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "TASS relays Kushner saying Washington wants Russia to be sure that NATO does not seek confrontation (translated).",
+      "source_ids": [
+        "s14",
+        "s15"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Romania scrambles F-16s over targets near Snake Island but reports no violation",
+      "summary": "Romania's defence ministry said radars detected air targets east of Snake Island on the evening of 22 November. Two F-16s took off from Borcea, and a RO-Alert covered northern Tulcea from 20:01 to 21:15. The ministry said no penetration of national airspace was reported. An earlier alert came just after midnight.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s13"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Cyprus expels two Russian diplomats on suspicion of espionage",
+      "summary": "Politico reports that Cyprus expelled two Russian diplomats suspected of working for Russian intelligence under diplomatic cover. It follows Denmark's expulsion of Russia's defence attaché over a murder plot. The case adds to the expulsions tracked under the diplomatic-warning indicator, which stays on watch.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s18"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Libyan officials blame Ukrainian sea drones for severe damage to the corvette Merkury in Benghazi, which would be Ukraine's most distant naval strike. Drones reportedly hit a Rosgvardiya headquarters in Krasnodar overnight, and Krasnodar airport paused flights. Neither has a Ukrainian claim or Russian confirmation.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s5",
+        "s6",
+        "s17"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia launched 186 drones overnight, 72 of them jet-powered, and Ukraine says 161 were downed or suppressed. At least four people were killed in Dymer and ten remain missing. About 30 people were injured across Ukraine. Russia's MoD claims hits on a Dnipropetrovsk substation and a ship off Mykolaiv.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s16"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "A single-source Washington Post report says Putin privately accepted Article 5-style guarantees for Ukraine without Western troops. Ryabkov publicly rejects any quasi-membership. TASS relays Kushner saying Washington wants to assure Moscow that NATO does not seek confrontation. Donbas remains unresolved.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s14",
+        "s15"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Romania scrambled F-16s twice over targets near Snake Island and reported no violation. Pack items say Moldova closed its airspace again on 22 November after a drone headed toward Chișinău. We could not open a ministry statement, so we do not log it. Finland's helicopter case stays under investigation.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s13",
+        "s21"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Sparta II was towed out of Finnish waters after two days of firefighting by Finnish, Estonian and Russian vessels. Estonia's navy says more Gulf of Finland attacks cannot be ruled out. Russia claims it hit another cargo ship in the Black Sea.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s8",
+        "s10",
+        "s11",
+        "s16"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Poland's disinformation centre and Lithuania's foreign minister rebut Russian narratives that NATO attacked Kaliningrad, which fit the pretext pattern we watch. Cyprus expelled two Russian diplomats for espionage.",
+      "development_ids": [
+        "d4",
+        "d7"
+      ],
+      "source_ids": [
+        "s12",
+        "s18"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "The German army began its first kamikaze-drone and AI-targeting tests in Lithuania, in its largest exercise there so far. Slovakia's foreign minister Blanar told TASS the Coalition of the Willing is overrated and Slovakia was not invited to its drills in Poland.",
+      "development_ids": [],
+      "source_ids": [
+        "s19",
+        "s20"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0081",
+      "date": "2026-11-21",
+      "target_name": "Rosgvardiya Main Directorate for Krasnodar Krai, Krasnodar",
+      "target_type": "military_hq",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Monitoring channels and residents reported explosions in Krasnodar overnight into 22 November, and ASTRA's OSINT analysis named the regional Rosgvardiya headquarters as the likely target. Krasnodar airport paused flights. The Kyiv Independent could not verify the reports, and we found no Ukrainian or Russian official statement.",
+      "sources": [
+        {
+          "title": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
+          "published_at": "2026-11-22T11:18:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-23",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0082",
+      "date": "2026-11-22",
+      "target_name": "Russian Navy corvette Merkury, Benghazi port",
+      "target_type": "naval",
+      "region": "Benghazi, Libya (Mediterranean)",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "sea_drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Eastern Libya's government said a blast on a Russian ship in Benghazi was likely a drone attack. Two Libyan military officials told AP that Ukrainian sea drones severely damaged the corvette Merkury. Kyiv has not commented, and we found no Russian official statement.",
+      "sources": [
+        {
+          "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
+          "published_at": "2026-11-23T02:02:00+08:00"
+        },
+        {
+          "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-23T04:28:00+08:00"
+        },
+        {
+          "title": "В результате новой атаки на судно в порту Бенгази есть пострадавшие (There are casualties after a new attack on a ship in Benghazi port, translated)",
+          "outlet": "ASTRA (Telegram)",
+          "category": "ru_by_independent",
+          "url": "https://t.me/astrapress/131940",
+          "published_at": "2026-11-23T01:38:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-23",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that 30-day spillover risk is unchanged at rung 3, and no pathway moves. We log no new incident. Ukraine's sea campaign against Russian ships is widening, but it is Ukrainian action, not Russian hostile activity in Europe, so it stays outside our incident count. The risk to Europe lies in how Russia responds.\n\nTwo strikes stand out. The Kyiv Independent reports that Libyan officials told AP Ukrainian sea drones severely damaged the corvette Merkury in Benghazi. In the Gulf of Finland, Russia towed Sparta II out of Finnish waters, and Reuters, via The Moscow Times, reports that responsibility passed to Russia. Estonia's navy commander said further attacks \"cannot be ruled out\". We assess it likely (60%) that Russia will add naval or air escorts for Kaliningrad-bound shipping in the coming weeks. That would make close encounters near Finnish and Estonian waters more likely. We hold maritime at likely (70%).\n\nRussia's information response points at NATO. Poland's disinformation centre is tracking claims that NATO, Poland and Lithuania attacked Kaliningrad, and Lithuania's foreign minister rejected any Lithuanian role. This fits the pretext narrative we watch. It circulates on social media, however, and no Russian official has made the claim on the record in what we opened, so ind-pretext stays on watch.\n\nOver Ukraine, Russia launched 186 drones overnight, 72 of them jet-powered, and a strike in Dymer killed at least four people. Romania scrambled F-16s for targets near Snake Island, but its defence ministry reported no violation. Pack items say Moldova closed its airspace again on 22 November. We could not open the ministry's statement, so we do not log it. Airspace stays at three logged incidents in 30 days against a 90-day baseline of 13.7 a month. That gap reflects our evidence standard more than the real tempo.\n\nOn talks, the Washington Post says Putin privately accepted Article 5-style guarantees for Ukraine without Western troops. Ryabkov's public rejection of any quasi-membership cuts against that, so we give it little weight until both sides confirm it. On the ceasefire paradox, no truce is near, so near-term incident risk stays high. All five assumptions remain in force; A1 is weakening.",
+    "change_my_mind": "We would raise maritime and military-pressure odds if a Russian official blamed a NATO state for the Gulf of Finland or Benghazi strikes, or if Russian warships began escorting convoys near Finnish or Estonian waters. An opened Moldovan ministry statement would add an incident.",
+    "competing_explanations": [
+      {
+        "subject": "STR-2026-0082: blast on the corvette Merkury in Benghazi",
+        "hypotheses": [
+          {
+            "label": "Ukrainian sea-drone operation from Libya",
+            "assessment": "Two Libyan officials name Ukrainian sea drones, and the strike fits Ukraine's widening campaign against Russian ships far from home, including in the Gulf of Finland. Kyiv's silence matches its practice on deniable operations abroad.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Accident or another actor",
+            "assessment": "No wreckage has been shown and no one has claimed it. Libya's rival factions have their own reasons to blame outsiders, and the second reported attack at the port has not been confirmed.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [],
+  "forecast_updates": [],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct link is air defence supply. Politico reports that Zelensky, after the Dymer strike, pressed Washington to authorise Patriot missiles that allies would pay for. US approval would draw on the same PAC-3 production line that supplies Taiwan's backlog, a modest but real squeeze while interceptor output stays tight. The second link is a military lesson. Sea drones that reportedly reached a Russian corvette in Libya, and drones that struck ships in the Gulf of Finland, show that cheap uncrewed systems can threaten warships and cargo far from the front. That supports Taiwan's investment in sea drones and in port and harbour defence against the same threat. The WaPo report on guarantees without troops will interest Taipei as a model of deterrence without basing, but it is a single-source claim.",
+  "next_72h": [
+    {
+      "date": "2026-11-24",
+      "event": "Finnish Border Guard may report findings on the suspected Russian helicopter violation off Loviisa on 21 November.",
+      "why": "A confirmed violation would resolve F-2026-005 yes and would be logged as an airspace incident."
+    },
+    {
+      "date": "2026-11-24",
+      "event": "Moldova's Defence Ministry may publish its weekly airspace incident tally, including 22 November.",
+      "why": "This is the host statement we need to log recent Moldovan crossings; it bears on F-2026-017 and F-2026-031."
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Watch for any Russian official claim or response on the Benghazi strike, and for Russian escort patterns in the Gulf of Finland.",
+      "why": "Russian naval escorts or retaliation near Finland or Estonia would raise maritime and military-pressure risk."
+    }
+  ],
+  "weekly_outlook": {
+    "medium_term": {
+      "question": "Will a Russian drone, missile or debris kill anyone on the land territory of a NATO or EU member state between 2 November 2026 and 2 November 2027?",
+      "estimate": {
+        "probability": 40,
+        "term": "realistic_possibility",
+        "confidence": "low"
+      },
+      "text": "We hold this at a realistic possibility (40%). This week two Kh-101 cruise missiles and a jet drone came down in south-eastern Poland, one several hundred metres from buildings, and Polish leaders called it a provocation, not an accident. Drones also crossed into Moldova on several days and kept Romanian F-16s on alert. The base rate is low, with one deadly case on NATO soil since 2022, at Przewodów. But incursion tempo in 2026 is many times higher than in 2022–25, and Russia's winter campaign routes mass raids along the Polish, Romanian and Moldovan borders. Against that, allied air defence on the eastern flank is thickening: Eastern Sentry, Swedish Gripens over Poland, and Poland's request for AWACS and F-35s. Most debris still falls in open country. A ceasefire would cut the risk sharply, but Putin rejected even partial truces this week. We would raise the estimate if a munition struck a built-up area, or if Russia began routing strikes across NATO territory on purpose."
+    },
+    "long_term": {
+      "question": "Will Russia carry out a deliberate, attributable armed attack on the territory of a NATO member by 2 November 2030?",
+      "estimate": {
+        "probability": 20,
+        "term": "highly_unlikely",
+        "confidence": "low"
+      },
+      "text": "We hold this at highly unlikely (20%). European services and NATO warn that Russia could be ready to test the alliance within a few years of the fighting in Ukraine ending, as it rebuilds ground forces and expands its defence industry. This week's evidence points both ways. Russia's covert campaign keeps growing, with a GRU-ordered arson attack in Estonia, a foiled murder plot in Denmark and a foiled provocation at the Kaliningrad border. Moscow is pushing narratives that NATO attacked Kaliningrad and demanding a NATO rollback in talks. On the other side, European defence spending and production keep rising, Estonia is closing its road border, and allies are thickening air defence. The main amplifier is US posture. Trump's \"mistake\" framing of the Polish missiles, and Kushner's reported remarks about Europe's spending on Kyiv, sustain doubts about US commitment, but there is no announced change. A ceasefire that frees Russian forces would raise this estimate under A5."
+    },
+    "assumptions_check": [
+      {
+        "id": "A1",
+        "status": "weakening",
+        "note": "Polish leaders called the 20 November Kh-101 crashes a deliberate provocation, and ISW agrees. No official says Poland itself was targeted.",
+        "text": "Russia avoids deliberate, attributable armed attacks on NATO territory while its main force is committed in Ukraine."
+      },
+      {
+        "id": "A2",
+        "status": "holds",
+        "note": "No change in US Article 5 commitment. Trump's \"mistake\" remark and reported Kushner comments on Kyiv spending show friction, not a policy shift.",
+        "text": "The United States remains committed to defending NATO allies under Article 5."
+      },
+      {
+        "id": "A3",
+        "status": "holds",
+        "note": "This week's incursions came during strikes on Ukraine or Ukrainian raids on Russia. Nothing points to invasion preparation.",
+        "text": "Most airspace incidents are spillover from strikes on Ukraine or deliberate probes below the threshold of attack, not preparation for an invasion."
+      },
+      {
+        "id": "A4",
+        "status": "holds",
+        "note": "Covert activity continued: the Danish murder plot, the Kaliningrad border provocation, and Cyprus's spy expulsions.",
+        "text": "Russia's covert campaign in Europe (sabotage, cables, jamming) continues regardless of battlefield or diplomatic developments."
+      },
+      {
+        "id": "A5",
+        "status": "holds",
+        "note": "No ceasefire is in prospect. Putin rejected partial truces, so the reconstitution risk is deferred, not realised.",
+        "text": "A ceasefire in Ukraine would lower near-term incident risk but raise medium-term risk as Russian forces reconstitute near NATO borders."
+      }
+    ],
+    "calibration_note": "No forecast resolved this week, so we have no new Brier scores. Several open forecasts look settled but await their dates: F-2026-003 (Larissa 1), F-2026-029 (Gas Husky), F-2026-017 (Moldovan November count) and F-2026-027 (Estonian border closure). Most of them sit above their base rates, which tests whether our upward adjustments were justified. The book is at the 30-forecast cap, so we open no new forecasts until some resolve."
+  },
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 186,
+      "unit": "count",
+      "period": "night of 21–22 Nov",
+      "source_ids": [
+        "s1",
+        "s3"
+      ],
+      "note": "Of these, 72 were jet-powered, per Ukraine's General Staff."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 161,
+      "unit": "count",
+      "period": "night of 21–22 Nov",
+      "source_ids": [
+        "s1",
+        "s3"
+      ],
+      "note": "Shot down or suppressed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ЗБИТО/ПОДАВЛЕНО 161 ВОРОЖУ ЦІЛЬ у ніч на 22 листопада (161 enemy targets downed or suppressed on the night of 22 November, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42967",
+      "language": "uk",
+      "published_at": "2026-11-22T14:18:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "This evening, a child was rescued from under the rubble in Dymer, Kyiv region",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21946",
+      "language": "en",
+      "published_at": "2026-11-23T03:21:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Russian attacks across Ukraine injure 30 over past day as rescue operation continues near Kyiv after drone strike",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russian-attacks-across-ukraine-injure-30-over-past-day-as-rescue-operation-continues-near-kyiv-after-drone-strike/",
+      "language": "en",
+      "published_at": "2026-11-22T17:54:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "14 missing after Russian strike as Zelenskyy presses US over Patriot missiles",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/14-missing-after-russian-strike-zelenskyy-presses-us-patriot-missiles/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-22T17:49:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
+      "language": "en",
+      "published_at": "2026-11-23T02:02:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-23T04:28:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "В результате новой атаки на судно в порту Бенгази есть пострадавшие (There are casualties after a new attack on a ship in Benghazi port, translated)",
+      "outlet": "ASTRA (Telegram)",
+      "category": "ru_by_independent",
+      "url": "https://t.me/astrapress/131940",
+      "language": "ru",
+      "published_at": "2026-11-23T01:38:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Russia Starts Towing Ship Hit by Drones in Baltic, Finland Says",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-attack-a94343",
+      "language": "en",
+      "published_at": "2026-11-23T00:26:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Russian ship attack is a consequence of Russia's actions, says Estonia's FM, PM",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610202968/russian-ship-attack-is-a-consequence-of-russia-s-actions-says-estonia-s-fm-pm",
+      "language": "en",
+      "published_at": "2026-11-22T14:51:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Estonian Navy: More attacks in the Gulf of Finland cannot be ruled out",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610202953/estonian-navy-more-attacks-in-the-gulf-of-finland-cannot-be-ruled-out",
+      "language": "en",
+      "published_at": "2026-11-22T14:17:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Venäjä hinasi palavan aluksensa pois, asiantuntijat kiittävät Suomen toimintaa (Russia towed its burning ship away; experts praise Finland's handling, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20258336?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-23T00:13:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Poland flags Russian disinformation over alleged Ukrainian attack in Kaliningrad Oblast",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/22/8064083/",
+      "language": "en",
+      "published_at": "2026-11-23T01:02:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Alertă aeriană în Tulcea... MApN: Nu au fost pătrunderi în spațiul aerian (Air alert in Tulcea; MApN: no airspace penetrations, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/tinte-aeriene-detectate-langa-insula-serpilor-doua-avioane-f-16-au-decolat-a-fost-emis-ro-alert-pentru-tulcea-4048161",
+      "language": "ro",
+      "published_at": "2026-11-23T03:43:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Washington Post: Putin a fost de acord în privat cu garanții de securitate pentru Ucraina (Putin privately agreed to NATO-style guarantees for Ukraine, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/washington-post-putin-a-fost-de-acord-in-privat-ca-ucraina-sa-primeasca-garantii-de-securitate-din-partea-sua-si-ue-dupa-modelul-nato-4048049",
+      "language": "ro",
+      "published_at": "2026-11-23T00:30:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Кушнер: РФ должна быть уверена в отсутствии у НАТО стремления к конфронтации (Kushner: Russia should be sure NATO does not seek confrontation, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407092",
+      "language": "ru",
+      "published_at": "2026-11-23T03:08:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Нанесены удары беспилотными летательными аппаратами по объектам энергетики и морским судам (Drone strikes on energy facilities and sea vessels, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69254",
+      "language": "ru",
+      "published_at": "2026-11-22T23:41:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
+      "language": "en",
+      "published_at": "2026-11-22T11:18:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Cyprus expels Russian diplomats on suspicion of espionage",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/cyprus-expels-russian-diplomats-on-suspicion-of-espionage/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-22T23:56:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Armata germană testează pentru prima dată drone kamikaze în Lituania (German army tests kamikaze drones in Lithuania for the first time, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/armata-germana-testeaza-pentru-prima-data-drone-kamikaze-si-sisteme-de-identificare-a-tintelor-cu-inteligenta-artificiala-in-lituania-4048039",
+      "language": "ro",
+      "published_at": "2026-11-22T23:47:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Значение \"коалиции желающих\" переоценено, заявил министр иностранных дел Словакии Бланар (Slovak FM Blanar says the Coalition of the Willing is overrated, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407083",
+      "language": "ru",
+      "published_at": "2026-11-22T23:33:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Moldova, Finland report Russian airspace violations day after suspected Russian missiles flew into Poland",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/moldova-finland-report-russian-airspace-violations-day-after-suspected-russian-missiles-flew-into-poland/",
+      "language": "en",
+      "published_at": "2026-11-22T07:35:00+08:00",
+      "accessed_at": "2026-11-23T06:00:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-23T05:43:24+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 3,
+        "baseline_monthly": 13.7
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 0,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1933,
+    "source_count": 21,
+    "source_category_count": 7
+  }
+}

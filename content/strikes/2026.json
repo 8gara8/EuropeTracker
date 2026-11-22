@@ -2709,6 +2709,80 @@
       "seed": false,
       "added": "2026-11-22",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0081",
+      "date": "2026-11-21",
+      "target_name": "Rosgvardiya Main Directorate for Krasnodar Krai, Krasnodar",
+      "target_type": "military_hq",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Monitoring channels and residents reported explosions in Krasnodar overnight into 22 November, and ASTRA's OSINT analysis named the regional Rosgvardiya headquarters as the likely target. Krasnodar airport paused flights. The Kyiv Independent could not verify the reports, and we found no Ukrainian or Russian official statement.",
+      "sources": [
+        {
+          "title": "Ukrainian drones reportedly strike Russian National Guard facility in Krasnodar",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-national-guard-facility-in-krasnodar/",
+          "published_at": "2026-11-22T11:18:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-23",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0082",
+      "date": "2026-11-22",
+      "target_name": "Russian Navy corvette Merkury, Benghazi port",
+      "target_type": "naval",
+      "region": "Benghazi, Libya (Mediterranean)",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "sea_drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Eastern Libya's government said a blast on a Russian ship in Benghazi was likely a drone attack. Two Libyan military officials told AP that Ukrainian sea drones severely damaged the corvette Merkury. Kyiv has not commented, and we found no Russian official statement.",
+      "sources": [
+        {
+          "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
+          "outlet": "The Kyiv Independent",
+          "category": "ua_independent",
+          "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/",
+          "published_at": "2026-11-23T02:02:00+08:00"
+        },
+        {
+          "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-23T04:28:00+08:00"
+        },
+        {
+          "title": "В результате новой атаки на судно в порту Бенгази есть пострадавшие (There are casualties after a new attack on a ship in Benghazi port, translated)",
+          "outlet": "ASTRA (Telegram)",
+          "category": "ru_by_independent",
+          "url": "https://t.me/astrapress/131940",
+          "published_at": "2026-11-23T01:38:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-23",
+      "updated": null
     }
   ]
 }
