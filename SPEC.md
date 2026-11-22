@@ -118,6 +118,7 @@ section in the same PR and is listed here.
 | 5 | Three supervised runs on three different days | Two (2 and 3 November), then unattended from 4 November | JL's decision after approving the second brief |
 | 5 | `routine/TASK.md`: check on the background run at most every 5 minutes; approve the command and the summary read | The task ends its turn and waits for the app to wake it when the command finishes, and reads files only with the Read tool. Only the command needs approval | The app skips a scheduled run while the previous run is waiting on a permission prompt (seen on Kobol), and checking on the run could have triggered a prompt. The summary is inside the task's folder, so reading it doesn't |
 | 5 | §8.3: verify start-time jitter and long background commands | Verified on 4 November: a fixed 7-minute delay (start 05:37), and a 7.5-minute background run woke the task when it ended, so one task is enough | The first unattended morning |
+| After go-live | The front page shows today's snapshot; history sits on `/board` (ladder and odds lines over the briefs, a pathway heat grid) | Every brief gets a "How it's moving" section (rung over 12 months, next-rung odds, incidents per month since 2022, country scores) and a 12-month sparkline on each pathway card. `/board` becomes `/trends` (and redirects there). The rung and 30-day counts are rebuilt from the incident database for every day since February 2022; days with a brief keep the rung they published | JL, 22 November: show how things move over time, not just a snapshot |
 
 ---
 
@@ -242,7 +243,7 @@ EuropeTracker/
 │   ├── brief/                     # BriefView and its sections (§6)
 │   ├── incidents/                 # IncidentExplorer (client), IncidentRow
 │   ├── strikes/                   # StrikeTable
-│   ├── charts/                    # LineChart, MonthlyBars, HeatGrid (server SVG)
+│   ├── charts/                    # LineChart, MonthlyBars, HeatGrid; trends.tsx: RungChart, NextRungOddsChart, ScoreStrip, Sparkline, PathwayOddsGrid, SeriousTimeline, PeriodBars, RangeSwitch (server SVG)
 │   └── ui/                        # RungBadge, ProbabilityBadge, ScoreBadge, AttributionBadge,
 │                                  # VerificationBadge, TrendArrow, Tag
 ├── lib/
@@ -1184,10 +1185,10 @@ fetching.
 
 | Route | File | Shows |
 |---|---|---|
-| `/` | `app/page.tsx` | Latest brief via `BriefView`. Empty state: "The first brief arrives at about 06:15 Taipei." |
+| `/` | `app/page.tsx` | Latest brief via `BriefView`, including its "How it's moving" trend charts. Empty state: "The first brief arrives at about 06:15 Taipei." |
 | `/brief/[date]` | `app/brief/[date]/page.tsx` | `BriefView`, plus previous and next links |
 | `/archive` | `app/archive/page.tsx` | Table: date, title, rung badge, next-rung odds, quiet and weekly badges |
-| `/board` | `app/board/page.tsx` | Ladder history (step line over all briefs), next-rung odds line, pathway heat grid (last 30 briefs), tier-1 country table with change history, base-rate table (per pathway: last 30 days, baseline monthly, average since Feb 2022, serious in the last 12 months) |
+| `/trends` | `app/trends/page.tsx` | Trends (replaces `/board`, which redirects here). The rung by day, with a 3-month, 12-month and since-2022 switch. Next-rung odds by brief, serious incidents since 2022 by date and rung. Pathway odds as small multiples, incidents per month by pathway, base-rate table (per pathway: last 30 days, baseline monthly, average since Feb 2022, serious in the last 12 months). Frontline-country score strip (last 90 briefs) with the latest changes. Ukrainian deep strikes per week and Russian drones launched per night |
 | `/incidents` | `app/incidents/page.tsx` | Stacked monthly bars by pathway since 2022-02; `IncidentExplorer` over the last 365 days; links to year pages |
 | `/incidents/[year]` | `app/incidents/[year]/page.tsx` | `IncidentExplorer` for that year |
 | `/strikes` | `app/strikes/page.tsx` | Monthly strike counts, verification mix, `StrikeTable` (last 180 days) |
@@ -1210,8 +1211,10 @@ Everything is a server component except `IncidentExplorer`.
 
 ```ts
 // components/brief/BriefView.tsx — the whole brief, sections in this order:
-// Header (title, date, window, quiet/weekly badges) → BottomLine → SpilloverBoard (LadderGauge,
-// PathwayTable, CountryTable) → KeyDevelopments → NewIncidents (+ incident updates) → DeepStrikes
+// Header (title, date, window, quiet/weekly badges) → BottomLine → SpilloverBoard (SpilloverGauge,
+// EasternFlank, RiskMatrix, PathwayBars with a 12-month sparkline each) → How it's moving (TrendsOverview:
+// RungChart over 12 months, NextRungOddsChart, MonthlyBars since 2022, ScoreStrip over the last 30 briefs)
+// → KeyDevelopments → NewIncidents (+ incident updates) → DeepStrikes
 // (new strikes + updates) → CategoryNotes (12 compact rows) → IndicatorChanges → Judgement (+ competing
 // explanations, change my mind) → Forecasts (new, updated, resolved) → Impact on Taiwan → WeeklyOutlook (Mondays)
 // → Next72h → Metrics → Sources
@@ -1223,11 +1226,8 @@ interface BriefViewProps {
   archive: Record<string, string>;   // normalized URL → snapshot URL
   prevDate: string | null;
   nextDate: string | null;
+  trends?: BriefTrends;              // lib/trends.ts series up to the brief's date, built by trendsFor()
 }
-
-interface LadderGaugeProps { current: Rung; previous: Rung; nextOdds: ProbabilityEstimate | null; compact?: boolean }
-// Seven stacked segments (0–6) with rung colors and names; current marked; previous shown if different;
-// next-rung odds as a ProbabilityBadge beside the next rung.
 
 interface PathwayTableProps { pathways: PathwayScore[]; computed: Brief["computed"]["pathways"] }
 // Rows: pathway label · incidents 30 d vs baseline (e.g. "4 vs 1.3/mo") · serious odds badge · impact ·
@@ -1257,6 +1257,9 @@ interface HeatGridProps {
   cells: Record<string, Record<string, { term: ProbabilityTerm; title: string } | null>>; // rowKey → col → cell
   ariaLabel: string;
 }
+// components/charts/trends.tsx: the trend charts, fed by lib/trends.ts. The rung and incident counts come
+// from the incident database for every day (a day with a brief takes its published rung); odds and scores
+// exist only for days with a brief. RangeSwitch switches views with radios and CSS (globals.css), no client JS.
 
 // components/incidents/IncidentExplorer.tsx ("use client")
 interface IncidentExplorerProps { incidents: Incident[] }
@@ -1843,7 +1846,7 @@ without errors.
 - `npm run build` passes with `ET_CONTENT_DIR=content` (empty states) and with
   `ET_CONTENT_DIR=fixtures/site-content`.
 - The PR's Vercel preview renders every route with the sample banner.
-- Screenshots at 375 px and 1280 px wide of `/`, `/board` and `/incidents` are attached to the PR.
+- Screenshots at 375 px and 1280 px wide of `/`, `/trends` and `/incidents` are attached to the PR.
   Use Playwright if it's available on Kobol; otherwise use the in-app browser, or skip with a note.
 
 ### Phase 3: Pipeline (dry run)

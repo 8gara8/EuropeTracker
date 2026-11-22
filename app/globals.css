@@ -132,6 +132,48 @@
     padding: 6px 8px 0 0;
     color: var(--accent);
   }
+
+  /* The Trends page's range chips (RangeSwitch): radios switch the panels without client JavaScript.
+     The 12-month panel is the default, and stays visible where :has() isn't supported. */
+  .range-chip {
+    display: inline-block;
+    min-height: 32px;
+    padding: 6px 12px;
+    border: 1px solid var(--rule-soft);
+    background: var(--card);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .range-switch input:checked + .range-chip {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: var(--bg);
+  }
+
+  .range-switch input:focus-visible + .range-chip {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .range-panel {
+    display: none;
+  }
+
+  .range-panel.range-m12,
+  .range-switch:has(#range-m3:checked) .range-m3,
+  .range-switch:has(#range-all:checked) .range-all {
+    display: block;
+  }
+
+  .range-switch:has(#range-m3:checked) .range-m12,
+  .range-switch:has(#range-all:checked) .range-m12 {
+    display: none;
+  }
 }
 
 /* Square corners everywhere: part of the document look. */

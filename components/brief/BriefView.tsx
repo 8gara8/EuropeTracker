@@ -9,6 +9,7 @@ import { PATHWAYS, TAIWAN_NO_NEWS, type CategoryId } from "@/lib/vocab";
 import { Dateline, Section } from "@/components/layout/chrome";
 import { CategoryNotes, DevelopmentRow, ForecastChanges, Judgement, MetricsTable, Next72h, WeeklyOutlookView } from "./analysis";
 import { EasternFlank, PathwayBars, RiskMatrix, SpilloverGauge } from "./overview";
+import { TrendsOverview, type BriefTrends } from "./trends";
 import { IncidentRow } from "@/components/incidents/IncidentRow";
 import { StrikeRow } from "@/components/strikes/StrikeTable";
 import { IncidentUpdates, IndicatorChanges, StrikeUpdates } from "./records";
@@ -23,6 +24,8 @@ export interface BriefViewProps {
   archive: Record<string, string>;   // normalized URL → snapshot URL
   prevDate: string | null;
   nextDate: string | null;
+  /** The "How it's moving" charts; left out where only the brief itself is shown. */
+  trends?: BriefTrends;
 }
 
 /** Categories about Europe itself (the pathways and allied resolve); the rest are the war that drives them. */
@@ -30,7 +33,7 @@ const EUROPE = new Set<CategoryId>([...PATHWAYS, "resolve"]);
 
 /** The whole brief, in the order SPEC §6 sets, laid out in the paper design. */
 export function BriefView(props: BriefViewProps) {
-  const { brief: b, incidentsById, strikesById, forecastsById, indicatorsById, archive, prevDate, nextDate } = props;
+  const { brief: b, incidentsById, strikesById, forecastsById, indicatorsById, archive, prevDate, nextDate, trends } = props;
   const index = sourceIndex(b.sources);
   const hasIndicators = b.indicator_changes.length + b.indicators_new.length > 0;
   const europe = b.developments.filter((d) => EUROPE.has(d.category));
@@ -61,8 +64,14 @@ export function BriefView(props: BriefViewProps) {
           <p className="prose-serif text-[16px]">{b.board.ladder.rationale}</p>
         </div>
         <h3 className="kicker mt-6 mb-1 text-fg">The seven pathways</h3>
-        <PathwayBars pathways={b.board.pathways} computed={b.computed.pathways} index={index} />
+        <PathwayBars pathways={b.board.pathways} computed={b.computed.pathways} index={index} sparklines={trends?.sparklines} />
       </Section>
+
+      {trends ? (
+        <Section id="trends" number={num()} title="How it's moving" right="Rung and counts since 2022">
+          <TrendsOverview trends={trends} />
+        </Section>
+      ) : null}
 
       {b.developments.length ? (
         <Section id="developments" number={num()} title="What happened" right={`${b.developments.length} developments · Europe first, then the war`}>

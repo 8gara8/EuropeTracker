@@ -47,6 +47,9 @@ tracked only as the drivers of that risk.
   JL approved supervised briefs on 2 and 3 November, then chose to go unattended instead of running a
   third. The scheduled task "Europe tracker morning" was set up on 3 November. On 4 November the first
   unattended brief started at 05:37 and was live at 05:44. **EuropeTracker is live.**
+- **2026-11-22:** JL asked for trends over time, not just today's snapshot. Every brief now has a "How
+  it's moving" section, and the Board tab became Trends (`/board` redirects). Series come from
+  `lib/trends.ts`: the rung and counts back to February 2022, odds and scores from 2 November.
 - **Decisions, 2026-11-02:**
   - **Goal:** gauge spillover risk to Europe. Ukraine's deep strikes into Russia are emphasised as a
     driver.
