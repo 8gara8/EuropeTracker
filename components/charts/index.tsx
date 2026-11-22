@@ -6,12 +6,12 @@ import { PATHWAYS, PROBABILITY_TERMS, type ProbabilityTerm } from "@/lib/vocab";
 // hover tooltip, and every chart has a data table in a <details> beneath it. The viewBox is narrow
 // (400 units) and the figure is capped at 560px, so text stays readable from 375px phones to desktops.
 
-const W = 400;
-const FONT = 9.5;
+export const W = 400;
+export const FONT = 9.5;
 
-function Figure({ ariaLabel, children, legend, table }: { ariaLabel: string; children: ReactNode; legend?: ReactNode; table: ReactNode }) {
+export function Figure({ ariaLabel, children, legend, table, wide = false }: { ariaLabel: string; children: ReactNode; legend?: ReactNode; table: ReactNode; wide?: boolean }) {
   return (
-    <figure className="max-w-[640px] border border-line bg-panel px-[14px] py-[12px]">
+    <figure className={`${wide ? "" : "max-w-[640px] "}border border-line bg-panel px-[14px] py-[12px]`}>
       {children}
       {legend}
       <details className="kicker mt-2">
@@ -22,7 +22,7 @@ function Figure({ ariaLabel, children, legend, table }: { ariaLabel: string; chi
   );
 }
 
-function Table({ head, rows }: { head: string[]; rows: (string | number)[][] }) {
+export function Table({ head, rows }: { head: string[]; rows: (string | number)[][] }) {
   return (
     <table className="tabular w-full text-xs">
       <thead><tr>{head.map((h) => <th key={h} className="border-b border-line py-0.5 pr-2 text-left">{h}</th>)}</tr></thead>
@@ -31,7 +31,7 @@ function Table({ head, rows }: { head: string[]; rows: (string | number)[][] }) 
   );
 }
 
-function Legend({ items }: { items: { label: string; color: string }[] }) {
+export function Legend({ items }: { items: { label: string; color: string }[] }) {
   return (
     <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-muted">
       {items.map((i) => (
@@ -44,7 +44,7 @@ function Legend({ items }: { items: { label: string; color: string }[] }) {
   );
 }
 
-const dayIndex = (d: string) => Date.parse(`${d}T00:00:00Z`) / 86_400_000;
+export const dayIndex = (d: string) => Date.parse(`${d}T00:00:00Z`) / 86_400_000;
 
 // ---------------------------------------------------------------------------------------------------
 

@@ -4,6 +4,7 @@ import type { ProbabilityEstimate } from "@/lib/schema/common";
 import type { CountryScore, PathwayScore } from "@/lib/schema/draft-brief";
 import { countryName, PATHWAY_SHORT } from "@/lib/format";
 import { COUNTRY_SCORES, IMPACT_LABELS, PROBABILITY_TERMS, RUNGS, type PathwayId, type Rung } from "@/lib/vocab";
+import { Sparkline } from "@/components/charts/trends";
 import { Chip, TONE_COLOR, TrendArrow, termTone } from "@/components/ui/badges";
 import { SourceRefs, type SourceIndex } from "./sources";
 
@@ -210,7 +211,13 @@ export function RiskMatrix({ pathways }: { pathways: PathwayScore[] }) {
 }
 
 /** Each pathway's odds as a bar, with its trend, counts and rationale. Rows on phones, cards on wide screens. */
-export function PathwayBars({ pathways, computed, index }: { pathways: PathwayScore[]; computed: BriefComputed["pathways"] | null; index?: SourceIndex }) {
+export function PathwayBars({ pathways, computed, index, sparklines }: {
+  pathways: PathwayScore[];
+  computed: BriefComputed["pathways"] | null;
+  index?: SourceIndex;
+  /** Each pathway's 30-day incident count, weekly over the past year. */
+  sparklines?: Partial<Record<PathwayId, { date: string; count: number }[]>>;
+}) {
   return (
     <ul className="grid grid-cols-1 gap-x-3 sm:grid-cols-2 lg:grid-cols-4">
       {pathways.map((p) => {
@@ -231,6 +238,12 @@ export function PathwayBars({ pathways, computed, index }: { pathways: PathwaySc
             <span className="font-mono text-[10.5px] text-soft">
               {c ? `${c.incidents_30d} in 30 days · ${c.baseline_monthly}/mo baseline · ` : ""}impact {p.impact}
             </span>
+            {sparklines?.[p.pathway] ? (
+              <span className="flex items-center gap-2">
+                <Sparkline points={sparklines[p.pathway]!} color={`var(--pw-${p.pathway})`} label={`${PATHWAY_SHORT[p.pathway]}, incidents in the previous 30 days over the past year`} />
+                <span className="font-mono text-[9.5px] uppercase tracking-[0.1em] text-muted">30-day count, past year</span>
+              </span>
+            ) : null}
             <p className="text-[12.5px] leading-[1.5] text-soft">{p.rationale}{index ? <> <SourceRefs ids={p.source_ids} index={index} /></> : null}</p>
           </li>
         );
