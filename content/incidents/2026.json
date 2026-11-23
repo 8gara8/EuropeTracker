@@ -4442,6 +4442,56 @@
       "seed": false,
       "added": "2026-11-17",
       "updated": null
+    },
+    {
+      "id": "INC-2026-0116",
+      "date": "2026-11-20",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Nowy Lipowiec, Rudnik nad Sanem and Mołodycz, south-eastern Poland",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a mass Russian attack on Ukraine, three Russian Kh-101 cruise missiles entered Polish airspace for about three minutes. They came down at Nowy Lipowiec, Rudnik nad Sanem and Mołodycz. Swedish Gripens could not identify them in time. No one was hurt, and no critical infrastructure was damaged. Allies then sent early-warning aircraft.",
+      "attribution": 3,
+      "attribution_note": "Poland's defence minister called it another Russian provocation. Lublin prosecutors identified all three as Kh-101s made in Dubna.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Wicepremier W. Kosiniak-Kamysz o naruszeniu polskiej przestrzeni powietrznej (Deputy PM W. Kosiniak-Kamysz on the violation of Polish airspace, translated)",
+          "outlet": "Ministry of National Defence (Poland)",
+          "category": "eu_gov_security",
+          "url": "https://www.gov.pl/web/obrona-narodowa/wicepremier-w-kosiniak-kamysz-o-naruszeniu-polskiej-przestrzeni-powietrznej",
+          "published_at": "2026-11-20"
+        },
+        {
+          "title": "Poland confirms three objects that struck its territory were all Russian missiles",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2026/11/23/poland-confirms-three-objects-that-struck-its-territory-were-all-russian-missiles/",
+          "published_at": "2026-11-23T18:04:00+08:00"
+        },
+        {
+          "title": "All three 'flying objects' that fell in Poland turned out to be Russian X-101 cruise missiles",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/23/all-three-flying-objects-that-fell-in-poland-turned-out-to-be-russian-x-101-cruise-missiles",
+          "published_at": "2026-11-23T17:23:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
     }
   ]
 }

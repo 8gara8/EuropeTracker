@@ -2751,12 +2751,12 @@
       "lon": null,
       "distance_km": null,
       "weapon": "sea_drone",
-      "weapon_detail": null,
+      "weapon_detail": "Seven naval drones from a mothership",
       "western_weapon": null,
-      "verification": 1,
-      "damage": null,
+      "verification": 4,
+      "damage": "The corvette sank at its berth in Benghazi, leaving only the bow above water. SBU video and satellite imagery show the strike.",
       "effect": null,
-      "summary": "Eastern Libya's government said a blast on a Russian ship in Benghazi was likely a drone attack. Two Libyan military officials told AP that Ukrainian sea drones severely damaged the corvette Merkury. Kyiv has not commented, and we found no Russian official statement.",
+      "summary": "Zelensky and the SBU confirmed that seven Ukrainian naval drones, launched from a mothership, sank the corvette Merkury in Benghazi on 22 November and hit the cargo ship MV Angara. Meduza, citing Al Jazeera sources, reports Russian and Libyan deaths. The Kremlin declined direct comment.",
       "sources": [
         {
           "title": "Russian warship docked in Benghazi hit by suspected drone attack, Libyan officials say",
@@ -2778,10 +2778,142 @@
           "category": "ru_by_independent",
           "url": "https://t.me/astrapress/131940",
           "published_at": "2026-11-23T01:38:00+08:00"
+        },
+        {
+          "title": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
+          "published_at": "2026-11-23T19:42:00+08:00"
+        },
+        {
+          "title": "Ukrainian sea drones sink Russian warship in Libya, killing Russians and Libyans",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/feature/2026/11/23/ukrainian-sea-drones-sink-russian-warship-in-libya-killing-russians-and-libyans",
+          "published_at": "2026-11-23T18:58:00+08:00"
         }
       ],
       "seed": false,
       "added": "2026-11-23",
+      "updated": "2026-11-24"
+    },
+    {
+      "id": "STR-2026-0083",
+      "date": "2026-11-22",
+      "target_name": "Novoshakhtinsk oil products plant",
+      "target_type": "refinery",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 200,
+      "weapon": "drone",
+      "weapon_detail": "SBU Alpha long-range drones",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU and HUR said drones hit the bitumen unit and a primary distillation column at the refinery overnight into 23 November. Ukraine's General Staff said the fire was visible from satellite. Meduza reported the strike; we opened no Russian official source.",
+      "sources": [
+        {
+          "title": "СБУ спільно з ГУР уразила Новошахтинський НПЗ у Ростовській області рф (The SBU and HUR struck the Novoshakhtinsk refinery in Rostov Oblast, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19128",
+          "published_at": "2026-11-23T19:45:00+08:00"
+        },
+        {
+          "title": "Що горить на Новошахтинському НПЗ? (What is burning at the Novoshakhtinsk refinery?, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42979",
+          "published_at": "2026-11-23T19:42:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+          "published_at": "2026-11-23T19:24:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0084",
+      "date": "2026-11-22",
+      "target_name": "Kaleykino oil pumping station, near Almetyevsk",
+      "target_type": "pipeline",
+      "region": "Republic of Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1200,
+      "weapon": "drone",
+      "weapon_detail": "SBU Alpha long-range drones",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU said its Alpha drones attacked the Kaleykino pumping station, more than 1,200 km from Ukraine, overnight into 23 November. It is the second strike on the site since 18 November. Meduza reported the attack; we opened no Russian official source.",
+      "sources": [
+        {
+          "title": "СБУ уразила нафтоперекачувальну станцію «Калейкино» в Татарстані (The SBU struck the Kaleykino oil pumping station in Tatarstan, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19130",
+          "published_at": "2026-11-23T23:00:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+          "published_at": "2026-11-23T19:24:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0085",
+      "date": "2026-11-23",
+      "target_name": "Lukoil-Permnefteorgsintez refinery, Perm",
+      "target_type": "refinery",
+      "region": "Perm Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1500,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit the refinery, more than 1,500 km from the border, on 23 November. The Moscow Times reports Governor Makhonin said drones targeted \"several\" facilities, killing one person and lightly injuring two. Astra placed the fires in the primary processing area.",
+      "sources": [
+        {
+          "title": "Сили оборони уразили НПЗ «Лукойлу» в Пермі за понад 1500 кілометрів від кордону (Defence Forces hit Lukoil's Perm refinery more than 1,500 km from the border, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42981",
+          "published_at": "2026-11-23T23:03:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drones Kill 1, Strike Oil Refinery in Perm Region",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/23/ukrainian-drones-kill-1-strike-oil-refinery-in-perm-region-a94347",
+          "published_at": "2026-11-23T18:06:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
       "updated": null
     }
   ]

@@ -465,6 +465,11 @@
           "date": "2026-11-22",
           "probability": 95,
           "note": "Moldova's ministry reported a jet drone crossing twice on 21 November; TRUmedia counts ten aerial incidents from 14 to 20 November."
+        },
+        {
+          "date": "2026-11-24",
+          "probability": 97,
+          "note": "Another ministry-reported drone entry on 23 November adds to a November count that already looks above 10."
         }
       ],
       "status": "open",
@@ -811,6 +816,11 @@
           "date": "2026-11-22",
           "probability": 90,
           "note": "Ministry-reported drone entries on 20 and 21 November make two qualifying days. One more is needed by 17 December."
+        },
+        {
+          "date": "2026-11-24",
+          "probability": 97,
+          "note": "Local media citing Moldova's defence ministry report a drone entry on 23 November, a third qualifying day. We will resolve once we open the ministry's text."
         }
       ],
       "status": "open",

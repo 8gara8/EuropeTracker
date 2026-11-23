@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "ladder": {
     "current_rung": 3,
     "next_rung_odds": {
@@ -99,8 +99,8 @@
     },
     {
       "country": "EE",
-      "score": 3,
-      "since": "2026-11-17"
+      "score": 4,
+      "since": "2026-11-24"
     },
     {
       "country": "FI",
@@ -278,10 +278,10 @@
         "LT",
         "PL"
       ],
-      "status": "watch",
-      "since": "2026-07-26",
-      "last_evidence": "The Narva river border dispute continues, and Russian officials cast NATO Baltic drills as preparation to seize Kaliningrad.",
-      "last_evidence_date": "2026-07-26"
+      "status": "active",
+      "since": "2026-11-24",
+      "last_evidence": "Russia's Foreign Ministry told Estonia's chargé that Tallinn's actions are \"on the verge of triggering open war with Russia\". It accused Estonia of lending its airspace to Ukrainian drones and of threatening the Russian language and the Orthodox Church. This is an official narrative of the kind the indicator tracks.",
+      "last_evidence_date": "2026-11-24"
     },
     {
       "id": "ind-diplomatic",

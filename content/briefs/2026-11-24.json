@@ -1,0 +1,1147 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "window": {
+    "start": "2026-11-23T05:30:00+08:00",
+    "end": "2026-11-24T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-24T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Poland confirms three Russian Kh-101s; Moscow warns Estonia of 'open war'; Ukraine sinks a corvette in Libya; rung holds at 3",
+  "bottom_line": "Spillover risk holds at rung 3 (overt military incidents, no deaths). Polish prosecutors confirmed that all three objects that fell on 20 November were Russian Kh-101 cruise missiles, and we now log the case. Allies sent early-warning aircraft to Poland. Russia's Foreign Ministry told Estonia its actions are \"on the verge of triggering open war\", the sharpest pretext language we have recorded this autumn, so we raise Estonia to high (4). Finland summoned Russia's ambassador over a suspected helicopter incursion. Russia launched 153 drones at Ukraine overnight. A step up to rung 4 within 30 days remains unlikely (35%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s2",
+    "s6",
+    "s10"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 35,
+        "term": "unlikely",
+        "confidence": "low"
+      },
+      "rationale": "The highest logged incident in 30 days is rung 3, and the newly logged Polish missile entry is also rung 3. Reaching rung 4 needs deaths or a deliberate strike. Kh-101s landing near homes keep that unlikely (35%) rather than lower."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: four logged incidents in 30 days, including INC-2026-0116, against 13.3 a month, and none serious in 12 months. We hold at 20%: Kh-101s landing near homes keep the 20 November raise in place.",
+        "source_ids": [
+          "s1",
+          "s2"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: two incidents in 30 days against 1.7 a month, and one serious in 12 months. We hold: Cyprus's reported espionage expulsions add no new sabotage evidence.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: none logged in 30 days against 2 a month, but 12 serious in 12 months, mostly Black Sea ship strikes. We hold: Ukraine's widening sea campaign keeps the risk of Russian retaliation at sea high.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Base: none in 30 days against 0.7 a month, and none serious in 12 months. We hold: no disruptive, Russia-attributed attack came in the window.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "Base: none in 30 days or 12 months. We hold at remote despite Moscow's \"open war\" warning to Estonia, which we read as diplomatic pressure, not a military move.",
+        "source_ids": [
+          "s6"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Base: one incident in 30 days against 0.3 a month. We hold: reports of a planned nuclear-armed satellite concern space, not readiness in Europe or a radiological release.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: none in 30 days against 0.3 a month. We hold: Sandu's warning on cognitive war and Moscow's campaign against Estonia add pressure but block no decision.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 4,
+        "previous_score": 3,
+        "reason": "Russia's Foreign Ministry told Estonia its actions are \"on the verge of triggering open war\" and repeated compatriot grievances. We activate ind-pretext, which names Estonia. The floor is 3, from the Threod arson.",
+        "source_ids": [
+          "s5",
+          "s6"
+        ],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "The floor is 1. We keep Finland one above it for the suspected Russian helicopter incursion of 21 November, over which Finland summoned Russia's ambassador, and for drone-struck ships off its coast.",
+        "source_ids": [
+          "s7"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Poland confirms all three objects that fell on 20 November were Russian Kh-101s; allied early-warning aircraft arrive",
+      "summary": "Notes from Poland reports that Lublin prosecutors found all three missiles that came down at Nowy Lipowiec, Rudnik nad Sanem and Mołodycz were Kh-101s made in Dubna in late 2026. The defence minister called it \"another provocation by the Russian Federation\" (translated). He said allied early-warning aircraft now support Polish air defence. We log the case as INC-2026-0116.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0116"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 3,
+      "russian_framing": "Russia has not commented, according to Notes from Poland.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia tells Estonia its actions are \"on the verge of triggering open war\"",
+      "summary": "RTÉ reports that Russia's Foreign Ministry summoned Estonia's chargé d'affaires over the 1 December border closure and warned of \"comprehensive political and diplomatic measures\". It accused Tallinn of lending its airspace to Ukrainian drones and of threatening the Russian language and the Orthodox Church. Estonia denies it.",
+      "category": "military_pressure",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The Foreign Ministry claims Estonia covertly lends its airspace to Ukrainian drones, and calls its actions \"provocative and extremely dangerous\".",
+      "source_ids": [
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Finland summons Russia's ambassador over a suspected helicopter incursion",
+      "summary": "France 24 reports that Finland's foreign ministry summoned Russia's ambassador on 23 November over a Russian helicopter suspected of violating Finnish airspace on 21 November. The ministry called Russia's \"dangerous and reckless actions in Europe\" unacceptable. The violation remains suspected, so we do not log it.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s7",
+        "s6"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Moldova reports an attack drone that vanished near the Cuciurgan power plant",
+      "summary": "Vocea Basarabiei, citing Moldova's defence ministry, reports that an attack drone entered from the Odesa region at 18:44 on 23 November and vanished from radar near the Cuciurgan power plant. NewsMaker reports an unconfirmed blast near Dnestrovsk. We could not open the ministry's own text, so we do not log it.",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ukraine confirms it sank the corvette Merkury in Benghazi and hits refineries up to 1,500 km deep",
+      "summary": "Zelensky and the SBU said seven naval drones sank Merkury and hit the cargo ship MV Angara off Benghazi on 22 November. Meduza reports Russian and Libyan deaths. Ukraine also claimed strikes on the Novoshakhtinsk refinery, the Kaleykino pumping station and Lukoil's Perm refinery, where the governor reported one death.",
+      "category": "deep_strikes",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0082",
+        "STR-2026-0083",
+        "STR-2026-0084",
+        "STR-2026-0085"
+      ],
+      "verification": 4,
+      "attribution": null,
+      "russian_framing": "The BBC reports the Kremlin warned of an \"escalation of tensions in the region\" but declined to comment directly on the Libya attacks.",
+      "source_ids": [
+        "s17",
+        "s18",
+        "s19",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "German intelligence reportedly expects Russia could orbit a nuclear-armed satellite as early as December",
+      "summary": "Meduza, citing German media, reports that Western services, including the Bundeswehr and the BND, believe Russia may launch the \"Sputnik-S\" satellite carrying a nuclear device, possibly as early as December. That would breach the 1967 Outer Space Treaty.",
+      "category": "nuclear",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's embassy says its space research is \"exclusively for peaceful purposes\" and calls the reports \"a propaganda campaign\"; Peskov dismissed the speculation.",
+      "source_ids": [
+        "s20"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "The European Commission presents a 22nd sanctions package",
+      "summary": "The Guardian reports that von der Leyen set out a 22nd package, meant to \"keep pressure\" on Russia and to \"strike harder\" at its ability to fund the war. Pack items describe it as targeting banks, the shadow fleet and athletes. Member states must still agree it unanimously.",
+      "category": "diplomacy",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s23"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine confirmed it sank the corvette Merkury and claimed hits on the Novoshakhtinsk and Perm refineries and the Kaleykino pumping station. Russia's defence ministry said it downed 192 drones overnight.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s11",
+        "s12",
+        "s14",
+        "s15",
+        "s17",
+        "s21"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Ukraine's General Staff said Russia launched 153 drones overnight, 60 of them jet-powered, and that 134 were downed or suppressed. Debris injured five people in central Kyiv. Zelensky held a Staff meeting on countering jet drones.",
+      "development_ids": [],
+      "source_ids": [
+        "s10",
+        "s16",
+        "s28"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "The Commission presented a 22nd sanctions package. Meduza relays reports that Putin may accept Article 5-style guarantees for Ukraine; no Russian official has confirmed this.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s23",
+        "s26"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Poland confirmed all three 20 November objects were Russian Kh-101s, and we log the case. Finland summoned Russia's ambassador over a suspected helicopter incursion. Moldova reported a drone near Cuciurgan.",
+      "development_ids": [
+        "d1",
+        "d3",
+        "d4"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "The Moscow Times, citing reports, says Cyprus expelled two Russian diplomats suspected of espionage after an operation by its intelligence service. We found no new sabotage incident in the window.",
+      "development_ids": [],
+      "source_ids": [
+        "s29"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "TASS says Sparta II's crew returned to St Petersburg unhurt. Estonia's defence minister says the Gulf of Finland is no more dangerous; experts quoted by Yle expect more strikes.",
+      "development_ids": [],
+      "source_ids": [
+        "s22",
+        "s24",
+        "s27"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Russia's Foreign Ministry warned that Estonia is \"on the verge of triggering open war\". Estonia began the three-week Pikne exercise with British and French troops.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s5",
+        "s6",
+        "s30"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "German media, citing Western intelligence, report that Russia could orbit a nuclear-armed satellite as early as December. Russia denies it.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s20"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Speaking to the NATO Parliamentary Assembly, Moldova's President Sandu warned that Russia wages a \"cognitive war\" against European democracies alongside its war on Ukraine.",
+      "development_ids": [],
+      "source_ids": [
+        "s25"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Allied early-warning aircraft deployed to protect Polish airspace. Kosiniak-Kamysz said Poland is \"seeking further support\".",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0116",
+      "date": "2026-11-20",
+      "date_precision": "day",
+      "location_country": "PL",
+      "affected": [
+        "PL"
+      ],
+      "location": "Nowy Lipowiec, Rudnik nad Sanem and Mołodycz, south-eastern Poland",
+      "sea": null,
+      "pathway": "airspace",
+      "type": "missile_incursion",
+      "rung": 3,
+      "serious": false,
+      "summary": "During a mass Russian attack on Ukraine, three Russian Kh-101 cruise missiles entered Polish airspace for about three minutes. They came down at Nowy Lipowiec, Rudnik nad Sanem and Mołodycz. Swedish Gripens could not identify them in time. No one was hurt, and no critical infrastructure was damaged. Allies then sent early-warning aircraft.",
+      "attribution": 3,
+      "attribution_note": "Poland's defence minister called it another Russian provocation. Lublin prosecutors identified all three as Kh-101s made in Dubna.",
+      "host_statement": "yes",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "Wicepremier W. Kosiniak-Kamysz o naruszeniu polskiej przestrzeni powietrznej (Deputy PM W. Kosiniak-Kamysz on the violation of Polish airspace, translated)",
+          "outlet": "Ministry of National Defence (Poland)",
+          "category": "eu_gov_security",
+          "url": "https://www.gov.pl/web/obrona-narodowa/wicepremier-w-kosiniak-kamysz-o-naruszeniu-polskiej-przestrzeni-powietrznej",
+          "published_at": "2026-11-20"
+        },
+        {
+          "title": "Poland confirms three objects that struck its territory were all Russian missiles",
+          "outlet": "Notes from Poland",
+          "category": "eu_regional_press",
+          "url": "https://notesfrompoland.com/2026/11/23/poland-confirms-three-objects-that-struck-its-territory-were-all-russian-missiles/",
+          "published_at": "2026-11-23T18:04:00+08:00"
+        },
+        {
+          "title": "All three 'flying objects' that fell in Poland turned out to be Russian X-101 cruise missiles",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/23/all-three-flying-objects-that-fell-in-poland-turned-out-to-be-russian-x-101-cruise-missiles",
+          "published_at": "2026-11-23T17:23:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0083",
+      "date": "2026-11-22",
+      "target_name": "Novoshakhtinsk oil products plant",
+      "target_type": "refinery",
+      "region": "Rostov Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 200,
+      "weapon": "drone",
+      "weapon_detail": "SBU Alpha long-range drones",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU and HUR said drones hit the bitumen unit and a primary distillation column at the refinery overnight into 23 November. Ukraine's General Staff said the fire was visible from satellite. Meduza reported the strike; we opened no Russian official source.",
+      "sources": [
+        {
+          "title": "СБУ спільно з ГУР уразила Новошахтинський НПЗ у Ростовській області рф (The SBU and HUR struck the Novoshakhtinsk refinery in Rostov Oblast, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19128",
+          "published_at": "2026-11-23T19:45:00+08:00"
+        },
+        {
+          "title": "Що горить на Новошахтинському НПЗ? (What is burning at the Novoshakhtinsk refinery?, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42979",
+          "published_at": "2026-11-23T19:42:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+          "published_at": "2026-11-23T19:24:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0084",
+      "date": "2026-11-22",
+      "target_name": "Kaleykino oil pumping station, near Almetyevsk",
+      "target_type": "pipeline",
+      "region": "Republic of Tatarstan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1200,
+      "weapon": "drone",
+      "weapon_detail": "SBU Alpha long-range drones",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "The SBU said its Alpha drones attacked the Kaleykino pumping station, more than 1,200 km from Ukraine, overnight into 23 November. It is the second strike on the site since 18 November. Meduza reported the attack; we opened no Russian official source.",
+      "sources": [
+        {
+          "title": "СБУ уразила нафтоперекачувальну станцію «Калейкино» в Татарстані (The SBU struck the Kaleykino oil pumping station in Tatarstan, translated)",
+          "outlet": "Security Service of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/SBUkr/19130",
+          "published_at": "2026-11-23T23:00:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+          "published_at": "2026-11-23T19:24:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0085",
+      "date": "2026-11-23",
+      "target_name": "Lukoil-Permnefteorgsintez refinery, Perm",
+      "target_type": "refinery",
+      "region": "Perm Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1500,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit the refinery, more than 1,500 km from the border, on 23 November. The Moscow Times reports Governor Makhonin said drones targeted \"several\" facilities, killing one person and lightly injuring two. Astra placed the fires in the primary processing area.",
+      "sources": [
+        {
+          "title": "Сили оборони уразили НПЗ «Лукойлу» в Пермі за понад 1500 кілометрів від кордону (Defence Forces hit Lukoil's Perm refinery more than 1,500 km from the border, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42981",
+          "published_at": "2026-11-23T23:03:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drones Kill 1, Strike Oil Refinery in Perm Region",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/23/ukrainian-drones-kill-1-strike-oil-refinery-in-perm-region-a94347",
+          "published_at": "2026-11-23T18:06:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-24",
+      "updated": null
+    }
+  ],
+  "strike_updates": [
+    {
+      "id": "STR-2026-0082",
+      "changes": {
+        "verification": 4,
+        "damage": "The corvette sank at its berth in Benghazi, leaving only the bow above water. SBU video and satellite imagery show the strike.",
+        "effect": null,
+        "summary": "Zelensky and the SBU confirmed that seven Ukrainian naval drones, launched from a mothership, sank the corvette Merkury in Benghazi on 22 November and hit the cargo ship MV Angara. Meduza, citing Al Jazeera sources, reports Russian and Libyan deaths. The Kremlin declined direct comment.",
+        "weapon_detail": "Seven naval drones from a mothership",
+        "western_weapon": null
+      },
+      "add_sources": [
+        {
+          "title": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+          "outlet": "The Guardian",
+          "category": "intl_press",
+          "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
+          "published_at": "2026-11-23T19:42:00+08:00"
+        },
+        {
+          "title": "Ukrainian sea drones sink Russian warship in Libya, killing Russians and Libyans",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/feature/2026/11/23/ukrainian-sea-drones-sink-russian-warship-in-libya-killing-russians-and-libyans",
+          "published_at": "2026-11-23T18:58:00+08:00"
+        },
+        {
+          "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+          "outlet": "BBC News",
+          "category": "intl_press",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-23T23:41:00+08:00"
+        }
+      ],
+      "reason": "Ukraine claimed the operation, and the Guardian and Meduza report that the ship sank, citing video and satellite imagery. That meets damage assessed."
+    }
+  ],
+  "indicator_changes": [
+    {
+      "id": "ind-pretext",
+      "to": "active",
+      "evidence": "Russia's Foreign Ministry told Estonia's chargé that Tallinn's actions are \"on the verge of triggering open war with Russia\". It accused Estonia of lending its airspace to Ukrainian drones and of threatening the Russian language and the Orthodox Church. This is an official narrative of the kind the indicator tracks.",
+      "source_ids": [
+        "s5",
+        "s6"
+      ]
+    }
+  ],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that 30-day spillover risk is broadly unchanged at rung 3, but the political temperature around Estonia has risen. We log one incident, INC-2026-0116, for the Polish missiles of 20 November. The rung does not move. Airspace now stands at four logged incidents in 30 days, against a 90-day baseline of 13.3 a month.\n\nThe Polish case now meets our standard, because we have opened the defence ministry's statement. Kosiniak-Kamysz said \"we are dealing with another provocation by the Russian Federation\" (translated). Notes from Poland reports that Lublin prosecutors found all three missiles were made in Dubna in the fourth quarter of 2026, and that Swedish Gripens could not identify them in time. Allied early-warning aircraft now support Polish air defence. We hold airspace at highly unlikely (20%), because the case shows the risk but no change in Russian intent.\n\nThe more important signal is Moscow's language toward Estonia. RTÉ reports that Russia's Foreign Ministry told Estonia's chargé d'affaires that Tallinn's \"provocative and extremely dangerous actions are on the verge of triggering open war with Russia\", and that Moscow reserves the right to take political and diplomatic measures. Estonia says it \"has never allowed, and will never allow\" its territory to be used for such operations. We assess that this is an official pretext narrative, and we move ind-pretext to active. We assess that diplomatic retaliation is likely and military action remote. A1 holds. We raise Estonia to high (4) and hold military pressure at remote (3%).\n\nWe do not log Finland's suspected helicopter incursion, which is still unconfirmed, or Moldova's Cuciurgan drone, whose ministry text we could not open.\n\nUkraine's sinking of Merkury and its strikes 1,500 km deep widen the target set for Russian retaliation, possibly against Baltic shipping. On the ceasefire paradox, reported Russian openness to Article 5-style guarantees is unconfirmed, so near-term incident risk stays high. All five assumptions remain in force.",
+    "change_my_mind": "Expelling Estonian diplomats alone would not move us. A Russian military step tied to the Estonia narrative, such as border-guard action on the Narva river or a build-up in Pskov, would raise military pressure. A visible de-escalation would return ind-pretext to watch.",
+    "competing_explanations": [
+      {
+        "subject": "Russia's \"open war\" warning to Estonia",
+        "hypotheses": [
+          {
+            "label": "Diplomatic deterrence before the 1 December border closure",
+            "assessment": "The warning came at a summons over the closure and promises political and diplomatic measures, which fits coercive signalling aimed at Tallinn and at allies weighing similar steps.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Domestic messaging after Ukraine's Baltic ship strikes",
+            "assessment": "Blaming Estonia explains Baltic losses to a Russian audience without admitting air-defence failures.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Groundwork for coercive action against Estonia",
+            "assessment": "The compatriot grievances fit a pretext pattern, but we see no matching military moves near Narva or in Pskov.",
+            "estimate": {
+              "probability": 15,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [],
+  "forecast_updates": [
+    {
+      "id": "F-2026-031",
+      "probability": 97,
+      "note": "Local media citing Moldova's defence ministry report a drone entry on 23 November, a third qualifying day. We will resolve once we open the ministry's text."
+    },
+    {
+      "id": "F-2026-017",
+      "probability": 97,
+      "note": "Another ministry-reported drone entry on 23 November adds to a November count that already looks above 10."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A1",
+      "text": null,
+      "reason": "Moscow's \"open war\" warning to Estonia is rhetorical and diplomatic. No Russian military action against NATO territory followed, and Poland's Kh-101s are not shown to have targeted Poland."
+    }
+  ],
+  "taiwan": "The most direct lesson is naval. Ukraine says seven domestically built sea drones, launched from a mothership, sank a 2023-built Russian corvette in a Libyan port far from Ukraine. That strengthens the case for cheap uncrewed surface vessels in Taiwan's asymmetric strategy, and for hardening its own ports against the same tactic. Poland's Kh-101 case shows NATO jets could not identify low-flying cruise missiles in bad weather, and allies answered with airborne early warning. That points to sensors, not just Patriot stocks, as a bottleneck for Taiwan. A Russian nuclear-armed satellite, if real, would threaten space assets Taiwan relies on in a crisis.",
+  "next_72h": [
+    {
+      "date": "2026-11-25",
+      "event": "Possible Russian \"political and diplomatic measures\" against Estonia after the summons of its chargé.",
+      "why": "Tests whether the pretext narrative escalates."
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Allied early-warning flights over Poland continue; prosecutors' analysis of the Kh-101 debris goes on.",
+      "why": "Any finding on deliberate targeting would bear on A1 and the airspace score."
+    },
+    {
+      "date": "2026-11-26",
+      "event": "Exercise Pikne continues in Estonia with British and French troops.",
+      "why": "Russian reactions could feed the narrative of NATO provocation against Estonia."
+    },
+    {
+      "date": "2026-11-27",
+      "event": "Watch for Russian retaliation against shipping after the Merkury sinking, in the Black Sea or the Gulf of Finland.",
+      "why": "Bears on maritime odds and F-2026-028, F-2026-029 and F-2026-036."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ru_drones_launched",
+      "value": 153,
+      "unit": "count",
+      "period": "night of 22–23 Nov",
+      "source_ids": [
+        "s10"
+      ],
+      "note": "Of these, 60 were jet-powered, per Ukraine's General Staff."
+    },
+    {
+      "id": "ru_drones_intercepted",
+      "value": 134,
+      "unit": "count",
+      "period": "night of 22–23 Nov",
+      "source_ids": [
+        "s10"
+      ],
+      "note": "Shot down or suppressed."
+    },
+    {
+      "id": "ua_deep_strikes",
+      "value": 3,
+      "unit": "count",
+      "period": "22–23 Nov",
+      "source_ids": [
+        "s11",
+        "s14",
+        "s15"
+      ],
+      "note": "Novoshakhtinsk, Kaleykino and Perm."
+    },
+    {
+      "id": "ua_max_strike_depth_km",
+      "value": 1500,
+      "unit": "km",
+      "period": "23 Nov",
+      "source_ids": [
+        "s11"
+      ],
+      "note": "Perm refinery, per Ukraine's General Staff."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Wicepremier W. Kosiniak-Kamysz o naruszeniu polskiej przestrzeni powietrznej (Deputy PM W. Kosiniak-Kamysz on the violation of Polish airspace, translated)",
+      "outlet": "Ministry of National Defence (Poland)",
+      "category": "eu_gov_security",
+      "url": "https://www.gov.pl/web/obrona-narodowa/wicepremier-w-kosiniak-kamysz-o-naruszeniu-polskiej-przestrzeni-powietrznej",
+      "language": "pl",
+      "published_at": "2026-11-20",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Poland confirms three objects that struck its territory were all Russian missiles",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/23/poland-confirms-three-objects-that-struck-its-territory-were-all-russian-missiles/",
+      "language": "en",
+      "published_at": "2026-11-23T18:04:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "All three 'flying objects' that fell in Poland turned out to be Russian X-101 cruise missiles",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/23/all-three-flying-objects-that-fell-in-poland-turned-out-to-be-russian-x-101-cruise-missiles",
+      "language": "en",
+      "published_at": "2026-11-23T17:23:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "NATO strengthens protection after Russian missiles violate Polish airspace",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/23/8064278/",
+      "language": "en",
+      "published_at": "2026-11-24T01:10:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Russia accuses Estonia of allowing Ukrainian drones to use its airspace",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/23/8064275/",
+      "language": "en",
+      "published_at": "2026-11-24T00:55:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Estonia action on 'verge of triggering open war' - Russia",
+      "outlet": "RTÉ",
+      "category": "intl_press",
+      "url": "https://www.rte.ie/news/world/2026/1123/1600353-russia-estonia-finland/",
+      "language": "en",
+      "published_at": "2026-11-23",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Finland summons Russian ambassador after suspected airspace violation",
+      "outlet": "France 24",
+      "category": "intl_press",
+      "url": "https://www.france24.com/en/europe/20261123-finland-summons-russian-ambassador-after-suspected-airspace-violation",
+      "language": "en",
+      "published_at": "2026-11-23",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "O dronă de atac a pătruns în spațiul aerian al R. Moldova și a dispărut lângă Cuciurgan (An attack drone entered Moldova's airspace and vanished near Cuciurgan, translated)",
+      "outlet": "Vocea Basarabiei",
+      "category": "eu_regional_press",
+      "url": "https://voceabasarabiei.md/o-drona-de-atac-a-patruns-in-spatiul-aerian-al-r-moldova-si-a-disparut-in-apropierea-centralei-de-la-cuciurgan/",
+      "language": "ro",
+      "published_at": "2026-11-23",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "В Приднестровье, предположительно, упал и взорвался дрон (A drone reportedly fell and exploded in Transnistria, translated)",
+      "outlet": "NewsMaker (Moldova)",
+      "category": "eu_regional_press",
+      "url": "https://newsmaker.md/ru/v-pridnestrove-predpolojitelno-upal-i-vzorvalsya-dron-ochevidczy-soobshayut-o-pojare-vozle-azs",
+      "language": "ru",
+      "published_at": "2026-11-24T02:20:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "ЗБИТО/ПОДАВЛЕНО 134 ВОРОЖІ ЦІЛІ у ніч на 23 листопада (134 enemy targets downed or suppressed on the night of 23 November, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42976",
+      "language": "uk",
+      "published_at": "2026-11-23T14:12:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Сили оборони уразили НПЗ «Лукойлу» в Пермі за понад 1500 кілометрів від кордону (Defence Forces hit Lukoil's Perm refinery more than 1,500 km from the border, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42981",
+      "language": "uk",
+      "published_at": "2026-11-23T23:03:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Ukrainian Drones Kill 1, Strike Oil Refinery in Perm Region",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/23/ukrainian-drones-kill-1-strike-oil-refinery-in-perm-region-a94347",
+      "language": "en",
+      "published_at": "2026-11-23T18:06:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Ukrainian drones strike two Russian oil refineries and pumping station in overnight attacks",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
+      "language": "en",
+      "published_at": "2026-11-23T19:24:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "СБУ уразила нафтоперекачувальну станцію «Калейкино» в Татарстані (The SBU struck the Kaleykino oil pumping station in Tatarstan, translated)",
+      "outlet": "Security Service of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/SBUkr/19130",
+      "language": "uk",
+      "published_at": "2026-11-23T23:00:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "СБУ спільно з ГУР уразила Новошахтинський НПЗ у Ростовській області рф (The SBU and HUR struck the Novoshakhtinsk refinery in Rostov Oblast, translated)",
+      "outlet": "Security Service of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/SBUkr/19128",
+      "language": "uk",
+      "published_at": "2026-11-23T19:45:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Ukraine war latest: Russian warship sinks off Libyan coast following 'exemplary' Ukrainian drone attack",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/ukraine-war-latest-russian-warship-sinks-off-libyan-coast-following-exemplary-ukrainian-drone-attack/",
+      "language": "en",
+      "published_at": "2026-11-24T03:11:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Ukrainian sea drones sink Russian warship in Libya, killing Russians and Libyans",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/23/ukrainian-sea-drones-sink-russian-warship-in-libya-killing-russians-and-libyans",
+      "language": "en",
+      "published_at": "2026-11-23T18:58:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
+      "language": "en",
+      "published_at": "2026-11-23T19:42:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+      "outlet": "BBC News",
+      "category": "intl_press",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "language": "en",
+      "published_at": "2026-11-23T23:41:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Western intelligence services say Russia could put satellite with nuclear warhead into orbit in coming months",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/23/western-intelligence-services-say-russia-could-put-satellite-with-nuclear-warhead-into-orbit-in-coming-months",
+      "language": "en",
+      "published_at": "2026-11-23T20:31:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "В течение прошедшей ночи ... перехвачены и уничтожены 192 украинских беспилотных летательных средства (192 Ukrainian drones intercepted and destroyed overnight, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69266",
+      "language": "ru",
+      "published_at": "2026-11-23T14:17:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Экипаж судна, попавшего под атаку БПЛА в Финском заливе, вернулся в порт Петербурга (The crew of the ship attacked by drones in the Gulf of Finland returned to St Petersburg, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407248",
+      "language": "ru",
+      "published_at": "2026-11-24T01:33:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "EU sanctions package intended to 'keep pressure' on Russia and 'strike harder' at its ability to fund Ukraine war – as it happened",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/live/2026/nov/23/russia-ukraine-war-zelenskyy-libya-benghazi-drone-attack-ship-merkury-un-nato-europe-latest-news-updates",
+      "language": "en",
+      "published_at": "2026-11-24T00:42:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Estonia's defense minister: The Gulf of Finland has not become more dangerous",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610203777/estonia-s-defense-minister-the-gulf-of-finland-has-not-become-more-dangerous",
+      "language": "en",
+      "published_at": "2026-11-23T20:40:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Maia Sandu avertizează asupra războiului cognitiv al Rusiei împotriva Europei (Maia Sandu warns of Russia's cognitive war against Europe, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/maia-sandu-avertizeaza-asupra-razboiului-cognitiv-al-rusiei-impotriva-europei-vrea-sa-schimbe-ce-cred-oamenii-ce-solutii-propune-4049189",
+      "language": "ro",
+      "published_at": "2026-11-23T20:35:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Putin is reportedly open to Article 5-style security guarantees for Ukraine. But what does Article 5 actually say?",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/cards/putin-is-reportedly-open-to-article-5-style-security-guarantees-for-ukraine-but-what-does-article-5-actually-say-would-the-guarantees-require-nato-members-to-go-to-war-if-russia-attacks-again",
+      "language": "en",
+      "published_at": "2026-11-24T00:30:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Asiantuntijat odottavat lisää drooni-iskuja Suomenlahdelle – meriliikenne on silti turvallista (Experts expect more drone strikes in the Gulf of Finland, but shipping is still safe, translated)",
+      "outlet": "Yle News",
+      "category": "eu_regional_press",
+      "url": "https://yle.fi/a/74-20258575?origin=rss",
+      "language": "fi",
+      "published_at": "2026-11-24T04:27:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Today, I held a Staff meeting focused on essentially one issue – protection against Russian jet-powered drones",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21969",
+      "language": "en",
+      "published_at": "2026-11-24T03:27:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s29",
+      "title": "Cyprus Expels Russian Diplomats Suspected of Espionage, Reports Say",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/23/cyprus-expels-russian-diplomats-suspected-of-espionage-reports-say-a94348",
+      "language": "en",
+      "published_at": "2026-11-23T19:35:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    },
+    {
+      "id": "s30",
+      "title": "Estonia launches multinational exercise with UK and French forces",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610203576/estonia-launches-multinational-exercise-with-uk-and-french-forces",
+      "language": "en",
+      "published_at": "2026-11-23T21:38:00+08:00",
+      "accessed_at": "2026-11-24T06:00:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-24T05:45:42+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 13.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 0,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 1,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1961,
+    "source_count": 30,
+    "source_category_count": 8
+  }
+}
