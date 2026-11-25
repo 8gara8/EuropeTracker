@@ -2915,6 +2915,110 @@
       "seed": false,
       "added": "2026-11-24",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0086",
+      "date": "2026-11-24",
+      "target_name": "Kuibyshev oil refinery (Rosneft), Samara",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claims hits on the AVT-4 and AVT-5 distillation units, a reformer and two tanks at the 7m-tonne refinery overnight into 25 November. Meduza reports Governor Fedorishchev confirmed an attack, one death and power outages, without naming the site.",
+      "sources": [
+        {
+          "title": "Самарський дубль: Сили оборони уразили Куйбишевський і Сизранський НПЗ (A Samara double: Defence Forces hit the Kuibyshev and Syzran refineries, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42995",
+          "published_at": "2026-11-25T18:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike Russia's Samara region, killing one and setting two Rosneft oil refineries ablaze",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/25/ukrainian-drones-strike-russia-s-samara-region-killing-one-and-setting-two-rosneft-oil-refineries-ablaze",
+          "published_at": "2026-11-25T16:07:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0087",
+      "date": "2026-11-24",
+      "target_name": "Syzran oil refinery (Rosneft)",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 850,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claims preliminary damage to the AVT-6 distillation unit, reforming, hydrotreating and isomerisation units and two tanks overnight into 25 November. Meduza, citing monitoring channels, reports a fire at the refinery; we opened no Russian official source naming it.",
+      "sources": [
+        {
+          "title": "Самарський дубль: Сили оборони уразили Куйбишевський і Сизранський НПЗ (A Samara double: Defence Forces hit the Kuibyshev and Syzran refineries, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42995",
+          "published_at": "2026-11-25T18:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike Russia's Samara region, killing one and setting two Rosneft oil refineries ablaze",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/25/ukrainian-drones-strike-russia-s-samara-region-killing-one-and-setting-two-rosneft-oil-refineries-ablaze",
+          "published_at": "2026-11-25T16:07:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0088",
+      "date": "2026-11-24",
+      "target_name": "Savasleyka airbase",
+      "target_type": "airbase",
+      "region": "Nizhny Novgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 650,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claims strikes on 24–25 November hit three MiG-31s, which carry Kinzhal missiles, and two Su-34s at Savasleyka. It says the damage is still being clarified. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "5 літаків, якими росіяни тероризують цивільних українців, уражено на аеродромі «Саваслейка» (Five aircraft used to terrorise Ukrainian civilians hit at Savasleyka airfield, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42996",
+          "published_at": "2026-11-25T19:30:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
     }
   ]
 }

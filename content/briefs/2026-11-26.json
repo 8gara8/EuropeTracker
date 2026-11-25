@@ -1,0 +1,924 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "window": {
+    "start": "2026-11-25T05:30:00+08:00",
+    "end": "2026-11-26T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-26T06:15:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Poland plans eastern no-fly zone and presses NATO on intercepts over Ukraine; Zaporizhzhia loses all power again; rung holds at 3",
+  "bottom_line": "Spillover risk holds at rung 3 (overt military incidents, no deaths). Poland is moving from protest to procedure. Deputy Defence Minister Tomczyk said Warsaw wants a no-fly zone along its eastern border by early January and has asked NATO to consider intercepting Russian missiles over Ukraine. The move follows a Russian drone that spent 8–9 minutes over Lubelskie on 23 November. Russia's ambassador rejects any involvement. The Zaporizhzhia plant lost all off-site power for the 28th time, the IAEA says. A step up to rung 4 within 30 days stays unlikely (35%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s2",
+    "s4",
+    "s6"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 35,
+        "term": "unlikely",
+        "confidence": "low"
+      },
+      "rationale": "Rung 3 rests on the Polish Kh-101s (20 November) and the Baltic and Romanian drone incursions. Today's only logged incident, Zaporizhzhia's power loss, is rung 1. No deaths on European soil in 30 days; odds of rung 4 held at unlikely (35%)."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Four logged incidents in 30 days against a 13.3 monthly baseline; no serious incident in 12 months. Poland's faster engagement rules cut one risk and add debris risk, so we hold.",
+        "source_ids": [
+          "s2",
+          "s4"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days against a 1.7 monthly baseline and one serious case in 12 months. Siemoniak's warning confirms intent but adds no new incident.",
+        "source_ids": [
+          "s14"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Twelve serious incidents in 12 months, driven by Black Sea ship strikes; no new maritime incident in the window. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a 0.7 monthly baseline and none serious in 12 months. Nothing new found.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days and none serious since 2022. Moscow's pretext rhetoric toward Estonia persists, but no force movement was reported.",
+        "source_ids": []
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Two incidents in 30 days, both Zaporizhzhia power losses, against a 0.3 monthly baseline; none serious. Power losses fall below the threshold of raised readiness or release.",
+        "source_ids": [
+          "s6"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "No incidents in 30 days against a 0.3 monthly baseline. Russia's claim of a coming 'provocation' in Moldova is rhetoric, not a blocked decision.",
+        "source_ids": [
+          "s13"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [
+          "s2",
+          "s4"
+        ],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 4,
+        "previous_score": 4,
+        "reason": "Floor 3 from the Threod arson. Held at 4 because the active pretext indicator names Estonia after Moscow's 'open war' warning; Herem rebutted the airspace claim on 25 November.",
+        "source_ids": [
+          "s12"
+        ],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "Floor 1. Held one above it for the suspected Russian helicopter incursion off Loviisa on 21 November and drone strikes on Russian ships near Finnish waters.",
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [
+          "s13"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Poland plans an eastern no-fly zone and presses NATO on intercepting Russian missiles over Ukraine",
+      "summary": "Deputy Defence Minister Tomczyk said Poland will ask the government for a no-fly zone along the eastern border by late December or early January, so pilots can engage radar tracks entering from Ukraine. Warsaw raised interception over Ukraine with NATO ambassadors on 23 November; Tomczyk says NATO is not supportive. Rzeczpospolita reports a Russian drone spent 8–9 minutes over Lubelskie on 23 November.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Ambassador Mikhno said Russia \"categorically rejects\" involvement in the missile incidents, calling Polish claims \"unsubstantiated assumptions\" meant to stoke anti-Russian sentiment.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Zaporizhzhia plant loses all off-site power for the 28th time",
+      "summary": "TASS, citing the IAEA, reports that the plant lost its last line, Ferosplavna-1, at 05:28 local time on 25 November and switched to emergency diesel generators, the 28th complete loss of the war. Grossi said the IAEA team is investigating the cause. Ukrainian media say Energoatom blamed Russian shelling.",
+      "category": "nuclear",
+      "importance": "major",
+      "incident_ids": [
+        "INC-2026-0117"
+      ],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": 1,
+      "russian_framing": "TASS relayed the IAEA account without assigning blame.",
+      "source_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Ukraine claims hits on two Samara refineries and Savasleyka airbase",
+      "summary": "Ukraine's General Staff claims hits on distillation units at Rosneft's Kuibyshev (about 7m tonnes a year) and Syzran refineries overnight into 25 November, and on three MiG-31s and two Su-34s at Savasleyka. Meduza reports Governor Fedorishchev said one person was killed and fires broke out at both refineries.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0086",
+        "STR-2026-0087",
+        "STR-2026-0088"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry claimed 305 Ukrainian drones were downed overnight over 13 regions, including Samara Oblast.",
+      "source_ids": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Estonia's defence minister rejects Moscow's claim that Ukraine uses Estonian airspace",
+      "summary": "Martin Herem told the Riigikogu that Ukraine has never used or asked to use Estonian airspace, and that stray drones enter for technical or weather reasons. Security expert Ilmar Raag told ERR Moscow's 'open war' warning aims to sow panic, not signal imminent action.",
+      "category": "military_pressure",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Russia's Foreign Ministry has accused Estonia of lending its airspace to Ukrainian drones and said Tallinn is on the verge of triggering open war.",
+      "source_ids": [
+        "s12",
+        "s18"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Poland's intelligence coordinator: a peace deal would not end Russian sabotage",
+      "summary": "Tomasz Siemoniak, cited by Digi24 from Politico, said Russian operations have moved from warehouse arson to rail, communications and defence targets. He said the chance the 20 November missile incursion was accidental is \"close to zero\" (translated) and that Moscow may try to draw other countries into the war.",
+      "category": "sabotage",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s14"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Russia's embassy claims an 'anti-Russian provocation' is being prepared in Moldova",
+      "summary": "Russia's Foreign Ministry relayed an embassy statement saying it has information that a provocation aimed at sharply worsening Russian-Moldovan relations is being prepared in the coming days. It urged Chișinău not to escalate and offered no evidence. We treat it as a claim and possible pre-emptive framing.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The embassy says unnamed forces want to draw Moldova into confrontation with Russia and that cutting ties would harm Moldovans first.",
+      "source_ids": [
+        "s13"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Ukraine's General Staff reported 151 combat clashes on 25 November and 3,870 Russian kamikaze drones used. We found no sign of a breakthrough.",
+      "development_ids": [],
+      "source_ids": [
+        "s15"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine claims hits on the Kuibyshev and Syzran refineries and Savasleyka airbase overnight into 25 November; the Samara governor reported one death and fires. All three are claimed (level 1).",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Zelensky said repairs are under way at all strike sites, hardest in Dnipro, the Dnipro region and Zaporizhzhia. Ukraine reported its first combat-laser kill of a jet-powered Geran.",
+      "development_ids": [],
+      "source_ids": [
+        "s16",
+        "s19"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Poland plans an eastern no-fly zone with radar-based engagement and asked NATO to consider intercepts over Ukraine. A Russian drone flew 8–9 minutes over Lubelskie on 23 November; not yet logged pending the Operational Command's text.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s2",
+        "s4"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Siemoniak warned that Russian sabotage now targets rail, communications and defence sites and would outlast a peace deal. No new incident or arrest found.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s14"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Herem told parliament Ukraine has never used Estonian airspace, rebutting Moscow's pretext. No Russian force movement toward the Baltics or Finland was reported.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s12",
+        "s18"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "Zaporizhzhia lost all off-site power for the 28th time on 25 November and ran on diesel generators, the IAEA says. This resolves F-2026-019.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Russia's embassy in Chișinău claims a provocation against Russian-Moldovan relations is being prepared in the coming days. No evidence was offered.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s13"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Poland will urge NATO to adopt its radar-based engagement rule across the eastern flank; Tomczyk says allies oppose intercepts over Ukraine. The EU-Western Balkans summit adopted a Brussels declaration.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s2",
+        "s20",
+        "s17"
+      ]
+    }
+  ],
+  "incidents_new": [
+    {
+      "id": "INC-2026-0117",
+      "date": "2026-11-25",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant, Enerhodar",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The plant lost its last off-site line, Ferosplavna-1, at 05:28 local time and switched to emergency diesel generators. The IAEA called it the 28th complete loss of off-site power during the war; its on-site team is investigating the cause. Ukrainian media report Energoatom blamed Russian shelling.",
+      "attribution": 1,
+      "attribution_note": "Cause not established by the IAEA; Energoatom, as reported by Ukrainian media, blames a Russian strike.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "IAEA reports another loss of external power supply at ZNPP",
+          "outlet": "TASS",
+          "category": "ru_state_media",
+          "url": "https://tass.com/economy/2224397",
+          "published_at": "2026-11-25"
+        },
+        {
+          "title": "Zaporizhzhia NPP loses external power after Russian shelling",
+          "outlet": "h.ua",
+          "category": "ua_independent",
+          "url": "https://en.h.ua/2026/11/25/zaporizhzhia-nuclear-plant-loses-external-power",
+          "published_at": "2026-11-25"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
+    }
+  ],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0086",
+      "date": "2026-11-24",
+      "target_name": "Kuibyshev oil refinery (Rosneft), Samara",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 900,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claims hits on the AVT-4 and AVT-5 distillation units, a reformer and two tanks at the 7m-tonne refinery overnight into 25 November. Meduza reports Governor Fedorishchev confirmed an attack, one death and power outages, without naming the site.",
+      "sources": [
+        {
+          "title": "Самарський дубль: Сили оборони уразили Куйбишевський і Сизранський НПЗ (A Samara double: Defence Forces hit the Kuibyshev and Syzran refineries, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42995",
+          "published_at": "2026-11-25T18:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike Russia's Samara region, killing one and setting two Rosneft oil refineries ablaze",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/25/ukrainian-drones-strike-russia-s-samara-region-killing-one-and-setting-two-rosneft-oil-refineries-ablaze",
+          "published_at": "2026-11-25T16:07:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0087",
+      "date": "2026-11-24",
+      "target_name": "Syzran oil refinery (Rosneft)",
+      "target_type": "refinery",
+      "region": "Samara Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 850,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claims preliminary damage to the AVT-6 distillation unit, reforming, hydrotreating and isomerisation units and two tanks overnight into 25 November. Meduza, citing monitoring channels, reports a fire at the refinery; we opened no Russian official source naming it.",
+      "sources": [
+        {
+          "title": "Самарський дубль: Сили оборони уразили Куйбишевський і Сизранський НПЗ (A Samara double: Defence Forces hit the Kuibyshev and Syzran refineries, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42995",
+          "published_at": "2026-11-25T18:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike Russia's Samara region, killing one and setting two Rosneft oil refineries ablaze",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/25/ukrainian-drones-strike-russia-s-samara-region-killing-one-and-setting-two-rosneft-oil-refineries-ablaze",
+          "published_at": "2026-11-25T16:07:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0088",
+      "date": "2026-11-24",
+      "target_name": "Savasleyka airbase",
+      "target_type": "airbase",
+      "region": "Nizhny Novgorod Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 650,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff claims strikes on 24–25 November hit three MiG-31s, which carry Kinzhal missiles, and two Su-34s at Savasleyka. It says the damage is still being clarified. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "5 літаків, якими росіяни тероризують цивільних українців, уражено на аеродромі «Саваслейка» (Five aircraft used to terrorise Ukrainian civilians hit at Savasleyka airfield, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/42996",
+          "published_at": "2026-11-25T19:30:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that 30-day spillover risk is unchanged at rung 3, and no pathway moves. We log one incident, INC-2026-0117: the Zaporizhzhia plant's 28th complete loss of off-site power, reported by the IAEA via TASS. It sits at rung 1, does not move the ladder, and resolves F-2026-019 yes.\n\nThe day's main signal is a change in Polish posture. Notes from Poland reports that Tomczyk wants a no-fly zone reaching \"a dozen or a few dozen kilometres\" from the border, so pilots can fire on radar tracks from Ukraine without visual identification. Warsaw also raised intercepts over Ukraine with NATO ambassadors on 23 November, and Tomczyk says NATO is not supportive. We assess that NATO intercepts over Ukraine within 30 days are remote (5%). Faster engagement rules lower the chance that a missile reaches a Polish town untouched, but they raise the chance that interceptor debris falls on Polish soil. The two effects roughly cancel, so airspace holds at highly unlikely (20%).\n\nRzeczpospolita reports that the Operational Command confirmed a Russian drone flew 8–9 minutes over Lubelskie on 23 November. Deputy Defence Minister Zalewski said \"we assume it was intentional action\" (translated). We have not opened the Command's own text, so, as in earlier cases, we do not log it yet. Airspace stays at four logged incidents in 30 days against a baseline of 13.3 a month, an undercount we flag. Siemoniak put the chance that the 20 November missiles were accidental at \"close to zero\" (translated). That strains A1, but no Polish official says Poland itself was the target, so A1 holds.\n\nRussia's information line hardened. Ambassador Mikhno says Russia \"categorically rejects\" involvement. Russia's embassy in Chișinău claims an anti-Russian provocation is being prepared in Moldova. We read this as possible pre-emptive framing and watch for a diplomatic break. Herem's denial that Ukraine uses Estonian airspace rebuts the pretext behind Moscow's 'open war' warning.\n\nOn the ceasefire paradox, no truce is near. Siemoniak argues that even a deal would not end sabotage, which fits A4. All five assumptions remain in force.",
+    "change_my_mind": "A Polish finding that the 23 November drone was armed or aimed at Polish sites, repeated drone routing along the Polish border, or NATO agreement to intercept over Ukraine would raise airspace and military-pressure odds.",
+    "competing_explanations": [
+      {
+        "subject": "Russian drone over Lubelskie, 23 November",
+        "hypotheses": [
+          {
+            "label": "Deliberate probe of Polish air-defence response",
+            "assessment": "Zalewski and Siemoniak call recent incursions intentional. The loop flown near Dorohusk, on a night without Polish fighters aloft, fits a test of reaction times.",
+            "estimate": {
+              "probability": 55,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Navigation error or jamming during a strike on western Ukraine",
+            "assessment": "The drone came during a night attack on western Ukraine, and Ukrainian electronic warfare often diverts drones. The short stay and the turn back east also fit a stray.",
+            "estimate": {
+              "probability": 40,
+              "term": "realistic_possibility",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [
+    {
+      "id": "F-2026-037",
+      "question": "Will Poland formally establish a no-fly or restricted engagement zone along its eastern border by 15 January 2027?",
+      "resolution_criteria": "Yes if the Polish government or defence ministry announces, between 26 November 2026 and 15 January 2027, that a regulation creating the planned eastern-border no-fly zone with new engagement rules has been adopted or entered into force.",
+      "resolves_by": "2027-01-15",
+      "horizon": "90d",
+      "pathway": "airspace",
+      "probability": 60,
+      "base_rate": 50,
+      "base_rate_note": "Poland has repeatedly imposed eastern-border airspace restrictions at short notice, such as zone EP R134 from September 2026, but new engagement rules need cabinet approval. Raised slightly because the regulation is already submitted."
+    }
+  ],
+  "forecast_updates": [
+    {
+      "id": "F-2026-034",
+      "probability": 97,
+      "note": "Rzeczpospolita reports the Operational Command confirmed a Russian drone over Lubelskie on 23 November. We resolve once we open the Command's own text."
+    }
+  ],
+  "forecast_resolutions": [
+    {
+      "id": "F-2026-019",
+      "outcome": "yes",
+      "note": "The IAEA reported that Zaporizhzhia lost all off-site power for the 28th time on 25 November and switched to diesel generators, inside the 10 November to 31 December window.",
+      "source_id": "s6"
+    }
+  ],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A1",
+      "text": null,
+      "reason": "Polish officials call the incursions deliberate tests, but none says Poland was the target, and Russia denies involvement. The assumption is under strain but holds."
+    },
+    {
+      "op": "reaffirm",
+      "id": "A4",
+      "text": null,
+      "reason": "Poland's intelligence coordinator says Russian sabotage has widened to rail, communications and defence targets and would outlast a peace deal."
+    }
+  ],
+  "taiwan": "Poland's plan to engage radar tracks near its border, and its push for NATO intercepts over Ukraine, would raise Europe's consumption of short- and medium-range interceptors (NASAMS, Patriot and shoulder-fired missiles). Taiwan is waiting on deliveries of the same systems, so the main mechanism is longer US delivery queues. The effect is small today and grows if NATO adopts the rule flank-wide. Ukraine's first combat-laser kill of a jet-powered Geran is a direct lesson for Taiwan: a low-cost-per-shot answer to mass drone raids, but limited by weather, as Kyiv's cloud cover showed. Ukraine's strikes on refineries and airbases 650–900 km deep are a model for Taiwan's own long-range strike planning.",
+  "next_72h": [
+    {
+      "date": "2026-11-27",
+      "event": "Moldova responds to Russia's embassy claim of an imminent 'anti-Russian provocation'.",
+      "why": "Could precede a diplomatic break or expulsions; it tests our read of the claim as pre-emptive framing."
+    },
+    {
+      "date": "2026-11-27",
+      "event": "IAEA update on restoring Zaporizhzhia's Ferosplavna-1 line.",
+      "why": "The plant relies on one line; a long outage would raise nuclear-safety risk and test F-2026-015."
+    },
+    {
+      "date": "2026-11-28",
+      "event": "Polish government handling of the eastern no-fly-zone regulation, and any further drone incursions.",
+      "why": "Bears on F-2026-034 and F-2026-037 and on the chance of a first Polish shoot-down over its territory."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Poland plans no-fly zone near Ukraine border, asks NATO to intercept Russian missiles over Ukraine",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/poland-plans-no-fly-zone-near-ukraine-border-asks-nato-to-intercept-russian-missiles-over-ukraine/",
+      "language": "en",
+      "published_at": "2026-11-26T00:13:00+08:00",
+      "accessed_at": "2026-11-26T05:45:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Poland plans no-fly zone on eastern border to aid downing of Russian missiles",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/25/poland-plans-no-fly-zone-on-eastern-border-to-aid-downing-of-russian-missiles/",
+      "language": "en",
+      "published_at": "2026-11-26T02:19:00+08:00",
+      "accessed_at": "2026-11-26T05:45:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Russia denies its missiles hit Poland and accuses Warsaw of \"stoking anti-Russian sentiment\"",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/25/russia-denies-its-missiles-hit-poland-and-accuses-warsaw-of-stoking-anti-russian-sentiment/",
+      "language": "en",
+      "published_at": "2026-11-25T18:37:00+08:00",
+      "accessed_at": "2026-11-26T05:45:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Wojsko wydało rozkaz zestrzelenia rosyjskiego drona, ale ten zawrócił na Ukrainę (The military ordered the Russian drone shot down, but it turned back to Ukraine, translated)",
+      "outlet": "Rzeczpospolita (rp.pl)",
+      "category": "eu_regional_press",
+      "url": "https://www.rp.pl/wojsko/art45533201-rosyjski-dron-latal-nad-wschodnia-polska-w-poblizu-nie-bylo-samolotow",
+      "language": "pl",
+      "published_at": "2026-11-24",
+      "accessed_at": "2026-11-26T05:55:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Bloomberg: Poland proposes that NATO consider shooting down Russian missiles over Ukraine headed toward alliance territory",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/25/bloomberg-poland-proposes-that-nato-consider-shooting-down-russian-missiles-over-ukraine-headed-toward-alliance-territory",
+      "language": "en",
+      "published_at": "2026-11-25T22:36:00+08:00",
+      "accessed_at": "2026-11-26T05:45:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "IAEA reports another loss of external power supply at ZNPP",
+      "outlet": "TASS",
+      "category": "ru_state_media",
+      "url": "https://tass.com/economy/2224397",
+      "language": "en",
+      "published_at": "2026-11-25",
+      "accessed_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Zaporizhzhia NPP loses external power after Russian shelling",
+      "outlet": "h.ua",
+      "category": "ua_independent",
+      "url": "https://en.h.ua/2026/11/25/zaporizhzhia-nuclear-plant-loses-external-power",
+      "language": "en",
+      "published_at": "2026-11-25",
+      "accessed_at": "2026-11-26T05:58:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Самарський дубль: Сили оборони уразили Куйбишевський і Сизранський НПЗ (A Samara double: Defence Forces hit the Kuibyshev and Syzran refineries, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42995",
+      "language": "uk",
+      "published_at": "2026-11-25T18:45:00+08:00",
+      "accessed_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "5 літаків, якими росіяни тероризують цивільних українців, уражено на аеродромі «Саваслейка» (Five aircraft hit at Savasleyka airfield, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42996",
+      "language": "uk",
+      "published_at": "2026-11-25T19:30:00+08:00",
+      "accessed_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukrainian drones strike Russia's Samara region, killing one and setting two Rosneft oil refineries ablaze",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/25/ukrainian-drones-strike-russia-s-samara-region-killing-one-and-setting-two-rosneft-oil-refineries-ablaze",
+      "language": "en",
+      "published_at": "2026-11-25T16:07:00+08:00",
+      "accessed_at": "2026-11-26T05:50:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "В течение прошедшей ночи дежурными силами ПВО уничтожены 305 украинских беспилотных летательных аппаратов (Air defences destroyed 305 Ukrainian drones overnight, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69316",
+      "language": "ru",
+      "published_at": "2026-11-25T14:43:00+08:00",
+      "accessed_at": "2026-11-26T05:40:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Defense minister in parliament: Ukraine not using Estonian airspace to attack Russia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610206390/defense-minister-in-parliament-ukraine-not-using-estonian-airspace-to-attack-russia",
+      "language": "en",
+      "published_at": "2026-11-25T22:30:00+08:00",
+      "accessed_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Посольство получило информацию о готовящейся провокации (The embassy has information about a provocation being prepared, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/96953",
+      "language": "ru",
+      "published_at": "2026-11-26T04:40:00+08:00",
+      "accessed_at": "2026-11-26T05:52:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Șeful serviciilor speciale din Polonia avertizează că Putin ar putea atrage și alte țări în război (Poland's special services chief warns Putin could draw other countries into the war, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/seful-serviciilor-speciale-din-polonia-avertizeaza-ca-pacea-in-ucraina-nu-opri-rusia-sa-si-continue-planul-in-europa-4050237",
+      "language": "ro",
+      "published_at": "2026-11-25",
+      "accessed_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "Оперативна інформація станом на 22:00 25.11.2026 (Operational update as of 22:00 on 25 November 2026, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/42997",
+      "language": "uk",
+      "published_at": "2026-11-26T04:00:00+08:00",
+      "accessed_at": "2026-11-26T05:40:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Repair crews and energy companies are now working at all the sites of Russian strikes",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21993",
+      "language": "en",
+      "published_at": "2026-11-26T03:10:00+08:00",
+      "accessed_at": "2026-11-26T05:40:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Brussels declaration, 25 November 2026",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/25/brussels-declaration-25-november-2026/",
+      "language": "en",
+      "published_at": "2026-11-26T05:28:00+08:00",
+      "accessed_at": "2026-11-26T06:05:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Security expert: Chances of Russia attacking just Estonia are minute",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610205964/security-expert-chances-of-russia-attacking-just-estonia-are-minute",
+      "language": "en",
+      "published_at": "2026-11-25T16:02:00+08:00",
+      "accessed_at": "2026-11-26T05:40:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Ukraine shoots down Russian jet-powered Geran drone with combat laser for first time – video",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/25/8064653/",
+      "language": "en",
+      "published_at": "2026-11-26T00:01:00+08:00",
+      "accessed_at": "2026-11-26T05:40:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Poland says NATO refuses to shoot down drones over Ukraine due to \"numerous complications\"",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/25/8064636/",
+      "language": "en",
+      "published_at": "2026-11-25T23:09:00+08:00",
+      "accessed_at": "2026-11-26T05:40:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-26T05:43:25+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 13.3
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 0,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 2,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1794,
+    "source_count": 20,
+    "source_category_count": 7
+  }
+}

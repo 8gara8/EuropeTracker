@@ -4492,6 +4492,50 @@
       "seed": false,
       "added": "2026-11-24",
       "updated": null
+    },
+    {
+      "id": "INC-2026-0117",
+      "date": "2026-11-25",
+      "date_precision": "day",
+      "location_country": "UA",
+      "affected": [
+        "MD",
+        "RO"
+      ],
+      "location": "Zaporizhzhia nuclear power plant, Enerhodar",
+      "sea": null,
+      "pathway": "nuclear",
+      "type": "plant_safety_event",
+      "rung": 1,
+      "serious": false,
+      "summary": "The plant lost its last off-site line, Ferosplavna-1, at 05:28 local time and switched to emergency diesel generators. The IAEA called it the 28th complete loss of off-site power during the war; its on-site team is investigating the cause. Ukrainian media report Energoatom blamed Russian shelling.",
+      "attribution": 1,
+      "attribution_note": "Cause not established by the IAEA; Energoatom, as reported by Ukrainian media, blames a Russian strike.",
+      "host_statement": "none_yet",
+      "casualties": {
+        "killed": 0,
+        "injured": 0
+      },
+      "disruption_hours": null,
+      "sources": [
+        {
+          "title": "IAEA reports another loss of external power supply at ZNPP",
+          "outlet": "TASS",
+          "category": "ru_state_media",
+          "url": "https://tass.com/economy/2224397",
+          "published_at": "2026-11-25"
+        },
+        {
+          "title": "Zaporizhzhia NPP loses external power after Russian shelling",
+          "outlet": "h.ua",
+          "category": "ua_independent",
+          "url": "https://en.h.ua/2026/11/25/zaporizhzhia-nuclear-plant-loses-external-power",
+          "published_at": "2026-11-25"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-26",
+      "updated": null
     }
   ]
 }

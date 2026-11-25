@@ -522,12 +522,18 @@
       "base_rate_note": "27 total losses in about 51 months, roughly 0.5 a month, or about 35% over 52 days. We raised it because the plant now depends on a single line and Russia's winter grid campaign is under way.",
       "opened": "2026-11-09",
       "updates": [],
-      "status": "open",
-      "resolved_on": null,
-      "resolution_note": null,
-      "resolution_source": null,
-      "brier": null,
-      "brier_base": null
+      "status": "resolved_yes",
+      "resolved_on": "2026-11-26",
+      "resolution_note": "The IAEA reported that Zaporizhzhia lost all off-site power for the 28th time on 25 November and switched to diesel generators, inside the 10 November to 31 December window.",
+      "resolution_source": {
+        "title": "IAEA reports another loss of external power supply at ZNPP",
+        "outlet": "TASS",
+        "category": "ru_state_media",
+        "url": "https://tass.com/economy/2224397",
+        "published_at": "2026-11-25"
+      },
+      "brier": 0.3025,
+      "brier_base": 0.4225
     },
     {
       "id": "F-2026-020",
@@ -879,7 +885,13 @@
       "base_rate": 35,
       "base_rate_note": "Russian missiles or drones entered Polish airspace on 30 July and 20 November 2026, about one case every two months, or roughly 35% over 30 days. Raised for winter mass raids routed over western Ukraine.",
       "opened": "2026-11-21",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-26",
+          "probability": 97,
+          "note": "Rzeczpospolita reports the Operational Command confirmed a Russian drone over Lubelskie on 23 November. We resolve once we open the Command's own text."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -917,6 +929,25 @@
       "base_rate": 60,
       "base_rate_note": "Finland reported strikes on Russian vessels in the Gulf of Finland on 11 and 21 November 2026, and none earlier that we know of. On that short record, the rate is about two a month.",
       "opened": "2026-11-22",
+      "updates": [],
+      "status": "open",
+      "resolved_on": null,
+      "resolution_note": null,
+      "resolution_source": null,
+      "brier": null,
+      "brier_base": null
+    },
+    {
+      "id": "F-2026-037",
+      "question": "Will Poland formally establish a no-fly or restricted engagement zone along its eastern border by 15 January 2027?",
+      "resolution_criteria": "Yes if the Polish government or defence ministry announces, between 26 November 2026 and 15 January 2027, that a regulation creating the planned eastern-border no-fly zone with new engagement rules has been adopted or entered into force.",
+      "resolves_by": "2027-01-15",
+      "horizon": "90d",
+      "pathway": "airspace",
+      "probability": 60,
+      "base_rate": 50,
+      "base_rate_note": "Poland has repeatedly imposed eastern-border airspace restrictions at short notice, such as zone EP R134 from September 2026, but new engagement rules need cabinet approval. Raised slightly because the regulation is already submitted.",
+      "opened": "2026-11-26",
       "updates": [],
       "status": "open",
       "resolved_on": null,
