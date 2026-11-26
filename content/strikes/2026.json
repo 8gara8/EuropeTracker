@@ -3019,6 +3019,103 @@
       "seed": false,
       "added": "2026-11-26",
       "updated": null
+    },
+    {
+      "id": "STR-2026-0089",
+      "date": "2026-11-25",
+      "target_name": "Marinovka airfield (Su-34 base)",
+      "target_type": "airbase",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Navy Neptune coastal missile systems struck Marinovka airfield, which hosts Su-34 bombers used for guided-bomb attacks, overnight into 26 November. It said the results are still being clarified. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "Сили оборони за одну ніч уразили аеродром «Мариновка» і нафтову станцію «Транснефти» (Defence Forces hit Marinovka airfield and a Transneft oil station in one night, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43002",
+          "published_at": "2026-11-26T19:30:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-27",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0090",
+      "date": "2026-11-25",
+      "target_name": "Subkhankulovo oil pumping and dispatch station (Transneft)",
+      "target_type": "pipeline",
+      "region": "Republic of Bashkortostan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1200,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit a tank at the Subkhankulovo station, which pumps oil from Western Siberia and Bashkortostan, overnight into 26 November. It said the site is more than 1,000 km from the border and a fire broke out. We found no Russian official confirmation naming the site.",
+      "sources": [
+        {
+          "title": "Сили оборони за одну ніч уразили аеродром «Мариновка» і нафтову станцію «Транснефти» (Defence Forces hit Marinovka airfield and a Transneft oil station in one night, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43002",
+          "published_at": "2026-11-26T19:30:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-27",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0091",
+      "date": "2026-11-25",
+      "target_name": "Slavyansk-Eco oil refinery, Slavyansk-na-Kubani",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": "HUR long-range drones",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "HUR said its long-range drones hit production units, the tank farm and pipelines at Slavyansk-Eco overnight into 26 November. The Moscow Times cites the operator as reporting a fire and significant damage to the crude distillation unit during a maintenance stoppage. We opened no Russian official source.",
+      "sources": [
+        {
+          "title": "Двічі в десятку: ГУР повторно уразили НПЗ «славянск-еко» на Кубані (Twice on target: HUR hits the Slavyansk-Eco refinery in Kuban again, translated)",
+          "outlet": "Ukrainian military intelligence HUR (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/DIUkraine/10030",
+          "published_at": "2026-11-26T23:15:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drone Strike Sparks Fire and Inflicts Serious Damage at Krasnodar Refinery",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/26/ukrainian-drone-strike-sparks-fire-and-inflicts-serious-damage-at-krasnodar-a812387",
+          "published_at": "2026-11-26T23:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-27",
+      "updated": null
     }
   ]
 }

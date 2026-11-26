@@ -1,0 +1,1040 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "window": {
+    "start": "2026-11-26T05:30:00+08:00",
+    "end": "2026-11-27T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-27T06:12:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Moscow accuses Kyiv of courting a NATO clash as Berlin and Trump urge limits; Romania reports no violation; rung holds at 3",
+  "bottom_line": "Spillover risk holds at rung 3 (overt military incidents, no deaths), and we log no new European incident. The day's signal is political. Russia's Foreign Ministry accused Zelensky of deliberately seeking a Russia–NATO clash through strikes on Russian ships. Germany's foreign minister urged Kyiv to limit the war, and Politico reports Trump altered a NATO statement to stress the same point. Romania issued a RO-Alert over Tulcea but reported no violation. Ukraine claims strikes more than 1,000 km inside Russia. A step up to rung 4 within 30 days stays unlikely (35%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s6",
+    "s7",
+    "s8",
+    "s10"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 35,
+        "term": "unlikely",
+        "confidence": "low"
+      },
+      "rationale": "Rung 3 rests on INC-2026-0116 (Kh-101s in Poland) and three other rung-3 airspace incidents in 30 days. We log nothing new today. Next-rung odds hold at 35%: tempo stays high and a deadly crash is plausible, but we saw no change in Russian behaviour."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: 4 logged incidents in 30 days against a 13-a-month baseline, none serious in 12 months. No new incursion; Romania reported no violation on 26 November. Hold at 20%.",
+        "source_ids": [
+          "s10"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: 2 incidents in 30 days against 1.7 a month, 1 serious in 12 months. IISS finds explosives and arson nearly doubled and warns of mass-casualty risk. That fits our estimate, so we hold.",
+        "source_ids": [
+          "s12"
+        ]
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: none logged in 30 days against 2 a month, but 12 serious in 12 months, mostly Black Sea ship strikes. Russia's MoD claims two more ships hit off Odesa. Hold at 70%.",
+        "source_ids": [
+          "s4",
+          "s26"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Base: none in 30 days against 0.7 a month, none serious. GPS disruption reported over Stockholm, Tallinn and Helsinki on 21–23 November hit navigation, not essential services. Hold at 10%.",
+        "source_ids": [
+          "s15"
+        ]
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "Base: none in 30 days, 0.1 a month since 2022. Zakharova's accusation is rhetoric, not force movement, and we saw no build-up. Hold at 3%.",
+        "source_ids": [
+          "s6"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Base: 2 plant-safety events in 30 days against 0.3 a month, none serious. No readiness change; the IAEA published a new Ukraine update. Hold at 3%.",
+        "source_ids": [
+          "s18"
+        ]
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base: none in 30 days against 0.3 a month. Slovakia, Hungary and Czechia want opt-outs from the €45bn Ukraine loan, but an opt-out is not a decision blocked by a Russian operation. Hold at 10%.",
+        "source_ids": [
+          "s20"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 4,
+        "previous_score": 4,
+        "reason": "One above the floor of 3 because ind-pretext is active and names Estonia, after Moscow's 'open war' warning on 24 November. KAPO deported a Russian Enefit worker over intelligence ties on 25 November.",
+        "source_ids": [
+          "s14"
+        ],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1, held for the suspected Russian helicopter incursion of 21 November, the Sparta II fire off Loviisa and the GPS disruption reported over Helsinki.",
+        "source_ids": [
+          "s15"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "SK",
+        "score": 1,
+        "previous_score": null,
+        "reason": "The Guardian reports Slovakia wants to opt out of the €45bn EU loan to Ukraine at the special European Council; we set the cohesion flag.",
+        "source_ids": [
+          "s20"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": true
+      },
+      {
+        "country": "HU",
+        "score": 1,
+        "previous_score": null,
+        "reason": "The Guardian reports Hungary wants to opt out of the €45bn EU loan to Ukraine at the special European Council; we set the cohesion flag.",
+        "source_ids": [
+          "s20"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": true
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Moscow says Zelensky seeks a Russia–NATO clash; Berlin and Trump urge Kyiv to keep the war contained",
+      "summary": "Digi24, citing EFE, reports that Zakharova accused Zelensky of 'deliberately' seeking a clash between Russia and NATO through the strikes on ships in Libya and the Gulf of Finland (translated). Germany's Wadephul said 'we must limit this conflict' (translated). Politico reports Trump unilaterally altered a joint NATO statement to stress that Ukraine must not expand the war.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0080",
+        "STR-2026-0082"
+      ],
+      "verification": 4,
+      "attribution": null,
+      "russian_framing": "Zakharova called the Benghazi and Sparta II strikes 'acts of terrorism' and said Kyiv is trying to 'expand the geography of the conflict' (translated).",
+      "source_ids": [
+        "s6",
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Ukraine claims hits on Marinovka airbase, a Transneft station in Bashkortostan and the Slavyansk-Eco refinery",
+      "summary": "Ukraine's General Staff says Neptune missiles struck Marinovka airfield, home to Su-34 bombers, and that a tank at the Subkhankulovo pumping station, more than 1,000 km away, caught fire. HUR says its drones hit Slavyansk-Eco again. The Moscow Times cites the operator as reporting 'significant damage' to the distillation unit.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0089",
+        "STR-2026-0090",
+        "STR-2026-0091"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's MoD said air defences downed 343 Ukrainian drones overnight, over regions including Krasnodar and Bashkortostan.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Russia says it hit Kyiv drone-component plants and two cargo ships off Odesa",
+      "summary": "Russia's Ministry of Defence claims an overnight strike with precision weapons and drones hit Khimvolokno and an Oakline drone-assembly site in Kyiv. It says it also hit two dry-cargo ships off Odesa that it claims carried military cargo. In daytime attacks, it says it hit substations in Kharkiv, Dnipropetrovsk and Zhytomyr regions.",
+      "category": "russian_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "The MoD says the ships carried military and dual-use cargo for Ukraine's armed forces, which makes them legitimate targets.",
+      "source_ids": [
+        "s4",
+        "s26"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "RO-Alert over northern Tulcea, but Romania reports no violation; Czech president urges NATO to shoot intruders down",
+      "summary": "Romania's defence ministry said radar tracked an aerial target east of Vâlcove on the evening of 26 November. A RO-Alert ran from 18:52 to 19:11, and two Spanish F-18s on a training flight were directed to the area. No violation was reported. Czech President Pavel said NATO 'simply must start shooting these down' (translated).",
+      "category": "airspace",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "IISS finds Russian sabotage in Europe more explosive and warns of a mass-casualty attack",
+      "summary": "Digi24 reports that an IISS study covering January 2022 to September 2026 finds explosives and arson nearly doubled in the past year. It finds that arrests and expulsions have not changed attack frequency. Separately, Estonia's KAPO deported a Russian Enefit worker over suspected intelligence ties.",
+      "category": "sabotage",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s12",
+        "s14"
+      ]
+    },
+    {
+      "id": "d6",
+      "headline": "Slovakia, Hungary and Czechia seek opt-outs from the €45bn EU loan to Ukraine",
+      "summary": "The Guardian reports that EU leaders at the special European Council are bracing for a clash over long-term Ukraine aid. Slovakia, Hungary and Czechia want to opt out of the €45bn loan, and Germany is trying to protect the funding from a possible far-right French presidency.",
+      "category": "political_economic",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s20"
+      ]
+    },
+    {
+      "id": "d7",
+      "headline": "Ukrainian intelligence says North Korea paused missile and shell deliveries to Russia",
+      "summary": "HUR claims Pyongyang halted KN-23 and artillery shell deliveries, barred Russian military transport aircraft and shelved a troop expansion after a row over Moscow's outreach to Seoul. The Kyiv Independent could not verify the claim.",
+      "category": "battlefield",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s21"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "material",
+      "text": "Ukraine's General Staff counted 124 clashes on 26 November and claims record Russian losses, which is unverified. HUR claims North Korea paused arms deliveries to Russia. We saw no sign of a breakthrough.",
+      "development_ids": [
+        "d7"
+      ],
+      "source_ids": [
+        "s23",
+        "s22",
+        "s21"
+      ]
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine claims strikes on Marinovka airbase, the Subkhankulovo Transneft station and the Slavyansk-Eco refinery. We grade all three as claimed.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Russia's MoD claims hits on Kyiv drone-component plants, three substations and two cargo ships off Odesa. Zelensky says the grid is worst in Dnipro and Zaporizhzhia. We did not obtain drone totals.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s4",
+        "s26",
+        "s27"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Moscow, Berlin and, per Politico, Trump framed Ukraine's strikes beyond the Black Sea as escalation risks. RBC-Ukraine reports, via Meduza, that Russia opposes Article 5-style guarantees for Ukraine.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s19"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Romania issued a RO-Alert over northern Tulcea but reported no violation. Czech President Pavel urged NATO to shoot down intruders, as Poland plans an eastern no-fly zone. We found no new violation elsewhere.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s10",
+        "s11",
+        "s13"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "An IISS study finds Russian sabotage shifting toward explosives and arson and warns of a mass-casualty rail attack. Estonia deported a Russian oil-plant worker over intelligence ties.",
+      "development_ids": [
+        "d5"
+      ],
+      "source_ids": [
+        "s12",
+        "s14"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "cyber_ew",
+      "status": "material",
+      "text": "Ukrainska Pravda reports severe GPS disruption over Stockholm, Tallinn and Helsinki on 21–23 November. We have not opened Sweden's official statement, so we do not log it yet.",
+      "development_ids": [],
+      "source_ids": [
+        "s15"
+      ]
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Estonia prepares to close its eastern border on 1 December. TASS reports Russia's new Arctic strategy says NATO is preparing the Arctic as a theatre of war. We found no new force movement.",
+      "development_ids": [],
+      "source_ids": [
+        "s25",
+        "s16"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "material",
+      "text": "The IAEA published Update 377, which we could not open. Zakharova called claims of a Russian nuclear satellite 'absurd' (translated). Kushner says Putin agreed not to use nuclear weapons.",
+      "development_ids": [],
+      "source_ids": [
+        "s18",
+        "s17",
+        "s19"
+      ]
+    },
+    {
+      "category": "political_economic",
+      "status": "material",
+      "text": "Slovakia, Hungary and Czechia want opt-outs from the €45bn Ukraine loan, the Guardian reports. We found no newly exposed Russian influence operation.",
+      "development_ids": [
+        "d6"
+      ],
+      "source_ids": [
+        "s20"
+      ]
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Zelensky says partners are preparing more weapons packages. Trump's reported edit of a NATO statement signals US caution, while Pavel's remarks show the eastern flank hardening.",
+      "development_ids": [
+        "d1",
+        "d4"
+      ],
+      "source_ids": [
+        "s24",
+        "s8",
+        "s11"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0089",
+      "date": "2026-11-25",
+      "target_name": "Marinovka airfield (Su-34 base)",
+      "target_type": "airbase",
+      "region": "Volgograd Oblast",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "missile",
+      "weapon_detail": "Neptune",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said Navy Neptune coastal missile systems struck Marinovka airfield, which hosts Su-34 bombers used for guided-bomb attacks, overnight into 26 November. It said the results are still being clarified. We found no Russian official confirmation.",
+      "sources": [
+        {
+          "title": "Сили оборони за одну ніч уразили аеродром «Мариновка» і нафтову станцію «Транснефти» (Defence Forces hit Marinovka airfield and a Transneft oil station in one night, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43002",
+          "published_at": "2026-11-26T19:30:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-27",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0090",
+      "date": "2026-11-25",
+      "target_name": "Subkhankulovo oil pumping and dispatch station (Transneft)",
+      "target_type": "pipeline",
+      "region": "Republic of Bashkortostan",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": 1200,
+      "weapon": "unknown",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff said it hit a tank at the Subkhankulovo station, which pumps oil from Western Siberia and Bashkortostan, overnight into 26 November. It said the site is more than 1,000 km from the border and a fire broke out. We found no Russian official confirmation naming the site.",
+      "sources": [
+        {
+          "title": "Сили оборони за одну ніч уразили аеродром «Мариновка» і нафтову станцію «Транснефти» (Defence Forces hit Marinovka airfield and a Transneft oil station in one night, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43002",
+          "published_at": "2026-11-26T19:30:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-27",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0091",
+      "date": "2026-11-25",
+      "target_name": "Slavyansk-Eco oil refinery, Slavyansk-na-Kubani",
+      "target_type": "refinery",
+      "region": "Krasnodar Krai",
+      "occupied_territory": false,
+      "lat": null,
+      "lon": null,
+      "distance_km": null,
+      "weapon": "drone",
+      "weapon_detail": "HUR long-range drones",
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "HUR said its long-range drones hit production units, the tank farm and pipelines at Slavyansk-Eco overnight into 26 November. The Moscow Times cites the operator as reporting a fire and significant damage to the crude distillation unit during a maintenance stoppage. We opened no Russian official source.",
+      "sources": [
+        {
+          "title": "Двічі в десятку: ГУР повторно уразили НПЗ «славянск-еко» на Кубані (Twice on target: HUR hits the Slavyansk-Eco refinery in Kuban again, translated)",
+          "outlet": "Ukrainian military intelligence HUR (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/DIUkraine/10030",
+          "published_at": "2026-11-26T23:15:00+08:00"
+        },
+        {
+          "title": "Ukrainian Drone Strike Sparks Fire and Inflicts Serious Damage at Krasnodar Refinery",
+          "outlet": "The Moscow Times",
+          "category": "ru_by_independent",
+          "url": "https://www.themoscowtimes.com/2026/11/26/ukrainian-drone-strike-sparks-fire-and-inflicts-serious-damage-at-krasnodar-a812387",
+          "published_at": "2026-11-26T23:59:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-27",
+      "updated": null
+    }
+  ],
+  "strike_updates": [],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that 30-day spillover risk is unchanged at rung 3, and no pathway moves. We log no new incident. Airspace stays at four logged incidents in 30 days against a 90-day baseline of 13 a month, an undercount we have flagged.\n\nThe day's signal is an argument over Ukraine taking the war beyond its own waters. Digi24, citing EFE, reports that Zakharova accused Zelensky of 'deliberately' seeking a Russia–NATO clash through the strikes on Merkury in Benghazi and Sparta II in the Gulf of Finland, which she called 'acts of terrorism' (translated). Germany's Wadephul accepted that the targets were military but said 'we must limit this conflict' (translated), citing Baltic shipping and the environment. Politico reports that Trump unilaterally altered a joint NATO statement to stress that Ukraine must not widen the war. We assess it likely (60%) that Moscow's line is mainly wedge rhetoric aimed at Western restraint. The risk for Europe is that it also builds a case for retaliation against shipping or ports Russia links to the strikes. Zakharova made no explicit threat against Finland or Estonia, so ind-pretext gains no new evidence and A1 holds. If allied pressure slows Ukraine's Baltic sea-drone campaign, another strike in the Gulf of Finland becomes slightly less likely, so we lower F-2026-036 to 55%.\n\nRomania issued a RO-Alert over northern Tulcea on the evening of 26 November. Spanish F-18s were directed to the area, and the defence ministry reported no violation. Czech President Pavel said NATO 'simply must start shooting these down' (translated). Together with Poland's planned no-fly zone, this points to pressure for faster engagement rules on the eastern flank.\n\nThe new IISS study, as Digi24 reports it, finds that explosives and arson nearly doubled in the past year and that arrests have not changed attack frequency. It warns of a mass-casualty rail attack. This supports A4 and our sabotage estimate of unlikely (35%) but does not move it.\n\nOn the ceasefire paradox, RBC-Ukraine reports via Meduza that Russia opposes Article 5-style guarantees for Ukraine. No truce is near, so near-term incident risk stays high. All five assumptions remain in force.",
+    "change_my_mind": "A Russian official on the record tying retaliation to European states that host or transit Ukrainian strike assets, or Russian naval escorts firing near Finnish or Estonian waters, would raise our maritime and military-pressure estimates.",
+    "competing_explanations": [
+      {
+        "subject": "Zakharova's claim that Kyiv seeks a Russia–NATO clash",
+        "hypotheses": [
+          {
+            "label": "Wedge rhetoric to push allies to restrain Kyiv",
+            "assessment": "It came the same day Wadephul and, per Politico, Trump urged limits on Ukraine's strikes beyond its waters. It exploits a visible allied split at little cost.",
+            "estimate": {
+              "probability": 60,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Groundwork for retaliation against European-linked targets",
+            "assessment": "Calling the strikes terrorism could justify action against ships or ports Russia ties to them. Zakharova made no explicit threat against Finland or Estonia, however.",
+            "estimate": {
+              "probability": 30,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Routine reaction with no further purpose",
+            "assessment": "It was Moscow's first official comment on the Libya strike and may simply be a delayed response. The NATO framing makes that less likely.",
+            "estimate": {
+              "probability": 10,
+              "term": "highly_unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [],
+  "forecast_updates": [
+    {
+      "id": "F-2026-014",
+      "probability": 10,
+      "note": "We found no reported sabotage or armed crossing at the Kaliningrad border through 27 November. Three days remain."
+    },
+    {
+      "id": "F-2026-021",
+      "probability": 40,
+      "note": "We found no Finnish statement confirming a drone violation on 11 November. Three days remain before the 30 November deadline."
+    },
+    {
+      "id": "F-2026-036",
+      "probability": 55,
+      "note": "Wadephul's call to limit the conflict and Trump's edit of the NATO statement may slow Ukraine's Baltic sea-drone strikes."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [
+    {
+      "op": "reaffirm",
+      "id": "A4",
+      "text": null,
+      "reason": "The IISS finds that arrests, expulsions and consulate closures have not changed the frequency of Russian sabotage in Europe."
+    },
+    {
+      "op": "reaffirm",
+      "id": "A1",
+      "text": null,
+      "reason": "Zakharova's accusation against Kyiv is rhetoric with no explicit threat against a NATO state, and we found no new incursion in the window."
+    }
+  ],
+  "taiwan": "The most direct impact is supply. HUR claims North Korea has halted KN-23 missile and shell deliveries to Russia after a row over Moscow's outreach to Seoul; the claim is unverified. If true, Russia will lean harder on China for components and munitions, deepening the Beijing–Moscow dependence that also shapes the region around Taiwan. Russia's defence ministry also held its first round of strategic consultations with China's defence ministry, a step in military coordination. The second signal is political. Berlin, and reportedly Trump, pressed Ukraine to keep its strikes inside the war's geography. Beijing may read that as Western readiness to restrain a partner that hits back beyond its home theatre, a precedent for how Washington might manage escalation in a Taiwan crisis. The effect on Taiwan's arms deliveries today is negligible.",
+  "next_72h": [
+    {
+      "date": "2026-11-30",
+      "event": "Deadlines for F-2026-021 (Finnish confirmation of the 11 November drone) and F-2026-014 (Kaliningrad border sabotage).",
+      "why": "Both test whether official confirmations keep pace with reported incidents on the northern and Kaliningrad fronts."
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Estonia completes preparations to close all road crossings with Russia from 07:00 on 1 December.",
+      "why": "The closure could draw Russian countermeasures at Narva, where the pretext indicator names Estonia."
+    },
+    {
+      "date": "2026-11-28",
+      "event": "Watch for any Russian follow-up to Zakharova's charge that Kyiv seeks a NATO clash.",
+      "why": "Explicit threats against states linked to the ship strikes would raise maritime and military-pressure estimates."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [
+    {
+      "id": "ua_deep_strikes",
+      "value": 3,
+      "unit": "count",
+      "period": "night of 25–26 Nov",
+      "source_ids": [
+        "s1",
+        "s2"
+      ],
+      "note": "Marinovka, Subkhankulovo and Slavyansk-Eco; all claimed."
+    },
+    {
+      "id": "ua_max_strike_depth_km",
+      "value": 1000,
+      "unit": "km",
+      "period": "night of 25–26 Nov",
+      "source_ids": [
+        "s1"
+      ],
+      "note": "Subkhankulovo; the General Staff says more than 1,000 km."
+    },
+    {
+      "id": "ru_drones_launched",
+      "value": null,
+      "unit": "count",
+      "period": "night of 26–27 Nov",
+      "source_ids": [],
+      "note": "We did not obtain an Air Force summary."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Сили оборони за одну ніч уразили аеродром «Мариновка» і нафтову станцію «Транснефти» (Defence Forces hit Marinovka airfield and a Transneft oil station in one night, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/43002",
+      "language": "uk",
+      "published_at": "2026-11-26T19:30:00+08:00",
+      "accessed_at": "2026-11-27T05:50:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Двічі в десятку: ГУР повторно уразили НПЗ «славянск-еко» на Кубані (Twice on target: HUR hits the Slavyansk-Eco refinery in Kuban again, translated)",
+      "outlet": "Ukrainian military intelligence HUR (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/DIUkraine/10030",
+      "language": "uk",
+      "published_at": "2026-11-26T23:15:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Ukrainian Drone Strike Sparks Fire and Inflicts Serious Damage at Krasnodar Refinery",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/26/ukrainian-drone-strike-sparks-fire-and-inflicts-serious-damage-at-krasnodar-a812387",
+      "language": "en",
+      "published_at": "2026-11-26T23:59:00+08:00",
+      "accessed_at": "2026-11-27T05:46:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Сегодня ночью ВС РФ нанесен массированный удар по предприятиям ВПК в Киеве (Overnight, Russia's armed forces carried out a massive strike on defence-industry plants in Kyiv, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69332",
+      "language": "ru",
+      "published_at": "2026-11-26T13:24:00+08:00",
+      "accessed_at": "2026-11-27T05:55:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "За ночь перехвачены и уничтожены 343 украинских БПЛА (343 Ukrainian drones intercepted and destroyed overnight, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69333",
+      "language": "ru",
+      "published_at": "2026-11-26T14:02:00+08:00",
+      "accessed_at": "2026-11-27T05:55:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Moscova îl acuză pe Zelenski că vrea să provoace un conflict între Rusia și NATO (Moscow accuses Zelensky of seeking a Russia–NATO conflict, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/mapamond/moscova-il-acuza-pe-zelenski-ca-vrea-sa-provoace-un-conflict-intre-rusia-si-nato-prin-actiunile-sale-nebunesti-4054723",
+      "language": "ro",
+      "published_at": "2026-11-27T01:20:00+08:00",
+      "accessed_at": "2026-11-27T05:52:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Avertismentul ministrului german de Externe pentru Ucraina: să evite extinderea războiului cu Rusia (German foreign minister warns Ukraine to avoid widening the war with Russia, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/ue/avertismentul-ministrului-german-de-externe-pentru-ucraina-sa-evite-extinderea-razboiului-cu-rusia-trebuie-limitat-acest-conflict-4054763",
+      "language": "ro",
+      "published_at": "2026-11-27T02:17:00+08:00",
+      "accessed_at": "2026-11-27T05:58:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Trump diverges from NATO statement, emphasizing Ukraine mustn't expand war",
+      "outlet": "Politico Europe",
+      "category": "intl_press",
+      "url": "https://www.politico.eu/article/donald-trump-diverges-from-nato-statement-emphasizing-ukraine-mustnt-expand-war/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "language": "en",
+      "published_at": "2026-11-27T04:40:00+08:00",
+      "accessed_at": "2026-11-27T05:52:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Russia opposes granting Ukraine security guarantees modeled on NATO's Article 5, RBC-Ukraine reports",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/26/russia-opposes-granting-ukraine-security-guarantees-modeled-on-nato-s-article-5-rbc-ukraine-reports",
+      "language": "en",
+      "published_at": "2026-11-27T01:00:00+08:00",
+      "accessed_at": "2026-11-27T05:52:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Nou mesaj RO-Alert în judeţul Tulcea: Posibilă incursiune a unor drone (New RO-Alert in Tulcea county: possible drone incursion, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/actualitate/nou-mesaj-ro-alert-in-judetul-tulcea-posibila-incursiune-a-unor-drone-4054687",
+      "language": "ro",
+      "published_at": "2026-11-27T02:01:00+08:00",
+      "accessed_at": "2026-11-27T05:47:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Președintele Cehiei cere NATO să doboare aeronavele rusești care încalcă spațiul aerian al Alianței (Czech president asks NATO to shoot down Russian aircraft violating allied airspace, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/presedintele-cehiei-cere-nato-sa-doboare-aeronavele-rusesti-care-incalca-spatiul-aerian-al-aliantei-rusia-ar-face-acelasi-lucru-4054857",
+      "language": "ro",
+      "published_at": "2026-11-27T03:19:00+08:00",
+      "accessed_at": "2026-11-27T05:58:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Rusia își intensifică acțiunile de sabotaj în Europa. România e pe lista țintelor (raport) (Russia steps up sabotage in Europe; Romania is on the target list (report), translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/externe/rusia-isi-intensifica-actiunile-de-sabotaj-in-europa-romania-e-pe-lista-tintelor-cele-patru-scenarii-posibile-pana-in-2029-raport-4054975",
+      "language": "ro",
+      "published_at": "2026-11-27T04:59:00+08:00",
+      "accessed_at": "2026-11-27T05:58:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Poland plans no-fly zone on eastern border to aid downing of Russian missiles",
+      "outlet": "Notes from Poland",
+      "category": "eu_regional_press",
+      "url": "https://notesfrompoland.com/2026/11/25/poland-plans-no-fly-zone-on-eastern-border-to-aid-downing-of-russian-missiles/",
+      "language": "en",
+      "published_at": "2026-11-26T02:19:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Estonia expels Russian oil plant worker over intelligence service ties",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610206810/estonia-expels-russian-oil-plant-worker-over-intelligence-service-ties",
+      "language": "en",
+      "published_at": "2026-11-26T15:04:00+08:00",
+      "accessed_at": "2026-11-27T05:48:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "GPS disruptions reported in Estonia, Sweden and Finland when drone attacked Russian vessel",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/26/8064821/",
+      "language": "en",
+      "published_at": "2026-11-26T22:17:00+08:00",
+      "accessed_at": "2026-11-27T05:48:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "НАТО рассматривает Арктическую зону как потенциальный театр военных действий (NATO views the Arctic as a potential theatre of war, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407800",
+      "language": "ru",
+      "published_at": "2026-11-27T01:49:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Захарова: спекуляции Запада о ядерном аппарате в космосе абсурдны (Zakharova: Western claims of a Russian nuclear-armed satellite are absurd, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407796",
+      "language": "ru",
+      "published_at": "2026-11-27T01:14:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Update 377 – IAEA Director General Statement on Situation in Ukraine",
+      "outlet": "IAEA",
+      "category": "intl_bodies",
+      "url": "https://www.iaea.org/newscenter/pressreleases/update-377-iaea-director-general-statement-on-situation-in-ukraine",
+      "language": "en",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "accessed_at": "2026-11-27T05:47:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Jared Kushner says Putin has shown 'restraint' in Ukraine and promised not to use nuclear weapons",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/feature/2026/11/26/jared-kushner-says-putin-has-shown-restraint-in-ukraine-and-promised-not-to-use-nuclear-weapons",
+      "language": "en",
+      "published_at": "2026-11-26T23:37:00+08:00",
+      "accessed_at": "2026-11-27T06:00:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "EU leaders wrestle over Ukraine aid as potential Le Pen victory sparks fear",
+      "outlet": "The Guardian",
+      "category": "intl_press",
+      "url": "https://www.theguardian.com/world/2026/nov/26/eu-leaders-braced-for-clashes-over-ukraine-aid-at-budget-talks",
+      "language": "en",
+      "published_at": "2026-11-27T01:51:00+08:00",
+      "accessed_at": "2026-11-27T05:58:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "North Korea pauses military aid to Russia, Ukrainian intelligence says",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/north-korea-pauses-military-aid-to-russia-ukrainian-intelligence-says/",
+      "language": "en",
+      "published_at": "2026-11-26T17:56:00+08:00",
+      "accessed_at": "2026-11-27T05:58:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Армія рф встановила антирекорд усієї війни і за 25 днів втратила 55 629 військовослужбовців (Russia's army set a war record, losing 55,629 troops in 25 days, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/43001",
+      "language": "uk",
+      "published_at": "2026-11-26T16:43:00+08:00",
+      "accessed_at": "2026-11-27T05:50:00+08:00"
+    },
+    {
+      "id": "s23",
+      "title": "Оперативна інформація станом на 22:00 26.11.2026 (Operational update as of 22:00 on 26 November 2026, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/43005",
+      "language": "uk",
+      "published_at": "2026-11-27T04:00:00+08:00",
+      "accessed_at": "2026-11-27T05:50:00+08:00"
+    },
+    {
+      "id": "s24",
+      "title": "Important work is now underway with partners – in Europe and beyond – to deliver additional weapons packages to Ukraine",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/22001",
+      "language": "en",
+      "published_at": "2026-11-27T04:38:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s25",
+      "title": "Interior minister: Border closure will free up 160 officials",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610207137/interior-minister-border-closure-will-free-up-160-officials",
+      "language": "en",
+      "published_at": "2026-11-26T20:20:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s26",
+      "title": "Сегодня днем нанесены удары по объектам энергетики и морским судам, задействованным в интересах ВСУ (Daytime strikes hit energy sites and ships serving Ukraine's armed forces, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69343",
+      "language": "ru",
+      "published_at": "2026-11-26T22:35:00+08:00",
+      "accessed_at": "2026-11-27T05:55:00+08:00"
+    },
+    {
+      "id": "s27",
+      "title": "Repair crews and energy companies are now working at all the sites of Russian strikes",
+      "outlet": "President of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/V_Zelenskiy_official/21993",
+      "language": "en",
+      "published_at": "2026-11-26T03:10:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    },
+    {
+      "id": "s28",
+      "title": "Москва и Пекин сверяют часы (Moscow and Beijing synchronise watches: first Russia–China defence strategic consultations, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69341",
+      "language": "ru",
+      "published_at": "2026-11-26T22:14:00+08:00",
+      "accessed_at": "2026-11-27T05:45:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-27T05:44:43+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 0,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 2,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1992,
+    "source_count": 28,
+    "source_category_count": 8
+  }
+}

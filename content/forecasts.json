@@ -339,6 +339,11 @@
           "date": "2026-11-19",
           "probability": 20,
           "note": "Poland's defence minister confirmed services foiled a planned Russian mass-casualty provocation at the Kaliningrad border; an on-record account of an attempted act could resolve this."
+        },
+        {
+          "date": "2026-11-27",
+          "probability": 10,
+          "note": "We found no reported sabotage or armed crossing at the Kaliningrad border through 27 November. Three days remain."
         }
       ],
       "status": "open",
@@ -571,7 +576,13 @@
       "base_rate": 55,
       "base_rate_note": "Finland confirmed Ukrainian drone entries within days in May 2026, but some 2026 closures ended with no drone found. Raised because the ministry already says it suspects a violation.",
       "opened": "2026-11-12",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-27",
+          "probability": 40,
+          "note": "We found no Finnish statement confirming a drone violation on 11 November. Three days remain before the 30 November deadline."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -929,7 +940,13 @@
       "base_rate": 60,
       "base_rate_note": "Finland reported strikes on Russian vessels in the Gulf of Finland on 11 and 21 November 2026, and none earlier that we know of. On that short record, the rate is about two a month.",
       "opened": "2026-11-22",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-27",
+          "probability": 55,
+          "note": "Wadephul's call to limit the conflict and Trump's edit of the NATO statement may slow Ukraine's Baltic sea-drone strikes."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
