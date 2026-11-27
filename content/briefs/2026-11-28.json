@@ -1,0 +1,812 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-28",
+  "window": {
+    "start": "2026-11-27T05:30:00+08:00",
+    "end": "2026-11-28T05:30:00+08:00"
+  },
+  "generated_at": "2026-11-28T06:14:00+08:00",
+  "quiet_day": false,
+  "weekly": false,
+  "title": "Drone briefly enters Latvian airspace as Moscow accuses the Baltics of aiding Kyiv; Ukraine offers a Black Sea truce; rung holds at 3",
+  "bottom_line": "Spillover risk holds at rung 3 (overt military incidents, no deaths). Latvia's armed forces say a drone was briefly in Latvian territory over Ludza early on 27 November, during a Ukrainian drone raid on Leningrad region. NATO jets and an interceptor drone responded, and Estonia warned six southern counties of a possible air threat. We have not opened the military's own text, so we do not log the case yet. Russia's Foreign Ministry accused Latvia of letting Ukrainian drones through. Kyiv offered a Black Sea truce. A step up to rung 4 within 30 days stays unlikely (35%).",
+  "bottom_line_source_ids": [
+    "s1",
+    "s3",
+    "s4"
+  ],
+  "board": {
+    "ladder": {
+      "current_rung": 3,
+      "previous_rung": 3,
+      "next_rung_odds": {
+        "probability": 35,
+        "term": "unlikely",
+        "confidence": "low"
+      },
+      "rationale": "No incident logged today. Rung 3 rests on the 20 November Kh-101s in Poland and the November drone incursions into Latvia, Lithuania, Romania and Moldova. Today's Ludza drone fits the stray-drone pattern and gives no sign of deliberate Russian targeting, so next-rung odds hold."
+    },
+    "pathways": [
+      {
+        "pathway": "airspace",
+        "serious_odds": {
+          "probability": 20,
+          "term": "highly_unlikely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 4 logged incidents in 30 days against a 13-a-month baseline, and no serious incident in 12 months. The Ludza drone fits the stray-drone pattern, not a change in intent. Held.",
+        "source_ids": [
+          "s1"
+        ]
+      },
+      {
+        "pathway": "sabotage",
+        "serious_odds": {
+          "probability": 35,
+          "term": "unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 2 incidents in 30 days against a baseline of 1.7 a month; 1 serious in 12 months. The IISS mass-casualty warning was already counted yesterday. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "maritime",
+        "serious_odds": {
+          "probability": 70,
+          "term": "likely",
+          "confidence": "moderate"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 11 serious incidents in 12 months, mostly Black Sea ship strikes. Kyiv's truce offer is untested, and Russian naval escorts in the Baltic persist. Held.",
+        "source_ids": [
+          "s18",
+          "s8"
+        ]
+      },
+      {
+        "pathway": "cyber_ew",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 2,
+        "trend": "flat",
+        "rationale": "Base rate: no incidents in 30 days against a baseline of 0.7 a month, and none serious in 12 months. We found no new disruption with an official statement. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "military_pressure",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 4,
+        "trend": "flat",
+        "rationale": "Base rate: no serious incident since 2022, about 0.1 incidents a month. Zakharova's accusations against Latvia add rhetoric, not forces. Held.",
+        "source_ids": [
+          "s4"
+        ]
+      },
+      {
+        "pathway": "nuclear",
+        "serious_odds": {
+          "probability": 3,
+          "term": "remote",
+          "confidence": "moderate"
+        },
+        "impact": 5,
+        "trend": "flat",
+        "rationale": "Base rate: 2 plant-safety events in 30 days, none serious. We found no change in nuclear readiness. Held.",
+        "source_ids": []
+      },
+      {
+        "pathway": "political_economic",
+        "serious_odds": {
+          "probability": 10,
+          "term": "highly_unlikely",
+          "confidence": "low"
+        },
+        "impact": 3,
+        "trend": "flat",
+        "rationale": "Base rate: 0.3 incidents a month, and none serious in 12 months. Nothing new blocks a NATO or EU decision. Held.",
+        "source_ids": []
+      }
+    ],
+    "countries": [
+      {
+        "country": "PL",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LT",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "LV",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "EE",
+        "score": 4,
+        "previous_score": 4,
+        "reason": "One above the floor of 3: the active ind-pretext indicator names Estonia after Moscow's 'open war' warning. Estonian military intelligence says Russia keeps up threats and pressure.",
+        "source_ids": [
+          "s15"
+        ],
+        "indicator_ids": [
+          "ind-pretext"
+        ],
+        "cohesion_flag": false
+      },
+      {
+        "country": "FI",
+        "score": 2,
+        "previous_score": 2,
+        "reason": "One above the floor of 1: rung-1 pressure persists, including Russian warship escorts of tankers in the Baltic reported by the WSJ. The suspected 21 November helicopter violation is unconfirmed.",
+        "source_ids": [
+          "s8"
+        ],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "RO",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      },
+      {
+        "country": "MD",
+        "score": 3,
+        "previous_score": 3,
+        "reason": null,
+        "source_ids": [],
+        "indicator_ids": [],
+        "cohesion_flag": false
+      }
+    ]
+  },
+  "developments": [
+    {
+      "id": "d1",
+      "headline": "Drone briefly enters Latvian airspace over Ludza; NATO jets scrambled and Estonia issues an air-threat alert",
+      "summary": "LSM reports that Latvia's National Armed Forces said a drone was briefly in Latvian territory early on 27 November. An orange alert covered Ludza from 02:30 to 02:55. NATO air-policing jets were activated, and an interceptor drone was launched and returned. ERR reports that Estonia warned six southern counties from 06:41 to 07:22. The drone's origin is unstated. We do not log it until we open the military's own text.",
+      "category": "airspace",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Zakharova claimed, without evidence, that Latvia and the other Baltic states let Ukrainian drones cross their airspace to attack Russia.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s10"
+      ]
+    },
+    {
+      "id": "d2",
+      "headline": "Russia's Foreign Ministry accuses Latvia of aiding Ukrainian drone attacks and blocking grain transit",
+      "summary": "The Moscow Times, citing Reuters, reports that spokeswoman Zakharova accused Latvia of creating 'artificial obstacles' to Russian grain transit and of seeking a full ban. She also accused Latvia and the other Baltic states of letting Ukrainian drones cross their airspace, and offered no evidence. The claim extends the narrative behind Moscow's 24 November 'open war' warning to Estonia.",
+      "category": "military_pressure",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": "Moscow says Latvia's restrictions on Russian grain threaten global food security and that Baltic airspace serves Ukrainian strikes on Russia.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "id": "d3",
+      "headline": "Ukraine offers a Black Sea truce; Kyiv says Moscow wants oil shipments included",
+      "summary": "Foreign Minister Sybiha said Ukraine has submitted a Black Sea ceasefire proposal to protect grain exports and is waiting for Russia's answer. He said Moscow is tying any deal to its oil exports, which Kyiv says belongs in a wider energy ceasefire, and called Russia's demands unrealistic. On 19 November Putin ruled out Black Sea and energy moratoria.",
+      "category": "diplomacy",
+      "importance": "major",
+      "incident_ids": [],
+      "strike_ids": [],
+      "verification": null,
+      "attribution": null,
+      "russian_framing": null,
+      "source_ids": [
+        "s18",
+        "s19"
+      ]
+    },
+    {
+      "id": "d4",
+      "headline": "Russian flotilla bound for Libya turns back after the Merkury sinking; Russian embassy warns Italy",
+      "summary": "Reuters sources, reported by Ukrainska Pravda and The Moscow Times, say a Russian convoy carrying military vehicles to Libya turned back after Ukrainian sea drones sank the corvette Merkury in Benghazi. A second convoy, escorted by the frigate Golovko, diverted off Algeria. Zelensky acknowledged that Ukraine did not coordinate the strike with European partners. Russia's embassy in Italy warned that Kyiv could use Italian territory for attacks.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0082"
+      ],
+      "verification": 4,
+      "attribution": null,
+      "russian_framing": "Russia's embassy in Italy said it 'would not be surprised' if Ukrainians used Italian territory or waters for a future 'terrorist attack' (translated).",
+      "source_ids": [
+        "s6",
+        "s7",
+        "s5",
+        "s17"
+      ]
+    },
+    {
+      "id": "d5",
+      "headline": "Ukraine claims a strike on the Efremov synthetic rubber plant as drones hit St Petersburg and Leningrad region",
+      "summary": "Ukraine's General Staff says it hit the Efremov synthetic rubber plant in Tula Oblast overnight into 27 November, saying the plant supplies solid propellant for Iskander missiles. Meduza reports that Tula's governor said windows were broken but no infrastructure was damaged. It also reports explosions in St Petersburg, Pulkovo airport halted, and 45 drones claimed downed over Leningrad region.",
+      "category": "deep_strikes",
+      "importance": "notable",
+      "incident_ids": [],
+      "strike_ids": [
+        "STR-2026-0092"
+      ],
+      "verification": 1,
+      "attribution": null,
+      "russian_framing": "Russia's Defence Ministry claimed 74 Ukrainian drones downed in daytime on 27 November; Sobyanin claimed further drones downed on approach to Moscow.",
+      "source_ids": [
+        "s9",
+        "s10",
+        "s12",
+        "s11"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "battlefield",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "deep_strikes",
+      "status": "material",
+      "text": "Ukraine claims a hit on the Efremov propellant-linked plant in Tula and updates its claimed damage at Novoshakhtinsk. Reuters sources say a Russian convoy to Libya turned back after the Merkury sinking. Russia extended its jet fuel export ban to March 2027.",
+      "development_ids": [
+        "d4",
+        "d5"
+      ],
+      "source_ids": [
+        "s9",
+        "s10",
+        "s6",
+        "s20"
+      ]
+    },
+    {
+      "category": "russian_strikes",
+      "status": "material",
+      "text": "Ukraine's General Staff reported 134 clashes, 143 guided bombs and 4,940 kamikaze drones on 27 November. Romania sent a RO-Alert to northern Tulcea after radar detected a target north-east of Vylkove, inside Ukraine; the defence ministry did not report a violation.",
+      "development_ids": [],
+      "source_ids": [
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "category": "diplomacy",
+      "status": "material",
+      "text": "Kyiv submitted a Black Sea truce proposal and awaits Moscow's reply. Sybiha says Russia ties it to oil exports. Putin ruled out such moratoria on 19 November, so we raise the truce forecast only slightly.",
+      "development_ids": [
+        "d3"
+      ],
+      "source_ids": [
+        "s18",
+        "s19"
+      ]
+    },
+    {
+      "category": "airspace",
+      "status": "material",
+      "text": "Latvia's armed forces say a drone was briefly in Latvian territory over Ludza early on 27 November. NATO jets were scrambled, and Estonia raised an air-threat alert for its southern counties. The drone's origin is unstated. The case awaits the military's own text before we log it.",
+      "development_ids": [
+        "d1"
+      ],
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "category": "sabotage",
+      "status": "material",
+      "text": "Croatia's High Criminal Court sent back the extradition ruling for Volodymyr Zhuravliov, a Ukrainian suspect in the Nord Stream sabotage, for reconsideration. This bears on German–Ukrainian friction rather than on Russian sabotage, which we hold unchanged.",
+      "development_ids": [],
+      "source_ids": [
+        "s22"
+      ]
+    },
+    {
+      "category": "maritime",
+      "status": "material",
+      "text": "Hromadske, citing the WSJ, reports that Russian warships with nuclear-capable missiles escort tankers, with 260 escorts in a year, and that Western boardings have largely stopped. Ukraine's Mediterranean strikes have now diverted two Russian convoys.",
+      "development_ids": [
+        "d4"
+      ],
+      "source_ids": [
+        "s8",
+        "s7"
+      ]
+    },
+    {
+      "category": "cyber_ew",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "military_pressure",
+      "status": "material",
+      "text": "Zakharova accused Latvia of aiding Ukrainian drone attacks and blocking grain transit, extending Moscow's pretext narrative from Estonia to Latvia. Estonian military intelligence says Russia's information warfare and pressure on Europe continued this week.",
+      "development_ids": [
+        "d2"
+      ],
+      "source_ids": [
+        "s4",
+        "s15"
+      ]
+    },
+    {
+      "category": "nuclear",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "political_economic",
+      "status": "no_change",
+      "text": "No material change.",
+      "development_ids": [],
+      "source_ids": []
+    },
+    {
+      "category": "resolve",
+      "status": "material",
+      "text": "Romania's Foreign Minister Neculăescu urged NATO to adopt joint measures against Russian hybrid threats and called the Black Sea a weak spot in European security. The EU Council sets out Trade and Transport Council meetings from 30 November.",
+      "development_ids": [],
+      "source_ids": [
+        "s16",
+        "s21"
+      ]
+    }
+  ],
+  "incidents_new": [],
+  "incident_updates": [],
+  "strikes_new": [
+    {
+      "id": "STR-2026-0092",
+      "date": "2026-11-26",
+      "target_name": "Efremov synthetic rubber plant",
+      "target_type": "defence_industry",
+      "region": "Tula Oblast",
+      "occupied_territory": false,
+      "lat": 53.15,
+      "lon": 38.12,
+      "distance_km": 300,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff says forces, with the partisan group Chornaya Iskra, hit the plant overnight into 27 November. It says the plant makes components for solid rocket propellant, including for Iskanders, and that damage is being clarified. Meduza reports that Tula's governor said there was no infrastructure damage.",
+      "sources": [
+        {
+          "title": "Мінус паливо для «Іскандерів» і резервуари на Новошахтинському НПЗ (Minus fuel for the Iskanders and tanks at the Novoshakhtinsk refinery, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43010",
+          "published_at": "2026-11-27T22:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
+          "published_at": "2026-11-27T16:12:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-28",
+      "updated": null
+    }
+  ],
+  "strike_updates": [
+    {
+      "id": "STR-2026-0083",
+      "changes": {
+        "verification": null,
+        "damage": null,
+        "effect": null,
+        "summary": "The SBU and HUR said drones hit the bitumen unit and a distillation column overnight into 23 November. Ukraine's General Staff later claimed 20 horizontal tanks destroyed, 21 horizontal and 11 vertical tanks damaged, and a pipeline section hit. We opened no Russian official source.",
+        "weapon_detail": null,
+        "western_weapon": null
+      },
+      "add_sources": [
+        {
+          "title": "Мінус паливо для «Іскандерів» і резервуари на Новошахтинському НПЗ (Minus fuel for the Iskanders and tanks at the Novoshakhtinsk refinery, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43010",
+          "published_at": "2026-11-27T22:45:00+08:00"
+        }
+      ],
+      "reason": "Ukraine's General Staff gave a detailed tank-damage claim. It is still a Ukrainian claim, so verification stays at 1."
+    }
+  ],
+  "indicator_changes": [],
+  "indicators_new": [],
+  "judgement": {
+    "text": "We assess that 30-day spillover risk is unchanged at rung 3, and no pathway moves. We log no new incident. Airspace stays at four logged incidents in 30 days against a 90-day baseline of 13 a month, an undercount we keep flagging.\n\nThe day's European event is a drone over Ludza. LSM reports that Latvia's armed forces said the drone was \"for a short time\" in Latvian territory early on 27 November. NATO air-policing jets were activated, and an interceptor drone was launched and returned. ERR reports that Estonia warned six southern counties of a potential air threat. The origin is unstated. Meduza reports that Governor Drozdenko claimed 45 drones downed over Leningrad region that night. We therefore assess it likely (70%) that this was a Ukrainian drone diverted by Russian jamming rather than a Russian probe. As with Poland's 23 November drone, we will log the case once we open the military's own statement. It also bears on F-2026-023, which we raise to 97%.\n\nMoscow is using such episodes. The Moscow Times, citing Reuters, reports that Zakharova accused Latvia and the other Baltic states, without evidence, of letting Ukrainian drones through their airspace and of obstructing Russian grain transit. This carries the narrative behind the 24 November 'open war' warning to Estonia over to a second Baltic state, so ind-pretext stays active. We hold Latvia at elevated (3), because the language stops short of a threat. A1 holds.\n\nReuters sources say a Russian flotilla bound for Libya turned back after the Merkury sinking. Ukraine's sea drones now constrain Russian naval logistics beyond the Black Sea. Russia's embassy in Italy suggested Ukraine might use Italian territory for attacks, which we read as wedge messaging aimed at allied restraint. The risk for Europe is Russian retaliation against shipping it links to Kyiv. Maritime stays likely (70%).\n\nOn the ceasefire paradox, Sybiha says Kyiv has tabled a Black Sea truce and Moscow wants oil shipments covered. A truce would lower the near-term ship-strike risk off Romania and Bulgaria, but Putin has ruled out such moratoria, so we raise F-2026-033 only to 10%. All five assumptions remain in force.",
+    "change_my_mind": "Latvia identifying the Ludza drone as a Russian Geran would raise airspace odds. An explicit Russian threat of measures against Latvia would raise its score. A Russian acceptance of Kyiv's Black Sea truce would lower the maritime odds.",
+    "competing_explanations": [
+      {
+        "subject": "Drone briefly over Ludza, Latvia, 27 November",
+        "hypotheses": [
+          {
+            "label": "Ukrainian drone diverted by Russian jamming",
+            "assessment": "The drone appeared during a mass Ukrainian raid on Leningrad region, which Drozdenko says saw 45 drones downed. Earlier Baltic cases on raid nights fit this pattern.",
+            "estimate": {
+              "probability": 70,
+              "term": "likely",
+              "confidence": "low"
+            }
+          },
+          {
+            "label": "Russian drone or deliberate probe",
+            "assessment": "Latvia identified a Russian Geran on 1 November, and Poland calls the 23 November drone intentional. No evidence yet points this way for Ludza.",
+            "estimate": {
+              "probability": 25,
+              "term": "unlikely",
+              "confidence": "low"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "forecasts_new": [],
+  "forecast_updates": [
+    {
+      "id": "F-2026-023",
+      "probability": 97,
+      "note": "LSM reports Latvia's armed forces said a drone was briefly in Latvian territory on 27 November. We resolve once we open the military's own text."
+    },
+    {
+      "id": "F-2026-033",
+      "probability": 10,
+      "note": "Kyiv tabled a Black Sea truce proposal; Sybiha says Moscow seeks to include oil shipments, which suggests engagement on terms rather than flat refusal."
+    },
+    {
+      "id": "F-2026-021",
+      "probability": 25,
+      "note": "We still find no Finnish statement confirming a drone violation on 11 November. Two days remain."
+    },
+    {
+      "id": "F-2026-014",
+      "probability": 5,
+      "note": "We found no reported sabotage or armed crossing at the Kaliningrad border through 27 November. Two days remain."
+    }
+  ],
+  "forecast_resolutions": [],
+  "assumption_updates": [],
+  "taiwan": "The most direct lesson is military. Reuters sources say a Russian convoy bound for Libya turned back after Ukrainian sea drones sank the corvette Merkury in Benghazi. Cheap uncrewed surface vessels, launched far from home, have now forced a major navy to reroute its logistics. That supports Taiwan's investment in sea drones for denial in the Strait, and it warns that China could use similar tools against Taiwan's ports and shipping. The size is moderate: it validates an approach Taiwan has already adopted rather than changing its plans. Kyiv's Black Sea truce offer, and Moscow's bid to include oil shipments, also show how sea-lane truces become bargaining over energy flows. That is relevant to Taiwan's dependence on LNG imports by sea.",
+  "next_72h": [
+    {
+      "date": "2026-11-30",
+      "event": "F-2026-014 (Kaliningrad border sabotage) and F-2026-021 (Finland confirms 11 November drone) reach their deadlines.",
+      "why": "Both test November judgements on Polish and Finnish border threats."
+    },
+    {
+      "date": "2026-11-30",
+      "event": "EU Foreign Affairs Council (Trade) meets in Brussels; Transport and Telecoms Council follows on 30 November–1 December.",
+      "why": "Possible discussion of trade measures and the resilience of transport and telecoms infrastructure."
+    },
+    {
+      "date": "2026-12-01",
+      "event": "Estonia closes its Narva, Koidula, Luhamaa and Saatse road crossings with Russia from 07:00.",
+      "why": "Resolves F-2026-027 and may draw a Russian response against Estonia."
+    }
+  ],
+  "weekly_outlook": null,
+  "metrics": [],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Possible air threats in Balvi and Ludza municipalities are over",
+      "outlet": "LSM (eng.lsm.lv)",
+      "category": "eu_regional_press",
+      "url": "https://eng.lsm.lv/article/society/defence/27.11.2026-possible-air-threats-in-balvi-and-ludza-municipalities-are-over.a673686/",
+      "language": "en",
+      "published_at": "2026-11-27",
+      "accessed_at": "2026-11-28T06:00:00+08:00"
+    },
+    {
+      "id": "s2",
+      "title": "Latvia says unidentified drone briefly violated airspace, prompting NATO response",
+      "outlet": "Investing.com",
+      "category": "intl_press",
+      "url": "https://au.investing.com/news/stock-market-news/latvia-says-unidentified-drone-briefly-violated-airspace-prompting-nato-response-93CH-4798387",
+      "language": "en",
+      "published_at": "2026-11-27",
+      "accessed_at": "2026-11-28T06:00:00+08:00"
+    },
+    {
+      "id": "s3",
+      "title": "Potential air threat alert warning issued across south Estonia",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610208679/potential-air-threat-alert-warning-issued-across-south-estonia",
+      "language": "en",
+      "published_at": "2026-11-27T13:52:00+08:00",
+      "accessed_at": "2026-11-28T06:00:00+08:00"
+    },
+    {
+      "id": "s4",
+      "title": "Russia Accuses Latvia of Obstructing Grain Transit, Aiding Ukrainian Drone Attacks",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/27/russia-accuses-latvia-of-obstructing-grain-transit-aiding-ukrainian-drone-a812399",
+      "language": "en",
+      "published_at": "2026-11-28T00:33:00+08:00",
+      "accessed_at": "2026-11-28T06:00:00+08:00"
+    },
+    {
+      "id": "s5",
+      "title": "Комментарий Посольства России в Италии (Comment by the Russian Embassy in Italy, translated)",
+      "outlet": "Russian Foreign Ministry (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/MID_Russia/97093",
+      "language": "ru",
+      "published_at": "2026-11-28T02:34:00+08:00",
+      "accessed_at": "2026-11-28T06:05:00+08:00"
+    },
+    {
+      "id": "s6",
+      "title": "Russian military flotilla en route to Libya turns back after Ukrainian attack on ships – Reuters",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/27/8065047/",
+      "language": "en",
+      "published_at": "2026-11-28T03:34:00+08:00",
+      "accessed_at": "2026-11-28T06:05:00+08:00"
+    },
+    {
+      "id": "s7",
+      "title": "Russian Military Flotilla Bound for Libya Turns Around After Warship Sunk, Sources Say",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/27/russian-military-flotilla-bound-for-libya-turns-around-after-warship-sunk-a812400",
+      "language": "en",
+      "published_at": "2026-11-28T03:40:00+08:00",
+      "accessed_at": "2026-11-28T06:05:00+08:00"
+    },
+    {
+      "id": "s8",
+      "title": "Finland and Norway sought to avert Baltic conflict with Russia — WSJ",
+      "outlet": "Hromadske",
+      "category": "ua_independent",
+      "url": "https://hromadske.ua/en/amp/war/275020-finnish-and-norwegian-leaders-called-putin-to-avert-military-confrontation-in-baltic-sea-wsj",
+      "language": "en",
+      "published_at": "2026-11-26",
+      "accessed_at": "2026-11-28T06:05:00+08:00"
+    },
+    {
+      "id": "s9",
+      "title": "Мінус паливо для «Іскандерів» і резервуари на Новошахтинському НПЗ (Minus fuel for the Iskanders and tanks at the Novoshakhtinsk refinery, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/43010",
+      "language": "uk",
+      "published_at": "2026-11-27T22:45:00+08:00",
+      "accessed_at": "2026-11-28T06:08:00+08:00"
+    },
+    {
+      "id": "s10",
+      "title": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
+      "outlet": "Meduza",
+      "category": "ru_by_independent",
+      "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
+      "language": "en",
+      "published_at": "2026-11-27T16:12:00+08:00",
+      "accessed_at": "2026-11-28T06:08:00+08:00"
+    },
+    {
+      "id": "s11",
+      "title": "Сбиты восемь летевших на Москву БПЛА, заявил Собянин (Eight drones flying at Moscow downed, Sobyanin says, translated)",
+      "outlet": "TASS (Telegram)",
+      "category": "ru_state_media",
+      "url": "https://t.me/tass_agency/407991",
+      "language": "ru",
+      "published_at": "2026-11-28T04:27:00+08:00",
+      "accessed_at": "2026-11-28T06:08:00+08:00"
+    },
+    {
+      "id": "s12",
+      "title": "Дежурными силами ПВО перехвачены и уничтожены 74 украинских БПЛА (Air defences intercepted and destroyed 74 Ukrainian drones, translated)",
+      "outlet": "Russian Ministry of Defence (Telegram)",
+      "category": "ru_gov",
+      "url": "https://t.me/mod_russia/69391",
+      "language": "ru",
+      "published_at": "2026-11-28T01:50:00+08:00",
+      "accessed_at": "2026-11-28T06:08:00+08:00"
+    },
+    {
+      "id": "s13",
+      "title": "Оперативна інформація станом на 22:00 27.11.2026 (Operational update as of 22:00 on 27 November 2026, translated)",
+      "outlet": "General Staff of Ukraine (Telegram)",
+      "category": "ua_gov",
+      "url": "https://t.me/GeneralStaffZSU/43013",
+      "language": "uk",
+      "published_at": "2026-11-28T04:02:00+08:00",
+      "accessed_at": "2026-11-28T06:09:00+08:00"
+    },
+    {
+      "id": "s14",
+      "title": "Nou mesaj RO-Alert privind posibile drone pentru nordul judeţului Tulcea (New RO-Alert over possible drones for northern Tulcea county, translated)",
+      "outlet": "Digi24",
+      "category": "eu_regional_press",
+      "url": "https://www.digi24.ro/stiri/nou-mesaj-ro-alert-privind-posibile-drone-pentru-nordul-judeului-tulcea-locuitorii-sfatuiti-sa-se-adaposteasca-4055311",
+      "language": "ro",
+      "published_at": "2026-11-27T19:34:00+08:00",
+      "accessed_at": "2026-11-28T06:02:00+08:00"
+    },
+    {
+      "id": "s15",
+      "title": "EDF intel chief: Russia's response to border closure more threats",
+      "outlet": "ERR News",
+      "category": "eu_regional_press",
+      "url": "https://news.err.ee/1610209048/edf-intel-chief-russia-s-response-to-border-closure-more-threats",
+      "language": "en",
+      "published_at": "2026-11-27T19:42:00+08:00",
+      "accessed_at": "2026-11-28T06:02:00+08:00"
+    },
+    {
+      "id": "s16",
+      "title": "Romania calls on NATO to help repel Russian hybrid attacks",
+      "outlet": "Ukrainska Pravda",
+      "category": "ua_independent",
+      "url": "https://www.pravda.com.ua/eng/news/2026/11/27/8065029/",
+      "language": "en",
+      "published_at": "2026-11-28T01:51:00+08:00",
+      "accessed_at": "2026-11-28T06:10:00+08:00"
+    },
+    {
+      "id": "s17",
+      "title": "Zelensky acknowledges Ukraine did not coordinate Libya strike with European partners",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/zelensky-says-ukraine-aligns-naval-strikes-with-partners-italy-denies-coordination-over-libya-attack/",
+      "language": "en",
+      "published_at": "2026-11-28T02:26:00+08:00",
+      "accessed_at": "2026-11-28T06:10:00+08:00"
+    },
+    {
+      "id": "s18",
+      "title": "Ukraine submits Black Sea truce offer, waits for Russian response: Minister",
+      "outlet": "Business Standard",
+      "category": "intl_press",
+      "url": "https://www.business-standard.com/world-news/ukraine-submits-black-sea-truce-offer-waits-for-russian-response-minister-126112701458_1.html",
+      "language": "en",
+      "published_at": "2026-11-27",
+      "accessed_at": "2026-11-28T06:06:00+08:00"
+    },
+    {
+      "id": "s19",
+      "title": "Ukraine is awaiting Russia's response to its proposal for a ceasefire in the Black Sea",
+      "outlet": "UA.NEWS",
+      "category": "ua_independent",
+      "url": "https://ua.news/en/war-vs-rf/ukrayina-ochikuie-vid-rosiyi-vidpovidi-na-propozitsiiu-pro-peremiria-v-chornomu-mori",
+      "language": "en",
+      "published_at": "2026-11-27T23:47:00+08:00",
+      "accessed_at": "2026-11-28T06:06:00+08:00"
+    },
+    {
+      "id": "s20",
+      "title": "Russia Extends Jet Fuel Export Ban Until March 2027",
+      "outlet": "The Moscow Times",
+      "category": "ru_by_independent",
+      "url": "https://www.themoscowtimes.com/2026/11/27/russia-extends-jet-fuel-export-ban-until-march-2027-a812395",
+      "language": "en",
+      "published_at": "2026-11-27T23:07:00+08:00",
+      "accessed_at": "2026-11-28T06:10:00+08:00"
+    },
+    {
+      "id": "s21",
+      "title": "Forward look: 30 November - 13 December 2026",
+      "outlet": "Council of the EU",
+      "category": "nato_eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/27/forward-look-2026/",
+      "language": "en",
+      "published_at": "2026-11-28T00:30:00+08:00",
+      "accessed_at": "2026-11-28T06:10:00+08:00"
+    },
+    {
+      "id": "s22",
+      "title": "Croatian court overturns extradition ruling against Ukrainian suspect in Nord Stream sabotage case",
+      "outlet": "The Kyiv Independent",
+      "category": "ua_independent",
+      "url": "https://kyivindependent.com/croatian-court-overturns-extradition-ruling-against-ukrainian-suspect-in-nord-stream-sabotage-case/",
+      "language": "en",
+      "published_at": "2026-11-27T22:41:00+08:00",
+      "accessed_at": "2026-11-28T06:10:00+08:00"
+    }
+  ],
+  "published_at": "2026-11-28T05:43:57+08:00",
+  "computed": {
+    "pathways": {
+      "airspace": {
+        "incidents_30d": 4,
+        "baseline_monthly": 13
+      },
+      "sabotage": {
+        "incidents_30d": 2,
+        "baseline_monthly": 1.7
+      },
+      "maritime": {
+        "incidents_30d": 0,
+        "baseline_monthly": 2
+      },
+      "cyber_ew": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.7
+      },
+      "military_pressure": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0
+      },
+      "nuclear": {
+        "incidents_30d": 2,
+        "baseline_monthly": 0.3
+      },
+      "political_economic": {
+        "incidents_30d": 0,
+        "baseline_monthly": 0.3
+      }
+    },
+    "word_count": 1786,
+    "source_count": 22,
+    "source_category_count": 8
+  }
+}

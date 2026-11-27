@@ -344,6 +344,11 @@
           "date": "2026-11-27",
           "probability": 10,
           "note": "We found no reported sabotage or armed crossing at the Kaliningrad border through 27 November. Three days remain."
+        },
+        {
+          "date": "2026-11-28",
+          "probability": 5,
+          "note": "We found no reported sabotage or armed crossing at the Kaliningrad border through 27 November. Two days remain."
         }
       ],
       "status": "open",
@@ -581,6 +586,11 @@
           "date": "2026-11-27",
           "probability": 40,
           "note": "We found no Finnish statement confirming a drone violation on 11 November. Three days remain before the 30 November deadline."
+        },
+        {
+          "date": "2026-11-28",
+          "probability": 25,
+          "note": "We still find no Finnish statement confirming a drone violation on 11 November. Two days remain."
         }
       ],
       "status": "open",
@@ -620,7 +630,13 @@
       "base_rate": 80,
       "base_rate_note": "Drones entered Baltic or Finnish airspace in most months since March 2026, including on 1 and 11 November. Raised slightly because Ukraine keeps striking Baltic export terminals.",
       "opened": "2026-11-13",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-28",
+          "probability": 97,
+          "note": "LSM reports Latvia's armed forces said a drone was briefly in Latvian territory on 27 November. We resolve once we open the military's own text."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,
@@ -877,7 +893,13 @@
       "base_rate": 10,
       "base_rate_note": "The only Black Sea deal, the 2022 grain corridor, lasted a year, and the 2025 proposals never took effect. Lowered because Putin explicitly ruled out Black Sea truce talks on 19 November.",
       "opened": "2026-11-20",
-      "updates": [],
+      "updates": [
+        {
+          "date": "2026-11-28",
+          "probability": 10,
+          "note": "Kyiv tabled a Black Sea truce proposal; Sybiha says Moscow seeks to include oil shipments, which suggests engagement on terms rather than flat refusal."
+        }
+      ],
       "status": "open",
       "resolved_on": null,
       "resolution_note": null,

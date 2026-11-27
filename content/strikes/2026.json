@@ -2814,7 +2814,7 @@
       "verification": 1,
       "damage": null,
       "effect": null,
-      "summary": "The SBU and HUR said drones hit the bitumen unit and a primary distillation column at the refinery overnight into 23 November. Ukraine's General Staff said the fire was visible from satellite. Meduza reported the strike; we opened no Russian official source.",
+      "summary": "The SBU and HUR said drones hit the bitumen unit and a distillation column overnight into 23 November. Ukraine's General Staff later claimed 20 horizontal tanks destroyed, 21 horizontal and 11 vertical tanks damaged, and a pipeline section hit. We opened no Russian official source.",
       "sources": [
         {
           "title": "СБУ спільно з ГУР уразила Новошахтинський НПЗ у Ростовській області рф (The SBU and HUR struck the Novoshakhtinsk refinery in Rostov Oblast, translated)",
@@ -2836,11 +2836,18 @@
           "category": "ru_by_independent",
           "url": "https://meduza.io/en/news/2026/11/23/ukrainian-drones-strike-two-russian-oil-refineries-and-pumping-station-in-overnight-attacks",
           "published_at": "2026-11-23T19:24:00+08:00"
+        },
+        {
+          "title": "Мінус паливо для «Іскандерів» і резервуари на Новошахтинському НПЗ (Minus fuel for the Iskanders and tanks at the Novoshakhtinsk refinery, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43010",
+          "published_at": "2026-11-27T22:45:00+08:00"
         }
       ],
       "seed": false,
       "added": "2026-11-24",
-      "updated": null
+      "updated": "2026-11-28"
     },
     {
       "id": "STR-2026-0084",
@@ -3115,6 +3122,43 @@
       ],
       "seed": false,
       "added": "2026-11-27",
+      "updated": null
+    },
+    {
+      "id": "STR-2026-0092",
+      "date": "2026-11-26",
+      "target_name": "Efremov synthetic rubber plant",
+      "target_type": "defence_industry",
+      "region": "Tula Oblast",
+      "occupied_territory": false,
+      "lat": 53.15,
+      "lon": 38.12,
+      "distance_km": 300,
+      "weapon": "drone",
+      "weapon_detail": null,
+      "western_weapon": null,
+      "verification": 1,
+      "damage": null,
+      "effect": null,
+      "summary": "Ukraine's General Staff says forces, with the partisan group Chornaya Iskra, hit the plant overnight into 27 November. It says the plant makes components for solid rocket propellant, including for Iskanders, and that damage is being clarified. Meduza reports that Tula's governor said there was no infrastructure damage.",
+      "sources": [
+        {
+          "title": "Мінус паливо для «Іскандерів» і резервуари на Новошахтинському НПЗ (Minus fuel for the Iskanders and tanks at the Novoshakhtinsk refinery, translated)",
+          "outlet": "General Staff of Ukraine (Telegram)",
+          "category": "ua_gov",
+          "url": "https://t.me/GeneralStaffZSU/43010",
+          "published_at": "2026-11-27T22:45:00+08:00"
+        },
+        {
+          "title": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
+          "outlet": "Meduza",
+          "category": "ru_by_independent",
+          "url": "https://meduza.io/en/news/2026/11/27/ukrainian-drones-strike-st-petersburg-and-three-russian-regions-injuring-three-and-disrupting-flights",
+          "published_at": "2026-11-27T16:12:00+08:00"
+        }
+      ],
+      "seed": false,
+      "added": "2026-11-28",
       "updated": null
     }
   ]
